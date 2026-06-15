@@ -47,5 +47,12 @@
     "description": "HEX、RGB、HSL 颜色格式互转",
     "category": "设计工具",
     "icon": "🎨"
+  },
+  {
+    "slug": "pomodoro",
+    "name": "番茄时钟",
+    "description": "番茄工作法计时器，支持自定义工作时长与休息间隔",
+    "category": "效率工具",
+    "icon": "🍅"
   }
 ]

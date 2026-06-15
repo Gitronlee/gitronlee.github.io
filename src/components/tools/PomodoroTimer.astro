@@ -1,0 +1,325 @@
+<div class="pomodoro-timer" id="pomodoroRoot">
+  <div class="timer-display">
+    <svg class="timer-ring" viewBox="0 0 200 200">
+      <circle class="ring-bg" cx="100" cy="100" r="85" />
+      <circle class="ring-progress" cx="100" cy="100" r="85" id="timerRing" />
+    </svg>
+    <div class="timer-center">
+      <span class="timer-time" id="timerTime">25:00</span>
+      <span class="timer-label" id="timerLabel">工作时间</span>
+    </div>
+  </div>
+
+  <div class="timer-controls">
+    <button class="btn-timer btn-start" id="btnStart">开始</button>
+    <button class="btn-timer btn-pause" id="btnPause" style="display:none">暂停</button>
+    <button class="btn-timer btn-reset" id="btnReset">重置</button>
+  </div>
+
+  <div class="timer-presets">
+    <button class="preset active" data-work="25" data-break="5">25 分钟</button>
+    <button class="preset" data-work="45" data-break="10">45 分钟</button>
+    <button class="preset" data-work="15" data-break="3">15 分钟</button>
+  </div>
+
+  <div class="timer-stats">
+    <div class="stat-item">
+      <span class="stat-value" id="sessionCount">0</span>
+      <span class="stat-label">完成轮次</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value" id="totalFocus">0</span>
+      <span class="stat-label">总专注(分钟)</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const root = document.getElementById('pomodoroRoot')!;
+  const timerTime = document.getElementById('timerTime')!;
+  const timerLabel = document.getElementById('timerLabel')!;
+  const timerRing = document.getElementById('timerRing')!;
+  const btnStart = document.getElementById('btnStart')!;
+  const btnPause = document.getElementById('btnPause')!;
+  const btnReset = document.getElementById('btnReset')!;
+  const sessionCount = document.getElementById('sessionCount')!;
+  const totalFocus = document.getElementById('totalFocus')!;
+
+  const ringLength = 2 * Math.PI * 85;
+  timerRing.setAttribute('stroke-dasharray', String(ringLength));
+  timerRing.setAttribute('stroke-dashoffset', '0');
+
+  let workDuration = 25 * 60;
+  let breakDuration = 5 * 60;
+  let timeLeft = workDuration;
+  let isRunning = false;
+  let isWorkSession = true;
+  let intervalId: ReturnType<typeof setInterval> | null = null;
+  let sessions = 0;
+  let totalMinutes = 0;
+
+  const audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+
+  function playBeep() {
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.frequency.value = 880;
+    osc.type = 'sine';
+    gain.gain.value = 0.3;
+    osc.start();
+    gain.gain.exponentialRampToValueAtTime(0.01, audioCtx.currentTime + 0.3);
+    osc.stop(audioCtx.currentTime + 0.3);
+  }
+
+  function formatTime(seconds: number): string {
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+
+  function updateDisplay() {
+    timerTime.textContent = formatTime(timeLeft);
+    timerLabel.textContent = isWorkSession ? '工作时间' : '休息时间';
+
+    const total = isWorkSession ? workDuration : breakDuration;
+    const progress = (total - timeLeft) / total;
+    timerRing.setAttribute('stroke-dashoffset', String(ringLength * progress));
+  }
+
+  function switchSession() {
+    if (isWorkSession) {
+      sessions++;
+      totalMinutes += workDuration / 60;
+      sessionCount.textContent = String(sessions);
+      totalFocus.textContent = String(Math.round(totalMinutes));
+    }
+
+    isWorkSession = !isWorkSession;
+    timeLeft = isWorkSession ? workDuration : breakDuration;
+    updateDisplay();
+
+    playBeep();
+    setTimeout(() => playBeep(), 400);
+    setTimeout(() => playBeep(), 800);
+  }
+
+  function tick() {
+    if (timeLeft <= 0) {
+      switchSession();
+    } else {
+      timeLeft--;
+      updateDisplay();
+    }
+  }
+
+  function startTimer() {
+    if (isRunning) return;
+    isRunning = true;
+    btnStart.style.display = 'none';
+    btnPause.style.display = '';
+    document.querySelectorAll('.preset').forEach(b => (b as HTMLButtonElement).disabled = true);
+    audioCtx.resume();
+    intervalId = setInterval(tick, 1000);
+  }
+
+  function pauseTimer() {
+    if (!isRunning) return;
+    isRunning = false;
+    btnStart.style.display = '';
+    btnPause.style.display = 'none';
+    document.querySelectorAll('.preset').forEach(b => (b as HTMLButtonElement).disabled = false);
+    if (intervalId) { clearInterval(intervalId); intervalId = null; }
+  }
+
+  function resetTimer() {
+    pauseTimer();
+    timeLeft = workDuration;
+    isWorkSession = true;
+    updateDisplay();
+  }
+
+  btnStart.addEventListener('click', startTimer);
+  btnPause.addEventListener('click', pauseTimer);
+  btnReset.addEventListener('click', resetTimer);
+
+  root.querySelectorAll('.preset').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const el = btn as HTMLButtonElement;
+      if (isRunning) return;
+      root.querySelectorAll('.preset').forEach(b => b.classList.remove('active'));
+      el.classList.add('active');
+      workDuration = parseInt(el.dataset.work!) * 60;
+      breakDuration = parseInt(el.dataset.break!) * 60;
+      resetTimer();
+    });
+  });
+
+  updateDisplay();
+</script>
+
+<style>
+  .pomodoro-timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
+
+  .timer-display {
+    position: relative;
+    width: 200px;
+    height: 200px;
+  }
+
+  .timer-ring {
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+  }
+
+  .ring-bg {
+    fill: none;
+    stroke: var(--bg-tertiary);
+    stroke-width: 8;
+  }
+
+  .ring-progress {
+    fill: none;
+    stroke: var(--accent-green);
+    stroke-width: 8;
+    stroke-linecap: round;
+    transition: stroke-dashoffset 1s linear, stroke 0.3s;
+  }
+
+  .timer-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .timer-time {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .timer-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 0.25rem;
+  }
+
+  .timer-controls {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .btn-timer {
+    padding: 0.6rem 2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: var(--transition);
+  }
+
+  .btn-start {
+    background: var(--accent-green);
+    color: #000;
+  }
+
+  .btn-start:hover {
+    background: #00e676;
+  }
+
+  .btn-pause {
+    background: var(--accent-orange);
+    color: #000;
+  }
+
+  .btn-pause:hover {
+    background: #ffab40;
+  }
+
+  .btn-reset {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+  }
+
+  .btn-reset:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+
+  .timer-presets {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .preset {
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+
+  .preset:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+
+  .preset.active {
+    background: var(--accent-blue);
+    color: #000;
+    border-color: var(--accent-blue);
+  }
+
+  .preset:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .timer-stats {
+    display: flex;
+    gap: 2rem;
+    background: var(--bg-primary);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+
+  .stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent-cyan);
+  }
+
+  .stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+</style>

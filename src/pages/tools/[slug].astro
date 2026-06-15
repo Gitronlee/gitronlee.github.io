@@ -20,6 +20,7 @@ const toolMap: Record<string, any> = {
   'url': (await import('../../components/tools/UrlTool.astro')).default,
   'hash': (await import('../../components/tools/HashTool.astro')).default,
   'color': (await import('../../components/tools/ColorTool.astro')).default,
+  'pomodoro': (await import('../../components/tools/PomodoroTimer.astro')).default,
 };
 
 const { slug } = Astro.params;
