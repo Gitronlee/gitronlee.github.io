@@ -14,10 +14,12 @@ const items = games.map((game) => ({
 <BaseLayout title="小游戏" description="在线小游戏集合">
   <Header />
   
-  <main class="container page-main">
-    <h1 class="page-title">小游戏</h1>
-    <p class="page-desc">休闲娱乐小游戏，持续更新中</p>
-    <CardGrid items={items} />
+  <main>
+    <section class="container page-main">
+      <h1 class="page-title">小游戏</h1>
+      <p class="page-desc">休闲娱乐小游戏，持续更新中</p>
+      <CardGrid items={items} />
+    </section>
   </main>
   
   <Footer />
@@ -25,7 +27,7 @@ const items = games.map((game) => ({
 
 <style>
   .page-main {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
   

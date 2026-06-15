@@ -20,23 +20,25 @@ Object.values(grouped).forEach(arr => {
 <BaseLayout title="学习文档" description="技巧学习文档和教程">
   <Header />
   
-  <main class="container page-main">
-    <h1 class="page-title">学习文档</h1>
-    <p class="page-desc">实用的开发技巧和学习资料</p>
-    
-    {Object.entries(grouped).map(([category, categoryDocs]) => (
-      <section class="category">
-        <h2 class="category-title">{category}</h2>
-        <div class="doc-list">
-          {categoryDocs.map((doc) => (
-            <a href={`/docs/${doc.slug}`} class="doc-card">
-              <h3>{doc.data.title}</h3>
-              <p>{doc.data.description}</p>
-            </a>
-          ))}
-        </div>
-      </section>
-    ))}
+  <main>
+    <section class="container page-main">
+      <h1 class="page-title">学习文档</h1>
+      <p class="page-desc">实用的开发技巧和学习资料</p>
+      
+      {Object.entries(grouped).map(([category, categoryDocs]) => (
+        <section class="category">
+          <h2 class="category-title">{category}</h2>
+          <div class="doc-list">
+            {categoryDocs.map((doc) => (
+              <a href={`/docs/${doc.slug}`} class="doc-card">
+                <h3>{doc.data.title}</h3>
+                <p>{doc.data.description}</p>
+              </a>
+            ))}
+          </div>
+        </section>
+      ))}
+    </section>
   </main>
   
   <Footer />
@@ -44,7 +46,7 @@ Object.values(grouped).forEach(arr => {
 
 <style>
   .page-main {
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
   
