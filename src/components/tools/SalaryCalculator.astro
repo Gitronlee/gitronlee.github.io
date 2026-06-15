@@ -24,6 +24,18 @@
     </div>
   </div>
 
+  <div class="base-section">
+    <label class="base-label">社保公积金缴费基数</label>
+    <div class="base-toggle">
+      <button class="base-option active" id="baseFull">工资全额</button>
+      <button class="base-option" id="baseCustom">自定义基数</button>
+    </div>
+    <div class="base-custom-row" id="baseCustomRow" style="display:none">
+      <input type="number" id="customBase" placeholder="自定义缴费基数" value="15000" />
+      <span class="base-hint" id="baseHint"></span>
+    </div>
+  </div>
+
   <div class="calc-result" id="calcResult">
     <div class="result-main">
       <div class="result-item highlight">
@@ -85,6 +97,24 @@
   const grossInput = document.getElementById('grossSalary') as HTMLInputElement;
   const fundSelect = document.getElementById('fundRate') as HTMLSelectElement;
   const dedInput = document.getElementById('deductions') as HTMLInputElement;
+  const baseFullBtn = document.getElementById('baseFull')!;
+  const baseCustomBtn = document.getElementById('baseCustom')!;
+  const baseCustomRow = document.getElementById('baseCustomRow')!;
+  const customBaseInput = document.getElementById('customBase') as HTMLInputElement;
+  const baseHint = document.getElementById('baseHint')!;
+
+  let baseMode: 'full' | 'custom' = 'full';
+
+  function setBaseMode(mode: 'full' | 'custom') {
+    baseMode = mode;
+    baseFullBtn.classList.toggle('active', mode === 'full');
+    baseCustomBtn.classList.toggle('active', mode === 'custom');
+    baseCustomRow.style.display = mode === 'custom' ? 'flex' : 'none';
+    recalc();
+  }
+
+  baseFullBtn.addEventListener('click', () => setBaseMode('full'));
+  baseCustomBtn.addEventListener('click', () => setBaseMode('custom'));
 
   const netPayEl = document.getElementById('netPay')!;
   const siAmtEl = document.getElementById('siAmount')!;
@@ -119,8 +149,20 @@
     const fundPct = parseFloat(fundSelect.value) / 100;
     const ded = parseFloat(dedInput.value) || 0;
 
-    const siBase = Math.min(gross, city.siCap);
-    const hfBase = Math.min(gross, city.hfCap);
+    let siBase: number;
+    let hfBase: number;
+
+    if (baseMode === 'custom') {
+      const custom = parseFloat(customBaseInput.value) || 0;
+      siBase = Math.min(custom, city.siCap);
+      hfBase = Math.min(custom, city.hfCap);
+      baseHint.textContent = city.siCap === Infinity
+        ? '无上限限制'
+        : `上限 ${city.siCap.toLocaleString()}，实缴基数 ${siBase.toLocaleString()}`;
+    } else {
+      siBase = Math.min(gross, city.siCap);
+      hfBase = Math.min(gross, city.hfCap);
+    }
 
     const siAmount = Math.round(siBase * 0.105);  // 10.5%
     const hfAmount = Math.round(hfBase * fundPct);
@@ -142,6 +184,7 @@
   citySelect.addEventListener('change', recalc);
   fundSelect.addEventListener('change', recalc);
   dedInput.addEventListener('input', recalc);
+  customBaseInput.addEventListener('input', recalc);
 
   recalc();
 </script>
@@ -252,5 +295,74 @@
     background: var(--bg-primary);
     border-radius: 6px;
     border: 1px solid var(--border-color);
+  }
+
+  .base-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+
+  .base-label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .base-toggle {
+    display: flex;
+    gap: 0;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    width: fit-content;
+  }
+
+  .base-option {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    background: var(--bg-primary);
+    color: var(--text-muted);
+    border: none;
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .base-option:first-child {
+    border-right: 1px solid var(--border-color);
+  }
+
+  .base-option.active {
+    background: var(--accent-blue);
+    color: #000;
+    font-weight: 600;
+  }
+
+  .base-custom-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .base-custom-row input {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.65rem 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9375rem;
+    width: 200px;
+  }
+
+  .base-custom-row input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+
+  .base-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
   }
 </style>
