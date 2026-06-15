@@ -1,4 +1,6 @@
 ---
+import SearchOverlay from './SearchOverlay.astro';
+
 const path = Astro.url.pathname;
 const navItems = [
   { label: '首页', href: '/' },
@@ -24,6 +26,12 @@ const navItems = [
           {item.label}
         </a>
       ))}
+      
+      <button class="search-trigger" id="searchTrigger" type="button">
+        <span class="search-trigger-icon">🔍</span>
+        <span class="search-trigger-text">搜索...</span>
+        <span class="search-trigger-kbd"><kbd>Ctrl</kbd><kbd>K</kbd></span>
+      </button>
     </nav>
     
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
@@ -43,15 +51,37 @@ const navItems = [
       </a>
     ))}
   </nav>
+  
+  <SearchOverlay />
 </header>
 
 <script>
   const menuToggle = document.getElementById('menuToggle');
   const navMobile = document.getElementById('navMobile');
+  const searchTrigger = document.getElementById('searchTrigger');
+  const searchOverlay = document.getElementById('searchOverlay');
   
   menuToggle?.addEventListener('click', () => {
     navMobile?.classList.toggle('open');
     menuToggle.classList.toggle('open');
+  });
+
+  function openSearch() {
+    if (searchOverlay) {
+      searchOverlay.classList.remove('hidden');
+      searchOverlay.classList.add('visible');
+      const input = document.getElementById('searchInput');
+      if (input) setTimeout(() => input.focus(), 100);
+    }
+  }
+
+  searchTrigger?.addEventListener('click', openSearch);
+
+  document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
   });
 </script>
 
@@ -87,6 +117,7 @@ const navItems = [
   
   .nav-desktop {
     display: flex;
+    align-items: center;
     gap: 2rem;
   }
   
@@ -115,6 +146,50 @@ const navItems = [
   
   .nav-link.active::after {
     width: 100%;
+  }
+
+  .search-trigger {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.4rem 0.75rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: var(--transition);
+  }
+
+  .search-trigger:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+
+  .search-trigger-icon {
+    font-size: 1rem;
+  }
+
+  .search-trigger-text {
+    min-width: 60px;
+    text-align: left;
+  }
+
+  .search-trigger-kbd {
+    display: flex;
+    gap: 2px;
+    margin-left: 0.5rem;
+  }
+
+  .search-trigger-kbd kbd {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.7rem;
+    font-family: inherit;
+    color: var(--text-muted);
   }
   
   .menu-toggle {
