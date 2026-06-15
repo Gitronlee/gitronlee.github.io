@@ -12,12 +12,9 @@ export async function getStaticPaths() {
   }));
 }
 
-const { Content } = await Astro.props.render();
 const doc = Astro.props;
 
-if (!doc) {
-  return Astro.redirect('/404');
-}
+const { Content } = await doc.render();
 ---
 
 <BaseLayout title={doc.data.title} description={doc.data.description}>
@@ -27,7 +24,7 @@ if (!doc) {
     <nav class="breadcrumb">
       <a href="/docs">文档</a>
       <span>/</span>
-      <a href={`/docs?cat=${doc.data.category}`}>{doc.data.category}</a>
+      <a>{doc.data.category}</a>
       <span>/</span>
       <span>{doc.data.title}</span>
     </nav>

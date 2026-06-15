@@ -3,6 +3,6 @@ import mdx from '@astrojs/mdx';
 
 export default defineConfig({
   integrations: [mdx()],
-  site: 'https://your-username.github.io',
-  base: '/web-toolbox',
+  site: 'https://gitronlee.github.io',
+  base: '/',
 });
