@@ -1,6 +1,9 @@
 <div class="time-tool">
-  <div class="current-time">
+  <div class="section timezone-section">
     <label>当前时间</label>
+    <div class="timezone-row">
+      <select id="timezoneSelect" class="timezone-select"></select>
+    </div>
     <div class="time-display">
       <span id="nowTimestamp" class="timestamp"></span>
       <span id="nowDate" class="date"></span>
@@ -14,6 +17,7 @@
       <div class="arrow">→</div>
       <div id="dateResult" class="result">--</div>
     </div>
+    <div id="diffRow" class="diff-row"></div>
   </div>
   
   <div class="section">
@@ -24,57 +28,157 @@
       <span id="tsResultMillis" class="result-ts">毫秒: --</span>
     </div>
   </div>
+  
+  <div class="section">
+    <label>快捷参照</label>
+    <div class="quick-ref">
+      <div class="quick-item">
+        <span class="quick-label">1 天前</span>
+        <span class="quick-value" id="oneDayAgo"></span>
+      </div>
+      <div class="quick-item">
+        <span class="quick-label">1 周前</span>
+        <span class="quick-value" id="oneWeekAgo"></span>
+      </div>
+      <div class="quick-item">
+        <span class="quick-label">1 月前 (30天)</span>
+        <span class="quick-value" id="oneMonthAgo"></span>
+      </div>
+    </div>
+  </div>
 </div>
 
 <script>
+  const timezones: Array<{ label: string; zone: string }> = [
+    { label: '北京时间 (UTC+8)', zone: 'Asia/Shanghai' },
+    { label: '东京时间 (UTC+9)', zone: 'Asia/Tokyo' },
+    { label: '首尔时间 (UTC+9)', zone: 'Asia/Seoul' },
+    { label: '莫斯科时间 (UTC+3)', zone: 'Europe/Moscow' },
+    { label: '迪拜时间 (UTC+4)', zone: 'Asia/Dubai' },
+    { label: '印度时间 (UTC+5:30)', zone: 'Asia/Kolkata' },
+    { label: '伦敦时间 (UTC+0/+1)', zone: 'Europe/London' },
+    { label: '柏林时间 (UTC+1/+2)', zone: 'Europe/Berlin' },
+    { label: '纽约时间 (UTC-5/-4)', zone: 'America/New_York' },
+    { label: '芝加哥时间 (UTC-6/-5)', zone: 'America/Chicago' },
+    { label: '丹佛时间 (UTC-7/-6)', zone: 'America/Denver' },
+    { label: '洛杉矶时间 (UTC-8/-7)', zone: 'America/Los_Angeles' },
+    { label: '悉尼时间 (UTC+10/+11)', zone: 'Australia/Sydney' },
+    { label: '奥克兰时间 (UTC+12/+13)', zone: 'Pacific/Auckland' },
+    { label: 'UTC 世界协调时间', zone: 'UTC' },
+  ];
+
+  const zoneOptions = timezones.map((tz, i) => `<option value="${tz.zone}" ${i === 0 ? 'selected' : ''}>${tz.label}</option>`);
+  const tzSelect = document.getElementById('timezoneSelect') as HTMLSelectElement;
+  if (tzSelect) tzSelect.innerHTML = zoneOptions.join('');
+
+  const tsInput = document.getElementById('tsInput') as HTMLInputElement;
+  const dateResult = document.getElementById('dateResult');
+  const diffRow = document.getElementById('diffRow');
+  const dateInput = document.getElementById('dateInput') as HTMLInputElement;
+  const tsResultSeconds = document.getElementById('tsResultSeconds');
+  const tsResultMillis = document.getElementById('tsResultMillis');
+
+  let currentTs = 0;
+
+  function getSelectedTimezone(): string {
+    return tzSelect?.value || 'Asia/Shanghai';
+  }
+
+  function formatDate(date: Date, locale = 'zh-CN'): string {
+    const tz = getSelectedTimezone();
+    return date.toLocaleString(locale, {
+      timeZone: tz,
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', second: '2-digit',
+      hour12: false,
+    }) + ` (${getTzOffset(date, tz)})`;
+  }
+
+  function getTzOffset(date: Date, tz: string): string {
+    const utcDate = new Date(date.toLocaleString('en-US', { timeZone: 'UTC' }));
+    const tzDate = new Date(date.toLocaleString('en-US', { timeZone: tz }));
+    let diff = (tzDate.getTime() - utcDate.getTime()) / (1000 * 60);
+    const hours = Math.floor(Math.abs(diff) / 60);
+    const minutes = Math.abs(diff) % 60;
+    const sign = diff >= 0 ? '+' : '-';
+    return `UTC${sign}${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}`;
+  }
+
   function updateNow() {
     const now = Date.now();
     const nowEl = document.getElementById('nowTimestamp');
     const dateEl = document.getElementById('nowDate');
-    if (nowEl) nowEl.textContent = Math.floor(now / 1000).toString();
-    if (dateEl) dateEl.textContent = new Date().toLocaleString('zh-CN');
+    if (nowEl) nowEl.textContent = String(Math.floor(now / 1000));
+    if (dateEl) dateEl.textContent = formatDate(new Date());
   }
-  
-  setInterval(updateNow, 1000);
-  updateNow();
-  
-  const tsInput = document.getElementById('tsInput');
-  const dateResult = document.getElementById('dateResult');
-  
-  tsInput?.addEventListener('input', () => {
+
+  function updateRefs() {
+    const now = Date.now();
+    const oneDay = document.getElementById('oneDayAgo');
+    const oneWeek = document.getElementById('oneWeekAgo');
+    const oneMonth = document.getElementById('oneMonthAgo');
+    
+    const formats = { timeZone: getSelectedTimezone(), hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', month: 'short', day: 'numeric' };
+    
+    if (oneDay) oneDay.textContent = new Date(now - 86400e3).toLocaleString('zh-CN', formats);
+    if (oneWeek) oneWeek.textContent = new Date(now - 604800e3).toLocaleString('zh-CN', formats);
+    if (oneMonth) oneMonth.textContent = new Date(now - 2592000e3).toLocaleString('zh-CN', formats);
+  }
+
+  function refreshAll() {
+    updateNow();
+    updateRefs();
+    if (tsInput?.value.trim()) runTsConvert();
+    if (dateInput?.value) runDateConvert();
+  }
+
+  function runTsConvert() {
     const val = tsInput.value.trim();
     if (!val) {
-      dateResult.textContent = '--';
+      if (dateResult!) dateResult!.textContent = '--';
+      if (diffRow) diffRow.innerHTML = '';
       return;
     }
     try {
       let ts = parseInt(val, 10);
       if (val.length <= 10) ts *= 1000;
       const date = new Date(ts);
-      dateResult.textContent = date.toLocaleString('zh-CN', {
-        year: 'numeric', month: '2-digit', day: '2-digit',
-        hour: '2-digit', minute: '2-digit', second: '2-digit'
-      });
+      if (dateResult!) dateResult!.textContent = formatDate(date);
+      currentTs = ts;
+      
+      if (diffRow) {
+        const diff = Date.now() - ts;
+        const absDiff = Math.abs(diff);
+        const days = Math.floor(absDiff / 86400e3);
+        const hours = Math.floor((absDiff % 86400e3) / 3600e3);
+        const mins = Math.floor((absDiff % 3600e3) / 60e3);
+        const relStr = diff > 0 ? `${days}天${hours}时${mins}分前` : `${days}天${hours}时${mins}分后`;
+        diffRow.innerHTML = `<span class="diff-text">距离现在: ${relStr}</span>`;
+      }
     } catch (e) {
-      dateResult.textContent = '无效的时间戳';
+      if (dateResult!) dateResult!.textContent = '无效的时间戳';
     }
-  });
-  
-  const dateInput = document.getElementById('dateInput');
-  const tsResultSeconds = document.getElementById('tsResultSeconds');
-  const tsResultMillis = document.getElementById('tsResultMillis');
-  
-  dateInput?.addEventListener('input', () => {
-    const date = new Date(dateInput.value);
+  }
+
+  function runDateConvert() {
+    const date = new Date(dateInput!.value);
     if (isNaN(date.getTime())) {
-      tsResultSeconds.textContent = '秒: --';
-      tsResultMillis.textContent = '毫秒: --';
+      tsResultSeconds!.textContent = '秒: --';
+      tsResultMillis!.textContent = '毫秒: --';
       return;
     }
     const ts = date.getTime();
-    tsResultSeconds.textContent = `秒: ${Math.floor(ts / 1000)}`;
-    tsResultMillis.textContent = `毫秒: ${ts}`;
-  });
+    tsResultSeconds!.textContent = `秒: ${Math.floor(ts / 1000)}`;
+    tsResultMillis!.textContent = `毫秒: ${ts}`;
+  }
+
+  setInterval(updateNow, 1000);
+  updateNow();
+  updateRefs();
+
+  tsInput?.addEventListener('input', runTsConvert);
+  dateInput?.addEventListener('input', runDateConvert);
+  tzSelect?.addEventListener('change', refreshAll);
 </script>
 
 <style>
@@ -88,8 +192,29 @@
     font-weight: 500;
     color: var(--text-secondary);
     font-size: 0.875rem;
-    margin-bottom: 0.5rem;
     display: block;
+  }
+  
+  .timezone-section {
+    gap: 0.5rem;
+    
+  }
+  
+  .timezone-select {
+    background: var(--bg-primary);
+    border: 1px solid var(--accent-cyan);
+    color: var(--accent-cyan);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    cursor: pointer;
+    width: auto;
+    min-width: 200px;
+  }
+  
+  .timezone-select:focus {
+    outline: none;
+    border-color: var(--accent-blue);
   }
   
   .current-time {
@@ -104,6 +229,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 0.5rem;
   }
   
   .timestamp {
@@ -130,11 +256,6 @@
     flex-wrap: wrap;
   }
   
-  .convert-row input {
-    flex: 1;
-    min-width: 200px;
-  }
-  
   input, input[type="text"], input[type="datetime-local"] {
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
@@ -159,6 +280,11 @@
     font-family: 'JetBrains Mono', monospace;
   }
   
+  .diff-row {
+    color: var(--accent-orange);
+    font-size: 0.875rem;
+  }
+  
   .result-row {
     display: flex;
     gap: 2rem;
@@ -169,5 +295,30 @@
   .result-ts {
     font-family: 'JetBrains Mono', monospace;
     color: var(--accent-green);
+  }
+  
+  .quick-ref {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 6px;
+  }
+  
+  .quick-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.875rem;
+  }
+
+  .quick-item:last-child {
+    border-bottom: none;
+  }
+  
+  .quick-label {
+    color: var(--text-muted);
   }
 </style>
