@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+const docs = await getCollection('docs');
+const grouped = docs.reduce((acc, doc) => {
+  const category = doc.data.category;
+  if (!acc[category]) acc[category] = [];
+  acc[category].push(doc);
+  return acc;
+}, {} as Record<string, typeof docs>);
+
+Object.values(grouped).forEach(arr => {
+  arr.sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+});
+---
+
+<BaseLayout title="学习文档" description="技巧学习文档和教程">
+  <Header />
+  
+  <main class="container page-main">
+    <h1 class="page-title">学习文档</h1>
+    <p class="page-desc">实用的开发技巧和学习资料</p>
+    
+    {Object.entries(grouped).map(([category, categoryDocs]) => (
+      <section class="category">
+        <h2 class="category-title">{category}</h2>
+        <div class="doc-list">
+          {categoryDocs.map((doc) => (
+            <a href={`/docs/${doc.slug}`} class="doc-card">
+              <h3>{doc.data.title}</h3>
+              <p>{doc.data.description}</p>
+            </a>
+          ))}
+        </div>
+      </section>
+    ))}
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-desc {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .category {
+    margin-bottom: 2.5rem;
+  }
+  
+  .category-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .doc-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .doc-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+    transition: var(--transition);
+  }
+  
+  .doc-card:hover {
+    border-color: var(--accent-blue);
+    transform: translateX(4px);
+  }
+  
+  .doc-card h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+  }
+  
+  .doc-card p {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+  }
+</style>

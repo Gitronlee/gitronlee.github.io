@@ -1,0 +1,173 @@
+<div class="time-tool">
+  <div class="current-time">
+    <label>当前时间</label>
+    <div class="time-display">
+      <span id="nowTimestamp" class="timestamp"></span>
+      <span id="nowDate" class="date"></span>
+    </div>
+  </div>
+  
+  <div class="section">
+    <label>时间戳转日期</label>
+    <div class="convert-row">
+      <input type="text" id="tsInput" placeholder="输入时间戳 (秒或毫秒)..." />
+      <div class="arrow">→</div>
+      <div id="dateResult" class="result">--</div>
+    </div>
+  </div>
+  
+  <div class="section">
+    <label>日期转时间戳</label>
+    <input type="datetime-local" id="dateInput" />
+    <div class="result-row">
+      <span id="tsResultSeconds" class="result-ts">秒: --</span>
+      <span id="tsResultMillis" class="result-ts">毫秒: --</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  function updateNow() {
+    const now = Date.now();
+    const nowEl = document.getElementById('nowTimestamp');
+    const dateEl = document.getElementById('nowDate');
+    if (nowEl) nowEl.textContent = Math.floor(now / 1000).toString();
+    if (dateEl) dateEl.textContent = new Date().toLocaleString('zh-CN');
+  }
+  
+  setInterval(updateNow, 1000);
+  updateNow();
+  
+  const tsInput = document.getElementById('tsInput');
+  const dateResult = document.getElementById('dateResult');
+  
+  tsInput?.addEventListener('input', () => {
+    const val = tsInput.value.trim();
+    if (!val) {
+      dateResult.textContent = '--';
+      return;
+    }
+    try {
+      let ts = parseInt(val, 10);
+      if (val.length <= 10) ts *= 1000;
+      const date = new Date(ts);
+      dateResult.textContent = date.toLocaleString('zh-CN', {
+        year: 'numeric', month: '2-digit', day: '2-digit',
+        hour: '2-digit', minute: '2-digit', second: '2-digit'
+      });
+    } catch (e) {
+      dateResult.textContent = '无效的时间戳';
+    }
+  });
+  
+  const dateInput = document.getElementById('dateInput');
+  const tsResultSeconds = document.getElementById('tsResultSeconds');
+  const tsResultMillis = document.getElementById('tsResultMillis');
+  
+  dateInput?.addEventListener('input', () => {
+    const date = new Date(dateInput.value);
+    if (isNaN(date.getTime())) {
+      tsResultSeconds.textContent = '秒: --';
+      tsResultMillis.textContent = '毫秒: --';
+      return;
+    }
+    const ts = date.getTime();
+    tsResultSeconds.textContent = `秒: ${Math.floor(ts / 1000)}`;
+    tsResultMillis.textContent = `毫秒: ${ts}`;
+  });
+</script>
+
+<style>
+  .time-tool {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+  
+  .current-time {
+    background: var(--bg-primary);
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid var(--accent-cyan);
+  }
+  
+  .time-display {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .timestamp {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    color: var(--accent-cyan);
+    font-weight: 700;
+  }
+  
+  .date {
+    color: var(--text-primary);
+  }
+  
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .convert-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .convert-row input {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  input, input[type="text"], input[type="datetime-local"] {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+  
+  .arrow {
+    color: var(--accent-purple);
+    font-size: 1.5rem;
+  }
+  
+  .result {
+    color: var(--text-primary);
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  .result-row {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+  
+  .result-ts {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--accent-green);
+  }
+</style>

@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import CardGrid from '../components/CardGrid.astro';
+import tools from '../data/tools.json';
+import games from '../data/games.json';
+
+const featuredTools = tools.slice(0, 6).map((tool) => ({
+  ...tool,
+  href: `/tools/${tool.slug}`,
+}));
+
+const gamesItems = games.map((game) => ({
+  ...game,
+  href: `/games/${game.slug}`,
+}));
+---
+
+<BaseLayout title="Web Toolbox - 百宝箱" description="各种实用开发者工具、小游戏和学习文档集合">
+  <Header />
+  
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Web Toolbox</h1>
+        <p class="hero-desc">实用开发者工具 · 休闲小游戏 · 技巧学习文档</p>
+        <div class="hero-stats">
+          <span class="stat">{tools.length}+ 工具</span>
+          <span class="stat">{games.length}+ 游戏</span>
+          <span class="stat">持续更新</span>
+        </div>
+      </div>
+    </section>
+    
+    <section class="container section">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h2 class="section-title">热门工具</h2>
+        <a href="/tools" class="view-all">查看全部 →</a>
+      </div>
+      <CardGrid items={featuredTools} />
+    </section>
+    
+    <section class="container section">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+        <h2 class="section-title">小游戏</h2>
+        <a href="/games" class="view-all">查看全部 →</a>
+      </div>
+      <CardGrid items={gamesItems} />
+    </section>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .hero {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    padding: 5rem 0 4rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple), var(--accent-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-desc {
+    font-size: 1.25rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+  
+  .hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .stat {
+    background: var(--bg-tertiary);
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    color: var(--text-primary);
+  }
+  
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  .section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+  }
+  
+  .view-all {
+    color: var(--accent-blue);
+    font-weight: 500;
+  }
+  
+  .view-all:hover {
+    color: var(--accent-cyan);
+  }
+</style>

@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import games from '../../data/games.json';
+
+export function getStaticPaths() {
+  return games.map((game) => ({
+    params: { slug: game.slug },
+    props: game,
+  }));
+}
+
+const game = Astro.props;
+
+if (!game) {
+  return Astro.redirect('/404');
+}
+---
+
+<BaseLayout title={game.name} description={game.description}>
+  <Header />
+  
+  <main class="container page-main">
+    <div class="coming-soon">
+      <span class="game-icon">{game.icon}</span>
+      <h1>{game.name}</h1>
+      <p>{game.description}</p>
+      <div class="badge">Coming Soon</div>
+      <a href="/games" class="back-link">← 返回游戏列表</a>
+    </div>
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-main {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .coming-soon {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .game-icon {
+    font-size: 4rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  p {
+    color: var(--text-secondary);
+  }
+  
+  .badge {
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-pink));
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-top: 1rem;
+  }
+  
+  .back-link {
+    margin-top: 1rem;
+    color: var(--accent-blue);
+  }
+  
+  .back-link:hover {
+    color: var(--accent-cyan);
+  }
+</style>

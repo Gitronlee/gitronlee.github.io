@@ -1,0 +1,201 @@
+<div class="url-tool">
+  <div class="panel">
+    <label>原始字符串</label>
+    <textarea id="inputText" placeholder="输入要编码的文本..." rows="6"></textarea>
+    <button id="encodeBtn" class="btn btn-primary">URL 编码 →</button>
+  </div>
+  
+  <div class="panel">
+    <label>URL 编码结果</label>
+    <textarea id="outputText" placeholder="编码结果..." rows="6"></textarea>
+    <button id="copyOutput" class="btn btn-secondary">复制</button>
+  </div>
+  
+  <div class="panel">
+    <label>URL 编码输入</label>
+    <textarea id="decodeInput" placeholder="输入要解码的 URL 编码字符串..." rows="6"></textarea>
+    <button id="decodeBtn" class="btn btn-primary">← URL 解码</button>
+  </div>
+  
+  <div class="panel">
+    <label>解码结果</label>
+    <textarea id="decodeOutput" placeholder="解码结果..." rows="6" readonly></textarea>
+    <button id="copyDecode" class="btn btn-secondary">复制</button>
+  </div>
+  
+  <div class="panel">
+    <label>Query 参数解析</label>
+    <input type="text" id="queryInput" placeholder="输入 URL 或 Query 字符串..." />
+    <div id="queryResult" class="query-result">
+      <span class="placeholder">等待输入...</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const inputText = document.getElementById('inputText');
+  const outputText = document.getElementById('outputText');
+  const decodeInput = document.getElementById('decodeInput');
+  const decodeOutput = document.getElementById('decodeOutput');
+
+  document.getElementById('encodeBtn')?.addEventListener('click', () => {
+    outputText.value = encodeURIComponent(inputText.value);
+  });
+
+  document.getElementById('decodeBtn')?.addEventListener('click', () => {
+    try {
+      decodeOutput.value = decodeURIComponent(decodeInput.value);
+    } catch {
+      decodeOutput.value = '解码失败：无效的编码格式';
+    }
+  });
+
+  document.getElementById('copyOutput')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(outputText.value);
+    (this as HTMLButtonElement).textContent = '已复制!';
+    setTimeout(() => { (this as HTMLButtonElement).textContent = '复制'; }, 1500);
+  });
+
+  document.getElementById('copyDecode')?.addEventListener('click', function() {
+    navigator.clipboard.writeText(decodeOutput.value);
+    (this as HTMLButtonElement).textContent = '已复制!';
+    setTimeout(() => { (this as HTMLButtonElement).textContent = '复制'; }, 1500);
+  });
+
+  document.getElementById('queryInput')?.addEventListener('input', function() {
+    const value = (this as HTMLInputElement).value;
+    const resultEl = document.getElementById('queryResult');
+    
+    if (!value) {
+      resultEl.innerHTML = '<span class="placeholder">等待输入...</span>';
+      return;
+    }
+    
+    try {
+      let queryString = value;
+      if (value.includes('?')) {
+        queryString = value.split('?')[1];
+      }
+      
+      const params = new URLSearchParams(queryString);
+      let html = '<table class="query-table">';
+      html += '<tr><th>参数</th><th>值</th></tr>';
+      
+      for (const [key, val] of params) {
+        html += `<tr><td>${escapeHtml(key)}</td><td>${escapeHtml(val)}</td></tr>`;
+      }
+      
+      html += '</table>';
+      resultEl.innerHTML = html;
+    } catch {
+      resultEl.innerHTML = '<span class="error">解析失败</span>';
+    }
+  });
+
+  function escapeHtml(text: string): string {
+    const div = document.createElement('div');
+    div.textContent = text;
+    return div.innerHTML;
+  }
+</script>
+
+<style>
+  .url-tool {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .url-tool {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+  }
+  
+  textarea, input {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  
+  textarea:focus, input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    align-self: flex-start;
+  }
+  
+  .btn-primary {
+    background: var(--accent-blue);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #2563eb;
+  }
+  
+  .btn-secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+  
+  .btn-secondary:hover {
+    background: #475569;
+  }
+  
+  .query-result {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    min-height: 60px;
+  }
+  
+  .query-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .query-table th,
+  .query-table td {
+    padding: 0.5rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+  }
+  
+  .query-table th {
+    color: var(--accent-cyan);
+    font-weight: 600;
+  }
+  
+  .placeholder {
+    color: var(--text-muted);
+  }
+  
+  .error {
+    color: #ef4444;
+  }
+</style>

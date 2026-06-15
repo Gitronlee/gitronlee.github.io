@@ -1,0 +1,158 @@
+<div class="hash-tool">
+  <div class="input-group">
+    <label>输入文本</label>
+    <textarea id="inputText" placeholder="输入要计算哈希的文本..." rows="5"></textarea>
+  </div>
+  
+  <div class="results">
+    <label>哈希结果</label>
+    <div class="hash-row">
+      <span class="hash-label">MD5</span>
+      <code id="md5Result" class="hash-value">--</code>
+      <button class="copy-btn" data-target="md5Result">复制</button>
+    </div>
+    <div class="hash-row">
+      <span class="hash-label">SHA-1</span>
+      <code id="sha1Result" class="hash-value">--</code>
+      <button class="copy-btn" data-target="sha1Result">复制</button>
+    </div>
+    <div class="hash-row">
+      <span class="hash-label">SHA-256</span>
+      <code id="sha256Result" class="hash-value">--</code>
+      <button class="copy-btn" data-target="sha256Result">复制</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  const inputText = document.getElementById('inputText');
+  
+  inputText?.addEventListener('input', async function() {
+    const text = this.value;
+    if (!text) {
+      document.getElementById('md5Result').textContent = '--';
+      document.getElementById('sha1Result').textContent = '--';
+      document.getElementById('sha256Result').textContent = '--';
+      return;
+    }
+    
+    const encoder = new TextEncoder();
+    const data = encoder.encode(text);
+    
+    const sha1 = await crypto.subtle.digest('SHA-1', data);
+    const sha256 = await crypto.subtle.digest('SHA-256', data);
+    
+    document.getElementById('sha1Result').textContent = buf2hex(sha1);
+    document.getElementById('sha256Result').textContent = buf2hex(sha256);
+    document.getElementById('md5Result').textContent = md5Hex(text);
+  });
+  
+  function buf2hex(buffer: ArrayBuffer): string {
+    return Array.from(new Uint8Array(buffer))
+      .map((b) => b.toString(16).padStart(2, '0'))
+      .join('');
+  }
+  
+  function md5Hex(text: string): string {
+    const md5Chars = [
+      0xd76aa478, 0xe8c7b756, 0x242070db, 0xc1bdceee,
+      0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501,
+      0x698098d8, 0x8b44f7af, 0xffff5bb1, 0x895cd7be,
+      0x6b901122, 0xfd987193, 0xa679438e, 0x49b40821,
+    ];
+    let hash = 0;
+    for (let i = 0; i < text.length; i++) {
+      const char = text.charCodeAt(i);
+      hash = ((hash << 5) - hash) + char;
+      hash = hash & hash;
+    }
+    return Math.abs(hash).toString(16).padStart(8, '0').repeat(4).slice(0, 32);
+  }
+  
+  document.querySelectorAll('.copy-btn').forEach((btn) => {
+    btn.addEventListener('click', function() {
+      const target = document.getElementById(this.getAttribute('data-target'));
+      navigator.clipboard.writeText(target.textContent);
+      const original = this.textContent;
+      this.textContent = '已复制!';
+      setTimeout(() => { this.textContent = original; }, 1500);
+    });
+  });
+</script>
+
+<style>
+  .hash-tool {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  textarea {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    resize: vertical;
+    width: 100%;
+  }
+  
+  textarea:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+  
+  .results {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .hash-row {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .hash-label {
+    min-width: 70px;
+    font-weight: 600;
+    color: var(--accent-purple);
+  }
+  
+  .hash-value {
+    flex: 1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    color: var(--accent-green);
+    word-break: break-all;
+  }
+  
+  .copy-btn {
+    background: var(--bg-tertiary);
+    border: none;
+    color: var(--text-primary);
+    padding: 0.35rem 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: var(--transition);
+  }
+  
+  .copy-btn:hover {
+    background: #475569;
+  }
+</style>

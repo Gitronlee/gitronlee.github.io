@@ -1,0 +1,51 @@
+[
+  {
+    "slug": "regex",
+    "name": "正则表达式测试器",
+    "description": "测试和调试正则表达式，支持实时匹配高亮",
+    "category": "开发者工具",
+    "icon": "🔍"
+  },
+  {
+    "slug": "time",
+    "name": "时间戳转换",
+    "description": "Unix时间戳与日期格式互转，支持多时区",
+    "category": "开发者工具",
+    "icon": "⏰"
+  },
+  {
+    "slug": "base64",
+    "name": "Base64 编解码",
+    "description": "字符串与 Base64 格式互相转换",
+    "category": "编码转换",
+    "icon": "🔐"
+  },
+  {
+    "slug": "json",
+    "name": "JSON 格式化",
+    "description": "JSON 字符串格式化、压缩和校验",
+    "category": "开发者工具",
+    "icon": "📋"
+  },
+  {
+    "slug": "url",
+    "name": "URL 编解码",
+    "description": "URL 编码和解码，支持 Query 参数解析",
+    "category": "编码转换",
+    "icon": "🔗"
+  },
+  {
+    "slug": "hash",
+    "name": "哈希计算",
+    "description": "计算 MD5、SHA-1、SHA-256 等哈希值",
+    "category": "安全工具",
+    "icon": "🔑"
+  },
+  {
+    "slug": "color",
+    "name": "颜色转换器",
+    "description": "HEX、RGB、HSL 颜色格式互转",
+    "category": "设计工具",
+    "icon": "🎨"
+  }
+]

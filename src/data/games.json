@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "snake",
+    "name": "贪吃蛇",
+    "description": "经典贪吃蛇游戏，键盘控制方向",
+    "category": "经典",
+    "icon": "🐍",
+    "status": "coming-soon"
+  },
+  {
+    "slug": "2048",
+    "name": "2048",
+    "description": "滑动合并数字，达到 2048",
+    "category": "益智",
+    "icon": "🔢",
+    "status": "coming-soon"
+  },
+  {
+    "slug": "memory",
+    "name": "记忆翻牌",
+    "description": "翻牌匹配，考验记忆力",
+    "category": "益智",
+    "icon": "🃏",
+    "status": "coming-soon"
+  }
+]

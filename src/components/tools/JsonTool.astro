@@ -1,0 +1,158 @@
+<div class="json-tool">
+  <div class="input-section">
+    <label>JSON 输入</label>
+    <textarea id="jsonInput" placeholder='粘贴 JSON 字符串...' rows="12"></textarea>
+    <div class="btn-group">
+      <button id="formatBtn" class="btn btn-primary">格式化</button>
+      <button id="minifyBtn" class="btn btn-secondary">压缩</button>
+      <button id="clearBtn" class="btn btn-secondary">清空</button>
+    </div>
+  </div>
+  
+  <div class="output-section">
+    <label>结果</label>
+    <pre id="jsonOutput" class="output"><span class="placeholder">等待输入...</span></pre>
+    <button id="copyBtn" class="btn btn-secondary">复制结果</button>
+  </div>
+</div>
+
+<script>
+  const jsonInput = document.getElementById('jsonInput');
+  const jsonOutput = document.getElementById('jsonOutput');
+
+  function formatJson() {
+    try {
+      const parsed = JSON.parse(jsonInput.value);
+      jsonOutput.innerHTML = syntaxHighlight(JSON.stringify(parsed, null, 2));
+    } catch (e) {
+      jsonOutput.innerHTML = `<span class="error">JSON 错误: ${(e as Error).message}</span>`;
+    }
+  }
+
+  function minifyJson() {
+    try {
+      const parsed = JSON.parse(jsonInput.value);
+      jsonOutput.textContent = JSON.stringify(parsed);
+    } catch (e) {
+      jsonOutput.innerHTML = `<span class="error">JSON 错误: ${(e as Error).message}</span>`;
+    }
+  }
+
+  function syntaxHighlight(json: string): string {
+    return json.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false|null)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, (match) => {
+      let cls = 'number';
+      if (/^"/.test(match)) {
+        cls = /:$/.test(match) ? 'key' : 'string';
+      } else if (/true|false/.test(match)) {
+        cls = 'boolean';
+      } else if (/null/.test(match)) {
+        cls = 'null';
+      }
+      return `<span class="${cls}">${match}</span>`;
+    });
+  }
+
+  document.getElementById('formatBtn')?.addEventListener('click', formatJson);
+  document.getElementById('minifyBtn')?.addEventListener('click', minifyJson);
+  document.getElementById('clearBtn')?.addEventListener('click', () => {
+    jsonInput.value = '';
+    jsonOutput.innerHTML = '<span class="placeholder">等待输入...</span>';
+  });
+
+  document.getElementById('copyBtn')?.addEventListener('click', () => {
+    navigator.clipboard.writeText(jsonOutput.textContent || '');
+  });
+
+  jsonInput?.addEventListener('input', formatJson);
+</script>
+
+<style>
+  .json-tool {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  textarea {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    resize: vertical;
+    width: 100%;
+  }
+  
+  textarea:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+  }
+  
+  .btn-primary {
+    background: var(--accent-blue);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #2563eb;
+  }
+  
+  .btn-secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+  
+  .btn-secondary:hover {
+    background: #475569;
+  }
+  
+  .output {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: auto;
+    max-height: 400px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+  }
+  
+  .placeholder {
+    color: var(--text-muted);
+  }
+  
+  .error {
+    color: #ef4444;
+  }
+  
+  .string { color: #22c55e; }
+  .number { color: #f59e0b; }
+  .boolean { color: #3b82f6; }
+  .null { color: #8b5cf6; }
+  .key { color: #06b6d4; }
+</style>

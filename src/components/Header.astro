@@ -1,0 +1,175 @@
+---
+const path = Astro.url.pathname;
+const navItems = [
+  { label: '首页', href: '/' },
+  { label: '工具', href: '/tools' },
+  { label: '游戏', href: '/games' },
+  { label: '文档', href: '/docs' },
+];
+---
+
+<header class="header">
+  <div class="container header-inner">
+    <a href="/" class="logo">
+      <span class="logo-icon">🧰</span>
+      <span class="logo-text">Web Toolbox</span>
+    </a>
+    
+    <nav class="nav-desktop">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class:list={['nav-link', { active: path.startsWith(item.href) && (item.href === '/' ? path === '/' : true) }]}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+    
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  
+  <nav class="nav-mobile" id="navMobile">
+    {navItems.map((item) => (
+      <a
+        href={item.href}
+        class:list={['nav-link', { active: path.startsWith(item.href) && (item.href === '/' ? path === '/' : true) }]}
+      >
+        {item.label}
+      </a>
+    ))}
+  </nav>
+</header>
+
+<script>
+  const menuToggle = document.getElementById('menuToggle');
+  const navMobile = document.getElementById('navMobile');
+  
+  menuToggle?.addEventListener('click', () => {
+    navMobile?.classList.toggle('open');
+    menuToggle.classList.toggle('open');
+  });
+</script>
+
+<style>
+  .header {
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  
+  .logo-icon {
+    font-size: 1.5rem;
+  }
+  
+  .nav-desktop {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--accent-blue);
+    transition: width 0.2s;
+  }
+  
+  .nav-link:hover,
+  .nav-link.active {
+    color: var(--text-primary);
+  }
+  
+  .nav-link.active::after {
+    width: 100%;
+  }
+  
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    transition: var(--transition);
+  }
+  
+  .nav-mobile {
+    display: none;
+    flex-direction: column;
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border-color);
+    padding: 1rem 0;
+  }
+  
+  .nav-mobile.open {
+    display: flex;
+  }
+  
+  .nav-mobile .nav-link {
+    padding: 0.75rem 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-desktop {
+      display: none;
+    }
+    
+    .menu-toggle {
+      display: flex;
+    }
+    
+    .menu-toggle.open span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .menu-toggle.open span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .menu-toggle.open span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+</style>

@@ -1,0 +1,133 @@
+<div class="base64-tool">
+  <div class="panel">
+    <label>原始文本</label>
+    <textarea id="inputText" placeholder="输入要编码的文本..." rows="8"></textarea>
+    <button id="encodeBtn" class="btn btn-primary">编码 →</button>
+  </div>
+  
+  <div class="panel">
+    <label>Base64 结果</label>
+    <textarea id="outputText" placeholder="Base64 编码结果..." rows="8" readonly></textarea>
+    <button id="copyOutput" class="btn btn-secondary">复制结果</button>
+  </div>
+  
+  <div class="panel">
+    <label>Base64 输入</label>
+    <textarea id="decodeInput" placeholder="输入要解码的 Base64 字符串..." rows="8"></textarea>
+    <button id="decodeBtn" class="btn btn-primary">← 解码</button>
+  </div>
+  
+  <div class="panel">
+    <label>解码结果</label>
+    <textarea id="decodeOutput" placeholder="解码结果..." rows="8" readonly></textarea>
+    <button id="copyDecode" class="btn btn-secondary">复制结果</button>
+  </div>
+</div>
+
+<script>
+  const inputText = document.getElementById('inputText');
+  const outputText = document.getElementById('outputText');
+  const decodeInput = document.getElementById('decodeInput');
+  const decodeOutput = document.getElementById('decodeOutput');
+
+  document.getElementById('encodeBtn')?.addEventListener('click', () => {
+    try {
+      outputText.value = btoa(unescape(encodeURIComponent(inputText.value)));
+    } catch (e) {
+      outputText.value = '编码失败: ' + (e as Error).message;
+    }
+  });
+
+  document.getElementById('decodeBtn')?.addEventListener('click', () => {
+    try {
+      decodeOutput.value = decodeURIComponent(escape(atob(decodeInput.value.trim())));
+    } catch (e) {
+      decodeOutput.value = '解码失败: Base64 格式无效';
+    }
+  });
+
+  function copyToClipboard(textarea: HTMLTextAreaElement, btn: HTMLButtonElement) {
+    navigator.clipboard.writeText(textarea.value).then(() => {
+      const original = btn.textContent;
+      btn.textContent = '已复制!';
+      setTimeout(() => { btn.textContent = original; }, 1500);
+    });
+  }
+
+  document.getElementById('copyOutput')?.addEventListener('click', function() {
+    copyToClipboard(outputText, this as HTMLButtonElement);
+  });
+
+  document.getElementById('copyDecode')?.addEventListener('click', function() {
+    copyToClipboard(decodeOutput, this as HTMLButtonElement);
+  });
+</script>
+
+<style>
+  .base64-tool {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .base64-tool {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  label {
+    font-weight: 500;
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+  }
+  
+  textarea {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    resize: vertical;
+  }
+  
+  textarea:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+  
+  .btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: var(--transition);
+    align-self: flex-start;
+  }
+  
+  .btn-primary {
+    background: var(--accent-blue);
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background: #2563eb;
+  }
+  
+  .btn-secondary {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+  }
+  
+  .btn-secondary:hover {
+    background: #475569;
+  }
+</style>

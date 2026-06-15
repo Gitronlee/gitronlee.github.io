@@ -1,0 +1,42 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import CardGrid from '../../components/CardGrid.astro';
+import tools from '../../data/tools.json';
+
+const items = tools.map((tool) => ({
+  ...tool,
+  href: `/tools/${tool.slug}`,
+}));
+---
+
+<BaseLayout title="工具箱" description="各种实用开发者工具集合">
+  <Header />
+  
+  <main class="container page-main">
+    <h1 class="page-title">工具箱</h1>
+    <p class="page-desc">实用的开发者工具，帮助你提高日常工作效率</p>
+    <CardGrid items={items} />
+  </main>
+  
+  <Footer />
+</BaseLayout>
+
+<style>
+  .page-main {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  
+  .page-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-desc {
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+  }
+</style>

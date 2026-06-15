@@ -1,0 +1,44 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import ToolLayout from '../../components/ToolLayout.astro';
+import tools from '../../data/tools.json';
+
+export function getStaticPaths() {
+  return tools.map((tool) => ({
+    params: { slug: tool.slug },
+    props: tool,
+  }));
+}
+
+const toolMap: Record<string, any> = {
+  'regex': (await import('../../components/tools/RegexTool.astro')).default,
+  'time': (await import('../../components/tools/TimeTool.astro')).default,
+  'base64': (await import('../../components/tools/Base64Tool.astro')).default,
+  'json': (await import('../../components/tools/JsonTool.astro')).default,
+  'url': (await import('../../components/tools/UrlTool.astro')).default,
+  'hash': (await import('../../components/tools/HashTool.astro')).default,
+  'color': (await import('../../components/tools/ColorTool.astro')).default,
+};
+
+const { slug } = Astro.params;
+const tool = Astro.props;
+const ToolComponent = toolMap[slug!];
+
+if (!tool || !ToolComponent) {
+  return Astro.redirect('/404');
+}
+---
+
+<BaseLayout title={tool.name} description={tool.description}>
+  <Header />
+  
+  <main>
+    <ToolLayout title={tool.name} description={tool.description} icon={tool.icon}>
+      <ToolComponent />
+    </ToolLayout>
+  </main>
+  
+  <Footer />
+</BaseLayout>
