@@ -1,0 +1,256 @@
+<div class="salary-calc" id="salaryRoot">
+  <div class="calc-inputs">
+    <div class="input-group">
+      <label>税前月薪 (元)</label>
+      <input type="number" id="grossSalary" placeholder="输入税前月薪" value="15000" />
+    </div>
+    <div class="input-group">
+      <label>社保公积金城市</label>
+      <select id="citySelect"></select>
+    </div>
+    <div class="input-group">
+      <label>公积金比例</label>
+      <select id="fundRate">
+        <option value="5">5%</option>
+        <option value="7" selected>7%</option>
+        <option value="8">8%</option>
+        <option value="10">10%</option>
+        <option value="12">12%</option>
+      </select>
+    </div>
+    <div class="input-group">
+      <label>专项附加扣除 (元/月)</label>
+      <input type="number" id="deductions" placeholder="租房、赡养老人等" value="3000" />
+    </div>
+  </div>
+
+  <div class="calc-result" id="calcResult">
+    <div class="result-main">
+      <div class="result-item highlight">
+        <span class="result-label">税后到手</span>
+        <span class="result-value accent" id="netPay">--</span>
+      </div>
+    </div>
+
+    <div class="result-breakdown">
+      <div class="breakdown-item">
+        <span>社保个人缴纳</span>
+        <span class="val" id="siAmount">--</span>
+      </div>
+      <div class="breakdown-item">
+        <span>公积金个人缴纳</span>
+        <span class="val" id="hfAmount">--</span>
+      </div>
+      <div class="breakdown-item">
+        <span>应纳税所得额</span>
+        <span class="val" id="taxableIncome">--</span>
+      </div>
+      <div class="breakdown-item">
+        <span>个人所得税</span>
+        <span class="val" id="taxAmount">--</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="calc-note">
+    计算基于现行个税累进税率，社保比例按个人缴费标准（养老8% + 医疗2% + 失业0.5%），公积金按所选比例。
+    社保基数上限因城市而异，超出部分不缴纳社保公积金。
+  </div>
+</div>
+
+<script>
+  interface CityConfig {
+    label: string;
+    siCap: number;   // 社保基数上限
+    hfCap: number;   // 公积金基数上限
+  }
+
+  const cities: CityConfig[] = [
+    { label: '北京 (上限 35283)', siCap: 35283, hfCap: 35283 },
+    { label: '上海 (上限 36549)', siCap: 36549, hfCap: 36549 },
+    { label: '广州 (上限 29979)', siCap: 29979, hfCap: 39579 },
+    { label: '深圳 (上限 41190)', siCap: 41190, hfCap: 41190 },
+    { label: '杭州 (上限 24060)', siCap: 24060, hfCap: 24060 },
+    { label: '成都 (上限 22555)', siCap: 22555, hfCap: 22555 },
+    { label: '武汉 (上限 21120)', siCap: 21120, hfCap: 21120 },
+    { label: '南京 (上限 24396)', siCap: 24396, hfCap: 24396 },
+    { label: '不限上限', siCap: Infinity, hfCap: Infinity },
+  ];
+
+  const citySelect = document.getElementById('citySelect') as HTMLSelectElement;
+  citySelect.innerHTML = cities.map((c, i) =>
+    `<option value="${i}" ${i === 0 ? 'selected' : ''}>${c.label}</option>`
+  ).join('');
+
+  const grossInput = document.getElementById('grossSalary') as HTMLInputElement;
+  const fundSelect = document.getElementById('fundRate') as HTMLSelectElement;
+  const dedInput = document.getElementById('deductions') as HTMLInputElement;
+
+  const netPayEl = document.getElementById('netPay')!;
+  const siAmtEl = document.getElementById('siAmount')!;
+  const hfAmtEl = document.getElementById('hfAmount')!;
+  const taxableEl = document.getElementById('taxableIncome')!;
+  const taxEl = document.getElementById('taxAmount')!;
+
+  // Tax brackets: [upper_bound, rate, quick_deduction]
+  const brackets: [number, number, number][] = [
+    [36000, 0.03, 0],
+    [144000, 0.10, 2520],
+    [300000, 0.20, 16920],
+    [420000, 0.25, 31920],
+    [660000, 0.30, 52920],
+    [960000, 0.35, 85920],
+    [Infinity, 0.45, 181920],
+  ];
+
+  function calcAnnualTax(annualTaxable: number): number {
+    if (annualTaxable <= 0) return 0;
+    for (const [upper, rate, quick] of brackets) {
+      if (annualTaxable <= upper) {
+        return annualTaxable * rate - quick;
+      }
+    }
+    return 0;
+  }
+
+  function recalc() {
+    const gross = parseFloat(grossInput.value) || 0;
+    const city = cities[parseInt(citySelect.value) || 0];
+    const fundPct = parseFloat(fundSelect.value) / 100;
+    const ded = parseFloat(dedInput.value) || 0;
+
+    const siBase = Math.min(gross, city.siCap);
+    const hfBase = Math.min(gross, city.hfCap);
+
+    const siAmount = Math.round(siBase * 0.105);  // 10.5%
+    const hfAmount = Math.round(hfBase * fundPct);
+
+    const monthlyTaxable = gross - siAmount - hfAmount - 5000 - ded;
+    const annualTax = calcAnnualTax(monthlyTaxable * 12);
+    const monthlyTax = Math.round(annualTax / 12);
+
+    const net = gross - siAmount - hfAmount - monthlyTax;
+
+    netPayEl.textContent = net.toLocaleString() + ' 元';
+    siAmtEl.textContent = siAmount.toLocaleString() + ' 元';
+    hfAmtEl.textContent = hfAmount.toLocaleString() + ' 元';
+    taxableEl.textContent = (monthlyTaxable > 0 ? monthlyTaxable.toLocaleString() : '0') + ' 元';
+    taxEl.textContent = monthlyTax.toLocaleString() + ' 元';
+  }
+
+  grossInput.addEventListener('input', recalc);
+  citySelect.addEventListener('change', recalc);
+  fundSelect.addEventListener('change', recalc);
+  dedInput.addEventListener('input', recalc);
+
+  recalc();
+</script>
+
+<style>
+  .salary-calc {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .calc-inputs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .input-group label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .input-group input,
+  .input-group select {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.65rem 0.75rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9375rem;
+  }
+
+  .input-group input:focus,
+  .input-group select:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+
+  .calc-result {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .result-main {
+    background: var(--bg-primary);
+    border: 1px solid var(--accent-green);
+    border-radius: 10px;
+    padding: 1.25rem;
+    text-align: center;
+  }
+
+  .result-item.highlight {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+
+  .result-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .result-value.accent {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--accent-green);
+  }
+
+  .result-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .breakdown-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .breakdown-item .val {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .calc-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    line-height: 1.6;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+  }
+</style>

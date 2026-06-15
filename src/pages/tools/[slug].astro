@@ -21,6 +21,7 @@ const toolMap: Record<string, any> = {
   'hash': (await import('../../components/tools/HashTool.astro')).default,
   'color': (await import('../../components/tools/ColorTool.astro')).default,
   'pomodoro': (await import('../../components/tools/PomodoroTimer.astro')).default,
+  'salary': (await import('../../components/tools/SalaryCalculator.astro')).default,
 };
 
 const { slug } = Astro.params;
