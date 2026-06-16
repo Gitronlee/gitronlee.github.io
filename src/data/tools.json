@@ -61,5 +61,12 @@
     "description": "计算五险一金及个税扣除后的到手工资，支持多城市社保基数",
     "category": "效率工具",
     "icon": "💰"
+  },
+  {
+    "slug": "image-slicer",
+    "name": "图片网格切片",
+    "description": "按行列网格切割图片，支持预览网格线、单张下载和一键打包ZIP",
+    "category": "设计工具",
+    "icon": "✂️"
   }
 ]

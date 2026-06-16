@@ -1,0 +1,413 @@
+<div class="image-slicer" id="slicerRoot">
+  <div class="slicer-controls">
+    <div class="ctrl-group">
+      <label class="upload-btn">
+        选择图片
+        <input type="file" id="fileInput" accept="image/jpeg,image/png,image/webp" hidden />
+      </label>
+    </div>
+    <div class="ctrl-group">
+      <label>列数</label>
+      <input type="number" id="colsInput" value="3" min="1" max="20" />
+    </div>
+    <div class="ctrl-group">
+      <label>行数</label>
+      <input type="number" id="rowsInput" value="2" min="1" max="20" />
+    </div>
+    <button class="btn-slice" id="btnSlice" disabled>执行切片</button>
+    <button class="btn-download-all" id="btnDownloadAll" disabled>下载全部</button>
+  </div>
+
+  <div class="slicer-preview" id="previewArea" style="display:none">
+    <div class="preview-container" id="previewContainer">
+      <img id="previewImg" alt="预览" />
+      <canvas id="gridCanvas"></canvas>
+    </div>
+  </div>
+
+  <div class="slicer-output" id="outputArea" style="display:none">
+    <div class="output-header">切片结果</div>
+    <div class="output-grid" id="outputGrid"></div>
+  </div>
+</div>
+
+<script>
+  function loadScript(src: string): Promise<void> {
+    return new Promise((resolve, reject) => {
+      const s = document.createElement('script');
+      s.src = src;
+      s.onload = () => resolve();
+      s.onerror = () => reject(new Error(`failed to load ${src}`));
+      document.head.appendChild(s);
+    });
+  }
+
+  async function ensureDeps() {
+    if (!(window as any).JSZip) {
+      await loadScript('https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js');
+    }
+    if (!(window as any).saveAs) {
+      await loadScript('https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js');
+    }
+  }
+
+  const fileInput = document.getElementById('fileInput') as HTMLInputElement;
+  const colsInput = document.getElementById('colsInput') as HTMLInputElement;
+  const rowsInput = document.getElementById('rowsInput') as HTMLInputElement;
+  const btnSlice = document.getElementById('btnSlice') as HTMLButtonElement;
+  const btnDownloadAll = document.getElementById('btnDownloadAll') as HTMLButtonElement;
+  const previewArea = document.getElementById('previewArea')!;
+  const previewImg = document.getElementById('previewImg') as HTMLImageElement;
+  const gridCanvas = document.getElementById('gridCanvas') as HTMLCanvasElement;
+  const previewContainer = document.getElementById('previewContainer')!;
+  const outputArea = document.getElementById('outputArea')!;
+  const outputGrid = document.getElementById('outputGrid')!;
+
+  let originalImage: HTMLImageElement | null = null;
+  let slices: Array<{ blob: Blob; row: number; col: number }> = [];
+
+  function normalizeInputs() {
+    let cols = parseInt(colsInput.value) || 1;
+    let rows = parseInt(rowsInput.value) || 1;
+    if (cols < 1) cols = 1;
+    if (cols > 20) cols = 20;
+    if (rows < 1) rows = 1;
+    if (rows > 20) rows = 20;
+    colsInput.value = String(cols);
+    rowsInput.value = String(rows);
+    return { cols, rows };
+  }
+
+  function drawGrid() {
+    if (!originalImage || !previewImg.complete) return;
+    const imgRect = previewImg.getBoundingClientRect();
+    const containerRect = previewContainer.getBoundingClientRect();
+
+    const offsetX = imgRect.left - containerRect.left;
+    const offsetY = imgRect.top - containerRect.top;
+    const w = imgRect.width;
+    const h = imgRect.height;
+
+    gridCanvas.style.left = offsetX + 'px';
+    gridCanvas.style.top = offsetY + 'px';
+    gridCanvas.width = w;
+    gridCanvas.height = h;
+
+    const ctx = gridCanvas.getContext('2d')!;
+    ctx.clearRect(0, 0, w, h);
+
+    const { cols, rows } = normalizeInputs();
+    const cellW = w / cols;
+    const cellH = h / rows;
+
+    ctx.strokeStyle = '#ef4444';
+    ctx.lineWidth = 2;
+    ctx.setLineDash([6, 4]);
+
+    for (let i = 1; i < cols; i++) {
+      const x = i * cellW;
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, h);
+      ctx.stroke();
+    }
+    for (let i = 1; i < rows; i++) {
+      const y = i * cellH;
+      ctx.beginPath();
+      ctx.moveTo(0, y);
+      ctx.lineTo(w, y);
+      ctx.stroke();
+    }
+  }
+
+  fileInput.addEventListener('change', () => {
+    const file = fileInput.files?.[0];
+    if (!file) return;
+
+    if (!file.type.startsWith('image/')) {
+      alert('请上传图片文件（jpg / png / webp）');
+      fileInput.value = '';
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = (e) => {
+      previewImg.src = e.target?.result as string;
+      previewImg.onload = () => {
+        originalImage = previewImg;
+        previewArea.style.display = '';
+        outputArea.style.display = 'none';
+        slices = [];
+        btnSlice.disabled = false;
+        btnDownloadAll.disabled = true;
+
+        requestAnimationFrame(() => {
+          requestAnimationFrame(drawGrid);
+        });
+      };
+    };
+    reader.readAsDataURL(file);
+  });
+
+  colsInput.addEventListener('input', drawGrid);
+  rowsInput.addEventListener('input', drawGrid);
+  window.addEventListener('resize', drawGrid);
+
+  btnSlice.addEventListener('click', () => {
+    if (!originalImage) return;
+
+    const { cols, rows } = normalizeInputs();
+    const imgW = originalImage.naturalWidth;
+    const imgH = originalImage.naturalHeight;
+    const cellW = imgW / cols;
+    const cellH = imgH / rows;
+
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d')!;
+
+    slices = [];
+    outputGrid.innerHTML = '';
+
+    for (let r = 0; r < rows; r++) {
+      for (let c = 0; c < cols; c++) {
+        const sx = c * cellW;
+        const sy = r * cellH;
+
+        canvas.width = cellW;
+        canvas.height = cellH;
+        ctx.drawImage(originalImage, sx, sy, cellW, cellH, 0, 0, cellW, cellH);
+
+        canvas.toBlob((blob) => {
+          if (!blob) return;
+          slices.push({ blob, row: r + 1, col: c + 1 });
+
+          const url = URL.createObjectURL(blob);
+          const card = document.createElement('div');
+          card.className = 'slice-card';
+          card.innerHTML = `
+            <img src="${url}" alt="行${r + 1}-列${c + 1}" />
+            <span class="slice-label">行${r + 1}-列${c + 1}</span>
+            <button class="btn-dl-one" data-url="${url}" data-row="${r + 1}" data-col="${c + 1}">下载</button>
+          `;
+          card.querySelector('.btn-dl-one')!.addEventListener('click', async (e) => {
+            e.stopPropagation();
+            await ensureDeps();
+            (window as any).saveAs(blob, `piece_r${r + 1}_c${c + 1}.png`);
+          });
+          outputGrid.appendChild(card);
+
+          if (slices.length === rows * cols) {
+            btnDownloadAll.disabled = false;
+          }
+        }, 'image/png');
+      }
+    }
+
+    outputArea.style.display = '';
+  });
+
+  btnDownloadAll.addEventListener('click', async () => {
+    if (slices.length === 0) return;
+    await ensureDeps();
+
+    const JSZip = (window as any).JSZip;
+    const zip = new JSZip();
+    slices.forEach(({ blob, row, col }) => {
+      zip.file(`piece_r${row}_c${col}.png`, blob);
+    });
+
+    const zipBlob = await zip.generateAsync({ type: 'blob' });
+    (window as any).saveAs(zipBlob, 'image_slices.zip');
+  });
+</script>
+
+<style>
+  .image-slicer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .slicer-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.75rem;
+  }
+
+  .ctrl-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .ctrl-group label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  .ctrl-group input[type="number"] {
+    width: 70px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+
+  .ctrl-group input:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+
+  .upload-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.55rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--accent-blue);
+    color: #000;
+    border: none;
+    transition: var(--transition);
+  }
+
+  .upload-btn:hover {
+    opacity: 0.9;
+  }
+
+  .btn-slice {
+    padding: 0.55rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--accent-purple);
+    color: #fff;
+    border: none;
+    transition: var(--transition);
+  }
+
+  .btn-slice:hover:not(:disabled) {
+    opacity: 0.9;
+  }
+
+  .btn-slice:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .btn-download-all {
+    padding: 0.55rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    background: var(--accent-green);
+    color: #000;
+    border: none;
+    transition: var(--transition);
+  }
+
+  .btn-download-all:hover:not(:disabled) {
+    background: #00e676;
+  }
+
+  .btn-download-all:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+  }
+
+  .slicer-preview {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+  }
+
+  .preview-container {
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+  }
+
+  .preview-container img {
+    max-width: 100%;
+    max-height: 500px;
+    display: block;
+    border-radius: 4px;
+  }
+
+  .preview-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+  }
+
+  .slicer-output {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .output-header {
+    font-weight: 600;
+    color: var(--text-primary);
+    font-size: 1rem;
+  }
+
+  .output-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .slice-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.5rem;
+  }
+
+  .slice-card img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+  }
+
+  .slice-label {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+  }
+
+  .btn-dl-one {
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    cursor: pointer;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .btn-dl-one:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+</style>
