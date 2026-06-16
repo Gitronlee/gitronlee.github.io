@@ -11,7 +11,13 @@ export function getStaticPaths() {
   }));
 }
 
+const gameMap: Record<string, any> = {
+  'memory': (await import('../../components/games/MemoryGame.astro')).default,
+};
+
+const { slug } = Astro.params;
 const game = Astro.props;
+const GameComponent = gameMap[slug!];
 
 if (!game) {
   return Astro.redirect('/404');
@@ -22,13 +28,19 @@ if (!game) {
   <Header />
   
   <main class="container page-main">
-    <div class="coming-soon">
+    <div class="game-header">
       <span class="game-icon">{game.icon}</span>
       <h1>{game.name}</h1>
-      <p>{game.description}</p>
-      <div class="badge">Coming Soon</div>
-      <a href="/games" class="back-link">← 返回游戏列表</a>
     </div>
+
+    {GameComponent ? (
+      <GameComponent />
+    ) : (
+      <div class="coming-soon">
+        <p>{game.description}</p>
+        <div class="badge">Coming Soon</div>
+      </div>
+    )}
   </main>
   
   <Footer />
@@ -36,10 +48,27 @@ if (!game) {
 
 <style>
   .page-main {
-    padding-top: 4rem;
+    padding-top: 2rem;
     padding-bottom: 4rem;
+    max-width: 1000px;
+  }
+  
+  .game-header {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .game-icon {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
   }
   
   .coming-soon {
@@ -48,15 +77,6 @@ if (!game) {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-  }
-  
-  .game-icon {
-    font-size: 4rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-    font-weight: 700;
   }
   
   p {
@@ -71,14 +91,5 @@ if (!game) {
     font-weight: 600;
     font-size: 0.875rem;
     margin-top: 1rem;
-  }
-  
-  .back-link {
-    margin-top: 1rem;
-    color: var(--accent-blue);
-  }
-  
-  .back-link:hover {
-    color: var(--accent-cyan);
   }
 </style>

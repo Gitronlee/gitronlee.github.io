@@ -1,0 +1,521 @@
+<div class="memory-game" id="memoryRoot">
+  <div class="memory-header">
+    <div class="memory-categories" id="categoryTabs"></div>
+    <div class="memory-settings">
+      <label>难度:</label>
+      <select id="gridSize">
+        <option value="4">4x4 (8对)</option>
+        <option value="6" selected>4x6 (12对)</option>
+        <option value="8">6x6 (18对)</option>
+      </select>
+      <button class="btn-new-game" id="btnNewGame">新游戏</button>
+    </div>
+  </div>
+
+  <div class="memory-stats">
+    <div class="mstat">
+      <span class="mstat-label">步数</span>
+      <span class="mstat-value" id="moveCount">0</span>
+    </div>
+    <div class="mstat">
+      <span class="mstat-label">匹配</span>
+      <span class="mstat-value" id="matchCount">0</span>
+    </div>
+    <div class="mstat">
+      <span class="mstat-label">用时</span>
+      <span class="mstat-value" id="timer">00:00</span>
+    </div>
+  </div>
+
+  <div class="memory-grid" id="memoryGrid"></div>
+
+  <div class="memory-win" id="winOverlay" style="display:none">
+    <div class="win-card">
+      <span class="win-icon">🎉</span>
+      <h2>恭喜完成!</h2>
+      <div class="win-stats">
+        <p>总步数: <strong id="winMoves">0</strong></p>
+        <p>总用时: <strong id="winTime">00:00</strong></p>
+        <p>匹配对数: <strong id="winPairs">0</strong></p>
+      </div>
+      <button class="btn-new-game" id="btnPlayAgain">再来一局</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  interface CardPair {
+    left: string;
+    right: string;
+  }
+
+  interface CardData {
+    id: number;
+    pairIndex: number;
+    side: 'left' | 'right';
+    content: string;
+    matched: boolean;
+    flipped: boolean;
+  }
+
+  interface Category {
+    id: string;
+    name: string;
+    icon: string;
+    pairs: CardPair[];
+  }
+
+  let categories: Category[] = [];
+  let currentCategory: Category | null = null;
+  let cards: CardData[] = [];
+  let flippedCards: CardData[] = [];
+  let moves = 0;
+  let matches = 0;
+  let totalPairs = 0;
+  let timerSeconds = 0;
+  let timerInterval: ReturnType<typeof setInterval> | null = null;
+  let isLocked = false;
+
+  const categoryTabs = document.getElementById('categoryTabs')!;
+  const memoryGrid = document.getElementById('memoryGrid')!;
+  const gridSizeEl = document.getElementById('gridSize') as HTMLSelectElement;
+  const winOverlay = document.getElementById('winOverlay')!;
+
+  async function loadCategories() {
+    const res = await fetch('/data/memory-cards.json');
+    const data = await res.json();
+    categories = data.categories;
+    renderCategoryTabs();
+    selectCategory(categories[0]);
+  }
+
+  function renderCategoryTabs() {
+    categoryTabs.innerHTML = categories.map(c =>
+      `<button class="cat-tab" data-cat="${c.id}">${c.icon} ${c.name}</button>`
+    ).join('');
+    categoryTabs.querySelectorAll('.cat-tab').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const id = (btn as HTMLElement).dataset.cat!;
+        const cat = categories.find(c => c.id === id);
+        if (cat) selectCategory(cat);
+      });
+    });
+  }
+
+  function selectCategory(cat: Category) {
+    currentCategory = cat;
+    categoryTabs.querySelectorAll('.cat-tab').forEach(b => {
+      b.classList.toggle('active', (b as HTMLElement).dataset.cat === cat.id);
+    });
+    startGame();
+  }
+
+  function shuffle<T>(arr: T[]): T[] {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function startGame() {
+    stopTimer();
+    const cols = parseInt(gridSizeEl.value);
+    const pairCount = cols === 8 ? 18 : cols === 6 ? 12 : 8;
+    const pairs = shuffle(currentCategory!.pairs).slice(0, pairCount);
+    totalPairs = pairCount;
+
+    cards = [];
+    let id = 0;
+    pairs.forEach((pair, i) => {
+      cards.push({ id: id++, pairIndex: i, side: 'left', content: pair.left, matched: false, flipped: false });
+      cards.push({ id: id++, pairIndex: i, side: 'right', content: pair.right, matched: false, flipped: false });
+    });
+    cards = shuffle(cards);
+
+    moves = 0;
+    matches = 0;
+    flippedCards = [];
+    isLocked = false;
+    timerSeconds = 0;
+
+    updateStats();
+    renderGrid();
+    winOverlay.style.display = 'none';
+  }
+
+  function renderGrid() {
+    const cols = parseInt(gridSizeEl.value);
+    const rows = Math.ceil(cards.length / cols);
+    memoryGrid.style.gridTemplateColumns = `repeat(${cols}, 1fr)`;
+
+    memoryGrid.innerHTML = cards.map((card, index) => {
+      let cls = 'memory-card';
+      if (card.flipped) cls += ' flipped';
+      if (card.matched) cls += ' matched';
+      return `
+        <div class="${cls}" data-index="${index}">
+          <div class="card-inner">
+            <div class="card-front">?</div>
+            <div class="card-back">
+              <span class="card-side-label">${card.side === 'left' ? 'A' : 'B'}</span>
+              <span class="card-content">${card.content}</span>
+            </div>
+          </div>
+        </div>`;
+    }).join('');
+
+    memoryGrid.querySelectorAll('.memory-card').forEach(el => {
+      el.addEventListener('click', () => {
+        const idx = parseInt((el as HTMLElement).dataset.index!);
+        flipCard(idx);
+      });
+    });
+  }
+
+  function flipCard(index: number) {
+    if (isLocked) return;
+    const card = cards[index];
+    if (card.flipped || card.matched) return;
+    if (flippedCards.length >= 2) return;
+
+    if (!timerInterval) startTimer();
+
+    card.flipped = true;
+    flippedCards.push(card);
+    updateCardEl(index);
+
+    if (flippedCards.length === 2) {
+      moves++;
+      updateStats();
+
+      if (flippedCards[0].pairIndex === flippedCards[1].pairIndex) {
+        flippedCards[0].matched = true;
+        flippedCards[1].matched = true;
+        matches++;
+        updateStats();
+        flippedCards = [];
+
+        if (matches === totalPairs) {
+          stopTimer();
+          setTimeout(() => showWin(), 600);
+        }
+      } else {
+        isLocked = true;
+        setTimeout(() => {
+          flippedCards[0].flipped = false;
+          flippedCards[1].flipped = false;
+          updateAllCards();
+          flippedCards = [];
+          isLocked = false;
+        }, 900);
+      }
+    }
+  }
+
+  function updateCardEl(index: number) {
+    const el = memoryGrid.children[index] as HTMLElement;
+    el.classList.toggle('flipped', cards[index].flipped);
+    el.classList.toggle('matched', cards[index].matched);
+  }
+
+  function updateAllCards() {
+    Array.from(memoryGrid.children).forEach((el, i) => {
+      el.classList.toggle('flipped', cards[i].flipped);
+      el.classList.toggle('matched', cards[i].matched);
+    });
+  }
+
+  function updateStats() {
+    document.getElementById('moveCount')!.textContent = String(moves);
+    document.getElementById('matchCount')!.textContent = `${matches}/${totalPairs}`;
+    document.getElementById('timer')!.textContent = formatTime(timerSeconds);
+  }
+
+  function startTimer() {
+    timerSeconds = 0;
+    timerInterval = setInterval(() => {
+      timerSeconds++;
+      document.getElementById('timer')!.textContent = formatTime(timerSeconds);
+    }, 1000);
+  }
+
+  function stopTimer() {
+    if (timerInterval) { clearInterval(timerInterval); timerInterval = null; }
+  }
+
+  function formatTime(s: number): string {
+    const m = Math.floor(s / 60);
+    const sec = s % 60;
+    return `${String(m).padStart(2, '0')}:${String(sec).padStart(2, '0')}`;
+  }
+
+  function showWin() {
+    document.getElementById('winMoves')!.textContent = String(moves);
+    document.getElementById('winTime')!.textContent = formatTime(timerSeconds);
+    document.getElementById('winPairs')!.textContent = String(totalPairs);
+    winOverlay.style.display = 'flex';
+  }
+
+  document.getElementById('btnNewGame')!.addEventListener('click', startGame);
+  document.getElementById('btnPlayAgain')!.addEventListener('click', startGame);
+  gridSizeEl.addEventListener('change', startGame);
+
+  loadCategories();
+</script>
+
+<style>
+  .memory-game {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+  }
+
+  .memory-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .memory-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .cat-tab {
+    padding: 0.4rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    background: var(--bg-tertiary);
+    color: var(--text-muted);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    font-family: inherit;
+  }
+
+  .cat-tab:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+
+  .cat-tab.active {
+    background: var(--accent-purple);
+    color: #fff;
+    border-color: var(--accent-purple);
+  }
+
+  .memory-settings {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+  }
+
+  .memory-settings select {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    color: var(--text-primary);
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 0.8125rem;
+  }
+
+  .memory-settings select:focus {
+    border-color: var(--accent-blue);
+    outline: none;
+  }
+
+  .btn-new-game {
+    padding: 0.4rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    background: var(--accent-green);
+    color: #000;
+    border: none;
+    font-weight: 600;
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .btn-new-game:hover {
+    background: #00e676;
+  }
+
+  .memory-stats {
+    display: flex;
+    gap: 1.5rem;
+    background: var(--bg-primary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    justify-content: center;
+  }
+
+  .mstat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.15rem;
+  }
+
+  .mstat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .mstat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+  }
+
+  .memory-grid {
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .memory-card {
+    perspective: 600px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .card-inner {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease;
+  }
+
+  .memory-card.flipped .card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-front,
+  .card-back {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-front {
+    background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .card-back {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.4rem;
+    text-align: center;
+  }
+
+  .memory-card.matched .card-back {
+    border-color: var(--accent-green);
+    background: color-mix(in srgb, var(--accent-green) 12%, var(--bg-secondary));
+  }
+
+  .card-side-label {
+    font-size: 0.6rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .card-content {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    line-height: 1.3;
+    word-break: break-word;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
+  .memory-card.matched {
+    pointer-events: none;
+  }
+
+  .memory-win {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+  }
+
+  .win-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent-green);
+    border-radius: 16px;
+    padding: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    max-width: 360px;
+    width: 90%;
+  }
+
+  .win-icon {
+    font-size: 3rem;
+  }
+
+  .win-card h2 {
+    font-size: 1.5rem;
+    color: var(--accent-green);
+  }
+
+  .win-stats {
+    color: var(--text-secondary);
+    font-size: 0.9375rem;
+    line-height: 1.8;
+  }
+
+  .win-stats strong {
+    color: var(--text-primary);
+  }
+
+  @media (max-width: 640px) {
+    .card-content {
+      font-size: 0.75rem;
+    }
+
+    .card-front {
+      font-size: 1.25rem;
+    }
+
+    .memory-grid {
+      gap: 0.4rem;
+    }
+  }
+</style>
