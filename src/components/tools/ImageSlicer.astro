@@ -15,14 +15,16 @@
       <input type="number" id="rowsInput" value="2" min="1" max="20" />
     </div>
     <button class="btn-slice" id="btnSlice" disabled>执行切片</button>
+    <button class="btn-reset-grid" id="btnResetGrid">重置网格</button>
     <button class="btn-download-all" id="btnDownloadAll" disabled>下载全部</button>
   </div>
 
   <div class="slicer-preview" id="previewArea" style="display:none">
     <div class="preview-container" id="previewContainer">
-      <img id="previewImg" alt="预览" />
+      <img id="previewImg" alt="预览" draggable="false" />
       <canvas id="gridCanvas"></canvas>
     </div>
+    <p class="drag-hint">拖拽网格线微调切片边界</p>
   </div>
 
   <div class="slicer-output" id="outputArea" style="display:none">
@@ -55,6 +57,7 @@
   const colsInput = document.getElementById('colsInput') as HTMLInputElement;
   const rowsInput = document.getElementById('rowsInput') as HTMLInputElement;
   const btnSlice = document.getElementById('btnSlice') as HTMLButtonElement;
+  const btnResetGrid = document.getElementById('btnResetGrid') as HTMLButtonElement;
   const btnDownloadAll = document.getElementById('btnDownloadAll') as HTMLButtonElement;
   const previewArea = document.getElementById('previewArea')!;
   const previewImg = document.getElementById('previewImg') as HTMLImageElement;
@@ -65,6 +68,16 @@
 
   let originalImage: HTMLImageElement | null = null;
   let slices: Array<{ blob: Blob; row: number; col: number }> = [];
+
+  // Grid line positions as fractions 0..1 (divider positions, excluding 0 and 1)
+  let colPositions: number[] = [];
+  let rowPositions: number[] = [];
+
+  // Drag state
+  type DragAxis = 'col' | 'row';
+  let dragging: { axis: DragAxis; index: number } | null = null;
+  const DRAG_THRESHOLD = 10; // px threshold to grab a line
+  const MIN_GAP = 0.03;      // minimum gap between adjacent lines (fraction)
 
   function normalizeInputs() {
     let cols = parseInt(colsInput.value) || 1;
@@ -78,47 +91,209 @@
     return { cols, rows };
   }
 
-  function drawGrid() {
-    if (!originalImage || !previewImg.complete) return;
+  // Recalculate positions from equal divisions
+  function resetPositions() {
+    const { cols, rows } = normalizeInputs();
+    colPositions = [];
+    for (let i = 1; i < cols; i++) {
+      colPositions.push(i / cols);
+    }
+    rowPositions = [];
+    for (let i = 1; i < rows; i++) {
+      rowPositions.push(i / rows);
+    }
+  }
+
+  // Get canvas dimensions and offset relative to image
+  function getCanvasLayout() {
     const imgRect = previewImg.getBoundingClientRect();
     const containerRect = previewContainer.getBoundingClientRect();
+    return {
+      offsetX: imgRect.left - containerRect.left,
+      offsetY: imgRect.top - containerRect.top,
+      w: imgRect.width,
+      h: imgRect.height,
+    };
+  }
 
-    const offsetX = imgRect.left - containerRect.left;
-    const offsetY = imgRect.top - containerRect.top;
-    const w = imgRect.width;
-    const h = imgRect.height;
+  function drawGrid() {
+    if (!originalImage || !previewImg.complete) return;
+
+    const { offsetX, offsetY, w, h } = getCanvasLayout();
 
     gridCanvas.style.left = offsetX + 'px';
     gridCanvas.style.top = offsetY + 'px';
-    gridCanvas.width = w;
-    gridCanvas.height = h;
+    gridCanvas.width = Math.max(1, w);
+    gridCanvas.height = Math.max(1, h);
 
     const ctx = gridCanvas.getContext('2d')!;
     ctx.clearRect(0, 0, w, h);
 
-    const { cols, rows } = normalizeInputs();
-    const cellW = w / cols;
-    const cellH = h / rows;
+    // Draw grid lines
+    ctx.strokeStyle = dragging ? '#f97316' : '#ef4444';
+    ctx.lineWidth = 2.5;
+    ctx.setLineDash([8, 5]);
 
-    ctx.strokeStyle = '#ef4444';
-    ctx.lineWidth = 2;
-    ctx.setLineDash([6, 4]);
-
-    for (let i = 1; i < cols; i++) {
-      const x = i * cellW;
+    for (const pos of colPositions) {
+      const x = pos * w;
       ctx.beginPath();
       ctx.moveTo(x, 0);
       ctx.lineTo(x, h);
       ctx.stroke();
     }
-    for (let i = 1; i < rows; i++) {
-      const y = i * cellH;
+    for (const pos of rowPositions) {
+      const y = pos * h;
       ctx.beginPath();
       ctx.moveTo(0, y);
       ctx.lineTo(w, y);
       ctx.stroke();
     }
+
+    // Draw drag handles (circles at midpoints of each line)
+    ctx.setLineDash([]);
+    const handleR = 6;
+    const midH = h / 2;
+    const midW = w / 2;
+
+    colPositions.forEach((pos, i) => {
+      const x = pos * w;
+      ctx.beginPath();
+      ctx.arc(x, midH, handleR, 0, Math.PI * 2);
+      ctx.fillStyle = dragging?.axis === 'col' && dragging.index === i ? '#f97316' : '#ef4444';
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    });
+
+    rowPositions.forEach((pos, i) => {
+      const y = pos * h;
+      ctx.beginPath();
+      ctx.arc(midW, y, handleR, 0, Math.PI * 2);
+      ctx.fillStyle = dragging?.axis === 'row' && dragging.index === i ? '#f97316' : '#ef4444';
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    });
   }
+
+  // Hit test: find nearest line within threshold
+  function findNearestLine(clientX: number, clientY: number): { axis: DragAxis; index: number } | null {
+    const rect = gridCanvas.getBoundingClientRect();
+    const mx = clientX - rect.left;
+    const my = clientY - rect.top;
+    const { w, h } = getCanvasLayout();
+
+    let best: { axis: DragAxis; index: number; dist: number } | null = null;
+
+    colPositions.forEach((pos, i) => {
+      const dist = Math.abs(mx - pos * w);
+      if (dist < DRAG_THRESHOLD && my >= 0 && my <= h) {
+        if (!best || dist < best.dist) best = { axis: 'col', index: i, dist };
+      }
+    });
+
+    rowPositions.forEach((pos, i) => {
+      const dist = Math.abs(my - pos * h);
+      if (dist < DRAG_THRESHOLD && mx >= 0 && mx <= w) {
+        if (!best || dist < best.dist) best = { axis: 'row', index: i, dist };
+      }
+    });
+
+    return best ? { axis: best.axis, index: best.index } : null;
+  }
+
+  // Clamp a line position between neighbors
+  function clampPosition(axis: DragAxis, index: number, value: number): number {
+    const positions = axis === 'col' ? colPositions : rowPositions;
+    const min = index > 0 ? positions[index - 1] + MIN_GAP : MIN_GAP;
+    const max = index < positions.length - 1 ? positions[index + 1] - MIN_GAP : 1 - MIN_GAP;
+    return Math.max(min, Math.min(max, value));
+  }
+
+  // --- Event Handlers ---
+
+  gridCanvas.addEventListener('mousedown', (e) => {
+    const nearest = findNearestLine(e.clientX, e.clientY);
+    if (!nearest) return;
+    e.preventDefault();
+    dragging = nearest;
+    (gridCanvas.style as any).cursor =
+      nearest.axis === 'col' ? 'col-resize' : 'row-resize';
+    drawGrid();
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!gridCanvas.isConnected) return;
+
+    if (dragging) {
+      const rect = gridCanvas.getBoundingClientRect();
+      const { w, h } = getCanvasLayout();
+      const frac = dragging.axis === 'col'
+        ? (e.clientX - rect.left) / w
+        : (e.clientY - rect.top) / h;
+      const clamped = clampPosition(dragging.axis, dragging.index, frac);
+
+      if (dragging.axis === 'col') {
+        colPositions[dragging.index] = clamped;
+      } else {
+        rowPositions[dragging.index] = clamped;
+      }
+      drawGrid();
+    } else {
+      const nearest = findNearestLine(e.clientX, e.clientY);
+      (gridCanvas.style as any).cursor = nearest
+        ? (nearest.axis === 'col' ? 'col-resize' : 'row-resize')
+        : 'default';
+    }
+  });
+
+  window.addEventListener('mouseup', () => {
+    if (dragging) {
+      dragging = null;
+      (gridCanvas.style as any).cursor = 'default';
+      drawGrid();
+    }
+  });
+
+  // Touch support
+  gridCanvas.addEventListener('touchstart', (e) => {
+    const touch = e.touches[0];
+    const nearest = findNearestLine(touch.clientX, touch.clientY);
+    if (!nearest) return;
+    e.preventDefault();
+    dragging = nearest;
+    drawGrid();
+  }, { passive: false });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!dragging || !gridCanvas.isConnected) return;
+    e.preventDefault();
+    const touch = e.touches[0];
+    const rect = gridCanvas.getBoundingClientRect();
+    const { w, h } = getCanvasLayout();
+    const frac = dragging.axis === 'col'
+      ? (touch.clientX - rect.left) / w
+      : (touch.clientY - rect.top) / h;
+    const clamped = clampPosition(dragging.axis, dragging.index, frac);
+
+    if (dragging.axis === 'col') {
+      colPositions[dragging.index] = clamped;
+    } else {
+      rowPositions[dragging.index] = clamped;
+    }
+    drawGrid();
+  }, { passive: false });
+
+  window.addEventListener('touchend', () => {
+    if (dragging) {
+      dragging = null;
+      drawGrid();
+    }
+  });
+
+  // --- Upload / Controls ---
 
   fileInput.addEventListener('change', () => {
     const file = fileInput.files?.[0];
@@ -138,6 +313,7 @@
         previewArea.style.display = '';
         outputArea.style.display = 'none';
         slices = [];
+        resetPositions();
         btnSlice.disabled = false;
         btnDownloadAll.disabled = true;
 
@@ -149,33 +325,40 @@
     reader.readAsDataURL(file);
   });
 
-  colsInput.addEventListener('input', drawGrid);
-  rowsInput.addEventListener('input', drawGrid);
+  colsInput.addEventListener('input', () => { resetPositions(); drawGrid(); });
+  rowsInput.addEventListener('input', () => { resetPositions(); drawGrid(); });
   window.addEventListener('resize', drawGrid);
+
+  btnResetGrid.addEventListener('click', () => {
+    resetPositions();
+    drawGrid();
+  });
 
   btnSlice.addEventListener('click', () => {
     if (!originalImage) return;
 
-    const { cols, rows } = normalizeInputs();
     const imgW = originalImage.naturalWidth;
     const imgH = originalImage.naturalHeight;
-    const cellW = imgW / cols;
-    const cellH = imgH / rows;
+
+    // Build pixel coords: [0, ...colPositions*imgW, imgW] and [0, ...rowPositions*imgH, imgH]
+    const colPx = [0, ...colPositions.map(p => p * imgW), imgW];
+    const rowPx = [0, ...rowPositions.map(p => p * imgH), imgH];
 
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d')!;
-
     slices = [];
     outputGrid.innerHTML = '';
 
-    for (let r = 0; r < rows; r++) {
-      for (let c = 0; c < cols; c++) {
-        const sx = c * cellW;
-        const sy = r * cellH;
+    for (let r = 0; r < rowPx.length - 1; r++) {
+      for (let c = 0; c < colPx.length - 1; c++) {
+        const sx = colPx[c];
+        const sy = rowPx[r];
+        const sw = colPx[c + 1] - sx;
+        const sh = rowPx[r + 1] - sy;
 
-        canvas.width = cellW;
-        canvas.height = cellH;
-        ctx.drawImage(originalImage, sx, sy, cellW, cellH, 0, 0, cellW, cellH);
+        canvas.width = Math.ceil(sw);
+        canvas.height = Math.ceil(sh);
+        ctx.drawImage(originalImage, sx, sy, sw, sh, 0, 0, sw, sh);
 
         canvas.toBlob((blob) => {
           if (!blob) return;
@@ -187,7 +370,7 @@
           card.innerHTML = `
             <img src="${url}" alt="行${r + 1}-列${c + 1}" />
             <span class="slice-label">行${r + 1}-列${c + 1}</span>
-            <button class="btn-dl-one" data-url="${url}" data-row="${r + 1}" data-col="${c + 1}">下载</button>
+            <button class="btn-dl-one">下载</button>
           `;
           card.querySelector('.btn-dl-one')!.addEventListener('click', async (e) => {
             e.stopPropagation();
@@ -196,7 +379,7 @@
           });
           outputGrid.appendChild(card);
 
-          if (slices.length === rows * cols) {
+          if (slices.length === (colPx.length - 1) * (rowPx.length - 1)) {
             btnDownloadAll.disabled = false;
           }
         }, 'image/png');
@@ -303,6 +486,23 @@
     cursor: not-allowed;
   }
 
+  .btn-reset-grid {
+    padding: 0.55rem 1rem;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border-color);
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .btn-reset-grid:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+
   .btn-download-all {
     padding: 0.55rem 1.5rem;
     border-radius: 8px;
@@ -330,7 +530,9 @@
     border-radius: 10px;
     padding: 1rem;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
     overflow: auto;
   }
 
@@ -345,13 +547,20 @@
     max-height: 500px;
     display: block;
     border-radius: 4px;
+    user-select: none;
+    -webkit-user-drag: none;
   }
 
   .preview-container canvas {
     position: absolute;
     top: 0;
     left: 0;
-    pointer-events: none;
+  }
+
+  .drag-hint {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin: 0;
   }
 
   .slicer-output {
