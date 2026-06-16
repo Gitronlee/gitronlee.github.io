@@ -20,6 +20,7 @@
     "name": "记忆翻牌",
     "description": "翻牌匹配学知识 — 英语单词、LeetCode、古诗词等多主题",
     "category": "益智",
-    "icon": "🃏"
+    "icon": "🃏",
+    "status": "coming-soon"
   }
 ]
