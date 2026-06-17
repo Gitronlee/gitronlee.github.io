@@ -4,42 +4,39 @@
     <div class="lt-greeting" id="greeting">--</div>
   </div>
 
-  <div class="lt-cards">
-    <div class="lt-card">
-      <span class="lt-card-icon">🧧</span>
-      <div class="lt-card-info">
-        <span class="lt-card-title">春节</span>
-        <span class="lt-card-sub" id="springSub"></span>
+  <div class="lt-section">
+    <h3 class="lt-section-title">每日时刻</h3>
+    <div class="lt-cards" id="dailyCards">
+      <div class="lt-card">
+        <span class="lt-card-icon">🍚</span>
+        <div class="lt-card-info">
+          <span class="lt-card-title">午饭</span>
+          <span class="lt-card-sub" id="lunchSub">今天 12:00</span>
+        </div>
+        <span class="lt-card-count" id="lunchCount">--</span>
       </div>
-      <span class="lt-card-count" id="springCount">-- 天</span>
+      <div class="lt-card">
+        <span class="lt-card-icon">🏠</span>
+        <div class="lt-card-info">
+          <span class="lt-card-title">下班</span>
+          <span class="lt-card-sub" id="workSub">今天 18:00</span>
+        </div>
+        <span class="lt-card-count" id="workCount">--</span>
+      </div>
+      <div class="lt-card">
+        <span class="lt-card-icon">🌙</span>
+        <div class="lt-card-info">
+          <span class="lt-card-title">夜宵</span>
+          <span class="lt-card-sub" id="snackSub">今天 20:35</span>
+        </div>
+        <span class="lt-card-count" id="snackCount">--</span>
+      </div>
     </div>
+  </div>
 
-    <div class="lt-card">
-      <span class="lt-card-icon">🍚</span>
-      <div class="lt-card-info">
-        <span class="lt-card-title">午饭</span>
-        <span class="lt-card-sub" id="lunchSub">今天 12:00</span>
-      </div>
-      <span class="lt-card-count" id="lunchCount">--</span>
-    </div>
-
-    <div class="lt-card">
-      <span class="lt-card-icon">🏠</span>
-      <div class="lt-card-info">
-        <span class="lt-card-title">下班</span>
-        <span class="lt-card-sub" id="workSub">今天 18:00</span>
-      </div>
-      <span class="lt-card-count" id="workCount">--</span>
-    </div>
-
-    <div class="lt-card">
-      <span class="lt-card-icon">🌙</span>
-      <div class="lt-card-info">
-        <span class="lt-card-title">夜宵</span>
-        <span class="lt-card-sub" id="snackSub">今天 20:35</span>
-      </div>
-      <span class="lt-card-count" id="snackCount">--</span>
-    </div>
+  <div class="lt-section">
+    <h3 class="lt-section-title">节日倒计时</h3>
+    <div class="lt-cards" id="festivalCards"></div>
   </div>
 </div>
 
@@ -51,34 +48,172 @@
 
   const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
 
-  // Spring Festival dates: [year, month(1-based), day]
-  const SPRING_FESTIVALS: [number, number, number][] = [
-    [2026, 2, 17],
-    [2027, 2, 6],
-    [2028, 1, 26],
-    [2029, 2, 13],
-    [2030, 2, 3],
-  ];
+  // --- Festival Data ---
 
-  function getSpringFestival(now: Date): { date: Date; label: string } {
-    for (const [y, m, d] of SPRING_FESTIVALS) {
-      const sf = new Date(y, m - 1, d, 0, 0, 0);
-      if (sf > now) {
-        return { date: sf, label: `${y}年${m}月${d}日` };
-      }
-    }
-    // Fallback: generate next year (never actually hit with above data)
-    const ny = now.getFullYear() + 1;
-    const sf = new Date(ny, 1, 6, 0, 0, 0);
-    return { date: sf, label: `${ny}年2月6日` };
+  interface FestivalDef {
+    name: string;
+    icon: string;
+    getDate: (now: Date) => Date; // Returns next occurrence date
+    label: (date: Date) => string; // Display label for the date
   }
 
-  // Daily time targets (hour, minute) and labels
-  const DAILY_TARGETS = [
-    { hour: 12, min: 0, icon: '🍚', title: '午饭', subId: 'lunchSub', countId: 'lunchCount' },
-    { hour: 18, min: 0, icon: '🏠', title: '下班', subId: 'workSub', countId: 'workCount' },
-    { hour: 20, min: 35, icon: '🌙', title: '夜宵', subId: 'snackSub', countId: 'snackCount' },
+  // Fixed-date solar festivals (recurring yearly)
+  function makeSolarFestival(month: number, day: number) {
+    return (now: Date): Date => {
+      let d = new Date(now.getFullYear(), month - 1, day, 0, 0, 0);
+      if (d <= now) {
+        d = new Date(now.getFullYear() + 1, month - 1, day, 0, 0, 0);
+      }
+      return d;
+    };
+  }
+
+  function dateLabel(d: Date): string {
+    return `${d.getFullYear()}年${d.getMonth() + 1}月${d.getDate()}日`;
+  }
+
+  // Lunar festival date lookup (year -> [month, day])
+  // Data: 2025-2028 exact solar dates for major lunar festivals
+  type LunarDateMap = Record<number, [number, number]>;
+
+  const LUNAR_DATA: Record<string, LunarDateMap> = {
+    '春节':   { 2025: [1,29], 2026: [2,17], 2027: [2,6],  2028: [1,26], 2029: [2,13] },
+    '除夕':   { 2025: [1,28], 2026: [2,16], 2027: [2,5],  2028: [1,25], 2029: [2,12] },
+    '元宵节': { 2025: [2,12], 2026: [3,3],  2027: [2,20], 2028: [2,9],  2029: [2,28] },
+    '端午节': { 2025: [5,31], 2026: [6,19], 2027: [6,9],  2028: [5,28], 2029: [6,16] },
+    '七夕':   { 2025: [8,29], 2026: [8,19], 2027: [8,8],  2028: [8,26], 2029: [8,15] },
+    '中秋节': { 2025: [10,6], 2026: [9,25], 2027: [9,15], 2028: [10,3], 2029: [9,22] },
+    '重阳节': { 2025: [10,29],2026:[10,18],2027: [10,8], 2028: [10,26],2029:[10,16]},
+    '腊八节': { 2025: [1,7],  2026: [1,26], 2027: [1,15], 2028: [1,4],  2029: [1,22] },
+  };
+
+  function makeLunarFestival(name: string, data: LunarDateMap) {
+    return (now: Date): Date => {
+      let year = now.getFullYear();
+      // Look forward up to 3 years
+      for (let dy = 0; dy < 4; dy++) {
+        const y = year + dy;
+        const entry = data[y];
+        if (entry) {
+          const [m, d] = entry;
+          const date = new Date(y, m - 1, d, 0, 0, 0);
+          if (date > now) return date;
+        }
+      }
+      // Fallback
+      return new Date(now.getFullYear() + 1, 1, 1);
+    };
+  }
+
+  // Mother's Day: 2nd Sunday of May
+  function getMothersDay(now: Date): Date {
+    let year = now.getFullYear();
+    let may1 = new Date(year, 4, 1);
+    let firstSunday = new Date(may1);
+    firstSunday.setDate(1 + (7 - may1.getDay()) % 7);
+    let secondSunday = new Date(firstSunday);
+    secondSunday.setDate(firstSunday.getDate() + 7);
+    if (secondSunday <= now) {
+      year++;
+      may1 = new Date(year, 4, 1);
+      firstSunday = new Date(may1);
+      firstSunday.setDate(1 + (7 - may1.getDay()) % 7);
+      secondSunday = new Date(firstSunday);
+      secondSunday.setDate(firstSunday.getDate() + 7);
+    }
+    secondSunday.setHours(0, 0, 0, 0);
+    return secondSunday;
+  }
+
+  // Father's Day: 3rd Sunday of June
+  function getFathersDay(now: Date): Date {
+    let year = now.getFullYear();
+    let jun1 = new Date(year, 5, 1);
+    let firstSunday = new Date(jun1);
+    firstSunday.setDate(1 + (7 - jun1.getDay()) % 7);
+    let thirdSunday = new Date(firstSunday);
+    thirdSunday.setDate(firstSunday.getDate() + 14);
+    if (thirdSunday <= now) {
+      year++;
+      jun1 = new Date(year, 5, 1);
+      firstSunday = new Date(jun1);
+      firstSunday.setDate(1 + (7 - jun1.getDay()) % 7);
+      thirdSunday = new Date(firstSunday);
+      thirdSunday.setDate(firstSunday.getDate() + 14);
+    }
+    thirdSunday.setHours(0, 0, 0, 0);
+    return thirdSunday;
+  }
+
+  // Thanksgiving: 4th Thursday of November
+  function getThanksgiving(now: Date): Date {
+    let year = now.getFullYear();
+    let nov1 = new Date(year, 10, 1);
+    let firstThu = new Date(nov1);
+    firstThu.setDate(1 + (4 - nov1.getDay() + 7) % 7);
+    let fourthThu = new Date(firstThu);
+    fourthThu.setDate(firstThu.getDate() + 21);
+    if (fourthThu <= now) {
+      year++;
+      nov1 = new Date(year, 10, 1);
+      firstThu = new Date(nov1);
+      firstThu.setDate(1 + (4 - nov1.getDay() + 7) % 7);
+      fourthThu = new Date(firstThu);
+      fourthThu.setDate(firstThu.getDate() + 21);
+    }
+    fourthThu.setHours(0, 0, 0, 0);
+    return fourthThu;
+  }
+
+  // Winter solstice: ~Dec 21 (approximately)
+  function getWinterSolstice(now: Date): Date {
+    let d = new Date(now.getFullYear(), 11, 21, 0, 0, 0);
+    if (d <= now) d = new Date(now.getFullYear() + 1, 11, 21, 0, 0, 0);
+    return d;
+  }
+
+  // Qingming: ~April 4-5
+  function getQingming(now: Date): Date {
+    let d = new Date(now.getFullYear(), 3, 5, 0, 0, 0);
+    if (d <= now) d = new Date(now.getFullYear() + 1, 3, 5, 0, 0, 0);
+    return d;
+  }
+
+  const FESTIVALS: FestivalDef[] = [
+    { name: '春节',   icon: '🧧', getDate: makeLunarFestival('春节', LUNAR_DATA['春节']), label: dateLabel },
+    { name: '除夕',   icon: '🏮', getDate: makeLunarFestival('除夕', LUNAR_DATA['除夕']), label: dateLabel },
+    { name: '元宵节', icon: '🏮', getDate: makeLunarFestival('元宵节', LUNAR_DATA['元宵节']), label: dateLabel },
+    { name: '端午节', icon: '🐲', getDate: makeLunarFestival('端午节', LUNAR_DATA['端午节']), label: dateLabel },
+    { name: '七夕',   icon: '💕', getDate: makeLunarFestival('七夕', LUNAR_DATA['七夕']), label: dateLabel },
+    { name: '中秋节', icon: '🥮', getDate: makeLunarFestival('中秋节', LUNAR_DATA['中秋节']), label: dateLabel },
+    { name: '重阳节', icon: '🌿', getDate: makeLunarFestival('重阳节', LUNAR_DATA['重阳节']), label: dateLabel },
+    { name: '腊八节', icon: '🥣', getDate: makeLunarFestival('腊八节', LUNAR_DATA['腊八节']), label: dateLabel },
+    { name: '元旦',   icon: '🎆', getDate: makeSolarFestival(1, 1),   label: dateLabel },
+    { name: '情人节', icon: '🌹', getDate: makeSolarFestival(2, 14),   label: dateLabel },
+    { name: '妇女节', icon: '👩', getDate: makeSolarFestival(3, 8),    label: dateLabel },
+    { name: '愚人节', icon: '🃏', getDate: makeSolarFestival(4, 1),    label: dateLabel },
+    { name: '清明节', icon: '🌿', getDate: getQingming,                label: dateLabel },
+    { name: '劳动节', icon: '🛠️', getDate: makeSolarFestival(5, 1),    label: dateLabel },
+    { name: '母亲节', icon: '🌸', getDate: getMothersDay,              label: dateLabel },
+    { name: '儿童节', icon: '🎈', getDate: makeSolarFestival(6, 1),    label: dateLabel },
+    { name: '父亲节', icon: '👔', getDate: getFathersDay,              label: dateLabel },
+    { name: '教师节', icon: '📚', getDate: makeSolarFestival(9, 10),   label: dateLabel },
+    { name: '国庆节', icon: '🇨🇳', getDate: makeSolarFestival(10, 1),   label: dateLabel },
+    { name: '万圣节', icon: '🎃', getDate: makeSolarFestival(10, 31),  label: dateLabel },
+    { name: '感恩节', icon: '🦃', getDate: getThanksgiving,            label: dateLabel },
+    { name: '冬至',   icon: '❄️', getDate: getWinterSolstice,          label: dateLabel },
+    { name: '圣诞节', icon: '🎄', getDate: makeSolarFestival(12, 25),  label: dateLabel },
   ];
+
+  // --- Daily Targets ---
+
+  const DAILY_TARGETS = [
+    { hour: 12, min: 0,  subId: 'lunchSub', countId: 'lunchCount' },
+    { hour: 18, min: 0,  subId: 'workSub',  countId: 'workCount' },
+    { hour: 20, min: 35, subId: 'snackSub', countId: 'snackCount' },
+  ];
+
+  // --- Helpers ---
 
   function getGreeting(hour: number): string {
     if (hour < 5) return '夜深了，早点休息 🌌';
@@ -89,64 +224,91 @@
   }
 
   function formatDuration(totalMs: number): string {
-    if (totalMs <= 0) return '已到时间';
+    if (totalMs <= 0) return '今天就是!';
     const totalSec = Math.floor(totalMs / MS_PER_SEC);
     const days = Math.floor(totalSec / 86400);
     const hours = Math.floor((totalSec % 86400) / 3600);
     const mins = Math.floor((totalSec % 3600) / 60);
     const secs = totalSec % 60;
-
-    if (days > 0) {
-      return `${days} 天 ${hours} 小时 ${mins} 分 ${secs} 秒`;
-    }
-    if (hours > 0) {
-      return `${hours} 小时 ${mins} 分 ${secs} 秒`;
-    }
-    if (mins > 0) {
-      return `${mins} 分 ${secs} 秒`;
-    }
+    if (days > 0) return `${days} 天 ${hours} 时 ${mins} 分 ${secs} 秒`;
+    if (hours > 0) return `${hours} 时 ${mins} 分 ${secs} 秒`;
+    if (mins > 0) return `${mins} 分 ${secs} 秒`;
     return `${secs} 秒`;
+  }
+
+  function formatFestivalDuration(totalMs: number): string {
+    if (totalMs <= 0) return '今天就是!';
+    const totalSec = Math.floor(totalMs / MS_PER_SEC);
+    const days = Math.floor(totalSec / 86400);
+    const hours = Math.floor((totalSec % 86400) / 3600);
+    if (days > 0) return `还有 ${days} 天`;
+    if (hours > 0) return `还有 ${hours} 小时`;
+    return `${Math.floor(totalSec / 60)} 分钟`;
   }
 
   function nextDailyTarget(hour: number, min: number, now: Date): Date {
     const target = new Date(now);
     target.setHours(hour, min, 0, 0);
-    if (target <= now) {
-      target.setDate(target.getDate() + 1);
-    }
+    if (target <= now) target.setDate(target.getDate() + 1);
     return target;
+  }
+
+  // --- Render ---
+
+  function buildFestivalCards() {
+    const container = document.getElementById('festivalCards')!;
+    container.innerHTML = FESTIVALS.map((_, i) => {
+      const id = `fest_${i}`;
+      return `
+        <div class="lt-card" id="${id}">
+          <span class="lt-card-icon ficon-${i}"></span>
+          <div class="lt-card-info">
+            <span class="lt-card-title fname-${i}"></span>
+            <span class="lt-card-sub fsub-${i}"></span>
+          </div>
+          <span class="lt-card-count fcount-${i}"></span>
+        </div>`;
+    }).join('');
   }
 
   function update() {
     const now = new Date();
 
-    // Header: date + greeting
+    // Header
     const dateStr = `${now.getFullYear()}年${String(now.getMonth() + 1).padStart(2, '0')}月${String(now.getDate()).padStart(2, '0')}日 星期${WEEKDAYS[now.getDay()]}`;
     document.getElementById('currentDate')!.textContent = dateStr;
     document.getElementById('greeting')!.textContent = getGreeting(now.getHours());
 
-    // Spring Festival
-    const spring = getSpringFestival(now);
-    const springDiff = spring.date.getTime() - now.getTime();
-    const springDays = Math.ceil(springDiff / MS_PER_DAY);
-    document.getElementById('springSub')!.textContent = spring.label;
-    document.getElementById('springCount')!.textContent = `还有 ${springDays} 天`;
-
     // Daily countdowns
-    const subEl = document.getElementById('lunchSub')!;
-    const countEl = document.getElementById('lunchCount')!;
-
     for (const t of DAILY_TARGETS) {
       const target = nextDailyTarget(t.hour, t.min, now);
       const diff = target.getTime() - now.getTime();
       const isTomorrow = target.getDate() !== now.getDate();
       const timeLabel = `${String(t.hour).padStart(2, '0')}:${String(t.min).padStart(2, '0')}`;
-      const subText = isTomorrow ? `明天 ${timeLabel}` : `今天 ${timeLabel}`;
-      document.getElementById(t.subId)!.textContent = subText;
+      document.getElementById(t.subId)!.textContent = isTomorrow ? `明天 ${timeLabel}` : `今天 ${timeLabel}`;
       document.getElementById(t.countId)!.textContent = formatDuration(diff);
     }
+
+    // Festivals
+    FESTIVALS.forEach((fest, i) => {
+      const d = fest.getDate(now);
+      const diff = d.getTime() - now.getTime();
+      const card = document.getElementById(`fest_${i}`);
+      if (!card) return;
+
+      const icon = card.querySelector(`.ficon-${i}`) as HTMLElement;
+      const name = card.querySelector(`.fname-${i}`) as HTMLElement;
+      const sub = card.querySelector(`.fsub-${i}`) as HTMLElement;
+      const count = card.querySelector(`.fcount-${i}`) as HTMLElement;
+
+      icon.textContent = fest.icon;
+      name.textContent = fest.name;
+      sub.textContent = fest.label(d);
+      count.textContent = formatFestivalDuration(diff);
+    });
   }
 
+  buildFestivalCards();
   update();
   setInterval(update, 1000);
 </script>
@@ -160,7 +322,7 @@
 
   .lt-header {
     text-align: center;
-    padding: 1.25rem 0 0.5rem;
+    padding: 1rem 0 0.25rem;
   }
 
   .lt-date {
@@ -179,20 +341,35 @@
     background-clip: text;
   }
 
+  .lt-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .lt-section-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-left: 0.25rem;
+  }
+
   .lt-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 0.75rem;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 0.6rem;
   }
 
   .lt-card {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
     background: var(--bg-primary);
     border: 1px solid var(--border-color);
-    border-radius: 12px;
-    padding: 1rem 1.25rem;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
     transition: var(--transition);
   }
 
@@ -201,14 +378,16 @@
   }
 
   .lt-card-icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
     flex-shrink: 0;
+    width: 1.8rem;
+    text-align: center;
   }
 
   .lt-card-info {
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.1rem;
     flex: 1;
     min-width: 0;
   }
@@ -216,19 +395,17 @@
   .lt-card-title {
     font-size: 0.8125rem;
     font-weight: 600;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    color: var(--text-primary);
   }
 
   .lt-card-sub {
-    font-size: 0.75rem;
+    font-size: 0.7rem;
     color: var(--text-muted);
   }
 
   .lt-card-count {
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8125rem;
+    font-size: 0.75rem;
     font-weight: 600;
     color: var(--accent-cyan);
     white-space: nowrap;
@@ -236,12 +413,16 @@
   }
 
   @media (max-width: 640px) {
-    .lt-card-count {
-      font-size: 0.75rem;
+    .lt-cards {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     }
 
     .lt-card-icon {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
+    }
+
+    .lt-card-count {
+      font-size: 0.7rem;
     }
   }
 </style>
