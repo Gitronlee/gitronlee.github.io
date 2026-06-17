@@ -339,23 +339,13 @@
 
     const imgW = originalImage.naturalWidth;
     const imgH = originalImage.naturalHeight;
-    const TARGET_SIZE = 240;
 
+    // Build pixel coords: [0, ...colPositions*imgW, imgW] and [0, ...rowPositions*imgH, imgH]
     const colPx = [0, ...colPositions.map(p => p * imgW), imgW];
     const rowPx = [0, ...rowPositions.map(p => p * imgH), imgH];
 
-    // Intermediate canvas for extracting slice at original resolution
-    const extractCanvas = document.createElement('canvas');
-    const extractCtx = extractCanvas.getContext('2d')!;
-
-    // Output canvas for resizing to 240x240
-    const resizeCanvas = document.createElement('canvas');
-    resizeCanvas.width = TARGET_SIZE;
-    resizeCanvas.height = TARGET_SIZE;
-    const resizeCtx = resizeCanvas.getContext('2d')!;
-    resizeCtx.imageSmoothingEnabled = true;
-    (resizeCtx as any).imageSmoothingQuality = 'high';
-
+    const canvas = document.createElement('canvas');
+    const ctx = canvas.getContext('2d')!;
     slices = [];
     outputGrid.innerHTML = '';
 
@@ -366,17 +356,11 @@
         const sw = colPx[c + 1] - sx;
         const sh = rowPx[r + 1] - sy;
 
-        // Step 1: extract slice from original
-        extractCanvas.width = Math.ceil(sw);
-        extractCanvas.height = Math.ceil(sh);
-        extractCtx.clearRect(0, 0, extractCanvas.width, extractCanvas.height);
-        extractCtx.drawImage(originalImage, sx, sy, sw, sh, 0, 0, sw, sh);
+        canvas.width = Math.ceil(sw);
+        canvas.height = Math.ceil(sh);
+        ctx.drawImage(originalImage, sx, sy, sw, sh, 0, 0, sw, sh);
 
-        // Step 2: resize to 240x240 with high quality
-        resizeCtx.clearRect(0, 0, TARGET_SIZE, TARGET_SIZE);
-        resizeCtx.drawImage(extractCanvas, 0, 0, sw, sh, 0, 0, TARGET_SIZE, TARGET_SIZE);
-
-        resizeCanvas.toBlob((blob) => {
+        canvas.toBlob((blob) => {
           if (!blob) return;
           slices.push({ blob, row: r + 1, col: c + 1 });
 
@@ -385,7 +369,7 @@
           card.className = 'slice-card';
           card.innerHTML = `
             <img src="${url}" alt="行${r + 1}-列${c + 1}" />
-            <span class="slice-label">行${r + 1}-列${c + 1}  ${TARGET_SIZE}×${TARGET_SIZE}</span>
+            <span class="slice-label">行${r + 1}-列${c + 1}</span>
             <button class="btn-dl-one">下载</button>
           `;
           card.querySelector('.btn-dl-one')!.addEventListener('click', async (e) => {
@@ -610,8 +594,7 @@
 
   .slice-card img {
     width: 100px;
-    height: 100px;
-    object-fit: cover;
+    height: auto;
     border-radius: 4px;
   }
 
