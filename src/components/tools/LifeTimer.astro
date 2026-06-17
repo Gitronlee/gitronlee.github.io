@@ -1,0 +1,247 @@
+<div class="life-timer" id="lifeTimerRoot">
+  <div class="lt-header">
+    <div class="lt-date" id="currentDate">--</div>
+    <div class="lt-greeting" id="greeting">--</div>
+  </div>
+
+  <div class="lt-cards">
+    <div class="lt-card">
+      <span class="lt-card-icon">🧧</span>
+      <div class="lt-card-info">
+        <span class="lt-card-title">春节</span>
+        <span class="lt-card-sub" id="springSub"></span>
+      </div>
+      <span class="lt-card-count" id="springCount">-- 天</span>
+    </div>
+
+    <div class="lt-card">
+      <span class="lt-card-icon">🍚</span>
+      <div class="lt-card-info">
+        <span class="lt-card-title">午饭</span>
+        <span class="lt-card-sub" id="lunchSub">今天 12:00</span>
+      </div>
+      <span class="lt-card-count" id="lunchCount">--</span>
+    </div>
+
+    <div class="lt-card">
+      <span class="lt-card-icon">🏠</span>
+      <div class="lt-card-info">
+        <span class="lt-card-title">下班</span>
+        <span class="lt-card-sub" id="workSub">今天 18:00</span>
+      </div>
+      <span class="lt-card-count" id="workCount">--</span>
+    </div>
+
+    <div class="lt-card">
+      <span class="lt-card-icon">🌙</span>
+      <div class="lt-card-info">
+        <span class="lt-card-title">夜宵</span>
+        <span class="lt-card-sub" id="snackSub">今天 20:35</span>
+      </div>
+      <span class="lt-card-count" id="snackCount">--</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const MS_PER_SEC = 1000;
+  const MS_PER_MIN = 60 * MS_PER_SEC;
+  const MS_PER_HOUR = 60 * MS_PER_MIN;
+  const MS_PER_DAY = 24 * MS_PER_HOUR;
+
+  const WEEKDAYS = ['日', '一', '二', '三', '四', '五', '六'];
+
+  // Spring Festival dates: [year, month(1-based), day]
+  const SPRING_FESTIVALS: [number, number, number][] = [
+    [2026, 2, 17],
+    [2027, 2, 6],
+    [2028, 1, 26],
+    [2029, 2, 13],
+    [2030, 2, 3],
+  ];
+
+  function getSpringFestival(now: Date): { date: Date; label: string } {
+    for (const [y, m, d] of SPRING_FESTIVALS) {
+      const sf = new Date(y, m - 1, d, 0, 0, 0);
+      if (sf > now) {
+        return { date: sf, label: `${y}年${m}月${d}日` };
+      }
+    }
+    // Fallback: generate next year (never actually hit with above data)
+    const ny = now.getFullYear() + 1;
+    const sf = new Date(ny, 1, 6, 0, 0, 0);
+    return { date: sf, label: `${ny}年2月6日` };
+  }
+
+  // Daily time targets (hour, minute) and labels
+  const DAILY_TARGETS = [
+    { hour: 12, min: 0, icon: '🍚', title: '午饭', subId: 'lunchSub', countId: 'lunchCount' },
+    { hour: 18, min: 0, icon: '🏠', title: '下班', subId: 'workSub', countId: 'workCount' },
+    { hour: 20, min: 35, icon: '🌙', title: '夜宵', subId: 'snackSub', countId: 'snackCount' },
+  ];
+
+  function getGreeting(hour: number): string {
+    if (hour < 5) return '夜深了，早点休息 🌌';
+    if (hour < 12) return '上午好，元气满满 ☀️';
+    if (hour < 18) return '下午好，继续加油 💪';
+    if (hour < 23) return '晚上好，放松一下 🌆';
+    return '夜深了，早点休息 🌌';
+  }
+
+  function formatDuration(totalMs: number): string {
+    if (totalMs <= 0) return '已到时间';
+    const totalSec = Math.floor(totalMs / MS_PER_SEC);
+    const days = Math.floor(totalSec / 86400);
+    const hours = Math.floor((totalSec % 86400) / 3600);
+    const mins = Math.floor((totalSec % 3600) / 60);
+    const secs = totalSec % 60;
+
+    if (days > 0) {
+      return `${days} 天 ${hours} 小时 ${mins} 分 ${secs} 秒`;
+    }
+    if (hours > 0) {
+      return `${hours} 小时 ${mins} 分 ${secs} 秒`;
+    }
+    if (mins > 0) {
+      return `${mins} 分 ${secs} 秒`;
+    }
+    return `${secs} 秒`;
+  }
+
+  function nextDailyTarget(hour: number, min: number, now: Date): Date {
+    const target = new Date(now);
+    target.setHours(hour, min, 0, 0);
+    if (target <= now) {
+      target.setDate(target.getDate() + 1);
+    }
+    return target;
+  }
+
+  function update() {
+    const now = new Date();
+
+    // Header: date + greeting
+    const dateStr = `${now.getFullYear()}年${String(now.getMonth() + 1).padStart(2, '0')}月${String(now.getDate()).padStart(2, '0')}日 星期${WEEKDAYS[now.getDay()]}`;
+    document.getElementById('currentDate')!.textContent = dateStr;
+    document.getElementById('greeting')!.textContent = getGreeting(now.getHours());
+
+    // Spring Festival
+    const spring = getSpringFestival(now);
+    const springDiff = spring.date.getTime() - now.getTime();
+    const springDays = Math.ceil(springDiff / MS_PER_DAY);
+    document.getElementById('springSub')!.textContent = spring.label;
+    document.getElementById('springCount')!.textContent = `还有 ${springDays} 天`;
+
+    // Daily countdowns
+    const subEl = document.getElementById('lunchSub')!;
+    const countEl = document.getElementById('lunchCount')!;
+
+    for (const t of DAILY_TARGETS) {
+      const target = nextDailyTarget(t.hour, t.min, now);
+      const diff = target.getTime() - now.getTime();
+      const isTomorrow = target.getDate() !== now.getDate();
+      const timeLabel = `${String(t.hour).padStart(2, '0')}:${String(t.min).padStart(2, '0')}`;
+      const subText = isTomorrow ? `明天 ${timeLabel}` : `今天 ${timeLabel}`;
+      document.getElementById(t.subId)!.textContent = subText;
+      document.getElementById(t.countId)!.textContent = formatDuration(diff);
+    }
+  }
+
+  update();
+  setInterval(update, 1000);
+</script>
+
+<style>
+  .life-timer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .lt-header {
+    text-align: center;
+    padding: 1.25rem 0 0.5rem;
+  }
+
+  .lt-date {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.125rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+  }
+
+  .lt-greeting {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .lt-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .lt-card {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    transition: var(--transition);
+  }
+
+  .lt-card:hover {
+    border-color: var(--accent-blue);
+  }
+
+  .lt-card-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+  }
+
+  .lt-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .lt-card-title {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .lt-card-sub {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .lt-card-count {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  @media (max-width: 640px) {
+    .lt-card-count {
+      font-size: 0.75rem;
+    }
+
+    .lt-card-icon {
+      font-size: 1.5rem;
+    }
+  }
+</style>

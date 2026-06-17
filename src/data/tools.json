@@ -68,5 +68,12 @@
     "description": "按行列网格切割图片，支持预览网格线、单张下载和一键打包ZIP",
     "category": "设计工具",
     "icon": "✂️"
+  },
+  {
+    "slug": "life-timer",
+    "name": "人生CD计时",
+    "description": "春节倒计时+每日午饭/下班/夜宵时刻倒计时，精确到秒实时更新",
+    "category": "效率工具",
+    "icon": "⏳"
   }
 ]

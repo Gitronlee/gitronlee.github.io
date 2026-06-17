@@ -23,6 +23,7 @@ const toolMap: Record<string, any> = {
   'pomodoro': (await import('../../components/tools/PomodoroTimer.astro')).default,
   'salary': (await import('../../components/tools/SalaryCalculator.astro')).default,
   'image-slicer': (await import('../../components/tools/ImageSlicer.astro')).default,
+  'life-timer': (await import('../../components/tools/LifeTimer.astro')).default,
 };
 
 const { slug } = Astro.params;
