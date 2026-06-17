@@ -20,28 +20,34 @@ const year = new Date().getFullYear();
 </footer>
 
 <script>
-  const NS = 'gitronlee-toolbox';
-  const KEY = 'pageviews';
-
-  async function fetchCount() {
+  function getVisits(): number {
     try {
-      const resp = await fetch(`https://api.countapi.xyz/hit/${NS}/${KEY}`);
-      const data = await resp.json();
-      return data.value;
-    } catch {
-      return null;
-    }
+      return parseInt(localStorage.getItem('tb_visits') || '0', 10);
+    } catch { return 0; }
   }
 
-  async function initCounter() {
+  function getFirstVisit(): string | null {
+    try { return localStorage.getItem('tb_first_visit'); } catch { return null; }
+  }
+
+  function initCounter() {
     const el = document.getElementById('visitorStats');
     if (!el) return;
-    const count = await fetchCount();
-    if (count !== null) {
-      el.querySelector('.stat-text')!.textContent = count.toLocaleString() + ' 次访问';
-    } else {
-      el.querySelector('.stat-text')!.textContent = '--';
+
+    let count = getVisits();
+    count++;
+    try {
+      localStorage.setItem('tb_visits', String(count));
+    } catch {}
+
+    const firstVisit = getFirstVisit();
+    const today = new Date().toISOString().slice(0, 10);
+    if (!firstVisit) {
+      try { localStorage.setItem('tb_first_visit', today); } catch {}
     }
+
+    el.querySelector('.stat-text')!.textContent = `你已访问 ${count} 次`;
+    el.title = firstVisit ? `首次访问: ${firstVisit}` : `首次访问: ${today}`;
   }
 
   initCounter();
