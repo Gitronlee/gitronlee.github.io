@@ -48,19 +48,23 @@
     ['happy','快乐'],['big','大'],['small','小'],['hot','热'],['cold','冷'],
   ];
 
-  type Cell = { en: string; cn: string; fixed?: boolean } | null;
+  type Cell = { en: string; cn: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
 
   const grid: Cell[][] = [];
-  let falling: { col: number; row: number; en: string; cn: string } | null = null;
+  let falling: { col: number; row: number; en: string; cn: string; lang: 'en' | 'cn' } | null = null;
   let nextEn = '';
   let nextCn = '';
+  let nextLang: 'en' | 'cn' = 'en';
   let score = 0;
   let speed = START_SPEED;
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
 
-  // --- Init grid ---
+  function randLang(): 'en' | 'cn' {
+    return Math.random() < 0.5 ? 'en' : 'cn';
+  }
+
   function initGrid() {
     for (let r = 0; r < ROWS; r++) {
       grid[r] = [];
@@ -68,13 +72,12 @@
         grid[r][c] = null;
       }
     }
-    // Pre-seed 1-2 bottom rows with random letter blocks
     const seedRows = 1 + Math.floor(Math.random() * 2);
     const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     for (let r = ROWS - seedRows; r < ROWS; r++) {
       for (let c = 0; c < COLS; c++) {
         const li = Math.floor(Math.random() * letters.length);
-        grid[r][c] = { en: letters[li], cn: '', fixed: true };
+        grid[r][c] = { en: letters[li], cn: '', lang: 'en', fixed: true };
       }
     }
   }
@@ -84,8 +87,9 @@
     return { en: VOCAB[i][0], cn: VOCAB[i][1] };
   }
 
-  function getDistractors(correctCn: string): string[] {
-    const pool = VOCAB.filter(([, cn]) => cn !== correctCn).map(([, cn]) => cn);
+  function getDistractors(lang: 'en' | 'cn', correct: string): string[] {
+    const idx = lang === 'en' ? 0 : 1;
+    const pool = VOCAB.filter((w) => w[idx] !== correct).map((w) => w[idx]);
     shuffle(pool);
     return pool.slice(0, 3);
   }
@@ -97,29 +101,29 @@
     }
   }
 
-  // --- Spawn ---
   function spawnFalling() {
     const en = nextEn;
     const cn = nextCn;
-    nextEn = pickWord().en;
-    nextCn = pickWord().cn;
+    const lang = nextLang;
+    const next = pickWord();
+    nextEn = next.en;
+    nextCn = next.cn;
+    nextLang = randLang();
 
     const col = Math.floor(Math.random() * COLS);
-    // Check if top row is occupied at that column
     if (grid[0][col] !== null) {
       endGame();
       return;
     }
-    falling = { col, row: 0, en, cn };
+    falling = { col, row: 0, en, cn, lang };
     updateNextPreview();
   }
 
   function updateNextPreview() {
     const el = document.getElementById('wtNextWord');
-    if (el) el.textContent = nextEn;
+    if (el) el.textContent = nextLang === 'en' ? nextEn : nextCn;
   }
 
-  // --- Game logic ---
   function canMoveDown(): boolean {
     if (!falling) return false;
     const nextRow = falling.row + 1;
@@ -129,7 +133,9 @@
 
   function fixFalling() {
     if (!falling) return;
-    grid[falling.row][falling.col] = { en: falling.en, cn: falling.cn, fixed: true };
+    grid[falling.row][falling.col] = {
+      en: falling.en, cn: falling.cn, lang: falling.lang, fixed: true,
+    };
     falling = null;
     checkElimination();
     checkGameOver();
@@ -145,7 +151,6 @@
     }
     if (fullRows.length === 0) return;
 
-    // Flash animation
     const cells = document.querySelectorAll('.wt-cell');
     for (const r of fullRows) {
       for (let c = 0; c < COLS; c++) {
@@ -154,7 +159,6 @@
       }
     }
 
-    // Wait for flash, then eliminate
     if (timer) clearInterval(timer);
     setTimeout(() => {
       fullRows.sort((a, b) => b - a);
@@ -197,7 +201,6 @@
     }
   }
 
-  // --- Render ---
   function render() {
     const gridEl = document.getElementById('wtGrid')!;
     let html = '';
@@ -208,33 +211,59 @@
         let text = '';
         if (cell) {
           cls += ' wt-filled';
-          if (cell.cn === '') cls += ' wt-seed';
-          text = cell.en;
+          if (cell.cn === '') {
+            cls += ' wt-seed';
+          } else if (cell.lang === 'en') {
+            cls += ' wt-en';
+          } else {
+            cls += ' wt-cn';
+          }
+          text = cell.lang === 'en' ? cell.en : cell.cn;
         }
         if (falling && falling.row === r && falling.col === c) {
           cls += ' wt-falling';
-          text = falling.en;
+          if (falling.lang === 'en') cls += ' wt-falling-en';
+          else cls += ' wt-falling-cn';
+          text = falling.lang === 'en' ? falling.en : falling.cn;
         }
         html += `<div class="${cls}">${text}</div>`;
       }
     }
     gridEl.innerHTML = html;
+
+    // Bind click on fixed cells for pair matching
+    gridEl.querySelectorAll('.wt-cell.wt-filled.wt-en, .wt-cell.wt-filled.wt-cn').forEach((el) => {
+      el.addEventListener('click', () => {
+        if (gameOver || animating || !falling) return;
+        const r = Math.floor(Array.from(gridEl.children).indexOf(el) / COLS);
+        const c = Array.from(gridEl.children).indexOf(el) % COLS;
+        const cell = grid[r][c];
+        if (!cell || !cell.fixed) return;
+        // Check if this fixed cell is the translation of the falling word
+        if (cell.en === falling.en && cell.cn === falling.cn) {
+          handlePairMatch(r, c);
+        } else {
+          handleGridWrong(el as HTMLElement);
+        }
+      });
+    });
   }
 
   function renderButtons() {
     if (!falling) return;
-    const correctCn = falling.cn;
-    const distractors = getDistractors(correctCn);
-    const options = [correctCn, ...distractors];
+    // Buttons show opposite language of falling block
+    const lang: 'en' | 'cn' = falling.lang === 'en' ? 'cn' : 'en';
+    const correctText = falling.lang === 'en' ? falling.cn : falling.en;
+    const distractors = getDistractors(lang, correctText);
+    const options = [correctText, ...distractors];
     shuffle(options);
 
     const container = document.getElementById('wtButtons')!;
-    container.innerHTML = options.map((cn, i) => {
-      const correct = cn === correctCn;
-      return `<button class="wt-btn" data-correct="${correct}" data-cn="${cn}" data-idx="${i}">${cn}</button>`;
+    container.innerHTML = options.map((text) => {
+      const correct = text === correctText;
+      return `<button class="wt-btn" data-correct="${correct}" data-text="${text}">${text}</button>`;
     }).join('');
 
-    // Bind click handlers
     container.querySelectorAll('.wt-btn').forEach((btn) => {
       btn.addEventListener('click', () => {
         if (gameOver || animating || !falling) return;
@@ -258,12 +287,26 @@
     buildButtons();
   }
 
+  function handlePairMatch(r: number, c: number) {
+    if (!falling) return;
+    grid[r][c] = null;
+    falling = null;
+    score += 15;
+    updateScore();
+    animateDestroy();
+    render();
+    buildButtons();
+    checkElimination();
+    if (!gameOver && !falling) spawnFalling();
+    render();
+    buildButtons();
+  }
+
   function handleWrong(btn: HTMLElement) {
     if (!falling) return;
     score = Math.max(0, score - 2);
     updateScore();
     animating = true;
-    // Flash red on the falling cell
     const fallingCell = document.querySelector('.wt-falling') as HTMLElement;
     if (fallingCell) {
       fallingCell.classList.add('wt-wrong');
@@ -272,9 +315,25 @@
         animating = false;
       }, 400);
     }
-    // Flash the button
     btn.classList.add('wt-btn-wrong');
     setTimeout(() => btn.classList.remove('wt-btn-wrong'), 400);
+  }
+
+  function handleGridWrong(el: HTMLElement) {
+    if (!falling) return;
+    score = Math.max(0, score - 2);
+    updateScore();
+    animating = true;
+    const fallingCell = document.querySelector('.wt-falling') as HTMLElement;
+    if (fallingCell) {
+      fallingCell.classList.add('wt-wrong');
+    }
+    el.classList.add('wt-wrong');
+    setTimeout(() => {
+      if (fallingCell) fallingCell.classList.remove('wt-wrong');
+      el.classList.remove('wt-wrong');
+      animating = false;
+    }, 400);
   }
 
   function animateDestroy() {
@@ -287,12 +346,10 @@
   function buildButtons() {
     if (falling) renderButtons();
     else {
-      const container = document.getElementById('wtButtons')!;
-      container.innerHTML = '';
+      document.getElementById('wtButtons')!.innerHTML = '';
     }
   }
 
-  // --- Game loop ---
   function tick() {
     if (gameOver) return;
     if (!falling) return;
@@ -302,8 +359,6 @@
       render();
       buildButtons();
     } else {
-      // Cannot move - fix the block
-      // Only fix if it has fallen at least past row 0
       fixFalling();
       render();
       buildButtons();
@@ -315,7 +370,6 @@
     timer = setInterval(tick, speed);
   }
 
-  // --- Restart ---
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
     gameOver = false;
@@ -326,6 +380,7 @@
     initGrid();
     nextEn = pickWord().en;
     nextCn = pickWord().cn;
+    nextLang = randLang();
     updateScore();
     updateNextPreview();
     render();
@@ -336,18 +391,17 @@
     startTimer();
   }
 
-  // --- Touch / mobile ---
   document.getElementById('wtRestart')!.addEventListener('click', restart);
   document.getElementById('wtOverlayRestart')!.addEventListener('click', restart);
 
-  // --- Start ---
   initGrid();
   nextEn = pickWord().en;
   nextCn = pickWord().cn;
+  nextLang = randLang();
   updateScore();
   updateNextPreview();
   render();
-  // Wait a moment then spawn first word
+
   setTimeout(() => {
     spawnFalling();
     render();
@@ -402,31 +456,55 @@
     text-overflow: ellipsis;
     white-space: nowrap;
     padding: 0 2px;
+    cursor: default;
   }
 
   .wt-cell.wt-filled {
-    background: rgba(71, 85, 105, 0.6);
-    border-color: rgba(148, 163, 184, 0.25);
     color: #94a3b8;
+  }
+
+  .wt-cell.wt-filled.wt-en {
+    background: rgba(236, 72, 153, 0.25);
+    border-color: rgba(236, 72, 153, 0.35);
+    color: #f9a8d4;
+    cursor: pointer;
+  }
+
+  .wt-cell.wt-filled.wt-cn {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.35);
+    color: #93c5fd;
+    cursor: pointer;
   }
 
   .wt-cell.wt-filled.wt-seed {
     background: rgba(51, 65, 85, 0.5);
     color: #64748b;
+    cursor: default;
   }
 
   .wt-cell.wt-falling {
-    background: rgba(6, 182, 212, 0.3);
-    border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
-    box-shadow: 0 0 12px rgba(6, 182, 212, 0.5);
     font-size: 0.7rem;
     animation: wtPulse 0.8s ease-in-out infinite;
   }
 
+  .wt-cell.wt-falling.wt-falling-en {
+    background: rgba(236, 72, 153, 0.45);
+    border-color: var(--accent-pink);
+    color: #fbcfe8;
+    box-shadow: 0 0 14px rgba(236, 72, 153, 0.5);
+  }
+
+  .wt-cell.wt-falling.wt-falling-cn {
+    background: rgba(59, 130, 246, 0.45);
+    border-color: var(--accent-blue);
+    color: #bfdbfe;
+    box-shadow: 0 0 14px rgba(59, 130, 246, 0.5);
+  }
+
   @keyframes wtPulse {
-    0%, 100% { box-shadow: 0 0 12px rgba(6, 182, 212, 0.5); }
-    50% { box-shadow: 0 0 20px rgba(6, 182, 212, 0.8); }
+    0%, 100% { opacity: 0.85; }
+    50% { opacity: 1; }
   }
 
   .wt-cell.wt-wrong {
@@ -454,7 +532,6 @@
     50% { background: rgba(255, 255, 255, 0.9); }
   }
 
-  /* --- Buttons --- */
   .wt-buttons {
     display: flex;
     gap: 0.75rem;
@@ -494,7 +571,6 @@
     box-shadow: 0 0 20px rgba(239, 68, 68, 0.5) !important;
   }
 
-  /* --- Sidebar --- */
   .wt-sidebar {
     display: flex;
     flex-direction: column;
@@ -561,7 +637,6 @@
     color: var(--accent-cyan);
   }
 
-  /* --- Overlay --- */
   .wt-overlay {
     position: fixed;
     inset: 0;
