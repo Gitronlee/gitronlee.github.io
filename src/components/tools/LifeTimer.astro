@@ -274,12 +274,13 @@
     }
 
     // Festivals — sort by remaining days (ascending)
+    const container = document.getElementById('festivalCards')!;
     const sorted = FESTIVALS.map((fest) => {
       const d = fest.getDate(now);
       return { fest, date: d, diff: d.getTime() - now.getTime() };
     }).sort((a, b) => a.diff - b.diff);
 
-    container.innerHTML = sorted.map((item, i) => `
+    container.innerHTML = sorted.map((item) => `
       <div class="lt-card">
         <span class="lt-card-icon">${item.fest.icon}</span>
         <div class="lt-card-info">
