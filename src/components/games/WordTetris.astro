@@ -40,15 +40,59 @@
   let nextEn = '';
   let nextCn = '';
   let nextLang: 'en' | 'cn' = 'en';
-  let nextCol = 0;
+  let lastCol = -1;
   let score = 0;
   let speed = START_SPEED;
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
 
-  function randLang(): 'en' | 'cn' {
-    return Math.random() < 0.5 ? 'en' : 'cn';
+  function flipLang(l: 'en' | 'cn'): 'en' | 'cn' {
+    return l === 'en' ? 'cn' : 'en';
+  }
+
+  function pickWord() {
+    const i = Math.floor(Math.random() * VOCAB.length);
+    return { en: VOCAB[i][0], cn: VOCAB[i][1] };
+  }
+
+  function getFixedSet(): Set<string> {
+    const s = new Set<string>();
+    for (let r = 0; r < ROWS; r++) {
+      for (let c = 0; c < COLS; c++) {
+        const cell = grid[r][c];
+        if (cell && cell.fixed && cell.cn !== '') {
+          s.add(cell.lang + ':' + cell.en + ':' + cell.cn);
+        }
+      }
+    }
+    return s;
+  }
+
+  function pickWordExcluding(lang: 'en' | 'cn', fixedSet: Set<string>): { en: string; cn: string } | null {
+    const pool = VOCAB.filter(([en, cn]) => !fixedSet.has(lang + ':' + en + ':' + cn));
+    if (pool.length === 0) return null;
+    const i = Math.floor(Math.random() * pool.length);
+    return { en: pool[i][0], cn: pool[i][1] };
+  }
+
+  function pickBestColumn(): number {
+    const heights: number[] = [];
+    for (let c = 0; c < COLS; c++) {
+      let h = 0;
+      for (let r = ROWS - 1; r >= 0 && grid[r][c] !== null; r--, h++) {}
+      heights.push(h);
+    }
+    const minH = Math.min(...heights);
+    const candidates: number[] = [];
+    for (let c = 0; c < COLS; c++) {
+      if (heights[c] === minH) candidates.push(c);
+    }
+    for (const c of candidates) {
+      if (c > lastCol) { lastCol = c; return c; }
+    }
+    lastCol = candidates[0];
+    return candidates[0];
   }
 
   function initGrid() {
@@ -68,22 +112,26 @@
     }
   }
 
-  function pickWord() {
-    const i = Math.floor(Math.random() * VOCAB.length);
-    return { en: VOCAB[i][0], cn: VOCAB[i][1] };
-  }
-
   function spawnFalling() {
     const en = nextEn;
     const cn = nextCn;
     const lang = nextLang;
-    const next = pickWord();
-    nextEn = next.en;
-    nextCn = next.cn;
-    nextLang = randLang();
 
-    const col = nextCol;
-    nextCol = (nextCol + 1) % COLS;
+    const nextFixedSet = getFixedSet();
+    const nextWordLang = flipLang(lang);
+    const picked = pickWordExcluding(nextWordLang, nextFixedSet);
+    if (picked) {
+      nextEn = picked.en;
+      nextCn = picked.cn;
+      nextLang = nextWordLang;
+    } else {
+      const any = pickWord();
+      nextEn = any.en;
+      nextCn = any.cn;
+      nextLang = nextWordLang;
+    }
+
+    const col = pickBestColumn();
     if (grid[0][col] !== null) {
       endGame();
       return;
@@ -96,6 +144,15 @@
     const nextRow = falling.row + 1;
     if (nextRow >= ROWS) return false;
     return grid[nextRow][falling.col] === null;
+  }
+
+  function applyGravity(col: number) {
+    for (let r = ROWS - 2; r >= 0; r--) {
+      if (grid[r][col] !== null && grid[r + 1][col] === null) {
+        grid[r + 1][col] = grid[r][col];
+        grid[r][col] = null;
+      }
+    }
   }
 
   function fixFalling() {
@@ -191,6 +248,8 @@
     updateScore();
     animateDestroy();
     render();
+    applyGravity(c);
+    render();
     if (!gameOver) spawnFalling();
     render();
   }
@@ -239,11 +298,11 @@
     score = 0;
     speed = START_SPEED;
     falling = null;
+    lastCol = -1;
     initGrid();
     nextEn = pickWord().en;
     nextCn = pickWord().cn;
-    nextLang = randLang();
-    nextCol = 0;
+    nextLang = Math.random() < 0.5 ? 'en' : 'cn';
     updateScore();
     render();
     document.getElementById('wtOverlay')!.classList.add('hidden');
@@ -258,7 +317,7 @@
   initGrid();
   nextEn = pickWord().en;
   nextCn = pickWord().cn;
-  nextLang = randLang();
+  nextLang = Math.random() < 0.5 ? 'en' : 'cn';
   updateScore();
   render();
 
@@ -342,7 +401,6 @@
 
   .wt-cell.wt-filled { color: #cbd5e1; }
 
-  /* English = pink */
   .wt-cell.wt-filled.wt-en {
     background: #be185d;
     border-color: #f472b6;
@@ -350,7 +408,6 @@
     cursor: pointer;
   }
 
-  /* Chinese = blue */
   .wt-cell.wt-filled.wt-cn {
     background: #1d4ed8;
     border-color: #60a5fa;
