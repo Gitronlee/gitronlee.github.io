@@ -102,47 +102,16 @@
       en: falling.en, cn: falling.cn, lang: falling.lang, fixed: true,
     };
     falling = null;
-    checkElimination();
-    checkGameOver();
-    if (!gameOver) spawnFalling();
+    if (checkGameOver()) return;
+    spawnFalling();
   }
 
-  function checkElimination() {
-    const fullRows: number[] = [];
-    for (let r = ROWS - 1; r >= 0; r--) {
-      if (grid[r].every((cell) => cell !== null)) {
-        fullRows.push(r);
-      }
-    }
-    if (fullRows.length === 0) return;
-
-    const cells = document.querySelectorAll('.wt-cell');
-    for (const r of fullRows) {
-      for (let c = 0; c < COLS; c++) {
-        const idx = r * COLS + c;
-        cells[idx]?.classList.add('flash');
-      }
-    }
-
-    if (timer) clearInterval(timer);
-    setTimeout(() => {
-      fullRows.sort((a, b) => b - a);
-      for (const r of fullRows) {
-        grid.splice(r, 1);
-        grid.unshift(new Array(COLS).fill(null));
-        score += 20;
-      }
-      updateScore();
-      if (!falling && !gameOver) spawnFalling();
-      render();
-      startTimer();
-    }, 300);
-  }
-
-  function checkGameOver() {
+  function checkGameOver(): boolean {
     if (grid[0].some((cell) => cell !== null)) {
       endGame();
+      return true;
     }
+    return false;
   }
 
   function endGame() {
@@ -220,8 +189,7 @@
     updateScore();
     animateDestroy();
     render();
-    checkElimination();
-    if (!gameOver && !falling) spawnFalling();
+    if (!gameOver) spawnFalling();
     render();
   }
 
@@ -339,106 +307,101 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 2px;
-    width: 360px;
-    height: 450px;
-    background: rgba(0, 0, 0, 0.4);
-    border: 2px solid rgba(6, 182, 212, 0.4);
-    border-radius: 8px;
-    padding: 2px;
-    box-shadow: 0 0 20px rgba(6, 182, 212, 0.15), inset 0 0 20px rgba(6, 182, 212, 0.05);
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(6, 182, 212, 0.3);
+    border-radius: 10px;
+    padding: 3px;
+    box-shadow: 0 0 24px rgba(6, 182, 212, 0.12), inset 0 0 24px rgba(6, 182, 212, 0.04);
   }
 
   .wt-cell {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(15, 23, 42, 0.6);
-    border: 1px solid rgba(6, 182, 212, 0.1);
-    border-radius: 3px;
+    background: rgba(15, 23, 42, 0.7);
+    border: 1px solid rgba(6, 182, 212, 0.08);
+    border-radius: 4px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.7rem;
-    font-weight: 600;
+    font-size: 0.72rem;
+    font-weight: 700;
     color: transparent;
     transition: background 0.15s, border-color 0.15s;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 0 2px;
+    padding: 0 3px;
     cursor: default;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
   }
 
-  .wt-cell.wt-filled { color: #94a3b8; }
+  .wt-cell.wt-filled { color: #cbd5e1; }
 
+  /* English = pink */
   .wt-cell.wt-filled.wt-en {
-    background: rgba(236, 72, 153, 0.25);
-    border-color: rgba(236, 72, 153, 0.35);
-    color: #f9a8d4;
+    background: #be185d;
+    border-color: #f472b6;
+    color: #fce7f3;
     cursor: pointer;
   }
 
+  /* Chinese = blue */
   .wt-cell.wt-filled.wt-cn {
-    background: rgba(59, 130, 246, 0.25);
-    border-color: rgba(59, 130, 246, 0.35);
-    color: #93c5fd;
+    background: #1d4ed8;
+    border-color: #60a5fa;
+    color: #dbeafe;
     cursor: pointer;
   }
 
   .wt-cell.wt-filled.wt-seed {
-    background: rgba(51, 65, 85, 0.5);
+    background: #334155;
+    border-color: #475569;
     color: #64748b;
     cursor: default;
   }
 
   .wt-cell.wt-falling {
-    font-size: 0.75rem;
-    animation: wtPulse 0.8s ease-in-out infinite;
+    font-size: 0.78rem;
+    font-weight: 800;
+    animation: wtPulse 0.7s ease-in-out infinite;
     cursor: default;
   }
 
   .wt-cell.wt-falling.wt-falling-en {
-    background: rgba(236, 72, 153, 0.5);
-    border-color: var(--accent-pink);
-    color: #fbcfe8;
-    box-shadow: 0 0 14px rgba(236, 72, 153, 0.5);
+    background: #ec4899;
+    border-color: #fbcfe8;
+    color: #fff;
+    box-shadow: 0 0 18px rgba(236, 72, 153, 0.6), 0 0 40px rgba(236, 72, 153, 0.2);
   }
 
   .wt-cell.wt-falling.wt-falling-cn {
-    background: rgba(59, 130, 246, 0.5);
-    border-color: var(--accent-blue);
-    color: #bfdbfe;
-    box-shadow: 0 0 14px rgba(59, 130, 246, 0.5);
+    background: #3b82f6;
+    border-color: #bfdbfe;
+    color: #fff;
+    box-shadow: 0 0 18px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.2);
   }
 
   @keyframes wtPulse {
-    0%, 100% { opacity: 0.8; }
+    0%, 100% { opacity: 0.85; }
     50% { opacity: 1; }
   }
 
   .wt-cell.wt-wrong {
-    background: rgba(239, 68, 68, 0.6) !important;
-    border-color: #ef4444 !important;
-    color: #fca5a5 !important;
+    background: #dc2626 !important;
+    border-color: #fca5a5 !important;
+    color: #fff !important;
     animation: none !important;
   }
 
   .wt-cell.wt-destroy {
-    animation: wtDestroy 0.3s ease-out forwards;
+    animation: wtDestroy 0.25s ease-out forwards;
   }
 
   @keyframes wtDestroy {
-    0% { transform: scale(1); opacity: 1; background: rgba(16, 185, 129, 0.6); }
-    100% { transform: scale(0.3); opacity: 0; }
-  }
-
-  .wt-cell.flash {
-    animation: wtFlash 0.15s ease-in-out 2;
-  }
-
-  @keyframes wtFlash {
-    0%, 100% { background: rgba(255, 255, 255, 0.3); }
-    50% { background: rgba(255, 255, 255, 0.9); }
+    0% { transform: scale(1); opacity: 1; background: #22c55e; }
+    100% { transform: scale(0.2); opacity: 0; }
   }
 
   .wt-restart {
