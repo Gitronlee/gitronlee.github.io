@@ -255,22 +255,6 @@
 
   // --- Render ---
 
-  function buildFestivalCards() {
-    const container = document.getElementById('festivalCards')!;
-    container.innerHTML = FESTIVALS.map((_, i) => {
-      const id = `fest_${i}`;
-      return `
-        <div class="lt-card" id="${id}">
-          <span class="lt-card-icon ficon-${i}"></span>
-          <div class="lt-card-info">
-            <span class="lt-card-title fname-${i}"></span>
-            <span class="lt-card-sub fsub-${i}"></span>
-          </div>
-          <span class="lt-card-count fcount-${i}"></span>
-        </div>`;
-    }).join('');
-  }
-
   function update() {
     const now = new Date();
 
@@ -289,26 +273,23 @@
       document.getElementById(t.countId)!.textContent = formatDuration(diff);
     }
 
-    // Festivals
-    FESTIVALS.forEach((fest, i) => {
+    // Festivals — sort by remaining days (ascending)
+    const sorted = FESTIVALS.map((fest) => {
       const d = fest.getDate(now);
-      const diff = d.getTime() - now.getTime();
-      const card = document.getElementById(`fest_${i}`);
-      if (!card) return;
+      return { fest, date: d, diff: d.getTime() - now.getTime() };
+    }).sort((a, b) => a.diff - b.diff);
 
-      const icon = card.querySelector(`.ficon-${i}`) as HTMLElement;
-      const name = card.querySelector(`.fname-${i}`) as HTMLElement;
-      const sub = card.querySelector(`.fsub-${i}`) as HTMLElement;
-      const count = card.querySelector(`.fcount-${i}`) as HTMLElement;
-
-      icon.textContent = fest.icon;
-      name.textContent = fest.name;
-      sub.textContent = fest.label(d);
-      count.textContent = formatFestivalDuration(diff);
-    });
+    container.innerHTML = sorted.map((item, i) => `
+      <div class="lt-card">
+        <span class="lt-card-icon">${item.fest.icon}</span>
+        <div class="lt-card-info">
+          <span class="lt-card-title">${item.fest.name}</span>
+          <span class="lt-card-sub">${item.fest.label(item.date)}</span>
+        </div>
+        <span class="lt-card-count">${formatFestivalDuration(item.diff)}</span>
+      </div>`).join('');
   }
 
-  buildFestivalCards();
   update();
   setInterval(update, 1000);
 </script>
