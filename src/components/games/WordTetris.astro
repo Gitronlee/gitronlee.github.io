@@ -40,6 +40,7 @@
   let nextEn = '';
   let nextCn = '';
   let nextLang: 'en' | 'cn' = 'en';
+  let nextCol = 0;
   let score = 0;
   let speed = START_SPEED;
   let timer: ReturnType<typeof setInterval> | null = null;
@@ -81,7 +82,8 @@
     nextCn = next.cn;
     nextLang = randLang();
 
-    const col = Math.floor(Math.random() * COLS);
+    const col = nextCol;
+    nextCol = (nextCol + 1) % COLS;
     if (grid[0][col] !== null) {
       endGame();
       return;
@@ -241,6 +243,7 @@
     nextEn = pickWord().en;
     nextCn = pickWord().cn;
     nextLang = randLang();
+    nextCol = 0;
     updateScore();
     render();
     document.getElementById('wtOverlay')!.classList.add('hidden');
@@ -266,7 +269,7 @@
   }, 500);
 </script>
 
-<style>
+<style is:global>
   .wt-wrapper {
     display: flex;
     flex-direction: column;
