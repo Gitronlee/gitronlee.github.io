@@ -1,5 +1,13 @@
 [
   {
+    "slug": "word-tetris",
+    "name": "单词俄罗斯方块",
+    "description": "点击正确中文释义消灭下落单词，填满整行消除得分",
+    "category": "教育",
+    "icon": "🅱️",
+    "status": "active"
+  },
+  {
     "slug": "snake",
     "name": "贪吃蛇",
     "description": "经典贪吃蛇游戏，键盘控制方向",

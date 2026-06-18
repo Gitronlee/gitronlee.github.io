@@ -11,7 +11,13 @@ export function getStaticPaths() {
   }));
 }
 
+const gameMap: Record<string, any> = {
+  'word-tetris': (await import('../../components/games/WordTetris.astro')).default,
+};
+
+const { slug } = Astro.params;
 const game = Astro.props;
+const GameComponent = gameMap[slug!];
 
 if (!game) {
   return Astro.redirect('/404');
@@ -21,15 +27,22 @@ if (!game) {
 <BaseLayout title={game.name} description={game.description}>
   <Header />
   
-  <main class="container page-main">
-    <div class="coming-soon">
-      <span class="game-icon">{game.icon}</span>
-      <h1>{game.name}</h1>
-      <p>{game.description}</p>
-      <div class="badge">Coming Soon</div>
-      <a href="/games" class="back-link">← 返回游戏列表</a>
-    </div>
-  </main>
+  {GameComponent ? (
+    <main class="container page-main-game">
+      <h1 class="page-title">{game.icon} {game.name}</h1>
+      <GameComponent />
+    </main>
+  ) : (
+    <main class="container page-main">
+      <div class="coming-soon">
+        <span class="game-icon">{game.icon}</span>
+        <h1>{game.name}</h1>
+        <p>{game.description}</p>
+        <div class="badge">Coming Soon</div>
+        <a href="/games" class="back-link">← 返回游戏列表</a>
+      </div>
+    </main>
+  )}
   
   <Footer />
 </BaseLayout>
@@ -40,6 +53,19 @@ if (!game) {
     padding-bottom: 4rem;
     display: flex;
     justify-content: center;
+  }
+
+  .page-main-game {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .page-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--text-primary);
   }
   
   .coming-soon {
