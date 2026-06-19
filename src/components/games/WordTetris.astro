@@ -449,6 +449,63 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     color: var(--border-color);
   }
 
+  .wt-controls {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+  }
+
+  .wt-btn {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+
+  .wt-drop-btn {
+    background: var(--accent-cyan);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(6, 182, 212, 0.3);
+  }
+
+  .wt-drop-btn:hover {
+    background: #0891b2;
+    transform: translateY(-1px);
+  }
+
+  .wt-restart {
+    background: var(--accent-orange);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(217, 119, 6, 0.3);
+  }
+
+  .wt-restart:hover {
+    background: #d97706;
+    transform: translateY(-1px);
+  }
+
+  .wt-level-pick {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+  }
+
+  .wt-difficulty-select {
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+
   .wt-grid {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
