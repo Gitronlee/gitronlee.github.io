@@ -1,0 +1,20 @@
+[
+  { "en": "environment", "cn": "环境" },
+  { "en": "pollution", "cn": "污染" },
+  { "en": "recycle", "cn": "回收" },
+  { "en": "protect", "cn": "保护" },
+  { "en": "energy", "cn": "能源" },
+  { "en": "electricity", "cn": "电力" },
+  { "en": "technology", "cn": "科技" },
+  { "en": "computer", "cn": "电脑" },
+  { "en": "internet", "cn": "互联网" },
+  { "en": "message", "cn": "信息" },
+  { "en": "knowledge", "cn": "知识" },
+  { "en": "experience", "cn": "经验" },
+  { "en": "difference", "cn": "不同" },
+  { "en": "important", "cn": "重要的" },
+  { "en": "necessary", "cn": "必要的" },
+  { "en": "possible", "cn": "可能的" },
+  { "en": "different", "cn": "不同的" },
+  { "en": "interesting", "cn": "有趣的" }
+]

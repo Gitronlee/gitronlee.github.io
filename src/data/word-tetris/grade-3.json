@@ -1,0 +1,20 @@
+[
+  { "en": "school", "cn": "学校" },
+  { "en": "teacher", "cn": "老师" },
+  { "en": "student", "cn": "学生" },
+  { "en": "classroom", "cn": "教室" },
+  { "en": "desk", "cn": "课桌" },
+  { "en": "chair", "cn": "椅子" },
+  { "en": "blackboard", "cn": "黑板" },
+  { "en": "home", "cn": "家" },
+  { "en": "bedroom", "cn": "卧室" },
+  { "en": "kitchen", "cn": "厨房" },
+  { "en": "garden", "cn": "花园" },
+  { "en": "flower", "cn": "花" },
+  { "en": "grass", "cn": "草" },
+  { "en": "river", "cn": "河" },
+  { "en": "mountain", "cn": "山" },
+  { "en": "cloud", "cn": "云" },
+  { "en": "sky", "cn": "天空" },
+  { "en": "earth", "cn": "地球" }
+]

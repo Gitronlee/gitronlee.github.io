@@ -1,0 +1,20 @@
+[
+  { "en": "doctor", "cn": "医生" },
+  { "en": "nurse", "cn": "护士" },
+  { "en": "police", "cn": "警察" },
+  { "en": "driver", "cn": "司机" },
+  { "en": "cook", "cn": "厨师" },
+  { "en": "farmer", "cn": "农民" },
+  { "en": "hospital", "cn": "医院" },
+  { "en": "bank", "cn": "银行" },
+  { "en": "library", "cn": "图书馆" },
+  { "en": "museum", "cn": "博物馆" },
+  { "en": " cinema", "cn": "电影院" },
+  { "en": "beautiful", "cn": "美丽的" },
+  { "en": "clever", "cn": "聪明的" },
+  { "en": "kind", "cn": "善良的" },
+  { "en": "brave", "cn": "勇敢的" },
+  { "en": "friendly", "cn": "友好的" },
+  { "en": "hungry", "cn": "饿的" },
+  { "en": "thirsty", "cn": "渴的" }
+]

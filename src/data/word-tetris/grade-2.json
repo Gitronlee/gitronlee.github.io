@@ -1,0 +1,20 @@
+[
+  { "en": "book", "cn": "书" },
+  { "en": "pen", "cn": "笔" },
+  { "en": "hand", "cn": "手" },
+  { "en": "eye", "cn": "眼睛" },
+  { "en": "ear", "cn": "耳朵" },
+  { "en": "nose", "cn": "鼻子" },
+  { "en": "mouth", "cn": "嘴巴" },
+  { "en": "bread", "cn": "面包" },
+  { "en": "milk", "cn": "牛奶" },
+  { "en": "egg", "cn": "鸡蛋" },
+  { "en": "rice", "cn": "米饭" },
+  { "en": "water", "cn": "水" },
+  { "en": "shirt", "cn": "衬衫" },
+  { "en": "shoe", "cn": "鞋子" },
+  { "en": "hat", "cn": "帽子" },
+  { "en": "rain", "cn": "雨" },
+  { "en": "snow", "cn": "雪" },
+  { "en": "wind", "cn": "风" }
+]

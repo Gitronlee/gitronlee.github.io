@@ -1,0 +1,20 @@
+[
+  { "en": "education", "cn": "教育" },
+  { "en": "opportunity", "cn": "机会" },
+  { "en": "challenge", "cn": "挑战" },
+  { "en": "success", "cn": "成功" },
+  { "en": "failure", "cn": "失败" },
+  { "en": "confidence", "cn": "信心" },
+  { "en": "responsibility", "cn": "责任" },
+  { "en": "independence", "cn": "独立" },
+  { "en": "cooperation", "cn": "合作" },
+  { "en": "communication", "cn": "交流" },
+  { "en": "relationship", "cn": "关系" },
+  { "en": "situation", "cn": "情况" },
+  { "en": "experience", "cn": "经历" },
+  { "en": "decision", "cn": "决定" },
+  { "en": "solution", "cn": "解决方案" },
+  { "en": "achievement", "cn": "成就" },
+  { "en": "contribution", "cn": "贡献" },
+  { "en": "application", "cn": "应用" }
+]

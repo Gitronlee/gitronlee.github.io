@@ -1,19 +1,48 @@
+---
+import grade1 from '../../data/word-tetris/grade-1.json';
+import grade2 from '../../data/word-tetris/grade-2.json';
+import grade3 from '../../data/word-tetris/grade-3.json';
+import grade4 from '../../data/word-tetris/grade-4.json';
+import grade5 from '../../data/word-tetris/grade-5.json';
+import grade6 from '../../data/word-tetris/grade-6.json';
+import grade7 from '../../data/word-tetris/grade-7.json';
+import grade8 from '../../data/word-tetris/grade-8.json';
+import grade9 from '../../data/word-tetris/grade-9.json';
+
+const allGrades: Record<number, { en: string; cn: string }[]> = {
+  1: grade1, 2: grade2, 3: grade3, 4: grade4, 5: grade5,
+  6: grade6, 7: grade7, 8: grade8, 9: grade9,
+};
+---
+
+<div id="wtGradeData" data-grades={JSON.stringify(allGrades)} style="display:none"></div>
+
 <div class="wt-wrapper">
   <div class="wt-scorebar">
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
-    <span class="wt-score-item" id="wtLevelLabel">第1关 初级</span>
+    <span class="wt-score-item" id="wtLevelLabel">一年级</span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
   <div class="wt-controls">
     <button class="wt-btn wt-drop-btn" id="wtDrop">直接下落</button>
     <button class="wt-btn wt-restart" id="wtRestart">重新开始</button>
     <span class="wt-level-pick">
-      起始关卡
+      起始年级
       <select id="wtDifficulty" class="wt-difficulty-select">
-        <option value="1" selected>初级</option>
-        <option value="2">中级</option>
-        <option value="3">高级</option>
+        <optgroup label="小学">
+          <option value="1" selected>一年级</option>
+          <option value="2">二年级</option>
+          <option value="3">三年级</option>
+          <option value="4">四年级</option>
+          <option value="5">五年级</option>
+          <option value="6">六年级</option>
+        </optgroup>
+        <optgroup label="初中">
+          <option value="7">初一</option>
+          <option value="8">初二</option>
+          <option value="9">初三</option>
+        </optgroup>
       </select>
     </span>
   </div>
@@ -36,33 +65,10 @@
   const ROWS = 10;
   const SPEED = 700;
 
-  const VOCAB: { en: string; cn: string; tier: number }[] = [
-    { en: 'apple', cn: '苹果', tier: 1 },
-    { en: 'book', cn: '书本', tier: 1 },
-    { en: 'cat', cn: '猫', tier: 1 },
-    { en: 'dog', cn: '狗', tier: 1 },
-    { en: 'fish', cn: '鱼', tier: 1 },
-    { en: 'bird', cn: '鸟', tier: 1 },
-    { en: 'tree', cn: '树', tier: 1 },
-    { en: 'star', cn: '星星', tier: 1 },
-    { en: 'moon', cn: '月亮', tier: 1 },
-    { en: 'sun', cn: '太阳', tier: 1 },
-    { en: 'cloud', cn: '云朵', tier: 1 },
-    { en: 'rain', cn: '雨', tier: 1 },
-    { en: 'snow', cn: '雪', tier: 2 },
-    { en: 'wind', cn: '风', tier: 2 },
-    { en: 'fire', cn: '火', tier: 2 },
-    { en: 'water', cn: '水', tier: 2 },
-    { en: 'house', cn: '房子', tier: 2 },
-    { en: 'school', cn: '学校', tier: 2 },
-    { en: 'teacher', cn: '老师', tier: 3 },
-    { en: 'student', cn: '学生', tier: 3 },
-    { en: 'happy', cn: '快乐', tier: 3 },
-    { en: 'beautiful', cn: '美丽的', tier: 3 },
-    { en: 'flower', cn: '花', tier: 3 },
-    { en: 'mountain', cn: '山', tier: 3 },
-    { en: 'computer', cn: '电脑', tier: 3 },
-  ];
+  const GRADE_NAMES = ['','一年级','二年级','三年级','四年级','五年级','六年级','初一','初二','初三'];
+
+  const gradeDataEl = document.getElementById('wtGradeData');
+  const ALL_GRADES: Record<number, { en: string; cn: string }[]> = JSON.parse(gradeDataEl!.dataset.grades || '{}');
 
   type Cell = { en: string; cn: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
 
@@ -74,6 +80,7 @@
   let lastCol = -1;
   let score = 0;
   let level = 1;
+  let currentGradeWords: { en: string; cn: string }[] = [];
   let eliminatedKeys: Set<string> = new Set();
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
@@ -83,37 +90,40 @@
     return l === 'en' ? 'cn' : 'en';
   }
 
+  function loadGrade(grade: number) {
+    currentGradeWords = ALL_GRADES[grade] || [];
+  }
+
   function pickWord(): { en: string; cn: string } {
-    const pool = VOCAB.filter(w => w.tier <= level && !eliminatedKeys.has(w.en + ':' + w.cn));
+    const pool = currentGradeWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
     const i = Math.floor(Math.random() * pool.length);
     return { en: pool[i].en, cn: pool[i].cn };
   }
 
   function checkLevelComplete(): boolean {
-    return VOCAB.filter(w => w.tier <= level && !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
+    return currentGradeWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
   }
 
   function updateLevelLabel() {
-    const names = ['', '初级', '中级', '高级'];
-    document.getElementById('wtLevelLabel')!.textContent = `第${level}关 ${names[level]}`;
+    document.getElementById('wtLevelLabel')!.textContent = GRADE_NAMES[level];
   }
 
   function showLevelFlash() {
-    const names = ['', '初级', '中级', '高级'];
     const el = document.getElementById('wtLevelFlash')!;
-    document.getElementById('wtLevelFlashText')!.textContent = `第${level}关：${names[level]}`;
+    document.getElementById('wtLevelFlashText')!.textContent = GRADE_NAMES[level];
     el.classList.remove('hidden');
     setTimeout(() => el.classList.add('hidden'), 1500);
   }
 
   function advanceLevel() {
     level++;
-    if (level > 3) {
+    if (level > 9) {
       document.getElementById('wtOverlayTitle')!.textContent = '全部通关!';
       endGame();
       return;
     }
     if (timer) { clearInterval(timer); timer = null; }
+    loadGrade(level);
     showLevelFlash();
     updateLevelLabel();
     falling = null;
@@ -338,6 +348,7 @@
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
     level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
+    loadGrade(level);
     eliminatedKeys = new Set();
     gameOver = false;
     animating = false;
@@ -364,6 +375,7 @@
   document.getElementById('wtDifficulty')!.addEventListener('change', restart);
 
   level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
+  loadGrade(level);
   initGrid();
   const w0 = pickWord();
   nextEn = w0.en;
