@@ -5,7 +5,18 @@
     <span class="wt-score-item" id="wtLevelLabel">第1关 初级</span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
-  <button class="wt-restart" id="wtRestart">重新开始</button>
+  <div class="wt-controls">
+    <button class="wt-btn wt-drop-btn" id="wtDrop">直接下落</button>
+    <button class="wt-btn wt-restart" id="wtRestart">重新开始</button>
+    <span class="wt-level-pick">
+      起始关卡
+      <select id="wtDifficulty" class="wt-difficulty-select">
+        <option value="1" selected>初级</option>
+        <option value="2">中级</option>
+        <option value="3">高级</option>
+      </select>
+    </span>
+  </div>
 </div>
 
 <div class="wt-overlay hidden" id="wtOverlay">
@@ -324,9 +335,16 @@
     timer = setInterval(tick, SPEED);
   }
 
+  function dropNow() {
+    if (gameOver || !falling) return;
+    while (canMoveDown()) { falling.row++; }
+    fixFalling();
+    render();
+  }
+
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
-    level = 1;
+    level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
     eliminatedKeys = new Set();
     gameOver = false;
     animating = false;
@@ -346,9 +364,12 @@
     startTimer();
   }
 
+  document.getElementById('wtDrop')!.addEventListener('click', dropNow);
   document.getElementById('wtRestart')!.addEventListener('click', restart);
   document.getElementById('wtOverlayRestart')!.addEventListener('click', restart);
+  document.getElementById('wtDifficulty')!.addEventListener('change', restart);
 
+  level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
   initGrid();
   nextEn = pickWord().en;
   nextCn = pickWord().cn;
@@ -492,22 +513,6 @@
   @keyframes wtDestroy {
     0% { transform: scale(1); opacity: 1; background: #22c55e; }
     100% { transform: scale(0.2); opacity: 0; }
-  }
-
-  .wt-restart {
-    padding: 0.5rem 1.5rem;
-    border: 1px solid var(--border-color);
-    border-radius: 10px;
-    background: var(--bg-secondary);
-    color: var(--text-secondary);
-    font-size: 0.875rem;
-    cursor: pointer;
-    transition: var(--transition);
-  }
-
-  .wt-restart:hover {
-    border-color: var(--accent-cyan);
-    color: var(--accent-cyan);
   }
 
   .wt-overlay {
