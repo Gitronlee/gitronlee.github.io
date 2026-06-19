@@ -22,6 +22,8 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
     <span class="wt-score-item" id="wtLevelLabel">一年级</span>
+    <span class="wt-score-divider">|</span>
+    <span class="wt-score-item">已消 <strong id="wtCompleted">0</strong> / <strong id="wtTotal">0</strong></span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
   <div class="wt-controls">
@@ -131,6 +133,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     lastCol = -1;
     initGrid();
     updateScore();
+    updateWordCount();
     render();
     const w = pickWord();
     nextEn = w.en;
@@ -231,12 +234,20 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   function endGame() {
     gameOver = true;
     if (timer) { clearInterval(timer); timer = null; }
+    document.getElementById('wtOverlayTitle')!.textContent = '挑战失败';
     document.getElementById('wtFinalScore')!.textContent = String(score);
     document.getElementById('wtOverlay')!.classList.remove('hidden');
   }
 
   function updateScore() {
     document.getElementById('wtScore')!.textContent = String(score);
+  }
+
+  function updateWordCount() {
+    const total = currentGradeWords.length;
+    const completed = currentGradeWords.filter(w => eliminatedKeys.has(w.en + ':' + w.cn)).length;
+    document.getElementById('wtCompleted')!.textContent = String(completed);
+    document.getElementById('wtTotal')!.textContent = String(total);
   }
 
   function render() {
@@ -301,6 +312,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     falling = null;
     score += 10;
     updateScore();
+    updateWordCount();
     animateDestroy();
     render();
     applyGravity(c);
@@ -374,6 +386,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     nextPhon = w.phon;
     nextLang = Math.random() < 0.5 ? 'en' : 'cn';
     updateScore();
+    updateWordCount();
     updateLevelLabel();
     render();
     document.getElementById('wtOverlay')!.classList.add('hidden');
@@ -396,6 +409,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   nextPhon = w0.phon;
   nextLang = Math.random() < 0.5 ? 'en' : 'cn';
   updateScore();
+  updateWordCount();
   updateLevelLabel();
   render();
 
