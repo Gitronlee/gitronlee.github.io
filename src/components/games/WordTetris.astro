@@ -440,8 +440,8 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
     gap: 4px;
-    width: 620px;
-    height: 440px;
+    width: 760px;
+    height: 480px;
     background: var(--bg-tertiary);
     border: 2px solid var(--border-color);
     border-radius: var(--radius);
@@ -458,37 +458,37 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     border: 1px solid var(--border-color);
     border-radius: 6px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: transparent;
     transition: background 0.15s, border-color 0.15s;
     overflow: hidden;
-    padding: 2px 4px;
+    padding: 2px 3px;
     cursor: default;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     min-width: 0;
-    line-height: 1.2;
+    line-height: 1.15;
   }
 
   .wt-cell .wt-word {
-    font-size: 0.82rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    white-space: nowrap;
+    word-break: break-all;
     overflow: hidden;
-    text-overflow: ellipsis;
     max-width: 100%;
+    text-align: center;
   }
 
   .wt-cell .wt-phon {
-    font-size: 0.55rem;
+    font-size: 0.48rem;
     font-weight: 400;
     opacity: 0.8;
-    white-space: nowrap;
+    word-break: break-all;
     overflow: hidden;
-    text-overflow: ellipsis;
     max-width: 100%;
     color: inherit;
+    text-align: center;
   }
 
   .wt-cell.wt-filled { color: var(--text-secondary); }
@@ -521,7 +521,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   }
 
   .wt-cell.wt-falling .wt-word {
-    font-size: 0.85rem;
+    font-size: 0.78rem;
   }
 
   .wt-cell.wt-falling.wt-falling-en {
@@ -655,11 +655,11 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   }
 
   @media (max-width: 600px) {
-    .wt-grid { width: 380px; height: 340px; }
-    .wt-cell { font-size: 0.65rem; padding: 1px 2px; }
-    .wt-cell .wt-word { font-size: 0.68rem; }
-    .wt-cell .wt-phon { font-size: 0.45rem; }
-    .wt-cell.wt-falling .wt-word { font-size: 0.7rem; }
+    .wt-grid { width: 380px; height: 320px; }
+    .wt-cell { font-size: 0.55rem; padding: 1px 2px; }
+    .wt-cell .wt-word { font-size: 0.58rem; }
+    .wt-cell .wt-phon { font-size: 0.4rem; }
+    .wt-cell.wt-falling .wt-word { font-size: 0.6rem; }
     .wt-scorebar { font-size: 0.75rem; padding: 0.4rem 0.8rem; gap: 0.5rem; }
   }
 </style>
