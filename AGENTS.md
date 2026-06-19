@@ -1,0 +1,35 @@
+# AGENTS.md
+
+## Project Overview
+
+Astro 5 static site — developer toolbox (tools, games, docs). Chinese language UI. Deploys to GitHub Pages via `deploy.yml` on push to `main`.
+
+## Commands
+
+- `npm run dev` — local dev server
+- `npm run build` — static output to `dist/`
+- `npm run check` — Astro type check (no test suite exists)
+- No linter or formatter configured
+
+## Architecture
+
+- **Data-driven routes**: `src/data/tools.json` and `src/data/games.json` define all items
+- **Critical: manual registration required** — adding a tool to `tools.json` is NOT enough. You must also:
+  1. Create `src/components/tools/<ToolName>.astro`
+  2. Add a `toolMap` entry in `src/pages/tools/[slug].astro` (line ~15-27) mapping slug to component
+- Games follow the same pattern: `games.json` + `src/components/games/` + `src/pages/games/[slug].astro`
+
+## Path Aliases
+
+`@/*` maps to `src/*` (configured in `tsconfig.json`)
+
+## Adding Docs
+
+Create `.md` files in `src/content/docs/` with required frontmatter: `title`, `description`, `category`, optional `order`.
+
+## Key Gotchas
+
+- Build output is `dist/` (gitignored) — do not edit it directly
+- No test framework — `npm run check` is the only verification command
+- CI requires Node 22 (see `.github/workflows/deploy.yml`)
+- `site` and `base` in `astro.config.mjs` must match your deployment target
