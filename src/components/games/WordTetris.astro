@@ -68,19 +68,20 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   const GRADE_NAMES = ['','一年级','二年级','三年级','四年级','五年级','六年级','初一','初二','初三'];
 
   const gradeDataEl = document.getElementById('wtGradeData');
-  const ALL_GRADES: Record<number, { en: string; cn: string }[]> = JSON.parse(gradeDataEl!.dataset.grades || '{}');
+  const ALL_GRADES: Record<number, { en: string; cn: string; phon?: string }[]> = JSON.parse(gradeDataEl!.dataset.grades || '{}');
 
-  type Cell = { en: string; cn: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
+  type Cell = { en: string; cn: string; phon: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
 
   const grid: Cell[][] = [];
-  let falling: { col: number; row: number; en: string; cn: string; lang: 'en' | 'cn' } | null = null;
+  let falling: { col: number; row: number; en: string; cn: string; phon: string; lang: 'en' | 'cn' } | null = null;
   let nextEn = '';
   let nextCn = '';
+  let nextPhon = '';
   let nextLang: 'en' | 'cn' = 'en';
   let lastCol = -1;
   let score = 0;
   let level = 1;
-  let currentGradeWords: { en: string; cn: string }[] = [];
+  let currentGradeWords: { en: string; cn: string; phon?: string }[] = [];
   let eliminatedKeys: Set<string> = new Set();
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
@@ -94,10 +95,10 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     currentGradeWords = ALL_GRADES[grade] || [];
   }
 
-  function pickWord(): { en: string; cn: string } {
+  function pickWord(): { en: string; cn: string; phon: string } {
     const pool = currentGradeWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
     const i = Math.floor(Math.random() * pool.length);
-    return { en: pool[i].en, cn: pool[i].cn };
+    return { en: pool[i].en, cn: pool[i].cn, phon: pool[i].phon || '' };
   }
 
   function checkLevelComplete(): boolean {
@@ -134,6 +135,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     const w = pickWord();
     nextEn = w.en;
     nextCn = w.cn;
+    nextPhon = w.phon;
     nextLang = Math.random() < 0.5 ? 'en' : 'cn';
     setTimeout(() => {
       if (gameOver) return;
@@ -174,12 +176,14 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   function spawnFalling() {
     const en = nextEn;
     const cn = nextCn;
+    const phon = nextPhon;
     const lang = nextLang;
 
     const nextWordLang = flipLang(lang);
     const p = pickWord();
     nextEn = p.en;
     nextCn = p.cn;
+    nextPhon = p.phon;
     nextLang = nextWordLang;
 
     const col = pickBestColumn();
@@ -187,7 +191,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
       endGame();
       return;
     }
-    falling = { col, row: 0, en, cn, lang };
+    falling = { col, row: 0, en, cn, phon, lang };
   }
 
   function canMoveDown(): boolean {
@@ -209,7 +213,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   function fixFalling() {
     if (!falling) return;
     grid[falling.row][falling.col] = {
-      en: falling.en, cn: falling.cn, lang: falling.lang, fixed: true,
+      en: falling.en, cn: falling.cn, phon: falling.phon, lang: falling.lang, fixed: true,
     };
     falling = null;
     if (checkGameOver()) return;
@@ -242,25 +246,33 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
       for (let c = 0; c < COLS; c++) {
         const cell = grid[r][c];
         let cls = 'wt-cell';
-        let text = '';
+        let wordText = '';
+        let phonText = '';
         if (cell) {
           cls += ' wt-filled';
           if (cell.cn === '') {
             cls += ' wt-seed';
           } else if (cell.lang === 'en') {
             cls += ' wt-en';
+            wordText = cell.en;
+            phonText = cell.phon || '';
           } else {
             cls += ' wt-cn';
+            wordText = cell.cn;
           }
-          text = cell.lang === 'en' ? cell.en : cell.cn;
         }
         if (falling && falling.row === r && falling.col === c) {
           cls += ' wt-falling';
-          if (falling.lang === 'en') cls += ' wt-falling-en';
-          else cls += ' wt-falling-cn';
-          text = falling.lang === 'en' ? falling.en : falling.cn;
+          if (falling.lang === 'en') {
+            cls += ' wt-falling-en';
+            wordText = falling.en;
+            phonText = falling.phon || '';
+          } else {
+            cls += ' wt-falling-cn';
+            wordText = falling.cn;
+          }
         }
-        html += `<div class="${cls}">${text}</div>`;
+        html += `<div class="${cls}"><span class="wt-word">${wordText}</span>${phonText ? `<span class="wt-phon">${phonText}</span>` : ''}</div>`;
       }
     }
     gridEl.innerHTML = html;
@@ -359,6 +371,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     const w = pickWord();
     nextEn = w.en;
     nextCn = w.cn;
+    nextPhon = w.phon;
     nextLang = Math.random() < 0.5 ? 'en' : 'cn';
     updateScore();
     updateLevelLabel();
@@ -380,6 +393,7 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   const w0 = pickWord();
   nextEn = w0.en;
   nextCn = w0.cn;
+  nextPhon = w0.phon;
   nextLang = Math.random() < 0.5 ? 'en' : 'cn';
   updateScore();
   updateLevelLabel();
@@ -425,78 +439,101 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    gap: 3px;
-    width: 520px;
-    height: 360px;
-    background: rgba(0, 0, 0, 0.5);
-    border: 2px solid rgba(6, 182, 212, 0.3);
-    border-radius: 10px;
-    padding: 3px;
-    box-shadow: 0 0 24px rgba(6, 182, 212, 0.12), inset 0 0 24px rgba(6, 182, 212, 0.04);
+    gap: 4px;
+    width: 620px;
+    height: 440px;
+    background: var(--bg-tertiary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 4px;
+    box-shadow: var(--shadow);
   }
 
   .wt-cell {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgba(15, 23, 42, 0.7);
-    border: 1px solid rgba(6, 182, 212, 0.08);
-    border-radius: 4px;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 700;
     color: transparent;
     transition: background 0.15s, border-color 0.15s;
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    padding: 0 4px;
+    padding: 2px 4px;
     cursor: default;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
     min-width: 0;
+    line-height: 1.2;
   }
 
-  .wt-cell.wt-filled { color: #cbd5e1; }
+  .wt-cell .wt-word {
+    font-size: 0.82rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+  }
+
+  .wt-cell .wt-phon {
+    font-size: 0.55rem;
+    font-weight: 400;
+    opacity: 0.8;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    color: inherit;
+  }
+
+  .wt-cell.wt-filled { color: var(--text-secondary); }
 
   .wt-cell.wt-filled.wt-en {
-    background: #be185d;
-    border-color: #f472b6;
-    color: #fce7f3;
+    background: var(--accent-pink);
+    border-color: var(--accent-pink);
+    color: #fff;
     cursor: pointer;
   }
 
   .wt-cell.wt-filled.wt-cn {
-    background: #1d4ed8;
-    border-color: #60a5fa;
-    color: #dbeafe;
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
+    color: #fff;
     cursor: pointer;
   }
 
   .wt-cell.wt-filled.wt-seed {
-    background: #334155;
-    border-color: #475569;
-    color: #64748b;
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+    color: var(--text-muted);
     cursor: default;
   }
 
   .wt-cell.wt-falling {
-    font-size: 0.82rem;
     font-weight: 800;
     animation: wtPulse 0.7s ease-in-out infinite;
     cursor: default;
   }
 
+  .wt-cell.wt-falling .wt-word {
+    font-size: 0.85rem;
+  }
+
   .wt-cell.wt-falling.wt-falling-en {
-    background: #ec4899;
-    border-color: #fbcfe8;
+    background: var(--accent-pink);
+    border-color: var(--accent-pink);
     color: #fff;
     box-shadow: 0 0 18px rgba(236, 72, 153, 0.6), 0 0 40px rgba(236, 72, 153, 0.2);
   }
 
   .wt-cell.wt-falling.wt-falling-cn {
-    background: #3b82f6;
-    border-color: #bfdbfe;
+    background: var(--accent-blue);
+    border-color: var(--accent-blue);
     color: #fff;
     box-shadow: 0 0 18px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.2);
   }
@@ -618,9 +655,11 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   }
 
   @media (max-width: 600px) {
-    .wt-grid { width: 340px; height: 280px; }
-    .wt-cell { font-size: 0.6rem; padding: 0 2px; }
-    .wt-cell.wt-falling { font-size: 0.62rem; }
+    .wt-grid { width: 380px; height: 340px; }
+    .wt-cell { font-size: 0.65rem; padding: 1px 2px; }
+    .wt-cell .wt-word { font-size: 0.68rem; }
+    .wt-cell .wt-phon { font-size: 0.45rem; }
+    .wt-cell.wt-falling .wt-word { font-size: 0.7rem; }
     .wt-scorebar { font-size: 0.75rem; padding: 0.4rem 0.8rem; gap: 0.5rem; }
   }
 </style>
