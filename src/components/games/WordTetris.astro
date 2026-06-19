@@ -2,7 +2,14 @@
   <div class="wt-scorebar">
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
-    <span class="wt-score-item">难度 <strong id="wtLevel">初级</strong></span>
+    <span class="wt-score-item">
+      难度
+      <select id="wtDifficulty" class="wt-difficulty-select">
+        <option value="1">初级</option>
+        <option value="2">中级</option>
+        <option value="3" selected>高级</option>
+      </select>
+    </span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
   <button class="wt-restart" id="wtRestart">重新开始</button>
@@ -58,6 +65,7 @@
   let nextLang: 'en' | 'cn' = 'en';
   let lastCol = -1;
   let score = 0;
+  let tier = 1;
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
@@ -67,8 +75,7 @@
   }
 
   function pickWord(): { en: string; cn: string } {
-    const maxTier = score < 150 ? 1 : score < 300 ? 2 : 3;
-    const pool = VOCAB.filter(w => w.tier <= maxTier);
+    const pool = VOCAB.filter(w => w.tier <= tier);
     const i = Math.floor(Math.random() * pool.length);
     return { en: pool[i].en, cn: pool[i].cn };
   }
@@ -171,9 +178,6 @@
 
   function updateScore() {
     document.getElementById('wtScore')!.textContent = String(score);
-    const maxTier = score < 150 ? 1 : score < 300 ? 2 : 3;
-    const labels = ['', '初级', '中级', '高级'];
-    document.getElementById('wtLevel')!.textContent = labels[maxTier];
   }
 
   function render() {
@@ -276,12 +280,14 @@
 
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
+    tier = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
     gameOver = false;
     animating = false;
     score = 0;
     falling = null;
     lastCol = -1;
-    initGrid();
+  tier = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
+  initGrid();
     nextEn = pickWord().en;
     nextCn = pickWord().cn;
     nextLang = Math.random() < 0.5 ? 'en' : 'cn';
@@ -295,6 +301,7 @@
 
   document.getElementById('wtRestart')!.addEventListener('click', restart);
   document.getElementById('wtOverlayRestart')!.addEventListener('click', restart);
+  document.getElementById('wtDifficulty')!.addEventListener('change', restart);
 
   initGrid();
   nextEn = pickWord().en;
@@ -515,6 +522,25 @@
   .wt-restart-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+  }
+
+  .wt-difficulty-select {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    color: var(--accent-cyan);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.15rem 0.4rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .wt-difficulty-select:focus {
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 8px rgba(139, 92, 246, 0.3);
   }
 
   @media (max-width: 500px) {
