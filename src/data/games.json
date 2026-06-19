@@ -1,8 +1,8 @@
 [
   {
     "slug": "word-tetris",
-    "name": "单词俄罗斯方块",
-    "description": "点击正确中文释义消灭下落单词，填满整行消除得分",
+    "name": "单词动态消消乐",
+    "description": "点击正确释义匹配消灭下落单词，消除同词对推进关卡",
     "category": "教育",
     "icon": "🅱️",
     "status": "active"

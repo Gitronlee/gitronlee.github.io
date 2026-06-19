@@ -159,14 +159,6 @@
         grid[r][c] = null;
       }
     }
-    const seedRows = 1 + Math.floor(Math.random() * 2);
-    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    for (let r = ROWS - seedRows; r < ROWS; r++) {
-      for (let c = 0; c < COLS; c++) {
-        const li = Math.floor(Math.random() * letters.length);
-        grid[r][c] = { en: letters[li], cn: '', lang: 'en', fixed: true };
-      }
-    }
   }
 
   function spawnFalling() {
