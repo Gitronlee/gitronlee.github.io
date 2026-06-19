@@ -259,7 +259,7 @@
         const c = idx % COLS;
         const cell = grid[r][c];
         if (!cell || !cell.fixed) return;
-        if (cell.en === falling.en && cell.cn === falling.cn) {
+        if (cell.en === falling.en && cell.cn === falling.cn && cell.lang !== falling.lang) {
           handlePairMatch(r, c);
         } else {
           handleGridWrong(el as HTMLElement);
@@ -397,9 +397,9 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr);
-    gap: 2px;
-    width: 400px;
-    height: 500px;
+    gap: 3px;
+    width: 520px;
+    height: 360px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(6, 182, 212, 0.3);
     border-radius: 10px;
@@ -415,17 +415,18 @@
     border: 1px solid rgba(6, 182, 212, 0.08);
     border-radius: 4px;
     font-family: 'JetBrains Mono', monospace;
-    font-size: 0.72rem;
+    font-size: 0.75rem;
     font-weight: 700;
     color: transparent;
     transition: background 0.15s, border-color 0.15s;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    padding: 0 3px;
+    padding: 0 4px;
     cursor: default;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
+    min-width: 0;
   }
 
   .wt-cell.wt-filled { color: #cbd5e1; }
@@ -452,7 +453,7 @@
   }
 
   .wt-cell.wt-falling {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
     font-weight: 800;
     animation: wtPulse 0.7s ease-in-out infinite;
     cursor: default;
@@ -604,10 +605,10 @@
     100% { transform: scale(1); opacity: 1; }
   }
 
-  @media (max-width: 500px) {
-    .wt-grid { width: 320px; height: 400px; }
-    .wt-cell { font-size: 0.6rem; }
-    .wt-cell.wt-falling { font-size: 0.65rem; }
-    .wt-scorebar { font-size: 0.75rem; padding: 0.4rem 1rem; gap: 0.5rem; }
+  @media (max-width: 600px) {
+    .wt-grid { width: 340px; height: 280px; }
+    .wt-cell { font-size: 0.6rem; padding: 0 2px; }
+    .wt-cell.wt-falling { font-size: 0.62rem; }
+    .wt-scorebar { font-size: 0.75rem; padding: 0.4rem 0.8rem; gap: 0.5rem; }
   }
 </style>
