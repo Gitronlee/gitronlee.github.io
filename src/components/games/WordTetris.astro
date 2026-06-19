@@ -2,8 +2,7 @@
   <div class="wt-scorebar">
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
-    <span class="wt-score-item">速度 Lv.<strong id="wtLevel">1</strong></span>
-    <span class="wt-score-item wt-score-right" id="wtInterval">1.2s</span>
+    <span class="wt-score-item">难度 <strong id="wtLevel">初级</strong></span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
   <button class="wt-restart" id="wtRestart">重新开始</button>
@@ -20,17 +19,34 @@
 <script>
   const COLS = 8;
   const ROWS = 10;
-  const START_SPEED = 1200;
-  const MIN_SPEED = 400;
-  const SPEED_STEP = 100;
+  const SPEED = 700;
 
-  const VOCAB: [string, string][] = [
-    ['apple','苹果'],['book','书本'],['cat','猫'],['dog','狗'],
-    ['fish','鱼'],['bird','鸟'],['tree','树'],['star','星星'],
-    ['moon','月亮'],['sun','太阳'],['cloud','云朵'],['rain','雨'],
-    ['snow','雪'],['wind','风'],['fire','火'],['water','水'],
-    ['house','房子'],['school','学校'],['teacher','老师'],['student','学生'],
-    ['happy','快乐'],['big','大'],['small','小'],['hot','热'],['cold','冷'],
+  const VOCAB: { en: string; cn: string; tier: number }[] = [
+    { en: 'apple', cn: '苹果', tier: 1 },
+    { en: 'book', cn: '书本', tier: 1 },
+    { en: 'cat', cn: '猫', tier: 1 },
+    { en: 'dog', cn: '狗', tier: 1 },
+    { en: 'fish', cn: '鱼', tier: 1 },
+    { en: 'bird', cn: '鸟', tier: 1 },
+    { en: 'tree', cn: '树', tier: 1 },
+    { en: 'star', cn: '星星', tier: 1 },
+    { en: 'moon', cn: '月亮', tier: 1 },
+    { en: 'sun', cn: '太阳', tier: 1 },
+    { en: 'cloud', cn: '云朵', tier: 1 },
+    { en: 'rain', cn: '雨', tier: 1 },
+    { en: 'snow', cn: '雪', tier: 2 },
+    { en: 'wind', cn: '风', tier: 2 },
+    { en: 'fire', cn: '火', tier: 2 },
+    { en: 'water', cn: '水', tier: 2 },
+    { en: 'house', cn: '房子', tier: 2 },
+    { en: 'school', cn: '学校', tier: 2 },
+    { en: 'teacher', cn: '老师', tier: 3 },
+    { en: 'student', cn: '学生', tier: 3 },
+    { en: 'happy', cn: '快乐', tier: 3 },
+    { en: 'beautiful', cn: '美丽的', tier: 3 },
+    { en: 'flower', cn: '花', tier: 3 },
+    { en: 'mountain', cn: '山', tier: 3 },
+    { en: 'computer', cn: '电脑', tier: 3 },
   ];
 
   type Cell = { en: string; cn: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
@@ -42,7 +58,6 @@
   let nextLang: 'en' | 'cn' = 'en';
   let lastCol = -1;
   let score = 0;
-  let speed = START_SPEED;
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
@@ -51,29 +66,11 @@
     return l === 'en' ? 'cn' : 'en';
   }
 
-  function pickWord() {
-    const i = Math.floor(Math.random() * VOCAB.length);
-    return { en: VOCAB[i][0], cn: VOCAB[i][1] };
-  }
-
-  function getFixedSet(): Set<string> {
-    const s = new Set<string>();
-    for (let r = 0; r < ROWS; r++) {
-      for (let c = 0; c < COLS; c++) {
-        const cell = grid[r][c];
-        if (cell && cell.fixed && cell.cn !== '') {
-          s.add(cell.lang + ':' + cell.en + ':' + cell.cn);
-        }
-      }
-    }
-    return s;
-  }
-
-  function pickWordExcluding(lang: 'en' | 'cn', fixedSet: Set<string>): { en: string; cn: string } | null {
-    const pool = VOCAB.filter(([en, cn]) => !fixedSet.has(lang + ':' + en + ':' + cn));
-    if (pool.length === 0) return null;
+  function pickWord(): { en: string; cn: string } {
+    const maxTier = score < 150 ? 1 : score < 300 ? 2 : 3;
+    const pool = VOCAB.filter(w => w.tier <= maxTier);
     const i = Math.floor(Math.random() * pool.length);
-    return { en: pool[i][0], cn: pool[i][1] };
+    return { en: pool[i].en, cn: pool[i].cn };
   }
 
   function pickBestColumn(): number {
@@ -117,19 +114,11 @@
     const cn = nextCn;
     const lang = nextLang;
 
-    const nextFixedSet = getFixedSet();
     const nextWordLang = flipLang(lang);
-    const picked = pickWordExcluding(nextWordLang, nextFixedSet);
-    if (picked) {
-      nextEn = picked.en;
-      nextCn = picked.cn;
-      nextLang = nextWordLang;
-    } else {
-      const any = pickWord();
-      nextEn = any.en;
-      nextCn = any.cn;
-      nextLang = nextWordLang;
-    }
+    const p = pickWord();
+    nextEn = p.en;
+    nextCn = p.cn;
+    nextLang = nextWordLang;
 
     const col = pickBestColumn();
     if (grid[0][col] !== null) {
@@ -182,15 +171,9 @@
 
   function updateScore() {
     document.getElementById('wtScore')!.textContent = String(score);
-    const oldSpeed = speed;
-    const level = Math.floor(score / 50) + 1;
-    speed = Math.max(MIN_SPEED, START_SPEED - (level - 1) * SPEED_STEP);
-    document.getElementById('wtLevel')!.textContent = String(level);
-    document.getElementById('wtInterval')!.textContent = (speed / 1000).toFixed(1) + 's';
-    if (oldSpeed !== speed && !gameOver && timer) {
-      clearInterval(timer);
-      timer = setInterval(tick, speed);
-    }
+    const maxTier = score < 150 ? 1 : score < 300 ? 2 : 3;
+    const labels = ['', '初级', '中级', '高级'];
+    document.getElementById('wtLevel')!.textContent = labels[maxTier];
   }
 
   function render() {
@@ -288,7 +271,7 @@
 
   function startTimer() {
     if (timer) clearInterval(timer);
-    timer = setInterval(tick, speed);
+    timer = setInterval(tick, SPEED);
   }
 
   function restart() {
@@ -296,7 +279,6 @@
     gameOver = false;
     animating = false;
     score = 0;
-    speed = START_SPEED;
     falling = null;
     lastCol = -1;
     initGrid();
@@ -355,13 +337,6 @@
 
   .wt-score-divider {
     color: var(--border-color);
-  }
-
-  .wt-score-right {
-    margin-left: 0.5rem;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--text-muted);
   }
 
   .wt-grid {
