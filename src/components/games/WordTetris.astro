@@ -2,14 +2,7 @@
   <div class="wt-scorebar">
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
-    <span class="wt-score-item">
-      难度
-      <select id="wtDifficulty" class="wt-difficulty-select">
-        <option value="1">初级</option>
-        <option value="2">中级</option>
-        <option value="3" selected>高级</option>
-      </select>
-    </span>
+    <span class="wt-score-item" id="wtLevelLabel">第1关 初级</span>
   </div>
   <div class="wt-grid" id="wtGrid"></div>
   <button class="wt-restart" id="wtRestart">重新开始</button>
@@ -17,10 +10,14 @@
 
 <div class="wt-overlay hidden" id="wtOverlay">
   <div class="wt-overlay-box">
-    <h2>Game Over</h2>
+    <h2 id="wtOverlayTitle">Game Over</h2>
     <p class="wt-final-score">最终得分: <span id="wtFinalScore">0</span></p>
     <button class="wt-restart-btn" id="wtOverlayRestart">再来一局</button>
   </div>
+</div>
+
+<div class="wt-level-flash hidden" id="wtLevelFlash">
+  <div class="wt-level-flash-text" id="wtLevelFlashText"></div>
 </div>
 
 <script>
@@ -65,7 +62,8 @@
   let nextLang: 'en' | 'cn' = 'en';
   let lastCol = -1;
   let score = 0;
-  let tier = 1;
+  let level = 1;
+  let eliminatedKeys: Set<string> = new Set();
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
@@ -75,9 +73,52 @@
   }
 
   function pickWord(): { en: string; cn: string } {
-    const pool = VOCAB.filter(w => w.tier <= tier);
+    const pool = VOCAB.filter(w => w.tier <= level && !eliminatedKeys.has(w.en + ':' + w.cn));
     const i = Math.floor(Math.random() * pool.length);
     return { en: pool[i].en, cn: pool[i].cn };
+  }
+
+  function checkLevelComplete(): boolean {
+    return VOCAB.filter(w => w.tier <= level && !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
+  }
+
+  function updateLevelLabel() {
+    const names = ['', '初级', '中级', '高级'];
+    document.getElementById('wtLevelLabel')!.textContent = `第${level}关 ${names[level]}`;
+  }
+
+  function showLevelFlash() {
+    const names = ['', '初级', '中级', '高级'];
+    const el = document.getElementById('wtLevelFlash')!;
+    document.getElementById('wtLevelFlashText')!.textContent = `第${level}关：${names[level]}`;
+    el.classList.remove('hidden');
+    setTimeout(() => el.classList.add('hidden'), 1500);
+  }
+
+  function advanceLevel() {
+    level++;
+    if (level > 3) {
+      document.getElementById('wtOverlayTitle')!.textContent = '全部通关!';
+      endGame();
+      return;
+    }
+    if (timer) { clearInterval(timer); timer = null; }
+    showLevelFlash();
+    updateLevelLabel();
+    falling = null;
+    lastCol = -1;
+    initGrid();
+    updateScore();
+    render();
+    nextEn = pickWord().en;
+    nextCn = pickWord().cn;
+    nextLang = Math.random() < 0.5 ? 'en' : 'cn';
+    setTimeout(() => {
+      if (gameOver) return;
+      spawnFalling();
+      render();
+      startTimer();
+    }, 1600);
   }
 
   function pickBestColumn(): number {
@@ -229,6 +270,7 @@
 
   function handlePairMatch(r: number, c: number) {
     if (!falling) return;
+    eliminatedKeys.add(falling.en + ':' + falling.cn);
     grid[r][c] = null;
     falling = null;
     score += 10;
@@ -237,6 +279,10 @@
     render();
     applyGravity(c);
     render();
+    if (checkLevelComplete()) {
+      advanceLevel();
+      return;
+    }
     if (!gameOver) spawnFalling();
     render();
   }
@@ -280,18 +326,19 @@
 
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
-    tier = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
+    level = 1;
+    eliminatedKeys = new Set();
     gameOver = false;
     animating = false;
     score = 0;
     falling = null;
     lastCol = -1;
-  tier = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
-  initGrid();
+    initGrid();
     nextEn = pickWord().en;
     nextCn = pickWord().cn;
     nextLang = Math.random() < 0.5 ? 'en' : 'cn';
     updateScore();
+    updateLevelLabel();
     render();
     document.getElementById('wtOverlay')!.classList.add('hidden');
     spawnFalling();
@@ -301,13 +348,13 @@
 
   document.getElementById('wtRestart')!.addEventListener('click', restart);
   document.getElementById('wtOverlayRestart')!.addEventListener('click', restart);
-  document.getElementById('wtDifficulty')!.addEventListener('change', restart);
 
   initGrid();
   nextEn = pickWord().en;
   nextCn = pickWord().cn;
   nextLang = Math.random() < 0.5 ? 'en' : 'cn';
   updateScore();
+  updateLevelLabel();
   render();
 
   setTimeout(() => {
@@ -524,23 +571,37 @@
     box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
   }
 
-  .wt-difficulty-select {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    color: var(--accent-cyan);
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 0.15rem 0.4rem;
-    cursor: pointer;
-    outline: none;
-    transition: border-color 0.15s;
+  .wt-level-flash {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 300;
+    animation: wtFlashIn 0.35s ease-out;
   }
 
-  .wt-difficulty-select:focus {
-    border-color: var(--accent-purple);
-    box-shadow: 0 0 8px rgba(139, 92, 246, 0.3);
+  .wt-level-flash.hidden { display: none; }
+
+  .wt-level-flash-text {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: wtFlashText 0.35s ease-out;
+  }
+
+  @keyframes wtFlashIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes wtFlashText {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
   }
 
   @media (max-width: 500px) {
