@@ -1,252 +1,252 @@
 [
   {
-    "en": "finger",
-    "phon": "/ˈfɪŋ.ɡər/",
-    "cn": "手指"
+    "en": "enough",
+    "phon": "/ɪˈnʌf/",
+    "cn": "足够"
   },
   {
-    "en": "tooth",
-    "phon": "/tuːθ/",
-    "cn": "牙齿"
+    "en": "little",
+    "phon": "/ˈlɪt.əl/",
+    "cn": "少的"
   },
   {
-    "en": "hair",
-    "phon": "/heər/",
-    "cn": "头发"
+    "en": "much",
+    "phon": "/mʌtʃ/",
+    "cn": "多的"
   },
   {
-    "en": "face",
-    "phon": "/feɪs/",
-    "cn": "脸"
+    "en": "more",
+    "phon": "/mɔːr/",
+    "cn": "更多"
   },
   {
-    "en": "neck",
-    "phon": "/nek/",
-    "cn": "脖子"
+    "en": "less",
+    "phon": "/les/",
+    "cn": "更少"
   },
   {
-    "en": "shoulder",
-    "phon": "/ˈʃəʊl.dər/",
-    "cn": "肩膀"
+    "en": "best",
+    "phon": "/best/",
+    "cn": "最好的"
   },
   {
-    "en": "knee",
-    "phon": "/niː/",
-    "cn": "膝盖"
+    "en": "worst",
+    "phon": "/wɜːst/",
+    "cn": "最坏的"
   },
   {
-    "en": "heart",
-    "phon": "/hɑːt/",
-    "cn": "心脏"
+    "en": "better",
+    "phon": "/ˈbet.ər/",
+    "cn": "更好的"
   },
   {
-    "en": "blood",
-    "phon": "/blʌd/",
-    "cn": "血"
+    "en": "worse",
+    "phon": "/wɜːs/",
+    "cn": "更坏的"
   },
   {
-    "en": "bone",
-    "phon": "/bəʊn/",
-    "cn": "骨头"
+    "en": "other",
+    "phon": "/ˈʌð.ər/",
+    "cn": "其他"
   },
   {
-    "en": "sick",
-    "phon": "/sɪk/",
-    "cn": "生病"
+    "en": "another",
+    "phon": "/əˈnʌð.ər/",
+    "cn": "另一个"
   },
   {
-    "en": "pain",
-    "phon": "/peɪn/",
-    "cn": "痛"
+    "en": "each",
+    "phon": "/iːtʃ/",
+    "cn": "每个"
   },
   {
-    "en": "medicine",
-    "phon": "/ˈmed.ə.sən/",
-    "cn": "药"
+    "en": "every",
+    "phon": "/ˈev.ri/",
+    "cn": "每一"
   },
   {
-    "en": "healthy",
-    "phon": "/ˈhel.θi/",
-    "cn": "健康的"
+    "en": "both",
+    "phon": "/bəʊθ/",
+    "cn": "两者都"
   },
   {
-    "en": "strong",
-    "phon": "/strɒŋ/",
-    "cn": "强壮的"
+    "en": "neither",
+    "phon": "/ˈnaɪ.ðər/",
+    "cn": "两者都不"
   },
   {
-    "en": "weak",
-    "phon": "/wiːk/",
-    "cn": "虚弱的"
+    "en": "either",
+    "phon": "/ˈaɪ.ðər/",
+    "cn": "任一"
   },
   {
-    "en": "tired",
-    "phon": "/taɪəd/",
-    "cn": "累的"
+    "en": "nobody",
+    "phon": "/ˈnəʊ.bə.di/",
+    "cn": "没有人"
   },
   {
-    "en": "hungry",
-    "phon": "/ˈhʌŋ.ɡri/",
-    "cn": "饿的"
+    "en": "somebody",
+    "phon": "/ˈsʌm.bə.di/",
+    "cn": "某人"
   },
   {
-    "en": "thirsty",
-    "phon": "/ˈθɜː.sti/",
-    "cn": "渴的"
+    "en": "everybody",
+    "phon": "/ˈev.ri.bə.di/",
+    "cn": "每个人"
   },
   {
-    "en": "angry",
-    "phon": "/ˈæŋ.ɡri/",
-    "cn": "生气的"
+    "en": "everything",
+    "phon": "/ˈev.ri.θɪŋ/",
+    "cn": "一切"
   },
   {
-    "en": "afraid",
-    "phon": "/əˈfreɪd/",
-    "cn": "害怕的"
+    "en": "nothing",
+    "phon": "/ˈnʌθ.ɪŋ/",
+    "cn": "没有什么"
   },
   {
-    "en": "worry",
-    "phon": "/ˈwʌr.i/",
-    "cn": "担心"
+    "en": "something",
+    "phon": "/ˈsʌm.θɪŋ/",
+    "cn": "某事"
   },
   {
-    "en": "smile",
-    "phon": "/smaɪl/",
-    "cn": "微笑"
+    "en": "anything",
+    "phon": "/ˈen.i.θɪŋ/",
+    "cn": "任何事"
   },
   {
-    "en": "cry",
-    "phon": "/kraɪ/",
-    "cn": "哭"
+    "en": "where",
+    "phon": "/weər/",
+    "cn": "哪里"
   },
   {
-    "en": "laugh",
-    "phon": "/lɑːf/",
-    "cn": "笑"
+    "en": "when",
+    "phon": "/wen/",
+    "cn": "什么时候"
   },
   {
-    "en": "shout",
-    "phon": "/ʃaʊt/",
-    "cn": "喊"
+    "en": "why",
+    "phon": "/waɪ/",
+    "cn": "为什么"
   },
   {
-    "en": "whisper",
-    "phon": "/ˈwɪs.pər/",
-    "cn": "低语"
+    "en": "how",
+    "phon": "/haʊ/",
+    "cn": "怎样"
   },
   {
-    "en": "listen",
-    "phon": "/ˈlɪs.ən/",
-    "cn": "听"
+    "en": "what",
+    "phon": "/wɒt/",
+    "cn": "什么"
   },
   {
-    "en": "touch",
-    "phon": "/tʌtʃ/",
-    "cn": "触摸"
+    "en": "who",
+    "phon": "/huː/",
+    "cn": "谁"
   },
   {
-    "en": "smell",
-    "phon": "/smel/",
-    "cn": "闻"
+    "en": "which",
+    "phon": "/wɪtʃ/",
+    "cn": "哪个"
   },
   {
-    "en": "taste",
-    "phon": "/teɪst/",
-    "cn": "尝"
+    "en": "whose",
+    "phon": "/huːz/",
+    "cn": "谁的"
   },
   {
-    "en": "feel",
-    "phon": "/fiːl/",
-    "cn": "感觉"
+    "en": "before",
+    "phon": "/bɪˈfɔːr/",
+    "cn": "在...之前"
   },
   {
-    "en": "think",
-    "phon": "/θɪŋk/",
-    "cn": "思考"
+    "en": "after",
+    "phon": "/ˈæf.tər/",
+    "cn": "在...之后"
   },
   {
-    "en": "know",
-    "phon": "/nəʊ/",
-    "cn": "知道"
+    "en": "during",
+    "phon": "/ˈdjʊə.rɪŋ/",
+    "cn": "在...期间"
   },
   {
-    "en": "understand",
-    "phon": "/ˌʌn.dəˈstænd/",
-    "cn": "理解"
+    "en": "until",
+    "phon": "/ənˈtɪl/",
+    "cn": "直到"
   },
   {
-    "en": "remember",
-    "phon": "/rɪˈmem.bər/",
-    "cn": "记住"
+    "en": "since",
+    "phon": "/sɪns/",
+    "cn": "自从"
   },
   {
-    "en": "forget",
-    "phon": "/fəˈɡet/",
-    "cn": "忘记"
+    "en": "while",
+    "phon": "/waɪl/",
+    "cn": "当...时"
   },
   {
-    "en": "learn",
-    "phon": "/lɜːn/",
-    "cn": "学习"
+    "en": "because",
+    "phon": "/bɪˈkɒz/",
+    "cn": "因为"
   },
   {
-    "en": "teach",
-    "phon": "/tiːtʃ/",
-    "cn": "教"
+    "en": "although",
+    "phon": "/ɔːlˈðəʊ/",
+    "cn": "虽然"
   },
   {
-    "en": "study",
-    "phon": "/ˈstʌd.i/",
-    "cn": "学习"
+    "en": "however",
+    "phon": "/haʊˈev.ər/",
+    "cn": "然而"
   },
   {
-    "en": "practice",
-    "phon": "/ˈpræk.tɪs/",
-    "cn": "练习"
+    "en": "therefore",
+    "phon": "/ˈðeə.fɔːr/",
+    "cn": "因此"
   },
   {
-    "en": "try",
-    "phon": "/traɪ/",
-    "cn": "尝试"
+    "en": "maybe",
+    "phon": "/ˈmeɪ.bi/",
+    "cn": "也许"
   },
   {
-    "en": "success",
-    "phon": "/səkˈses/",
-    "cn": "成功"
+    "en": "perhaps",
+    "phon": "/pəˈhæps/",
+    "cn": "可能"
   },
   {
-    "en": "fail",
-    "phon": "/feɪl/",
-    "cn": "失败"
+    "en": "probably",
+    "phon": "/ˈprɒb.ə.bli/",
+    "cn": "大概"
   },
   {
-    "en": "hope",
-    "phon": "/həʊp/",
-    "cn": "希望"
+    "en": "really",
+    "phon": "/ˈriː.əl.i/",
+    "cn": "真的"
   },
   {
-    "en": "dream",
-    "phon": "/driːm/",
-    "cn": "梦想"
+    "en": "quite",
+    "phon": "/kwaɪt/",
+    "cn": "相当"
   },
   {
-    "en": "environment",
-    "phon": "/ɪnˈvaɪ.rən.mənt/",
-    "cn": "环境"
+    "en": "very",
+    "phon": "/ˈver.i/",
+    "cn": "非常"
   },
   {
-    "en": "pollution",
-    "phon": "/pəˈluː.ʃən/",
-    "cn": "污染"
+    "en": "too",
+    "phon": "/tuː/",
+    "cn": "太"
   },
   {
-    "en": "recycle",
-    "phon": "/ˌriːˈsaɪ.kəl/",
-    "cn": "回收"
+    "en": "also",
+    "phon": "/ˈɔːl.səʊ/",
+    "cn": "也"
   },
   {
-    "en": "protect",
-    "phon": "/prəˈtekt/",
-    "cn": "保护"
+    "en": "just",
+    "phon": "/dʒʌst/",
+    "cn": "只是"
   }
 ]

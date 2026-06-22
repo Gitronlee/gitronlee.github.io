@@ -1,252 +1,252 @@
 [
   {
-    "en": "word5-151",
-    "phon": "/wɜːrd/",
-    "cn": "自然22"
+    "en": "atom",
+    "phon": "/ˈæt.əm/",
+    "cn": "原子"
   },
   {
-    "en": "word5-152",
-    "phon": "/wɜːrd/",
-    "cn": "动物22"
+    "en": "molecule",
+    "phon": "/ˈmɒl.ɪ.kjuːl/",
+    "cn": "分子"
   },
   {
-    "en": "word5-153",
-    "phon": "/wɜːrd/",
-    "cn": "食物22"
+    "en": "element",
+    "phon": "/ˈel.ɪ.mənt/",
+    "cn": "元素"
   },
   {
-    "en": "word5-154",
-    "phon": "/wɜːrd/",
-    "cn": "身体22"
+    "en": "compound",
+    "phon": "/ˈkɒm.paʊnd/",
+    "cn": "化合物"
   },
   {
-    "en": "word5-155",
-    "phon": "/wɜːrd/",
-    "cn": "家庭23"
+    "en": "solution",
+    "phon": "/səˈluː.ʃən/",
+    "cn": "溶液"
   },
   {
-    "en": "word5-156",
-    "phon": "/wɜːrd/",
-    "cn": "学校23"
+    "en": "acid",
+    "phon": "/ˈæs.ɪd/",
+    "cn": "酸"
   },
   {
-    "en": "word5-157",
-    "phon": "/wɜːrd/",
-    "cn": "时间23"
+    "en": "base",
+    "phon": "/beɪs/",
+    "cn": "碱"
   },
   {
-    "en": "word5-158",
-    "phon": "/wɜːrd/",
-    "cn": "自然23"
+    "en": "unbelldom",
+    "phon": "/unbelldom/",
+    "cn": "unbelldom"
   },
   {
-    "en": "word5-159",
-    "phon": "/wɜːrd/",
-    "cn": "动物23"
+    "en": "unbellship",
+    "phon": "/unbellship/",
+    "cn": "unbellship"
   },
   {
-    "en": "word5-160",
-    "phon": "/wɜːrd/",
-    "cn": "食物23"
+    "en": "gas",
+    "phon": "/ɡæs/",
+    "cn": "气体"
   },
   {
-    "en": "word5-161",
-    "phon": "/wɜːrd/",
-    "cn": "身体23"
+    "en": "liquid",
+    "phon": "/ˈlɪk.wɪd/",
+    "cn": "液体"
   },
   {
-    "en": "word5-162",
-    "phon": "/wɜːrd/",
-    "cn": "家庭24"
+    "en": "solid",
+    "phon": "/ˈsɒl.ɪd/",
+    "cn": "固体"
   },
   {
-    "en": "word5-163",
-    "phon": "/wɜːrd/",
-    "cn": "学校24"
+    "en": "unbellward",
+    "phon": "/unbellward/",
+    "cn": "unbellward"
   },
   {
-    "en": "word5-164",
-    "phon": "/wɜːrd/",
-    "cn": "时间24"
+    "en": "force",
+    "phon": "/fɔːrs/",
+    "cn": "力"
   },
   {
-    "en": "word5-165",
-    "phon": "/wɜːrd/",
-    "cn": "自然24"
+    "en": "gravity",
+    "phon": "/ˈɡræv.ə.ti/",
+    "cn": "重力"
   },
   {
-    "en": "word5-166",
-    "phon": "/wɜːrd/",
-    "cn": "动物24"
+    "en": "electricity",
+    "phon": "/ɪˌlek.trɪs.ə.ti/",
+    "cn": "电"
   },
   {
-    "en": "word5-167",
-    "phon": "/wɜːrd/",
-    "cn": "食物24"
+    "en": "magnet",
+    "phon": "/ˈmæɡ.nət/",
+    "cn": "磁铁"
   },
   {
-    "en": "word5-168",
-    "phon": "/wɜːrd/",
-    "cn": "身体24"
+    "en": "unbellwise",
+    "phon": "/unbellwise/",
+    "cn": "unbellwise"
   },
   {
-    "en": "word5-169",
-    "phon": "/wɜːrd/",
-    "cn": "家庭25"
+    "en": "heat",
+    "phon": "/hiːt/",
+    "cn": "热"
   },
   {
-    "en": "word5-170",
-    "phon": "/wɜːrd/",
-    "cn": "学校25"
+    "en": "sound",
+    "phon": "/saʊnd/",
+    "cn": "声音"
   },
   {
-    "en": "word5-171",
-    "phon": "/wɜːrd/",
-    "cn": "时间25"
+    "en": "wave",
+    "phon": "/weɪv/",
+    "cn": "波"
   },
   {
-    "en": "word5-172",
-    "phon": "/wɜːrd/",
-    "cn": "自然25"
+    "en": "frequency",
+    "phon": "/ˈfriː.kwən.si/",
+    "cn": "频率"
   },
   {
-    "en": "word5-173",
-    "phon": "/wɜːrd/",
-    "cn": "动物25"
+    "en": "spectrum",
+    "phon": "/ˈspek.trəm/",
+    "cn": "光谱"
   },
   {
-    "en": "word5-174",
-    "phon": "/wɜːrd/",
-    "cn": "食物25"
+    "en": "telescope",
+    "phon": "/ˈtel.ɪ.skəʊp/",
+    "cn": "望远镜"
   },
   {
-    "en": "word5-175",
-    "phon": "/wɜːrd/",
-    "cn": "身体25"
+    "en": "microscope",
+    "phon": "/ˈmaɪ.krə.skəʊp/",
+    "cn": "显微镜"
   },
   {
-    "en": "word5-176",
-    "phon": "/wɜːrd/",
-    "cn": "家庭26"
+    "en": "unbellling",
+    "phon": "/unbellling/",
+    "cn": "unbellling"
   },
   {
-    "en": "word5-177",
-    "phon": "/wɜːrd/",
-    "cn": "学校26"
+    "en": "unbelllet",
+    "phon": "/unbelllet/",
+    "cn": "unbelllet"
   },
   {
-    "en": "word5-178",
-    "phon": "/wɜːrd/",
-    "cn": "时间26"
+    "en": "hypothesis",
+    "phon": "/haɪˈpɒθ.ə.sɪs/",
+    "cn": "假设"
   },
   {
-    "en": "word5-179",
-    "phon": "/wɜːrd/",
-    "cn": "自然26"
+    "en": "theory",
+    "phon": "/ˈθɪər.i/",
+    "cn": "理论"
   },
   {
-    "en": "word5-180",
-    "phon": "/wɜːrd/",
-    "cn": "动物26"
+    "en": "result",
+    "phon": "/rɪˈzʌlt/",
+    "cn": "结果"
   },
   {
-    "en": "word5-181",
-    "phon": "/wɜːrd/",
-    "cn": "食物26"
+    "en": "data",
+    "phon": "/ˈdeɪ.tə/",
+    "cn": "数据"
   },
   {
-    "en": "word5-182",
-    "phon": "/wɜːrd/",
-    "cn": "身体26"
+    "en": "conclusion",
+    "phon": "/kənˈkluː.ʒən/",
+    "cn": "结论"
   },
   {
-    "en": "word5-183",
-    "phon": "/wɜːrd/",
-    "cn": "家庭27"
+    "en": "discovery",
+    "phon": "/dɪˈskʌv.ər.i/",
+    "cn": "发现"
   },
   {
-    "en": "word5-184",
-    "phon": "/wɜːrd/",
-    "cn": "学校27"
+    "en": "invention",
+    "phon": "/ɪnˈven.ʃən/",
+    "cn": "发明"
   },
   {
-    "en": "word5-185",
-    "phon": "/wɜːrd/",
-    "cn": "时间27"
+    "en": "technology",
+    "phon": "/tekˈnɒl.ə.dʒi/",
+    "cn": "科技"
   },
   {
-    "en": "word5-186",
-    "phon": "/wɜːrd/",
-    "cn": "自然27"
+    "en": "unbellette",
+    "phon": "/unbellette/",
+    "cn": "unbellette"
   },
   {
-    "en": "word5-187",
-    "phon": "/wɜːrd/",
-    "cn": "动物27"
+    "en": "internet",
+    "phon": "/ˈɪn.tə.net/",
+    "cn": "互联网"
   },
   {
-    "en": "word5-188",
-    "phon": "/wɜːrd/",
-    "cn": "食物27"
+    "en": "software",
+    "phon": "/ˈsɒft.weər/",
+    "cn": "软件"
   },
   {
-    "en": "word5-189",
-    "phon": "/wɜːrd/",
-    "cn": "身体27"
+    "en": "hardware",
+    "phon": "/ˈhɑːr.dweər/",
+    "cn": "硬件"
   },
   {
-    "en": "word5-190",
-    "phon": "/wɜːrd/",
-    "cn": "家庭28"
+    "en": "program",
+    "phon": "/ˈprəʊ.ɡræm/",
+    "cn": "程序"
   },
   {
-    "en": "word5-191",
-    "phon": "/wɜːrd/",
-    "cn": "学校28"
+    "en": "robot",
+    "phon": "/ˈrəʊ.bɒt/",
+    "cn": "机器人"
   },
   {
-    "en": "word5-192",
-    "phon": "/wɜːrd/",
-    "cn": "时间28"
+    "en": "battery",
+    "phon": "/ˈbæt.ər.i/",
+    "cn": "电池"
   },
   {
-    "en": "word5-193",
-    "phon": "/wɜːrd/",
-    "cn": "自然28"
+    "en": "screen",
+    "phon": "/skriːn/",
+    "cn": "屏幕"
   },
   {
-    "en": "word5-194",
-    "phon": "/wɜːrd/",
-    "cn": "动物28"
+    "en": "keyboard",
+    "phon": "/ˈkiː.bɔːrd/",
+    "cn": "键盘"
   },
   {
-    "en": "word5-195",
-    "phon": "/wɜːrd/",
-    "cn": "食物28"
+    "en": "uncardtion",
+    "phon": "/uncardtion/",
+    "cn": "uncardtion"
   },
   {
-    "en": "word5-196",
-    "phon": "/wɜːrd/",
-    "cn": "身体28"
+    "en": "printer",
+    "phon": "/ˈprɪn.tər/",
+    "cn": "打印机"
   },
   {
-    "en": "word5-197",
-    "phon": "/wɜːrd/",
-    "cn": "家庭29"
+    "en": "uncardsion",
+    "phon": "/uncardsion/",
+    "cn": "uncardsion"
   },
   {
-    "en": "word5-198",
-    "phon": "/wɜːrd/",
-    "cn": "学校29"
+    "en": "satellite",
+    "phon": "/ˈsæt.əl.aɪt/",
+    "cn": "卫星"
   },
   {
-    "en": "word5-199",
-    "phon": "/wɜːrd/",
-    "cn": "时间29"
+    "en": "rocket",
+    "phon": "/ˈrɒk.ɪt/",
+    "cn": "火箭"
   },
   {
-    "en": "word5-200",
-    "phon": "/wɜːrd/",
-    "cn": "自然29"
+    "en": "space",
+    "phon": "/speɪs/",
+    "cn": "太空"
   }
 ]

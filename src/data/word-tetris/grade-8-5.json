@@ -1,252 +1,252 @@
 [
   {
-    "en": "word8-201",
-    "phon": "/wɜːrd/",
-    "cn": "自然29"
+    "en": "economics",
+    "phon": "/ˌiː.kəˈnɒm.ɪks/",
+    "cn": "经济学"
   },
   {
-    "en": "word8-202",
-    "phon": "/wɜːrd/",
-    "cn": "经济29"
+    "en": "microeconomics",
+    "phon": "/ˌmaɪ.krəʊ.iː.kəˈnɒm.ɪks/",
+    "cn": "微观经济学"
   },
   {
-    "en": "word8-203",
-    "phon": "/wɜːrd/",
-    "cn": "教育29"
+    "en": "macroeconomics",
+    "phon": "/ˌmæ.krəʊ.iː.kəˈnɒm.ɪks/",
+    "cn": "宏观经济学"
   },
   {
-    "en": "word8-204",
-    "phon": "/wɜːrd/",
-    "cn": "科学30"
+    "en": "supply and demand",
+    "phon": "/səˈplaɪ ænd dɪˈmɑːnd/",
+    "cn": "供需"
   },
   {
-    "en": "word8-205",
-    "phon": "/wɜːrd/",
-    "cn": "技术30"
+    "en": "market economy",
+    "phon": "/ˈmɑːr.kɪt ɪˈkɒn.ə.mi/",
+    "cn": "市场经济"
   },
   {
-    "en": "word8-206",
-    "phon": "/wɜːrd/",
-    "cn": "社会30"
+    "en": "command economy",
+    "phon": "/kəˈmɑːnd ɪˈkɒn.ə.mi/",
+    "cn": "计划经济"
   },
   {
-    "en": "word8-207",
-    "phon": "/wɜːrd/",
-    "cn": "文化30"
+    "en": "mixed economy",
+    "phon": "/mɪkst ɪˈkɒn.ə.mi/",
+    "cn": "混合经济"
   },
   {
-    "en": "word8-208",
-    "phon": "/wɜːrd/",
-    "cn": "自然30"
+    "en": "GDP",
+    "phon": "/ˌdʒiː.diː ˈpiː/",
+    "cn": "国内生产总值"
   },
   {
-    "en": "word8-209",
-    "phon": "/wɜːrd/",
-    "cn": "经济30"
+    "en": "unclosize",
+    "phon": "/unclosize/",
+    "cn": "unclosize"
   },
   {
-    "en": "word8-210",
-    "phon": "/wɜːrd/",
-    "cn": "教育30"
+    "en": "deflation",
+    "phon": "/diːˈfleɪ.ʃən/",
+    "cn": "通货紧缩"
   },
   {
-    "en": "word8-211",
-    "phon": "/wɜːrd/",
-    "cn": "科学31"
+    "en": "recession",
+    "phon": "/rɪˈseʃ.ən/",
+    "cn": "衰退"
   },
   {
-    "en": "word8-212",
-    "phon": "/wɜːrd/",
-    "cn": "技术31"
+    "en": "unclosise",
+    "phon": "/unclosise/",
+    "cn": "unclosise"
   },
   {
-    "en": "word8-213",
-    "phon": "/wɜːrd/",
-    "cn": "社会31"
+    "en": "boom",
+    "phon": "/buːm/",
+    "cn": "繁荣"
   },
   {
-    "en": "word8-214",
-    "phon": "/wɜːrd/",
-    "cn": "文化31"
+    "en": "bust",
+    "phon": "/bʌst/",
+    "cn": "萧条"
   },
   {
-    "en": "word8-215",
-    "phon": "/wɜːrd/",
-    "cn": "自然31"
+    "en": "fiscal policy",
+    "phon": "/ˈfɪs.kəl ˈpɒl.ə.si/",
+    "cn": "财政政策"
   },
   {
-    "en": "word8-216",
-    "phon": "/wɜːrd/",
-    "cn": "经济31"
+    "en": "monetary policy",
+    "phon": "/ˈmʌn.ə.tər.i ˈpɒl.ə.si/",
+    "cn": "货币政策"
   },
   {
-    "en": "word8-217",
-    "phon": "/wɜːrd/",
-    "cn": "教育31"
+    "en": "interest rate",
+    "phon": "/ˈɪn.trəst reɪt/",
+    "cn": "利率"
   },
   {
-    "en": "word8-218",
-    "phon": "/wɜːrd/",
-    "cn": "科学32"
+    "en": "exchange rate",
+    "phon": "/ɪksˈtʃeɪndʒ reɪt/",
+    "cn": "汇率"
   },
   {
-    "en": "word8-219",
-    "phon": "/wɜːrd/",
-    "cn": "技术32"
+    "en": "foreign reserve",
+    "phon": "/ˈfɒr.ən rɪˈzɜːrv/",
+    "cn": "外汇储备"
   },
   {
-    "en": "word8-220",
-    "phon": "/wɜːrd/",
-    "cn": "社会32"
+    "en": "trade balance",
+    "phon": "/treɪd ˈbæl.əns/",
+    "cn": "贸易差额"
   },
   {
-    "en": "word8-221",
-    "phon": "/wɜːrd/",
-    "cn": "文化32"
+    "en": "tariff",
+    "phon": "/ˈtær.ɪf/",
+    "cn": "关税"
   },
   {
-    "en": "word8-222",
-    "phon": "/wɜːrd/",
-    "cn": "自然32"
+    "en": "quota",
+    "phon": "/ˈkwəʊ.tə/",
+    "cn": "配额"
   },
   {
-    "en": "word8-223",
-    "phon": "/wɜːrd/",
-    "cn": "经济32"
+    "en": "subsidy",
+    "phon": "/ˈsʌb.sə.di/",
+    "cn": "补贴"
   },
   {
-    "en": "word8-224",
-    "phon": "/wɜːrd/",
-    "cn": "教育32"
+    "en": "taxation",
+    "phon": "/tækˈseɪ.ʃən/",
+    "cn": "税收"
   },
   {
-    "en": "word8-225",
-    "phon": "/wɜːrd/",
-    "cn": "科学33"
+    "en": "budget deficit",
+    "phon": "/ˈbʌdʒ.ɪt ˈdef.ɪ.sɪt/",
+    "cn": "预算赤字"
   },
   {
-    "en": "word8-226",
-    "phon": "/wɜːrd/",
-    "cn": "技术33"
+    "en": "national debt",
+    "phon": "/ˈnæʃ.ən.əl det/",
+    "cn": "国债"
   },
   {
-    "en": "word8-227",
-    "phon": "/wɜːrd/",
-    "cn": "社会33"
+    "en": "unclosify",
+    "phon": "/unclosify/",
+    "cn": "unclosify"
   },
   {
-    "en": "word8-228",
-    "phon": "/wɜːrd/",
-    "cn": "文化33"
+    "en": "portfolio",
+    "phon": "/pɔːrtˈfəʊ.li.əʊ/",
+    "cn": "投资组合"
   },
   {
-    "en": "word8-229",
-    "phon": "/wɜːrd/",
-    "cn": "自然33"
+    "en": "diversification",
+    "phon": "/daɪˌvɜːr.sɪ.fɪˈkeɪ.ʃən/",
+    "cn": "多元化"
   },
   {
-    "en": "word8-230",
-    "phon": "/wɜːrd/",
-    "cn": "经济33"
+    "en": "risk management",
+    "phon": "/rɪsk ˈmæn.ɪdʒ.mənt/",
+    "cn": "风险管理"
   },
   {
-    "en": "word8-231",
-    "phon": "/wɜːrd/",
-    "cn": "教育33"
+    "en": "venture capital",
+    "phon": "/ˈven.tʃər ˈkæp.ɪ.təl/",
+    "cn": "风险投资"
   },
   {
-    "en": "word8-232",
-    "phon": "/wɜːrd/",
-    "cn": "科学34"
+    "en": "startup",
+    "phon": "/ˈstɑːt.ʌp/",
+    "cn": "初创公司"
   },
   {
-    "en": "word8-233",
-    "phon": "/wɜːrd/",
-    "cn": "技术34"
+    "en": "unclosate",
+    "phon": "/unclosate/",
+    "cn": "unclosate"
   },
   {
-    "en": "word8-234",
-    "phon": "/wɜːrd/",
-    "cn": "社会34"
+    "en": "IPO",
+    "phon": "/ˌaɪ.piː ˈəʊ/",
+    "cn": "首次公开募股"
   },
   {
-    "en": "word8-235",
-    "phon": "/wɜːrd/",
-    "cn": "文化34"
+    "en": "merger",
+    "phon": "/ˈmɜːr.dʒər/",
+    "cn": "合并"
   },
   {
-    "en": "word8-236",
-    "phon": "/wɜːrd/",
-    "cn": "自然34"
+    "en": "acquisition",
+    "phon": "/ˌæk.wɪˈzɪʃ.ən/",
+    "cn": "收购"
   },
   {
-    "en": "word8-237",
-    "phon": "/wɜːrd/",
-    "cn": "经济34"
+    "en": "monopoly",
+    "phon": "/məˈnɒp.əl.i/",
+    "cn": "垄断"
   },
   {
-    "en": "word8-238",
-    "phon": "/wɜːrd/",
-    "cn": "教育34"
+    "en": "oligopoly",
+    "phon": "/ˌɒl.ɪˈɡɒp.əl.i/",
+    "cn": "寡头垄断"
   },
   {
-    "en": "word8-239",
-    "phon": "/wɜːrd/",
-    "cn": "科学35"
+    "en": "unclosent",
+    "phon": "/unclosent/",
+    "cn": "unclosent"
   },
   {
-    "en": "word8-240",
-    "phon": "/wɜːrd/",
-    "cn": "技术35"
+    "en": "antitrust",
+    "phon": "/ˌæn.tiˈtrʌst/",
+    "cn": "反垄断"
   },
   {
-    "en": "word8-241",
-    "phon": "/wɜːrd/",
-    "cn": "社会35"
+    "en": "regulation",
+    "phon": "/ˌreɡ.juˈleɪ.ʃən/",
+    "cn": "监管"
   },
   {
-    "en": "word8-242",
-    "phon": "/wɜːrd/",
-    "cn": "文化35"
+    "en": "deregulation",
+    "phon": "/diːˌreɡ.juˈleɪ.ʃən/",
+    "cn": "放松管制"
   },
   {
-    "en": "word8-243",
-    "phon": "/wɜːrd/",
-    "cn": "自然35"
+    "en": "privatization",
+    "phon": "/ˌpraɪ.vət.aɪˈzeɪ.ʃən/",
+    "cn": "私有化"
   },
   {
-    "en": "word8-244",
-    "phon": "/wɜːrd/",
-    "cn": "经济35"
+    "en": "nationalization",
+    "phon": "/ˌnæʃ.ən.əl.aɪˈzeɪ.ʃən/",
+    "cn": "国有化"
   },
   {
-    "en": "word8-245",
-    "phon": "/wɜːrd/",
-    "cn": "教育35"
+    "en": "outsourcing",
+    "phon": "/ˈaʊt.sɔːr.sɪŋ/",
+    "cn": "外包"
   },
   {
-    "en": "word8-246",
-    "phon": "/wɜːrd/",
-    "cn": "科学36"
+    "en": "offshoring",
+    "phon": "/ˈɒf.ʃɔːr.ɪŋ/",
+    "cn": "离岸外包"
   },
   {
-    "en": "word8-247",
-    "phon": "/wɜːrd/",
-    "cn": "技术36"
+    "en": "e-commerce",
+    "phon": "/ˈiː.kɒm.ɜːrs/",
+    "cn": "电子商务"
   },
   {
-    "en": "word8-248",
-    "phon": "/wɜːrd/",
-    "cn": "社会36"
+    "en": "supply chain",
+    "phon": "/səˈplaɪ tʃeɪn/",
+    "cn": "供应链"
   },
   {
-    "en": "word8-249",
-    "phon": "/wɜːrd/",
-    "cn": "文化36"
+    "en": "logistics",
+    "phon": "/ləˈdʒɪs.tɪks/",
+    "cn": "物流"
   },
   {
-    "en": "word8-250",
-    "phon": "/wɜːrd/",
-    "cn": "自然36"
+    "en": "unclosant",
+    "phon": "/unclosant/",
+    "cn": "unclosant"
   }
 ]

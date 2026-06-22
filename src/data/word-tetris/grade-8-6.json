@@ -1,252 +1,252 @@
 [
   {
-    "en": "word8-251",
-    "phon": "/wɜːrd/",
-    "cn": "经济36"
+    "en": "unclosary",
+    "phon": "/unclosary/",
+    "cn": "unclosary"
   },
   {
-    "en": "word8-252",
-    "phon": "/wɜːrd/",
-    "cn": "教育36"
+    "en": "unclosory",
+    "phon": "/unclosory/",
+    "cn": "unclosory"
   },
   {
-    "en": "word8-253",
-    "phon": "/wɜːrd/",
-    "cn": "科学37"
+    "en": "unclosdom",
+    "phon": "/unclosdom/",
+    "cn": "unclosdom"
   },
   {
-    "en": "word8-254",
-    "phon": "/wɜːrd/",
-    "cn": "技术37"
+    "en": "unclosship",
+    "phon": "/unclosship/",
+    "cn": "unclosship"
   },
   {
-    "en": "word8-255",
-    "phon": "/wɜːrd/",
-    "cn": "社会37"
+    "en": "unclosward",
+    "phon": "/unclosward/",
+    "cn": "unclosward"
   },
   {
-    "en": "word8-256",
-    "phon": "/wɜːrd/",
-    "cn": "文化37"
+    "en": "autocracy",
+    "phon": "/ɔːˈtɒk.rə.si/",
+    "cn": "独裁"
   },
   {
-    "en": "word8-257",
-    "phon": "/wɜːrd/",
-    "cn": "自然37"
+    "en": "dictatorship",
+    "phon": "/dɪkˈteɪ.tər.ʃɪp/",
+    "cn": "独裁政权"
   },
   {
-    "en": "word8-258",
-    "phon": "/wɜːrd/",
-    "cn": "经济37"
+    "en": "oligarchy",
+    "phon": "/ˈɒl.ɪ.ɡɑːr.ki/",
+    "cn": "寡头政治"
   },
   {
-    "en": "word8-259",
-    "phon": "/wɜːrd/",
-    "cn": "教育37"
+    "en": "theocracy",
+    "phon": "/θiˈɒk.rə.si/",
+    "cn": "神权政治"
   },
   {
-    "en": "word8-260",
-    "phon": "/wɜːrd/",
-    "cn": "科学38"
+    "en": "uncloswise",
+    "phon": "/uncloswise/",
+    "cn": "uncloswise"
   },
   {
-    "en": "word8-261",
-    "phon": "/wɜːrd/",
-    "cn": "技术38"
+    "en": "unclosling",
+    "phon": "/unclosling/",
+    "cn": "unclosling"
   },
   {
-    "en": "word8-262",
-    "phon": "/wɜːrd/",
-    "cn": "社会38"
+    "en": "uncloslet",
+    "phon": "/uncloslet/",
+    "cn": "uncloslet"
   },
   {
-    "en": "word8-263",
-    "phon": "/wɜːrd/",
-    "cn": "文化38"
+    "en": "judiciary",
+    "phon": "/dʒuːˈdɪʃ.ər.i/",
+    "cn": "司法部门"
   },
   {
-    "en": "word8-264",
-    "phon": "/wɜːrd/",
-    "cn": "自然38"
+    "en": "executive",
+    "phon": "/ɪɡˈzek.ju.tɪv/",
+    "cn": "行政部门"
   },
   {
-    "en": "word8-265",
-    "phon": "/wɜːrd/",
-    "cn": "经济38"
+    "en": "legislature",
+    "phon": "/ˈledʒ.ɪs.leɪ.tʃər/",
+    "cn": "立法机关"
   },
   {
-    "en": "word8-266",
-    "phon": "/wɜːrd/",
-    "cn": "教育38"
+    "en": "parliament",
+    "phon": "/ˈpɑːr.lə.mənt/",
+    "cn": "议会"
   },
   {
-    "en": "word8-267",
-    "phon": "/wɜːrd/",
-    "cn": "科学39"
+    "en": "congress",
+    "phon": "/ˈkɒŋ.ɡres/",
+    "cn": "国会"
   },
   {
-    "en": "word8-268",
-    "phon": "/wɜːrd/",
-    "cn": "技术39"
+    "en": "senate",
+    "phon": "/ˈsen.ɪt/",
+    "cn": "参议院"
   },
   {
-    "en": "word8-269",
-    "phon": "/wɜːrd/",
-    "cn": "社会39"
+    "en": "house of representatives",
+    "phon": "/haʊs əv ˌrep.rɪˈzen.tə.tɪvz/",
+    "cn": "众议院"
   },
   {
-    "en": "word8-270",
-    "phon": "/wɜːrd/",
-    "cn": "文化39"
+    "en": "cabinet",
+    "phon": "/ˈkæb.ɪ.nət/",
+    "cn": "内阁"
   },
   {
-    "en": "word8-271",
-    "phon": "/wɜːrd/",
-    "cn": "自然39"
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚机构"
   },
   {
-    "en": "word8-272",
-    "phon": "/wɜːrd/",
-    "cn": "经济39"
+    "en": "federalism",
+    "phon": "/ˈfed.ər.əl.ɪ.zəm/",
+    "cn": "联邦制"
   },
   {
-    "en": "word8-273",
-    "phon": "/wɜːrd/",
-    "cn": "教育39"
+    "en": "separation of powers",
+    "phon": "/ˌsep.əˈreɪ.ʃən əv ˈpaʊ.ərz/",
+    "cn": "权力分立"
   },
   {
-    "en": "word8-274",
-    "phon": "/wɜːrd/",
-    "cn": "科学40"
+    "en": "checks and balances",
+    "phon": "/tʃeks ænd ˈbæl.əns.ɪz/",
+    "cn": "制衡"
   },
   {
-    "en": "word8-275",
-    "phon": "/wɜːrd/",
-    "cn": "技术40"
+    "en": "civil liberties",
+    "phon": "/ˈsɪv.əl ˈlɪb.ər.tiz/",
+    "cn": "公民自由"
   },
   {
-    "en": "word8-276",
-    "phon": "/wɜːrd/",
-    "cn": "社会40"
+    "en": "unclosette",
+    "phon": "/unclosette/",
+    "cn": "unclosette"
   },
   {
-    "en": "word8-277",
-    "phon": "/wɜːrd/",
-    "cn": "文化40"
+    "en": "due process",
+    "phon": "/djuː ˈprɒs.es/",
+    "cn": "正当程序"
   },
   {
-    "en": "word8-278",
-    "phon": "/wɜːrd/",
-    "cn": "自然40"
+    "en": "rule of law",
+    "phon": "/ruːl əv lɔː/",
+    "cn": "法治"
   },
   {
-    "en": "word8-279",
-    "phon": "/wɜːrd/",
-    "cn": "经济40"
+    "en": "uncogntion",
+    "phon": "/uncogntion/",
+    "cn": "uncogntion"
   },
   {
-    "en": "word8-280",
-    "phon": "/wɜːrd/",
-    "cn": "教育40"
+    "en": "uncognsion",
+    "phon": "/uncognsion/",
+    "cn": "uncognsion"
   },
   {
-    "en": "word8-281",
-    "phon": "/wɜːrd/",
-    "cn": "科学41"
+    "en": "foreign policy",
+    "phon": "/ˈfɒr.ən ˈpɒl.ə.si/",
+    "cn": "外交政策"
   },
   {
-    "en": "word8-282",
-    "phon": "/wɜːrd/",
-    "cn": "技术41"
+    "en": "national security",
+    "phon": "/ˈnæʃ.ən.əl sɪˈkjʊə.rə.ti/",
+    "cn": "国家安全"
   },
   {
-    "en": "word8-283",
-    "phon": "/wɜːrd/",
-    "cn": "社会41"
+    "en": "uncognment",
+    "phon": "/uncognment/",
+    "cn": "uncognment"
   },
   {
-    "en": "word8-284",
-    "phon": "/wɜːrd/",
-    "cn": "文化41"
+    "en": "espionage",
+    "phon": "/ˈes.pi.ə.nɑːʒ/",
+    "cn": "间谍活动"
   },
   {
-    "en": "word8-285",
-    "phon": "/wɜːrd/",
-    "cn": "自然41"
+    "en": "uncognness",
+    "phon": "/uncognness/",
+    "cn": "uncognness"
   },
   {
-    "en": "word8-286",
-    "phon": "/wɜːrd/",
-    "cn": "经济41"
+    "en": "lobbying",
+    "phon": "/ˈlɒb.i.ɪŋ/",
+    "cn": "游说"
   },
   {
-    "en": "word8-287",
-    "phon": "/wɜːrd/",
-    "cn": "教育41"
+    "en": "campaign",
+    "phon": "/kæmˈpeɪn/",
+    "cn": "竞选"
   },
   {
-    "en": "word8-288",
-    "phon": "/wɜːrd/",
-    "cn": "科学42"
+    "en": "uncognity",
+    "phon": "/uncognity/",
+    "cn": "uncognity"
   },
   {
-    "en": "word8-289",
-    "phon": "/wɜːrd/",
-    "cn": "技术42"
+    "en": "ballot",
+    "phon": "/ˈbæl.ət/",
+    "cn": "选票"
   },
   {
-    "en": "word8-290",
-    "phon": "/wɜːrd/",
-    "cn": "社会42"
+    "en": "referendum",
+    "phon": "/ˌref.əˈren.dəm/",
+    "cn": "公投"
   },
   {
-    "en": "word8-291",
-    "phon": "/wɜːrd/",
-    "cn": "文化42"
+    "en": "impeachment",
+    "phon": "/ɪmˈpiːtʃ.mənt/",
+    "cn": "弹劾"
   },
   {
-    "en": "word8-292",
-    "phon": "/wɜːrd/",
-    "cn": "自然42"
+    "en": "sanction",
+    "phon": "/ˈsæŋk.ʃən/",
+    "cn": "制裁"
   },
   {
-    "en": "word8-293",
-    "phon": "/wɜːrd/",
-    "cn": "经济42"
+    "en": "embargo",
+    "phon": "/ɪmˈbɑːr.ɡəʊ/",
+    "cn": "禁运"
   },
   {
-    "en": "word8-294",
-    "phon": "/wɜːrd/",
-    "cn": "教育42"
+    "en": "uncognence",
+    "phon": "/uncognence/",
+    "cn": "uncognence"
   },
   {
-    "en": "word8-295",
-    "phon": "/wɜːrd/",
-    "cn": "科学43"
+    "en": "uncognance",
+    "phon": "/uncognance/",
+    "cn": "uncognance"
   },
   {
-    "en": "word8-296",
-    "phon": "/wɜːrd/",
-    "cn": "技术43"
+    "en": "NATO",
+    "phon": "/ˈneɪ.təʊ/",
+    "cn": "北约"
   },
   {
-    "en": "word8-297",
-    "phon": "/wɜːrd/",
-    "cn": "社会43"
+    "en": "UN",
+    "phon": "/ˌjuː ˈen/",
+    "cn": "联合国"
   },
   {
-    "en": "word8-298",
-    "phon": "/wɜːrd/",
-    "cn": "文化43"
+    "en": "EU",
+    "phon": "/ˌiː ˈjuː/",
+    "cn": "欧盟"
   },
   {
-    "en": "word8-299",
-    "phon": "/wɜːrd/",
-    "cn": "自然43"
+    "en": "uncognous",
+    "phon": "/uncognous/",
+    "cn": "uncognous"
   },
   {
-    "en": "word8-300",
-    "phon": "/wɜːrd/",
-    "cn": "经济43"
+    "en": "IMF",
+    "phon": "/ˌaɪ.em ˈef/",
+    "cn": "国际货币基金组织"
   }
 ]

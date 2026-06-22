@@ -1,252 +1,252 @@
 [
   {
-    "en": "word3-101",
-    "phon": "/wɜːrd/",
-    "cn": "时间15"
+    "en": "malleable",
+    "phon": "/ˈmæl.i.ə.bəl/",
+    "cn": "可塑的"
   },
   {
-    "en": "word3-102",
-    "phon": "/wɜːrd/",
-    "cn": "自然15"
+    "en": "face",
+    "phon": "/feɪs/",
+    "cn": "脸"
   },
   {
-    "en": "word3-103",
-    "phon": "/wɜːrd/",
-    "cn": "动物15"
+    "en": "forehead",
+    "phon": "/ˈfɔː.hed/",
+    "cn": "额头"
   },
   {
-    "en": "word3-104",
-    "phon": "/wɜːrd/",
-    "cn": "食物15"
+    "en": "cheek",
+    "phon": "/tʃiːk/",
+    "cn": "脸颊"
   },
   {
-    "en": "word3-105",
-    "phon": "/wɜːrd/",
-    "cn": "身体15"
+    "en": "chin",
+    "phon": "/tʃɪn/",
+    "cn": "下巴"
   },
   {
-    "en": "word3-106",
-    "phon": "/wɜːrd/",
-    "cn": "家庭16"
+    "en": "neck",
+    "phon": "/nek/",
+    "cn": "脖子"
   },
   {
-    "en": "word3-107",
-    "phon": "/wɜːrd/",
-    "cn": "学校16"
+    "en": "shoulder",
+    "phon": "/ˈʃəʊl.dər/",
+    "cn": "肩膀"
   },
   {
-    "en": "word3-108",
-    "phon": "/wɜːrd/",
-    "cn": "时间16"
+    "en": "chest",
+    "phon": "/tʃest/",
+    "cn": "胸部"
   },
   {
-    "en": "word3-109",
-    "phon": "/wɜːrd/",
-    "cn": "自然16"
+    "en": "stomach",
+    "phon": "/ˈstʌm.ək/",
+    "cn": "胃"
   },
   {
-    "en": "word3-110",
-    "phon": "/wɜːrd/",
-    "cn": "动物16"
+    "en": "back",
+    "phon": "/bæk/",
+    "cn": "背部"
   },
   {
-    "en": "word3-111",
-    "phon": "/wɜːrd/",
-    "cn": "食物16"
+    "en": "waist",
+    "phon": "/weɪst/",
+    "cn": "腰"
   },
   {
-    "en": "word3-112",
-    "phon": "/wɜːrd/",
-    "cn": "身体16"
+    "en": "hip",
+    "phon": "/hɪp/",
+    "cn": "臀部"
   },
   {
-    "en": "word3-113",
-    "phon": "/wɜːrd/",
-    "cn": "家庭17"
+    "en": "knee",
+    "phon": "/niː/",
+    "cn": "膝盖"
   },
   {
-    "en": "word3-114",
-    "phon": "/wɜːrd/",
-    "cn": "学校17"
+    "en": "ankle",
+    "phon": "/ˈæŋ.kəl/",
+    "cn": "脚踝"
   },
   {
-    "en": "word3-115",
-    "phon": "/wɜːrd/",
-    "cn": "时间17"
+    "en": "wrist",
+    "phon": "/rɪst/",
+    "cn": "手腕"
   },
   {
-    "en": "word3-116",
-    "phon": "/wɜːrd/",
-    "cn": "自然17"
+    "en": "elbow",
+    "phon": "/ˈel.bəʊ/",
+    "cn": "肘部"
   },
   {
-    "en": "word3-117",
-    "phon": "/wɜːrd/",
-    "cn": "动物17"
+    "en": "finger",
+    "phon": "/ˈfɪŋ.ɡər/",
+    "cn": "手指"
   },
   {
-    "en": "word3-118",
-    "phon": "/wɜːrd/",
-    "cn": "食物17"
+    "en": "thumb",
+    "phon": "/θʌm/",
+    "cn": "拇指"
   },
   {
-    "en": "word3-119",
-    "phon": "/wɜːrd/",
-    "cn": "身体17"
+    "en": "toe",
+    "phon": "/təʊ/",
+    "cn": "脚趾"
   },
   {
-    "en": "word3-120",
-    "phon": "/wɜːrd/",
-    "cn": "家庭18"
+    "en": "heel",
+    "phon": "/hiːl/",
+    "cn": "脚后跟"
   },
   {
-    "en": "word3-121",
-    "phon": "/wɜːrd/",
-    "cn": "学校18"
+    "en": "lip",
+    "phon": "/lɪp/",
+    "cn": "嘴唇"
   },
   {
-    "en": "word3-122",
-    "phon": "/wɜːrd/",
-    "cn": "时间18"
+    "en": "tongue",
+    "phon": "/tʌŋ/",
+    "cn": "舌头"
   },
   {
-    "en": "word3-123",
-    "phon": "/wɜːrd/",
-    "cn": "自然18"
+    "en": "tooth",
+    "phon": "/tuːθ/",
+    "cn": "牙齿"
   },
   {
-    "en": "word3-124",
-    "phon": "/wɜːrd/",
-    "cn": "动物18"
+    "en": "gum",
+    "phon": "/ɡʌm/",
+    "cn": "牙龈"
   },
   {
-    "en": "word3-125",
-    "phon": "/wɜːrd/",
-    "cn": "食物18"
+    "en": "throat",
+    "phon": "/θrəʊt/",
+    "cn": "喉咙"
   },
   {
-    "en": "word3-126",
-    "phon": "/wɜːrd/",
-    "cn": "身体18"
+    "en": "lung",
+    "phon": "/lʌŋ/",
+    "cn": "肺"
   },
   {
-    "en": "word3-127",
-    "phon": "/wɜːrd/",
-    "cn": "家庭19"
+    "en": "heart",
+    "phon": "/hɑːrt/",
+    "cn": "心脏"
   },
   {
-    "en": "word3-128",
-    "phon": "/wɜːrd/",
-    "cn": "学校19"
+    "en": "liver",
+    "phon": "/ˈlɪv.ər/",
+    "cn": "肝脏"
   },
   {
-    "en": "word3-129",
-    "phon": "/wɜːrd/",
-    "cn": "时间19"
+    "en": "kidney",
+    "phon": "/ˈkɪd.ni/",
+    "cn": "肾脏"
   },
   {
-    "en": "word3-130",
-    "phon": "/wɜːrd/",
-    "cn": "自然19"
+    "en": "bone",
+    "phon": "/bəʊn/",
+    "cn": "骨头"
   },
   {
-    "en": "word3-131",
-    "phon": "/wɜːrd/",
-    "cn": "动物19"
+    "en": "muscle",
+    "phon": "/ˈmʌs.əl/",
+    "cn": "肌肉"
   },
   {
-    "en": "word3-132",
-    "phon": "/wɜːrd/",
-    "cn": "食物19"
+    "en": "skin",
+    "phon": "/skɪn/",
+    "cn": "皮肤"
   },
   {
-    "en": "word3-133",
-    "phon": "/wɜːrd/",
-    "cn": "身体19"
+    "en": "blood",
+    "phon": "/blʌd/",
+    "cn": "血液"
   },
   {
-    "en": "word3-134",
-    "phon": "/wɜːrd/",
-    "cn": "家庭20"
+    "en": "vein",
+    "phon": "/veɪn/",
+    "cn": "血管"
   },
   {
-    "en": "word3-135",
-    "phon": "/wɜːrd/",
-    "cn": "学校20"
+    "en": "nerve",
+    "phon": "/nɜːrv/",
+    "cn": "神经"
   },
   {
-    "en": "word3-136",
-    "phon": "/wɜːrd/",
-    "cn": "时间20"
+    "en": "mendacious",
+    "phon": "/menˈdeɪ.ʃəs/",
+    "cn": "虚假的"
   },
   {
-    "en": "word3-137",
-    "phon": "/wɜːrd/",
-    "cn": "自然20"
+    "en": "hair",
+    "phon": "/heər/",
+    "cn": "头发"
   },
   {
-    "en": "word3-138",
-    "phon": "/wɜːrd/",
-    "cn": "动物20"
+    "en": "beard",
+    "phon": "/bɪəd/",
+    "cn": "胡子"
   },
   {
-    "en": "word3-139",
-    "phon": "/wɜːrd/",
-    "cn": "食物20"
+    "en": "sweat",
+    "phon": "/swet/",
+    "cn": "汗水"
   },
   {
-    "en": "word3-140",
-    "phon": "/wɜːrd/",
-    "cn": "身体20"
+    "en": "tear",
+    "phon": "/tɪər/",
+    "cn": "眼泪"
   },
   {
-    "en": "word3-141",
-    "phon": "/wɜːrd/",
-    "cn": "家庭21"
+    "en": "fever",
+    "phon": "/ˈfiː.vər/",
+    "cn": "发烧"
   },
   {
-    "en": "word3-142",
-    "phon": "/wɜːrd/",
-    "cn": "学校21"
+    "en": "cough",
+    "phon": "/kɒf/",
+    "cn": "咳嗽"
   },
   {
-    "en": "word3-143",
-    "phon": "/wɜːrd/",
-    "cn": "时间21"
+    "en": "mercurial",
+    "phon": "/mɜːrˈkjʊər.i.əl/",
+    "cn": "善变的"
   },
   {
-    "en": "word3-144",
-    "phon": "/wɜːrd/",
-    "cn": "自然21"
+    "en": "headache",
+    "phon": "/ˈhed.eɪk/",
+    "cn": "头痛"
   },
   {
-    "en": "word3-145",
-    "phon": "/wɜːrd/",
-    "cn": "动物21"
+    "en": "stomachache",
+    "phon": "/ˈstʌm.ək.eɪk/",
+    "cn": "胃痛"
   },
   {
-    "en": "word3-146",
-    "phon": "/wɜːrd/",
-    "cn": "食物21"
+    "en": "toothache",
+    "phon": "/ˈtuːθ.eɪk/",
+    "cn": "牙痛"
   },
   {
-    "en": "word3-147",
-    "phon": "/wɜːrd/",
-    "cn": "身体21"
+    "en": "medicine",
+    "phon": "/ˈmed.ɪ.sən/",
+    "cn": "药"
   },
   {
-    "en": "word3-148",
-    "phon": "/wɜːrd/",
-    "cn": "家庭22"
+    "en": "pill",
+    "phon": "/pɪl/",
+    "cn": "药丸"
   },
   {
-    "en": "word3-149",
-    "phon": "/wɜːrd/",
-    "cn": "学校22"
+    "en": "meticulous",
+    "phon": "/məˈtɪk.jʊ.ləs/",
+    "cn": "一丝不苟的"
   },
   {
-    "en": "word3-150",
-    "phon": "/wɜːrd/",
-    "cn": "时间22"
+    "en": "wisdom",
+    "phon": "/ˈwɪz.dəm/",
+    "cn": "智慧"
   }
 ]

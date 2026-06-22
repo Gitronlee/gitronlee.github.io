@@ -1,252 +1,252 @@
 [
   {
-    "en": "word8-1",
-    "phon": "/wɜːrd/",
-    "cn": "科学1"
+    "en": "abstraction",
+    "phon": "/æbˈstræk.ʃən/",
+    "cn": "抽象"
   },
   {
-    "en": "word8-2",
-    "phon": "/wɜːrd/",
-    "cn": "技术1"
+    "en": "generalization",
+    "phon": "/ˌdʒen.ər.əl.aɪˈzeɪ.ʃən/",
+    "cn": "概括"
   },
   {
-    "en": "word8-3",
-    "phon": "/wɜːrd/",
-    "cn": "社会1"
+    "en": "specification",
+    "phon": "/ˌspes.ɪ.fɪˈkeɪ.ʃən/",
+    "cn": "具体化"
   },
   {
-    "en": "word8-4",
-    "phon": "/wɜːrd/",
-    "cn": "文化1"
+    "en": "categorization",
+    "phon": "/ˌkæt.ə.ɡər.aɪˈzeɪ.ʃən/",
+    "cn": "分类"
   },
   {
-    "en": "word8-5",
-    "phon": "/wɜːrd/",
-    "cn": "自然1"
+    "en": "classification",
+    "phon": "/ˌklæs.ɪ.fɪˈkeɪ.ʃən/",
+    "cn": "分类"
   },
   {
-    "en": "word8-6",
-    "phon": "/wɜːrd/",
-    "cn": "经济1"
+    "en": "systematization",
+    "phon": "/sɪˌsɪs.təm.ə.taɪˈzeɪ.ʃən/",
+    "cn": "系统化"
   },
   {
-    "en": "word8-7",
-    "phon": "/wɜːrd/",
-    "cn": "教育1"
+    "en": "formalization",
+    "phon": "/ˌfɔːr.məl.aɪˈzeɪ.ʃən/",
+    "cn": "形式化"
   },
   {
-    "en": "word8-8",
-    "phon": "/wɜːrd/",
-    "cn": "科学2"
+    "en": "conceptualization",
+    "phon": "/kənˌsep.tʃu.əl.aɪˈzeɪ.ʃən/",
+    "cn": "概念化"
   },
   {
-    "en": "word8-9",
-    "phon": "/wɜːrd/",
-    "cn": "技术2"
+    "en": "unclineent",
+    "phon": "/unclineent/",
+    "cn": "unclineent"
   },
   {
-    "en": "word8-10",
-    "phon": "/wɜːrd/",
-    "cn": "社会2"
+    "en": "empirical",
+    "phon": "/ɪmˈpɪr.ɪ.kəl/",
+    "cn": "实证的"
   },
   {
-    "en": "word8-11",
-    "phon": "/wɜːrd/",
-    "cn": "文化2"
+    "en": "theoretical",
+    "phon": "/θɪəˈret.ɪ.kəl/",
+    "cn": "理论的"
   },
   {
-    "en": "word8-12",
-    "phon": "/wɜːrd/",
-    "cn": "自然2"
+    "en": "quantitative",
+    "phon": "/ˈkwɒn.tɪ.tə.tɪv/",
+    "cn": "定量的"
   },
   {
-    "en": "word8-13",
-    "phon": "/wɜːrd/",
-    "cn": "经济2"
+    "en": "qualitative",
+    "phon": "/ˈkwɒl.ɪ.tə.tɪv/",
+    "cn": "定性的"
   },
   {
-    "en": "word8-14",
-    "phon": "/wɜːrd/",
-    "cn": "教育2"
+    "en": "statistical",
+    "phon": "/stəˈtɪs.tɪ.kəl/",
+    "cn": "统计的"
   },
   {
-    "en": "word8-15",
-    "phon": "/wɜːrd/",
-    "cn": "科学3"
+    "en": "probability",
+    "phon": "/ˌprɒb.əˈbɪl.ə.ti/",
+    "cn": "概率"
   },
   {
-    "en": "word8-16",
-    "phon": "/wɜːrd/",
-    "cn": "技术3"
+    "en": "regression",
+    "phon": "/rɪˈɡreʃ.ən/",
+    "cn": "回归"
   },
   {
-    "en": "word8-17",
-    "phon": "/wɜːrd/",
-    "cn": "社会3"
+    "en": "unclineant",
+    "phon": "/unclineant/",
+    "cn": "unclineant"
   },
   {
-    "en": "word8-18",
-    "phon": "/wɜːrd/",
-    "cn": "文化3"
+    "en": "standard deviation",
+    "phon": "/ˈstæn.dəd ˌdiː.viˈeɪ.ʃən/",
+    "cn": "标准差"
   },
   {
-    "en": "word8-19",
-    "phon": "/wɜːrd/",
-    "cn": "自然3"
+    "en": "unclineary",
+    "phon": "/unclineary/",
+    "cn": "unclineary"
   },
   {
-    "en": "word8-20",
-    "phon": "/wɜːrd/",
-    "cn": "经济3"
+    "en": "median",
+    "phon": "/ˈmiː.di.ən/",
+    "cn": "中位数"
   },
   {
-    "en": "word8-21",
-    "phon": "/wɜːrd/",
-    "cn": "教育3"
+    "en": "mode",
+    "phon": "/məʊd/",
+    "cn": "众数"
   },
   {
-    "en": "word8-22",
-    "phon": "/wɜːrd/",
-    "cn": "科学4"
+    "en": "variance",
+    "phon": "/ˈveər.i.əns/",
+    "cn": "方差"
   },
   {
-    "en": "word8-23",
-    "phon": "/wɜːrd/",
-    "cn": "技术4"
+    "en": "sample",
+    "phon": "/ˈsɑː.məl/",
+    "cn": "样本"
   },
   {
-    "en": "word8-24",
-    "phon": "/wɜːrd/",
-    "cn": "社会4"
+    "en": "population",
+    "phon": "/ˌpɒp.juˈleɪ.ʃən/",
+    "cn": "总体"
   },
   {
-    "en": "word8-25",
-    "phon": "/wɜːrd/",
-    "cn": "文化4"
+    "en": "unclineory",
+    "phon": "/unclineory/",
+    "cn": "unclineory"
   },
   {
-    "en": "word8-26",
-    "phon": "/wɜːrd/",
-    "cn": "自然4"
+    "en": "unclinedom",
+    "phon": "/unclinedom/",
+    "cn": "unclinedom"
   },
   {
-    "en": "word8-27",
-    "phon": "/wɜːrd/",
-    "cn": "经济4"
+    "en": "control group",
+    "phon": "/kənˈtrəʊl ɡruːp/",
+    "cn": "对照组"
   },
   {
-    "en": "word8-28",
-    "phon": "/wɜːrd/",
-    "cn": "教育4"
+    "en": "unclineship",
+    "phon": "/unclineship/",
+    "cn": "unclineship"
   },
   {
-    "en": "word8-29",
-    "phon": "/wɜːrd/",
-    "cn": "科学5"
+    "en": "unclineward",
+    "phon": "/unclineward/",
+    "cn": "unclineward"
   },
   {
-    "en": "word8-30",
-    "phon": "/wɜːrd/",
-    "cn": "技术5"
+    "en": "hypothesis testing",
+    "phon": "/haɪˈpɒθ.ə.sɪs ˈtes.tɪŋ/",
+    "cn": "假设检验"
   },
   {
-    "en": "word8-31",
-    "phon": "/wɜːrd/",
-    "cn": "社会5"
+    "en": "null hypothesis",
+    "phon": "/nʌl haɪˈpɒθ.ə.sɪs/",
+    "cn": "零假设"
   },
   {
-    "en": "word8-32",
-    "phon": "/wɜːrd/",
-    "cn": "文化5"
+    "en": "p-value",
+    "phon": "/piː ˈvæl.juː/",
+    "cn": "p值"
   },
   {
-    "en": "word8-33",
-    "phon": "/wɜːrd/",
-    "cn": "自然5"
+    "en": "significance",
+    "phon": "/sɪɡˈnɪf.ɪ.kəns/",
+    "cn": "显著性"
   },
   {
-    "en": "word8-34",
-    "phon": "/wɜːrd/",
-    "cn": "经济5"
+    "en": "confidence interval",
+    "phon": "/ˈkɒn.fɪ.dəns ˈɪn.tə.vəl/",
+    "cn": "置信区间"
   },
   {
-    "en": "word8-35",
-    "phon": "/wɜːrd/",
-    "cn": "教育5"
+    "en": "peer review",
+    "phon": "/pɪər rɪˈvjuː/",
+    "cn": "同行评审"
   },
   {
-    "en": "word8-36",
-    "phon": "/wɜːrd/",
-    "cn": "科学6"
+    "en": "citation",
+    "phon": "/saɪˈteɪ.ʃən/",
+    "cn": "引用"
   },
   {
-    "en": "word8-37",
-    "phon": "/wɜːrd/",
-    "cn": "技术6"
+    "en": "plagiarism",
+    "phon": "/ˈpleɪ.dʒər.ɪ.zəm/",
+    "cn": "抄袭"
   },
   {
-    "en": "word8-38",
-    "phon": "/wɜːrd/",
-    "cn": "社会6"
+    "en": "bibliography",
+    "phon": "/ˌbɪb.liˈɒɡ.rə.fi/",
+    "cn": "参考文献"
   },
   {
-    "en": "word8-39",
-    "phon": "/wɜːrd/",
-    "cn": "文化6"
+    "en": "thesis",
+    "phon": "/ˈθiː.sɪs/",
+    "cn": "论文"
   },
   {
-    "en": "word8-40",
-    "phon": "/wɜːrd/",
-    "cn": "自然6"
+    "en": "dissertation",
+    "phon": "/ˌdɪs.ərˈteɪ.ʃən/",
+    "cn": "学位论文"
   },
   {
-    "en": "word8-41",
-    "phon": "/wɜːrd/",
-    "cn": "经济6"
+    "en": "abstract",
+    "phon": "/ˈæb.strækt/",
+    "cn": "摘要"
   },
   {
-    "en": "word8-42",
-    "phon": "/wɜːrd/",
-    "cn": "教育6"
+    "en": "unclinewise",
+    "phon": "/unclinewise/",
+    "cn": "unclinewise"
   },
   {
-    "en": "word8-43",
-    "phon": "/wɜːrd/",
-    "cn": "科学7"
+    "en": "literature review",
+    "phon": "/ˈlɪt.ər.ə.tʃər rɪˈvjuː/",
+    "cn": "文献综述"
   },
   {
-    "en": "word8-44",
-    "phon": "/wɜːrd/",
-    "cn": "技术7"
+    "en": "appendix",
+    "phon": "/əˈpen.dɪks/",
+    "cn": "附录"
   },
   {
-    "en": "word8-45",
-    "phon": "/wɜːrd/",
-    "cn": "社会7"
+    "en": "footnote",
+    "phon": "/ˈfʊt.nəʊt/",
+    "cn": "脚注"
   },
   {
-    "en": "word8-46",
-    "phon": "/wɜːrd/",
-    "cn": "文化7"
+    "en": "peer",
+    "phon": "/pɪər/",
+    "cn": "同行"
   },
   {
-    "en": "word8-47",
-    "phon": "/wɜːrd/",
-    "cn": "自然7"
+    "en": "scholar",
+    "phon": "/ˈskɒl.ər/",
+    "cn": "学者"
   },
   {
-    "en": "word8-48",
-    "phon": "/wɜːrd/",
-    "cn": "经济7"
+    "en": "academia",
+    "phon": "/ˌæk.əˈdiː.mi.ə/",
+    "cn": "学术界"
   },
   {
-    "en": "word8-49",
-    "phon": "/wɜːrd/",
-    "cn": "教育7"
+    "en": "colloquium",
+    "phon": "/kəˈləʊ.kwi.əm/",
+    "cn": "学术讨论会"
   },
   {
-    "en": "word8-50",
-    "phon": "/wɜːrd/",
-    "cn": "科学8"
+    "en": "symposium",
+    "phon": "/sɪmˈpəʊ.zi.əm/",
+    "cn": "研讨会"
   }
 ]

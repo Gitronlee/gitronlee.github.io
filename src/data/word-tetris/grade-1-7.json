@@ -1,227 +1,252 @@
 [
   {
-    "en": "nature",
-    "phon": "/ˈneɪ.tʃər/",
-    "cn": "自然"
+    "en": "only",
+    "phon": "/ˈəʊn.li/",
+    "cn": "只有"
   },
   {
-    "en": "energy",
-    "phon": "/ˈen.ə.dʒi/",
-    "cn": "能量"
+    "en": "even",
+    "phon": "/ˈiː.vən/",
+    "cn": "甚至"
   },
   {
-    "en": "electricity",
-    "phon": "/ɪˌlek.trɪs.ə.ti/",
-    "cn": "电"
+    "en": "still",
+    "phon": "/stɪl/",
+    "cn": "仍然"
   },
   {
-    "en": "technology",
-    "phon": "/tekˈnɒl.ə.dʒi/",
-    "cn": "科技"
+    "en": "again",
+    "phon": "/əˈɡen/",
+    "cn": "再次"
   },
   {
-    "en": "internet",
-    "phon": "/ˈɪn.tə.net/",
-    "cn": "互联网"
+    "en": "once",
+    "phon": "/wʌns/",
+    "cn": "曾经"
   },
   {
-    "en": "website",
-    "phon": "/ˈweb.saɪt/",
-    "cn": "网站"
+    "en": "twice",
+    "phon": "/twaɪs/",
+    "cn": "两次"
   },
   {
-    "en": "email",
-    "phon": "/ˈiː.meɪl/",
-    "cn": "电子邮件"
+    "en": "soon",
+    "phon": "/suːn/",
+    "cn": "很快"
   },
   {
-    "en": "password",
-    "phon": "/ˈpɑːs.wɜːd/",
-    "cn": "密码"
+    "en": "later",
+    "phon": "/ˈleɪ.tər/",
+    "cn": "稍后"
   },
   {
-    "en": "software",
-    "phon": "/ˈsɒft.weər/",
-    "cn": "软件"
+    "en": "ago",
+    "phon": "/əˈɡəʊ/",
+    "cn": "以前"
   },
   {
-    "en": "hardware",
-    "phon": "/ˈheəd.weər/",
-    "cn": "硬件"
+    "en": "now",
+    "phon": "/naʊ/",
+    "cn": "现在"
   },
   {
-    "en": "program",
-    "phon": "/ˈprəʊ.ɡræm/",
-    "cn": "程序"
+    "en": "here",
+    "phon": "/hɪər/",
+    "cn": "这里"
   },
   {
-    "en": "data",
-    "phon": "/ˈdeɪ.tə/",
-    "cn": "数据"
+    "en": "there",
+    "phon": "/ðeər/",
+    "cn": "那里"
   },
   {
-    "en": "information",
-    "phon": "/ˌɪn.fəˈmeɪ.ʃən/",
-    "cn": "信息"
+    "en": "inside",
+    "phon": "/ˌɪnˈsaɪd/",
+    "cn": "里面"
   },
   {
-    "en": "message",
-    "phon": "/ˈmes.ɪdʒ/",
-    "cn": "消息"
+    "en": "outside",
+    "phon": "/ˌaʊtˈsaɪd/",
+    "cn": "外面"
   },
   {
-    "en": "language",
-    "phon": "/ˈlæŋ.ɡwɪdʒ/",
-    "cn": "语言"
+    "en": "above",
+    "phon": "/əˈbʌv/",
+    "cn": "上面"
   },
   {
-    "en": "grammar",
-    "phon": "/ˈɡræm.ər/",
-    "cn": "语法"
+    "en": "below",
+    "phon": "/bɪˈləʊ/",
+    "cn": "下面"
   },
   {
-    "en": "vocabulary",
-    "phon": "/vəˈkæb.jə.lər.i/",
-    "cn": "词汇"
+    "en": "between",
+    "phon": "/bɪˈtwiːn/",
+    "cn": "之间"
   },
   {
-    "en": "sentence",
-    "phon": "/ˈsen.təns/",
-    "cn": "句子"
+    "en": "beside",
+    "phon": "/bɪˈsaɪd/",
+    "cn": "旁边"
   },
   {
-    "en": "paragraph",
-    "phon": "/ˈpær.ə.ɡrɑːf/",
-    "cn": "段落"
+    "en": "behind",
+    "phon": "/bɪˈhaɪnd/",
+    "cn": "后面"
   },
   {
-    "en": "essay",
-    "phon": "/ˈes.eɪ/",
-    "cn": "文章"
+    "en": "front",
+    "phon": "/frʌnt/",
+    "cn": "前面"
   },
   {
-    "en": "novel",
-    "phon": "/ˈnɒv.əl/",
-    "cn": "小说"
+    "en": "left",
+    "phon": "/left/",
+    "cn": "左边"
   },
   {
-    "en": "poem",
-    "phon": "/ˈpəʊ.ɪm/",
-    "cn": "诗"
+    "en": "right",
+    "phon": "/raɪt/",
+    "cn": "右边"
   },
   {
-    "en": "author",
-    "phon": "/ˈɔː.θər/",
-    "cn": "作者"
+    "en": "north",
+    "phon": "/nɔːθ/",
+    "cn": "北"
   },
   {
-    "en": "character",
-    "phon": "/ˈkær.ək.tər/",
-    "cn": "角色"
+    "en": "south",
+    "phon": "/saʊθ/",
+    "cn": "南"
   },
   {
-    "en": "story",
-    "phon": "/ˈstɔːr.i/",
-    "cn": "故事"
+    "en": "east",
+    "phon": "/iːst/",
+    "cn": "东"
   },
   {
-    "en": "culture",
-    "phon": "/ˈkʌl.tʃər/",
-    "cn": "文化"
+    "en": "west",
+    "phon": "/west/",
+    "cn": "西"
   },
   {
-    "en": "tradition",
-    "phon": "/trəˈdɪʃ.ən/",
-    "cn": "传统"
+    "en": "near",
+    "phon": "/nɪər/",
+    "cn": "近的"
   },
   {
-    "en": "custom",
-    "phon": "/ˈkʌs.təm/",
-    "cn": "习俗"
+    "en": "far",
+    "phon": "/fɑːr/",
+    "cn": "远的"
   },
   {
-    "en": "festival",
-    "phon": "/ˈfes.tɪ.vəl/",
-    "cn": "节日"
+    "en": "quickly",
+    "phon": "/ˈkwɪk.li/",
+    "cn": "快速地"
   },
   {
-    "en": "celebrate",
-    "phon": "/ˈsel.ɪ.breɪt/",
-    "cn": "庆祝"
+    "en": "slowly",
+    "phon": "/ˈsləʊ.li/",
+    "cn": "慢慢地"
   },
   {
-    "en": "ceremony",
-    "phon": "/ˈser.ə.mə.ni/",
-    "cn": "仪式"
+    "en": "carefully",
+    "phon": "/ˈkeə.fəl.i/",
+    "cn": "仔细地"
   },
   {
-    "en": "marriage",
-    "phon": "/ˈmær.ɪdʒ/",
-    "cn": "婚姻"
+    "en": "happily",
+    "phon": "/ˈhæp.ɪ.li/",
+    "cn": "快乐地"
   },
   {
-    "en": "funeral",
-    "phon": "/ˈfjuː.nər.əl/",
-    "cn": "葬礼"
+    "en": "sadly",
+    "phon": "/ˈsæd.li/",
+    "cn": "伤心地"
   },
   {
-    "en": "religion",
-    "phon": "/rɪˈlɪdʒ.ən/",
-    "cn": "宗教"
+    "en": "loudly",
+    "phon": "/ˈlaʊd.li/",
+    "cn": "大声地"
   },
   {
-    "en": "believe",
-    "phon": "/bɪˈliːv/",
-    "cn": "相信"
+    "en": "quietly",
+    "phon": "/ˈkwaɪ.ət.li/",
+    "cn": "安静地"
   },
   {
-    "en": "society",
-    "phon": "/səˈsaɪ.ə.ti/",
-    "cn": "社会"
+    "en": "gently",
+    "phon": "/ˈdʒent.li/",
+    "cn": "轻轻地"
   },
   {
-    "en": "community",
-    "phon": "/kəˈmjuː.nə.ti/",
-    "cn": "社区"
+    "en": "warmly",
+    "phon": "/ˈwɔːm.li/",
+    "cn": "温暖地"
   },
   {
-    "en": "government",
-    "phon": "/ˈɡʌv.ən.mənt/",
-    "cn": "政府"
+    "en": "coldly",
+    "phon": "/ˈkəʊld.li/",
+    "cn": "冷淡地"
   },
   {
-    "en": "president",
-    "phon": "/ˈprez.ɪ.dənt/",
-    "cn": "总统"
+    "en": "friendly",
+    "phon": "/ˈfrend.li/",
+    "cn": "友好的"
   },
   {
-    "en": "democracy",
-    "phon": "/dɪˈmɒk.rə.si/",
-    "cn": "民主"
+    "en": "lonely",
+    "phon": "/ˈləʊn.li/",
+    "cn": "孤独的"
   },
   {
-    "en": "freedom",
-    "phon": "/ˈfriː.dəm/",
-    "cn": "自由"
+    "en": "lovely",
+    "phon": "/ˈlʌv.li/",
+    "cn": "可爱的"
   },
   {
-    "en": "justice",
-    "phon": "/ˈdʒʌs.tɪs/",
-    "cn": "正义"
+    "en": "ugly",
+    "phon": "/ˈʌɡ.li/",
+    "cn": "丑的"
   },
   {
-    "en": "equality",
-    "phon": "/ɪˈkwɒl.ə.ti/",
-    "cn": "平等"
+    "en": "pretty",
+    "phon": "/ˈprɪt.i/",
+    "cn": "漂亮的"
   },
   {
-    "en": "peace",
-    "phon": "/piːs/",
-    "cn": "和平"
+    "en": "handsome",
+    "phon": "/ˈhæn.səm/",
+    "cn": "英俊的"
   },
   {
-    "en": "war",
-    "phon": "/wɔːr/",
-    "cn": "战争"
+    "en": "young",
+    "phon": "/jʌŋ/",
+    "cn": "年轻的"
+  },
+  {
+    "en": "kind",
+    "phon": "/kaɪnd/",
+    "cn": "善良的"
+  },
+  {
+    "en": "strict",
+    "phon": "/strɪkt/",
+    "cn": "严格的"
+  },
+  {
+    "en": "patient",
+    "phon": "/ˈpeɪ.ʃənt/",
+    "cn": "有耐心的"
+  },
+  {
+    "en": "brave",
+    "phon": "/breɪv/",
+    "cn": "勇敢的"
+  },
+  {
+    "en": "shy",
+    "phon": "/ʃaɪ/",
+    "cn": "害羞的"
   }
 ]

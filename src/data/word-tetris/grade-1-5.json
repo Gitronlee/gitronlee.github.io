@@ -1,252 +1,252 @@
 [
   {
-    "en": "town",
-    "phon": "/taʊn/",
-    "cn": "城镇"
+    "en": "sometimes",
+    "phon": "/ˈsʌm.taɪmz/",
+    "cn": "有时"
   },
   {
-    "en": "village",
-    "phon": "/ˈvɪl.ɪdʒ/",
-    "cn": "村庄"
+    "en": "usually",
+    "phon": "/ˈjuː.ʒu.əl.i/",
+    "cn": "通常"
   },
   {
-    "en": "street",
-    "phon": "/striːt/",
-    "cn": "街道"
+    "en": "often",
+    "phon": "/ˈɒf.ən/",
+    "cn": "经常"
   },
   {
-    "en": "road",
-    "phon": "/rəʊd/",
-    "cn": "路"
+    "en": "already",
+    "phon": "/ɔːlˈred.i/",
+    "cn": "已经"
   },
   {
-    "en": "bridge",
-    "phon": "/brɪdʒ/",
-    "cn": "桥"
+    "en": "beautiful",
+    "phon": "/ˈbjuː.tɪ.fəl/",
+    "cn": "漂亮的"
   },
   {
-    "en": "park",
-    "phon": "/pɑːk/",
-    "cn": "公园"
+    "en": "clever",
+    "phon": "/ˈklev.ər/",
+    "cn": "聪明的"
   },
   {
-    "en": "garden",
-    "phon": "/ˈɡɑː.dən/",
-    "cn": "花园"
+    "en": "quiet",
+    "phon": "/ˈkwaɪ.ət/",
+    "cn": "安静的"
   },
   {
-    "en": "library",
-    "phon": "/ˈlaɪ.brər.i/",
-    "cn": "图书馆"
+    "en": "loud",
+    "phon": "/laʊd/",
+    "cn": "大声的"
   },
   {
-    "en": "hospital",
-    "phon": "/ˈhɒs.pɪ.təl/",
-    "cn": "医院"
+    "en": "clean",
+    "phon": "/kliːn/",
+    "cn": "干净的"
   },
   {
-    "en": "shop",
-    "phon": "/ʃɒp/",
-    "cn": "商店"
+    "en": "dirty",
+    "phon": "/ˈdɜː.ti/",
+    "cn": "脏的"
   },
   {
-    "en": "market",
-    "phon": "/ˈmɑː.kɪt/",
-    "cn": "市场"
+    "en": "full",
+    "phon": "/fʊl/",
+    "cn": "满的"
   },
   {
-    "en": "restaurant",
-    "phon": "/ˈres.tə.rɒnt/",
-    "cn": "餐厅"
+    "en": "empty",
+    "phon": "/ˈemp.ti/",
+    "cn": "空的"
   },
   {
-    "en": "hotel",
-    "phon": "/həʊˈtel/",
-    "cn": "酒店"
+    "en": "heavy",
+    "phon": "/ˈhev.i/",
+    "cn": "重的"
   },
   {
-    "en": "airport",
-    "phon": "/ˈeə.pɔːt/",
-    "cn": "机场"
+    "en": "light",
+    "phon": "/laɪt/",
+    "cn": "轻的"
   },
   {
-    "en": "station",
-    "phon": "/ˈsteɪ.ʃən/",
-    "cn": "车站"
+    "en": "hard",
+    "phon": "/hɑːd/",
+    "cn": "硬的"
   },
   {
-    "en": "church",
-    "phon": "/tʃɜːtʃ/",
-    "cn": "教堂"
+    "en": "soft",
+    "phon": "/sɒft/",
+    "cn": "软的"
   },
   {
-    "en": "museum",
-    "phon": "/mjuˈziː.əm/",
-    "cn": "博物馆"
+    "en": "sharp",
+    "phon": "/ʃɑːp/",
+    "cn": "锋利的"
   },
   {
-    "en": "theater",
-    "phon": "/ˈθɪə.tər/",
-    "cn": "剧院"
+    "en": "smooth",
+    "phon": "/smuːð/",
+    "cn": "光滑的"
   },
   {
-    "en": "cinema",
-    "phon": "/ˈsɪn.ə.mə/",
-    "cn": "电影院"
+    "en": "rough",
+    "phon": "/rʌf/",
+    "cn": "粗糙的"
   },
   {
-    "en": "bank",
-    "phon": "/bæŋk/",
-    "cn": "银行"
+    "en": "straight",
+    "phon": "/streɪt/",
+    "cn": "直的"
   },
   {
-    "en": "post office",
-    "phon": "/pəʊst ˈɒf.ɪs/",
-    "cn": "邮局"
+    "en": "round",
+    "phon": "/raʊnd/",
+    "cn": "圆的"
   },
   {
-    "en": "police",
-    "phon": "/pəˈliːs/",
-    "cn": "警察"
+    "en": "square",
+    "phon": "/skweər/",
+    "cn": "方的"
   },
   {
-    "en": "doctor",
-    "phon": "/ˈdɒk.tər/",
-    "cn": "医生"
+    "en": "deep",
+    "phon": "/diːp/",
+    "cn": "深的"
   },
   {
-    "en": "nurse",
-    "phon": "/nɜːs/",
-    "cn": "护士"
+    "en": "wide",
+    "phon": "/waɪd/",
+    "cn": "宽的"
   },
   {
-    "en": "driver",
-    "phon": "/ˈdraɪ.vər/",
-    "cn": "司机"
+    "en": "narrow",
+    "phon": "/ˈnær.əʊ/",
+    "cn": "窄的"
   },
   {
-    "en": "cook",
-    "phon": "/kʊk/",
-    "cn": "厨师"
+    "en": "first",
+    "phon": "/fɜːst/",
+    "cn": "第一"
   },
   {
-    "en": "farmer",
-    "phon": "/ˈfɑː.mər/",
-    "cn": "农民"
+    "en": "last",
+    "phon": "/læst/",
+    "cn": "最后"
   },
   {
-    "en": "worker",
-    "phon": "/ˈwɜː.kər/",
-    "cn": "工人"
+    "en": "next",
+    "phon": "/nekst/",
+    "cn": "下一个"
   },
   {
-    "en": "student",
-    "phon": "/ˈstjuː.dənt/",
-    "cn": "学生"
+    "en": "early",
+    "phon": "/ˈɜː.li/",
+    "cn": "早的"
   },
   {
-    "en": "class",
-    "phon": "/klæs/",
-    "cn": "班级"
+    "en": "late",
+    "phon": "/leɪt/",
+    "cn": "晚的"
   },
   {
-    "en": "homework",
-    "phon": "/ˈhəʊm.wɜːk/",
-    "cn": "作业"
+    "en": "ready",
+    "phon": "/ˈred.i/",
+    "cn": "准备好的"
   },
   {
-    "en": "exam",
-    "phon": "/ɪɡˈzæm/",
-    "cn": "考试"
+    "en": "busy",
+    "phon": "/ˈbɪz.i/",
+    "cn": "忙碌的"
   },
   {
-    "en": "lesson",
-    "phon": "/ˈles.ən/",
-    "cn": "课"
+    "en": "free",
+    "phon": "/friː/",
+    "cn": "自由的"
   },
   {
-    "en": "subject",
-    "phon": "/ˈsʌb.dʒekt/",
-    "cn": "科目"
+    "en": "safe",
+    "phon": "/seɪf/",
+    "cn": "安全的"
   },
   {
-    "en": "math",
-    "phon": "/mæθ/",
-    "cn": "数学"
+    "en": "dangerous",
+    "phon": "/ˈdeɪn.dʒər.əs/",
+    "cn": "危险的"
   },
   {
-    "en": "science",
-    "phon": "/ˈsaɪ.əns/",
-    "cn": "科学"
+    "en": "same",
+    "phon": "/seɪm/",
+    "cn": "相同的"
   },
   {
-    "en": "history",
-    "phon": "/ˈhɪs.tər.i/",
-    "cn": "历史"
+    "en": "different",
+    "phon": "/ˈdɪf.ər.ənt/",
+    "cn": "不同的"
   },
   {
-    "en": "geography",
-    "phon": "/dʒiˈɒɡ.rə.fi/",
-    "cn": "地理"
+    "en": "easy",
+    "phon": "/ˈiː.zi/",
+    "cn": "容易的"
   },
   {
-    "en": "art",
-    "phon": "/ɑːt/",
-    "cn": "美术"
+    "en": "difficult",
+    "phon": "/ˈdɪf.ɪ.kəlt/",
+    "cn": "困难的"
   },
   {
-    "en": "PE",
-    "phon": "/ˌpiː ˈiː/",
-    "cn": "体育"
+    "en": "simple",
+    "phon": "/ˈsɪm.pəl/",
+    "cn": "简单的"
   },
   {
-    "en": "English",
-    "phon": "/ˈɪŋ.ɡlɪʃ/",
-    "cn": "英语"
+    "en": "important",
+    "phon": "/ɪmˈpɔː.tənt/",
+    "cn": "重要的"
   },
   {
-    "en": "Chinese",
-    "phon": "/ˌtʃaɪˈniːz/",
-    "cn": "语文"
+    "en": "special",
+    "phon": "/ˈspeʃ.əl/",
+    "cn": "特别的"
   },
   {
-    "en": "notebook",
-    "phon": "/ˈnəʊt.bʊk/",
-    "cn": "笔记本"
+    "en": "wonderful",
+    "phon": "/ˈwʌn.də.fəl/",
+    "cn": "精彩的"
   },
   {
-    "en": "pencil",
-    "phon": "/ˈpen.səl/",
-    "cn": "铅笔"
+    "en": "terrible",
+    "phon": "/ˈter.ə.bəl/",
+    "cn": "糟糕的"
   },
   {
-    "en": "eraser",
-    "phon": "/ɪˈreɪ.zər/",
-    "cn": "橡皮"
+    "en": "correct",
+    "phon": "/kəˈrekt/",
+    "cn": "正确的"
   },
   {
-    "en": "ruler",
-    "phon": "/ˈruː.lər/",
-    "cn": "尺子"
+    "en": "wrong",
+    "phon": "/rɒŋ/",
+    "cn": "错误的"
   },
   {
-    "en": "scissors",
-    "phon": "/ˈsɪz.ərz/",
-    "cn": "剪刀"
+    "en": "true",
+    "phon": "/truː/",
+    "cn": "真的"
   },
   {
-    "en": "body",
-    "phon": "/ˈbɒd.i/",
-    "cn": "身体"
+    "en": "false",
+    "phon": "/fɔːls/",
+    "cn": "假的"
   },
   {
-    "en": "arm",
-    "phon": "/ɑːm/",
-    "cn": "手臂"
+    "en": "whole",
+    "phon": "/həʊl/",
+    "cn": "整个"
   },
   {
-    "en": "leg",
-    "phon": "/leɡ/",
-    "cn": "腿"
+    "en": "half",
+    "phon": "/hæf/",
+    "cn": "一半"
   }
 ]

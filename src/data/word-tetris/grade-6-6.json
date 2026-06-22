@@ -1,252 +1,252 @@
 [
   {
-    "en": "word6-251",
-    "phon": "/wɜːrd/",
-    "cn": "食物36"
+    "en": "money",
+    "phon": "/ˈmʌn.i/",
+    "cn": "钱"
   },
   {
-    "en": "word6-252",
-    "phon": "/wɜːrd/",
-    "cn": "身体36"
+    "en": "currency",
+    "phon": "/ˈkʌr.ən.si/",
+    "cn": "货币"
   },
   {
-    "en": "word6-253",
-    "phon": "/wɜːrd/",
-    "cn": "家庭37"
+    "en": "cash",
+    "phon": "/kæʃ/",
+    "cn": "现金"
   },
   {
-    "en": "word6-254",
-    "phon": "/wɜːrd/",
-    "cn": "学校37"
+    "en": "coin",
+    "phon": "/kɔɪn/",
+    "cn": "硬币"
   },
   {
-    "en": "word6-255",
-    "phon": "/wɜːrd/",
-    "cn": "时间37"
+    "en": "note",
+    "phon": "/nəʊt/",
+    "cn": "纸币"
   },
   {
-    "en": "word6-256",
-    "phon": "/wɜːrd/",
-    "cn": "自然37"
+    "en": "bill",
+    "phon": "/bɪl/",
+    "cn": "钞票"
   },
   {
-    "en": "word6-257",
-    "phon": "/wɜːrd/",
-    "cn": "动物37"
+    "en": "change",
+    "phon": "/tʃeɪndʒ/",
+    "cn": "零钱"
   },
   {
-    "en": "word6-258",
-    "phon": "/wɜːrd/",
-    "cn": "食物37"
+    "en": "price",
+    "phon": "/praɪs/",
+    "cn": "价格"
   },
   {
-    "en": "word6-259",
-    "phon": "/wɜːrd/",
-    "cn": "身体37"
+    "en": "cost",
+    "phon": "/kɒst/",
+    "cn": "成本"
   },
   {
-    "en": "word6-260",
-    "phon": "/wɜːrd/",
-    "cn": "家庭38"
+    "en": "value",
+    "phon": "/ˈvæl.juː/",
+    "cn": "价值"
   },
   {
-    "en": "word6-261",
-    "phon": "/wɜːrd/",
-    "cn": "学校38"
+    "en": "worth",
+    "phon": "/wɜːrθ/",
+    "cn": "价值"
   },
   {
-    "en": "word6-262",
-    "phon": "/wɜːrd/",
-    "cn": "时间38"
+    "en": "uncessless",
+    "phon": "/uncessless/",
+    "cn": "uncessless"
   },
   {
-    "en": "word6-263",
-    "phon": "/wɜːrd/",
-    "cn": "自然38"
+    "en": "budget",
+    "phon": "/ˈbʌdʒ.ɪt/",
+    "cn": "预算"
   },
   {
-    "en": "word6-264",
-    "phon": "/wɜːrd/",
-    "cn": "动物38"
+    "en": "salary",
+    "phon": "/ˈsæl.ər.i/",
+    "cn": "工资"
   },
   {
-    "en": "word6-265",
-    "phon": "/wɜːrd/",
-    "cn": "食物38"
+    "en": "wage",
+    "phon": "/weɪdʒ/",
+    "cn": "薪水"
   },
   {
-    "en": "word6-266",
-    "phon": "/wɜːrd/",
-    "cn": "身体38"
+    "en": "income",
+    "phon": "/ˈɪn.kʌm/",
+    "cn": "收入"
   },
   {
-    "en": "word6-267",
-    "phon": "/wɜːrd/",
-    "cn": "家庭39"
+    "en": "profit",
+    "phon": "/ˈprɒf.ɪt/",
+    "cn": "利润"
   },
   {
-    "en": "word6-268",
-    "phon": "/wɜːrd/",
-    "cn": "学校39"
+    "en": "loss",
+    "phon": "/lɒs/",
+    "cn": "损失"
   },
   {
-    "en": "word6-269",
-    "phon": "/wɜːrd/",
-    "cn": "时间39"
+    "en": "debt",
+    "phon": "/det/",
+    "cn": "债务"
   },
   {
-    "en": "word6-270",
-    "phon": "/wɜːrd/",
-    "cn": "自然39"
+    "en": "loan",
+    "phon": "/ləʊn/",
+    "cn": "贷款"
   },
   {
-    "en": "word6-271",
-    "phon": "/wɜːrd/",
-    "cn": "动物39"
+    "en": "mortgage",
+    "phon": "/ˈmɔːr.ɡɪdʒ/",
+    "cn": "抵押贷款"
   },
   {
-    "en": "word6-272",
-    "phon": "/wɜːrd/",
-    "cn": "食物39"
+    "en": "uncessable",
+    "phon": "/uncessable/",
+    "cn": "uncessable"
   },
   {
-    "en": "word6-273",
-    "phon": "/wɜːrd/",
-    "cn": "身体39"
+    "en": "investment",
+    "phon": "/ɪnˈvest.mənt/",
+    "cn": "投资"
   },
   {
-    "en": "word6-274",
-    "phon": "/wɜːrd/",
-    "cn": "家庭40"
+    "en": "stock",
+    "phon": "/stɒk/",
+    "cn": "股票"
   },
   {
-    "en": "word6-275",
-    "phon": "/wɜːrd/",
-    "cn": "学校40"
+    "en": "bond",
+    "phon": "/bɒnd/",
+    "cn": "债券"
   },
   {
-    "en": "word6-276",
-    "phon": "/wɜːrd/",
-    "cn": "时间40"
+    "en": "uncessible",
+    "phon": "/uncessible/",
+    "cn": "uncessible"
   },
   {
-    "en": "word6-277",
-    "phon": "/wɜːrd/",
-    "cn": "自然40"
+    "en": "dividend",
+    "phon": "/ˈdɪv.ɪ.dend/",
+    "cn": "股息"
   },
   {
-    "en": "word6-278",
-    "phon": "/wɜːrd/",
-    "cn": "动物40"
+    "en": "uncessal",
+    "phon": "/uncessal/",
+    "cn": "uncessal"
   },
   {
-    "en": "word6-279",
-    "phon": "/wɜːrd/",
-    "cn": "食物40"
+    "en": "account",
+    "phon": "/əˈkaʊnt/",
+    "cn": "账户"
   },
   {
-    "en": "word6-280",
-    "phon": "/wɜːrd/",
-    "cn": "身体40"
+    "en": "savings",
+    "phon": "/ˈseɪ.vɪŋz/",
+    "cn": "储蓄"
   },
   {
-    "en": "word6-281",
-    "phon": "/wɜːrd/",
-    "cn": "家庭41"
+    "en": "deposit",
+    "phon": "/dɪˈpɒz.ɪt/",
+    "cn": "存款"
   },
   {
-    "en": "word6-282",
-    "phon": "/wɜːrd/",
-    "cn": "学校41"
+    "en": "withdrawal",
+    "phon": "/wɪðˈdrɔː.əl/",
+    "cn": "取款"
   },
   {
-    "en": "word6-283",
-    "phon": "/wɜːrd/",
-    "cn": "时间41"
+    "en": "ATM",
+    "phon": "/ˌeɪ.tiː ˈem/",
+    "cn": "自动取款机"
   },
   {
-    "en": "word6-284",
-    "phon": "/wɜːrd/",
-    "cn": "自然41"
+    "en": "credit card",
+    "phon": "/ˈkred.ɪt kɑːrd/",
+    "cn": "信用卡"
   },
   {
-    "en": "word6-285",
-    "phon": "/wɜːrd/",
-    "cn": "动物41"
+    "en": "debit card",
+    "phon": "/ˈdeb.ɪt kɑːrd/",
+    "cn": "借记卡"
   },
   {
-    "en": "word6-286",
-    "phon": "/wɜːrd/",
-    "cn": "食物41"
+    "en": "transaction",
+    "phon": "/trænˈzæk.ʃən/",
+    "cn": "交易"
   },
   {
-    "en": "word6-287",
-    "phon": "/wɜːrd/",
-    "cn": "身体41"
+    "en": "purchase",
+    "phon": "/ˈpɜːr.tʃəs/",
+    "cn": "购买"
   },
   {
-    "en": "word6-288",
-    "phon": "/wɜːrd/",
-    "cn": "家庭42"
+    "en": "sale",
+    "phon": "/seɪl/",
+    "cn": "促销"
   },
   {
-    "en": "word6-289",
-    "phon": "/wɜːrd/",
-    "cn": "学校42"
+    "en": "discount",
+    "phon": "/ˈdɪs.kaʊnt/",
+    "cn": "折扣"
   },
   {
-    "en": "word6-290",
-    "phon": "/wɜːrd/",
-    "cn": "时间42"
+    "en": "receipt",
+    "phon": "/rɪˈsiːt/",
+    "cn": "收据"
   },
   {
-    "en": "word6-291",
-    "phon": "/wɜːrd/",
-    "cn": "自然42"
+    "en": "uncessial",
+    "phon": "/uncessial/",
+    "cn": "uncessial"
   },
   {
-    "en": "word6-292",
-    "phon": "/wɜːrd/",
-    "cn": "动物42"
+    "en": "inflation",
+    "phon": "/ɪnˈfleɪ.ʃən/",
+    "cn": "通货膨胀"
   },
   {
-    "en": "word6-293",
-    "phon": "/wɜːrd/",
-    "cn": "食物42"
+    "en": "economy",
+    "phon": "/ɪˈkɒn.ə.mi/",
+    "cn": "经济"
   },
   {
-    "en": "word6-294",
-    "phon": "/wɜːrd/",
-    "cn": "身体42"
+    "en": "trade",
+    "phon": "/treɪd/",
+    "cn": "贸易"
   },
   {
-    "en": "word6-295",
-    "phon": "/wɜːrd/",
-    "cn": "家庭43"
+    "en": "export",
+    "phon": "/ˈek.spɔːrt/",
+    "cn": "出口"
   },
   {
-    "en": "word6-296",
-    "phon": "/wɜːrd/",
-    "cn": "学校43"
+    "en": "uncessly",
+    "phon": "/uncessly/",
+    "cn": "uncessly"
   },
   {
-    "en": "word6-297",
-    "phon": "/wɜːrd/",
-    "cn": "时间43"
+    "en": "entrepreneur",
+    "phon": "/ˌɒn.trə.prəˈnɜːr/",
+    "cn": "企业家"
   },
   {
-    "en": "word6-298",
-    "phon": "/wɜːrd/",
-    "cn": "自然43"
+    "en": "business",
+    "phon": "/ˈbɪz.nɪs/",
+    "cn": "生意"
   },
   {
-    "en": "word6-299",
-    "phon": "/wɜːrd/",
-    "cn": "动物43"
+    "en": "uncesser",
+    "phon": "/uncesser/",
+    "cn": "uncesser"
   },
   {
-    "en": "word6-300",
-    "phon": "/wɜːrd/",
-    "cn": "食物43"
+    "en": "uncessor",
+    "phon": "/uncessor/",
+    "cn": "uncessor"
   }
 ]

@@ -240,13 +240,13 @@
     "cn": "玩具"
   },
   {
-    "en": "country",
-    "phon": "/ˈkʌn.tri/",
-    "cn": "国家"
+    "en": "always",
+    "phon": "/ˈɔːl.weɪz/",
+    "cn": "总是"
   },
   {
-    "en": "city",
-    "phon": "/ˈsɪt.i/",
-    "cn": "城市"
+    "en": "never",
+    "phon": "/ˈnev.ər/",
+    "cn": "从不"
   }
 ]
