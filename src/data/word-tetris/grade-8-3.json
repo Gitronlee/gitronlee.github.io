@@ -1,252 +1,252 @@
 [
   {
-    "en": "science",
-    "phon": "/ˈsaɪ.əns/",
-    "cn": "科学"
+    "en": "word8-101",
+    "phon": "/wɜːrd/",
+    "cn": "社会15"
   },
   {
-    "en": "physics",
-    "phon": "/ˈfɪz.ɪks/",
-    "cn": "物理"
+    "en": "word8-102",
+    "phon": "/wɜːrd/",
+    "cn": "文化15"
   },
   {
-    "en": "chemistry",
-    "phon": "/ˈkem.ɪ.stri/",
-    "cn": "化学"
+    "en": "word8-103",
+    "phon": "/wɜːrd/",
+    "cn": "自然15"
   },
   {
-    "en": "biology",
-    "phon": "/baɪˈɒl.ə.dʒi/",
-    "cn": "生物"
+    "en": "word8-104",
+    "phon": "/wɜːrd/",
+    "cn": "经济15"
   },
   {
-    "en": "experiment",
-    "phon": "/ɪkˈsper.ɪ.mənt/",
-    "cn": "实验"
+    "en": "word8-105",
+    "phon": "/wɜːrd/",
+    "cn": "教育15"
   },
   {
-    "en": "theory",
-    "phon": "/ˈθɪər.i/",
-    "cn": "理论"
+    "en": "word8-106",
+    "phon": "/wɜːrd/",
+    "cn": "科学16"
   },
   {
-    "en": "hypothesis",
-    "phon": "/haɪˈpɒθ.ə.sɪs/",
-    "cn": "假设"
+    "en": "word8-107",
+    "phon": "/wɜːrd/",
+    "cn": "技术16"
   },
   {
-    "en": "conclusion",
-    "phon": "/kənˈkluː.ʒən/",
-    "cn": "结论"
+    "en": "word8-108",
+    "phon": "/wɜːrd/",
+    "cn": "社会16"
   },
   {
-    "en": "evidence",
-    "phon": "/ˈev.ɪ.dəns/",
-    "cn": "证据"
+    "en": "word8-109",
+    "phon": "/wɜːrd/",
+    "cn": "文化16"
   },
   {
-    "en": "analysis",
-    "phon": "/əˈnæl.ə.sɪs/",
-    "cn": "分析"
+    "en": "word8-110",
+    "phon": "/wɜːrd/",
+    "cn": "自然16"
   },
   {
-    "en": "research",
-    "phon": "/rɪˈsɜːtʃ/",
-    "cn": "研究"
+    "en": "word8-111",
+    "phon": "/wɜːrd/",
+    "cn": "经济16"
   },
   {
-    "en": "discover",
-    "phon": "/dɪsˈkʌv.ər/",
-    "cn": "发现"
+    "en": "word8-112",
+    "phon": "/wɜːrd/",
+    "cn": "教育16"
   },
   {
-    "en": "invent",
-    "phon": "/ɪnˈvent/",
-    "cn": "发明"
+    "en": "word8-113",
+    "phon": "/wɜːrd/",
+    "cn": "科学17"
   },
   {
-    "en": "create",
-    "phon": "/kriˈeɪt/",
-    "cn": "创造"
+    "en": "word8-114",
+    "phon": "/wɜːrd/",
+    "cn": "技术17"
   },
   {
-    "en": "design",
-    "phon": "/dɪˈzaɪn/",
-    "cn": "设计"
+    "en": "word8-115",
+    "phon": "/wɜːrd/",
+    "cn": "社会17"
   },
   {
-    "en": "build",
-    "phon": "/bɪld/",
-    "cn": "建造"
+    "en": "word8-116",
+    "phon": "/wɜːrd/",
+    "cn": "文化17"
   },
   {
-    "en": "machine",
-    "phon": "/məˈʃiːn/",
-    "cn": "机器"
+    "en": "word8-117",
+    "phon": "/wɜːrd/",
+    "cn": "自然17"
   },
   {
-    "en": "engine",
-    "phon": "/ˈen.dʒɪn/",
-    "cn": "引擎"
+    "en": "word8-118",
+    "phon": "/wɜːrd/",
+    "cn": "经济17"
   },
   {
-    "en": "motor",
-    "phon": "/ˈməʊ.tər/",
-    "cn": "马达"
+    "en": "word8-119",
+    "phon": "/wɜːrd/",
+    "cn": "教育17"
   },
   {
-    "en": "battery",
-    "phon": "/ˈbæt.ər.i/",
-    "cn": "电池"
+    "en": "word8-120",
+    "phon": "/wɜːrd/",
+    "cn": "科学18"
   },
   {
-    "en": "solar",
-    "phon": "/ˈsəʊ.lər/",
-    "cn": "太阳能"
+    "en": "word8-121",
+    "phon": "/wɜːrd/",
+    "cn": "技术18"
   },
   {
-    "en": "nuclear",
-    "phon": "/ˈnjuː.kli.ər/",
-    "cn": "核能"
+    "en": "word8-122",
+    "phon": "/wɜːrd/",
+    "cn": "社会18"
   },
   {
-    "en": "fuel",
-    "phon": "/fjuːəl/",
-    "cn": "燃料"
+    "en": "word8-123",
+    "phon": "/wɜːrd/",
+    "cn": "文化18"
   },
   {
-    "en": "gas",
-    "phon": "/ɡæs/",
-    "cn": "气体"
+    "en": "word8-124",
+    "phon": "/wɜːrd/",
+    "cn": "自然18"
   },
   {
-    "en": "oil",
-    "phon": "/ɔɪl/",
-    "cn": "油"
+    "en": "word8-125",
+    "phon": "/wɜːrd/",
+    "cn": "经济18"
   },
   {
-    "en": "metal",
-    "phon": "/ˈmet.əl/",
-    "cn": "金属"
+    "en": "word8-126",
+    "phon": "/wɜːrd/",
+    "cn": "教育18"
   },
   {
-    "en": "plastic",
-    "phon": "/ˈplæs.tɪk/",
-    "cn": "塑料"
+    "en": "word8-127",
+    "phon": "/wɜːrd/",
+    "cn": "科学19"
   },
   {
-    "en": "wood",
-    "phon": "/wʊd/",
-    "cn": "木头"
+    "en": "word8-128",
+    "phon": "/wɜːrd/",
+    "cn": "技术19"
   },
   {
-    "en": "glass",
-    "phon": "/ɡlæs/",
-    "cn": "玻璃"
+    "en": "word8-129",
+    "phon": "/wɜːrd/",
+    "cn": "社会19"
   },
   {
-    "en": "rubber",
-    "phon": "/ˈrʌb.ər/",
-    "cn": "橡胶"
+    "en": "word8-130",
+    "phon": "/wɜːrd/",
+    "cn": "文化19"
   },
   {
-    "en": "chemical",
-    "phon": "/ˈkem.ɪ.kəl/",
-    "cn": "化学的"
+    "en": "word8-131",
+    "phon": "/wɜːrd/",
+    "cn": "自然19"
   },
   {
-    "en": "atom",
-    "phon": "/ˈæt.əm/",
-    "cn": "原子"
+    "en": "word8-132",
+    "phon": "/wɜːrd/",
+    "cn": "经济19"
   },
   {
-    "en": "molecule",
-    "phon": "/ˈmɒl.ɪ.kjuːl/",
-    "cn": "分子"
+    "en": "word8-133",
+    "phon": "/wɜːrd/",
+    "cn": "教育19"
   },
   {
-    "en": "element",
-    "phon": "/ˈel.ɪ.mənt/",
-    "cn": "元素"
+    "en": "word8-134",
+    "phon": "/wɜːrd/",
+    "cn": "科学20"
   },
   {
-    "en": "compound",
-    "phon": "/ˈkɒm.paʊnd/",
-    "cn": "化合物"
+    "en": "word8-135",
+    "phon": "/wɜːrd/",
+    "cn": "技术20"
   },
   {
-    "en": "solution",
-    "phon": "/səˈluː.ʃən/",
-    "cn": "溶液"
+    "en": "word8-136",
+    "phon": "/wɜːrd/",
+    "cn": "社会20"
   },
   {
-    "en": "reaction",
-    "phon": "/riˈæk.ʃən/",
-    "cn": "反应"
+    "en": "word8-137",
+    "phon": "/wɜːrd/",
+    "cn": "文化20"
   },
   {
-    "en": "temperature",
-    "phon": "/ˈtem.prə.tʃər/",
-    "cn": "温度"
+    "en": "word8-138",
+    "phon": "/wɜːrd/",
+    "cn": "自然20"
   },
   {
-    "en": "pressure",
-    "phon": "/ˈpreʃ.ər/",
-    "cn": "压力"
+    "en": "word8-139",
+    "phon": "/wɜːrd/",
+    "cn": "经济20"
   },
   {
-    "en": "force",
-    "phon": "/fɔːs/",
-    "cn": "力"
+    "en": "word8-140",
+    "phon": "/wɜːrd/",
+    "cn": "教育20"
   },
   {
-    "en": "gravity",
-    "phon": "/ˈɡræv.ə.ti/",
-    "cn": "重力"
+    "en": "word8-141",
+    "phon": "/wɜːrd/",
+    "cn": "科学21"
   },
   {
-    "en": "speed",
-    "phon": "/spiːd/",
-    "cn": "速度"
+    "en": "word8-142",
+    "phon": "/wɜːrd/",
+    "cn": "技术21"
   },
   {
-    "en": "distance",
-    "phon": "/ˈdɪs.təns/",
-    "cn": "距离"
+    "en": "word8-143",
+    "phon": "/wɜːrd/",
+    "cn": "社会21"
   },
   {
-    "en": "mass",
-    "phon": "/mæs/",
-    "cn": "质量"
+    "en": "word8-144",
+    "phon": "/wɜːrd/",
+    "cn": "文化21"
   },
   {
-    "en": "weight",
-    "phon": "/weɪt/",
-    "cn": "重量"
+    "en": "word8-145",
+    "phon": "/wɜːrd/",
+    "cn": "自然21"
   },
   {
-    "en": "volume",
-    "phon": "/ˈvɒl.juːm/",
-    "cn": "体积"
+    "en": "word8-146",
+    "phon": "/wɜːrd/",
+    "cn": "经济21"
   },
   {
-    "en": "length",
-    "phon": "/leŋθ/",
-    "cn": "长度"
+    "en": "word8-147",
+    "phon": "/wɜːrd/",
+    "cn": "教育21"
   },
   {
-    "en": "width",
-    "phon": "/wɪdθ/",
-    "cn": "宽度"
+    "en": "word8-148",
+    "phon": "/wɜːrd/",
+    "cn": "科学22"
   },
   {
-    "en": "height",
-    "phon": "/haɪt/",
-    "cn": "高度"
+    "en": "word8-149",
+    "phon": "/wɜːrd/",
+    "cn": "技术22"
   },
   {
-    "en": "depth",
-    "phon": "/depθ/",
-    "cn": "深度"
+    "en": "word8-150",
+    "phon": "/wɜːrd/",
+    "cn": "社会22"
   }
 ]

@@ -1,252 +1,252 @@
 [
   {
-    "en": "apple",
-    "phon": "/ˈæp.əl/",
-    "cn": "苹果"
+    "en": "school",
+    "phon": "/skuːl/",
+    "cn": "学校"
   },
   {
-    "en": "banana",
-    "phon": "/bəˈnæn.ə/",
-    "cn": "香蕉"
+    "en": "teacher",
+    "phon": "/ˈtiː.tʃər/",
+    "cn": "老师"
   },
   {
-    "en": "cat",
-    "phon": "/kæt/",
-    "cn": "猫"
+    "en": "book",
+    "phon": "/bʊk/",
+    "cn": "书"
   },
   {
-    "en": "dog",
-    "phon": "/dɒɡ/",
-    "cn": "狗"
+    "en": "pen",
+    "phon": "/pen/",
+    "cn": "笔"
   },
   {
-    "en": "fish",
-    "phon": "/fɪʃ/",
-    "cn": "鱼"
+    "en": "desk",
+    "phon": "/desk/",
+    "cn": "书桌"
   },
   {
-    "en": "bird",
-    "phon": "/bɜːd/",
-    "cn": "鸟"
+    "en": "chair",
+    "phon": "/tʃeər/",
+    "cn": "椅子"
   },
   {
-    "en": "one",
-    "phon": "/wʌn/",
-    "cn": "一"
+    "en": "door",
+    "phon": "/dɔːr/",
+    "cn": "门"
   },
   {
-    "en": "two",
-    "phon": "/tuː/",
-    "cn": "二"
+    "en": "window",
+    "phon": "/ˈwɪn.dəʊ/",
+    "cn": "窗户"
   },
   {
-    "en": "three",
-    "phon": "/θriː/",
-    "cn": "三"
+    "en": "house",
+    "phon": "/haʊs/",
+    "cn": "房子"
   },
   {
-    "en": "four",
-    "phon": "/fɔːr/",
-    "cn": "四"
+    "en": "car",
+    "phon": "/kɑːr/",
+    "cn": "汽车"
   },
   {
-    "en": "five",
-    "phon": "/faɪv/",
-    "cn": "五"
+    "en": "bus",
+    "phon": "/bʌs/",
+    "cn": "公交车"
   },
   {
-    "en": "six",
-    "phon": "/sɪks/",
-    "cn": "六"
+    "en": "bike",
+    "phon": "/baɪk/",
+    "cn": "自行车"
   },
   {
-    "en": "seven",
-    "phon": "/ˈsev.ən/",
-    "cn": "七"
+    "en": "run",
+    "phon": "/rʌn/",
+    "cn": "跑"
   },
   {
-    "en": "eight",
-    "phon": "/eɪt/",
-    "cn": "八"
+    "en": "walk",
+    "phon": "/wɔːk/",
+    "cn": "走"
   },
   {
-    "en": "nine",
-    "phon": "/naɪn/",
-    "cn": "九"
+    "en": "jump",
+    "phon": "/dʒʌmp/",
+    "cn": "跳"
   },
   {
-    "en": "ten",
-    "phon": "/ten/",
-    "cn": "十"
+    "en": "eat",
+    "phon": "/iːt/",
+    "cn": "吃"
   },
   {
-    "en": "red",
-    "phon": "/red/",
-    "cn": "红色"
+    "en": "drink",
+    "phon": "/drɪŋk/",
+    "cn": "喝"
   },
   {
-    "en": "blue",
-    "phon": "/bluː/",
-    "cn": "蓝色"
+    "en": "sleep",
+    "phon": "/sliːp/",
+    "cn": "睡觉"
   },
   {
-    "en": "green",
-    "phon": "/ɡriːn/",
-    "cn": "绿色"
+    "en": "play",
+    "phon": "/pleɪ/",
+    "cn": "玩"
   },
   {
-    "en": "yellow",
-    "phon": "/ˈjel.əʊ/",
-    "cn": "黄色"
+    "en": "read",
+    "phon": "/riːd/",
+    "cn": "读"
   },
   {
-    "en": "black",
-    "phon": "/blæk/",
-    "cn": "黑色"
+    "en": "write",
+    "phon": "/raɪt/",
+    "cn": "写"
   },
   {
-    "en": "white",
-    "phon": "/waɪt/",
-    "cn": "白色"
+    "en": "sing",
+    "phon": "/sɪŋ/",
+    "cn": "唱歌"
   },
   {
-    "en": "mom",
-    "phon": "/mɒm/",
-    "cn": "妈妈"
+    "en": "dance",
+    "phon": "/dæns/",
+    "cn": "跳舞"
   },
   {
-    "en": "dad",
-    "phon": "/dæd/",
-    "cn": "爸爸"
+    "en": "draw",
+    "phon": "/drɔː/",
+    "cn": "画画"
   },
   {
-    "en": "brother",
-    "phon": "/ˈbrʌð.ər/",
-    "cn": "兄弟"
+    "en": "swim",
+    "phon": "/swɪm/",
+    "cn": "游泳"
   },
   {
-    "en": "sister",
-    "phon": "/ˈsɪs.tər/",
-    "cn": "姐妹"
+    "en": "fly",
+    "phon": "/flaɪ/",
+    "cn": "飞"
   },
   {
-    "en": "sun",
-    "phon": "/sʌn/",
-    "cn": "太阳"
+    "en": "open",
+    "phon": "/ˈəʊ.pən/",
+    "cn": "打开"
   },
   {
-    "en": "moon",
-    "phon": "/muːn/",
-    "cn": "月亮"
+    "en": "close",
+    "phon": "/kləʊz/",
+    "cn": "关闭"
   },
   {
-    "en": "star",
-    "phon": "/stɑːr/",
-    "cn": "星星"
+    "en": "hot",
+    "phon": "/hɒt/",
+    "cn": "热"
   },
   {
-    "en": "tree",
-    "phon": "/triː/",
-    "cn": "树"
+    "en": "cold",
+    "phon": "/kəʊld/",
+    "cn": "冷"
   },
   {
-    "en": "flower",
-    "phon": "/ˈflaʊ.ər/",
-    "cn": "花"
+    "en": "warm",
+    "phon": "/wɔːm/",
+    "cn": "温暖"
   },
   {
-    "en": "water",
-    "phon": "/ˈwɔː.tər/",
-    "cn": "水"
+    "en": "cool",
+    "phon": "/kuːl/",
+    "cn": "凉爽"
   },
   {
-    "en": "milk",
-    "phon": "/mɪlk/",
-    "cn": "牛奶"
+    "en": "long",
+    "phon": "/lɒŋ/",
+    "cn": "长"
   },
   {
-    "en": "bread",
-    "phon": "/bred/",
-    "cn": "面包"
+    "en": "short",
+    "phon": "/ʃɔːt/",
+    "cn": "短"
   },
   {
-    "en": "egg",
-    "phon": "/eɡ/",
-    "cn": "鸡蛋"
+    "en": "tall",
+    "phon": "/tɔːl/",
+    "cn": "高"
   },
   {
-    "en": "rice",
-    "phon": "/raɪs/",
-    "cn": "米饭"
+    "en": "fat",
+    "phon": "/fæt/",
+    "cn": "胖"
   },
   {
-    "en": "hand",
-    "phon": "/hænd/",
-    "cn": "手"
+    "en": "thin",
+    "phon": "/θɪn/",
+    "cn": "瘦"
   },
   {
-    "en": "eye",
-    "phon": "/aɪ/",
-    "cn": "眼睛"
+    "en": "new",
+    "phon": "/njuː/",
+    "cn": "新"
   },
   {
-    "en": "ear",
-    "phon": "/ɪər/",
-    "cn": "耳朵"
+    "en": "old",
+    "phon": "/əʊld/",
+    "cn": "旧"
   },
   {
-    "en": "nose",
-    "phon": "/nəʊz/",
-    "cn": "鼻子"
+    "en": "good",
+    "phon": "/ɡʊd/",
+    "cn": "好"
   },
   {
-    "en": "mouth",
-    "phon": "/maʊθ/",
-    "cn": "嘴巴"
+    "en": "bad",
+    "phon": "/bæd/",
+    "cn": "坏"
   },
   {
-    "en": "foot",
-    "phon": "/fʊt/",
-    "cn": "脚"
+    "en": "fast",
+    "phon": "/fæst/",
+    "cn": "快"
   },
   {
-    "en": "head",
-    "phon": "/hed/",
-    "cn": "头"
+    "en": "slow",
+    "phon": "/sləʊ/",
+    "cn": "慢"
   },
   {
-    "en": "big",
-    "phon": "/bɪɡ/",
-    "cn": "大"
+    "en": "love",
+    "phon": "/lʌv/",
+    "cn": "爱"
   },
   {
-    "en": "small",
-    "phon": "/smɔːl/",
-    "cn": "小"
+    "en": "like",
+    "phon": "/laɪk/",
+    "cn": "喜欢"
   },
   {
-    "en": "happy",
-    "phon": "/ˈhæp.i/",
-    "cn": "开心"
+    "en": "want",
+    "phon": "/wɒnt/",
+    "cn": "想要"
   },
   {
-    "en": "sad",
-    "phon": "/sæd/",
-    "cn": "伤心"
+    "en": "have",
+    "phon": "/hæv/",
+    "cn": "有"
   },
   {
-    "en": "yes",
-    "phon": "/jes/",
-    "cn": "是"
+    "en": "come",
+    "phon": "/kʌm/",
+    "cn": "来"
   },
   {
-    "en": "no",
-    "phon": "/nəʊ/",
-    "cn": "不是"
+    "en": "go",
+    "phon": "/ɡəʊ/",
+    "cn": "去"
   },
   {
-    "en": "up",
-    "phon": "/ʌp/",
-    "cn": "上"
+    "en": "see",
+    "phon": "/siː/",
+    "cn": "看"
   }
 ]

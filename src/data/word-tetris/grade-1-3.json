@@ -1,252 +1,252 @@
 [
   {
-    "en": "apple",
-    "phon": "/ˈæp.əl/",
-    "cn": "苹果"
+    "en": "morning",
+    "phon": "/ˈmɔːn.ɪŋ/",
+    "cn": "早上"
   },
   {
-    "en": "banana",
-    "phon": "/bəˈnæn.ə/",
-    "cn": "香蕉"
+    "en": "afternoon",
+    "phon": "/ˌæf.təˈnuːn/",
+    "cn": "下午"
   },
   {
-    "en": "cat",
-    "phon": "/kæt/",
-    "cn": "猫"
+    "en": "evening",
+    "phon": "/ˈiːv.nɪŋ/",
+    "cn": "晚上"
   },
   {
-    "en": "dog",
-    "phon": "/dɒɡ/",
-    "cn": "狗"
+    "en": "night",
+    "phon": "/naɪt/",
+    "cn": "夜晚"
   },
   {
-    "en": "fish",
-    "phon": "/fɪʃ/",
-    "cn": "鱼"
+    "en": "today",
+    "phon": "/təˈdeɪ/",
+    "cn": "今天"
   },
   {
-    "en": "bird",
-    "phon": "/bɜːd/",
-    "cn": "鸟"
+    "en": "tomorrow",
+    "phon": "/təˈmɒr.əʊ/",
+    "cn": "明天"
   },
   {
-    "en": "one",
-    "phon": "/wʌn/",
-    "cn": "一"
+    "en": "yesterday",
+    "phon": "/ˈjes.tə.deɪ/",
+    "cn": "昨天"
   },
   {
-    "en": "two",
-    "phon": "/tuː/",
-    "cn": "二"
+    "en": "week",
+    "phon": "/wiːk/",
+    "cn": "周"
   },
   {
-    "en": "three",
-    "phon": "/θriː/",
-    "cn": "三"
+    "en": "month",
+    "phon": "/mʌnθ/",
+    "cn": "月"
   },
   {
-    "en": "four",
-    "phon": "/fɔːr/",
-    "cn": "四"
+    "en": "year",
+    "phon": "/jɪər/",
+    "cn": "年"
   },
   {
-    "en": "five",
-    "phon": "/faɪv/",
-    "cn": "五"
+    "en": "spring",
+    "phon": "/sprɪŋ/",
+    "cn": "春天"
   },
   {
-    "en": "six",
-    "phon": "/sɪks/",
-    "cn": "六"
+    "en": "summer",
+    "phon": "/ˈsʌm.ər/",
+    "cn": "夏天"
   },
   {
-    "en": "seven",
-    "phon": "/ˈsev.ən/",
-    "cn": "七"
+    "en": "autumn",
+    "phon": "/ˈɔː.təm/",
+    "cn": "秋天"
   },
   {
-    "en": "eight",
-    "phon": "/eɪt/",
-    "cn": "八"
+    "en": "winter",
+    "phon": "/ˈwɪn.tər/",
+    "cn": "冬天"
   },
   {
-    "en": "nine",
-    "phon": "/naɪn/",
-    "cn": "九"
+    "en": "rain",
+    "phon": "/reɪn/",
+    "cn": "雨"
   },
   {
-    "en": "ten",
-    "phon": "/ten/",
-    "cn": "十"
+    "en": "snow",
+    "phon": "/snəʊ/",
+    "cn": "雪"
   },
   {
-    "en": "red",
-    "phon": "/red/",
-    "cn": "红色"
+    "en": "wind",
+    "phon": "/wɪnd/",
+    "cn": "风"
   },
   {
-    "en": "blue",
-    "phon": "/bluː/",
-    "cn": "蓝色"
+    "en": "cloud",
+    "phon": "/klaʊd/",
+    "cn": "云"
   },
   {
-    "en": "green",
-    "phon": "/ɡriːn/",
-    "cn": "绿色"
+    "en": "sky",
+    "phon": "/skaɪ/",
+    "cn": "天空"
   },
   {
-    "en": "yellow",
-    "phon": "/ˈjel.əʊ/",
-    "cn": "黄色"
+    "en": "earth",
+    "phon": "/ɜːθ/",
+    "cn": "地球"
   },
   {
-    "en": "black",
-    "phon": "/blæk/",
-    "cn": "黑色"
+    "en": "sea",
+    "phon": "/siː/",
+    "cn": "海"
   },
   {
-    "en": "white",
-    "phon": "/waɪt/",
-    "cn": "白色"
+    "en": "river",
+    "phon": "/ˈrɪv.ər/",
+    "cn": "河"
   },
   {
-    "en": "mom",
-    "phon": "/mɒm/",
-    "cn": "妈妈"
+    "en": "mountain",
+    "phon": "/ˈmaʊn.tən/",
+    "cn": "山"
   },
   {
-    "en": "dad",
-    "phon": "/dæd/",
-    "cn": "爸爸"
+    "en": "forest",
+    "phon": "/ˈfɒr.ɪst/",
+    "cn": "森林"
   },
   {
-    "en": "brother",
-    "phon": "/ˈbrʌð.ər/",
-    "cn": "兄弟"
+    "en": "grass",
+    "phon": "/ɡræs/",
+    "cn": "草"
   },
   {
-    "en": "sister",
-    "phon": "/ˈsɪs.tər/",
-    "cn": "姐妹"
+    "en": "stone",
+    "phon": "/stəʊn/",
+    "cn": "石头"
   },
   {
-    "en": "sun",
-    "phon": "/sʌn/",
-    "cn": "太阳"
+    "en": "animal",
+    "phon": "/ˈæn.ɪ.məl/",
+    "cn": "动物"
   },
   {
-    "en": "moon",
-    "phon": "/muːn/",
-    "cn": "月亮"
+    "en": "horse",
+    "phon": "/hɔːs/",
+    "cn": "马"
   },
   {
-    "en": "star",
-    "phon": "/stɑːr/",
-    "cn": "星星"
+    "en": "cow",
+    "phon": "/kaʊ/",
+    "cn": "牛"
   },
   {
-    "en": "tree",
-    "phon": "/triː/",
-    "cn": "树"
+    "en": "pig",
+    "phon": "/pɪɡ/",
+    "cn": "猪"
   },
   {
-    "en": "flower",
-    "phon": "/ˈflaʊ.ər/",
-    "cn": "花"
+    "en": "sheep",
+    "phon": "/ʃiːp/",
+    "cn": "羊"
   },
   {
-    "en": "water",
-    "phon": "/ˈwɔː.tər/",
-    "cn": "水"
+    "en": "chicken",
+    "phon": "/ˈtʃɪk.ɪn/",
+    "cn": "鸡"
   },
   {
-    "en": "milk",
-    "phon": "/mɪlk/",
-    "cn": "牛奶"
+    "en": "duck",
+    "phon": "/dʌk/",
+    "cn": "鸭"
   },
   {
-    "en": "bread",
-    "phon": "/bred/",
-    "cn": "面包"
+    "en": "rabbit",
+    "phon": "/ˈræb.ɪt/",
+    "cn": "兔子"
   },
   {
-    "en": "egg",
-    "phon": "/eɡ/",
-    "cn": "鸡蛋"
+    "en": "monkey",
+    "phon": "/ˈmʌŋ.ki/",
+    "cn": "猴子"
   },
   {
-    "en": "rice",
-    "phon": "/raɪs/",
-    "cn": "米饭"
+    "en": "elephant",
+    "phon": "/ˈel.ɪ.fənt/",
+    "cn": "大象"
   },
   {
-    "en": "hand",
-    "phon": "/hænd/",
-    "cn": "手"
+    "en": "tiger",
+    "phon": "/ˈtaɪ.ɡər/",
+    "cn": "老虎"
   },
   {
-    "en": "eye",
-    "phon": "/aɪ/",
-    "cn": "眼睛"
+    "en": "lion",
+    "phon": "/ˈlaɪ.ən/",
+    "cn": "狮子"
   },
   {
-    "en": "ear",
-    "phon": "/ɪər/",
-    "cn": "耳朵"
+    "en": "bear",
+    "phon": "/beər/",
+    "cn": "熊"
   },
   {
-    "en": "nose",
-    "phon": "/nəʊz/",
-    "cn": "鼻子"
+    "en": "wolf",
+    "phon": "/wʊlf/",
+    "cn": "狼"
   },
   {
-    "en": "mouth",
-    "phon": "/maʊθ/",
-    "cn": "嘴巴"
+    "en": "fox",
+    "phon": "/fɒks/",
+    "cn": "狐狸"
   },
   {
-    "en": "foot",
-    "phon": "/fʊt/",
-    "cn": "脚"
+    "en": "deer",
+    "phon": "/dɪər/",
+    "cn": "鹿"
   },
   {
-    "en": "head",
-    "phon": "/hed/",
-    "cn": "头"
+    "en": "frog",
+    "phon": "/frɒɡ/",
+    "cn": "青蛙"
   },
   {
-    "en": "big",
-    "phon": "/bɪɡ/",
-    "cn": "大"
+    "en": "snake",
+    "phon": "/sneɪk/",
+    "cn": "蛇"
   },
   {
-    "en": "small",
-    "phon": "/smɔːl/",
-    "cn": "小"
+    "en": "turtle",
+    "phon": "/ˈtɜː.təl/",
+    "cn": "乌龟"
   },
   {
-    "en": "happy",
-    "phon": "/ˈhæp.i/",
-    "cn": "开心"
+    "en": "panda",
+    "phon": "/ˈpæn.də/",
+    "cn": "熊猫"
   },
   {
-    "en": "sad",
-    "phon": "/sæd/",
-    "cn": "伤心"
+    "en": "whale",
+    "phon": "/weɪl/",
+    "cn": "鲸"
   },
   {
-    "en": "yes",
-    "phon": "/jes/",
-    "cn": "是"
+    "en": "dolphin",
+    "phon": "/ˈdɒl.fɪn/",
+    "cn": "海豚"
   },
   {
-    "en": "no",
-    "phon": "/nəʊ/",
-    "cn": "不是"
+    "en": "shark",
+    "phon": "/ʃɑːk/",
+    "cn": "鲨鱼"
   },
   {
-    "en": "up",
-    "phon": "/ʌp/",
-    "cn": "上"
+    "en": "family",
+    "phon": "/ˈfæm.əl.i/",
+    "cn": "家庭"
   }
 ]

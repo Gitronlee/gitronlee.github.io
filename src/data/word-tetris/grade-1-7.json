@@ -1,252 +1,227 @@
 [
   {
-    "en": "apple",
-    "phon": "/ˈæp.əl/",
-    "cn": "苹果"
+    "en": "nature",
+    "phon": "/ˈneɪ.tʃər/",
+    "cn": "自然"
   },
   {
-    "en": "banana",
-    "phon": "/bəˈnæn.ə/",
-    "cn": "香蕉"
+    "en": "energy",
+    "phon": "/ˈen.ə.dʒi/",
+    "cn": "能量"
   },
   {
-    "en": "cat",
-    "phon": "/kæt/",
-    "cn": "猫"
+    "en": "electricity",
+    "phon": "/ɪˌlek.trɪs.ə.ti/",
+    "cn": "电"
   },
   {
-    "en": "dog",
-    "phon": "/dɒɡ/",
-    "cn": "狗"
+    "en": "technology",
+    "phon": "/tekˈnɒl.ə.dʒi/",
+    "cn": "科技"
   },
   {
-    "en": "fish",
-    "phon": "/fɪʃ/",
-    "cn": "鱼"
+    "en": "internet",
+    "phon": "/ˈɪn.tə.net/",
+    "cn": "互联网"
   },
   {
-    "en": "bird",
-    "phon": "/bɜːd/",
-    "cn": "鸟"
+    "en": "website",
+    "phon": "/ˈweb.saɪt/",
+    "cn": "网站"
   },
   {
-    "en": "one",
-    "phon": "/wʌn/",
-    "cn": "一"
+    "en": "email",
+    "phon": "/ˈiː.meɪl/",
+    "cn": "电子邮件"
   },
   {
-    "en": "two",
-    "phon": "/tuː/",
-    "cn": "二"
+    "en": "password",
+    "phon": "/ˈpɑːs.wɜːd/",
+    "cn": "密码"
   },
   {
-    "en": "three",
-    "phon": "/θriː/",
-    "cn": "三"
+    "en": "software",
+    "phon": "/ˈsɒft.weər/",
+    "cn": "软件"
   },
   {
-    "en": "four",
-    "phon": "/fɔːr/",
-    "cn": "四"
+    "en": "hardware",
+    "phon": "/ˈheəd.weər/",
+    "cn": "硬件"
   },
   {
-    "en": "five",
-    "phon": "/faɪv/",
-    "cn": "五"
+    "en": "program",
+    "phon": "/ˈprəʊ.ɡræm/",
+    "cn": "程序"
   },
   {
-    "en": "six",
-    "phon": "/sɪks/",
-    "cn": "六"
+    "en": "data",
+    "phon": "/ˈdeɪ.tə/",
+    "cn": "数据"
   },
   {
-    "en": "seven",
-    "phon": "/ˈsev.ən/",
-    "cn": "七"
+    "en": "information",
+    "phon": "/ˌɪn.fəˈmeɪ.ʃən/",
+    "cn": "信息"
   },
   {
-    "en": "eight",
-    "phon": "/eɪt/",
-    "cn": "八"
+    "en": "message",
+    "phon": "/ˈmes.ɪdʒ/",
+    "cn": "消息"
   },
   {
-    "en": "nine",
-    "phon": "/naɪn/",
-    "cn": "九"
+    "en": "language",
+    "phon": "/ˈlæŋ.ɡwɪdʒ/",
+    "cn": "语言"
   },
   {
-    "en": "ten",
-    "phon": "/ten/",
-    "cn": "十"
+    "en": "grammar",
+    "phon": "/ˈɡræm.ər/",
+    "cn": "语法"
   },
   {
-    "en": "red",
-    "phon": "/red/",
-    "cn": "红色"
+    "en": "vocabulary",
+    "phon": "/vəˈkæb.jə.lər.i/",
+    "cn": "词汇"
   },
   {
-    "en": "blue",
-    "phon": "/bluː/",
-    "cn": "蓝色"
+    "en": "sentence",
+    "phon": "/ˈsen.təns/",
+    "cn": "句子"
   },
   {
-    "en": "green",
-    "phon": "/ɡriːn/",
-    "cn": "绿色"
+    "en": "paragraph",
+    "phon": "/ˈpær.ə.ɡrɑːf/",
+    "cn": "段落"
   },
   {
-    "en": "yellow",
-    "phon": "/ˈjel.əʊ/",
-    "cn": "黄色"
+    "en": "essay",
+    "phon": "/ˈes.eɪ/",
+    "cn": "文章"
   },
   {
-    "en": "black",
-    "phon": "/blæk/",
-    "cn": "黑色"
+    "en": "novel",
+    "phon": "/ˈnɒv.əl/",
+    "cn": "小说"
   },
   {
-    "en": "white",
-    "phon": "/waɪt/",
-    "cn": "白色"
+    "en": "poem",
+    "phon": "/ˈpəʊ.ɪm/",
+    "cn": "诗"
   },
   {
-    "en": "mom",
-    "phon": "/mɒm/",
-    "cn": "妈妈"
+    "en": "author",
+    "phon": "/ˈɔː.θər/",
+    "cn": "作者"
   },
   {
-    "en": "dad",
-    "phon": "/dæd/",
-    "cn": "爸爸"
+    "en": "character",
+    "phon": "/ˈkær.ək.tər/",
+    "cn": "角色"
   },
   {
-    "en": "brother",
-    "phon": "/ˈbrʌð.ər/",
-    "cn": "兄弟"
+    "en": "story",
+    "phon": "/ˈstɔːr.i/",
+    "cn": "故事"
   },
   {
-    "en": "sister",
-    "phon": "/ˈsɪs.tər/",
-    "cn": "姐妹"
+    "en": "culture",
+    "phon": "/ˈkʌl.tʃər/",
+    "cn": "文化"
   },
   {
-    "en": "sun",
-    "phon": "/sʌn/",
-    "cn": "太阳"
+    "en": "tradition",
+    "phon": "/trəˈdɪʃ.ən/",
+    "cn": "传统"
   },
   {
-    "en": "moon",
-    "phon": "/muːn/",
-    "cn": "月亮"
+    "en": "custom",
+    "phon": "/ˈkʌs.təm/",
+    "cn": "习俗"
   },
   {
-    "en": "star",
-    "phon": "/stɑːr/",
-    "cn": "星星"
+    "en": "festival",
+    "phon": "/ˈfes.tɪ.vəl/",
+    "cn": "节日"
   },
   {
-    "en": "tree",
-    "phon": "/triː/",
-    "cn": "树"
+    "en": "celebrate",
+    "phon": "/ˈsel.ɪ.breɪt/",
+    "cn": "庆祝"
   },
   {
-    "en": "flower",
-    "phon": "/ˈflaʊ.ər/",
-    "cn": "花"
+    "en": "ceremony",
+    "phon": "/ˈser.ə.mə.ni/",
+    "cn": "仪式"
   },
   {
-    "en": "water",
-    "phon": "/ˈwɔː.tər/",
-    "cn": "水"
+    "en": "marriage",
+    "phon": "/ˈmær.ɪdʒ/",
+    "cn": "婚姻"
   },
   {
-    "en": "milk",
-    "phon": "/mɪlk/",
-    "cn": "牛奶"
+    "en": "funeral",
+    "phon": "/ˈfjuː.nər.əl/",
+    "cn": "葬礼"
   },
   {
-    "en": "bread",
-    "phon": "/bred/",
-    "cn": "面包"
+    "en": "religion",
+    "phon": "/rɪˈlɪdʒ.ən/",
+    "cn": "宗教"
   },
   {
-    "en": "egg",
-    "phon": "/eɡ/",
-    "cn": "鸡蛋"
+    "en": "believe",
+    "phon": "/bɪˈliːv/",
+    "cn": "相信"
   },
   {
-    "en": "rice",
-    "phon": "/raɪs/",
-    "cn": "米饭"
+    "en": "society",
+    "phon": "/səˈsaɪ.ə.ti/",
+    "cn": "社会"
   },
   {
-    "en": "hand",
-    "phon": "/hænd/",
-    "cn": "手"
+    "en": "community",
+    "phon": "/kəˈmjuː.nə.ti/",
+    "cn": "社区"
   },
   {
-    "en": "eye",
-    "phon": "/aɪ/",
-    "cn": "眼睛"
+    "en": "government",
+    "phon": "/ˈɡʌv.ən.mənt/",
+    "cn": "政府"
   },
   {
-    "en": "ear",
-    "phon": "/ɪər/",
-    "cn": "耳朵"
+    "en": "president",
+    "phon": "/ˈprez.ɪ.dənt/",
+    "cn": "总统"
   },
   {
-    "en": "nose",
-    "phon": "/nəʊz/",
-    "cn": "鼻子"
+    "en": "democracy",
+    "phon": "/dɪˈmɒk.rə.si/",
+    "cn": "民主"
   },
   {
-    "en": "mouth",
-    "phon": "/maʊθ/",
-    "cn": "嘴巴"
+    "en": "freedom",
+    "phon": "/ˈfriː.dəm/",
+    "cn": "自由"
   },
   {
-    "en": "foot",
-    "phon": "/fʊt/",
-    "cn": "脚"
+    "en": "justice",
+    "phon": "/ˈdʒʌs.tɪs/",
+    "cn": "正义"
   },
   {
-    "en": "head",
-    "phon": "/hed/",
-    "cn": "头"
+    "en": "equality",
+    "phon": "/ɪˈkwɒl.ə.ti/",
+    "cn": "平等"
   },
   {
-    "en": "big",
-    "phon": "/bɪɡ/",
-    "cn": "大"
+    "en": "peace",
+    "phon": "/piːs/",
+    "cn": "和平"
   },
   {
-    "en": "small",
-    "phon": "/smɔːl/",
-    "cn": "小"
-  },
-  {
-    "en": "happy",
-    "phon": "/ˈhæp.i/",
-    "cn": "开心"
-  },
-  {
-    "en": "sad",
-    "phon": "/sæd/",
-    "cn": "伤心"
-  },
-  {
-    "en": "yes",
-    "phon": "/jes/",
-    "cn": "是"
-  },
-  {
-    "en": "no",
-    "phon": "/nəʊ/",
-    "cn": "不是"
-  },
-  {
-    "en": "up",
-    "phon": "/ʌp/",
-    "cn": "上"
+    "en": "war",
+    "phon": "/wɔːr/",
+    "cn": "战争"
   }
 ]

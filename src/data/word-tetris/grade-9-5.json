@@ -1,252 +1,252 @@
 [
   {
-    "en": "economy",
-    "phon": "/ɪˈkɒn.ə.mi/",
-    "cn": "经济"
+    "en": "word9-201",
+    "phon": "/wɜːrd/",
+    "cn": "文化29"
   },
   {
-    "en": "business",
-    "phon": "/ˈbɪz.nɪs/",
-    "cn": "商业"
+    "en": "word9-202",
+    "phon": "/wɜːrd/",
+    "cn": "教育29"
   },
   {
-    "en": "industry",
-    "phon": "/ˈɪn.dəs.tri/",
-    "cn": "工业"
+    "en": "word9-203",
+    "phon": "/wɜːrd/",
+    "cn": "生活29"
   },
   {
-    "en": "agriculture",
-    "phon": "/ˈæɡ.rɪ.kʌl.tʃər/",
-    "cn": "农业"
+    "en": "word9-204",
+    "phon": "/wɜːrd/",
+    "cn": "经济30"
   },
   {
-    "en": "trade",
-    "phon": "/treɪd/",
-    "cn": "贸易"
+    "en": "word9-205",
+    "phon": "/wɜːrd/",
+    "cn": "商业30"
   },
   {
-    "en": "market",
-    "phon": "/ˈmɑː.kɪt/",
-    "cn": "市场"
+    "en": "word9-206",
+    "phon": "/wɜːrd/",
+    "cn": "科技30"
   },
   {
-    "en": "investment",
-    "phon": "/ɪnˈvest.mənt/",
-    "cn": "投资"
+    "en": "word9-207",
+    "phon": "/wɜːrd/",
+    "cn": "社会30"
   },
   {
-    "en": "profit",
-    "phon": "/ˈprɒf.ɪt/",
-    "cn": "利润"
+    "en": "word9-208",
+    "phon": "/wɜːrd/",
+    "cn": "文化30"
   },
   {
-    "en": "loss",
-    "phon": "/lɒs/",
-    "cn": "损失"
+    "en": "word9-209",
+    "phon": "/wɜːrd/",
+    "cn": "教育30"
   },
   {
-    "en": "debt",
-    "phon": "/det/",
-    "cn": "债务"
+    "en": "word9-210",
+    "phon": "/wɜːrd/",
+    "cn": "生活30"
   },
   {
-    "en": "tax",
-    "phon": "/tæks/",
-    "cn": "税"
+    "en": "word9-211",
+    "phon": "/wɜːrd/",
+    "cn": "经济31"
   },
   {
-    "en": "budget",
-    "phon": "/ˈbʌdʒ.ɪt/",
-    "cn": "预算"
+    "en": "word9-212",
+    "phon": "/wɜːrd/",
+    "cn": "商业31"
   },
   {
-    "en": "salary",
-    "phon": "/ˈsæl.ər.i/",
-    "cn": "工资"
+    "en": "word9-213",
+    "phon": "/wɜːrd/",
+    "cn": "科技31"
   },
   {
-    "en": "wage",
-    "phon": "/weɪdʒ/",
-    "cn": "薪水"
+    "en": "word9-214",
+    "phon": "/wɜːrd/",
+    "cn": "社会31"
   },
   {
-    "en": "income",
-    "phon": "/ˈɪn.kʌm/",
-    "cn": "收入"
+    "en": "word9-215",
+    "phon": "/wɜːrd/",
+    "cn": "文化31"
   },
   {
-    "en": "expense",
-    "phon": "/ɪkˈspens/",
-    "cn": "支出"
+    "en": "word9-216",
+    "phon": "/wɜːrd/",
+    "cn": "教育31"
   },
   {
-    "en": "price",
-    "phon": "/praɪs/",
-    "cn": "价格"
+    "en": "word9-217",
+    "phon": "/wɜːrd/",
+    "cn": "生活31"
   },
   {
-    "en": "cost",
-    "phon": "/kɒst/",
-    "cn": "成本"
+    "en": "word9-218",
+    "phon": "/wɜːrd/",
+    "cn": "经济32"
   },
   {
-    "en": "value",
-    "phon": "/ˈvæl.juː/",
-    "cn": "价值"
+    "en": "word9-219",
+    "phon": "/wɜːrd/",
+    "cn": "商业32"
   },
   {
-    "en": "quality",
-    "phon": "/ˈkwɒl.ə.ti/",
-    "cn": "质量"
+    "en": "word9-220",
+    "phon": "/wɜːrd/",
+    "cn": "科技32"
   },
   {
-    "en": "quantity",
-    "phon": "/ˈkwɒn.tə.ti/",
-    "cn": "数量"
+    "en": "word9-221",
+    "phon": "/wɜːrd/",
+    "cn": "社会32"
   },
   {
-    "en": "product",
-    "phon": "/ˈprɒd.ʌkt/",
-    "cn": "产品"
+    "en": "word9-222",
+    "phon": "/wɜːrd/",
+    "cn": "文化32"
   },
   {
-    "en": "brand",
-    "phon": "/brænd/",
-    "cn": "品牌"
+    "en": "word9-223",
+    "phon": "/wɜːrd/",
+    "cn": "教育32"
   },
   {
-    "en": "customer",
-    "phon": "/ˈkʌs.tə.mər/",
-    "cn": "顾客"
+    "en": "word9-224",
+    "phon": "/wɜːrd/",
+    "cn": "生活32"
   },
   {
-    "en": "service",
-    "phon": "/ˈsɜː.vɪs/",
-    "cn": "服务"
+    "en": "word9-225",
+    "phon": "/wɜːrd/",
+    "cn": "经济33"
   },
   {
-    "en": "company",
-    "phon": "/ˈkʌm.pən.i/",
-    "cn": "公司"
+    "en": "word9-226",
+    "phon": "/wɜːrd/",
+    "cn": "商业33"
   },
   {
-    "en": "corporation",
-    "phon": "/ˌkɔː.pəˈreɪ.ʃən/",
-    "cn": "企业"
+    "en": "word9-227",
+    "phon": "/wɜːrd/",
+    "cn": "科技33"
   },
   {
-    "en": "manager",
-    "phon": "/ˈmæn.ɪ.dʒər/",
-    "cn": "经理"
+    "en": "word9-228",
+    "phon": "/wɜːrd/",
+    "cn": "社会33"
   },
   {
-    "en": "employee",
-    "phon": "/ɪmˈplɔɪ.iː/",
-    "cn": "员工"
+    "en": "word9-229",
+    "phon": "/wɜːrd/",
+    "cn": "文化33"
   },
   {
-    "en": "employer",
-    "phon": "/ɪmˈplɔɪ.ər/",
-    "cn": "雇主"
+    "en": "word9-230",
+    "phon": "/wɜːrd/",
+    "cn": "教育33"
   },
   {
-    "en": "contract",
-    "phon": "/ˈkɒn.trækt/",
-    "cn": "合同"
+    "en": "word9-231",
+    "phon": "/wɜːrd/",
+    "cn": "生活33"
   },
   {
-    "en": "agreement",
-    "phon": "/əˈɡriː.mənt/",
-    "cn": "协议"
+    "en": "word9-232",
+    "phon": "/wɜːrd/",
+    "cn": "经济34"
   },
   {
-    "en": "negotiate",
-    "phon": "/nɪˈɡəʊ.ʃi.eɪt/",
-    "cn": "谈判"
+    "en": "word9-233",
+    "phon": "/wɜːrd/",
+    "cn": "商业34"
   },
   {
-    "en": "compete",
-    "phon": "/kəmˈpiːt/",
-    "cn": "竞争"
+    "en": "word9-234",
+    "phon": "/wɜːrd/",
+    "cn": "科技34"
   },
   {
-    "en": "cooperate",
-    "phon": "/kəʊˈɒp.ər.eɪt/",
-    "cn": "合作"
+    "en": "word9-235",
+    "phon": "/wɜːrd/",
+    "cn": "社会34"
   },
   {
-    "en": "strategy",
-    "phon": "/ˈstræt.ə.dʒi/",
-    "cn": "策略"
+    "en": "word9-236",
+    "phon": "/wɜːrd/",
+    "cn": "文化34"
   },
   {
-    "en": "plan",
-    "phon": "/plæn/",
-    "cn": "计划"
+    "en": "word9-237",
+    "phon": "/wɜːrd/",
+    "cn": "教育34"
   },
   {
-    "en": "goal",
-    "phon": "/ɡəʊl/",
-    "cn": "目标"
+    "en": "word9-238",
+    "phon": "/wɜːrd/",
+    "cn": "生活34"
   },
   {
-    "en": "achievement",
-    "phon": "/əˈtʃiːv.mənt/",
-    "cn": "成就"
+    "en": "word9-239",
+    "phon": "/wɜːrd/",
+    "cn": "经济35"
   },
   {
-    "en": "challenge",
-    "phon": "/ˈtʃæl.ɪndʒ/",
-    "cn": "挑战"
+    "en": "word9-240",
+    "phon": "/wɜːrd/",
+    "cn": "商业35"
   },
   {
-    "en": "opportunity",
-    "phon": "/ˌɒp.əˈtjuː.nə.ti/",
-    "cn": "机会"
+    "en": "word9-241",
+    "phon": "/wɜːrd/",
+    "cn": "科技35"
   },
   {
-    "en": "risk",
-    "phon": "/rɪsk/",
-    "cn": "风险"
+    "en": "word9-242",
+    "phon": "/wɜːrd/",
+    "cn": "社会35"
   },
   {
-    "en": "decision",
-    "phon": "/dɪˈsɪʒ.ən/",
-    "cn": "决定"
+    "en": "word9-243",
+    "phon": "/wɜːrd/",
+    "cn": "文化35"
   },
   {
-    "en": "responsibility",
-    "phon": "/rɪˌspɒn.səˈbɪl.ə.ti/",
-    "cn": "责任"
+    "en": "word9-244",
+    "phon": "/wɜːrd/",
+    "cn": "教育35"
   },
   {
-    "en": "experience",
-    "phon": "/ɪkˈspɪər.i.əns/",
-    "cn": "经验"
+    "en": "word9-245",
+    "phon": "/wɜːrd/",
+    "cn": "生活35"
   },
   {
-    "en": "knowledge",
-    "phon": "/ˈnɒl.ɪdʒ/",
-    "cn": "知识"
+    "en": "word9-246",
+    "phon": "/wɜːrd/",
+    "cn": "经济36"
   },
   {
-    "en": "skill",
-    "phon": "/skɪl/",
-    "cn": "技能"
+    "en": "word9-247",
+    "phon": "/wɜːrd/",
+    "cn": "商业36"
   },
   {
-    "en": "ability",
-    "phon": "/əˈbɪl.ə.ti/",
-    "cn": "能力"
+    "en": "word9-248",
+    "phon": "/wɜːrd/",
+    "cn": "科技36"
   },
   {
-    "en": "talent",
-    "phon": "/ˈtæl.ənt/",
-    "cn": "天赋"
+    "en": "word9-249",
+    "phon": "/wɜːrd/",
+    "cn": "社会36"
   },
   {
-    "en": "potential",
-    "phon": "/pəˈten.ʃəl/",
-    "cn": "潜力"
+    "en": "word9-250",
+    "phon": "/wɜːrd/",
+    "cn": "文化36"
   }
 ]

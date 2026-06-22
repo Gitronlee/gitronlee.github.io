@@ -1,252 +1,252 @@
 [
   {
-    "en": "morning",
-    "phon": "/ˈmɔːn.ɪŋ/",
-    "cn": "早上"
+    "en": "word3-1",
+    "phon": "/wɜːrd/",
+    "cn": "家庭1"
   },
   {
-    "en": "afternoon",
-    "phon": "/ˌæf.təˈnuːn/",
-    "cn": "下午"
+    "en": "word3-2",
+    "phon": "/wɜːrd/",
+    "cn": "学校1"
   },
   {
-    "en": "evening",
-    "phon": "/ˈiːv.nɪŋ/",
-    "cn": "晚上"
+    "en": "word3-3",
+    "phon": "/wɜːrd/",
+    "cn": "时间1"
   },
   {
-    "en": "night",
-    "phon": "/naɪt/",
-    "cn": "夜晚"
+    "en": "word3-4",
+    "phon": "/wɜːrd/",
+    "cn": "自然1"
   },
   {
-    "en": "today",
-    "phon": "/təˈdeɪ/",
-    "cn": "今天"
+    "en": "word3-5",
+    "phon": "/wɜːrd/",
+    "cn": "动物1"
   },
   {
-    "en": "tomorrow",
-    "phon": "/təˈmɒr.əʊ/",
-    "cn": "明天"
+    "en": "word3-6",
+    "phon": "/wɜːrd/",
+    "cn": "食物1"
   },
   {
-    "en": "yesterday",
-    "phon": "/ˈjes.tə.deɪ/",
-    "cn": "昨天"
+    "en": "word3-7",
+    "phon": "/wɜːrd/",
+    "cn": "身体1"
   },
   {
-    "en": "week",
-    "phon": "/wiːk/",
-    "cn": "周"
+    "en": "word3-8",
+    "phon": "/wɜːrd/",
+    "cn": "家庭2"
   },
   {
-    "en": "month",
-    "phon": "/mʌnθ/",
-    "cn": "月"
+    "en": "word3-9",
+    "phon": "/wɜːrd/",
+    "cn": "学校2"
   },
   {
-    "en": "year",
-    "phon": "/jɪər/",
-    "cn": "年"
+    "en": "word3-10",
+    "phon": "/wɜːrd/",
+    "cn": "时间2"
   },
   {
-    "en": "spring",
-    "phon": "/sprɪŋ/",
-    "cn": "春天"
+    "en": "word3-11",
+    "phon": "/wɜːrd/",
+    "cn": "自然2"
   },
   {
-    "en": "summer",
-    "phon": "/ˈsʌm.ər/",
-    "cn": "夏天"
+    "en": "word3-12",
+    "phon": "/wɜːrd/",
+    "cn": "动物2"
   },
   {
-    "en": "autumn",
-    "phon": "/ˈɔː.təm/",
-    "cn": "秋天"
+    "en": "word3-13",
+    "phon": "/wɜːrd/",
+    "cn": "食物2"
   },
   {
-    "en": "winter",
-    "phon": "/ˈwɪn.tər/",
-    "cn": "冬天"
+    "en": "word3-14",
+    "phon": "/wɜːrd/",
+    "cn": "身体2"
   },
   {
-    "en": "rain",
-    "phon": "/reɪn/",
-    "cn": "雨"
+    "en": "word3-15",
+    "phon": "/wɜːrd/",
+    "cn": "家庭3"
   },
   {
-    "en": "snow",
-    "phon": "/snəʊ/",
-    "cn": "雪"
+    "en": "word3-16",
+    "phon": "/wɜːrd/",
+    "cn": "学校3"
   },
   {
-    "en": "wind",
-    "phon": "/wɪnd/",
-    "cn": "风"
+    "en": "word3-17",
+    "phon": "/wɜːrd/",
+    "cn": "时间3"
   },
   {
-    "en": "cloud",
-    "phon": "/klaʊd/",
-    "cn": "云"
+    "en": "word3-18",
+    "phon": "/wɜːrd/",
+    "cn": "自然3"
   },
   {
-    "en": "sky",
-    "phon": "/skaɪ/",
-    "cn": "天空"
+    "en": "word3-19",
+    "phon": "/wɜːrd/",
+    "cn": "动物3"
   },
   {
-    "en": "earth",
-    "phon": "/ɜːθ/",
-    "cn": "地球"
+    "en": "word3-20",
+    "phon": "/wɜːrd/",
+    "cn": "食物3"
   },
   {
-    "en": "sea",
-    "phon": "/siː/",
-    "cn": "海"
+    "en": "word3-21",
+    "phon": "/wɜːrd/",
+    "cn": "身体3"
   },
   {
-    "en": "river",
-    "phon": "/ˈrɪv.ər/",
-    "cn": "河"
+    "en": "word3-22",
+    "phon": "/wɜːrd/",
+    "cn": "家庭4"
   },
   {
-    "en": "mountain",
-    "phon": "/ˈmaʊn.tən/",
-    "cn": "山"
+    "en": "word3-23",
+    "phon": "/wɜːrd/",
+    "cn": "学校4"
   },
   {
-    "en": "forest",
-    "phon": "/ˈfɒr.ɪst/",
-    "cn": "森林"
+    "en": "word3-24",
+    "phon": "/wɜːrd/",
+    "cn": "时间4"
   },
   {
-    "en": "grass",
-    "phon": "/ɡræs/",
-    "cn": "草"
+    "en": "word3-25",
+    "phon": "/wɜːrd/",
+    "cn": "自然4"
   },
   {
-    "en": "stone",
-    "phon": "/stəʊn/",
-    "cn": "石头"
+    "en": "word3-26",
+    "phon": "/wɜːrd/",
+    "cn": "动物4"
   },
   {
-    "en": "animal",
-    "phon": "/ˈæn.ɪ.məl/",
-    "cn": "动物"
+    "en": "word3-27",
+    "phon": "/wɜːrd/",
+    "cn": "食物4"
   },
   {
-    "en": "horse",
-    "phon": "/hɔːs/",
-    "cn": "马"
+    "en": "word3-28",
+    "phon": "/wɜːrd/",
+    "cn": "身体4"
   },
   {
-    "en": "cow",
-    "phon": "/kaʊ/",
-    "cn": "牛"
+    "en": "word3-29",
+    "phon": "/wɜːrd/",
+    "cn": "家庭5"
   },
   {
-    "en": "pig",
-    "phon": "/pɪɡ/",
-    "cn": "猪"
+    "en": "word3-30",
+    "phon": "/wɜːrd/",
+    "cn": "学校5"
   },
   {
-    "en": "sheep",
-    "phon": "/ʃiːp/",
-    "cn": "羊"
+    "en": "word3-31",
+    "phon": "/wɜːrd/",
+    "cn": "时间5"
   },
   {
-    "en": "chicken",
-    "phon": "/ˈtʃɪk.ɪn/",
-    "cn": "鸡"
+    "en": "word3-32",
+    "phon": "/wɜːrd/",
+    "cn": "自然5"
   },
   {
-    "en": "duck",
-    "phon": "/dʌk/",
-    "cn": "鸭"
+    "en": "word3-33",
+    "phon": "/wɜːrd/",
+    "cn": "动物5"
   },
   {
-    "en": "rabbit",
-    "phon": "/ˈræb.ɪt/",
-    "cn": "兔子"
+    "en": "word3-34",
+    "phon": "/wɜːrd/",
+    "cn": "食物5"
   },
   {
-    "en": "monkey",
-    "phon": "/ˈmʌŋ.ki/",
-    "cn": "猴子"
+    "en": "word3-35",
+    "phon": "/wɜːrd/",
+    "cn": "身体5"
   },
   {
-    "en": "elephant",
-    "phon": "/ˈel.ɪ.fənt/",
-    "cn": "大象"
+    "en": "word3-36",
+    "phon": "/wɜːrd/",
+    "cn": "家庭6"
   },
   {
-    "en": "tiger",
-    "phon": "/ˈtaɪ.ɡər/",
-    "cn": "老虎"
+    "en": "word3-37",
+    "phon": "/wɜːrd/",
+    "cn": "学校6"
   },
   {
-    "en": "lion",
-    "phon": "/ˈlaɪ.ən/",
-    "cn": "狮子"
+    "en": "word3-38",
+    "phon": "/wɜːrd/",
+    "cn": "时间6"
   },
   {
-    "en": "bear",
-    "phon": "/beər/",
-    "cn": "熊"
+    "en": "word3-39",
+    "phon": "/wɜːrd/",
+    "cn": "自然6"
   },
   {
-    "en": "wolf",
-    "phon": "/wʊlf/",
-    "cn": "狼"
+    "en": "word3-40",
+    "phon": "/wɜːrd/",
+    "cn": "动物6"
   },
   {
-    "en": "fox",
-    "phon": "/fɒks/",
-    "cn": "狐狸"
+    "en": "word3-41",
+    "phon": "/wɜːrd/",
+    "cn": "食物6"
   },
   {
-    "en": "deer",
-    "phon": "/dɪər/",
-    "cn": "鹿"
+    "en": "word3-42",
+    "phon": "/wɜːrd/",
+    "cn": "身体6"
   },
   {
-    "en": "frog",
-    "phon": "/frɒɡ/",
-    "cn": "青蛙"
+    "en": "word3-43",
+    "phon": "/wɜːrd/",
+    "cn": "家庭7"
   },
   {
-    "en": "snake",
-    "phon": "/sneɪk/",
-    "cn": "蛇"
+    "en": "word3-44",
+    "phon": "/wɜːrd/",
+    "cn": "学校7"
   },
   {
-    "en": "turtle",
-    "phon": "/ˈtɜː.təl/",
-    "cn": "乌龟"
+    "en": "word3-45",
+    "phon": "/wɜːrd/",
+    "cn": "时间7"
   },
   {
-    "en": "panda",
-    "phon": "/ˈpæn.də/",
-    "cn": "熊猫"
+    "en": "word3-46",
+    "phon": "/wɜːrd/",
+    "cn": "自然7"
   },
   {
-    "en": "whale",
-    "phon": "/weɪl/",
-    "cn": "鲸"
+    "en": "word3-47",
+    "phon": "/wɜːrd/",
+    "cn": "动物7"
   },
   {
-    "en": "dolphin",
-    "phon": "/ˈdɒl.fɪn/",
-    "cn": "海豚"
+    "en": "word3-48",
+    "phon": "/wɜːrd/",
+    "cn": "食物7"
   },
   {
-    "en": "shark",
-    "phon": "/ʃɑːk/",
-    "cn": "鲨鱼"
+    "en": "word3-49",
+    "phon": "/wɜːrd/",
+    "cn": "身体7"
   },
   {
-    "en": "morning",
-    "phon": "/ˈmɔːn.ɪŋ/",
-    "cn": "早上"
+    "en": "word3-50",
+    "phon": "/wɜːrd/",
+    "cn": "家庭8"
   }
 ]

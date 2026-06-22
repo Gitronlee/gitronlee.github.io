@@ -1,252 +1,252 @@
 [
   {
-    "en": "country",
-    "phon": "/ˈkʌn.tri/",
-    "cn": "国家"
+    "en": "word5-1",
+    "phon": "/wɜːrd/",
+    "cn": "家庭1"
   },
   {
-    "en": "city",
-    "phon": "/ˈsɪt.i/",
-    "cn": "城市"
+    "en": "word5-2",
+    "phon": "/wɜːrd/",
+    "cn": "学校1"
   },
   {
-    "en": "town",
-    "phon": "/taʊn/",
-    "cn": "城镇"
+    "en": "word5-3",
+    "phon": "/wɜːrd/",
+    "cn": "时间1"
   },
   {
-    "en": "village",
-    "phon": "/ˈvɪl.ɪdʒ/",
-    "cn": "村庄"
+    "en": "word5-4",
+    "phon": "/wɜːrd/",
+    "cn": "自然1"
   },
   {
-    "en": "street",
-    "phon": "/striːt/",
-    "cn": "街道"
+    "en": "word5-5",
+    "phon": "/wɜːrd/",
+    "cn": "动物1"
   },
   {
-    "en": "road",
-    "phon": "/rəʊd/",
-    "cn": "路"
+    "en": "word5-6",
+    "phon": "/wɜːrd/",
+    "cn": "食物1"
   },
   {
-    "en": "bridge",
-    "phon": "/brɪdʒ/",
-    "cn": "桥"
+    "en": "word5-7",
+    "phon": "/wɜːrd/",
+    "cn": "身体1"
   },
   {
-    "en": "park",
-    "phon": "/pɑːk/",
-    "cn": "公园"
+    "en": "word5-8",
+    "phon": "/wɜːrd/",
+    "cn": "家庭2"
   },
   {
-    "en": "garden",
-    "phon": "/ˈɡɑː.dən/",
-    "cn": "花园"
+    "en": "word5-9",
+    "phon": "/wɜːrd/",
+    "cn": "学校2"
   },
   {
-    "en": "library",
-    "phon": "/ˈlaɪ.brər.i/",
-    "cn": "图书馆"
+    "en": "word5-10",
+    "phon": "/wɜːrd/",
+    "cn": "时间2"
   },
   {
-    "en": "hospital",
-    "phon": "/ˈhɒs.pɪ.təl/",
-    "cn": "医院"
+    "en": "word5-11",
+    "phon": "/wɜːrd/",
+    "cn": "自然2"
   },
   {
-    "en": "shop",
-    "phon": "/ʃɒp/",
-    "cn": "商店"
+    "en": "word5-12",
+    "phon": "/wɜːrd/",
+    "cn": "动物2"
   },
   {
-    "en": "market",
-    "phon": "/ˈmɑː.kɪt/",
-    "cn": "市场"
+    "en": "word5-13",
+    "phon": "/wɜːrd/",
+    "cn": "食物2"
   },
   {
-    "en": "restaurant",
-    "phon": "/ˈres.tə.rɒnt/",
-    "cn": "餐厅"
+    "en": "word5-14",
+    "phon": "/wɜːrd/",
+    "cn": "身体2"
   },
   {
-    "en": "hotel",
-    "phon": "/həʊˈtel/",
-    "cn": "酒店"
+    "en": "word5-15",
+    "phon": "/wɜːrd/",
+    "cn": "家庭3"
   },
   {
-    "en": "airport",
-    "phon": "/ˈeə.pɔːt/",
-    "cn": "机场"
+    "en": "word5-16",
+    "phon": "/wɜːrd/",
+    "cn": "学校3"
   },
   {
-    "en": "station",
-    "phon": "/ˈsteɪ.ʃən/",
-    "cn": "车站"
+    "en": "word5-17",
+    "phon": "/wɜːrd/",
+    "cn": "时间3"
   },
   {
-    "en": "church",
-    "phon": "/tʃɜːtʃ/",
-    "cn": "教堂"
+    "en": "word5-18",
+    "phon": "/wɜːrd/",
+    "cn": "自然3"
   },
   {
-    "en": "museum",
-    "phon": "/mjuˈziː.əm/",
-    "cn": "博物馆"
+    "en": "word5-19",
+    "phon": "/wɜːrd/",
+    "cn": "动物3"
   },
   {
-    "en": "theater",
-    "phon": "/ˈθɪə.tər/",
-    "cn": "剧院"
+    "en": "word5-20",
+    "phon": "/wɜːrd/",
+    "cn": "食物3"
   },
   {
-    "en": "cinema",
-    "phon": "/ˈsɪn.ə.mə/",
-    "cn": "电影院"
+    "en": "word5-21",
+    "phon": "/wɜːrd/",
+    "cn": "身体3"
   },
   {
-    "en": "bank",
-    "phon": "/bæŋk/",
-    "cn": "银行"
+    "en": "word5-22",
+    "phon": "/wɜːrd/",
+    "cn": "家庭4"
   },
   {
-    "en": "post office",
-    "phon": "/pəʊst ˈɒf.ɪs/",
-    "cn": "邮局"
+    "en": "word5-23",
+    "phon": "/wɜːrd/",
+    "cn": "学校4"
   },
   {
-    "en": "police",
-    "phon": "/pəˈliːs/",
-    "cn": "警察"
+    "en": "word5-24",
+    "phon": "/wɜːrd/",
+    "cn": "时间4"
   },
   {
-    "en": "doctor",
-    "phon": "/ˈdɒk.tər/",
-    "cn": "医生"
+    "en": "word5-25",
+    "phon": "/wɜːrd/",
+    "cn": "自然4"
   },
   {
-    "en": "nurse",
-    "phon": "/nɜːs/",
-    "cn": "护士"
+    "en": "word5-26",
+    "phon": "/wɜːrd/",
+    "cn": "动物4"
   },
   {
-    "en": "driver",
-    "phon": "/ˈdraɪ.vər/",
-    "cn": "司机"
+    "en": "word5-27",
+    "phon": "/wɜːrd/",
+    "cn": "食物4"
   },
   {
-    "en": "cook",
-    "phon": "/kʊk/",
-    "cn": "厨师"
+    "en": "word5-28",
+    "phon": "/wɜːrd/",
+    "cn": "身体4"
   },
   {
-    "en": "farmer",
-    "phon": "/ˈfɑː.mər/",
-    "cn": "农民"
+    "en": "word5-29",
+    "phon": "/wɜːrd/",
+    "cn": "家庭5"
   },
   {
-    "en": "worker",
-    "phon": "/ˈwɜː.kər/",
-    "cn": "工人"
+    "en": "word5-30",
+    "phon": "/wɜːrd/",
+    "cn": "学校5"
   },
   {
-    "en": "student",
-    "phon": "/ˈstjuː.dənt/",
-    "cn": "学生"
+    "en": "word5-31",
+    "phon": "/wɜːrd/",
+    "cn": "时间5"
   },
   {
-    "en": "class",
-    "phon": "/klæs/",
-    "cn": "班级"
+    "en": "word5-32",
+    "phon": "/wɜːrd/",
+    "cn": "自然5"
   },
   {
-    "en": "homework",
-    "phon": "/ˈhəʊm.wɜːk/",
-    "cn": "作业"
+    "en": "word5-33",
+    "phon": "/wɜːrd/",
+    "cn": "动物5"
   },
   {
-    "en": "exam",
-    "phon": "/ɪɡˈzæm/",
-    "cn": "考试"
+    "en": "word5-34",
+    "phon": "/wɜːrd/",
+    "cn": "食物5"
   },
   {
-    "en": "lesson",
-    "phon": "/ˈles.ən/",
-    "cn": "课"
+    "en": "word5-35",
+    "phon": "/wɜːrd/",
+    "cn": "身体5"
   },
   {
-    "en": "subject",
-    "phon": "/ˈsʌb.dʒekt/",
-    "cn": "科目"
+    "en": "word5-36",
+    "phon": "/wɜːrd/",
+    "cn": "家庭6"
   },
   {
-    "en": "math",
-    "phon": "/mæθ/",
-    "cn": "数学"
+    "en": "word5-37",
+    "phon": "/wɜːrd/",
+    "cn": "学校6"
   },
   {
-    "en": "science",
-    "phon": "/ˈsaɪ.əns/",
-    "cn": "科学"
+    "en": "word5-38",
+    "phon": "/wɜːrd/",
+    "cn": "时间6"
   },
   {
-    "en": "history",
-    "phon": "/ˈhɪs.tər.i/",
-    "cn": "历史"
+    "en": "word5-39",
+    "phon": "/wɜːrd/",
+    "cn": "自然6"
   },
   {
-    "en": "geography",
-    "phon": "/dʒiˈɒɡ.rə.fi/",
-    "cn": "地理"
+    "en": "word5-40",
+    "phon": "/wɜːrd/",
+    "cn": "动物6"
   },
   {
-    "en": "art",
-    "phon": "/ɑːt/",
-    "cn": "美术"
+    "en": "word5-41",
+    "phon": "/wɜːrd/",
+    "cn": "食物6"
   },
   {
-    "en": "PE",
-    "phon": "/ˌpiː ˈiː/",
-    "cn": "体育"
+    "en": "word5-42",
+    "phon": "/wɜːrd/",
+    "cn": "身体6"
   },
   {
-    "en": "English",
-    "phon": "/ˈɪŋ.ɡlɪʃ/",
-    "cn": "英语"
+    "en": "word5-43",
+    "phon": "/wɜːrd/",
+    "cn": "家庭7"
   },
   {
-    "en": "Chinese",
-    "phon": "/ˌtʃaɪˈniːz/",
-    "cn": "语文"
+    "en": "word5-44",
+    "phon": "/wɜːrd/",
+    "cn": "学校7"
   },
   {
-    "en": "homework",
-    "phon": "/ˈhəʊm.wɜːk/",
-    "cn": "作业"
+    "en": "word5-45",
+    "phon": "/wɜːrd/",
+    "cn": "时间7"
   },
   {
-    "en": "notebook",
-    "phon": "/ˈnəʊt.bʊk/",
-    "cn": "笔记本"
+    "en": "word5-46",
+    "phon": "/wɜːrd/",
+    "cn": "自然7"
   },
   {
-    "en": "pencil",
-    "phon": "/ˈpen.səl/",
-    "cn": "铅笔"
+    "en": "word5-47",
+    "phon": "/wɜːrd/",
+    "cn": "动物7"
   },
   {
-    "en": "eraser",
-    "phon": "/ɪˈreɪ.zər/",
-    "cn": "橡皮"
+    "en": "word5-48",
+    "phon": "/wɜːrd/",
+    "cn": "食物7"
   },
   {
-    "en": "ruler",
-    "phon": "/ˈruː.lər/",
-    "cn": "尺子"
+    "en": "word5-49",
+    "phon": "/wɜːrd/",
+    "cn": "身体7"
   },
   {
-    "en": "scissors",
-    "phon": "/ˈsɪz.ərz/",
-    "cn": "剪刀"
+    "en": "word5-50",
+    "phon": "/wɜːrd/",
+    "cn": "家庭8"
   }
 ]

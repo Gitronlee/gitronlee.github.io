@@ -1,252 +1,252 @@
 [
   {
-    "en": "apple",
-    "phon": "/ˈæp.əl/",
-    "cn": "苹果"
+    "en": "town",
+    "phon": "/taʊn/",
+    "cn": "城镇"
   },
   {
-    "en": "banana",
-    "phon": "/bəˈnæn.ə/",
-    "cn": "香蕉"
+    "en": "village",
+    "phon": "/ˈvɪl.ɪdʒ/",
+    "cn": "村庄"
   },
   {
-    "en": "cat",
-    "phon": "/kæt/",
-    "cn": "猫"
+    "en": "street",
+    "phon": "/striːt/",
+    "cn": "街道"
   },
   {
-    "en": "dog",
-    "phon": "/dɒɡ/",
-    "cn": "狗"
+    "en": "road",
+    "phon": "/rəʊd/",
+    "cn": "路"
   },
   {
-    "en": "fish",
-    "phon": "/fɪʃ/",
-    "cn": "鱼"
+    "en": "bridge",
+    "phon": "/brɪdʒ/",
+    "cn": "桥"
   },
   {
-    "en": "bird",
-    "phon": "/bɜːd/",
-    "cn": "鸟"
+    "en": "park",
+    "phon": "/pɑːk/",
+    "cn": "公园"
   },
   {
-    "en": "one",
-    "phon": "/wʌn/",
-    "cn": "一"
+    "en": "garden",
+    "phon": "/ˈɡɑː.dən/",
+    "cn": "花园"
   },
   {
-    "en": "two",
-    "phon": "/tuː/",
-    "cn": "二"
+    "en": "library",
+    "phon": "/ˈlaɪ.brər.i/",
+    "cn": "图书馆"
   },
   {
-    "en": "three",
-    "phon": "/θriː/",
-    "cn": "三"
+    "en": "hospital",
+    "phon": "/ˈhɒs.pɪ.təl/",
+    "cn": "医院"
   },
   {
-    "en": "four",
-    "phon": "/fɔːr/",
-    "cn": "四"
+    "en": "shop",
+    "phon": "/ʃɒp/",
+    "cn": "商店"
   },
   {
-    "en": "five",
-    "phon": "/faɪv/",
-    "cn": "五"
+    "en": "market",
+    "phon": "/ˈmɑː.kɪt/",
+    "cn": "市场"
   },
   {
-    "en": "six",
-    "phon": "/sɪks/",
-    "cn": "六"
+    "en": "restaurant",
+    "phon": "/ˈres.tə.rɒnt/",
+    "cn": "餐厅"
   },
   {
-    "en": "seven",
-    "phon": "/ˈsev.ən/",
-    "cn": "七"
+    "en": "hotel",
+    "phon": "/həʊˈtel/",
+    "cn": "酒店"
   },
   {
-    "en": "eight",
-    "phon": "/eɪt/",
-    "cn": "八"
+    "en": "airport",
+    "phon": "/ˈeə.pɔːt/",
+    "cn": "机场"
   },
   {
-    "en": "nine",
-    "phon": "/naɪn/",
-    "cn": "九"
+    "en": "station",
+    "phon": "/ˈsteɪ.ʃən/",
+    "cn": "车站"
   },
   {
-    "en": "ten",
-    "phon": "/ten/",
-    "cn": "十"
+    "en": "church",
+    "phon": "/tʃɜːtʃ/",
+    "cn": "教堂"
   },
   {
-    "en": "red",
-    "phon": "/red/",
-    "cn": "红色"
+    "en": "museum",
+    "phon": "/mjuˈziː.əm/",
+    "cn": "博物馆"
   },
   {
-    "en": "blue",
-    "phon": "/bluː/",
-    "cn": "蓝色"
+    "en": "theater",
+    "phon": "/ˈθɪə.tər/",
+    "cn": "剧院"
   },
   {
-    "en": "green",
-    "phon": "/ɡriːn/",
-    "cn": "绿色"
+    "en": "cinema",
+    "phon": "/ˈsɪn.ə.mə/",
+    "cn": "电影院"
   },
   {
-    "en": "yellow",
-    "phon": "/ˈjel.əʊ/",
-    "cn": "黄色"
+    "en": "bank",
+    "phon": "/bæŋk/",
+    "cn": "银行"
   },
   {
-    "en": "black",
-    "phon": "/blæk/",
-    "cn": "黑色"
+    "en": "post office",
+    "phon": "/pəʊst ˈɒf.ɪs/",
+    "cn": "邮局"
   },
   {
-    "en": "white",
-    "phon": "/waɪt/",
-    "cn": "白色"
+    "en": "police",
+    "phon": "/pəˈliːs/",
+    "cn": "警察"
   },
   {
-    "en": "mom",
-    "phon": "/mɒm/",
-    "cn": "妈妈"
+    "en": "doctor",
+    "phon": "/ˈdɒk.tər/",
+    "cn": "医生"
   },
   {
-    "en": "dad",
-    "phon": "/dæd/",
-    "cn": "爸爸"
+    "en": "nurse",
+    "phon": "/nɜːs/",
+    "cn": "护士"
   },
   {
-    "en": "brother",
-    "phon": "/ˈbrʌð.ər/",
-    "cn": "兄弟"
+    "en": "driver",
+    "phon": "/ˈdraɪ.vər/",
+    "cn": "司机"
   },
   {
-    "en": "sister",
-    "phon": "/ˈsɪs.tər/",
-    "cn": "姐妹"
+    "en": "cook",
+    "phon": "/kʊk/",
+    "cn": "厨师"
   },
   {
-    "en": "sun",
-    "phon": "/sʌn/",
-    "cn": "太阳"
+    "en": "farmer",
+    "phon": "/ˈfɑː.mər/",
+    "cn": "农民"
   },
   {
-    "en": "moon",
-    "phon": "/muːn/",
-    "cn": "月亮"
+    "en": "worker",
+    "phon": "/ˈwɜː.kər/",
+    "cn": "工人"
   },
   {
-    "en": "star",
-    "phon": "/stɑːr/",
-    "cn": "星星"
+    "en": "student",
+    "phon": "/ˈstjuː.dənt/",
+    "cn": "学生"
   },
   {
-    "en": "tree",
-    "phon": "/triː/",
-    "cn": "树"
+    "en": "class",
+    "phon": "/klæs/",
+    "cn": "班级"
   },
   {
-    "en": "flower",
-    "phon": "/ˈflaʊ.ər/",
-    "cn": "花"
+    "en": "homework",
+    "phon": "/ˈhəʊm.wɜːk/",
+    "cn": "作业"
   },
   {
-    "en": "water",
-    "phon": "/ˈwɔː.tər/",
-    "cn": "水"
+    "en": "exam",
+    "phon": "/ɪɡˈzæm/",
+    "cn": "考试"
   },
   {
-    "en": "milk",
-    "phon": "/mɪlk/",
-    "cn": "牛奶"
+    "en": "lesson",
+    "phon": "/ˈles.ən/",
+    "cn": "课"
   },
   {
-    "en": "bread",
-    "phon": "/bred/",
-    "cn": "面包"
+    "en": "subject",
+    "phon": "/ˈsʌb.dʒekt/",
+    "cn": "科目"
   },
   {
-    "en": "egg",
-    "phon": "/eɡ/",
-    "cn": "鸡蛋"
+    "en": "math",
+    "phon": "/mæθ/",
+    "cn": "数学"
   },
   {
-    "en": "rice",
-    "phon": "/raɪs/",
-    "cn": "米饭"
+    "en": "science",
+    "phon": "/ˈsaɪ.əns/",
+    "cn": "科学"
   },
   {
-    "en": "hand",
-    "phon": "/hænd/",
-    "cn": "手"
+    "en": "history",
+    "phon": "/ˈhɪs.tər.i/",
+    "cn": "历史"
   },
   {
-    "en": "eye",
-    "phon": "/aɪ/",
-    "cn": "眼睛"
+    "en": "geography",
+    "phon": "/dʒiˈɒɡ.rə.fi/",
+    "cn": "地理"
   },
   {
-    "en": "ear",
-    "phon": "/ɪər/",
-    "cn": "耳朵"
+    "en": "art",
+    "phon": "/ɑːt/",
+    "cn": "美术"
   },
   {
-    "en": "nose",
-    "phon": "/nəʊz/",
-    "cn": "鼻子"
+    "en": "PE",
+    "phon": "/ˌpiː ˈiː/",
+    "cn": "体育"
   },
   {
-    "en": "mouth",
-    "phon": "/maʊθ/",
-    "cn": "嘴巴"
+    "en": "English",
+    "phon": "/ˈɪŋ.ɡlɪʃ/",
+    "cn": "英语"
   },
   {
-    "en": "foot",
-    "phon": "/fʊt/",
-    "cn": "脚"
+    "en": "Chinese",
+    "phon": "/ˌtʃaɪˈniːz/",
+    "cn": "语文"
   },
   {
-    "en": "head",
-    "phon": "/hed/",
-    "cn": "头"
+    "en": "notebook",
+    "phon": "/ˈnəʊt.bʊk/",
+    "cn": "笔记本"
   },
   {
-    "en": "big",
-    "phon": "/bɪɡ/",
-    "cn": "大"
+    "en": "pencil",
+    "phon": "/ˈpen.səl/",
+    "cn": "铅笔"
   },
   {
-    "en": "small",
-    "phon": "/smɔːl/",
-    "cn": "小"
+    "en": "eraser",
+    "phon": "/ɪˈreɪ.zər/",
+    "cn": "橡皮"
   },
   {
-    "en": "happy",
-    "phon": "/ˈhæp.i/",
-    "cn": "开心"
+    "en": "ruler",
+    "phon": "/ˈruː.lər/",
+    "cn": "尺子"
   },
   {
-    "en": "sad",
-    "phon": "/sæd/",
-    "cn": "伤心"
+    "en": "scissors",
+    "phon": "/ˈsɪz.ərz/",
+    "cn": "剪刀"
   },
   {
-    "en": "yes",
-    "phon": "/jes/",
-    "cn": "是"
+    "en": "body",
+    "phon": "/ˈbɒd.i/",
+    "cn": "身体"
   },
   {
-    "en": "no",
-    "phon": "/nəʊ/",
-    "cn": "不是"
+    "en": "arm",
+    "phon": "/ɑːm/",
+    "cn": "手臂"
   },
   {
-    "en": "up",
-    "phon": "/ʌp/",
-    "cn": "上"
+    "en": "leg",
+    "phon": "/leɡ/",
+    "cn": "腿"
   }
 ]

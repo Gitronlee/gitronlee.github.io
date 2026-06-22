@@ -1,252 +1,252 @@
 [
   {
-    "en": "school",
-    "phon": "/skuːl/",
-    "cn": "学校"
+    "en": "word2-1",
+    "phon": "/wɜːrd/",
+    "cn": "学校1"
   },
   {
-    "en": "teacher",
-    "phon": "/ˈtiː.tʃər/",
-    "cn": "老师"
+    "en": "word2-2",
+    "phon": "/wɜːrd/",
+    "cn": "动作1"
   },
   {
-    "en": "book",
-    "phon": "/bʊk/",
-    "cn": "书"
+    "en": "word2-3",
+    "phon": "/wɜːrd/",
+    "cn": "时间1"
   },
   {
-    "en": "pen",
-    "phon": "/pen/",
-    "cn": "笔"
+    "en": "word2-4",
+    "phon": "/wɜːrd/",
+    "cn": "自然1"
   },
   {
-    "en": "desk",
-    "phon": "/desk/",
-    "cn": "书桌"
+    "en": "word2-5",
+    "phon": "/wɜːrd/",
+    "cn": "动物1"
   },
   {
-    "en": "chair",
-    "phon": "/tʃeər/",
-    "cn": "椅子"
+    "en": "word2-6",
+    "phon": "/wɜːrd/",
+    "cn": "食物1"
   },
   {
-    "en": "door",
-    "phon": "/dɔːr/",
-    "cn": "门"
+    "en": "word2-7",
+    "phon": "/wɜːrd/",
+    "cn": "身体1"
   },
   {
-    "en": "window",
-    "phon": "/ˈwɪn.dəʊ/",
-    "cn": "窗户"
+    "en": "word2-8",
+    "phon": "/wɜːrd/",
+    "cn": "学校2"
   },
   {
-    "en": "house",
-    "phon": "/haʊs/",
-    "cn": "房子"
+    "en": "word2-9",
+    "phon": "/wɜːrd/",
+    "cn": "动作2"
   },
   {
-    "en": "car",
-    "phon": "/kɑːr/",
-    "cn": "汽车"
+    "en": "word2-10",
+    "phon": "/wɜːrd/",
+    "cn": "时间2"
   },
   {
-    "en": "bus",
-    "phon": "/bʌs/",
-    "cn": "公交车"
+    "en": "word2-11",
+    "phon": "/wɜːrd/",
+    "cn": "自然2"
   },
   {
-    "en": "bike",
-    "phon": "/baɪk/",
-    "cn": "自行车"
+    "en": "word2-12",
+    "phon": "/wɜːrd/",
+    "cn": "动物2"
   },
   {
-    "en": "run",
-    "phon": "/rʌn/",
-    "cn": "跑"
+    "en": "word2-13",
+    "phon": "/wɜːrd/",
+    "cn": "食物2"
   },
   {
-    "en": "walk",
-    "phon": "/wɔːk/",
-    "cn": "走"
+    "en": "word2-14",
+    "phon": "/wɜːrd/",
+    "cn": "身体2"
   },
   {
-    "en": "jump",
-    "phon": "/dʒʌmp/",
-    "cn": "跳"
+    "en": "word2-15",
+    "phon": "/wɜːrd/",
+    "cn": "学校3"
   },
   {
-    "en": "eat",
-    "phon": "/iːt/",
-    "cn": "吃"
+    "en": "word2-16",
+    "phon": "/wɜːrd/",
+    "cn": "动作3"
   },
   {
-    "en": "drink",
-    "phon": "/drɪŋk/",
-    "cn": "喝"
+    "en": "word2-17",
+    "phon": "/wɜːrd/",
+    "cn": "时间3"
   },
   {
-    "en": "sleep",
-    "phon": "/sliːp/",
-    "cn": "睡觉"
+    "en": "word2-18",
+    "phon": "/wɜːrd/",
+    "cn": "自然3"
   },
   {
-    "en": "play",
-    "phon": "/pleɪ/",
-    "cn": "玩"
+    "en": "word2-19",
+    "phon": "/wɜːrd/",
+    "cn": "动物3"
   },
   {
-    "en": "read",
-    "phon": "/riːd/",
-    "cn": "读"
+    "en": "word2-20",
+    "phon": "/wɜːrd/",
+    "cn": "食物3"
   },
   {
-    "en": "write",
-    "phon": "/raɪt/",
-    "cn": "写"
+    "en": "word2-21",
+    "phon": "/wɜːrd/",
+    "cn": "身体3"
   },
   {
-    "en": "sing",
-    "phon": "/sɪŋ/",
-    "cn": "唱歌"
+    "en": "word2-22",
+    "phon": "/wɜːrd/",
+    "cn": "学校4"
   },
   {
-    "en": "dance",
-    "phon": "/dæns/",
-    "cn": "跳舞"
+    "en": "word2-23",
+    "phon": "/wɜːrd/",
+    "cn": "动作4"
   },
   {
-    "en": "draw",
-    "phon": "/drɔː/",
-    "cn": "画画"
+    "en": "word2-24",
+    "phon": "/wɜːrd/",
+    "cn": "时间4"
   },
   {
-    "en": "swim",
-    "phon": "/swɪm/",
-    "cn": "游泳"
+    "en": "word2-25",
+    "phon": "/wɜːrd/",
+    "cn": "自然4"
   },
   {
-    "en": "fly",
-    "phon": "/flaɪ/",
-    "cn": "飞"
+    "en": "word2-26",
+    "phon": "/wɜːrd/",
+    "cn": "动物4"
   },
   {
-    "en": "open",
-    "phon": "/ˈəʊ.pən/",
-    "cn": "打开"
+    "en": "word2-27",
+    "phon": "/wɜːrd/",
+    "cn": "食物4"
   },
   {
-    "en": "close",
-    "phon": "/kləʊz/",
-    "cn": "关闭"
+    "en": "word2-28",
+    "phon": "/wɜːrd/",
+    "cn": "身体4"
   },
   {
-    "en": "hot",
-    "phon": "/hɒt/",
-    "cn": "热"
+    "en": "word2-29",
+    "phon": "/wɜːrd/",
+    "cn": "学校5"
   },
   {
-    "en": "cold",
-    "phon": "/kəʊld/",
-    "cn": "冷"
+    "en": "word2-30",
+    "phon": "/wɜːrd/",
+    "cn": "动作5"
   },
   {
-    "en": "warm",
-    "phon": "/wɔːm/",
-    "cn": "温暖"
+    "en": "word2-31",
+    "phon": "/wɜːrd/",
+    "cn": "时间5"
   },
   {
-    "en": "cool",
-    "phon": "/kuːl/",
-    "cn": "凉爽"
+    "en": "word2-32",
+    "phon": "/wɜːrd/",
+    "cn": "自然5"
   },
   {
-    "en": "long",
-    "phon": "/lɒŋ/",
-    "cn": "长"
+    "en": "word2-33",
+    "phon": "/wɜːrd/",
+    "cn": "动物5"
   },
   {
-    "en": "short",
-    "phon": "/ʃɔːt/",
-    "cn": "短"
+    "en": "word2-34",
+    "phon": "/wɜːrd/",
+    "cn": "食物5"
   },
   {
-    "en": "tall",
-    "phon": "/tɔːl/",
-    "cn": "高"
+    "en": "word2-35",
+    "phon": "/wɜːrd/",
+    "cn": "身体5"
   },
   {
-    "en": "fat",
-    "phon": "/fæt/",
-    "cn": "胖"
+    "en": "word2-36",
+    "phon": "/wɜːrd/",
+    "cn": "学校6"
   },
   {
-    "en": "thin",
-    "phon": "/θɪn/",
-    "cn": "瘦"
+    "en": "word2-37",
+    "phon": "/wɜːrd/",
+    "cn": "动作6"
   },
   {
-    "en": "new",
-    "phon": "/njuː/",
-    "cn": "新"
+    "en": "word2-38",
+    "phon": "/wɜːrd/",
+    "cn": "时间6"
   },
   {
-    "en": "old",
-    "phon": "/əʊld/",
-    "cn": "旧"
+    "en": "word2-39",
+    "phon": "/wɜːrd/",
+    "cn": "自然6"
   },
   {
-    "en": "good",
-    "phon": "/ɡʊd/",
-    "cn": "好"
+    "en": "word2-40",
+    "phon": "/wɜːrd/",
+    "cn": "动物6"
   },
   {
-    "en": "bad",
-    "phon": "/bæd/",
-    "cn": "坏"
+    "en": "word2-41",
+    "phon": "/wɜːrd/",
+    "cn": "食物6"
   },
   {
-    "en": "fast",
-    "phon": "/fæst/",
-    "cn": "快"
+    "en": "word2-42",
+    "phon": "/wɜːrd/",
+    "cn": "身体6"
   },
   {
-    "en": "slow",
-    "phon": "/sləʊ/",
-    "cn": "慢"
+    "en": "word2-43",
+    "phon": "/wɜːrd/",
+    "cn": "学校7"
   },
   {
-    "en": "love",
-    "phon": "/lʌv/",
-    "cn": "爱"
+    "en": "word2-44",
+    "phon": "/wɜːrd/",
+    "cn": "动作7"
   },
   {
-    "en": "like",
-    "phon": "/laɪk/",
-    "cn": "喜欢"
+    "en": "word2-45",
+    "phon": "/wɜːrd/",
+    "cn": "时间7"
   },
   {
-    "en": "want",
-    "phon": "/wɒnt/",
-    "cn": "想要"
+    "en": "word2-46",
+    "phon": "/wɜːrd/",
+    "cn": "自然7"
   },
   {
-    "en": "have",
-    "phon": "/hæv/",
-    "cn": "有"
+    "en": "word2-47",
+    "phon": "/wɜːrd/",
+    "cn": "动物7"
   },
   {
-    "en": "come",
-    "phon": "/kʌm/",
-    "cn": "来"
+    "en": "word2-48",
+    "phon": "/wɜːrd/",
+    "cn": "食物7"
   },
   {
-    "en": "go",
-    "phon": "/ɡəʊ/",
-    "cn": "去"
+    "en": "word2-49",
+    "phon": "/wɜːrd/",
+    "cn": "身体7"
   },
   {
-    "en": "see",
-    "phon": "/siː/",
-    "cn": "看"
+    "en": "word2-50",
+    "phon": "/wɜːrd/",
+    "cn": "学校8"
   }
 ]

@@ -1,252 +1,252 @@
 [
   {
-    "en": "apple",
-    "phon": "/ˈæp.əl/",
-    "cn": "苹果"
+    "en": "friend",
+    "phon": "/frend/",
+    "cn": "朋友"
   },
   {
-    "en": "banana",
-    "phon": "/bəˈnæn.ə/",
-    "cn": "香蕉"
+    "en": "people",
+    "phon": "/ˈpiː.pəl/",
+    "cn": "人们"
   },
   {
-    "en": "cat",
-    "phon": "/kæt/",
-    "cn": "猫"
+    "en": "child",
+    "phon": "/tʃaɪld/",
+    "cn": "孩子"
   },
   {
-    "en": "dog",
-    "phon": "/dɒɡ/",
-    "cn": "狗"
+    "en": "baby",
+    "phon": "/ˈbeɪ.bi/",
+    "cn": "婴儿"
   },
   {
-    "en": "fish",
-    "phon": "/fɪʃ/",
-    "cn": "鱼"
+    "en": "man",
+    "phon": "/mæn/",
+    "cn": "男人"
   },
   {
-    "en": "bird",
-    "phon": "/bɜːd/",
-    "cn": "鸟"
+    "en": "woman",
+    "phon": "/ˈwʊm.ən/",
+    "cn": "女人"
   },
   {
-    "en": "one",
-    "phon": "/wʌn/",
-    "cn": "一"
+    "en": "boy",
+    "phon": "/bɔɪ/",
+    "cn": "男孩"
   },
   {
-    "en": "two",
-    "phon": "/tuː/",
-    "cn": "二"
+    "en": "girl",
+    "phon": "/ɡɜːl/",
+    "cn": "女孩"
   },
   {
-    "en": "three",
-    "phon": "/θriː/",
-    "cn": "三"
+    "en": "name",
+    "phon": "/neɪm/",
+    "cn": "名字"
   },
   {
-    "en": "four",
-    "phon": "/fɔːr/",
-    "cn": "四"
+    "en": "age",
+    "phon": "/eɪdʒ/",
+    "cn": "年龄"
   },
   {
-    "en": "five",
-    "phon": "/faɪv/",
-    "cn": "五"
+    "en": "birthday",
+    "phon": "/ˈbɜːθ.deɪ/",
+    "cn": "生日"
   },
   {
-    "en": "six",
-    "phon": "/sɪks/",
-    "cn": "六"
+    "en": "holiday",
+    "phon": "/ˈhɒl.ə.deɪ/",
+    "cn": "假日"
   },
   {
-    "en": "seven",
-    "phon": "/ˈsev.ən/",
-    "cn": "七"
+    "en": "weekend",
+    "phon": "/ˌwiːkˈend/",
+    "cn": "周末"
   },
   {
-    "en": "eight",
-    "phon": "/eɪt/",
-    "cn": "八"
+    "en": "breakfast",
+    "phon": "/ˈbrek.fəst/",
+    "cn": "早餐"
   },
   {
-    "en": "nine",
-    "phon": "/naɪn/",
-    "cn": "九"
+    "en": "lunch",
+    "phon": "/lʌntʃ/",
+    "cn": "午餐"
   },
   {
-    "en": "ten",
-    "phon": "/ten/",
-    "cn": "十"
+    "en": "dinner",
+    "phon": "/ˈdɪn.ər/",
+    "cn": "晚餐"
   },
   {
-    "en": "red",
-    "phon": "/red/",
-    "cn": "红色"
+    "en": "food",
+    "phon": "/fuːd/",
+    "cn": "食物"
   },
   {
-    "en": "blue",
-    "phon": "/bluː/",
-    "cn": "蓝色"
+    "en": "fruit",
+    "phon": "/fruːt/",
+    "cn": "水果"
   },
   {
-    "en": "green",
-    "phon": "/ɡriːn/",
-    "cn": "绿色"
+    "en": "vegetable",
+    "phon": "/ˈvedʒ.tə.bəl/",
+    "cn": "蔬菜"
   },
   {
-    "en": "yellow",
-    "phon": "/ˈjel.əʊ/",
-    "cn": "黄色"
+    "en": "meat",
+    "phon": "/miːt/",
+    "cn": "肉"
   },
   {
-    "en": "black",
-    "phon": "/blæk/",
-    "cn": "黑色"
+    "en": "cake",
+    "phon": "/keɪk/",
+    "cn": "蛋糕"
   },
   {
-    "en": "white",
-    "phon": "/waɪt/",
-    "cn": "白色"
+    "en": "candy",
+    "phon": "/ˈkæn.di/",
+    "cn": "糖果"
   },
   {
-    "en": "mom",
-    "phon": "/mɒm/",
-    "cn": "妈妈"
+    "en": "cookie",
+    "phon": "/ˈkʊk.i/",
+    "cn": "饼干"
   },
   {
-    "en": "dad",
-    "phon": "/dæd/",
-    "cn": "爸爸"
+    "en": "ice cream",
+    "phon": "/ˌaɪs ˈkriːm/",
+    "cn": "冰淇淋"
   },
   {
-    "en": "brother",
-    "phon": "/ˈbrʌð.ər/",
-    "cn": "兄弟"
+    "en": "juice",
+    "phon": "/dʒuːs/",
+    "cn": "果汁"
   },
   {
-    "en": "sister",
-    "phon": "/ˈsɪs.tər/",
-    "cn": "姐妹"
+    "en": "tea",
+    "phon": "/tiː/",
+    "cn": "茶"
   },
   {
-    "en": "sun",
-    "phon": "/sʌn/",
-    "cn": "太阳"
+    "en": "coffee",
+    "phon": "/ˈkɒf.i/",
+    "cn": "咖啡"
   },
   {
-    "en": "moon",
-    "phon": "/muːn/",
-    "cn": "月亮"
+    "en": "hat",
+    "phon": "/hæt/",
+    "cn": "帽子"
   },
   {
-    "en": "star",
-    "phon": "/stɑːr/",
-    "cn": "星星"
+    "en": "shirt",
+    "phon": "/ʃɜːt/",
+    "cn": "衬衫"
   },
   {
-    "en": "tree",
-    "phon": "/triː/",
-    "cn": "树"
+    "en": "shoes",
+    "phon": "/ʃuːz/",
+    "cn": "鞋子"
   },
   {
-    "en": "flower",
-    "phon": "/ˈflaʊ.ər/",
-    "cn": "花"
+    "en": "socks",
+    "phon": "/sɒks/",
+    "cn": "袜子"
   },
   {
-    "en": "water",
-    "phon": "/ˈwɔː.tər/",
-    "cn": "水"
+    "en": "dress",
+    "phon": "/dres/",
+    "cn": "裙子"
   },
   {
-    "en": "milk",
-    "phon": "/mɪlk/",
-    "cn": "牛奶"
+    "en": "coat",
+    "phon": "/kəʊt/",
+    "cn": "外套"
   },
   {
-    "en": "bread",
-    "phon": "/bred/",
-    "cn": "面包"
+    "en": "pants",
+    "phon": "/pænts/",
+    "cn": "裤子"
   },
   {
-    "en": "egg",
-    "phon": "/eɡ/",
-    "cn": "鸡蛋"
+    "en": "bag",
+    "phon": "/bæɡ/",
+    "cn": "包"
   },
   {
-    "en": "rice",
-    "phon": "/raɪs/",
-    "cn": "米饭"
+    "en": "clock",
+    "phon": "/klɒk/",
+    "cn": "钟"
   },
   {
-    "en": "hand",
-    "phon": "/hænd/",
-    "cn": "手"
+    "en": "phone",
+    "phon": "/fəʊn/",
+    "cn": "电话"
   },
   {
-    "en": "eye",
-    "phon": "/aɪ/",
-    "cn": "眼睛"
+    "en": "computer",
+    "phon": "/kəmˈpjuː.tər/",
+    "cn": "电脑"
   },
   {
-    "en": "ear",
-    "phon": "/ɪər/",
-    "cn": "耳朵"
+    "en": "television",
+    "phon": "/ˈtel.ɪ.vɪʒ.ən/",
+    "cn": "电视"
   },
   {
-    "en": "nose",
-    "phon": "/nəʊz/",
-    "cn": "鼻子"
+    "en": "radio",
+    "phon": "/ˈreɪ.di.əʊ/",
+    "cn": "收音机"
   },
   {
-    "en": "mouth",
-    "phon": "/maʊθ/",
-    "cn": "嘴巴"
+    "en": "camera",
+    "phon": "/ˈkæm.ə.rə/",
+    "cn": "相机"
   },
   {
-    "en": "foot",
-    "phon": "/fʊt/",
-    "cn": "脚"
+    "en": "music",
+    "phon": "/ˈmjuː.zɪk/",
+    "cn": "音乐"
   },
   {
-    "en": "head",
-    "phon": "/hed/",
-    "cn": "头"
+    "en": "song",
+    "phon": "/sɒŋ/",
+    "cn": "歌"
   },
   {
-    "en": "big",
-    "phon": "/bɪɡ/",
-    "cn": "大"
+    "en": "movie",
+    "phon": "/ˈmuː.vi/",
+    "cn": "电影"
   },
   {
-    "en": "small",
-    "phon": "/smɔːl/",
-    "cn": "小"
+    "en": "game",
+    "phon": "/ɡeɪm/",
+    "cn": "游戏"
   },
   {
-    "en": "happy",
-    "phon": "/ˈhæp.i/",
-    "cn": "开心"
+    "en": "sport",
+    "phon": "/spɔːt/",
+    "cn": "运动"
   },
   {
-    "en": "sad",
-    "phon": "/sæd/",
-    "cn": "伤心"
+    "en": "ball",
+    "phon": "/bɔːl/",
+    "cn": "球"
   },
   {
-    "en": "yes",
-    "phon": "/jes/",
-    "cn": "是"
+    "en": "toy",
+    "phon": "/tɔɪ/",
+    "cn": "玩具"
   },
   {
-    "en": "no",
-    "phon": "/nəʊ/",
-    "cn": "不是"
+    "en": "country",
+    "phon": "/ˈkʌn.tri/",
+    "cn": "国家"
   },
   {
-    "en": "up",
-    "phon": "/ʌp/",
-    "cn": "上"
+    "en": "city",
+    "phon": "/ˈsɪt.i/",
+    "cn": "城市"
   }
 ]
