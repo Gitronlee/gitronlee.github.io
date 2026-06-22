@@ -1,0 +1,252 @@
+[
+  {
+    "en": "environment",
+    "phon": "/ɪnˈvaɪ.rən.mənt/",
+    "cn": "环境"
+  },
+  {
+    "en": "pollution",
+    "phon": "/pəˈluː.ʃən/",
+    "cn": "污染"
+  },
+  {
+    "en": "recycle",
+    "phon": "/ˌriːˈsaɪ.kəl/",
+    "cn": "回收"
+  },
+  {
+    "en": "protect",
+    "phon": "/prəˈtekt/",
+    "cn": "保护"
+  },
+  {
+    "en": "nature",
+    "phon": "/ˈneɪ.tʃər/",
+    "cn": "自然"
+  },
+  {
+    "en": "energy",
+    "phon": "/ˈen.ə.dʒi/",
+    "cn": "能量"
+  },
+  {
+    "en": "electricity",
+    "phon": "/ɪˌlek.trɪs.ə.ti/",
+    "cn": "电"
+  },
+  {
+    "en": "technology",
+    "phon": "/tekˈnɒl.ə.dʒi/",
+    "cn": "科技"
+  },
+  {
+    "en": "internet",
+    "phon": "/ˈɪn.tə.net/",
+    "cn": "互联网"
+  },
+  {
+    "en": "website",
+    "phon": "/ˈweb.saɪt/",
+    "cn": "网站"
+  },
+  {
+    "en": "email",
+    "phon": "/ˈiː.meɪl/",
+    "cn": "电子邮件"
+  },
+  {
+    "en": "password",
+    "phon": "/ˈpɑːs.wɜːd/",
+    "cn": "密码"
+  },
+  {
+    "en": "software",
+    "phon": "/ˈsɒft.weər/",
+    "cn": "软件"
+  },
+  {
+    "en": "hardware",
+    "phon": "/ˈheəd.weər/",
+    "cn": "硬件"
+  },
+  {
+    "en": "program",
+    "phon": "/ˈprəʊ.ɡræm/",
+    "cn": "程序"
+  },
+  {
+    "en": "data",
+    "phon": "/ˈdeɪ.tə/",
+    "cn": "数据"
+  },
+  {
+    "en": "information",
+    "phon": "/ˌɪn.fəˈmeɪ.ʃən/",
+    "cn": "信息"
+  },
+  {
+    "en": "message",
+    "phon": "/ˈmes.ɪdʒ/",
+    "cn": "消息"
+  },
+  {
+    "en": "language",
+    "phon": "/ˈlæŋ.ɡwɪdʒ/",
+    "cn": "语言"
+  },
+  {
+    "en": "grammar",
+    "phon": "/ˈɡræm.ər/",
+    "cn": "语法"
+  },
+  {
+    "en": "vocabulary",
+    "phon": "/vəˈkæb.jə.lər.i/",
+    "cn": "词汇"
+  },
+  {
+    "en": "sentence",
+    "phon": "/ˈsen.təns/",
+    "cn": "句子"
+  },
+  {
+    "en": "paragraph",
+    "phon": "/ˈpær.ə.ɡrɑːf/",
+    "cn": "段落"
+  },
+  {
+    "en": "essay",
+    "phon": "/ˈes.eɪ/",
+    "cn": "文章"
+  },
+  {
+    "en": "novel",
+    "phon": "/ˈnɒv.əl/",
+    "cn": "小说"
+  },
+  {
+    "en": "poem",
+    "phon": "/ˈpəʊ.ɪm/",
+    "cn": "诗"
+  },
+  {
+    "en": "author",
+    "phon": "/ˈɔː.θər/",
+    "cn": "作者"
+  },
+  {
+    "en": "character",
+    "phon": "/ˈkær.ək.tər/",
+    "cn": "角色"
+  },
+  {
+    "en": "story",
+    "phon": "/ˈstɔːr.i/",
+    "cn": "故事"
+  },
+  {
+    "en": "culture",
+    "phon": "/ˈkʌl.tʃər/",
+    "cn": "文化"
+  },
+  {
+    "en": "tradition",
+    "phon": "/trəˈdɪʃ.ən/",
+    "cn": "传统"
+  },
+  {
+    "en": "custom",
+    "phon": "/ˈkʌs.təm/",
+    "cn": "习俗"
+  },
+  {
+    "en": "festival",
+    "phon": "/ˈfes.tɪ.vəl/",
+    "cn": "节日"
+  },
+  {
+    "en": "celebrate",
+    "phon": "/ˈsel.ɪ.breɪt/",
+    "cn": "庆祝"
+  },
+  {
+    "en": "ceremony",
+    "phon": "/ˈser.ə.mə.ni/",
+    "cn": "仪式"
+  },
+  {
+    "en": "marriage",
+    "phon": "/ˈmær.ɪdʒ/",
+    "cn": "婚姻"
+  },
+  {
+    "en": "funeral",
+    "phon": "/ˈfjuː.nər.əl/",
+    "cn": "葬礼"
+  },
+  {
+    "en": "religion",
+    "phon": "/rɪˈlɪdʒ.ən/",
+    "cn": "宗教"
+  },
+  {
+    "en": "believe",
+    "phon": "/bɪˈliːv/",
+    "cn": "相信"
+  },
+  {
+    "en": "society",
+    "phon": "/səˈsaɪ.ə.ti/",
+    "cn": "社会"
+  },
+  {
+    "en": "community",
+    "phon": "/kəˈmjuː.nə.ti/",
+    "cn": "社区"
+  },
+  {
+    "en": "government",
+    "phon": "/ˈɡʌv.ən.mənt/",
+    "cn": "政府"
+  },
+  {
+    "en": "president",
+    "phon": "/ˈprez.ɪ.dənt/",
+    "cn": "总统"
+  },
+  {
+    "en": "democracy",
+    "phon": "/dɪˈmɒk.rə.si/",
+    "cn": "民主"
+  },
+  {
+    "en": "freedom",
+    "phon": "/ˈfriː.dəm/",
+    "cn": "自由"
+  },
+  {
+    "en": "justice",
+    "phon": "/ˈdʒʌs.tɪs/",
+    "cn": "正义"
+  },
+  {
+    "en": "equality",
+    "phon": "/ɪˈkwɒl.ə.ti/",
+    "cn": "平等"
+  },
+  {
+    "en": "peace",
+    "phon": "/piːs/",
+    "cn": "和平"
+  },
+  {
+    "en": "war",
+    "phon": "/wɔːr/",
+    "cn": "战争"
+  },
+  {
+    "en": "history",
+    "phon": "/ˈhɪs.tər.i/",
+    "cn": "历史"
+  }
+]

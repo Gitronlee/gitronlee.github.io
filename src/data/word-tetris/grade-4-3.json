@@ -1,0 +1,252 @@
+[
+  {
+    "en": "people",
+    "phon": "/ˈpiː.pəl/",
+    "cn": "人们"
+  },
+  {
+    "en": "child",
+    "phon": "/tʃaɪld/",
+    "cn": "孩子"
+  },
+  {
+    "en": "baby",
+    "phon": "/ˈbeɪ.bi/",
+    "cn": "婴儿"
+  },
+  {
+    "en": "man",
+    "phon": "/mæn/",
+    "cn": "男人"
+  },
+  {
+    "en": "woman",
+    "phon": "/ˈwʊm.ən/",
+    "cn": "女人"
+  },
+  {
+    "en": "boy",
+    "phon": "/bɔɪ/",
+    "cn": "男孩"
+  },
+  {
+    "en": "girl",
+    "phon": "/ɡɜːl/",
+    "cn": "女孩"
+  },
+  {
+    "en": "name",
+    "phon": "/neɪm/",
+    "cn": "名字"
+  },
+  {
+    "en": "age",
+    "phon": "/eɪdʒ/",
+    "cn": "年龄"
+  },
+  {
+    "en": "birthday",
+    "phon": "/ˈbɜːθ.deɪ/",
+    "cn": "生日"
+  },
+  {
+    "en": "holiday",
+    "phon": "/ˈhɒl.ə.deɪ/",
+    "cn": "假日"
+  },
+  {
+    "en": "weekend",
+    "phon": "/ˌwiːkˈend/",
+    "cn": "周末"
+  },
+  {
+    "en": "breakfast",
+    "phon": "/ˈbrek.fəst/",
+    "cn": "早餐"
+  },
+  {
+    "en": "lunch",
+    "phon": "/lʌntʃ/",
+    "cn": "午餐"
+  },
+  {
+    "en": "dinner",
+    "phon": "/ˈdɪn.ər/",
+    "cn": "晚餐"
+  },
+  {
+    "en": "food",
+    "phon": "/fuːd/",
+    "cn": "食物"
+  },
+  {
+    "en": "fruit",
+    "phon": "/fruːt/",
+    "cn": "水果"
+  },
+  {
+    "en": "vegetable",
+    "phon": "/ˈvedʒ.tə.bəl/",
+    "cn": "蔬菜"
+  },
+  {
+    "en": "meat",
+    "phon": "/miːt/",
+    "cn": "肉"
+  },
+  {
+    "en": "cake",
+    "phon": "/keɪk/",
+    "cn": "蛋糕"
+  },
+  {
+    "en": "candy",
+    "phon": "/ˈkæn.di/",
+    "cn": "糖果"
+  },
+  {
+    "en": "cookie",
+    "phon": "/ˈkʊk.i/",
+    "cn": "饼干"
+  },
+  {
+    "en": "ice cream",
+    "phon": "/ˌaɪs ˈkriːm/",
+    "cn": "冰淇淋"
+  },
+  {
+    "en": "juice",
+    "phon": "/dʒuːs/",
+    "cn": "果汁"
+  },
+  {
+    "en": "tea",
+    "phon": "/tiː/",
+    "cn": "茶"
+  },
+  {
+    "en": "coffee",
+    "phon": "/ˈkɒf.i/",
+    "cn": "咖啡"
+  },
+  {
+    "en": "hat",
+    "phon": "/hæt/",
+    "cn": "帽子"
+  },
+  {
+    "en": "shirt",
+    "phon": "/ʃɜːt/",
+    "cn": "衬衫"
+  },
+  {
+    "en": "shoes",
+    "phon": "/ʃuːz/",
+    "cn": "鞋子"
+  },
+  {
+    "en": "socks",
+    "phon": "/sɒks/",
+    "cn": "袜子"
+  },
+  {
+    "en": "dress",
+    "phon": "/dres/",
+    "cn": "裙子"
+  },
+  {
+    "en": "coat",
+    "phon": "/kəʊt/",
+    "cn": "外套"
+  },
+  {
+    "en": "pants",
+    "phon": "/pænts/",
+    "cn": "裤子"
+  },
+  {
+    "en": "bag",
+    "phon": "/bæɡ/",
+    "cn": "包"
+  },
+  {
+    "en": "clock",
+    "phon": "/klɒk/",
+    "cn": "钟"
+  },
+  {
+    "en": "phone",
+    "phon": "/fəʊn/",
+    "cn": "电话"
+  },
+  {
+    "en": "computer",
+    "phon": "/kəmˈpjuː.tər/",
+    "cn": "电脑"
+  },
+  {
+    "en": "television",
+    "phon": "/ˈtel.ɪ.vɪʒ.ən/",
+    "cn": "电视"
+  },
+  {
+    "en": "radio",
+    "phon": "/ˈreɪ.di.əʊ/",
+    "cn": "收音机"
+  },
+  {
+    "en": "camera",
+    "phon": "/ˈkæm.ə.rə/",
+    "cn": "相机"
+  },
+  {
+    "en": "music",
+    "phon": "/ˈmjuː.zɪk/",
+    "cn": "音乐"
+  },
+  {
+    "en": "song",
+    "phon": "/sɒŋ/",
+    "cn": "歌"
+  },
+  {
+    "en": "movie",
+    "phon": "/ˈmuː.vi/",
+    "cn": "电影"
+  },
+  {
+    "en": "game",
+    "phon": "/ɡeɪm/",
+    "cn": "游戏"
+  },
+  {
+    "en": "sport",
+    "phon": "/spɔːt/",
+    "cn": "运动"
+  },
+  {
+    "en": "ball",
+    "phon": "/bɔːl/",
+    "cn": "球"
+  },
+  {
+    "en": "toy",
+    "phon": "/tɔɪ/",
+    "cn": "玩具"
+  },
+  {
+    "en": "family",
+    "phon": "/ˈfæm.əl.i/",
+    "cn": "家庭"
+  },
+  {
+    "en": "friend",
+    "phon": "/frend/",
+    "cn": "朋友"
+  },
+  {
+    "en": "people",
+    "phon": "/ˈpiː.pəl/",
+    "cn": "人们"
+  }
+]

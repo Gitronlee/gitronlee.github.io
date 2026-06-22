@@ -1,0 +1,252 @@
+[
+  {
+    "en": "afternoon",
+    "phon": "/ˌæf.təˈnuːn/",
+    "cn": "下午"
+  },
+  {
+    "en": "evening",
+    "phon": "/ˈiːv.nɪŋ/",
+    "cn": "晚上"
+  },
+  {
+    "en": "night",
+    "phon": "/naɪt/",
+    "cn": "夜晚"
+  },
+  {
+    "en": "today",
+    "phon": "/təˈdeɪ/",
+    "cn": "今天"
+  },
+  {
+    "en": "tomorrow",
+    "phon": "/təˈmɒr.əʊ/",
+    "cn": "明天"
+  },
+  {
+    "en": "yesterday",
+    "phon": "/ˈjes.tə.deɪ/",
+    "cn": "昨天"
+  },
+  {
+    "en": "week",
+    "phon": "/wiːk/",
+    "cn": "周"
+  },
+  {
+    "en": "month",
+    "phon": "/mʌnθ/",
+    "cn": "月"
+  },
+  {
+    "en": "year",
+    "phon": "/jɪər/",
+    "cn": "年"
+  },
+  {
+    "en": "spring",
+    "phon": "/sprɪŋ/",
+    "cn": "春天"
+  },
+  {
+    "en": "summer",
+    "phon": "/ˈsʌm.ər/",
+    "cn": "夏天"
+  },
+  {
+    "en": "autumn",
+    "phon": "/ˈɔː.təm/",
+    "cn": "秋天"
+  },
+  {
+    "en": "winter",
+    "phon": "/ˈwɪn.tər/",
+    "cn": "冬天"
+  },
+  {
+    "en": "rain",
+    "phon": "/reɪn/",
+    "cn": "雨"
+  },
+  {
+    "en": "snow",
+    "phon": "/snəʊ/",
+    "cn": "雪"
+  },
+  {
+    "en": "wind",
+    "phon": "/wɪnd/",
+    "cn": "风"
+  },
+  {
+    "en": "cloud",
+    "phon": "/klaʊd/",
+    "cn": "云"
+  },
+  {
+    "en": "sky",
+    "phon": "/skaɪ/",
+    "cn": "天空"
+  },
+  {
+    "en": "earth",
+    "phon": "/ɜːθ/",
+    "cn": "地球"
+  },
+  {
+    "en": "sea",
+    "phon": "/siː/",
+    "cn": "海"
+  },
+  {
+    "en": "river",
+    "phon": "/ˈrɪv.ər/",
+    "cn": "河"
+  },
+  {
+    "en": "mountain",
+    "phon": "/ˈmaʊn.tən/",
+    "cn": "山"
+  },
+  {
+    "en": "forest",
+    "phon": "/ˈfɒr.ɪst/",
+    "cn": "森林"
+  },
+  {
+    "en": "grass",
+    "phon": "/ɡræs/",
+    "cn": "草"
+  },
+  {
+    "en": "stone",
+    "phon": "/stəʊn/",
+    "cn": "石头"
+  },
+  {
+    "en": "animal",
+    "phon": "/ˈæn.ɪ.məl/",
+    "cn": "动物"
+  },
+  {
+    "en": "horse",
+    "phon": "/hɔːs/",
+    "cn": "马"
+  },
+  {
+    "en": "cow",
+    "phon": "/kaʊ/",
+    "cn": "牛"
+  },
+  {
+    "en": "pig",
+    "phon": "/pɪɡ/",
+    "cn": "猪"
+  },
+  {
+    "en": "sheep",
+    "phon": "/ʃiːp/",
+    "cn": "羊"
+  },
+  {
+    "en": "chicken",
+    "phon": "/ˈtʃɪk.ɪn/",
+    "cn": "鸡"
+  },
+  {
+    "en": "duck",
+    "phon": "/dʌk/",
+    "cn": "鸭"
+  },
+  {
+    "en": "rabbit",
+    "phon": "/ˈræb.ɪt/",
+    "cn": "兔子"
+  },
+  {
+    "en": "monkey",
+    "phon": "/ˈmʌŋ.ki/",
+    "cn": "猴子"
+  },
+  {
+    "en": "elephant",
+    "phon": "/ˈel.ɪ.fənt/",
+    "cn": "大象"
+  },
+  {
+    "en": "tiger",
+    "phon": "/ˈtaɪ.ɡər/",
+    "cn": "老虎"
+  },
+  {
+    "en": "lion",
+    "phon": "/ˈlaɪ.ən/",
+    "cn": "狮子"
+  },
+  {
+    "en": "bear",
+    "phon": "/beər/",
+    "cn": "熊"
+  },
+  {
+    "en": "wolf",
+    "phon": "/wʊlf/",
+    "cn": "狼"
+  },
+  {
+    "en": "fox",
+    "phon": "/fɒks/",
+    "cn": "狐狸"
+  },
+  {
+    "en": "deer",
+    "phon": "/dɪər/",
+    "cn": "鹿"
+  },
+  {
+    "en": "frog",
+    "phon": "/frɒɡ/",
+    "cn": "青蛙"
+  },
+  {
+    "en": "snake",
+    "phon": "/sneɪk/",
+    "cn": "蛇"
+  },
+  {
+    "en": "turtle",
+    "phon": "/ˈtɜː.təl/",
+    "cn": "乌龟"
+  },
+  {
+    "en": "panda",
+    "phon": "/ˈpæn.də/",
+    "cn": "熊猫"
+  },
+  {
+    "en": "whale",
+    "phon": "/weɪl/",
+    "cn": "鲸"
+  },
+  {
+    "en": "dolphin",
+    "phon": "/ˈdɒl.fɪn/",
+    "cn": "海豚"
+  },
+  {
+    "en": "shark",
+    "phon": "/ʃɑːk/",
+    "cn": "鲨鱼"
+  },
+  {
+    "en": "morning",
+    "phon": "/ˈmɔːn.ɪŋ/",
+    "cn": "早上"
+  },
+  {
+    "en": "afternoon",
+    "phon": "/ˌæf.təˈnuːn/",
+    "cn": "下午"
+  }
+]

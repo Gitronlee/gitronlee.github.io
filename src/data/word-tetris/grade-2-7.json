@@ -1,0 +1,252 @@
+[
+  {
+    "en": "school",
+    "phon": "/skuːl/",
+    "cn": "学校"
+  },
+  {
+    "en": "teacher",
+    "phon": "/ˈtiː.tʃər/",
+    "cn": "老师"
+  },
+  {
+    "en": "book",
+    "phon": "/bʊk/",
+    "cn": "书"
+  },
+  {
+    "en": "pen",
+    "phon": "/pen/",
+    "cn": "笔"
+  },
+  {
+    "en": "desk",
+    "phon": "/desk/",
+    "cn": "书桌"
+  },
+  {
+    "en": "chair",
+    "phon": "/tʃeər/",
+    "cn": "椅子"
+  },
+  {
+    "en": "door",
+    "phon": "/dɔːr/",
+    "cn": "门"
+  },
+  {
+    "en": "window",
+    "phon": "/ˈwɪn.dəʊ/",
+    "cn": "窗户"
+  },
+  {
+    "en": "house",
+    "phon": "/haʊs/",
+    "cn": "房子"
+  },
+  {
+    "en": "car",
+    "phon": "/kɑːr/",
+    "cn": "汽车"
+  },
+  {
+    "en": "bus",
+    "phon": "/bʌs/",
+    "cn": "公交车"
+  },
+  {
+    "en": "bike",
+    "phon": "/baɪk/",
+    "cn": "自行车"
+  },
+  {
+    "en": "run",
+    "phon": "/rʌn/",
+    "cn": "跑"
+  },
+  {
+    "en": "walk",
+    "phon": "/wɔːk/",
+    "cn": "走"
+  },
+  {
+    "en": "jump",
+    "phon": "/dʒʌmp/",
+    "cn": "跳"
+  },
+  {
+    "en": "eat",
+    "phon": "/iːt/",
+    "cn": "吃"
+  },
+  {
+    "en": "drink",
+    "phon": "/drɪŋk/",
+    "cn": "喝"
+  },
+  {
+    "en": "sleep",
+    "phon": "/sliːp/",
+    "cn": "睡觉"
+  },
+  {
+    "en": "play",
+    "phon": "/pleɪ/",
+    "cn": "玩"
+  },
+  {
+    "en": "read",
+    "phon": "/riːd/",
+    "cn": "读"
+  },
+  {
+    "en": "write",
+    "phon": "/raɪt/",
+    "cn": "写"
+  },
+  {
+    "en": "sing",
+    "phon": "/sɪŋ/",
+    "cn": "唱歌"
+  },
+  {
+    "en": "dance",
+    "phon": "/dæns/",
+    "cn": "跳舞"
+  },
+  {
+    "en": "draw",
+    "phon": "/drɔː/",
+    "cn": "画画"
+  },
+  {
+    "en": "swim",
+    "phon": "/swɪm/",
+    "cn": "游泳"
+  },
+  {
+    "en": "fly",
+    "phon": "/flaɪ/",
+    "cn": "飞"
+  },
+  {
+    "en": "open",
+    "phon": "/ˈəʊ.pən/",
+    "cn": "打开"
+  },
+  {
+    "en": "close",
+    "phon": "/kləʊz/",
+    "cn": "关闭"
+  },
+  {
+    "en": "hot",
+    "phon": "/hɒt/",
+    "cn": "热"
+  },
+  {
+    "en": "cold",
+    "phon": "/kəʊld/",
+    "cn": "冷"
+  },
+  {
+    "en": "warm",
+    "phon": "/wɔːm/",
+    "cn": "温暖"
+  },
+  {
+    "en": "cool",
+    "phon": "/kuːl/",
+    "cn": "凉爽"
+  },
+  {
+    "en": "long",
+    "phon": "/lɒŋ/",
+    "cn": "长"
+  },
+  {
+    "en": "short",
+    "phon": "/ʃɔːt/",
+    "cn": "短"
+  },
+  {
+    "en": "tall",
+    "phon": "/tɔːl/",
+    "cn": "高"
+  },
+  {
+    "en": "fat",
+    "phon": "/fæt/",
+    "cn": "胖"
+  },
+  {
+    "en": "thin",
+    "phon": "/θɪn/",
+    "cn": "瘦"
+  },
+  {
+    "en": "new",
+    "phon": "/njuː/",
+    "cn": "新"
+  },
+  {
+    "en": "old",
+    "phon": "/əʊld/",
+    "cn": "旧"
+  },
+  {
+    "en": "good",
+    "phon": "/ɡʊd/",
+    "cn": "好"
+  },
+  {
+    "en": "bad",
+    "phon": "/bæd/",
+    "cn": "坏"
+  },
+  {
+    "en": "fast",
+    "phon": "/fæst/",
+    "cn": "快"
+  },
+  {
+    "en": "slow",
+    "phon": "/sləʊ/",
+    "cn": "慢"
+  },
+  {
+    "en": "love",
+    "phon": "/lʌv/",
+    "cn": "爱"
+  },
+  {
+    "en": "like",
+    "phon": "/laɪk/",
+    "cn": "喜欢"
+  },
+  {
+    "en": "want",
+    "phon": "/wɒnt/",
+    "cn": "想要"
+  },
+  {
+    "en": "have",
+    "phon": "/hæv/",
+    "cn": "有"
+  },
+  {
+    "en": "come",
+    "phon": "/kʌm/",
+    "cn": "来"
+  },
+  {
+    "en": "go",
+    "phon": "/ɡəʊ/",
+    "cn": "去"
+  },
+  {
+    "en": "see",
+    "phon": "/siː/",
+    "cn": "看"
+  }
+]

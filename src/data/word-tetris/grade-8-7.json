@@ -1,0 +1,252 @@
+[
+  {
+    "en": "science",
+    "phon": "/ˈsaɪ.əns/",
+    "cn": "科学"
+  },
+  {
+    "en": "physics",
+    "phon": "/ˈfɪz.ɪks/",
+    "cn": "物理"
+  },
+  {
+    "en": "chemistry",
+    "phon": "/ˈkem.ɪ.stri/",
+    "cn": "化学"
+  },
+  {
+    "en": "biology",
+    "phon": "/baɪˈɒl.ə.dʒi/",
+    "cn": "生物"
+  },
+  {
+    "en": "experiment",
+    "phon": "/ɪkˈsper.ɪ.mənt/",
+    "cn": "实验"
+  },
+  {
+    "en": "theory",
+    "phon": "/ˈθɪər.i/",
+    "cn": "理论"
+  },
+  {
+    "en": "hypothesis",
+    "phon": "/haɪˈpɒθ.ə.sɪs/",
+    "cn": "假设"
+  },
+  {
+    "en": "conclusion",
+    "phon": "/kənˈkluː.ʒən/",
+    "cn": "结论"
+  },
+  {
+    "en": "evidence",
+    "phon": "/ˈev.ɪ.dəns/",
+    "cn": "证据"
+  },
+  {
+    "en": "analysis",
+    "phon": "/əˈnæl.ə.sɪs/",
+    "cn": "分析"
+  },
+  {
+    "en": "research",
+    "phon": "/rɪˈsɜːtʃ/",
+    "cn": "研究"
+  },
+  {
+    "en": "discover",
+    "phon": "/dɪsˈkʌv.ər/",
+    "cn": "发现"
+  },
+  {
+    "en": "invent",
+    "phon": "/ɪnˈvent/",
+    "cn": "发明"
+  },
+  {
+    "en": "create",
+    "phon": "/kriˈeɪt/",
+    "cn": "创造"
+  },
+  {
+    "en": "design",
+    "phon": "/dɪˈzaɪn/",
+    "cn": "设计"
+  },
+  {
+    "en": "build",
+    "phon": "/bɪld/",
+    "cn": "建造"
+  },
+  {
+    "en": "machine",
+    "phon": "/məˈʃiːn/",
+    "cn": "机器"
+  },
+  {
+    "en": "engine",
+    "phon": "/ˈen.dʒɪn/",
+    "cn": "引擎"
+  },
+  {
+    "en": "motor",
+    "phon": "/ˈməʊ.tər/",
+    "cn": "马达"
+  },
+  {
+    "en": "battery",
+    "phon": "/ˈbæt.ər.i/",
+    "cn": "电池"
+  },
+  {
+    "en": "solar",
+    "phon": "/ˈsəʊ.lər/",
+    "cn": "太阳能"
+  },
+  {
+    "en": "nuclear",
+    "phon": "/ˈnjuː.kli.ər/",
+    "cn": "核能"
+  },
+  {
+    "en": "fuel",
+    "phon": "/fjuːəl/",
+    "cn": "燃料"
+  },
+  {
+    "en": "gas",
+    "phon": "/ɡæs/",
+    "cn": "气体"
+  },
+  {
+    "en": "oil",
+    "phon": "/ɔɪl/",
+    "cn": "油"
+  },
+  {
+    "en": "metal",
+    "phon": "/ˈmet.əl/",
+    "cn": "金属"
+  },
+  {
+    "en": "plastic",
+    "phon": "/ˈplæs.tɪk/",
+    "cn": "塑料"
+  },
+  {
+    "en": "wood",
+    "phon": "/wʊd/",
+    "cn": "木头"
+  },
+  {
+    "en": "glass",
+    "phon": "/ɡlæs/",
+    "cn": "玻璃"
+  },
+  {
+    "en": "rubber",
+    "phon": "/ˈrʌb.ər/",
+    "cn": "橡胶"
+  },
+  {
+    "en": "chemical",
+    "phon": "/ˈkem.ɪ.kəl/",
+    "cn": "化学的"
+  },
+  {
+    "en": "atom",
+    "phon": "/ˈæt.əm/",
+    "cn": "原子"
+  },
+  {
+    "en": "molecule",
+    "phon": "/ˈmɒl.ɪ.kjuːl/",
+    "cn": "分子"
+  },
+  {
+    "en": "element",
+    "phon": "/ˈel.ɪ.mənt/",
+    "cn": "元素"
+  },
+  {
+    "en": "compound",
+    "phon": "/ˈkɒm.paʊnd/",
+    "cn": "化合物"
+  },
+  {
+    "en": "solution",
+    "phon": "/səˈluː.ʃən/",
+    "cn": "溶液"
+  },
+  {
+    "en": "reaction",
+    "phon": "/riˈæk.ʃən/",
+    "cn": "反应"
+  },
+  {
+    "en": "temperature",
+    "phon": "/ˈtem.prə.tʃər/",
+    "cn": "温度"
+  },
+  {
+    "en": "pressure",
+    "phon": "/ˈpreʃ.ər/",
+    "cn": "压力"
+  },
+  {
+    "en": "force",
+    "phon": "/fɔːs/",
+    "cn": "力"
+  },
+  {
+    "en": "gravity",
+    "phon": "/ˈɡræv.ə.ti/",
+    "cn": "重力"
+  },
+  {
+    "en": "speed",
+    "phon": "/spiːd/",
+    "cn": "速度"
+  },
+  {
+    "en": "distance",
+    "phon": "/ˈdɪs.təns/",
+    "cn": "距离"
+  },
+  {
+    "en": "mass",
+    "phon": "/mæs/",
+    "cn": "质量"
+  },
+  {
+    "en": "weight",
+    "phon": "/weɪt/",
+    "cn": "重量"
+  },
+  {
+    "en": "volume",
+    "phon": "/ˈvɒl.juːm/",
+    "cn": "体积"
+  },
+  {
+    "en": "length",
+    "phon": "/leŋθ/",
+    "cn": "长度"
+  },
+  {
+    "en": "width",
+    "phon": "/wɪdθ/",
+    "cn": "宽度"
+  },
+  {
+    "en": "height",
+    "phon": "/haɪt/",
+    "cn": "高度"
+  },
+  {
+    "en": "depth",
+    "phon": "/depθ/",
+    "cn": "深度"
+  }
+]

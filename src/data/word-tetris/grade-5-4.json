@@ -1,0 +1,252 @@
+[
+  {
+    "en": "country",
+    "phon": "/ˈkʌn.tri/",
+    "cn": "国家"
+  },
+  {
+    "en": "city",
+    "phon": "/ˈsɪt.i/",
+    "cn": "城市"
+  },
+  {
+    "en": "town",
+    "phon": "/taʊn/",
+    "cn": "城镇"
+  },
+  {
+    "en": "village",
+    "phon": "/ˈvɪl.ɪdʒ/",
+    "cn": "村庄"
+  },
+  {
+    "en": "street",
+    "phon": "/striːt/",
+    "cn": "街道"
+  },
+  {
+    "en": "road",
+    "phon": "/rəʊd/",
+    "cn": "路"
+  },
+  {
+    "en": "bridge",
+    "phon": "/brɪdʒ/",
+    "cn": "桥"
+  },
+  {
+    "en": "park",
+    "phon": "/pɑːk/",
+    "cn": "公园"
+  },
+  {
+    "en": "garden",
+    "phon": "/ˈɡɑː.dən/",
+    "cn": "花园"
+  },
+  {
+    "en": "library",
+    "phon": "/ˈlaɪ.brər.i/",
+    "cn": "图书馆"
+  },
+  {
+    "en": "hospital",
+    "phon": "/ˈhɒs.pɪ.təl/",
+    "cn": "医院"
+  },
+  {
+    "en": "shop",
+    "phon": "/ʃɒp/",
+    "cn": "商店"
+  },
+  {
+    "en": "market",
+    "phon": "/ˈmɑː.kɪt/",
+    "cn": "市场"
+  },
+  {
+    "en": "restaurant",
+    "phon": "/ˈres.tə.rɒnt/",
+    "cn": "餐厅"
+  },
+  {
+    "en": "hotel",
+    "phon": "/həʊˈtel/",
+    "cn": "酒店"
+  },
+  {
+    "en": "airport",
+    "phon": "/ˈeə.pɔːt/",
+    "cn": "机场"
+  },
+  {
+    "en": "station",
+    "phon": "/ˈsteɪ.ʃən/",
+    "cn": "车站"
+  },
+  {
+    "en": "church",
+    "phon": "/tʃɜːtʃ/",
+    "cn": "教堂"
+  },
+  {
+    "en": "museum",
+    "phon": "/mjuˈziː.əm/",
+    "cn": "博物馆"
+  },
+  {
+    "en": "theater",
+    "phon": "/ˈθɪə.tər/",
+    "cn": "剧院"
+  },
+  {
+    "en": "cinema",
+    "phon": "/ˈsɪn.ə.mə/",
+    "cn": "电影院"
+  },
+  {
+    "en": "bank",
+    "phon": "/bæŋk/",
+    "cn": "银行"
+  },
+  {
+    "en": "post office",
+    "phon": "/pəʊst ˈɒf.ɪs/",
+    "cn": "邮局"
+  },
+  {
+    "en": "police",
+    "phon": "/pəˈliːs/",
+    "cn": "警察"
+  },
+  {
+    "en": "doctor",
+    "phon": "/ˈdɒk.tər/",
+    "cn": "医生"
+  },
+  {
+    "en": "nurse",
+    "phon": "/nɜːs/",
+    "cn": "护士"
+  },
+  {
+    "en": "driver",
+    "phon": "/ˈdraɪ.vər/",
+    "cn": "司机"
+  },
+  {
+    "en": "cook",
+    "phon": "/kʊk/",
+    "cn": "厨师"
+  },
+  {
+    "en": "farmer",
+    "phon": "/ˈfɑː.mər/",
+    "cn": "农民"
+  },
+  {
+    "en": "worker",
+    "phon": "/ˈwɜː.kər/",
+    "cn": "工人"
+  },
+  {
+    "en": "student",
+    "phon": "/ˈstjuː.dənt/",
+    "cn": "学生"
+  },
+  {
+    "en": "class",
+    "phon": "/klæs/",
+    "cn": "班级"
+  },
+  {
+    "en": "homework",
+    "phon": "/ˈhəʊm.wɜːk/",
+    "cn": "作业"
+  },
+  {
+    "en": "exam",
+    "phon": "/ɪɡˈzæm/",
+    "cn": "考试"
+  },
+  {
+    "en": "lesson",
+    "phon": "/ˈles.ən/",
+    "cn": "课"
+  },
+  {
+    "en": "subject",
+    "phon": "/ˈsʌb.dʒekt/",
+    "cn": "科目"
+  },
+  {
+    "en": "math",
+    "phon": "/mæθ/",
+    "cn": "数学"
+  },
+  {
+    "en": "science",
+    "phon": "/ˈsaɪ.əns/",
+    "cn": "科学"
+  },
+  {
+    "en": "history",
+    "phon": "/ˈhɪs.tər.i/",
+    "cn": "历史"
+  },
+  {
+    "en": "geography",
+    "phon": "/dʒiˈɒɡ.rə.fi/",
+    "cn": "地理"
+  },
+  {
+    "en": "art",
+    "phon": "/ɑːt/",
+    "cn": "美术"
+  },
+  {
+    "en": "PE",
+    "phon": "/ˌpiː ˈiː/",
+    "cn": "体育"
+  },
+  {
+    "en": "English",
+    "phon": "/ˈɪŋ.ɡlɪʃ/",
+    "cn": "英语"
+  },
+  {
+    "en": "Chinese",
+    "phon": "/ˌtʃaɪˈniːz/",
+    "cn": "语文"
+  },
+  {
+    "en": "homework",
+    "phon": "/ˈhəʊm.wɜːk/",
+    "cn": "作业"
+  },
+  {
+    "en": "notebook",
+    "phon": "/ˈnəʊt.bʊk/",
+    "cn": "笔记本"
+  },
+  {
+    "en": "pencil",
+    "phon": "/ˈpen.səl/",
+    "cn": "铅笔"
+  },
+  {
+    "en": "eraser",
+    "phon": "/ɪˈreɪ.zər/",
+    "cn": "橡皮"
+  },
+  {
+    "en": "ruler",
+    "phon": "/ˈruː.lər/",
+    "cn": "尺子"
+  },
+  {
+    "en": "scissors",
+    "phon": "/ˈsɪz.ərz/",
+    "cn": "剪刀"
+  }
+]

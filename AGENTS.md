@@ -20,6 +20,10 @@ Astro 5 static site — developer toolbox (tools, games, docs). Chinese language
 - Games follow the same pattern: `games.json` + `src/components/games/` + `src/pages/games/[slug].astro`
   - Games have a `status` field: `"active"` renders the component, `"coming-soon"` shows placeholder UI
   - Only `word-tetris` is active; others show "Coming Soon" fallback automatically
+- **Word Tetris structure**: 9 grades (一年级~初三) × 7 sub-levels = 63 levels, 50 words each = 3150 words
+  - Files: `src/data/word-tetris/grade-{grade}-{sub}.json` (e.g., `grade-1-1.json`, `grade-9-7.json`)
+  - Level format: `{grade}-{sub}` (e.g., "1-1", "3-5", "9-7")
+  - Auto-advance: sub 1→7, then grade+1 sub 1
 - **Tool component convention**: Tools wrap content in `<ToolLayout>` (import from `@/components/ToolLayout.astro`)
 - **Docs use Astro content collections**: Schema defined in `src/content.config.ts` (title, description, category, optional order)
 

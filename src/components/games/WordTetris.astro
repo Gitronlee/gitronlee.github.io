@@ -1,27 +1,114 @@
 ---
-import grade1 from '../../data/word-tetris/grade-1.json';
-import grade2 from '../../data/word-tetris/grade-2.json';
-import grade3 from '../../data/word-tetris/grade-3.json';
-import grade4 from '../../data/word-tetris/grade-4.json';
-import grade5 from '../../data/word-tetris/grade-5.json';
-import grade6 from '../../data/word-tetris/grade-6.json';
-import grade7 from '../../data/word-tetris/grade-7.json';
-import grade8 from '../../data/word-tetris/grade-8.json';
-import grade9 from '../../data/word-tetris/grade-9.json';
+// Grade 1 sub-levels
+import grade1_1 from '../../data/word-tetris/grade-1-1.json';
+import grade1_2 from '../../data/word-tetris/grade-1-2.json';
+import grade1_3 from '../../data/word-tetris/grade-1-3.json';
+import grade1_4 from '../../data/word-tetris/grade-1-4.json';
+import grade1_5 from '../../data/word-tetris/grade-1-5.json';
+import grade1_6 from '../../data/word-tetris/grade-1-6.json';
+import grade1_7 from '../../data/word-tetris/grade-1-7.json';
 
-const allGrades: Record<number, { en: string; cn: string }[]> = {
-  1: grade1, 2: grade2, 3: grade3, 4: grade4, 5: grade5,
-  6: grade6, 7: grade7, 8: grade8, 9: grade9,
+// Grade 2 sub-levels
+import grade2_1 from '../../data/word-tetris/grade-2-1.json';
+import grade2_2 from '../../data/word-tetris/grade-2-2.json';
+import grade2_3 from '../../data/word-tetris/grade-2-3.json';
+import grade2_4 from '../../data/word-tetris/grade-2-4.json';
+import grade2_5 from '../../data/word-tetris/grade-2-5.json';
+import grade2_6 from '../../data/word-tetris/grade-2-6.json';
+import grade2_7 from '../../data/word-tetris/grade-2-7.json';
+
+// Grade 3 sub-levels
+import grade3_1 from '../../data/word-tetris/grade-3-1.json';
+import grade3_2 from '../../data/word-tetris/grade-3-2.json';
+import grade3_3 from '../../data/word-tetris/grade-3-3.json';
+import grade3_4 from '../../data/word-tetris/grade-3-4.json';
+import grade3_5 from '../../data/word-tetris/grade-3-5.json';
+import grade3_6 from '../../data/word-tetris/grade-3-6.json';
+import grade3_7 from '../../data/word-tetris/grade-3-7.json';
+
+// Grade 4 sub-levels
+import grade4_1 from '../../data/word-tetris/grade-4-1.json';
+import grade4_2 from '../../data/word-tetris/grade-4-2.json';
+import grade4_3 from '../../data/word-tetris/grade-4-3.json';
+import grade4_4 from '../../data/word-tetris/grade-4-4.json';
+import grade4_5 from '../../data/word-tetris/grade-4-5.json';
+import grade4_6 from '../../data/word-tetris/grade-4-6.json';
+import grade4_7 from '../../data/word-tetris/grade-4-7.json';
+
+// Grade 5 sub-levels
+import grade5_1 from '../../data/word-tetris/grade-5-1.json';
+import grade5_2 from '../../data/word-tetris/grade-5-2.json';
+import grade5_3 from '../../data/word-tetris/grade-5-3.json';
+import grade5_4 from '../../data/word-tetris/grade-5-4.json';
+import grade5_5 from '../../data/word-tetris/grade-5-5.json';
+import grade5_6 from '../../data/word-tetris/grade-5-6.json';
+import grade5_7 from '../../data/word-tetris/grade-5-7.json';
+
+// Grade 6 sub-levels
+import grade6_1 from '../../data/word-tetris/grade-6-1.json';
+import grade6_2 from '../../data/word-tetris/grade-6-2.json';
+import grade6_3 from '../../data/word-tetris/grade-6-3.json';
+import grade6_4 from '../../data/word-tetris/grade-6-4.json';
+import grade6_5 from '../../data/word-tetris/grade-6-5.json';
+import grade6_6 from '../../data/word-tetris/grade-6-6.json';
+import grade6_7 from '../../data/word-tetris/grade-6-7.json';
+
+// Grade 7 sub-levels
+import grade7_1 from '../../data/word-tetris/grade-7-1.json';
+import grade7_2 from '../../data/word-tetris/grade-7-2.json';
+import grade7_3 from '../../data/word-tetris/grade-7-3.json';
+import grade7_4 from '../../data/word-tetris/grade-7-4.json';
+import grade7_5 from '../../data/word-tetris/grade-7-5.json';
+import grade7_6 from '../../data/word-tetris/grade-7-6.json';
+import grade7_7 from '../../data/word-tetris/grade-7-7.json';
+
+// Grade 8 sub-levels
+import grade8_1 from '../../data/word-tetris/grade-8-1.json';
+import grade8_2 from '../../data/word-tetris/grade-8-2.json';
+import grade8_3 from '../../data/word-tetris/grade-8-3.json';
+import grade8_4 from '../../data/word-tetris/grade-8-4.json';
+import grade8_5 from '../../data/word-tetris/grade-8-5.json';
+import grade8_6 from '../../data/word-tetris/grade-8-6.json';
+import grade8_7 from '../../data/word-tetris/grade-8-7.json';
+
+// Grade 9 sub-levels
+import grade9_1 from '../../data/word-tetris/grade-9-1.json';
+import grade9_2 from '../../data/word-tetris/grade-9-2.json';
+import grade9_3 from '../../data/word-tetris/grade-9-3.json';
+import grade9_4 from '../../data/word-tetris/grade-9-4.json';
+import grade9_5 from '../../data/word-tetris/grade-9-5.json';
+import grade9_6 from '../../data/word-tetris/grade-9-6.json';
+import grade9_7 from '../../data/word-tetris/grade-9-7.json';
+
+const allLevels: Record<string, { en: string; cn: string }[]> = {
+  '1-1': grade1_1, '1-2': grade1_2, '1-3': grade1_3, '1-4': grade1_4,
+  '1-5': grade1_5, '1-6': grade1_6, '1-7': grade1_7,
+  '2-1': grade2_1, '2-2': grade2_2, '2-3': grade2_3, '2-4': grade2_4,
+  '2-5': grade2_5, '2-6': grade2_6, '2-7': grade2_7,
+  '3-1': grade3_1, '3-2': grade3_2, '3-3': grade3_3, '3-4': grade3_4,
+  '3-5': grade3_5, '3-6': grade3_6, '3-7': grade3_7,
+  '4-1': grade4_1, '4-2': grade4_2, '4-3': grade4_3, '4-4': grade4_4,
+  '4-5': grade4_5, '4-6': grade4_6, '4-7': grade4_7,
+  '5-1': grade5_1, '5-2': grade5_2, '5-3': grade5_3, '5-4': grade5_4,
+  '5-5': grade5_5, '5-6': grade5_6, '5-7': grade5_7,
+  '6-1': grade6_1, '6-2': grade6_2, '6-3': grade6_3, '6-4': grade6_4,
+  '6-5': grade6_5, '6-6': grade6_6, '6-7': grade6_7,
+  '7-1': grade7_1, '7-2': grade7_2, '7-3': grade7_3, '7-4': grade7_4,
+  '7-5': grade7_5, '7-6': grade7_6, '7-7': grade7_7,
+  '8-1': grade8_1, '8-2': grade8_2, '8-3': grade8_3, '8-4': grade8_4,
+  '8-5': grade8_5, '8-6': grade8_6, '8-7': grade8_7,
+  '9-1': grade9_1, '9-2': grade9_2, '9-3': grade9_3, '9-4': grade9_4,
+  '9-5': grade9_5, '9-6': grade9_6, '9-7': grade9_7,
 };
 ---
 
-<div id="wtGradeData" data-grades={JSON.stringify(allGrades)} style="display:none"></div>
+<div id="wtLevelData" data-levels={JSON.stringify(allLevels)} style="display:none"></div>
 
 <div class="wt-wrapper">
   <div class="wt-scorebar">
     <span class="wt-score-item">得分 <strong id="wtScore">0</strong></span>
     <span class="wt-score-divider">|</span>
-    <span class="wt-score-item" id="wtLevelLabel">一年级</span>
+    <span class="wt-score-item" id="wtLevelLabel">1-1</span>
     <span class="wt-score-divider">|</span>
     <span class="wt-score-item">已消 <strong id="wtCompleted">0</strong> / <strong id="wtTotal">0</strong></span>
   </div>
@@ -31,20 +118,88 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     <button class="wt-btn wt-restart" id="wtRestart">重新开始</button>
     <button class="wt-btn wt-study-btn" id="wtStudy">学习复习</button>
     <span class="wt-level-pick">
-      起始年级
+      起始关卡
       <select id="wtDifficulty" class="wt-difficulty-select">
-        <optgroup label="小学">
-          <option value="1" selected>一年级</option>
-          <option value="2">二年级</option>
-          <option value="3">三年级</option>
-          <option value="4">四年级</option>
-          <option value="5">五年级</option>
-          <option value="6">六年级</option>
+        <optgroup label="一年级">
+          <option value="1-1" selected>1-1</option>
+          <option value="1-2">1-2</option>
+          <option value="1-3">1-3</option>
+          <option value="1-4">1-4</option>
+          <option value="1-5">1-5</option>
+          <option value="1-6">1-6</option>
+          <option value="1-7">1-7</option>
         </optgroup>
-        <optgroup label="初中">
-          <option value="7">初一</option>
-          <option value="8">初二</option>
-          <option value="9">初三</option>
+        <optgroup label="二年级">
+          <option value="2-1">2-1</option>
+          <option value="2-2">2-2</option>
+          <option value="2-3">2-3</option>
+          <option value="2-4">2-4</option>
+          <option value="2-5">2-5</option>
+          <option value="2-6">2-6</option>
+          <option value="2-7">2-7</option>
+        </optgroup>
+        <optgroup label="三年级">
+          <option value="3-1">3-1</option>
+          <option value="3-2">3-2</option>
+          <option value="3-3">3-3</option>
+          <option value="3-4">3-4</option>
+          <option value="3-5">3-5</option>
+          <option value="3-6">3-6</option>
+          <option value="3-7">3-7</option>
+        </optgroup>
+        <optgroup label="四年级">
+          <option value="4-1">4-1</option>
+          <option value="4-2">4-2</option>
+          <option value="4-3">4-3</option>
+          <option value="4-4">4-4</option>
+          <option value="4-5">4-5</option>
+          <option value="4-6">4-6</option>
+          <option value="4-7">4-7</option>
+        </optgroup>
+        <optgroup label="五年级">
+          <option value="5-1">5-1</option>
+          <option value="5-2">5-2</option>
+          <option value="5-3">5-3</option>
+          <option value="5-4">5-4</option>
+          <option value="5-5">5-5</option>
+          <option value="5-6">5-6</option>
+          <option value="5-7">5-7</option>
+        </optgroup>
+        <optgroup label="六年级">
+          <option value="6-1">6-1</option>
+          <option value="6-2">6-2</option>
+          <option value="6-3">6-3</option>
+          <option value="6-4">6-4</option>
+          <option value="6-5">6-5</option>
+          <option value="6-6">6-6</option>
+          <option value="6-7">6-7</option>
+        </optgroup>
+        <optgroup label="初一">
+          <option value="7-1">7-1</option>
+          <option value="7-2">7-2</option>
+          <option value="7-3">7-3</option>
+          <option value="7-4">7-4</option>
+          <option value="7-5">7-5</option>
+          <option value="7-6">7-6</option>
+          <option value="7-7">7-7</option>
+        </optgroup>
+        <optgroup label="初二">
+          <option value="8-1">8-1</option>
+          <option value="8-2">8-2</option>
+          <option value="8-3">8-3</option>
+          <option value="8-4">8-4</option>
+          <option value="8-5">8-5</option>
+          <option value="8-6">8-6</option>
+          <option value="8-7">8-7</option>
+        </optgroup>
+        <optgroup label="初三">
+          <option value="9-1">9-1</option>
+          <option value="9-2">9-2</option>
+          <option value="9-3">9-3</option>
+          <option value="9-4">9-4</option>
+          <option value="9-5">9-5</option>
+          <option value="9-6">9-6</option>
+          <option value="9-7">9-7</option>
         </optgroup>
       </select>
     </span>
@@ -81,10 +236,20 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   const ROWS = 10;
   const SPEED = 700;
 
-  const GRADE_NAMES = ['','一年级','二年级','三年级','四年级','五年级','六年级','初一','初二','初三'];
+  const GRADE_NAMES: Record<string, string> = {
+    '1': '一年级', '2': '二年级', '3': '三年级', '4': '四年级', '5': '五年级', '6': '六年级',
+    '7': '初一', '8': '初二', '9': '初三'
+  };
 
-  const gradeDataEl = document.getElementById('wtGradeData');
-  const ALL_GRADES: Record<number, { en: string; cn: string; phon?: string }[]> = JSON.parse(gradeDataEl!.dataset.grades || '{}');
+  const levelDataEl = document.getElementById('wtLevelData');
+  const ALL_LEVELS: Record<string, { en: string; cn: string; phon?: string }[]> = JSON.parse(levelDataEl!.dataset.levels || '{}');
+
+  const LEVEL_ORDER: string[] = [];
+  for (let g = 1; g <= 9; g++) {
+    for (let s = 1; s <= 7; s++) {
+      LEVEL_ORDER.push(`${g}-${s}`);
+    }
+  }
 
   type Cell = { en: string; cn: string; phon: string; lang: 'en' | 'cn'; fixed?: boolean } | null;
 
@@ -96,8 +261,9 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   let nextLang: 'en' | 'cn' = 'en';
   let lastCol = -1;
   let score = 0;
-  let level = 1;
-  let currentGradeWords: { en: string; cn: string; phon?: string }[] = [];
+  let currentLevelIndex = 0;
+  let currentLevelKey = '1-1';
+  let currentLevelWords: { en: string; cn: string; phon?: string }[] = [];
   let eliminatedKeys: Set<string> = new Set();
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
@@ -107,40 +273,44 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     return l === 'en' ? 'cn' : 'en';
   }
 
-  function loadGrade(grade: number) {
-    currentGradeWords = ALL_GRADES[grade] || [];
+  function loadLevel(levelKey: string) {
+    currentLevelKey = levelKey;
+    currentLevelWords = ALL_LEVELS[levelKey] || [];
   }
 
   function pickWord(): { en: string; cn: string; phon: string } {
-    const pool = currentGradeWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
+    const pool = currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
     const i = Math.floor(Math.random() * pool.length);
     return { en: pool[i].en, cn: pool[i].cn, phon: pool[i].phon || '' };
   }
 
   function checkLevelComplete(): boolean {
-    return currentGradeWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
+    return currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
   }
 
   function updateLevelLabel() {
-    document.getElementById('wtLevelLabel')!.textContent = GRADE_NAMES[level];
+    document.getElementById('wtLevelLabel')!.textContent = currentLevelKey;
   }
 
   function showLevelFlash() {
     const el = document.getElementById('wtLevelFlash')!;
-    document.getElementById('wtLevelFlashText')!.textContent = GRADE_NAMES[level];
+    const grade = currentLevelKey.split('-')[0];
+    const gradeName = GRADE_NAMES[grade] || grade;
+    document.getElementById('wtLevelFlashText')!.textContent = `${gradeName} - ${currentLevelKey}`;
     el.classList.remove('hidden');
     setTimeout(() => el.classList.add('hidden'), 1500);
   }
 
   function advanceLevel() {
-    level++;
-    if (level > 9) {
+    currentLevelIndex++;
+    if (currentLevelIndex >= LEVEL_ORDER.length) {
       document.getElementById('wtOverlayTitle')!.textContent = '全部通关!';
       endGame();
       return;
     }
     if (timer) { clearInterval(timer); timer = null; }
-    loadGrade(level);
+    const nextKey = LEVEL_ORDER[currentLevelIndex];
+    loadLevel(nextKey);
     showLevelFlash();
     updateLevelLabel();
     falling = null;
@@ -258,8 +428,8 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
   }
 
   function updateWordCount() {
-    const total = currentGradeWords.length;
-    const completed = currentGradeWords.filter(w => eliminatedKeys.has(w.en + ':' + w.cn)).length;
+    const total = currentLevelWords.length;
+    const completed = currentLevelWords.filter(w => eliminatedKeys.has(w.en + ':' + w.cn)).length;
     document.getElementById('wtCompleted')!.textContent = String(completed);
     document.getElementById('wtTotal')!.textContent = String(total);
   }
@@ -385,8 +555,10 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
 
   function restart() {
     if (timer) { clearInterval(timer); timer = null; }
-    level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
-    loadGrade(level);
+    const selectedLevel = (document.getElementById('wtDifficulty') as HTMLSelectElement).value;
+    currentLevelIndex = LEVEL_ORDER.indexOf(selectedLevel);
+    if (currentLevelIndex === -1) currentLevelIndex = 0;
+    loadLevel(LEVEL_ORDER[currentLevelIndex]);
     eliminatedKeys = new Set();
     gameOver = false;
     animating = false;
@@ -419,9 +591,11 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     gameOver = true;
     const list = document.getElementById('wtStudyList')!;
     const title = document.getElementById('wtStudyTitle')!;
-    title.textContent = `${GRADE_NAMES[level]} - 学习复习`;
+    const grade = currentLevelKey.split('-')[0];
+    const gradeName = GRADE_NAMES[grade] || grade;
+    title.textContent = `${gradeName} - 关卡 ${currentLevelKey} - 学习复习`;
     let html = '<div class="wt-study-table"><div class="wt-study-row wt-study-header-row"><div class="wt-study-cell wt-study-en">English</div><div class="wt-study-cell wt-study-phon">Phonetic</div><div class="wt-study-cell wt-study-cn">中文</div></div>';
-    currentGradeWords.forEach(w => {
+    currentLevelWords.forEach(w => {
       html += `<div class="wt-study-row"><div class="wt-study-cell wt-study-en">${w.en}</div><div class="wt-study-cell wt-study-phon">${w.phon || ''}</div><div class="wt-study-cell wt-study-cn">${w.cn}</div></div>`;
     });
     html += '</div>';
@@ -440,8 +614,9 @@ const allGrades: Record<number, { en: string; cn: string }[]> = {
     restart();
   });
 
-  level = Number((document.getElementById('wtDifficulty') as HTMLSelectElement).value);
-  loadGrade(level);
+  // Initialize
+  currentLevelIndex = 0;
+  loadLevel('1-1');
   initGrid();
   const w0 = pickWord();
   nextEn = w0.en;
