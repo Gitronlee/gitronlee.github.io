@@ -13,7 +13,6 @@ const navItems = [
 <header class="header">
   <div class="container header-inner">
     <a href="/" class="logo">
-      <span class="logo-icon">🧰</span>
       <span class="logo-text">Tooli</span>
     </a>
     
@@ -58,7 +57,10 @@ const navItems = [
       </button>
       
       <button class="search-trigger" id="searchTrigger" type="button">
-        <span class="search-trigger-icon">🔍</span>
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
         <span class="search-trigger-text">搜索...</span>
         <span class="search-trigger-kbd"><kbd>Ctrl</kbd><kbd>K</kbd></span>
       </button>
@@ -153,14 +155,9 @@ const navItems = [
   .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
     font-size: 1.25rem;
     font-weight: 700;
     color: var(--text-primary);
-  }
-  
-  .logo-icon {
-    font-size: 1.5rem;
   }
   
   .nav-desktop {
@@ -266,8 +263,10 @@ const navItems = [
   [data-theme="light"] .theme-icon-light { display: none; }
   [data-theme="light"] .theme-icon-dark  { display: block; }
 
-  .search-trigger-icon {
-    font-size: 1rem;
+  .search-icon {
+    width: 1rem;
+    height: 1rem;
+    flex-shrink: 0;
   }
 
   .search-trigger-text {

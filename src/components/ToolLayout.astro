@@ -2,15 +2,13 @@
 interface Props {
   title: string;
   description: string;
-  icon?: string;
 }
 
-const { title, description, icon = '🔧' } = Astro.props;
+const { title, description } = Astro.props;
 ---
 
 <div class="tool-page">
   <div class="tool-header">
-    <span class="tool-icon">{icon}</span>
     <div>
       <h1>{title}</h1>
       <p>{description}</p>
@@ -30,21 +28,14 @@ const { title, description, icon = '🔧' } = Astro.props;
   }
   
   .tool-header {
-    display: flex;
-    align-items: flex-start;
-    gap: 1rem;
     margin-bottom: 2rem;
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--border-color);
   }
   
-  .tool-icon {
-    font-size: 2.5rem;
-  }
-  
   .tool-header h1 {
     font-size: 1.75rem;
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 0.25rem;
   }
   

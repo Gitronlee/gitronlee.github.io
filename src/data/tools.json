@@ -3,77 +3,66 @@
     "slug": "regex",
     "name": "正则表达式测试器",
     "description": "测试和调试正则表达式，支持实时匹配高亮",
-    "category": "开发者工具",
-    "icon": "🔍"
+    "category": "开发者工具"
   },
   {
     "slug": "time",
     "name": "时间戳转换",
     "description": "Unix时间戳与日期格式互转，支持多时区",
-    "category": "开发者工具",
-    "icon": "⏰"
+    "category": "开发者工具"
   },
   {
     "slug": "base64",
     "name": "Base64 编解码",
     "description": "字符串与 Base64 格式互相转换",
-    "category": "编码转换",
-    "icon": "🔐"
+    "category": "编码转换"
   },
   {
     "slug": "json",
     "name": "JSON 格式化",
     "description": "JSON 字符串格式化、压缩和校验",
-    "category": "开发者工具",
-    "icon": "📋"
+    "category": "开发者工具"
   },
   {
     "slug": "url",
     "name": "URL 编解码",
     "description": "URL 编码和解码，支持 Query 参数解析",
-    "category": "编码转换",
-    "icon": "🔗"
+    "category": "编码转换"
   },
   {
     "slug": "hash",
     "name": "哈希计算",
     "description": "计算 MD5、SHA-1、SHA-256 等哈希值",
-    "category": "安全工具",
-    "icon": "🔑"
+    "category": "安全工具"
   },
   {
     "slug": "color",
     "name": "颜色转换器",
     "description": "HEX、RGB、HSL 颜色格式互转",
-    "category": "设计工具",
-    "icon": "🎨"
+    "category": "设计工具"
   },
   {
     "slug": "pomodoro",
     "name": "番茄时钟",
     "description": "番茄工作法计时器，支持自定义工作时长与休息间隔",
-    "category": "效率工具",
-    "icon": "🍅"
+    "category": "效率工具"
   },
   {
     "slug": "salary",
     "name": "税后工资计算器",
     "description": "计算五险一金及个税扣除后的到手工资，支持多城市社保基数",
-    "category": "效率工具",
-    "icon": "💰"
+    "category": "效率工具"
   },
   {
     "slug": "image-slicer",
     "name": "图片网格切片",
     "description": "按行列网格切割图片，支持预览网格线、单张下载和一键打包ZIP",
-    "category": "设计工具",
-    "icon": "✂️"
+    "category": "设计工具"
   },
   {
     "slug": "life-timer",
     "name": "人生CD计时",
     "description": "春节倒计时+每日午饭/下班/夜宵时刻倒计时，精确到秒实时更新",
-    "category": "效率工具",
-    "icon": "⏳"
+    "category": "效率工具"
   }
 ]

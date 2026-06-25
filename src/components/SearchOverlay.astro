@@ -13,7 +13,6 @@ const searchData = {
       title: t.name,
       desc: t.description,
       category: t.category,
-      icon: t.icon,
       href: `/tools/${t.slug}`,
       searchable: `${t.name} ${t.description} ${t.category}`,
     })),
@@ -23,7 +22,6 @@ const searchData = {
       title: g.name,
       desc: g.description,
       category: g.category,
-      icon: g.icon,
       href: `/games/${g.slug}`,
       searchable: `${g.name} ${g.description} ${g.category}`,
     })),
@@ -33,7 +31,6 @@ const searchData = {
       title: d.data.title,
       desc: d.data.description,
       category: d.data.category,
-      icon: '📄',
       href: `/docs/${d.slug}`,
       searchable: `${d.data.title} ${d.data.description} ${d.data.category}`,
     })),
@@ -44,7 +41,10 @@ const searchData = {
 <div class="search-overlay hidden" id="searchOverlay">
   <div class="search-modal">
     <div class="search-header">
-      <span class="search-icon">🔍</span>
+      <svg class="search-icon-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
       <input type="text" id="searchInput" class="search-input" placeholder="搜索工具、游戏、文档..." autocomplete="off" />
       <kbd class="kbd">ESC</kbd>
     </div>
@@ -145,7 +145,6 @@ const searchData = {
       html += '<span class="search-group-label">' + group + '</span>';
       for (const item of items) {
         html += '<div class="search-item" data-idx="' + idx + '" data-href="' + item.href + '">';
-        html += '<span class="search-item-icon">' + item.icon + '</span>';
         html += '<div class="search-item-info">';
         html += '<span class="search-item-title">' + highlightMatch(query, item.title) + '</span>';
         html += '<span class="search-item-desc">' + highlightMatch(query, item.desc) + '</span>';
@@ -236,9 +235,11 @@ const searchData = {
     gap: 0.75rem;
   }
 
-  .search-icon {
-    font-size: 1.25rem;
+  .search-icon-svg {
+    width: 1.25rem;
+    height: 1.25rem;
     color: var(--text-muted);
+    flex-shrink: 0;
   }
 
   .search-input {
@@ -289,11 +290,6 @@ const searchData = {
   .search-item.active,
   .search-item:hover {
     background: var(--bg-tertiary);
-  }
-
-  .search-item-icon {
-    font-size: 1.25rem;
-    flex-shrink: 0;
   }
 
   .search-item-info {
