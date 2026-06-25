@@ -284,6 +284,66 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     return { en: pool[i].en, cn: pool[i].cn, phon: pool[i].phon || '' };
   }
 
+  function pickWordForGrid(): { en: string; cn: string; phon: string; lang: 'en' | 'cn' } {
+    // Scan grid for all fixed cells, grouped by word pair with counts
+    const pairStatus = new Map<string, { en: string; cn: string; enCount: number; cnCount: number }>();
+
+    for (let r = 0; r < ROWS; r++) {
+      for (let c = 0; c < COLS; c++) {
+        const cell = grid[r][c];
+        if (cell && cell.fixed) {
+          const key = cell.en + ':' + cell.cn;
+          if (!pairStatus.has(key)) {
+            pairStatus.set(key, { en: cell.en, cn: cell.cn, enCount: 0, cnCount: 0 });
+          }
+          const status = pairStatus.get(key)!;
+          if (cell.lang === 'en') {
+            status.enCount++;
+          } else {
+            status.cnCount++;
+          }
+        }
+      }
+    }
+
+    // Build candidates based on count imbalance per pair
+    const candidates: { en: string; cn: string; lang: 'en' | 'cn' }[] = [];
+
+    for (const [key, status] of pairStatus) {
+      if (eliminatedKeys.has(key)) continue;
+
+      if (status.enCount > status.cnCount) {
+        // More en on grid, need cn to balance
+        candidates.push({ en: status.en, cn: status.cn, lang: 'cn' });
+      } else if (status.cnCount > status.enCount) {
+        // More cn on grid, need en to balance
+        candidates.push({ en: status.en, cn: status.cn, lang: 'en' });
+      } else {
+        // Balanced (both sides present equally) — either direction is valid
+        candidates.push({ en: status.en, cn: status.cn, lang: 'cn' });
+        candidates.push({ en: status.en, cn: status.cn, lang: 'en' });
+      }
+    }
+
+    if (candidates.length > 0) {
+      const picked = candidates[Math.floor(Math.random() * candidates.length)];
+      const word = currentLevelWords.find(w => w.en === picked.en && w.cn === picked.cn);
+      return { ...picked, phon: word?.phon || '' };
+    }
+
+    // Fall back to random, preferring words not already on grid
+    const onGridKeys = new Set(pairStatus.keys());
+    const pool = currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
+    const preferred = pool.filter(w => !onGridKeys.has(w.en + ':' + w.cn));
+    const pickPool = preferred.length > 0 ? preferred : pool;
+    if (pickPool.length === 0) return { en: '', cn: '', phon: '', lang: 'en' };
+    const i = Math.floor(Math.random() * pickPool.length);
+    return {
+      en: pickPool[i].en, cn: pickPool[i].cn, phon: pickPool[i].phon || '',
+      lang: Math.random() < 0.5 ? 'en' : 'cn',
+    };
+  }
+
   function checkLevelComplete(): boolean {
     return currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn)).length === 0;
   }
@@ -319,11 +379,11 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     updateScore();
     updateWordCount();
     render();
-    const w = pickWord();
+    const w = pickWordForGrid();
     nextEn = w.en;
     nextCn = w.cn;
     nextPhon = w.phon;
-    nextLang = Math.random() < 0.5 ? 'en' : 'cn';
+    nextLang = w.lang;
     setTimeout(() => {
       if (gameOver) return;
       spawnFalling();
@@ -366,12 +426,12 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     const phon = nextPhon;
     const lang = nextLang;
 
-    const nextWordLang = flipLang(lang);
-    const p = pickWord();
-    nextEn = p.en;
-    nextCn = p.cn;
-    nextPhon = p.phon;
-    nextLang = nextWordLang;
+    // Pick next word based on grid state (prefer unpaired counterparts)
+    const next = pickWordForGrid();
+    nextEn = next.en;
+    nextCn = next.cn;
+    nextPhon = next.phon;
+    nextLang = next.lang;
 
     const col = pickBestColumn();
     if (grid[0][col] !== null) {
@@ -566,11 +626,11 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     falling = null;
     lastCol = -1;
     initGrid();
-    const w = pickWord();
+    const w = pickWordForGrid();
     nextEn = w.en;
     nextCn = w.cn;
     nextPhon = w.phon;
-    nextLang = Math.random() < 0.5 ? 'en' : 'cn';
+    nextLang = w.lang;
     updateScore();
     updateWordCount();
     updateLevelLabel();
