@@ -22,6 +22,17 @@
       <label>专项附加扣除 (元/月)</label>
       <input type="number" id="deductions" placeholder="租房、赡养老人等" value="3000" />
     </div>
+    <div class="input-group">
+      <label>年终奖 (元)</label>
+      <input type="number" id="annualBonus" placeholder="年终奖金额" value="0" />
+    </div>
+    <div class="input-group">
+      <label>年终奖计税方式</label>
+      <select id="bonusTaxMethod">
+        <option value="separate" selected>单独计税</option>
+        <option value="combine">并入综合所得</option>
+      </select>
+    </div>
   </div>
 
   <div class="base-section">
@@ -54,12 +65,58 @@
         <span class="val" id="hfAmount">--</span>
       </div>
       <div class="breakdown-item">
+        <span>公积金账户增量 (双边)</span>
+        <span class="val" id="hfTotal">--</span>
+      </div>
+      <div class="breakdown-item">
         <span>应纳税所得额</span>
         <span class="val" id="taxableIncome">--</span>
       </div>
       <div class="breakdown-item">
         <span>个人所得税</span>
         <span class="val" id="taxAmount">--</span>
+      </div>
+      <div class="breakdown-item">
+        <span>年终奖个税</span>
+        <span class="val" id="bonusTax">--</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="annual-summary" id="annualSummary">
+    <div class="summary-title">年度统计</div>
+    <div class="summary-grid">
+      <div class="summary-item">
+        <span class="summary-label">年薪总额 (税前)</span>
+        <span class="summary-value" id="annualGross">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年薪到手 (税后)</span>
+        <span class="summary-value accent" id="annualNet">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年终奖 (税前)</span>
+        <span class="summary-value" id="annualBonusDisplay">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年终奖到手 (税后)</span>
+        <span class="summary-value" id="annualBonusNet">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年总收入 (税后)</span>
+        <span class="summary-value highlight" id="totalAnnualNet">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年公积金账户增量</span>
+        <span class="summary-value" id="annualHfTotal">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年社保个人缴纳</span>
+        <span class="summary-value" id="annualSi">--</span>
+      </div>
+      <div class="summary-item">
+        <span class="summary-label">年个税总额</span>
+        <span class="summary-value" id="annualTaxTotal">--</span>
       </div>
     </div>
   </div>
@@ -97,6 +154,8 @@
   const grossInput = document.getElementById('grossSalary') as HTMLInputElement;
   const fundSelect = document.getElementById('fundRate') as HTMLSelectElement;
   const dedInput = document.getElementById('deductions') as HTMLInputElement;
+  const bonusInput = document.getElementById('annualBonus') as HTMLInputElement;
+  const bonusMethodSelect = document.getElementById('bonusTaxMethod') as HTMLSelectElement;
   const baseFullBtn = document.getElementById('baseFull')!;
   const baseCustomBtn = document.getElementById('baseCustom')!;
   const baseCustomRow = document.getElementById('baseCustomRow')!;
@@ -119,8 +178,20 @@
   const netPayEl = document.getElementById('netPay')!;
   const siAmtEl = document.getElementById('siAmount')!;
   const hfAmtEl = document.getElementById('hfAmount')!;
+  const hfTotalEl = document.getElementById('hfTotal')!;
   const taxableEl = document.getElementById('taxableIncome')!;
   const taxEl = document.getElementById('taxAmount')!;
+  const bonusTaxEl = document.getElementById('bonusTax')!;
+
+  // Annual summary elements
+  const annualGrossEl = document.getElementById('annualGross')!;
+  const annualNetEl = document.getElementById('annualNet')!;
+  const annualBonusDisplayEl = document.getElementById('annualBonusDisplay')!;
+  const annualBonusNetEl = document.getElementById('annualBonusNet')!;
+  const totalAnnualNetEl = document.getElementById('totalAnnualNet')!;
+  const annualHfTotalEl = document.getElementById('annualHfTotal')!;
+  const annualSiEl = document.getElementById('annualSi')!;
+  const annualTaxTotalEl = document.getElementById('annualTaxTotal')!;
 
   // Tax brackets: [upper_bound, rate, quick_deduction]
   const brackets: [number, number, number][] = [
@@ -143,11 +214,25 @@
     return 0;
   }
 
+  // Annual bonus tax calculation (separate method: divide by 12, find bracket)
+  function calcBonusTaxSeparate(bonus: number): number {
+    if (bonus <= 0) return 0;
+    const monthly = bonus / 12;
+    for (const [upper, rate, quick] of brackets) {
+      if (monthly <= upper) {
+        return bonus * rate - quick;
+      }
+    }
+    return 0;
+  }
+
   function recalc() {
     const gross = parseFloat(grossInput.value) || 0;
     const city = cities[parseInt(citySelect.value) || 0];
     const fundPct = parseFloat(fundSelect.value) / 100;
     const ded = parseFloat(dedInput.value) || 0;
+    const bonus = parseFloat(bonusInput.value) || 0;
+    const bonusMethod = bonusMethodSelect.value;
 
     let siBase: number;
     let hfBase: number;
@@ -166,18 +251,53 @@
 
     const siAmount = Math.round(siBase * 0.105);  // 10.5%
     const hfAmount = Math.round(hfBase * fundPct);
+    const hfTotal = hfAmount * 2; // 个人 + 公司
 
-    const monthlyTaxable = gross - siAmount - hfAmount - 5000 - ded;
-    const annualTax = calcAnnualTax(monthlyTaxable * 12);
+    let monthlyTaxable: number;
+    let annualTax: number;
+    let bonusTax = 0;
+
+    if (bonusMethod === 'combine') {
+      // 年终奖并入综合所得
+      monthlyTaxable = gross - siAmount - hfAmount - 5000 - ded;
+      const annualComprehensive = monthlyTaxable * 12 + bonus;
+      annualTax = calcAnnualTax(annualComprehensive);
+    } else {
+      // 年终奖单独计税
+      monthlyTaxable = gross - siAmount - hfAmount - 5000 - ded;
+      annualTax = calcAnnualTax(monthlyTaxable * 12);
+      bonusTax = calcBonusTaxSeparate(bonus);
+    }
+
     const monthlyTax = Math.round(annualTax / 12);
-
     const net = gross - siAmount - hfAmount - monthlyTax;
 
+    // Monthly display
     netPayEl.textContent = net.toLocaleString() + ' 元';
     siAmtEl.textContent = siAmount.toLocaleString() + ' 元';
     hfAmtEl.textContent = hfAmount.toLocaleString() + ' 元';
+    hfTotalEl.textContent = hfTotal.toLocaleString() + ' 元';
     taxableEl.textContent = (monthlyTaxable > 0 ? monthlyTaxable.toLocaleString() : '0') + ' 元';
     taxEl.textContent = monthlyTax.toLocaleString() + ' 元';
+    bonusTaxEl.textContent = bonusTax.toLocaleString() + ' 元';
+
+    // Annual summary
+    const annualGrossSalary = gross * 12;
+    const annualNetSalary = net * 12;
+    const annualSi = siAmount * 12;
+    const annualHfTotal = hfTotal * 12;
+    const bonusNet = bonus - bonusTax;
+    const totalNet = annualNetSalary + bonusNet;
+    const totalTax = annualTax + bonusTax;
+
+    annualGrossEl.textContent = annualGrossSalary.toLocaleString() + ' 元';
+    annualNetEl.textContent = annualNetSalary.toLocaleString() + ' 元';
+    annualBonusDisplayEl.textContent = bonus.toLocaleString() + ' 元';
+    annualBonusNetEl.textContent = bonusNet.toLocaleString() + ' 元';
+    totalAnnualNetEl.textContent = totalNet.toLocaleString() + ' 元';
+    annualHfTotalEl.textContent = annualHfTotal.toLocaleString() + ' 元';
+    annualSiEl.textContent = annualSi.toLocaleString() + ' 元';
+    annualTaxTotalEl.textContent = totalTax.toLocaleString() + ' 元';
   }
 
   grossInput.addEventListener('input', recalc);
@@ -185,6 +305,8 @@
   fundSelect.addEventListener('change', recalc);
   dedInput.addEventListener('input', recalc);
   customBaseInput.addEventListener('input', recalc);
+  bonusInput.addEventListener('input', recalc);
+  bonusMethodSelect.addEventListener('change', recalc);
 
   recalc();
 </script>
@@ -364,5 +486,55 @@
   .base-hint {
     font-size: 0.75rem;
     color: var(--text-muted);
+  }
+
+  .annual-summary {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+
+  .summary-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 0.75rem;
+  }
+
+  .summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-size: 0.875rem;
+  }
+
+  .summary-label {
+    color: var(--text-secondary);
+  }
+
+  .summary-value {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .summary-value.accent {
+    color: var(--accent-green);
+  }
+
+  .summary-value.highlight {
+    color: var(--accent-cyan);
+    font-weight: 700;
+    font-size: 1rem;
   }
 </style>
