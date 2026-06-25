@@ -83,6 +83,71 @@
     </div>
   </div>
 
+  <div class="insurance-detail" id="insuranceDetail">
+    <div class="detail-title">五险一金明细</div>
+    <div class="detail-table">
+      <div class="detail-header">
+        <span class="detail-col-name">项目</span>
+        <span class="detail-col">个人比例</span>
+        <span class="detail-col">个人缴纳</span>
+        <span class="detail-col">单位比例</span>
+        <span class="detail-col">单位缴纳</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-col-name">养老保险</span>
+        <span class="detail-col">8%</span>
+        <span class="detail-col" id="pensionPersonal">--</span>
+        <span class="detail-col">16%</span>
+        <span class="detail-col" id="pensionCompany">--</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-col-name">医疗保险</span>
+        <span class="detail-col">2%</span>
+        <span class="detail-col" id="medicalPersonal">--</span>
+        <span class="detail-col">9.8%</span>
+        <span class="detail-col" id="medicalCompany">--</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-col-name">失业保险</span>
+        <span class="detail-col">0.5%</span>
+        <span class="detail-col" id="unemployPersonal">--</span>
+        <span class="detail-col">0.5%</span>
+        <span class="detail-col" id="unemployCompany">--</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-col-name">工伤保险</span>
+        <span class="detail-col">0%</span>
+        <span class="detail-col">0 元</span>
+        <span class="detail-col">0.4%</span>
+        <span class="detail-col" id="injuryCompany">--</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-col-name">生育保险</span>
+        <span class="detail-col">0%</span>
+        <span class="detail-col">0 元</span>
+        <span class="detail-col">0.8%</span>
+        <span class="detail-col" id="maternityCompany">--</span>
+      </div>
+      <div class="detail-row highlight-row">
+        <span class="detail-col-name">住房公积金</span>
+        <span class="detail-col" id="fundRateDisplay">7%</span>
+        <span class="detail-col" id="fundPersonal">--</span>
+        <span class="detail-col" id="fundRateCompanyDisplay">7%</span>
+        <span class="detail-col" id="fundCompany">--</span>
+      </div>
+      <div class="detail-total">
+        <span class="detail-col-name">合计</span>
+        <span class="detail-col" id="totalPersonalRate">--</span>
+        <span class="detail-col" id="totalPersonal">--</span>
+        <span class="detail-col" id="totalCompanyRate">--</span>
+        <span class="detail-col" id="totalCompany">--</span>
+      </div>
+    </div>
+    <div class="detail-note">
+      * 工伤保险费率按行业风险等级浮动，此处按0.4%估算
+    </div>
+  </div>
+
   <div class="annual-summary" id="annualSummary">
     <div class="summary-title">年度统计</div>
     <div class="summary-grid">
@@ -148,7 +213,7 @@
 
   const citySelect = document.getElementById('citySelect') as HTMLSelectElement;
   citySelect.innerHTML = cities.map((c, i) =>
-    `<option value="${i}" ${i === 0 ? 'selected' : ''}>${c.label}</option>`
+    `<option value="${i}" ${i === 4 ? 'selected' : ''}>${c.label}</option>`
   ).join('');
 
   const grossInput = document.getElementById('grossSalary') as HTMLInputElement;
@@ -192,6 +257,24 @@
   const annualHfTotalEl = document.getElementById('annualHfTotal')!;
   const annualSiEl = document.getElementById('annualSi')!;
   const annualTaxTotalEl = document.getElementById('annualTaxTotal')!;
+
+  // Insurance detail table elements
+  const pensionPersonalEl = document.getElementById('pensionPersonal')!;
+  const pensionCompanyEl = document.getElementById('pensionCompany')!;
+  const medicalPersonalEl = document.getElementById('medicalPersonal')!;
+  const medicalCompanyEl = document.getElementById('medicalCompany')!;
+  const unemployPersonalEl = document.getElementById('unemployPersonal')!;
+  const unemployCompanyEl = document.getElementById('unemployCompany')!;
+  const injuryCompanyEl = document.getElementById('injuryCompany')!;
+  const maternityCompanyEl = document.getElementById('maternityCompany')!;
+  const fundRateDisplayEl = document.getElementById('fundRateDisplay')!;
+  const fundPersonalEl = document.getElementById('fundPersonal')!;
+  const fundRateCompanyDisplayEl = document.getElementById('fundRateCompanyDisplay')!;
+  const fundCompanyEl = document.getElementById('fundCompany')!;
+  const totalPersonalRateEl = document.getElementById('totalPersonalRate')!;
+  const totalPersonalEl = document.getElementById('totalPersonal')!;
+  const totalCompanyRateEl = document.getElementById('totalCompanyRate')!;
+  const totalCompanyEl = document.getElementById('totalCompany')!;
 
   // Tax brackets: [upper_bound, rate, quick_deduction]
   const brackets: [number, number, number][] = [
@@ -298,6 +381,41 @@
     annualHfTotalEl.textContent = annualHfTotal.toLocaleString() + ' 元';
     annualSiEl.textContent = annualSi.toLocaleString() + ' 元';
     annualTaxTotalEl.textContent = totalTax.toLocaleString() + ' 元';
+
+    // Insurance detail table
+    const pensionPersonal = Math.round(siBase * 0.08);
+    const pensionCompany = Math.round(siBase * 0.16);
+    const medicalPersonal = Math.round(siBase * 0.02);
+    const medicalCompany = Math.round(siBase * 0.098);
+    const unemployPersonal = Math.round(siBase * 0.005);
+    const unemployCompany = Math.round(siBase * 0.005);
+    const injuryCompany = Math.round(siBase * 0.004);
+    const maternityCompany = Math.round(siBase * 0.008);
+    const fundPersonal = hfAmount;
+    const fundCompany = hfAmount;
+
+    pensionPersonalEl.textContent = pensionPersonal.toLocaleString() + ' 元';
+    pensionCompanyEl.textContent = pensionCompany.toLocaleString() + ' 元';
+    medicalPersonalEl.textContent = medicalPersonal.toLocaleString() + ' 元';
+    medicalCompanyEl.textContent = medicalCompany.toLocaleString() + ' 元';
+    unemployPersonalEl.textContent = unemployPersonal.toLocaleString() + ' 元';
+    unemployCompanyEl.textContent = unemployCompany.toLocaleString() + ' 元';
+    injuryCompanyEl.textContent = injuryCompany.toLocaleString() + ' 元';
+    maternityCompanyEl.textContent = maternityCompany.toLocaleString() + ' 元';
+    fundRateDisplayEl.textContent = (fundPct * 100) + '%';
+    fundPersonalEl.textContent = fundPersonal.toLocaleString() + ' 元';
+    fundRateCompanyDisplayEl.textContent = (fundPct * 100) + '%';
+    fundCompanyEl.textContent = fundCompany.toLocaleString() + ' 元';
+
+    const totalPersonalRate = 0.08 + 0.02 + 0.005 + fundPct;
+    const totalCompanyRate = 0.16 + 0.098 + 0.005 + 0.004 + 0.008 + fundPct;
+    const totalPersonal = pensionPersonal + medicalPersonal + unemployPersonal + fundPersonal;
+    const totalCompany = pensionCompany + medicalCompany + unemployCompany + injuryCompany + maternityCompany + fundCompany;
+
+    totalPersonalRateEl.textContent = (totalPersonalRate * 100).toFixed(1) + '%';
+    totalPersonalEl.textContent = totalPersonal.toLocaleString() + ' 元';
+    totalCompanyRateEl.textContent = (totalCompanyRate * 100).toFixed(1) + '%';
+    totalCompanyEl.textContent = totalCompany.toLocaleString() + ' 元';
   }
 
   grossInput.addEventListener('input', recalc);
@@ -536,5 +654,79 @@
     color: var(--accent-cyan);
     font-weight: 700;
     font-size: 1rem;
+  }
+
+  .insurance-detail {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+
+  .detail-title {
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .detail-table {
+    width: 100%;
+    font-size: 0.875rem;
+  }
+
+  .detail-header {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    padding: 0.75rem 0;
+    border-bottom: 2px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .detail-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    padding: 0.625rem 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+  }
+
+  .detail-row:last-child {
+    border-bottom: none;
+  }
+
+  .detail-row.highlight-row {
+    background: var(--bg-secondary, rgba(255,255,255,0.03));
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+
+  .detail-col {
+    text-align: right;
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .detail-col-name {
+    text-align: left;
+    font-family: inherit;
+  }
+
+  .detail-total {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    padding: 0.75rem 0;
+    border-top: 2px solid var(--border-color);
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .detail-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+    line-height: 1.6;
   }
 </style>
