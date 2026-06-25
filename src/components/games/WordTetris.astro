@@ -428,10 +428,19 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
   }
 
   function spawnFalling() {
-    const en = nextEn;
-    const cn = nextCn;
-    const phon = nextPhon;
-    const lang = nextLang;
+    let en = nextEn;
+    let cn = nextCn;
+    let phon = nextPhon;
+    let lang = nextLang;
+
+    // If the queued word was already eliminated, pick a new one
+    if (eliminatedKeys.has(en + ':' + cn)) {
+      const fresh = pickWordForGrid();
+      en = fresh.en;
+      cn = fresh.cn;
+      phon = fresh.phon;
+      lang = fresh.lang;
+    }
 
     // Record current word as recently dropped
     const key = en + ':' + cn;
