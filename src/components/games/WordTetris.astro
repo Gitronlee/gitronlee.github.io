@@ -327,6 +327,22 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
       }
     }
 
+    // Mix in random words from pool to break predictable patterns
+    const onGridKeys = new Set(pairStatus.keys());
+    const randomPool = currentLevelWords.filter(w => {
+      const k = w.en + ':' + w.cn;
+      return !eliminatedKeys.has(k) && !recentlyDropped.includes(k);
+    });
+    // Add up to 2 random words to candidates for variety
+    const shuffledRandom = randomPool.sort(() => Math.random() - 0.5);
+    for (let ri = 0; ri < Math.min(2, shuffledRandom.length); ri++) {
+      const rw = shuffledRandom[ri];
+      const rk = rw.en + ':' + rw.cn;
+      if (!candidates.some(c => c.en + ':' + c.cn === rk)) {
+        candidates.push({ en: rw.en, cn: rw.cn, lang: Math.random() < 0.5 ? 'en' : 'cn' });
+      }
+    }
+
     if (candidates.length > 0) {
       // Prefer candidates not recently dropped
       const fresh = candidates.filter(c => !recentlyDropped.includes(c.en + ':' + c.cn));
@@ -339,7 +355,6 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     }
 
     // Fall back to random, excluding eliminated and recently dropped words
-    const onGridKeys = new Set(pairStatus.keys());
     const pool = currentLevelWords.filter(w => {
       const k = w.en + ':' + w.cn;
       return !eliminatedKeys.has(k) && !recentlyDropped.includes(k);
