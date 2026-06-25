@@ -268,6 +268,8 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
   let timer: ReturnType<typeof setInterval> | null = null;
   let gameOver = false;
   let animating = false;
+  const recentlyDropped: string[] = []; // Track last N word pair keys to avoid consecutive repeats
+  const MAX_RECENT = 3;
 
   function flipLang(l: 'en' | 'cn'): 'en' | 'cn' {
     return l === 'en' ? 'cn' : 'en';
@@ -326,20 +328,24 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     }
 
     if (candidates.length > 0) {
-      const picked = candidates[Math.floor(Math.random() * candidates.length)];
+      // Prefer candidates not recently dropped
+      const fresh = candidates.filter(c => !recentlyDropped.includes(c.en + ':' + c.cn));
+      const pickFrom = fresh.length > 0 ? fresh : candidates;
+      const picked = pickFrom[Math.floor(Math.random() * pickFrom.length)];
       const word = currentLevelWords.find(w => w.en === picked.en && w.cn === picked.cn);
       return { ...picked, phon: word?.phon || '' };
     }
 
-    // Fall back to random, preferring words not already on grid
+    // Fall back to random, preferring words not already on grid and not recently dropped
     const onGridKeys = new Set(pairStatus.keys());
     const pool = currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
-    const preferred = pool.filter(w => !onGridKeys.has(w.en + ':' + w.cn));
-    const pickPool = preferred.length > 0 ? preferred : pool;
-    if (pickPool.length === 0) return { en: '', cn: '', phon: '', lang: 'en' };
-    const i = Math.floor(Math.random() * pickPool.length);
+    const preferred = pool.filter(w => !onGridKeys.has(w.en + ':' + w.cn) && !recentlyDropped.includes(w.en + ':' + w.cn));
+    const pickPool = preferred.length > 0 ? preferred : pool.filter(w => !recentlyDropped.includes(w.en + ':' + w.cn));
+    const finalPool = pickPool.length > 0 ? pickPool : pool;
+    if (finalPool.length === 0) return { en: '', cn: '', phon: '', lang: 'en' };
+    const i = Math.floor(Math.random() * finalPool.length);
     return {
-      en: pickPool[i].en, cn: pickPool[i].cn, phon: pickPool[i].phon || '',
+      en: finalPool[i].en, cn: finalPool[i].cn, phon: finalPool[i].phon || '',
       lang: Math.random() < 0.5 ? 'en' : 'cn',
     };
   }
@@ -375,6 +381,7 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     updateLevelLabel();
     falling = null;
     lastCol = -1;
+    recentlyDropped.length = 0; // Clear recent history on level advance
     initGrid();
     updateScore();
     updateWordCount();
@@ -425,6 +432,13 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     const cn = nextCn;
     const phon = nextPhon;
     const lang = nextLang;
+
+    // Record current word as recently dropped
+    const key = en + ':' + cn;
+    recentlyDropped.push(key);
+    if (recentlyDropped.length > MAX_RECENT) {
+      recentlyDropped.shift();
+    }
 
     // Pick next word based on grid state (prefer unpaired counterparts)
     const next = pickWordForGrid();
@@ -625,6 +639,7 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     score = 0;
     falling = null;
     lastCol = -1;
+    recentlyDropped.length = 0; // Clear recent history on restart
     initGrid();
     const w = pickWordForGrid();
     nextEn = w.en;
