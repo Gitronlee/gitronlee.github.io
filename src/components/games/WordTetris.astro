@@ -330,22 +330,36 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
     if (candidates.length > 0) {
       // Prefer candidates not recently dropped
       const fresh = candidates.filter(c => !recentlyDropped.includes(c.en + ':' + c.cn));
-      const pickFrom = fresh.length > 0 ? fresh : candidates;
-      const picked = pickFrom[Math.floor(Math.random() * pickFrom.length)];
-      const word = currentLevelWords.find(w => w.en === picked.en && w.cn === picked.cn);
-      return { ...picked, phon: word?.phon || '' };
+      if (fresh.length > 0) {
+        const picked = fresh[Math.floor(Math.random() * fresh.length)];
+        const word = currentLevelWords.find(w => w.en === picked.en && w.cn === picked.cn);
+        return { ...picked, phon: word?.phon || '' };
+      }
+      // All candidates recently dropped — fall through to random pool
     }
 
-    // Fall back to random, preferring words not already on grid and not recently dropped
+    // Fall back to random, excluding eliminated and recently dropped words
     const onGridKeys = new Set(pairStatus.keys());
-    const pool = currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
-    const preferred = pool.filter(w => !onGridKeys.has(w.en + ':' + w.cn) && !recentlyDropped.includes(w.en + ':' + w.cn));
-    const pickPool = preferred.length > 0 ? preferred : pool.filter(w => !recentlyDropped.includes(w.en + ':' + w.cn));
-    const finalPool = pickPool.length > 0 ? pickPool : pool;
-    if (finalPool.length === 0) return { en: '', cn: '', phon: '', lang: 'en' };
-    const i = Math.floor(Math.random() * finalPool.length);
+    const pool = currentLevelWords.filter(w => {
+      const k = w.en + ':' + w.cn;
+      return !eliminatedKeys.has(k) && !recentlyDropped.includes(k);
+    });
+    // Prefer words not already on grid
+    const preferred = pool.filter(w => !onGridKeys.has(w.en + ':' + w.cn));
+    const pickPool = preferred.length > 0 ? preferred : pool;
+    if (pickPool.length === 0) {
+      // All words exhausted or recently dropped — allow recently dropped but never eliminated
+      const emergency = currentLevelWords.filter(w => !eliminatedKeys.has(w.en + ':' + w.cn));
+      if (emergency.length === 0) return { en: '', cn: '', phon: '', lang: 'en' };
+      const i = Math.floor(Math.random() * emergency.length);
+      return {
+        en: emergency[i].en, cn: emergency[i].cn, phon: emergency[i].phon || '',
+        lang: Math.random() < 0.5 ? 'en' : 'cn',
+      };
+    }
+    const i = Math.floor(Math.random() * pickPool.length);
     return {
-      en: finalPool[i].en, cn: finalPool[i].cn, phon: finalPool[i].phon || '',
+      en: pickPool[i].en, cn: pickPool[i].cn, phon: pickPool[i].phon || '',
       lang: Math.random() < 0.5 ? 'en' : 'cn',
     };
   }
@@ -574,7 +588,12 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
 
   function handlePairMatch(r: number, c: number) {
     if (!falling) return;
-    eliminatedKeys.add(falling.en + ':' + falling.cn);
+    const eliminatedKey = falling.en + ':' + falling.cn;
+    eliminatedKeys.add(eliminatedKey);
+    recentlyDropped.push(eliminatedKey);
+    if (recentlyDropped.length > MAX_RECENT) {
+      recentlyDropped.shift();
+    }
     grid[r][c] = null;
     falling = null;
     score += 10;
