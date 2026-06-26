@@ -603,7 +603,7 @@ const allLevels: Record<string, { en: string; cn: string }[]> = {
 
   function handleGridWrong(el: HTMLElement) {
     if (!falling) return;
-    score = Math.max(0, score - 2);
+    score -= 2;
     updateScore();
     animating = true;
     const fallingCell = document.querySelector('.wt-falling') as HTMLElement;
