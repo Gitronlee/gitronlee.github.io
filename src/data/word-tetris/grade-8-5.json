@@ -1,108 +1,8 @@
 [
   {
-    "en": "economics",
-    "phon": "/ˌiː.kəˈnɒm.ɪks/",
-    "cn": "经济学"
-  },
-  {
-    "en": "microeconomics",
-    "phon": "/ˌmaɪ.krəʊ.iː.kəˈnɒm.ɪks/",
-    "cn": "微观经济学"
-  },
-  {
-    "en": "macroeconomics",
-    "phon": "/ˌmæ.krəʊ.iː.kəˈnɒm.ɪks/",
-    "cn": "宏观经济学"
-  },
-  {
-    "en": "supply and demand",
-    "phon": "/səˈplaɪ ænd dɪˈmɑːnd/",
-    "cn": "供需"
-  },
-  {
-    "en": "market economy",
-    "phon": "/ˈmɑːr.kɪt ɪˈkɒn.ə.mi/",
-    "cn": "市场经济"
-  },
-  {
-    "en": "command economy",
-    "phon": "/kəˈmɑːnd ɪˈkɒn.ə.mi/",
-    "cn": "计划经济"
-  },
-  {
-    "en": "mixed economy",
-    "phon": "/mɪkst ɪˈkɒn.ə.mi/",
-    "cn": "混合经济"
-  },
-  {
-    "en": "GDP",
-    "phon": "/ˌdʒiː.diː ˈpiː/",
-    "cn": "国内生产总值"
-  },
-  {
-    "en": "unclosize",
-    "phon": "/unclosize/",
-    "cn": "unclosize"
-  },
-  {
-    "en": "deflation",
-    "phon": "/diːˈfleɪ.ʃən/",
-    "cn": "通货紧缩"
-  },
-  {
-    "en": "recession",
-    "phon": "/rɪˈseʃ.ən/",
-    "cn": "衰退"
-  },
-  {
-    "en": "unclosise",
-    "phon": "/unclosise/",
-    "cn": "unclosise"
-  },
-  {
-    "en": "boom",
-    "phon": "/buːm/",
-    "cn": "繁荣"
-  },
-  {
-    "en": "bust",
-    "phon": "/bʌst/",
-    "cn": "萧条"
-  },
-  {
-    "en": "fiscal policy",
-    "phon": "/ˈfɪs.kəl ˈpɒl.ə.si/",
-    "cn": "财政政策"
-  },
-  {
-    "en": "monetary policy",
-    "phon": "/ˈmʌn.ə.tər.i ˈpɒl.ə.si/",
-    "cn": "货币政策"
-  },
-  {
-    "en": "interest rate",
-    "phon": "/ˈɪn.trəst reɪt/",
-    "cn": "利率"
-  },
-  {
-    "en": "exchange rate",
-    "phon": "/ɪksˈtʃeɪndʒ reɪt/",
-    "cn": "汇率"
-  },
-  {
-    "en": "foreign reserve",
-    "phon": "/ˈfɒr.ən rɪˈzɜːrv/",
-    "cn": "外汇储备"
-  },
-  {
-    "en": "trade balance",
-    "phon": "/treɪd ˈbæl.əns/",
-    "cn": "贸易差额"
-  },
-  {
-    "en": "tariff",
-    "phon": "/ˈtær.ɪf/",
-    "cn": "关税"
+    "en": "deregulation",
+    "phon": "/diːˌreɡ.juˈleɪ.ʃən/",
+    "cn": "放松管制"
   },
   {
     "en": "quota",
@@ -110,14 +10,29 @@
     "cn": "配额"
   },
   {
+    "en": "recession",
+    "phon": "/rɪˈseʃ.ən/",
+    "cn": "衰退"
+  },
+  {
+    "en": "bust",
+    "phon": "/bʌst/",
+    "cn": "萧条"
+  },
+  {
+    "en": "accumulate",
+    "phon": "/əˈkjuː.mjə.leɪt/",
+    "cn": "积累"
+  },
+  {
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
+  },
+  {
     "en": "subsidy",
     "phon": "/ˈsʌb.sə.di/",
     "cn": "补贴"
-  },
-  {
-    "en": "taxation",
-    "phon": "/tækˈseɪ.ʃən/",
-    "cn": "税收"
   },
   {
     "en": "budget deficit",
@@ -125,114 +40,29 @@
     "cn": "预算赤字"
   },
   {
-    "en": "national debt",
-    "phon": "/ˈnæʃ.ən.əl det/",
-    "cn": "国债"
-  },
-  {
-    "en": "unclosify",
-    "phon": "/unclosify/",
-    "cn": "unclosify"
-  },
-  {
-    "en": "portfolio",
-    "phon": "/pɔːrtˈfəʊ.li.əʊ/",
-    "cn": "投资组合"
-  },
-  {
-    "en": "diversification",
-    "phon": "/daɪˌvɜːr.sɪ.fɪˈkeɪ.ʃən/",
-    "cn": "多元化"
-  },
-  {
     "en": "risk management",
     "phon": "/rɪsk ˈmæn.ɪdʒ.mənt/",
     "cn": "风险管理"
   },
   {
-    "en": "venture capital",
-    "phon": "/ˈven.tʃər ˈkæp.ɪ.təl/",
-    "cn": "风险投资"
+    "en": "supply and demand",
+    "phon": "/səˈplaɪ ænd dɪˈmɑːnd/",
+    "cn": "供需"
   },
   {
-    "en": "startup",
-    "phon": "/ˈstɑːt.ʌp/",
-    "cn": "初创公司"
+    "en": "mixed economy",
+    "phon": "/mɪkst ɪˈkɒn.ə.mi/",
+    "cn": "混合经济"
   },
   {
-    "en": "unclosate",
-    "phon": "/unclosate/",
-    "cn": "unclosate"
+    "en": "command economy",
+    "phon": "/kəˈmɑːnd ɪˈkɒn.ə.mi/",
+    "cn": "计划经济"
   },
   {
-    "en": "IPO",
-    "phon": "/ˌaɪ.piː ˈəʊ/",
-    "cn": "首次公开募股"
-  },
-  {
-    "en": "merger",
-    "phon": "/ˈmɜːr.dʒər/",
-    "cn": "合并"
-  },
-  {
-    "en": "acquisition",
-    "phon": "/ˌæk.wɪˈzɪʃ.ən/",
-    "cn": "收购"
-  },
-  {
-    "en": "monopoly",
-    "phon": "/məˈnɒp.əl.i/",
-    "cn": "垄断"
-  },
-  {
-    "en": "oligopoly",
-    "phon": "/ˌɒl.ɪˈɡɒp.əl.i/",
-    "cn": "寡头垄断"
-  },
-  {
-    "en": "unclosent",
-    "phon": "/unclosent/",
-    "cn": "unclosent"
-  },
-  {
-    "en": "antitrust",
-    "phon": "/ˌæn.tiˈtrʌst/",
-    "cn": "反垄断"
-  },
-  {
-    "en": "regulation",
-    "phon": "/ˌreɡ.juˈleɪ.ʃən/",
-    "cn": "监管"
-  },
-  {
-    "en": "deregulation",
-    "phon": "/diːˌreɡ.juˈleɪ.ʃən/",
-    "cn": "放松管制"
-  },
-  {
-    "en": "privatization",
-    "phon": "/ˌpraɪ.vət.aɪˈzeɪ.ʃən/",
-    "cn": "私有化"
-  },
-  {
-    "en": "nationalization",
-    "phon": "/ˌnæʃ.ən.əl.aɪˈzeɪ.ʃən/",
-    "cn": "国有化"
-  },
-  {
-    "en": "outsourcing",
-    "phon": "/ˈaʊt.sɔːr.sɪŋ/",
-    "cn": "外包"
-  },
-  {
-    "en": "offshoring",
-    "phon": "/ˈɒf.ʃɔːr.ɪŋ/",
-    "cn": "离岸外包"
-  },
-  {
-    "en": "e-commerce",
-    "phon": "/ˈiː.kɒm.ɜːrs/",
-    "cn": "电子商务"
+    "en": "interest rate",
+    "phon": "/ˈɪn.trəst reɪt/",
+    "cn": "利率"
   },
   {
     "en": "supply chain",
@@ -240,13 +70,183 @@
     "cn": "供应链"
   },
   {
+    "en": "oligopoly",
+    "phon": "/ˌɒl.ɪˈɡɒp.əl.i/",
+    "cn": "寡头垄断"
+  },
+  {
+    "en": "GDP",
+    "phon": "/ˌdʒiː.diː ˈpiː/",
+    "cn": "国内生产总值"
+  },
+  {
+    "en": "boom",
+    "phon": "/buːm/",
+    "cn": "繁荣"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "e-commerce",
+    "phon": "/ˈiː.kɒm.ɜːrs/",
+    "cn": "电子商务"
+  },
+  {
+    "en": "offshoring",
+    "phon": "/ˈɒf.ʃɔːr.ɪŋ/",
+    "cn": "离岸外包"
+  },
+  {
     "en": "logistics",
     "phon": "/ləˈdʒɪs.tɪks/",
     "cn": "物流"
   },
   {
-    "en": "unclosant",
-    "phon": "/unclosant/",
-    "cn": "unclosant"
+    "en": "economics",
+    "phon": "/ˌiː.kəˈnɒm.ɪks/",
+    "cn": "经济学"
+  },
+  {
+    "en": "monetary policy",
+    "phon": "/ˈmʌn.ə.tər.i ˈpɒl.ə.si/",
+    "cn": "货币政策"
+  },
+  {
+    "en": "acquisition",
+    "phon": "/ˌæk.wɪˈzɪʃ.ən/",
+    "cn": "收购"
+  },
+  {
+    "en": "taxation",
+    "phon": "/tækˈseɪ.ʃən/",
+    "cn": "税收"
+  },
+  {
+    "en": "market economy",
+    "phon": "/ˈmɑːr.kɪt ɪˈkɒn.ə.mi/",
+    "cn": "市场经济"
+  },
+  {
+    "en": "tariff",
+    "phon": "/ˈtær.ɪf/",
+    "cn": "关税"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "venture capital",
+    "phon": "/ˈven.tʃər ˈkæp.ɪ.təl/",
+    "cn": "风险投资"
+  },
+  {
+    "en": "privatization",
+    "phon": "/ˌpraɪ.vət.aɪˈzeɪ.ʃən/",
+    "cn": "私有化"
+  },
+  {
+    "en": "antitrust",
+    "phon": "/ˌæn.tiˈtrʌst/",
+    "cn": "反垄断"
+  },
+  {
+    "en": "deflation",
+    "phon": "/diːˈfleɪ.ʃən/",
+    "cn": "通货紧缩"
+  },
+  {
+    "en": "fiscal policy",
+    "phon": "/ˈfɪs.kəl ˈpɒl.ə.si/",
+    "cn": "财政政策"
+  },
+  {
+    "en": "adjacent",
+    "phon": "/əˈdʒeɪ.sənt/",
+    "cn": "邻近的"
+  },
+  {
+    "en": "exchange rate",
+    "phon": "/ɪksˈtʃeɪndʒ reɪt/",
+    "cn": "汇率"
+  },
+  {
+    "en": "nationalization",
+    "phon": "/ˌnæʃ.ən.əl.aɪˈzeɪ.ʃən/",
+    "cn": "国有化"
+  },
+  {
+    "en": "IPO",
+    "phon": "/ˌaɪ.piː ˈəʊ/",
+    "cn": "首次公开募股"
+  },
+  {
+    "en": "national debt",
+    "phon": "/ˈnæʃ.ən.əl det/",
+    "cn": "国债"
+  },
+  {
+    "en": "foreign reserve",
+    "phon": "/ˈfɒr.ən rɪˈzɜːrv/",
+    "cn": "外汇储备"
+  },
+  {
+    "en": "monopoly",
+    "phon": "/məˈnɒp.əl.i/",
+    "cn": "垄断"
+  },
+  {
+    "en": "macroeconomics",
+    "phon": "/ˌmæ.krəʊ.iː.kəˈnɒm.ɪks/",
+    "cn": "宏观经济学"
+  },
+  {
+    "en": "portfolio",
+    "phon": "/pɔːrtˈfəʊ.li.əʊ/",
+    "cn": "投资组合"
+  },
+  {
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
+  },
+  {
+    "en": "microeconomics",
+    "phon": "/ˌmaɪ.krəʊ.iː.kəˈnɒm.ɪks/",
+    "cn": "微观经济学"
+  },
+  {
+    "en": "startup",
+    "phon": "/ˈstɑːt.ʌp/",
+    "cn": "初创公司"
+  },
+  {
+    "en": "outsourcing",
+    "phon": "/ˈaʊt.sɔːr.sɪŋ/",
+    "cn": "外包"
+  },
+  {
+    "en": "trade balance",
+    "phon": "/treɪd ˈbæl.əns/",
+    "cn": "贸易差额"
+  },
+  {
+    "en": "diversification",
+    "phon": "/daɪˌvɜːr.sɪ.fɪˈkeɪ.ʃən/",
+    "cn": "多元化"
+  },
+  {
+    "en": "regulation",
+    "phon": "/ˌreɡ.juˈleɪ.ʃən/",
+    "cn": "监管"
+  },
+  {
+    "en": "merger",
+    "phon": "/ˈmɜːr.dʒər/",
+    "cn": "合并"
   }
 ]

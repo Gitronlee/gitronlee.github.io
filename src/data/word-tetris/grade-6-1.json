@@ -1,168 +1,8 @@
 [
   {
-    "en": "society",
-    "phon": "/səˈsaɪ.ə.ti/",
-    "cn": "社会"
-  },
-  {
-    "en": "community",
-    "phon": "/kəˈmjuː.nə.ti/",
-    "cn": "社区"
-  },
-  {
-    "en": "relationship",
-    "phon": "/rɪˈleɪʃ.ən.ʃɪp/",
-    "cn": "关系"
-  },
-  {
-    "en": "communication",
-    "phon": "/kəˌmjuː.nɪˈkeɪ.ʃən/",
-    "cn": "沟通"
-  },
-  {
-    "en": "uncardary",
-    "phon": "/uncardary/",
-    "cn": "uncardary"
-  },
-  {
-    "en": "argument",
-    "phon": "/ˈɑːr.ɡju.mənt/",
-    "cn": "争论"
-  },
-  {
-    "en": "conflict",
-    "phon": "/ˈkɒn.flɪkt/",
-    "cn": "冲突"
-  },
-  {
-    "en": "compromise",
-    "phon": "/ˈkɒm.prə.maɪz/",
-    "cn": "妥协"
-  },
-  {
-    "en": "cooperation",
-    "phon": "/kəʊˌɒp.əˈreɪ.ʃən/",
-    "cn": "合作"
-  },
-  {
-    "en": "teamwork",
-    "phon": "/ˈtiːm.wɜːrk/",
-    "cn": "团队合作"
-  },
-  {
-    "en": "leadership",
-    "phon": "/ˈliː.dər.ʃɪp/",
-    "cn": "领导力"
-  },
-  {
-    "en": "responsibility",
-    "phon": "/rɪˌspɒn.səˈbɪl.ə.ti/",
-    "cn": "责任"
-  },
-  {
-    "en": "respect",
-    "phon": "/rɪˈspekt/",
-    "cn": "尊重"
-  },
-  {
-    "en": "trust",
-    "phon": "/trʌst/",
-    "cn": "信任"
-  },
-  {
-    "en": "honesty",
-    "phon": "/ˈɒn.ɪ.sti/",
-    "cn": "诚实"
-  },
-  {
-    "en": "kindness",
-    "phon": "/ˈkaɪnd.nəs/",
-    "cn": "善良"
-  },
-  {
-    "en": "generosity",
-    "phon": "/ˌdʒen.əˈrɒs.ə.ti/",
-    "cn": "慷慨"
-  },
-  {
     "en": "patience",
     "phon": "/ˈpeɪ.ʃəns/",
     "cn": "耐心"
-  },
-  {
-    "en": "tolerance",
-    "phon": "/ˈtɒl.ər.əns/",
-    "cn": "宽容"
-  },
-  {
-    "en": "empathy",
-    "phon": "/ˈem.pə.θi/",
-    "cn": "同理心"
-  },
-  {
-    "en": "sympathy",
-    "phon": "/ˈsɪm.pə.θi/",
-    "cn": "同情"
-  },
-  {
-    "en": "gratitude",
-    "phon": "/ˈɡræt.ɪ.tjuːd/",
-    "cn": "感激"
-  },
-  {
-    "en": "apology",
-    "phon": "/əˈpɒl.ə.dʒi/",
-    "cn": "道歉"
-  },
-  {
-    "en": "forgiveness",
-    "phon": "/fərˈɡɪv.nəs/",
-    "cn": "原谅"
-  },
-  {
-    "en": "violence",
-    "phon": "/ˈvaɪ.ə.ləns/",
-    "cn": "暴力"
-  },
-  {
-    "en": "peace",
-    "phon": "/piːs/",
-    "cn": "和平"
-  },
-  {
-    "en": "uncardory",
-    "phon": "/uncardory/",
-    "cn": "uncardory"
-  },
-  {
-    "en": "equality",
-    "phon": "/ɪˈkwɒl.ə.ti/",
-    "cn": "平等"
-  },
-  {
-    "en": "discrimination",
-    "phon": "/dɪˌskrɪm.ɪˈneɪ.ʃən/",
-    "cn": "歧视"
-  },
-  {
-    "en": "prejudice",
-    "phon": "/ˈpredʒ.ə.dɪs/",
-    "cn": "偏见"
-  },
-  {
-    "en": "stereotype",
-    "phon": "/ˈster.i.ə.taɪp/",
-    "cn": "刻板印象"
-  },
-  {
-    "en": "uncarddom",
-    "phon": "/uncarddom/",
-    "cn": "uncarddom"
-  },
-  {
-    "en": "peer pressure",
-    "phon": "/pɪər ˈpreʃ.ər/",
-    "cn": "同辈压力"
   },
   {
     "en": "bullying",
@@ -170,9 +10,149 @@
     "cn": "霸凌"
   },
   {
+    "en": "negotiate",
+    "phon": "/nɪˈɡəʊ.ʃi.eɪt/",
+    "cn": "谈判"
+  },
+  {
+    "en": "society",
+    "phon": "/səˈsaɪ.ə.ti/",
+    "cn": "社会"
+  },
+  {
+    "en": "generosity",
+    "phon": "/ˌdʒen.əˈrɒs.ə.ti/",
+    "cn": "慷慨"
+  },
+  {
+    "en": "gossip",
+    "phon": "/ˈɡɒs.ɪp/",
+    "cn": "八卦"
+  },
+  {
     "en": "harassment",
     "phon": "/ˈhær.əs.mənt/",
     "cn": "骚扰"
+  },
+  {
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
+  },
+  {
+    "en": "assign",
+    "phon": "/əˈsaɪn/",
+    "cn": "分配"
+  },
+  {
+    "en": "reputation",
+    "phon": "/ˌrep.juˈteɪ.ʃən/",
+    "cn": "声誉"
+  },
+  {
+    "en": "teamwork",
+    "phon": "/ˈtiːm.wɜːrk/",
+    "cn": "团队合作"
+  },
+  {
+    "en": "rumor",
+    "phon": "/ˈruː.mər/",
+    "cn": "谣言"
+  },
+  {
+    "en": "boundary",
+    "phon": "/ˈbaʊn.dər.i/",
+    "cn": "界限"
+  },
+  {
+    "en": "argument",
+    "phon": "/ˈɑːr.ɡju.mənt/",
+    "cn": "争论"
+  },
+  {
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "respect",
+    "phon": "/rɪˈspekt/",
+    "cn": "尊重"
+  },
+  {
+    "en": "apology",
+    "phon": "/əˈpɒl.ə.dʒi/",
+    "cn": "道歉"
+  },
+  {
+    "en": "honesty",
+    "phon": "/ˈɒn.ɪ.sti/",
+    "cn": "诚实"
+  },
+  {
+    "en": "communication",
+    "phon": "/kəˌmjuː.nɪˈkeɪ.ʃən/",
+    "cn": "沟通"
+  },
+  {
+    "en": "opinion",
+    "phon": "/əˈpɪn.jən/",
+    "cn": "观点"
+  },
+  {
+    "en": "disagreement",
+    "phon": "/ˌdɪs.əˈɡriː.mənt/",
+    "cn": "分歧"
+  },
+  {
+    "en": "gratitude",
+    "phon": "/ˈɡræt.ɪ.tjuːd/",
+    "cn": "感激"
+  },
+  {
+    "en": "persuade",
+    "phon": "/pərˈsweɪd/",
+    "cn": "说服"
+  },
+  {
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
+  },
+  {
+    "en": "leadership",
+    "phon": "/ˈliː.dər.ʃɪp/",
+    "cn": "领导力"
+  },
+  {
+    "en": "cooperation",
+    "phon": "/kəʊˌɒp.əˈreɪ.ʃən/",
+    "cn": "合作"
+  },
+  {
+    "en": "agreement",
+    "phon": "/əˈɡriː.mənt/",
+    "cn": "协议"
+  },
+  {
+    "en": "responsibility",
+    "phon": "/rɪˌspɒn.səˈbɪl.ə.ti/",
+    "cn": "责任"
+  },
+  {
+    "en": "tolerance",
+    "phon": "/ˈtɒl.ər.əns/",
+    "cn": "宽容"
+  },
+  {
+    "en": "applaud",
+    "phon": "/əˈplɔːd/",
+    "cn": "鼓掌"
+  },
+  {
+    "en": "equality",
+    "phon": "/ɪˈkwɒl.ə.ti/",
+    "cn": "平等"
   },
   {
     "en": "interview",
@@ -185,39 +165,19 @@
     "cn": "调查"
   },
   {
-    "en": "opinion",
-    "phon": "/əˈpɪn.jən/",
-    "cn": "观点"
+    "en": "peer pressure",
+    "phon": "/pɪər ˈpreʃ.ər/",
+    "cn": "同辈压力"
   },
   {
-    "en": "uncardship",
-    "phon": "/uncardship/",
-    "cn": "uncardship"
+    "en": "discrimination",
+    "phon": "/dɪˌskrɪm.ɪˈneɪ.ʃən/",
+    "cn": "歧视"
   },
   {
-    "en": "negotiate",
-    "phon": "/nɪˈɡəʊ.ʃi.eɪt/",
-    "cn": "谈判"
-  },
-  {
-    "en": "persuade",
-    "phon": "/pərˈsweɪd/",
-    "cn": "说服"
-  },
-  {
-    "en": "agreement",
-    "phon": "/əˈɡriː.mənt/",
-    "cn": "协议"
-  },
-  {
-    "en": "disagreement",
-    "phon": "/ˌdɪs.əˈɡriː.mənt/",
-    "cn": "分歧"
-  },
-  {
-    "en": "boundary",
-    "phon": "/ˈbaʊn.dər.i/",
-    "cn": "界限"
+    "en": "relationship",
+    "phon": "/rɪˈleɪʃ.ən.ʃɪp/",
+    "cn": "关系"
   },
   {
     "en": "privacy",
@@ -225,19 +185,14 @@
     "cn": "隐私"
   },
   {
-    "en": "gossip",
-    "phon": "/ˈɡɒs.ɪp/",
-    "cn": "八卦"
+    "en": "community",
+    "phon": "/kəˈmjuː.nə.ti/",
+    "cn": "社区"
   },
   {
-    "en": "rumor",
-    "phon": "/ˈruː.mər/",
-    "cn": "谣言"
-  },
-  {
-    "en": "reputation",
-    "phon": "/ˌrep.juˈteɪ.ʃən/",
-    "cn": "声誉"
+    "en": "stereotype",
+    "phon": "/ˈster.i.ə.taɪp/",
+    "cn": "刻板印象"
   },
   {
     "en": "social media",
@@ -245,8 +200,53 @@
     "cn": "社交媒体"
   },
   {
-    "en": "uncardward",
-    "phon": "/uncardward/",
-    "cn": "uncardward"
+    "en": "peace",
+    "phon": "/piːs/",
+    "cn": "和平"
+  },
+  {
+    "en": "trust",
+    "phon": "/trʌst/",
+    "cn": "信任"
+  },
+  {
+    "en": "empathy",
+    "phon": "/ˈem.pə.θi/",
+    "cn": "同理心"
+  },
+  {
+    "en": "conflict",
+    "phon": "/ˈkɒn.flɪkt/",
+    "cn": "冲突"
+  },
+  {
+    "en": "sympathy",
+    "phon": "/ˈsɪm.pə.θi/",
+    "cn": "同情"
+  },
+  {
+    "en": "prejudice",
+    "phon": "/ˈpredʒ.ə.dɪs/",
+    "cn": "偏见"
+  },
+  {
+    "en": "forgiveness",
+    "phon": "/fərˈɡɪv.nəs/",
+    "cn": "原谅"
+  },
+  {
+    "en": "violence",
+    "phon": "/ˈvaɪ.ə.ləns/",
+    "cn": "暴力"
+  },
+  {
+    "en": "anonymous",
+    "phon": "/əˈnɒn.ɪ.məs/",
+    "cn": "匿名的"
+  },
+  {
+    "en": "kindness",
+    "phon": "/ˈkaɪnd.nəs/",
+    "cn": "善良"
   }
 ]

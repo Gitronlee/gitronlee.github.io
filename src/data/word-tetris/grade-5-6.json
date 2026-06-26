@@ -1,13 +1,8 @@
 [
   {
-    "en": "recipe",
-    "phon": "/ˈres.ə.pi/",
-    "cn": "食谱"
-  },
-  {
-    "en": "ingredient",
-    "phon": "/ɪnˈɡriː.di.ənt/",
-    "cn": "食材"
+    "en": "sauce",
+    "phon": "/sɔːs/",
+    "cn": "酱汁"
   },
   {
     "en": "cuisine",
@@ -15,139 +10,9 @@
     "cn": "菜系"
   },
   {
-    "en": "flavor",
-    "phon": "/ˈfleɪ.vər/",
-    "cn": "味道"
-  },
-  {
-    "en": "spice",
-    "phon": "/spaɪs/",
-    "cn": "香料"
-  },
-  {
-    "en": "herb",
-    "phon": "/hɜːrb/",
-    "cn": "草药"
-  },
-  {
-    "en": "pepper",
-    "phon": "/ˈpep.ər/",
-    "cn": "胡椒"
-  },
-  {
-    "en": "garlic",
-    "phon": "/ˈɡɑːr.lɪk/",
-    "cn": "大蒜"
-  },
-  {
-    "en": "ginger",
-    "phon": "/ˈdʒɪn.dʒər/",
-    "cn": "姜"
-  },
-  {
-    "en": "uncardial",
-    "phon": "/uncardial/",
-    "cn": "uncardial"
-  },
-  {
-    "en": "vinegar",
-    "phon": "/ˈvɪn.ɪ.ɡər/",
-    "cn": "醋"
-  },
-  {
-    "en": "sauce",
-    "phon": "/sɔːs/",
-    "cn": "酱汁"
-  },
-  {
-    "en": "ketchup",
-    "phon": "/ˈketʃ.əp/",
-    "cn": "番茄酱"
-  },
-  {
-    "en": "mustard",
-    "phon": "/ˈmʌs.təd/",
-    "cn": "芥末"
-  },
-  {
-    "en": "mayonnaise",
-    "phon": "/ˌmeɪ.əˈneɪz/",
-    "cn": "蛋黄酱"
-  },
-  {
-    "en": "oil",
-    "phon": "/ɔɪl/",
-    "cn": "油"
-  },
-  {
-    "en": "flour",
-    "phon": "/flaʊər/",
-    "cn": "面粉"
-  },
-  {
-    "en": "dough",
-    "phon": "/dəʊ/",
-    "cn": "面团"
-  },
-  {
-    "en": "batter",
-    "phon": "/ˈbæt.ər/",
-    "cn": "面糊"
-  },
-  {
-    "en": "marinade",
-    "phon": "/ˌmær.ɪˈneɪd/",
-    "cn": "腌料"
-  },
-  {
-    "en": "broth",
-    "phon": "/brɒθ/",
-    "cn": "肉汤"
-  },
-  {
-    "en": "stew",
-    "phon": "/stjuː/",
-    "cn": "炖菜"
-  },
-  {
-    "en": "soup",
-    "phon": "/suːp/",
-    "cn": "汤"
-  },
-  {
-    "en": "salad",
-    "phon": "/ˈsæl.əd/",
-    "cn": "沙拉"
-  },
-  {
-    "en": "appetizer",
-    "phon": "/ˈæp.ɪ.taɪ.zər/",
-    "cn": "开胃菜"
-  },
-  {
-    "en": "dessert",
-    "phon": "/dɪˈzɜːrt/",
-    "cn": "甜点"
-  },
-  {
-    "en": "pastry",
-    "phon": "/ˈpeɪs.tri/",
-    "cn": "糕点"
-  },
-  {
-    "en": "uncardly",
-    "phon": "/uncardly/",
-    "cn": "uncardly"
-  },
-  {
-    "en": "cafeteria",
-    "phon": "/ˌkæf.əˈtɪər.i.ə/",
-    "cn": "自助餐厅"
-  },
-  {
-    "en": "buffet",
-    "phon": "/ˈbʌf.eɪ/",
-    "cn": "自助餐"
+    "en": "portion",
+    "phon": "/ˈpɔːr.ʃən/",
+    "cn": "份量"
   },
   {
     "en": "takeout",
@@ -155,79 +20,24 @@
     "cn": "外卖"
   },
   {
-    "en": "delivery",
-    "phon": "/dɪˈlɪv.ər.i/",
-    "cn": "配送"
-  },
-  {
-    "en": "portion",
-    "phon": "/ˈpɔːr.ʃən/",
-    "cn": "份量"
-  },
-  {
-    "en": "serving",
-    "phon": "/ˈsɜːr.vɪŋ/",
-    "cn": "一份"
-  },
-  {
-    "en": "calorie",
-    "phon": "/ˈkæl.ər.i/",
-    "cn": "卡路里"
-  },
-  {
-    "en": "nutrition",
-    "phon": "/njuːˈtrɪʃ.ən/",
-    "cn": "营养"
-  },
-  {
-    "en": "vitamin",
-    "phon": "/ˈvɪt.ə.mɪn/",
-    "cn": "维生素"
-  },
-  {
-    "en": "protein",
-    "phon": "/ˈprəʊ.tiːn/",
-    "cn": "蛋白质"
-  },
-  {
-    "en": "carbohydrate",
-    "phon": "/ˌkɑː.bəʊˈhaɪ.dreɪt/",
-    "cn": "碳水化合物"
-  },
-  {
-    "en": "fiber",
-    "phon": "/ˈfaɪ.bər/",
-    "cn": "纤维"
-  },
-  {
-    "en": "mineral",
-    "phon": "/ˈmɪn.ər.əl/",
-    "cn": "矿物质"
-  },
-  {
     "en": "organic",
     "phon": "/ɔːrˈɡæn.ɪk/",
     "cn": "有机的"
   },
   {
-    "en": "fresh",
-    "phon": "/freʃ/",
-    "cn": "新鲜的"
+    "en": "mustard",
+    "phon": "/ˈmʌs.təd/",
+    "cn": "芥末"
   },
   {
-    "en": "frozen",
-    "phon": "/ˈfrəʊ.zən/",
-    "cn": "冷冻的"
+    "en": "cafeteria",
+    "phon": "/ˌkæf.əˈtɪər.i.ə/",
+    "cn": "自助餐厅"
   },
   {
-    "en": "canned",
-    "phon": "/kænd/",
-    "cn": "罐装的"
-  },
-  {
-    "en": "fried",
-    "phon": "/fraɪd/",
-    "cn": "油炸的"
+    "en": "batter",
+    "phon": "/ˈbæt.ər/",
+    "cn": "面糊"
   },
   {
     "en": "baked",
@@ -235,9 +45,59 @@
     "cn": "烘烤的"
   },
   {
-    "en": "grilled",
-    "phon": "/ɡrɪld/",
-    "cn": "烧烤的"
+    "en": "broth",
+    "phon": "/brɒθ/",
+    "cn": "肉汤"
+  },
+  {
+    "en": "fried",
+    "phon": "/fraɪd/",
+    "cn": "油炸的"
+  },
+  {
+    "en": "ingredient",
+    "phon": "/ɪnˈɡriː.di.ənt/",
+    "cn": "食材"
+  },
+  {
+    "en": "herb",
+    "phon": "/hɜːrb/",
+    "cn": "草药"
+  },
+  {
+    "en": "buffet",
+    "phon": "/ˈbʌf.eɪ/",
+    "cn": "自助餐"
+  },
+  {
+    "en": "nutrition",
+    "phon": "/njuːˈtrɪʃ.ən/",
+    "cn": "营养"
+  },
+  {
+    "en": "protein",
+    "phon": "/ˈprəʊ.tiːn/",
+    "cn": "蛋白质"
+  },
+  {
+    "en": "pepper",
+    "phon": "/ˈpep.ər/",
+    "cn": "胡椒"
+  },
+  {
+    "en": "soup",
+    "phon": "/suːp/",
+    "cn": "汤"
+  },
+  {
+    "en": "serving",
+    "phon": "/ˈsɜːr.vɪŋ/",
+    "cn": "一份"
+  },
+  {
+    "en": "vitamin",
+    "phon": "/ˈvɪt.ə.mɪn/",
+    "cn": "维生素"
   },
   {
     "en": "roasted",
@@ -245,8 +105,148 @@
     "cn": "烤制的"
   },
   {
+    "en": "calorie",
+    "phon": "/ˈkæl.ər.i/",
+    "cn": "卡路里"
+  },
+  {
+    "en": "delivery",
+    "phon": "/dɪˈlɪv.ər.i/",
+    "cn": "配送"
+  },
+  {
+    "en": "appetizer",
+    "phon": "/ˈæp.ɪ.taɪ.zər/",
+    "cn": "开胃菜"
+  },
+  {
+    "en": "flavor",
+    "phon": "/ˈfleɪ.vər/",
+    "cn": "味道"
+  },
+  {
+    "en": "ginger",
+    "phon": "/ˈdʒɪn.dʒər/",
+    "cn": "姜"
+  },
+  {
+    "en": "pastry",
+    "phon": "/ˈpeɪs.tri/",
+    "cn": "糕点"
+  },
+  {
+    "en": "ambitious",
+    "phon": "/æmˈbɪʃ.əs/",
+    "cn": "有抱负的"
+  },
+  {
+    "en": "ketchup",
+    "phon": "/ˈketʃ.əp/",
+    "cn": "番茄酱"
+  },
+  {
+    "en": "fiber",
+    "phon": "/ˈfaɪ.bər/",
+    "cn": "纤维"
+  },
+  {
+    "en": "dessert",
+    "phon": "/dɪˈzɜːrt/",
+    "cn": "甜点"
+  },
+  {
+    "en": "oil",
+    "phon": "/ɔɪl/",
+    "cn": "油"
+  },
+  {
+    "en": "grilled",
+    "phon": "/ɡrɪld/",
+    "cn": "烧烤的"
+  },
+  {
     "en": "steamed",
     "phon": "/stiːmd/",
     "cn": "蒸的"
+  },
+  {
+    "en": "vinegar",
+    "phon": "/ˈvɪn.ɪ.ɡər/",
+    "cn": "醋"
+  },
+  {
+    "en": "stew",
+    "phon": "/stjuː/",
+    "cn": "炖菜"
+  },
+  {
+    "en": "dough",
+    "phon": "/dəʊ/",
+    "cn": "面团"
+  },
+  {
+    "en": "canned",
+    "phon": "/kænd/",
+    "cn": "罐装的"
+  },
+  {
+    "en": "garlic",
+    "phon": "/ˈɡɑːr.lɪk/",
+    "cn": "大蒜"
+  },
+  {
+    "en": "fresh",
+    "phon": "/freʃ/",
+    "cn": "新鲜的"
+  },
+  {
+    "en": "mineral",
+    "phon": "/ˈmɪn.ər.əl/",
+    "cn": "矿物质"
+  },
+  {
+    "en": "frozen",
+    "phon": "/ˈfrəʊ.zən/",
+    "cn": "冷冻的"
+  },
+  {
+    "en": "spice",
+    "phon": "/spaɪs/",
+    "cn": "香料"
+  },
+  {
+    "en": "accumulate",
+    "phon": "/əˈkjuː.mjə.leɪt/",
+    "cn": "积累"
+  },
+  {
+    "en": "mayonnaise",
+    "phon": "/ˌmeɪ.əˈneɪz/",
+    "cn": "蛋黄酱"
+  },
+  {
+    "en": "marinade",
+    "phon": "/ˌmær.ɪˈneɪd/",
+    "cn": "腌料"
+  },
+  {
+    "en": "salad",
+    "phon": "/ˈsæl.əd/",
+    "cn": "沙拉"
+  },
+  {
+    "en": "flour",
+    "phon": "/flaʊər/",
+    "cn": "面粉"
+  },
+  {
+    "en": "carbohydrate",
+    "phon": "/ˌkɑː.bəʊˈhaɪ.dreɪt/",
+    "cn": "碳水化合物"
+  },
+  {
+    "en": "recipe",
+    "phon": "/ˈres.ə.pi/",
+    "cn": "食谱"
   }
 ]

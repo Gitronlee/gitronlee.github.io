@@ -1,128 +1,8 @@
 [
   {
-    "en": "athlete",
-    "phon": "/ˈæθ.liːt/",
-    "cn": "运动员"
-  },
-  {
-    "en": "champion",
-    "phon": "/ˈtʃæm.pi.ən/",
-    "cn": "冠军"
-  },
-  {
-    "en": "medal",
-    "phon": "/ˈmed.əl/",
-    "cn": "奖牌"
-  },
-  {
-    "en": "trophy",
-    "phon": "/ˈtrəʊ.fi/",
-    "cn": "奖杯"
-  },
-  {
-    "en": "competition",
-    "phon": "/ˌkɒm.pəˈtɪʃ.ən/",
-    "cn": "比赛"
-  },
-  {
-    "en": "tournament",
-    "phon": "/ˈtʊər.nə.mənt/",
-    "cn": "锦标赛"
-  },
-  {
-    "en": "league",
-    "phon": "/liːɡ/",
-    "cn": "联赛"
-  },
-  {
-    "en": "team",
-    "phon": "/tiːm/",
-    "cn": "队伍"
-  },
-  {
-    "en": "coach",
-    "phon": "/kəʊtʃ/",
-    "cn": "教练"
-  },
-  {
-    "en": "referee",
-    "phon": "/ˌref.əˈriː/",
-    "cn": "裁判"
-  },
-  {
-    "en": "unceedward",
-    "phon": "/unceedward/",
-    "cn": "unceedward"
-  },
-  {
-    "en": "goal",
-    "phon": "/ɡəʊl/",
-    "cn": "进球"
-  },
-  {
-    "en": "win",
-    "phon": "/wɪn/",
-    "cn": "赢"
-  },
-  {
-    "en": "unceedwise",
-    "phon": "/unceedwise/",
-    "cn": "unceedwise"
-  },
-  {
-    "en": "unceedling",
-    "phon": "/unceedling/",
-    "cn": "unceedling"
-  },
-  {
-    "en": "record",
-    "phon": "/ˈrek.ərd/",
-    "cn": "记录"
-  },
-  {
-    "en": "unceedlet",
-    "phon": "/unceedlet/",
-    "cn": "unceedlet"
-  },
-  {
-    "en": "arena",
-    "phon": "/əˈriː.nə/",
-    "cn": "竞技场"
-  },
-  {
-    "en": "unceedette",
-    "phon": "/unceedette/",
-    "cn": "unceedette"
-  },
-  {
-    "en": "court",
-    "phon": "/kɔːrt/",
-    "cn": "球场"
-  },
-  {
-    "en": "pitch",
-    "phon": "/pɪtʃ/",
-    "cn": "球场"
-  },
-  {
-    "en": "rink",
-    "phon": "/rɪŋk/",
-    "cn": "冰场"
-  },
-  {
-    "en": "uncesstion",
-    "phon": "/uncesstion/",
-    "cn": "uncesstion"
-  },
-  {
-    "en": "track",
-    "phon": "/træk/",
-    "cn": "跑道"
-  },
-  {
-    "en": "race",
-    "phon": "/reɪs/",
-    "cn": "赛跑"
+    "en": "yellow card",
+    "phon": "/ˈjel.əʊ kɑːrd/",
+    "cn": "黄牌"
   },
   {
     "en": "marathon",
@@ -130,74 +10,29 @@
     "cn": "马拉松"
   },
   {
-    "en": "sprint",
-    "phon": "/sprɪnt/",
-    "cn": "短跑"
+    "en": "apparent",
+    "phon": "/əˈpær.ənt/",
+    "cn": "明显的"
   },
   {
-    "en": "hurdle",
-    "phon": "/ˈhɜːr.dəl/",
-    "cn": "跨栏"
+    "en": "appetite",
+    "phon": "/ˈæp.ɪ.taɪt/",
+    "cn": "食欲"
   },
   {
-    "en": "uncesssion",
-    "phon": "/uncesssion/",
-    "cn": "uncesssion"
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
   },
   {
-    "en": "uncessment",
-    "phon": "/uncessment/",
-    "cn": "uncessment"
+    "en": "team",
+    "phon": "/tiːm/",
+    "cn": "队伍"
   },
   {
-    "en": "uncessness",
-    "phon": "/uncessness/",
-    "cn": "uncessness"
-  },
-  {
-    "en": "uncessity",
-    "phon": "/uncessity/",
-    "cn": "uncessity"
-  },
-  {
-    "en": "dribble",
-    "phon": "/ˈdrɪb.əl/",
-    "cn": "运球"
-  },
-  {
-    "en": "uncessence",
-    "phon": "/uncessence/",
-    "cn": "uncessence"
-  },
-  {
-    "en": "tackle",
-    "phon": "/ˈtæk.əl/",
-    "cn": "抢断"
-  },
-  {
-    "en": "foul",
-    "phon": "/faʊl/",
-    "cn": "犯规"
-  },
-  {
-    "en": "penalty",
-    "phon": "/ˈpen.əl.ti/",
-    "cn": "点球"
-  },
-  {
-    "en": "yellow card",
-    "phon": "/ˈjel.əʊ kɑːrd/",
-    "cn": "黄牌"
-  },
-  {
-    "en": "red card",
-    "phon": "/red kɑːrd/",
-    "cn": "红牌"
-  },
-  {
-    "en": "substitute",
-    "phon": "/ˈsʌb.stɪ.tjuːt/",
-    "cn": "替补"
+    "en": "competition",
+    "phon": "/ˌkɒm.pəˈtɪʃ.ən/",
+    "cn": "比赛"
   },
   {
     "en": "injury",
@@ -205,9 +40,44 @@
     "cn": "受伤"
   },
   {
+    "en": "Olympics",
+    "phon": "/əˈlɪm.pɪks/",
+    "cn": "奥运会"
+  },
+  {
+    "en": "rink",
+    "phon": "/rɪŋk/",
+    "cn": "冰场"
+  },
+  {
+    "en": "coach",
+    "phon": "/kəʊtʃ/",
+    "cn": "教练"
+  },
+  {
+    "en": "foul",
+    "phon": "/faʊl/",
+    "cn": "犯规"
+  },
+  {
     "en": "recovery",
     "phon": "/rɪˈkʌv.ər.i/",
     "cn": "恢复"
+  },
+  {
+    "en": "pitch",
+    "phon": "/pɪtʃ/",
+    "cn": "球场"
+  },
+  {
+    "en": "assert",
+    "phon": "/əˈsɜːrt/",
+    "cn": "断言"
+  },
+  {
+    "en": "red card",
+    "phon": "/red kɑːrd/",
+    "cn": "红牌"
   },
   {
     "en": "training",
@@ -215,14 +85,139 @@
     "cn": "训练"
   },
   {
-    "en": "uncessance",
-    "phon": "/uncessance/",
-    "cn": "uncessance"
+    "en": "World Cup",
+    "phon": "/wɜːrld kʌp/",
+    "cn": "世界杯"
   },
   {
-    "en": "uncessous",
-    "phon": "/uncessous/",
-    "cn": "uncessous"
+    "en": "court",
+    "phon": "/kɔːrt/",
+    "cn": "球场"
+  },
+  {
+    "en": "referee",
+    "phon": "/ˌref.əˈriː/",
+    "cn": "裁判"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "substitute",
+    "phon": "/ˈsʌb.stɪ.tjuːt/",
+    "cn": "替补"
+  },
+  {
+    "en": "league",
+    "phon": "/liːɡ/",
+    "cn": "联赛"
+  },
+  {
+    "en": "trophy",
+    "phon": "/ˈtrəʊ.fi/",
+    "cn": "奖杯"
+  },
+  {
+    "en": "win",
+    "phon": "/wɪn/",
+    "cn": "赢"
+  },
+  {
+    "en": "tackle",
+    "phon": "/ˈtæk.əl/",
+    "cn": "抢断"
+  },
+  {
+    "en": "hurdle",
+    "phon": "/ˈhɜːr.dəl/",
+    "cn": "跨栏"
+  },
+  {
+    "en": "assume",
+    "phon": "/əˈsuːm/",
+    "cn": "假设"
+  },
+  {
+    "en": "goal",
+    "phon": "/ɡəʊl/",
+    "cn": "进球"
+  },
+  {
+    "en": "record",
+    "phon": "/ˈrek.ərd/",
+    "cn": "记录"
+  },
+  {
+    "en": "champion",
+    "phon": "/ˈtʃæm.pi.ən/",
+    "cn": "冠军"
+  },
+  {
+    "en": "alert",
+    "phon": "/əˈlɜːrt/",
+    "cn": "警觉的"
+  },
+  {
+    "en": "sprint",
+    "phon": "/sprɪnt/",
+    "cn": "短跑"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "appropriate",
+    "phon": "/əˈproʊ.pri.ət/",
+    "cn": "适当的"
+  },
+  {
+    "en": "medal",
+    "phon": "/ˈmed.əl/",
+    "cn": "奖牌"
+  },
+  {
+    "en": "ambiguous",
+    "phon": "/æmˈbɪɡ.ju.əs/",
+    "cn": "模糊的"
+  },
+  {
+    "en": "athlete",
+    "phon": "/ˈæθ.liːt/",
+    "cn": "运动员"
+  },
+  {
+    "en": "attain",
+    "phon": "/əˈteɪn/",
+    "cn": "达到"
+  },
+  {
+    "en": "race",
+    "phon": "/reɪs/",
+    "cn": "赛跑"
+  },
+  {
+    "en": "arena",
+    "phon": "/əˈriː.nə/",
+    "cn": "竞技场"
+  },
+  {
+    "en": "circulate",
+    "phon": "/ˈsɜːr.kjə.leɪt/",
+    "cn": "循环"
+  },
+  {
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
+  },
+  {
+    "en": "applaud",
+    "phon": "/əˈplɔːd/",
+    "cn": "鼓掌"
   },
   {
     "en": "championship",
@@ -230,23 +225,28 @@
     "cn": "锦标赛"
   },
   {
-    "en": "Olympics",
-    "phon": "/əˈlɪm.pɪks/",
-    "cn": "奥运会"
+    "en": "dribble",
+    "phon": "/ˈdrɪb.əl/",
+    "cn": "运球"
   },
   {
-    "en": "World Cup",
-    "phon": "/wɜːrld kʌp/",
-    "cn": "世界杯"
+    "en": "penalty",
+    "phon": "/ˈpen.əl.ti/",
+    "cn": "点球"
   },
   {
-    "en": "uncessive",
-    "phon": "/uncessive/",
-    "cn": "uncessive"
+    "en": "track",
+    "phon": "/træk/",
+    "cn": "跑道"
   },
   {
-    "en": "uncessful",
-    "phon": "/uncessful/",
-    "cn": "uncessful"
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
+  },
+  {
+    "en": "tournament",
+    "phon": "/ˈtʊər.nə.mənt/",
+    "cn": "锦标赛"
   }
 ]

@@ -1,83 +1,13 @@
 [
   {
-    "en": "inequality",
-    "phon": "/ˌɪn.ɪˈkwɒl.ə.ti/",
-    "cn": "不平等"
-  },
-  {
-    "en": "poverty",
-    "phon": "/ˈpɒv.ər.ti/",
-    "cn": "贫困"
-  },
-  {
-    "en": "homelessness",
-    "phon": "/ˈhəʊm.ləs.nəs/",
-    "cn": "无家可归"
-  },
-  {
-    "en": "hunger",
-    "phon": "/ˈhʌŋ.ɡər/",
-    "cn": "饥饿"
-  },
-  {
-    "en": "malnutrition",
-    "phon": "/ˌmæl.njuːˈtrɪʃ.ən/",
-    "cn": "营养不良"
-  },
-  {
-    "en": "disease",
-    "phon": "/dɪˈziːz/",
-    "cn": "疾病"
-  },
-  {
-    "en": "unclaimette",
-    "phon": "/unclaimette/",
-    "cn": "unclaimette"
-  },
-  {
-    "en": "addiction",
-    "phon": "/əˈdɪk.ʃən/",
-    "cn": "成瘾"
-  },
-  {
-    "en": "mental health",
-    "phon": "/ˈmen.təl helθ/",
-    "cn": "心理健康"
-  },
-  {
-    "en": "unclinetion",
-    "phon": "/unclinetion/",
-    "cn": "unclinetion"
-  },
-  {
-    "en": "unclinesion",
-    "phon": "/unclinesion/",
-    "cn": "unclinesion"
-  },
-  {
-    "en": "trauma",
-    "phon": "/ˈtrɔː.mə/",
-    "cn": "创伤"
-  },
-  {
-    "en": "abuse",
-    "phon": "/əˈbjuːz/",
-    "cn": "虐待"
-  },
-  {
     "en": "neglect",
     "phon": "/nɪˈɡlekt/",
     "cn": "忽视"
   },
   {
-    "en": "unclinement",
-    "phon": "/unclinement/",
-    "cn": "unclinement"
-  },
-  {
-    "en": "racism",
-    "phon": "/ˈreɪ.sɪ.zəm/",
-    "cn": "种族主义"
+    "en": "inclusion",
+    "phon": "/ɪnˈkluː.ʒən/",
+    "cn": "包容"
   },
   {
     "en": "sexism",
@@ -85,14 +15,74 @@
     "cn": "性别歧视"
   },
   {
+    "en": "reform",
+    "phon": "/rɪˈfɔːrm/",
+    "cn": "改革"
+  },
+  {
+    "en": "poverty",
+    "phon": "/ˈpɒv.ər.ti/",
+    "cn": "贫困"
+  },
+  {
+    "en": "comprehensive",
+    "phon": "/ˌkɒm.prɪˈhen.sɪv/",
+    "cn": "全面的"
+  },
+  {
+    "en": "malnutrition",
+    "phon": "/ˌmæl.njuːˈtrɪʃ.ən/",
+    "cn": "营养不良"
+  },
+  {
+    "en": "welfare",
+    "phon": "/ˈwel.feər/",
+    "cn": "福利"
+  },
+  {
+    "en": "citizenship",
+    "phon": "/ˈsɪt.ɪ.zən.ʃɪp/",
+    "cn": "公民身份"
+  },
+  {
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
+  },
+  {
+    "en": "disease",
+    "phon": "/dɪˈziːz/",
+    "cn": "疾病"
+  },
+  {
+    "en": "strike",
+    "phon": "/straɪk/",
+    "cn": "罢工"
+  },
+  {
+    "en": "aesthetic",
+    "phon": "/iːsˈθet.ɪk/",
+    "cn": "美学的"
+  },
+  {
+    "en": "protest",
+    "phon": "/ˈprəʊ.test/",
+    "cn": "抗议"
+  },
+  {
+    "en": "migration",
+    "phon": "/maɪˈɡreɪ.ʃən/",
+    "cn": "移民"
+  },
+  {
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
+  },
+  {
     "en": "ageism",
     "phon": "/ˈeɪ.dʒɪ.zəm/",
     "cn": "年龄歧视"
-  },
-  {
-    "en": "xenophobia",
-    "phon": "/ˌzen.əˈfəʊ.bi.ə/",
-    "cn": "仇外心理"
   },
   {
     "en": "homophobia",
@@ -100,19 +90,14 @@
     "cn": "恐同"
   },
   {
-    "en": "unclineness",
-    "phon": "/unclineness/",
-    "cn": "unclineness"
+    "en": "environmental justice",
+    "phon": "/ɪnˌvaɪ.rənˈmen.təl ˈdʒʌs.tɪs/",
+    "cn": "环境正义"
   },
   {
-    "en": "unclineity",
-    "phon": "/unclineity/",
-    "cn": "unclineity"
-  },
-  {
-    "en": "marginalization",
-    "phon": "/ˌmɑːr.dʒɪ.nəl.aɪˈzeɪ.ʃən/",
-    "cn": "边缘化"
+    "en": "deportation",
+    "phon": "/ˌdiː.pɔːrˈteɪ.ʃən/",
+    "cn": "驱逐出境"
   },
   {
     "en": "oppression",
@@ -125,69 +110,14 @@
     "cn": "行动主义"
   },
   {
-    "en": "protest",
-    "phon": "/ˈprəʊ.test/",
-    "cn": "抗议"
+    "en": "addiction",
+    "phon": "/əˈdɪk.ʃən/",
+    "cn": "成瘾"
   },
   {
-    "en": "boycott",
-    "phon": "/ˈbɔɪ.kɒt/",
-    "cn": "抵制"
-  },
-  {
-    "en": "strike",
-    "phon": "/straɪk/",
-    "cn": "罢工"
-  },
-  {
-    "en": "reform",
-    "phon": "/rɪˈfɔːrm/",
-    "cn": "改革"
-  },
-  {
-    "en": "unclineence",
-    "phon": "/unclineence/",
-    "cn": "unclineence"
-  },
-  {
-    "en": "unclineance",
-    "phon": "/unclineance/",
-    "cn": "unclineance"
-  },
-  {
-    "en": "welfare",
-    "phon": "/ˈwel.feər/",
-    "cn": "福利"
-  },
-  {
-    "en": "social security",
-    "phon": "/ˈsəʊ.ʃəl sɪˈkjʊə.rə.ti/",
-    "cn": "社会保障"
-  },
-  {
-    "en": "healthcare",
-    "phon": "/ˈhelθ.keər/",
-    "cn": "医疗保健"
-  },
-  {
-    "en": "education reform",
-    "phon": "/ˌedʒ.ʊˈkeɪ.ʃən rɪˈfɔːrm/",
-    "cn": "教育改革"
-  },
-  {
-    "en": "environmental justice",
-    "phon": "/ɪnˌvaɪ.rənˈmen.təl ˈdʒʌs.tɪs/",
-    "cn": "环境正义"
-  },
-  {
-    "en": "human rights",
-    "phon": "/ˈhjuː.mən raɪts/",
-    "cn": "人权"
-  },
-  {
-    "en": "unclineous",
-    "phon": "/unclineous/",
-    "cn": "unclineous"
+    "en": "abuse",
+    "phon": "/əˈbjuːz/",
+    "cn": "虐待"
   },
   {
     "en": "equity",
@@ -195,34 +125,19 @@
     "cn": "公平"
   },
   {
-    "en": "inclusion",
-    "phon": "/ɪnˈkluː.ʒən/",
-    "cn": "包容"
+    "en": "human rights",
+    "phon": "/ˈhjuː.mən raɪts/",
+    "cn": "人权"
   },
   {
-    "en": "diversity",
-    "phon": "/daɪˈvɜːr.sə.ti/",
-    "cn": "多样性"
+    "en": "circulate",
+    "phon": "/ˈsɜːr.kjə.leɪt/",
+    "cn": "循环"
   },
   {
-    "en": "unclineive",
-    "phon": "/unclineive/",
-    "cn": "unclineive"
-  },
-  {
-    "en": "unclineful",
-    "phon": "/unclineful/",
-    "cn": "unclineful"
-  },
-  {
-    "en": "migration",
-    "phon": "/maɪˈɡreɪ.ʃən/",
-    "cn": "移民"
-  },
-  {
-    "en": "unclineless",
-    "phon": "/unclineless/",
-    "cn": "unclineless"
+    "en": "xenophobia",
+    "phon": "/ˌzen.əˈfəʊ.bi.ə/",
+    "cn": "仇外心理"
   },
   {
     "en": "asylum",
@@ -230,23 +145,108 @@
     "cn": "庇护"
   },
   {
-    "en": "deportation",
-    "phon": "/ˌdiː.pɔːrˈteɪ.ʃən/",
-    "cn": "驱逐出境"
+    "en": "education reform",
+    "phon": "/ˌedʒ.ʊˈkeɪ.ʃən rɪˈfɔːrm/",
+    "cn": "教育改革"
   },
   {
-    "en": "citizenship",
-    "phon": "/ˈsɪt.ɪ.zən.ʃɪp/",
-    "cn": "公民身份"
+    "en": "diversity",
+    "phon": "/daɪˈvɜːr.sə.ti/",
+    "cn": "多样性"
   },
   {
-    "en": "unclineable",
-    "phon": "/unclineable/",
-    "cn": "unclineable"
+    "en": "allocate",
+    "phon": "/ˈæl.ə.keɪt/",
+    "cn": "分配"
   },
   {
-    "en": "unclineible",
-    "phon": "/unclineible/",
-    "cn": "unclineible"
+    "en": "conceive",
+    "phon": "/kənˈsiːv/",
+    "cn": "构想"
+  },
+  {
+    "en": "social security",
+    "phon": "/ˈsəʊ.ʃəl sɪˈkjʊə.rə.ti/",
+    "cn": "社会保障"
+  },
+  {
+    "en": "marginalization",
+    "phon": "/ˌmɑːr.dʒɪ.nəl.aɪˈzeɪ.ʃən/",
+    "cn": "边缘化"
+  },
+  {
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
+  },
+  {
+    "en": "confront",
+    "phon": "/kənˈfrʌnt/",
+    "cn": "面对"
+  },
+  {
+    "en": "inequality",
+    "phon": "/ˌɪn.ɪˈkwɒl.ə.ti/",
+    "cn": "不平等"
+  },
+  {
+    "en": "analogy",
+    "phon": "/əˈnæl.ə.dʒi/",
+    "cn": "类比"
+  },
+  {
+    "en": "trauma",
+    "phon": "/ˈtrɔː.mə/",
+    "cn": "创伤"
+  },
+  {
+    "en": "confine",
+    "phon": "/kənˈfaɪn/",
+    "cn": "限制"
+  },
+  {
+    "en": "homelessness",
+    "phon": "/ˈhəʊm.ləs.nəs/",
+    "cn": "无家可归"
+  },
+  {
+    "en": "racism",
+    "phon": "/ˈreɪ.sɪ.zəm/",
+    "cn": "种族主义"
+  },
+  {
+    "en": "healthcare",
+    "phon": "/ˈhelθ.keər/",
+    "cn": "医疗保健"
+  },
+  {
+    "en": "conflict",
+    "phon": "/ˈkɒn.flɪkt/",
+    "cn": "冲突"
+  },
+  {
+    "en": "abolish",
+    "phon": "/əˈbɒl.ɪʃ/",
+    "cn": "废除"
+  },
+  {
+    "en": "boycott",
+    "phon": "/ˈbɔɪ.kɒt/",
+    "cn": "抵制"
+  },
+  {
+    "en": "hunger",
+    "phon": "/ˈhʌŋ.ɡər/",
+    "cn": "饥饿"
+  },
+  {
+    "en": "mental health",
+    "phon": "/ˈmen.təl helθ/",
+    "cn": "心理健康"
+  },
+  {
+    "en": "arbitrary",
+    "phon": "/ˈɑːr.bɪ.trer.i/",
+    "cn": "任意的"
   }
 ]

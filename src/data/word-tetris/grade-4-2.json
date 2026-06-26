@@ -1,123 +1,13 @@
 [
   {
-    "en": "sunny",
-    "phon": "/ˈsʌn.i/",
-    "cn": "晴朗的"
+    "en": "accept",
+    "phon": "/əkˈsept/",
+    "cn": "接受"
   },
   {
-    "en": "cloudy",
-    "phon": "/ˈklaʊ.di/",
-    "cn": "多云的"
-  },
-  {
-    "en": "rainy",
-    "phon": "/ˈreɪn.i/",
-    "cn": "下雨的"
-  },
-  {
-    "en": "windy",
-    "phon": "/ˈwɪn.di/",
-    "cn": "有风的"
-  },
-  {
-    "en": "snowy",
-    "phon": "/ˈsnəʊ.i/",
-    "cn": "下雪的"
-  },
-  {
-    "en": "stormy",
-    "phon": "/ˈstɔːr.mi/",
-    "cn": "暴风雨的"
-  },
-  {
-    "en": "foggy",
-    "phon": "/ˈfɒɡ.i/",
-    "cn": "有雾的"
-  },
-  {
-    "en": "dry",
-    "phon": "/draɪ/",
-    "cn": "干燥的"
-  },
-  {
-    "en": "wet",
-    "phon": "/wet/",
-    "cn": "潮湿的"
-  },
-  {
-    "en": "mild",
-    "phon": "/maɪld/",
-    "cn": "温和的"
-  },
-  {
-    "en": "freezing",
-    "phon": "/ˈfriː.zɪŋ/",
-    "cn": "极冷的"
-  },
-  {
-    "en": "breeze",
-    "phon": "/briːz/",
-    "cn": "微风"
-  },
-  {
-    "en": "umbrella",
-    "phon": "/ʌmˈbrel.ə/",
-    "cn": "雨伞"
-  },
-  {
-    "en": "boots",
-    "phon": "/buːts/",
-    "cn": "靴子"
-  },
-  {
-    "en": "jacket",
-    "phon": "/ˈdʒæk.ɪt/",
-    "cn": "夹克"
-  },
-  {
-    "en": "ungainly",
-    "phon": "/ʌnˈɡeɪn.li/",
-    "cn": "笨拙的"
-  },
-  {
-    "en": "scarf",
-    "phon": "/skɑːrf/",
-    "cn": "围巾"
-  },
-  {
-    "en": "gloves",
-    "phon": "/ɡlʌvz/",
-    "cn": "手套"
-  },
-  {
-    "en": "sweater",
-    "phon": "/ˈswet.ər/",
-    "cn": "毛衣"
-  },
-  {
-    "en": "sunglasses",
-    "phon": "/ˈsʌn.ɡlɑː.sɪz/",
-    "cn": "太阳镜"
-  },
-  {
-    "en": "shade",
-    "phon": "/ʃeɪd/",
-    "cn": "阴凉"
-  },
-  {
-    "en": "shadow",
-    "phon": "/ˈʃæd.əʊ/",
-    "cn": "影子"
-  },
-  {
-    "en": "dew",
-    "phon": "/djuː/",
-    "cn": "露水"
-  },
-  {
-    "en": "smog",
-    "phon": "/smɒɡ/",
-    "cn": "雾霾"
+    "en": "verbose",
+    "phon": "/vɜːrˈbəʊs/",
+    "cn": "冗长的"
   },
   {
     "en": "humid",
@@ -125,24 +15,44 @@
     "cn": "潮湿的"
   },
   {
-    "en": "gust",
-    "phon": "/ɡʌst/",
-    "cn": "一阵风"
+    "en": "freezing",
+    "phon": "/ˈfriː.zɪŋ/",
+    "cn": "极冷的"
   },
   {
-    "en": "climate",
-    "phon": "/ˈklaɪ.mət/",
-    "cn": "气候"
+    "en": "dew",
+    "phon": "/djuː/",
+    "cn": "露水"
   },
   {
-    "en": "sunrise",
-    "phon": "/ˈsʌn.raɪz/",
-    "cn": "日出"
+    "en": "visceral",
+    "phon": "/ˈvɪs.ər.əl/",
+    "cn": "发自内心的"
   },
   {
-    "en": "sunset",
-    "phon": "/ˈsʌn.set/",
-    "cn": "日落"
+    "en": "aspect",
+    "phon": "/ˈæs.pekt/",
+    "cn": "方面"
+  },
+  {
+    "en": "umbrella",
+    "phon": "/ʌmˈbrel.ə/",
+    "cn": "雨伞"
+  },
+  {
+    "en": "flood",
+    "phon": "/flʌd/",
+    "cn": "洪水"
+  },
+  {
+    "en": "windy",
+    "phon": "/ˈwɪn.di/",
+    "cn": "有风的"
+  },
+  {
+    "en": "breeze",
+    "phon": "/briːz/",
+    "cn": "微风"
   },
   {
     "en": "forecast",
@@ -155,69 +65,49 @@
     "cn": "度"
   },
   {
-    "en": "flood",
-    "phon": "/flʌd/",
-    "cn": "洪水"
+    "en": "ungainly",
+    "phon": "/ʌnˈɡeɪn.li/",
+    "cn": "笨拙的"
   },
   {
-    "en": "drought",
-    "phon": "/draʊt/",
-    "cn": "干旱"
+    "en": "sweater",
+    "phon": "/ˈswet.ər/",
+    "cn": "毛衣"
   },
   {
-    "en": "vapid",
-    "phon": "/ˈvæp.ɪd/",
-    "cn": "乏味的"
+    "en": "boots",
+    "phon": "/buːts/",
+    "cn": "靴子"
   },
   {
-    "en": "vehement",
-    "phon": "/ˈviː.ə.mənt/",
-    "cn": "激烈的"
+    "en": "stormy",
+    "phon": "/ˈstɔːr.mi/",
+    "cn": "暴风雨的"
   },
   {
-    "en": "venerate",
-    "phon": "/ˈven.ər.eɪt/",
-    "cn": "尊敬"
+    "en": "sunrise",
+    "phon": "/ˈsʌn.raɪz/",
+    "cn": "日出"
   },
   {
-    "en": "verbose",
-    "phon": "/vɜːrˈbəʊs/",
-    "cn": "冗长的"
+    "en": "snowy",
+    "phon": "/ˈsnəʊ.i/",
+    "cn": "下雪的"
   },
   {
-    "en": "viable",
-    "phon": "/ˈvaɪ.ə.bəl/",
-    "cn": "可行的"
+    "en": "announce",
+    "phon": "/əˈnaʊns/",
+    "cn": "宣布"
   },
   {
-    "en": "vilify",
-    "phon": "/ˈvɪl.ɪ.faɪ/",
-    "cn": "诋毁"
+    "en": "scarf",
+    "phon": "/skɑːrf/",
+    "cn": "围巾"
   },
   {
-    "en": "visceral",
-    "phon": "/ˈvɪs.ər.əl/",
-    "cn": "发自内心的"
-  },
-  {
-    "en": "vitriolic",
-    "phon": "/ˌvɪt.riˈɒl.ɪk/",
-    "cn": "尖刻的"
-  },
-  {
-    "en": "vociferous",
-    "phon": "/vəˈsɪf.ər.əs/",
-    "cn": "大声的"
-  },
-  {
-    "en": "volatile",
-    "phon": "/ˈvɒl.ə.taɪl/",
-    "cn": "不稳定的"
-  },
-  {
-    "en": "voracious",
-    "phon": "/vəˈreɪ.ʃəs/",
-    "cn": "贪婪的"
+    "en": "shadow",
+    "phon": "/ˈʃæd.əʊ/",
+    "cn": "影子"
   },
   {
     "en": "wanton",
@@ -225,28 +115,138 @@
     "cn": "肆意的"
   },
   {
+    "en": "gust",
+    "phon": "/ɡʌst/",
+    "cn": "一阵风"
+  },
+  {
+    "en": "sunset",
+    "phon": "/ˈsʌn.set/",
+    "cn": "日落"
+  },
+  {
+    "en": "gloves",
+    "phon": "/ɡlʌvz/",
+    "cn": "手套"
+  },
+  {
+    "en": "vehement",
+    "phon": "/ˈviː.ə.mənt/",
+    "cn": "激烈的"
+  },
+  {
+    "en": "shade",
+    "phon": "/ʃeɪd/",
+    "cn": "阴凉"
+  },
+  {
+    "en": "vilify",
+    "phon": "/ˈvɪl.ɪ.faɪ/",
+    "cn": "诋毁"
+  },
+  {
+    "en": "vociferous",
+    "phon": "/vəˈsɪf.ər.əs/",
+    "cn": "大声的"
+  },
+  {
+    "en": "rainy",
+    "phon": "/ˈreɪn.i/",
+    "cn": "下雨的"
+  },
+  {
+    "en": "voracious",
+    "phon": "/vəˈreɪ.ʃəs/",
+    "cn": "贪婪的"
+  },
+  {
+    "en": "sunny",
+    "phon": "/ˈsʌn.i/",
+    "cn": "晴朗的"
+  },
+  {
+    "en": "vitriolic",
+    "phon": "/ˌvɪt.riˈɒl.ɪk/",
+    "cn": "尖刻的"
+  },
+  {
+    "en": "foggy",
+    "phon": "/ˈfɒɡ.i/",
+    "cn": "有雾的"
+  },
+  {
+    "en": "mild",
+    "phon": "/maɪld/",
+    "cn": "温和的"
+  },
+  {
+    "en": "vapid",
+    "phon": "/ˈvæp.ɪd/",
+    "cn": "乏味的"
+  },
+  {
     "en": "whimsical",
     "phon": "/ˈwɪm.zɪ.kəl/",
     "cn": "异想天开的"
   },
   {
-    "en": "unacttion",
-    "phon": "/unacttion/",
-    "cn": "unacttion"
+    "en": "cloudy",
+    "phon": "/ˈklaʊ.di/",
+    "cn": "多云的"
   },
   {
-    "en": "unactsion",
-    "phon": "/unactsion/",
-    "cn": "unactsion"
+    "en": "dry",
+    "phon": "/draɪ/",
+    "cn": "干燥的"
   },
   {
-    "en": "unactment",
-    "phon": "/unactment/",
-    "cn": "unactment"
+    "en": "drought",
+    "phon": "/draʊt/",
+    "cn": "干旱"
   },
   {
-    "en": "unactness",
-    "phon": "/unactness/",
-    "cn": "unactness"
+    "en": "viable",
+    "phon": "/ˈvaɪ.ə.bəl/",
+    "cn": "可行的"
+  },
+  {
+    "en": "smog",
+    "phon": "/smɒɡ/",
+    "cn": "雾霾"
+  },
+  {
+    "en": "jacket",
+    "phon": "/ˈdʒæk.ɪt/",
+    "cn": "夹克"
+  },
+  {
+    "en": "blame",
+    "phon": "/bleɪm/",
+    "cn": "责备"
+  },
+  {
+    "en": "venerate",
+    "phon": "/ˈven.ər.eɪt/",
+    "cn": "尊敬"
+  },
+  {
+    "en": "volatile",
+    "phon": "/ˈvɒl.ə.taɪl/",
+    "cn": "不稳定的"
+  },
+  {
+    "en": "wet",
+    "phon": "/wet/",
+    "cn": "潮湿的"
+  },
+  {
+    "en": "climate",
+    "phon": "/ˈklaɪ.mət/",
+    "cn": "气候"
+  },
+  {
+    "en": "sunglasses",
+    "phon": "/ˈsʌn.ɡlɑː.sɪz/",
+    "cn": "太阳镜"
   }
 ]

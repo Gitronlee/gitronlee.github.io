@@ -1,108 +1,18 @@
 [
   {
-    "en": "clothes",
-    "phon": "/kləʊðz/",
-    "cn": "衣服"
-  },
-  {
-    "en": "unartence",
-    "phon": "/unartence/",
-    "cn": "unartence"
-  },
-  {
-    "en": "T-shirt",
-    "phon": "/ˈtiː.ʃɜːrt/",
-    "cn": "T恤"
-  },
-  {
-    "en": "unartance",
-    "phon": "/unartance/",
-    "cn": "unartance"
-  },
-  {
-    "en": "jeans",
-    "phon": "/dʒiːnz/",
-    "cn": "牛仔裤"
-  },
-  {
-    "en": "shorts",
-    "phon": "/ʃɔːrts/",
-    "cn": "短裤"
-  },
-  {
     "en": "skirt",
     "phon": "/skɜːrt/",
     "cn": "裙子"
   },
   {
-    "en": "unartous",
-    "phon": "/unartous/",
-    "cn": "unartous"
+    "en": "leather",
+    "phon": "/ˈleð.ər/",
+    "cn": "皮革"
   },
   {
-    "en": "unartive",
-    "phon": "/unartive/",
-    "cn": "unartive"
-  },
-  {
-    "en": "unartful",
-    "phon": "/unartful/",
-    "cn": "unartful"
-  },
-  {
-    "en": "vest",
-    "phon": "/vest/",
-    "cn": "背心"
-  },
-  {
-    "en": "uniform",
-    "phon": "/ˈjuː.nɪ.fɔːrm/",
-    "cn": "制服"
-  },
-  {
-    "en": "suit",
-    "phon": "/suːt/",
-    "cn": "西装"
-  },
-  {
-    "en": "tie",
-    "phon": "/taɪ/",
-    "cn": "领带"
-  },
-  {
-    "en": "unartless",
-    "phon": "/unartless/",
-    "cn": "unartless"
-  },
-  {
-    "en": "cap",
-    "phon": "/kæp/",
-    "cn": "鸭舌帽"
-  },
-  {
-    "en": "unartable",
-    "phon": "/unartable/",
-    "cn": "unartable"
-  },
-  {
-    "en": "unartible",
-    "phon": "/unartible/",
-    "cn": "unartible"
-  },
-  {
-    "en": "unartal",
-    "phon": "/unartal/",
-    "cn": "unartal"
-  },
-  {
-    "en": "unartial",
-    "phon": "/unartial/",
-    "cn": "unartial"
-  },
-  {
-    "en": "unartly",
-    "phon": "/unartly/",
-    "cn": "unartly"
+    "en": "brand",
+    "phon": "/brænd/",
+    "cn": "品牌"
   },
   {
     "en": "sandals",
@@ -110,24 +20,29 @@
     "cn": "凉鞋"
   },
   {
-    "en": "slippers",
-    "phon": "/ˈslɪp.ərz/",
-    "cn": "拖鞋"
+    "en": "silk",
+    "phon": "/sɪlk/",
+    "cn": "丝绸"
   },
   {
-    "en": "sneakers",
-    "phon": "/ˈsniː.kərz/",
-    "cn": "运动鞋"
+    "en": "clothes",
+    "phon": "/kləʊðz/",
+    "cn": "衣服"
   },
   {
-    "en": "belt",
-    "phon": "/belt/",
-    "cn": "腰带"
+    "en": "burden",
+    "phon": "/ˈbɜːr.dən/",
+    "cn": "负担"
   },
   {
-    "en": "pocket",
-    "phon": "/ˈpɒk.ɪt/",
-    "cn": "口袋"
+    "en": "allow",
+    "phon": "/əˈlaʊ/",
+    "cn": "允许"
+  },
+  {
+    "en": "jeans",
+    "phon": "/dʒiːnz/",
+    "cn": "牛仔裤"
   },
   {
     "en": "collar",
@@ -135,14 +50,29 @@
     "cn": "衣领"
   },
   {
-    "en": "sleeve",
-    "phon": "/sliːv/",
-    "cn": "袖子"
+    "en": "medium",
+    "phon": "/ˈmiː.di.əm/",
+    "cn": "中号"
   },
   {
-    "en": "button",
-    "phon": "/ˈbʌt.ən/",
-    "cn": "纽扣"
+    "en": "pattern",
+    "phon": "/ˈpæt.ən/",
+    "cn": "图案"
+  },
+  {
+    "en": "anxious",
+    "phon": "/ˈæŋk.ʃəs/",
+    "cn": "焦虑的"
+  },
+  {
+    "en": "advance",
+    "phon": "/ədˈvæns/",
+    "cn": "前进"
+  },
+  {
+    "en": "vest",
+    "phon": "/vest/",
+    "cn": "背心"
   },
   {
     "en": "zipper",
@@ -155,54 +85,29 @@
     "cn": "面料"
   },
   {
-    "en": "cotton",
-    "phon": "/ˈkɒt.ən/",
-    "cn": "棉"
+    "en": "actual",
+    "phon": "/ˈæk.tʃu.əl/",
+    "cn": "实际的"
   },
   {
-    "en": "silk",
-    "phon": "/sɪlk/",
-    "cn": "丝绸"
+    "en": "suit",
+    "phon": "/suːt/",
+    "cn": "西装"
   },
   {
-    "en": "wool",
-    "phon": "/wʊl/",
-    "cn": "羊毛"
+    "en": "brave",
+    "phon": "/breɪv/",
+    "cn": "勇敢的"
   },
   {
-    "en": "leather",
-    "phon": "/ˈleð.ər/",
-    "cn": "皮革"
+    "en": "blame",
+    "phon": "/bleɪm/",
+    "cn": "责备"
   },
   {
-    "en": "denim",
-    "phon": "/ˈden.ɪm/",
-    "cn": "牛仔布"
-  },
-  {
-    "en": "pattern",
-    "phon": "/ˈpæt.ən/",
-    "cn": "图案"
-  },
-  {
-    "en": "stripe",
-    "phon": "/straɪp/",
-    "cn": "条纹"
-  },
-  {
-    "en": "plaid",
-    "phon": "/plæd/",
-    "cn": "格子"
-  },
-  {
-    "en": "colorful",
-    "phon": "/ˈkʌl.ər.fəl/",
-    "cn": "多彩的"
-  },
-  {
-    "en": "fashion",
-    "phon": "/ˈfæʃ.ən/",
-    "cn": "时尚"
+    "en": "tie",
+    "phon": "/taɪ/",
+    "cn": "领带"
   },
   {
     "en": "style",
@@ -210,24 +115,94 @@
     "cn": "风格"
   },
   {
-    "en": "unarter",
-    "phon": "/unarter/",
-    "cn": "unarter"
+    "en": "cotton",
+    "phon": "/ˈkɒt.ən/",
+    "cn": "棉"
   },
   {
-    "en": "brand",
-    "phon": "/brænd/",
-    "cn": "品牌"
+    "en": "against",
+    "phon": "/əˈɡen.st/",
+    "cn": "反对"
   },
   {
-    "en": "size",
-    "phon": "/saɪz/",
-    "cn": "尺码"
+    "en": "sneakers",
+    "phon": "/ˈsniː.kərz/",
+    "cn": "运动鞋"
   },
   {
-    "en": "medium",
-    "phon": "/ˈmiː.di.əm/",
-    "cn": "中号"
+    "en": "audience",
+    "phon": "/ˈɔː.di.əns/",
+    "cn": "观众"
+  },
+  {
+    "en": "denim",
+    "phon": "/ˈden.ɪm/",
+    "cn": "牛仔布"
+  },
+  {
+    "en": "stripe",
+    "phon": "/straɪp/",
+    "cn": "条纹"
+  },
+  {
+    "en": "uniform",
+    "phon": "/ˈjuː.nɪ.fɔːrm/",
+    "cn": "制服"
+  },
+  {
+    "en": "believe",
+    "phon": "/bɪˈliːv/",
+    "cn": "相信"
+  },
+  {
+    "en": "fashion",
+    "phon": "/ˈfæʃ.ən/",
+    "cn": "时尚"
+  },
+  {
+    "en": "advice",
+    "phon": "/ədˈvaɪs/",
+    "cn": "建议"
+  },
+  {
+    "en": "pocket",
+    "phon": "/ˈpɒk.ɪt/",
+    "cn": "口袋"
+  },
+  {
+    "en": "colorful",
+    "phon": "/ˈkʌl.ər.fəl/",
+    "cn": "多彩的"
+  },
+  {
+    "en": "behavior",
+    "phon": "/bɪˈheɪ.vjər/",
+    "cn": "行为"
+  },
+  {
+    "en": "accurate",
+    "phon": "/ˈæk.jə.rət/",
+    "cn": "准确的"
+  },
+  {
+    "en": "shorts",
+    "phon": "/ʃɔːrts/",
+    "cn": "短裤"
+  },
+  {
+    "en": "cap",
+    "phon": "/kæp/",
+    "cn": "鸭舌帽"
+  },
+  {
+    "en": "button",
+    "phon": "/ˈbʌt.ən/",
+    "cn": "纽扣"
+  },
+  {
+    "en": "T-shirt",
+    "phon": "/ˈtiː.ʃɜːrt/",
+    "cn": "T恤"
   },
   {
     "en": "large",
@@ -235,18 +210,43 @@
     "cn": "大号"
   },
   {
-    "en": "unartor",
-    "phon": "/unartor/",
-    "cn": "unartor"
+    "en": "plaid",
+    "phon": "/plæd/",
+    "cn": "格子"
   },
   {
-    "en": "unartist",
-    "phon": "/unartist/",
-    "cn": "unartist"
+    "en": "sleeve",
+    "phon": "/sliːv/",
+    "cn": "袖子"
   },
   {
-    "en": "unartism",
-    "phon": "/unartism/",
-    "cn": "unartism"
+    "en": "appropriate",
+    "phon": "/əˈproʊ.pri.ət/",
+    "cn": "适当的"
+  },
+  {
+    "en": "belt",
+    "phon": "/belt/",
+    "cn": "腰带"
+  },
+  {
+    "en": "avoid",
+    "phon": "/əˈvɔɪd/",
+    "cn": "避免"
+  },
+  {
+    "en": "size",
+    "phon": "/saɪz/",
+    "cn": "尺码"
+  },
+  {
+    "en": "wool",
+    "phon": "/wʊl/",
+    "cn": "羊毛"
+  },
+  {
+    "en": "slippers",
+    "phon": "/ˈslɪp.ərz/",
+    "cn": "拖鞋"
   }
 ]

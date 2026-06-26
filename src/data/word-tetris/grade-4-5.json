@@ -1,103 +1,23 @@
 [
   {
-    "en": "unactable",
-    "phon": "/unactable/",
-    "cn": "unactable"
+    "en": "argue",
+    "phon": "/ˈɑːr.ɡjuː/",
+    "cn": "争论"
   },
   {
-    "en": "unactible",
-    "phon": "/unactible/",
-    "cn": "unactible"
+    "en": "afford",
+    "phon": "/əˈfɔːrd/",
+    "cn": "负担得起"
   },
   {
-    "en": "unactal",
-    "phon": "/unactal/",
-    "cn": "unactal"
+    "en": "audience",
+    "phon": "/ˈɔː.di.əns/",
+    "cn": "观众"
   },
   {
-    "en": "scared",
-    "phon": "/skeəd/",
-    "cn": "害怕的"
-  },
-  {
-    "en": "surprised",
-    "phon": "/sərˈpraɪzd/",
-    "cn": "惊讶的"
-  },
-  {
-    "en": "excited",
-    "phon": "/ɪkˈsaɪ.tɪd/",
-    "cn": "兴奋的"
-  },
-  {
-    "en": "nervous",
-    "phon": "/ˈnɜːr.vəs/",
-    "cn": "紧张的"
-  },
-  {
-    "en": "worried",
-    "phon": "/ˈwʌr.id/",
-    "cn": "担心的"
-  },
-  {
-    "en": "proud",
-    "phon": "/praʊd/",
-    "cn": "骄傲的"
-  },
-  {
-    "en": "unactial",
-    "phon": "/unactial/",
-    "cn": "unactial"
-  },
-  {
-    "en": "jealous",
-    "phon": "/ˈdʒel.əs/",
-    "cn": "嫉妒的"
-  },
-  {
-    "en": "unactly",
-    "phon": "/unactly/",
-    "cn": "unactly"
-  },
-  {
-    "en": "confused",
-    "phon": "/kənˈfjuːzd/",
-    "cn": "困惑的"
-  },
-  {
-    "en": "disappointed",
-    "phon": "/ˌdɪs.əˈpɔɪn.tɪd/",
-    "cn": "失望的"
-  },
-  {
-    "en": "embarrassed",
-    "phon": "/ɪmˈbær.əst/",
-    "cn": "尴尬的"
-  },
-  {
-    "en": "relieved",
-    "phon": "/rɪˈliːvd/",
-    "cn": "松了一口气的"
-  },
-  {
-    "en": "grateful",
-    "phon": "/ˈɡreɪt.fəl/",
-    "cn": "感激的"
-  },
-  {
-    "en": "content",
-    "phon": "/kənˈtent/",
-    "cn": "满足的"
-  },
-  {
-    "en": "bored",
-    "phon": "/bɔːrd/",
-    "cn": "无聊的"
-  },
-  {
-    "en": "unacter",
-    "phon": "/unacter/",
-    "cn": "unacter"
+    "en": "annual",
+    "phon": "/ˈæn.ju.əl/",
+    "cn": "每年的"
   },
   {
     "en": "confident",
@@ -105,84 +25,24 @@
     "cn": "自信的"
   },
   {
-    "en": "unactor",
-    "phon": "/unactor/",
-    "cn": "unactor"
+    "en": "weak",
+    "phon": "/wiːk/",
+    "cn": "虚弱的"
   },
   {
-    "en": "unactist",
-    "phon": "/unactist/",
-    "cn": "unactist"
+    "en": "surprised",
+    "phon": "/sərˈpraɪzd/",
+    "cn": "惊讶的"
   },
   {
-    "en": "unactism",
-    "phon": "/unactism/",
-    "cn": "unactism"
+    "en": "adventure",
+    "phon": "/ədˈven.tʃər/",
+    "cn": "冒险"
   },
   {
-    "en": "unactize",
-    "phon": "/unactize/",
-    "cn": "unactize"
-  },
-  {
-    "en": "unactise",
-    "phon": "/unactise/",
-    "cn": "unactise"
-  },
-  {
-    "en": "unactify",
-    "phon": "/unactify/",
-    "cn": "unactify"
-  },
-  {
-    "en": "unactate",
-    "phon": "/unactate/",
-    "cn": "unactate"
-  },
-  {
-    "en": "unactent",
-    "phon": "/unactent/",
-    "cn": "unactent"
-  },
-  {
-    "en": "careless",
-    "phon": "/ˈkeə.ləs/",
-    "cn": "粗心的"
-  },
-  {
-    "en": "unactant",
-    "phon": "/unactant/",
-    "cn": "unactant"
-  },
-  {
-    "en": "unactary",
-    "phon": "/unactary/",
-    "cn": "unactary"
-  },
-  {
-    "en": "unactory",
-    "phon": "/unactory/",
-    "cn": "unactory"
-  },
-  {
-    "en": "serious",
-    "phon": "/ˈsɪər.i.əs/",
-    "cn": "严肃的"
-  },
-  {
-    "en": "unactdom",
-    "phon": "/unactdom/",
-    "cn": "unactdom"
-  },
-  {
-    "en": "unactship",
-    "phon": "/unactship/",
-    "cn": "unactship"
-  },
-  {
-    "en": "unactward",
-    "phon": "/unactward/",
-    "cn": "unactward"
+    "en": "agriculture",
+    "phon": "/ˈæɡ.rɪ.kʌl.tʃər/",
+    "cn": "农业"
   },
   {
     "en": "mean",
@@ -190,9 +50,54 @@
     "cn": "刻薄的"
   },
   {
-    "en": "unactwise",
-    "phon": "/unactwise/",
-    "cn": "unactwise"
+    "en": "worried",
+    "phon": "/ˈwʌr.id/",
+    "cn": "担心的"
+  },
+  {
+    "en": "benefit",
+    "phon": "/ˈben.ɪ.fɪt/",
+    "cn": "好处"
+  },
+  {
+    "en": "avoid",
+    "phon": "/əˈvɔɪd/",
+    "cn": "避免"
+  },
+  {
+    "en": "article",
+    "phon": "/ˈɑːr.tɪ.kəl/",
+    "cn": "文章"
+  },
+  {
+    "en": "burden",
+    "phon": "/ˈbɜːr.dən/",
+    "cn": "负担"
+  },
+  {
+    "en": "attempt",
+    "phon": "/əˈtempt/",
+    "cn": "尝试"
+  },
+  {
+    "en": "agreement",
+    "phon": "/əˈɡriː.mənt/",
+    "cn": "协议"
+  },
+  {
+    "en": "grateful",
+    "phon": "/ˈɡreɪt.fəl/",
+    "cn": "感激的"
+  },
+  {
+    "en": "believe",
+    "phon": "/bɪˈliːv/",
+    "cn": "相信"
+  },
+  {
+    "en": "breath",
+    "phon": "/breθ/",
+    "cn": "呼吸"
   },
   {
     "en": "silly",
@@ -200,53 +105,148 @@
     "cn": "愚蠢的"
   },
   {
+    "en": "careless",
+    "phon": "/ˈkeə.ləs/",
+    "cn": "粗心的"
+  },
+  {
+    "en": "disappointed",
+    "phon": "/ˌdɪs.əˈpɔɪn.tɪd/",
+    "cn": "失望的"
+  },
+  {
+    "en": "excited",
+    "phon": "/ɪkˈsaɪ.tɪd/",
+    "cn": "兴奋的"
+  },
+  {
+    "en": "blame",
+    "phon": "/bleɪm/",
+    "cn": "责备"
+  },
+  {
+    "en": "nervous",
+    "phon": "/ˈnɜːr.vəs/",
+    "cn": "紧张的"
+  },
+  {
+    "en": "serious",
+    "phon": "/ˈsɪər.i.əs/",
+    "cn": "严肃的"
+  },
+  {
+    "en": "bargain",
+    "phon": "/ˈbɑːr.ɡən/",
+    "cn": "讨价还价"
+  },
+  {
+    "en": "arrange",
+    "phon": "/əˈreɪndʒ/",
+    "cn": "安排"
+  },
+  {
+    "en": "scared",
+    "phon": "/skeəd/",
+    "cn": "害怕的"
+  },
+  {
+    "en": "embarrassed",
+    "phon": "/ɪmˈbær.əst/",
+    "cn": "尴尬的"
+  },
+  {
+    "en": "against",
+    "phon": "/əˈɡen.st/",
+    "cn": "反对"
+  },
+  {
+    "en": "jealous",
+    "phon": "/ˈdʒel.əs/",
+    "cn": "嫉妒的"
+  },
+  {
+    "en": "relieved",
+    "phon": "/rɪˈliːvd/",
+    "cn": "松了一口气的"
+  },
+  {
+    "en": "absent",
+    "phon": "/ˈæb.sənt/",
+    "cn": "缺席"
+  },
+  {
+    "en": "confused",
+    "phon": "/kənˈfjuːzd/",
+    "cn": "困惑的"
+  },
+  {
+    "en": "brave",
+    "phon": "/breɪv/",
+    "cn": "勇敢的"
+  },
+  {
+    "en": "proud",
+    "phon": "/praʊd/",
+    "cn": "骄傲的"
+  },
+  {
+    "en": "content",
+    "phon": "/kənˈtent/",
+    "cn": "满足的"
+  },
+  {
+    "en": "active",
+    "phon": "/ˈæk.tɪv/",
+    "cn": "积极的"
+  },
+  {
     "en": "strong",
     "phon": "/strɒŋ/",
     "cn": "强壮的"
   },
   {
-    "en": "weak",
-    "phon": "/wiːk/",
-    "cn": "虚弱的"
+    "en": "bored",
+    "phon": "/bɔːrd/",
+    "cn": "无聊的"
   },
   {
-    "en": "unactling",
-    "phon": "/unactling/",
-    "cn": "unactling"
+    "en": "accurate",
+    "phon": "/ˈæk.jə.rət/",
+    "cn": "准确的"
   },
   {
-    "en": "unactlet",
-    "phon": "/unactlet/",
-    "cn": "unactlet"
+    "en": "aspect",
+    "phon": "/ˈæs.pekt/",
+    "cn": "方面"
   },
   {
-    "en": "unactette",
-    "phon": "/unactette/",
-    "cn": "unactette"
+    "en": "applause",
+    "phon": "/əˈplɔːz/",
+    "cn": "鼓掌"
   },
   {
-    "en": "unarttion",
-    "phon": "/unarttion/",
-    "cn": "unarttion"
+    "en": "appropriate",
+    "phon": "/əˈproʊ.pri.ət/",
+    "cn": "适当的"
   },
   {
-    "en": "unartsion",
-    "phon": "/unartsion/",
-    "cn": "unartsion"
+    "en": "available",
+    "phon": "/əˈveɪ.lə.bəl/",
+    "cn": "可用的"
   },
   {
-    "en": "unartment",
-    "phon": "/unartment/",
-    "cn": "unartment"
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "接近"
   },
   {
-    "en": "unartness",
-    "phon": "/unartness/",
-    "cn": "unartness"
+    "en": "advice",
+    "phon": "/ədˈvaɪs/",
+    "cn": "建议"
   },
   {
-    "en": "unartity",
-    "phon": "/unartity/",
-    "cn": "unartity"
+    "en": "accident",
+    "phon": "/ˈæk.sə.dənt/",
+    "cn": "事故"
   }
 ]

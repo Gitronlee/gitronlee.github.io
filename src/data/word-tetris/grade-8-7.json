@@ -1,53 +1,88 @@
 [
   {
-    "en": "uncognive",
-    "phon": "/uncognive/",
-    "cn": "uncognive"
+    "en": "epicureanism",
+    "phon": "/ˌep.ɪˌkjʊər.iˈæn.ɪ.zəm/",
+    "cn": "伊壁鸠鲁主义"
   },
   {
-    "en": "uncognful",
-    "phon": "/uncognful/",
-    "cn": "uncognful"
+    "en": "fatalism",
+    "phon": "/ˈfeɪ.təl.ɪ.zəm/",
+    "cn": "宿命论"
   },
   {
-    "en": "uncognless",
-    "phon": "/uncognless/",
-    "cn": "uncognless"
+    "en": "adjacent",
+    "phon": "/əˈdʒeɪ.sənt/",
+    "cn": "邻近的"
   },
   {
-    "en": "uncognable",
-    "phon": "/uncognable/",
-    "cn": "uncognable"
+    "en": "monism",
+    "phon": "/ˈməʊ.nɪ.zəm/",
+    "cn": "一元论"
   },
   {
-    "en": "uncognible",
-    "phon": "/uncognible/",
-    "cn": "uncognible"
+    "en": "structuralism",
+    "phon": "/ˈstrʌk.tʃər.əl.ɪ.zəm/",
+    "cn": "结构主义"
   },
   {
-    "en": "uncognal",
-    "phon": "/uncognal/",
-    "cn": "uncognal"
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
   },
   {
-    "en": "uncognial",
-    "phon": "/uncognial/",
-    "cn": "uncognial"
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
   },
   {
-    "en": "uncognly",
-    "phon": "/uncognly/",
-    "cn": "uncognly"
+    "en": "free will",
+    "phon": "/friː wɪl/",
+    "cn": "自由意志"
   },
   {
-    "en": "uncogner",
-    "phon": "/uncogner/",
-    "cn": "uncogner"
+    "en": "conceive",
+    "phon": "/kənˈsiːv/",
+    "cn": "构想"
   },
   {
-    "en": "utilitarianism",
-    "phon": "/ˌjuːˌtɪl.ɪˈteər.i.ən.ɪ.zəm/",
-    "cn": "功利主义"
+    "en": "catastrophe",
+    "phon": "/kəˈtæs.trə.fi/",
+    "cn": "灾难"
+  },
+  {
+    "en": "cynicism",
+    "phon": "/ˈsɪn.ɪ.sɪ.zəm/",
+    "cn": "犬儒主义"
+  },
+  {
+    "en": "conflict",
+    "phon": "/ˈkɒn.flɪkt/",
+    "cn": "冲突"
+  },
+  {
+    "en": "complement",
+    "phon": "/ˈkɒm.plɪ.ment/",
+    "cn": "补充"
+  },
+  {
+    "en": "consequentialism",
+    "phon": "/ˌkɒn.sɪˈkwen.ʃəl.ɪ.zəm/",
+    "cn": "后果主义"
+  },
+  {
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
+  },
+  {
+    "en": "assert",
+    "phon": "/əˈsɜːrt/",
+    "cn": "断言"
+  },
+  {
+    "en": "confirm",
+    "phon": "/kənˈfɜːrm/",
+    "cn": "确认"
   },
   {
     "en": "deontology",
@@ -60,149 +95,19 @@
     "cn": "美德伦理"
   },
   {
-    "en": "consequentialism",
-    "phon": "/ˌkɒn.sɪˈkwen.ʃəl.ɪ.zəm/",
-    "cn": "后果主义"
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
   },
   {
-    "en": "uncognor",
-    "phon": "/uncognor/",
-    "cn": "uncognor"
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
   },
   {
-    "en": "uncognist",
-    "phon": "/uncognist/",
-    "cn": "uncognist"
-  },
-  {
-    "en": "uncognism",
-    "phon": "/uncognism/",
-    "cn": "uncognism"
-  },
-  {
-    "en": "uncognize",
-    "phon": "/uncognize/",
-    "cn": "uncognize"
-  },
-  {
-    "en": "uncognise",
-    "phon": "/uncognise/",
-    "cn": "uncognise"
-  },
-  {
-    "en": "uncognify",
-    "phon": "/uncognify/",
-    "cn": "uncognify"
-  },
-  {
-    "en": "empiricism",
-    "phon": "/ɪmˈpɪr.ɪ.sɪ.zəm/",
-    "cn": "经验主义"
-  },
-  {
-    "en": "rationalism",
-    "phon": "/ˈræʃ.ən.əl.ɪ.zəm/",
-    "cn": "理性主义"
-  },
-  {
-    "en": "materialism",
-    "phon": "/məˈtɪər.i.əl.ɪ.zəm/",
-    "cn": "唯物主义"
-  },
-  {
-    "en": "dualism",
-    "phon": "/ˈdjuː.əl.ɪ.zəm/",
-    "cn": "二元论"
-  },
-  {
-    "en": "monism",
-    "phon": "/ˈməʊ.nɪ.zəm/",
-    "cn": "一元论"
-  },
-  {
-    "en": "pantheism",
-    "phon": "/ˈpæn.θi.ɪ.zəm/",
-    "cn": "泛神论"
-  },
-  {
-    "en": "determinism",
-    "phon": "/dɪˈtɜːr.mɪ.nɪ.zəm/",
-    "cn": "决定论"
-  },
-  {
-    "en": "free will",
-    "phon": "/friː wɪl/",
-    "cn": "自由意志"
-  },
-  {
-    "en": "compatibilism",
-    "phon": "/kəmˈpæt.ɪ.bəl.ɪ.zəm/",
-    "cn": "相容论"
-  },
-  {
-    "en": "fatalism",
-    "phon": "/ˈfeɪ.təl.ɪ.zəm/",
-    "cn": "宿命论"
-  },
-  {
-    "en": "hedonism",
-    "phon": "/ˈhiː.dən.ɪ.zəm/",
-    "cn": "享乐主义"
-  },
-  {
-    "en": "stoicism",
-    "phon": "/ˈstəʊ.ɪ.sɪ.zəm/",
-    "cn": "斯多葛主义"
-  },
-  {
-    "en": "epicureanism",
-    "phon": "/ˌep.ɪˌkjʊər.iˈæn.ɪ.zəm/",
-    "cn": "伊壁鸠鲁主义"
-  },
-  {
-    "en": "cynicism",
-    "phon": "/ˈsɪn.ɪ.sɪ.zəm/",
-    "cn": "犬儒主义"
-  },
-  {
-    "en": "sophism",
-    "phon": "/ˈsɒf.ɪ.zəm/",
-    "cn": "诡辩"
-  },
-  {
-    "en": "uncognate",
-    "phon": "/uncognate/",
-    "cn": "uncognate"
-  },
-  {
-    "en": "uncognent",
-    "phon": "/uncognent/",
-    "cn": "uncognent"
-  },
-  {
-    "en": "uncognant",
-    "phon": "/uncognant/",
-    "cn": "uncognant"
-  },
-  {
-    "en": "structuralism",
-    "phon": "/ˈstrʌk.tʃər.əl.ɪ.zəm/",
-    "cn": "结构主义"
-  },
-  {
-    "en": "post-structuralism",
-    "phon": "/pəʊst ˈstrʌk.tʃər.əl.ɪ.zəm/",
-    "cn": "后结构主义"
-  },
-  {
-    "en": "deconstruction",
-    "phon": "/ˌdiː.kənˈstrʌk.ʃən/",
-    "cn": "解构"
-  },
-  {
-    "en": "uncognary",
-    "phon": "/uncognary/",
-    "cn": "uncognary"
+    "en": "conclude",
+    "phon": "/kənˈkluːd/",
+    "cn": "结论"
   },
   {
     "en": "narratology",
@@ -210,43 +115,138 @@
     "cn": "叙事学"
   },
   {
-    "en": "uncognory",
-    "phon": "/uncognory/",
-    "cn": "uncognory"
+    "en": "rationalism",
+    "phon": "/ˈræʃ.ən.əl.ɪ.zəm/",
+    "cn": "理性主义"
   },
   {
-    "en": "uncogndom",
-    "phon": "/uncogndom/",
-    "cn": "uncogndom"
+    "en": "confine",
+    "phon": "/kənˈfaɪn/",
+    "cn": "限制"
   },
   {
-    "en": "uncognship",
-    "phon": "/uncognship/",
-    "cn": "uncognship"
+    "en": "collaborate",
+    "phon": "/kəˈlæb.ə.reɪt/",
+    "cn": "合作"
   },
   {
-    "en": "uncognward",
-    "phon": "/uncognward/",
-    "cn": "uncognward"
+    "en": "materialism",
+    "phon": "/məˈtɪər.i.əl.ɪ.zəm/",
+    "cn": "唯物主义"
   },
   {
-    "en": "uncognwise",
-    "phon": "/uncognwise/",
-    "cn": "uncognwise"
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
   },
   {
-    "en": "uncognling",
-    "phon": "/uncognling/",
-    "cn": "uncognling"
+    "en": "utilitarianism",
+    "phon": "/ˌjuːˌtɪl.ɪˈteər.i.ən.ɪ.zəm/",
+    "cn": "功利主义"
   },
   {
-    "en": "uncognlet",
-    "phon": "/uncognlet/",
-    "cn": "uncognlet"
+    "en": "stoicism",
+    "phon": "/ˈstəʊ.ɪ.sɪ.zəm/",
+    "cn": "斯多葛主义"
   },
   {
-    "en": "uncognette",
-    "phon": "/uncognette/",
-    "cn": "uncognette"
+    "en": "concentrate",
+    "phon": "/ˈkɒn.sən.treɪt/",
+    "cn": "集中"
+  },
+  {
+    "en": "empiricism",
+    "phon": "/ɪmˈpɪr.ɪ.sɪ.zəm/",
+    "cn": "经验主义"
+  },
+  {
+    "en": "post-structuralism",
+    "phon": "/pəʊst ˈstrʌk.tʃər.əl.ɪ.zəm/",
+    "cn": "后结构主义"
+  },
+  {
+    "en": "compensate",
+    "phon": "/ˈkɒm.pen.seɪt/",
+    "cn": "补偿"
+  },
+  {
+    "en": "pantheism",
+    "phon": "/ˈpæn.θi.ɪ.zəm/",
+    "cn": "泛神论"
+  },
+  {
+    "en": "commemorate",
+    "phon": "/kəˈmem.ə.reɪt/",
+    "cn": "纪念"
+  },
+  {
+    "en": "dualism",
+    "phon": "/ˈdjuː.əl.ɪ.zəm/",
+    "cn": "二元论"
+  },
+  {
+    "en": "deconstruction",
+    "phon": "/ˌdiː.kənˈstrʌk.ʃən/",
+    "cn": "解构"
+  },
+  {
+    "en": "aggregate",
+    "phon": "/ˈæɡ.rɪ.ɡət/",
+    "cn": "总计"
+  },
+  {
+    "en": "comprehensive",
+    "phon": "/ˌkɒm.prɪˈhen.sɪv/",
+    "cn": "全面的"
+  },
+  {
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
+  },
+  {
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
+  },
+  {
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "compatibilism",
+    "phon": "/kəmˈpæt.ɪ.bəl.ɪ.zəm/",
+    "cn": "相容论"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "authentic",
+    "phon": "/ɔːˈθen.tɪk/",
+    "cn": "真实的"
+  },
+  {
+    "en": "hedonism",
+    "phon": "/ˈhiː.dən.ɪ.zəm/",
+    "cn": "享乐主义"
+  },
+  {
+    "en": "sophism",
+    "phon": "/ˈsɒf.ɪ.zəm/",
+    "cn": "诡辩"
+  },
+  {
+    "en": "apparatus",
+    "phon": "/ˌæp.əˈreɪ.təs/",
+    "cn": "器械"
+  },
+  {
+    "en": "determinism",
+    "phon": "/dɪˈtɜːr.mɪ.nɪ.zəm/",
+    "cn": "决定论"
   }
 ]

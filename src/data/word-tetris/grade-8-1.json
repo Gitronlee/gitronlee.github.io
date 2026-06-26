@@ -1,203 +1,13 @@
 [
   {
-    "en": "abstraction",
-    "phon": "/æbˈstræk.ʃən/",
-    "cn": "抽象"
-  },
-  {
-    "en": "generalization",
-    "phon": "/ˌdʒen.ər.əl.aɪˈzeɪ.ʃən/",
-    "cn": "概括"
-  },
-  {
-    "en": "specification",
-    "phon": "/ˌspes.ɪ.fɪˈkeɪ.ʃən/",
-    "cn": "具体化"
-  },
-  {
-    "en": "categorization",
-    "phon": "/ˌkæt.ə.ɡər.aɪˈzeɪ.ʃən/",
-    "cn": "分类"
-  },
-  {
-    "en": "classification",
-    "phon": "/ˌklæs.ɪ.fɪˈkeɪ.ʃən/",
-    "cn": "分类"
-  },
-  {
-    "en": "systematization",
-    "phon": "/sɪˌsɪs.təm.ə.taɪˈzeɪ.ʃən/",
-    "cn": "系统化"
-  },
-  {
-    "en": "formalization",
-    "phon": "/ˌfɔːr.məl.aɪˈzeɪ.ʃən/",
-    "cn": "形式化"
-  },
-  {
-    "en": "conceptualization",
-    "phon": "/kənˌsep.tʃu.əl.aɪˈzeɪ.ʃən/",
-    "cn": "概念化"
-  },
-  {
-    "en": "unclineent",
-    "phon": "/unclineent/",
-    "cn": "unclineent"
-  },
-  {
-    "en": "empirical",
-    "phon": "/ɪmˈpɪr.ɪ.kəl/",
-    "cn": "实证的"
-  },
-  {
-    "en": "theoretical",
-    "phon": "/θɪəˈret.ɪ.kəl/",
-    "cn": "理论的"
-  },
-  {
-    "en": "quantitative",
-    "phon": "/ˈkwɒn.tɪ.tə.tɪv/",
-    "cn": "定量的"
-  },
-  {
-    "en": "qualitative",
-    "phon": "/ˈkwɒl.ɪ.tə.tɪv/",
-    "cn": "定性的"
-  },
-  {
-    "en": "statistical",
-    "phon": "/stəˈtɪs.tɪ.kəl/",
-    "cn": "统计的"
-  },
-  {
-    "en": "probability",
-    "phon": "/ˌprɒb.əˈbɪl.ə.ti/",
-    "cn": "概率"
-  },
-  {
-    "en": "regression",
-    "phon": "/rɪˈɡreʃ.ən/",
-    "cn": "回归"
-  },
-  {
-    "en": "unclineant",
-    "phon": "/unclineant/",
-    "cn": "unclineant"
-  },
-  {
-    "en": "standard deviation",
-    "phon": "/ˈstæn.dəd ˌdiː.viˈeɪ.ʃən/",
-    "cn": "标准差"
-  },
-  {
-    "en": "unclineary",
-    "phon": "/unclineary/",
-    "cn": "unclineary"
-  },
-  {
-    "en": "median",
-    "phon": "/ˈmiː.di.ən/",
-    "cn": "中位数"
-  },
-  {
     "en": "mode",
     "phon": "/məʊd/",
     "cn": "众数"
   },
   {
-    "en": "variance",
-    "phon": "/ˈveər.i.əns/",
-    "cn": "方差"
-  },
-  {
-    "en": "sample",
-    "phon": "/ˈsɑː.məl/",
-    "cn": "样本"
-  },
-  {
-    "en": "population",
-    "phon": "/ˌpɒp.juˈleɪ.ʃən/",
-    "cn": "总体"
-  },
-  {
-    "en": "unclineory",
-    "phon": "/unclineory/",
-    "cn": "unclineory"
-  },
-  {
-    "en": "unclinedom",
-    "phon": "/unclinedom/",
-    "cn": "unclinedom"
-  },
-  {
-    "en": "control group",
-    "phon": "/kənˈtrəʊl ɡruːp/",
-    "cn": "对照组"
-  },
-  {
-    "en": "unclineship",
-    "phon": "/unclineship/",
-    "cn": "unclineship"
-  },
-  {
-    "en": "unclineward",
-    "phon": "/unclineward/",
-    "cn": "unclineward"
-  },
-  {
-    "en": "hypothesis testing",
-    "phon": "/haɪˈpɒθ.ə.sɪs ˈtes.tɪŋ/",
-    "cn": "假设检验"
-  },
-  {
-    "en": "null hypothesis",
-    "phon": "/nʌl haɪˈpɒθ.ə.sɪs/",
-    "cn": "零假设"
-  },
-  {
-    "en": "p-value",
-    "phon": "/piː ˈvæl.juː/",
-    "cn": "p值"
-  },
-  {
-    "en": "significance",
-    "phon": "/sɪɡˈnɪf.ɪ.kəns/",
-    "cn": "显著性"
-  },
-  {
-    "en": "confidence interval",
-    "phon": "/ˈkɒn.fɪ.dəns ˈɪn.tə.vəl/",
-    "cn": "置信区间"
-  },
-  {
-    "en": "peer review",
-    "phon": "/pɪər rɪˈvjuː/",
-    "cn": "同行评审"
-  },
-  {
-    "en": "citation",
-    "phon": "/saɪˈteɪ.ʃən/",
-    "cn": "引用"
-  },
-  {
-    "en": "plagiarism",
-    "phon": "/ˈpleɪ.dʒər.ɪ.zəm/",
-    "cn": "抄袭"
-  },
-  {
-    "en": "bibliography",
-    "phon": "/ˌbɪb.liˈɒɡ.rə.fi/",
-    "cn": "参考文献"
-  },
-  {
-    "en": "thesis",
-    "phon": "/ˈθiː.sɪs/",
-    "cn": "论文"
-  },
-  {
-    "en": "dissertation",
-    "phon": "/ˌdɪs.ərˈteɪ.ʃən/",
-    "cn": "学位论文"
+    "en": "assert",
+    "phon": "/əˈsɜːrt/",
+    "cn": "断言"
   },
   {
     "en": "abstract",
@@ -205,24 +15,59 @@
     "cn": "摘要"
   },
   {
-    "en": "unclinewise",
-    "phon": "/unclinewise/",
-    "cn": "unclinewise"
+    "en": "probability",
+    "phon": "/ˌprɒb.əˈbɪl.ə.ti/",
+    "cn": "概率"
   },
   {
-    "en": "literature review",
-    "phon": "/ˈlɪt.ər.ə.tʃər rɪˈvjuː/",
-    "cn": "文献综述"
+    "en": "peer review",
+    "phon": "/pɪər rɪˈvjuː/",
+    "cn": "同行评审"
   },
   {
-    "en": "appendix",
-    "phon": "/əˈpen.dɪks/",
-    "cn": "附录"
+    "en": "classification",
+    "phon": "/ˌklæs.ɪ.fɪˈkeɪ.ʃən/",
+    "cn": "分类"
   },
   {
-    "en": "footnote",
-    "phon": "/ˈfʊt.nəʊt/",
-    "cn": "脚注"
+    "en": "significance",
+    "phon": "/sɪɡˈnɪf.ɪ.kəns/",
+    "cn": "显著性"
+  },
+  {
+    "en": "null hypothesis",
+    "phon": "/nʌl haɪˈpɒθ.ə.sɪs/",
+    "cn": "零假设"
+  },
+  {
+    "en": "conceptualization",
+    "phon": "/kənˌsep.tʃu.əl.aɪˈzeɪ.ʃən/",
+    "cn": "概念化"
+  },
+  {
+    "en": "statistical",
+    "phon": "/stəˈtɪs.tɪ.kəl/",
+    "cn": "统计的"
+  },
+  {
+    "en": "standard deviation",
+    "phon": "/ˈstæn.dəd ˌdiː.viˈeɪ.ʃən/",
+    "cn": "标准差"
+  },
+  {
+    "en": "thesis",
+    "phon": "/ˈθiː.sɪs/",
+    "cn": "论文"
+  },
+  {
+    "en": "articulate",
+    "phon": "/ɑːrˈtɪk.jə.leɪt/",
+    "cn": "清晰表达"
+  },
+  {
+    "en": "sample",
+    "phon": "/ˈsɑː.məl/",
+    "cn": "样本"
   },
   {
     "en": "peer",
@@ -230,14 +75,29 @@
     "cn": "同行"
   },
   {
-    "en": "scholar",
-    "phon": "/ˈskɒl.ər/",
-    "cn": "学者"
+    "en": "confirm",
+    "phon": "/kənˈfɜːrm/",
+    "cn": "确认"
   },
   {
-    "en": "academia",
-    "phon": "/ˌæk.əˈdiː.mi.ə/",
-    "cn": "学术界"
+    "en": "citation",
+    "phon": "/saɪˈteɪ.ʃən/",
+    "cn": "引用"
+  },
+  {
+    "en": "categorization",
+    "phon": "/ˌkæt.ə.ɡər.aɪˈzeɪ.ʃən/",
+    "cn": "分类"
+  },
+  {
+    "en": "accommodate",
+    "phon": "/əˈkɒm.ə.deɪt/",
+    "cn": "容纳"
+  },
+  {
+    "en": "hypothesis testing",
+    "phon": "/haɪˈpɒθ.ə.sɪs ˈtes.tɪŋ/",
+    "cn": "假设检验"
   },
   {
     "en": "colloquium",
@@ -245,8 +105,148 @@
     "cn": "学术讨论会"
   },
   {
+    "en": "formalization",
+    "phon": "/ˌfɔːr.məl.aɪˈzeɪ.ʃən/",
+    "cn": "形式化"
+  },
+  {
+    "en": "control group",
+    "phon": "/kənˈtrəʊl ɡruːp/",
+    "cn": "对照组"
+  },
+  {
+    "en": "scholar",
+    "phon": "/ˈskɒl.ər/",
+    "cn": "学者"
+  },
+  {
+    "en": "dissertation",
+    "phon": "/ˌdɪs.ərˈteɪ.ʃən/",
+    "cn": "学位论文"
+  },
+  {
+    "en": "population",
+    "phon": "/ˌpɒp.juˈleɪ.ʃən/",
+    "cn": "总体"
+  },
+  {
+    "en": "empirical",
+    "phon": "/ɪmˈpɪr.ɪ.kəl/",
+    "cn": "实证的"
+  },
+  {
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
+  },
+  {
+    "en": "literature review",
+    "phon": "/ˈlɪt.ər.ə.tʃər rɪˈvjuː/",
+    "cn": "文献综述"
+  },
+  {
+    "en": "qualitative",
+    "phon": "/ˈkwɒl.ɪ.tə.tɪv/",
+    "cn": "定性的"
+  },
+  {
+    "en": "p-value",
+    "phon": "/piː ˈvæl.juː/",
+    "cn": "p值"
+  },
+  {
+    "en": "systematization",
+    "phon": "/sɪˌsɪs.təm.ə.taɪˈzeɪ.ʃən/",
+    "cn": "系统化"
+  },
+  {
+    "en": "plagiarism",
+    "phon": "/ˈpleɪ.dʒər.ɪ.zəm/",
+    "cn": "抄袭"
+  },
+  {
+    "en": "academia",
+    "phon": "/ˌæk.əˈdiː.mi.ə/",
+    "cn": "学术界"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "median",
+    "phon": "/ˈmiː.di.ən/",
+    "cn": "中位数"
+  },
+  {
+    "en": "quantitative",
+    "phon": "/ˈkwɒn.tɪ.tə.tɪv/",
+    "cn": "定量的"
+  },
+  {
+    "en": "generalization",
+    "phon": "/ˌdʒen.ər.əl.aɪˈzeɪ.ʃən/",
+    "cn": "概括"
+  },
+  {
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚主义"
+  },
+  {
+    "en": "regression",
+    "phon": "/rɪˈɡreʃ.ən/",
+    "cn": "回归"
+  },
+  {
+    "en": "theoretical",
+    "phon": "/θɪəˈret.ɪ.kəl/",
+    "cn": "理论的"
+  },
+  {
+    "en": "compensate",
+    "phon": "/ˈkɒm.pen.seɪt/",
+    "cn": "补偿"
+  },
+  {
+    "en": "variance",
+    "phon": "/ˈveər.i.əns/",
+    "cn": "方差"
+  },
+  {
+    "en": "footnote",
+    "phon": "/ˈfʊt.nəʊt/",
+    "cn": "脚注"
+  },
+  {
+    "en": "specification",
+    "phon": "/ˌspes.ɪ.fɪˈkeɪ.ʃən/",
+    "cn": "具体化"
+  },
+  {
+    "en": "appendix",
+    "phon": "/əˈpen.dɪks/",
+    "cn": "附录"
+  },
+  {
+    "en": "bibliography",
+    "phon": "/ˌbɪb.liˈɒɡ.rə.fi/",
+    "cn": "参考文献"
+  },
+  {
+    "en": "abstraction",
+    "phon": "/æbˈstræk.ʃən/",
+    "cn": "抽象"
+  },
+  {
     "en": "symposium",
     "phon": "/sɪmˈpəʊ.zi.əm/",
     "cn": "研讨会"
+  },
+  {
+    "en": "confidence interval",
+    "phon": "/ˈkɒn.fɪ.dəns ˈɪn.tə.vəl/",
+    "cn": "置信区间"
   }
 ]

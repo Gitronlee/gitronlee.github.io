@@ -1,83 +1,8 @@
 [
   {
-    "en": "unartize",
-    "phon": "/unartize/",
-    "cn": "unartize"
-  },
-  {
-    "en": "home",
-    "phon": "/həʊm/",
-    "cn": "家"
-  },
-  {
-    "en": "room",
-    "phon": "/ruːm/",
-    "cn": "房间"
-  },
-  {
-    "en": "bedroom",
-    "phon": "/ˈbed.ruːm/",
-    "cn": "卧室"
-  },
-  {
-    "en": "bathroom",
-    "phon": "/ˈbɑːθ.ruːm/",
-    "cn": "浴室"
-  },
-  {
-    "en": "kitchen",
-    "phon": "/ˈkɪtʃ.ɪn/",
-    "cn": "厨房"
-  },
-  {
-    "en": "living room",
-    "phon": "/ˈlɪv.ɪŋ ruːm/",
-    "cn": "客厅"
-  },
-  {
-    "en": "dining room",
-    "phon": "/ˈdaɪ.nɪŋ ruːm/",
-    "cn": "餐厅"
-  },
-  {
-    "en": "garage",
-    "phon": "/ˈɡær.ɑːʒ/",
-    "cn": "车库"
-  },
-  {
-    "en": "balcony",
-    "phon": "/ˈbæl.kə.ni/",
-    "cn": "阳台"
-  },
-  {
-    "en": "basement",
-    "phon": "/ˈbeɪs.mənt/",
-    "cn": "地下室"
-  },
-  {
-    "en": "attic",
-    "phon": "/ˈæt.ɪk/",
-    "cn": "阁楼"
-  },
-  {
-    "en": "unartise",
-    "phon": "/unartise/",
-    "cn": "unartise"
-  },
-  {
-    "en": "unartify",
-    "phon": "/unartify/",
-    "cn": "unartify"
-  },
-  {
-    "en": "wall",
-    "phon": "/wɔːl/",
-    "cn": "墙"
-  },
-  {
-    "en": "floor",
-    "phon": "/flɔːr/",
-    "cn": "地板"
+    "en": "arrange",
+    "phon": "/əˈreɪndʒ/",
+    "cn": "安排"
   },
   {
     "en": "ceiling",
@@ -85,9 +10,9 @@
     "cn": "天花板"
   },
   {
-    "en": "roof",
-    "phon": "/ruːf/",
-    "cn": "屋顶"
+    "en": "table",
+    "phon": "/ˈteɪ.bəl/",
+    "cn": "桌子"
   },
   {
     "en": "stair",
@@ -95,19 +20,24 @@
     "cn": "楼梯"
   },
   {
-    "en": "fence",
-    "phon": "/fens/",
-    "cn": "栅栏"
+    "en": "picture",
+    "phon": "/ˈpɪk.tʃər/",
+    "cn": "图片"
   },
   {
-    "en": "gate",
-    "phon": "/ɡeɪt/",
-    "cn": "大门"
+    "en": "attic",
+    "phon": "/ˈæt.ɪk/",
+    "cn": "阁楼"
   },
   {
-    "en": "bed",
-    "phon": "/bed/",
-    "cn": "床"
+    "en": "accident",
+    "phon": "/ˈæk.sə.dənt/",
+    "cn": "事故"
+  },
+  {
+    "en": "home",
+    "phon": "/həʊm/",
+    "cn": "家"
   },
   {
     "en": "sofa",
@@ -115,79 +45,9 @@
     "cn": "沙发"
   },
   {
-    "en": "unartate",
-    "phon": "/unartate/",
-    "cn": "unartate"
-  },
-  {
-    "en": "table",
-    "phon": "/ˈteɪ.bəl/",
-    "cn": "桌子"
-  },
-  {
-    "en": "unartent",
-    "phon": "/unartent/",
-    "cn": "unartent"
-  },
-  {
-    "en": "cupboard",
-    "phon": "/ˈkʌb.ərd/",
-    "cn": "橱柜"
-  },
-  {
-    "en": "shelf",
-    "phon": "/ʃelf/",
-    "cn": "架子"
-  },
-  {
-    "en": "drawer",
-    "phon": "/drɔːr/",
-    "cn": "抽屉"
-  },
-  {
-    "en": "lamp",
-    "phon": "/læmp/",
-    "cn": "灯"
-  },
-  {
-    "en": "fan",
-    "phon": "/fæn/",
-    "cn": "风扇"
-  },
-  {
-    "en": "mirror",
-    "phon": "/ˈmɪr.ər/",
-    "cn": "镜子"
-  },
-  {
-    "en": "picture",
-    "phon": "/ˈpɪk.tʃər/",
-    "cn": "图片"
-  },
-  {
-    "en": "curtain",
-    "phon": "/ˈkɜːr.tən/",
-    "cn": "窗帘"
-  },
-  {
-    "en": "carpet",
-    "phon": "/ˈkɑːr.pɪt/",
-    "cn": "地毯"
-  },
-  {
-    "en": "rug",
-    "phon": "/rʌɡ/",
-    "cn": "小地毯"
-  },
-  {
-    "en": "pillow",
-    "phon": "/ˈpɪl.əʊ/",
-    "cn": "枕头"
-  },
-  {
-    "en": "blanket",
-    "phon": "/ˈblæŋ.kɪt/",
-    "cn": "毯子"
+    "en": "apparent",
+    "phon": "/əˈpær.ənt/",
+    "cn": "明显的"
   },
   {
     "en": "sheet",
@@ -195,19 +55,14 @@
     "cn": "床单"
   },
   {
-    "en": "towel",
-    "phon": "/ˈtaʊ.əl/",
-    "cn": "毛巾"
+    "en": "bucket",
+    "phon": "/ˈbʌk.ɪt/",
+    "cn": "水桶"
   },
   {
-    "en": "soap",
-    "phon": "/səʊp/",
-    "cn": "肥皂"
-  },
-  {
-    "en": "toothbrush",
-    "phon": "/ˈtuːθ.brʌʃ/",
-    "cn": "牙刷"
+    "en": "balcony",
+    "phon": "/ˈbæl.kə.ni/",
+    "cn": "阳台"
   },
   {
     "en": "toothpaste",
@@ -215,29 +70,9 @@
     "cn": "牙膏"
   },
   {
-    "en": "comb",
-    "phon": "/kəʊm/",
-    "cn": "梳子"
-  },
-  {
-    "en": "shampoo",
-    "phon": "/ʃæmˈpuː/",
-    "cn": "洗发水"
-  },
-  {
-    "en": "broom",
-    "phon": "/bruːm/",
-    "cn": "扫帚"
-  },
-  {
-    "en": "mop",
-    "phon": "/mɒp/",
-    "cn": "拖把"
-  },
-  {
-    "en": "bucket",
-    "phon": "/ˈbʌk.ɪt/",
-    "cn": "水桶"
+    "en": "gate",
+    "phon": "/ɡeɪt/",
+    "cn": "大门"
   },
   {
     "en": "hammer",
@@ -245,8 +80,173 @@
     "cn": "锤子"
   },
   {
-    "en": "unartant",
-    "phon": "/unartant/",
-    "cn": "unartant"
+    "en": "carpet",
+    "phon": "/ˈkɑːr.pɪt/",
+    "cn": "地毯"
+  },
+  {
+    "en": "bed",
+    "phon": "/bed/",
+    "cn": "床"
+  },
+  {
+    "en": "kitchen",
+    "phon": "/ˈkɪtʃ.ɪn/",
+    "cn": "厨房"
+  },
+  {
+    "en": "article",
+    "phon": "/ˈɑːr.tɪ.kəl/",
+    "cn": "文章"
+  },
+  {
+    "en": "broom",
+    "phon": "/bruːm/",
+    "cn": "扫帚"
+  },
+  {
+    "en": "room",
+    "phon": "/ruːm/",
+    "cn": "房间"
+  },
+  {
+    "en": "applause",
+    "phon": "/əˈplɔːz/",
+    "cn": "鼓掌"
+  },
+  {
+    "en": "actual",
+    "phon": "/ˈæk.tʃu.əl/",
+    "cn": "实际的"
+  },
+  {
+    "en": "soap",
+    "phon": "/səʊp/",
+    "cn": "肥皂"
+  },
+  {
+    "en": "dining room",
+    "phon": "/ˈdaɪ.nɪŋ ruːm/",
+    "cn": "餐厅"
+  },
+  {
+    "en": "curtain",
+    "phon": "/ˈkɜːr.tən/",
+    "cn": "窗帘"
+  },
+  {
+    "en": "drawer",
+    "phon": "/drɔːr/",
+    "cn": "抽屉"
+  },
+  {
+    "en": "bathroom",
+    "phon": "/ˈbɑːθ.ruːm/",
+    "cn": "浴室"
+  },
+  {
+    "en": "mirror",
+    "phon": "/ˈmɪr.ər/",
+    "cn": "镜子"
+  },
+  {
+    "en": "roof",
+    "phon": "/ruːf/",
+    "cn": "屋顶"
+  },
+  {
+    "en": "wall",
+    "phon": "/wɔːl/",
+    "cn": "墙"
+  },
+  {
+    "en": "rug",
+    "phon": "/rʌɡ/",
+    "cn": "小地毯"
+  },
+  {
+    "en": "living room",
+    "phon": "/ˈlɪv.ɪŋ ruːm/",
+    "cn": "客厅"
+  },
+  {
+    "en": "blanket",
+    "phon": "/ˈblæŋ.kɪt/",
+    "cn": "毯子"
+  },
+  {
+    "en": "fan",
+    "phon": "/fæn/",
+    "cn": "风扇"
+  },
+  {
+    "en": "garage",
+    "phon": "/ˈɡær.ɑːʒ/",
+    "cn": "车库"
+  },
+  {
+    "en": "basement",
+    "phon": "/ˈbeɪs.mənt/",
+    "cn": "地下室"
+  },
+  {
+    "en": "shelf",
+    "phon": "/ʃelf/",
+    "cn": "架子"
+  },
+  {
+    "en": "comb",
+    "phon": "/kəʊm/",
+    "cn": "梳子"
+  },
+  {
+    "en": "bedroom",
+    "phon": "/ˈbed.ruːm/",
+    "cn": "卧室"
+  },
+  {
+    "en": "shampoo",
+    "phon": "/ʃæmˈpuː/",
+    "cn": "洗发水"
+  },
+  {
+    "en": "towel",
+    "phon": "/ˈtaʊ.əl/",
+    "cn": "毛巾"
+  },
+  {
+    "en": "pillow",
+    "phon": "/ˈpɪl.əʊ/",
+    "cn": "枕头"
+  },
+  {
+    "en": "lamp",
+    "phon": "/læmp/",
+    "cn": "灯"
+  },
+  {
+    "en": "fence",
+    "phon": "/fens/",
+    "cn": "栅栏"
+  },
+  {
+    "en": "floor",
+    "phon": "/flɔːr/",
+    "cn": "地板"
+  },
+  {
+    "en": "mop",
+    "phon": "/mɒp/",
+    "cn": "拖把"
+  },
+  {
+    "en": "toothbrush",
+    "phon": "/ˈtuːθ.brʌʃ/",
+    "cn": "牙刷"
+  },
+  {
+    "en": "cupboard",
+    "phon": "/ˈkʌb.ərd/",
+    "cn": "橱柜"
   }
 ]

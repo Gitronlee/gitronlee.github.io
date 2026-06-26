@@ -1,8 +1,8 @@
 [
   {
-    "en": "atom",
-    "phon": "/ˈæt.əm/",
-    "cn": "原子"
+    "en": "telescope",
+    "phon": "/ˈtel.ɪ.skəʊp/",
+    "cn": "望远镜"
   },
   {
     "en": "molecule",
@@ -10,164 +10,9 @@
     "cn": "分子"
   },
   {
-    "en": "element",
-    "phon": "/ˈel.ɪ.mənt/",
-    "cn": "元素"
-  },
-  {
-    "en": "compound",
-    "phon": "/ˈkɒm.paʊnd/",
-    "cn": "化合物"
-  },
-  {
-    "en": "solution",
-    "phon": "/səˈluː.ʃən/",
-    "cn": "溶液"
-  },
-  {
-    "en": "acid",
-    "phon": "/ˈæs.ɪd/",
-    "cn": "酸"
-  },
-  {
-    "en": "base",
-    "phon": "/beɪs/",
-    "cn": "碱"
-  },
-  {
-    "en": "unbelldom",
-    "phon": "/unbelldom/",
-    "cn": "unbelldom"
-  },
-  {
-    "en": "unbellship",
-    "phon": "/unbellship/",
-    "cn": "unbellship"
-  },
-  {
-    "en": "gas",
-    "phon": "/ɡæs/",
-    "cn": "气体"
-  },
-  {
-    "en": "liquid",
-    "phon": "/ˈlɪk.wɪd/",
-    "cn": "液体"
-  },
-  {
-    "en": "solid",
-    "phon": "/ˈsɒl.ɪd/",
-    "cn": "固体"
-  },
-  {
-    "en": "unbellward",
-    "phon": "/unbellward/",
-    "cn": "unbellward"
-  },
-  {
-    "en": "force",
-    "phon": "/fɔːrs/",
-    "cn": "力"
-  },
-  {
-    "en": "gravity",
-    "phon": "/ˈɡræv.ə.ti/",
-    "cn": "重力"
-  },
-  {
-    "en": "electricity",
-    "phon": "/ɪˌlek.trɪs.ə.ti/",
-    "cn": "电"
-  },
-  {
-    "en": "magnet",
-    "phon": "/ˈmæɡ.nət/",
-    "cn": "磁铁"
-  },
-  {
-    "en": "unbellwise",
-    "phon": "/unbellwise/",
-    "cn": "unbellwise"
-  },
-  {
-    "en": "heat",
-    "phon": "/hiːt/",
-    "cn": "热"
-  },
-  {
-    "en": "sound",
-    "phon": "/saʊnd/",
-    "cn": "声音"
-  },
-  {
-    "en": "wave",
-    "phon": "/weɪv/",
-    "cn": "波"
-  },
-  {
-    "en": "frequency",
-    "phon": "/ˈfriː.kwən.si/",
-    "cn": "频率"
-  },
-  {
-    "en": "spectrum",
-    "phon": "/ˈspek.trəm/",
-    "cn": "光谱"
-  },
-  {
-    "en": "telescope",
-    "phon": "/ˈtel.ɪ.skəʊp/",
-    "cn": "望远镜"
-  },
-  {
-    "en": "microscope",
-    "phon": "/ˈmaɪ.krə.skəʊp/",
-    "cn": "显微镜"
-  },
-  {
-    "en": "unbellling",
-    "phon": "/unbellling/",
-    "cn": "unbellling"
-  },
-  {
-    "en": "unbelllet",
-    "phon": "/unbelllet/",
-    "cn": "unbelllet"
-  },
-  {
-    "en": "hypothesis",
-    "phon": "/haɪˈpɒθ.ə.sɪs/",
-    "cn": "假设"
-  },
-  {
-    "en": "theory",
-    "phon": "/ˈθɪər.i/",
-    "cn": "理论"
-  },
-  {
-    "en": "result",
-    "phon": "/rɪˈzʌlt/",
-    "cn": "结果"
-  },
-  {
-    "en": "data",
-    "phon": "/ˈdeɪ.tə/",
-    "cn": "数据"
-  },
-  {
-    "en": "conclusion",
-    "phon": "/kənˈkluː.ʒən/",
-    "cn": "结论"
-  },
-  {
     "en": "discovery",
     "phon": "/dɪˈskʌv.ər.i/",
     "cn": "发现"
-  },
-  {
-    "en": "invention",
-    "phon": "/ɪnˈven.ʃən/",
-    "cn": "发明"
   },
   {
     "en": "technology",
@@ -175,19 +20,39 @@
     "cn": "科技"
   },
   {
-    "en": "unbellette",
-    "phon": "/unbellette/",
-    "cn": "unbellette"
+    "en": "attach",
+    "phon": "/əˈtætʃ/",
+    "cn": "附上"
   },
   {
-    "en": "internet",
-    "phon": "/ˈɪn.tə.net/",
-    "cn": "互联网"
+    "en": "apparent",
+    "phon": "/əˈpær.ənt/",
+    "cn": "明显的"
   },
   {
-    "en": "software",
-    "phon": "/ˈsɒft.weər/",
-    "cn": "软件"
+    "en": "hypothesis",
+    "phon": "/haɪˈpɒθ.ə.sɪs/",
+    "cn": "假设"
+  },
+  {
+    "en": "solution",
+    "phon": "/səˈluː.ʃən/",
+    "cn": "溶液"
+  },
+  {
+    "en": "gas",
+    "phon": "/ɡæs/",
+    "cn": "气体"
+  },
+  {
+    "en": "conclusion",
+    "phon": "/kənˈkluː.ʒən/",
+    "cn": "结论"
+  },
+  {
+    "en": "compound",
+    "phon": "/ˈkɒm.paʊnd/",
+    "cn": "化合物"
   },
   {
     "en": "hardware",
@@ -195,49 +60,14 @@
     "cn": "硬件"
   },
   {
-    "en": "program",
-    "phon": "/ˈprəʊ.ɡræm/",
-    "cn": "程序"
+    "en": "announce",
+    "phon": "/əˈnaʊns/",
+    "cn": "宣布"
   },
   {
-    "en": "robot",
-    "phon": "/ˈrəʊ.bɒt/",
-    "cn": "机器人"
-  },
-  {
-    "en": "battery",
-    "phon": "/ˈbæt.ər.i/",
-    "cn": "电池"
-  },
-  {
-    "en": "screen",
-    "phon": "/skriːn/",
-    "cn": "屏幕"
-  },
-  {
-    "en": "keyboard",
-    "phon": "/ˈkiː.bɔːrd/",
-    "cn": "键盘"
-  },
-  {
-    "en": "uncardtion",
-    "phon": "/uncardtion/",
-    "cn": "uncardtion"
-  },
-  {
-    "en": "printer",
-    "phon": "/ˈprɪn.tər/",
-    "cn": "打印机"
-  },
-  {
-    "en": "uncardsion",
-    "phon": "/uncardsion/",
-    "cn": "uncardsion"
-  },
-  {
-    "en": "satellite",
-    "phon": "/ˈsæt.əl.aɪt/",
-    "cn": "卫星"
+    "en": "heat",
+    "phon": "/hiːt/",
+    "cn": "热"
   },
   {
     "en": "rocket",
@@ -245,8 +75,178 @@
     "cn": "火箭"
   },
   {
+    "en": "microscope",
+    "phon": "/ˈmaɪ.krə.skəʊp/",
+    "cn": "显微镜"
+  },
+  {
+    "en": "result",
+    "phon": "/rɪˈzʌlt/",
+    "cn": "结果"
+  },
+  {
+    "en": "element",
+    "phon": "/ˈel.ɪ.mənt/",
+    "cn": "元素"
+  },
+  {
+    "en": "solid",
+    "phon": "/ˈsɒl.ɪd/",
+    "cn": "固体"
+  },
+  {
+    "en": "keyboard",
+    "phon": "/ˈkiː.bɔːrd/",
+    "cn": "键盘"
+  },
+  {
+    "en": "liquid",
+    "phon": "/ˈlɪk.wɪd/",
+    "cn": "液体"
+  },
+  {
+    "en": "adopt",
+    "phon": "/əˈdɒpt/",
+    "cn": "采纳"
+  },
+  {
+    "en": "data",
+    "phon": "/ˈdeɪ.tə/",
+    "cn": "数据"
+  },
+  {
+    "en": "screen",
+    "phon": "/skriːn/",
+    "cn": "屏幕"
+  },
+  {
+    "en": "internet",
+    "phon": "/ˈɪn.tə.net/",
+    "cn": "互联网"
+  },
+  {
+    "en": "electricity",
+    "phon": "/ɪˌlek.trɪs.ə.ti/",
+    "cn": "电"
+  },
+  {
+    "en": "spectrum",
+    "phon": "/ˈspek.trəm/",
+    "cn": "光谱"
+  },
+  {
+    "en": "advance",
+    "phon": "/ədˈvæns/",
+    "cn": "进步"
+  },
+  {
+    "en": "program",
+    "phon": "/ˈprəʊ.ɡræm/",
+    "cn": "程序"
+  },
+  {
+    "en": "wave",
+    "phon": "/weɪv/",
+    "cn": "波"
+  },
+  {
+    "en": "software",
+    "phon": "/ˈsɒft.weər/",
+    "cn": "软件"
+  },
+  {
+    "en": "base",
+    "phon": "/beɪs/",
+    "cn": "碱"
+  },
+  {
+    "en": "assure",
+    "phon": "/əˈʃʊr/",
+    "cn": "保证"
+  },
+  {
     "en": "space",
     "phon": "/speɪs/",
     "cn": "太空"
+  },
+  {
+    "en": "magnet",
+    "phon": "/ˈmæɡ.nət/",
+    "cn": "磁铁"
+  },
+  {
+    "en": "battery",
+    "phon": "/ˈbæt.ər.i/",
+    "cn": "电池"
+  },
+  {
+    "en": "printer",
+    "phon": "/ˈprɪn.tər/",
+    "cn": "打印机"
+  },
+  {
+    "en": "force",
+    "phon": "/fɔːrs/",
+    "cn": "力"
+  },
+  {
+    "en": "atom",
+    "phon": "/ˈæt.əm/",
+    "cn": "原子"
+  },
+  {
+    "en": "robot",
+    "phon": "/ˈrəʊ.bɒt/",
+    "cn": "机器人"
+  },
+  {
+    "en": "accumulate",
+    "phon": "/əˈkjuː.mjə.leɪt/",
+    "cn": "积累"
+  },
+  {
+    "en": "acid",
+    "phon": "/ˈæs.ɪd/",
+    "cn": "酸"
+  },
+  {
+    "en": "frequency",
+    "phon": "/ˈfriː.kwən.si/",
+    "cn": "频率"
+  },
+  {
+    "en": "approve",
+    "phon": "/əˈpruːv/",
+    "cn": "批准"
+  },
+  {
+    "en": "invention",
+    "phon": "/ɪnˈven.ʃən/",
+    "cn": "发明"
+  },
+  {
+    "en": "sound",
+    "phon": "/saʊnd/",
+    "cn": "声音"
+  },
+  {
+    "en": "gravity",
+    "phon": "/ˈɡræv.ə.ti/",
+    "cn": "重力"
+  },
+  {
+    "en": "assume",
+    "phon": "/əˈsuːm/",
+    "cn": "假设"
+  },
+  {
+    "en": "satellite",
+    "phon": "/ˈsæt.əl.aɪt/",
+    "cn": "卫星"
+  },
+  {
+    "en": "theory",
+    "phon": "/ˈθɪər.i/",
+    "cn": "理论"
   }
 ]

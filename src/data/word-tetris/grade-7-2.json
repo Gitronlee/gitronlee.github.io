@@ -1,28 +1,8 @@
 [
   {
-    "en": "uncessette",
-    "phon": "/uncessette/",
-    "cn": "uncessette"
-  },
-  {
-    "en": "unclaimtion",
-    "phon": "/unclaimtion/",
-    "cn": "unclaimtion"
-  },
-  {
-    "en": "unclaimsion",
-    "phon": "/unclaimsion/",
-    "cn": "unclaimsion"
-  },
-  {
-    "en": "astronomy",
-    "phon": "/əˈstrɒn.ə.mi/",
-    "cn": "天文学"
-  },
-  {
-    "en": "geology",
-    "phon": "/dʒiˈɒl.ə.dʒi/",
-    "cn": "地质学"
+    "en": "catalyst",
+    "phon": "/ˈkæt.əl.ɪst/",
+    "cn": "催化剂"
   },
   {
     "en": "meteorology",
@@ -30,184 +10,9 @@
     "cn": "气象学"
   },
   {
-    "en": "ecology",
-    "phon": "/ɪˈkɒl.ə.dʒi/",
-    "cn": "生态学"
-  },
-  {
-    "en": "genetics",
-    "phon": "/dʒəˈnet.ɪks/",
-    "cn": "遗传学"
-  },
-  {
-    "en": "evolution",
-    "phon": "/ˌiː.vəˈluː.ʃən/",
-    "cn": "进化"
-  },
-  {
-    "en": "unclaimment",
-    "phon": "/unclaimment/",
-    "cn": "unclaimment"
-  },
-  {
-    "en": "unclaimness",
-    "phon": "/unclaimness/",
-    "cn": "unclaimness"
-  },
-  {
-    "en": "unclaimity",
-    "phon": "/unclaimity/",
-    "cn": "unclaimity"
-  },
-  {
-    "en": "electron",
-    "phon": "/ɪˈlek.trɒn/",
-    "cn": "电子"
-  },
-  {
-    "en": "proton",
-    "phon": "/ˈprəʊ.tɒn/",
-    "cn": "质子"
-  },
-  {
-    "en": "neutron",
-    "phon": "/ˈnjuː.trɒn/",
-    "cn": "中子"
-  },
-  {
-    "en": "nucleus",
-    "phon": "/ˈnjuː.kli.əs/",
-    "cn": "原子核"
-  },
-  {
-    "en": "unclaimence",
-    "phon": "/unclaimence/",
-    "cn": "unclaimence"
-  },
-  {
-    "en": "unclaimance",
-    "phon": "/unclaimance/",
-    "cn": "unclaimance"
-  },
-  {
-    "en": "reaction",
-    "phon": "/riˈæk.ʃən/",
-    "cn": "反应"
-  },
-  {
-    "en": "catalyst",
-    "phon": "/ˈkæt.əl.ɪst/",
-    "cn": "催化剂"
-  },
-  {
-    "en": "polymer",
-    "phon": "/ˈpɒl.ɪ.mər/",
-    "cn": "聚合物"
-  },
-  {
-    "en": "unclaimous",
-    "phon": "/unclaimous/",
-    "cn": "unclaimous"
-  },
-  {
-    "en": "wavelength",
-    "phon": "/ˈweɪv.leŋθ/",
-    "cn": "波长"
-  },
-  {
-    "en": "unclaimive",
-    "phon": "/unclaimive/",
-    "cn": "unclaimive"
-  },
-  {
-    "en": "velocity",
-    "phon": "/vəˈlɒs.ə.ti/",
-    "cn": "速度"
-  },
-  {
-    "en": "acceleration",
-    "phon": "/əkˌsel.əˈreɪ.ʃən/",
-    "cn": "加速度"
-  },
-  {
-    "en": "momentum",
-    "phon": "/məˈmen.təm/",
-    "cn": "动量"
-  },
-  {
-    "en": "friction",
-    "phon": "/ˈfrɪk.ʃən/",
-    "cn": "摩擦力"
-  },
-  {
-    "en": "unclaimful",
-    "phon": "/unclaimful/",
-    "cn": "unclaimful"
-  },
-  {
-    "en": "magnetism",
-    "phon": "/ˈmæɡ.nə.tɪ.zəm/",
-    "cn": "磁性"
-  },
-  {
-    "en": "electromagnetic",
-    "phon": "/ɪˌlek.trəʊ.mæɡˈnet.ɪk/",
-    "cn": "电磁的"
-  },
-  {
-    "en": "thermodynamics",
-    "phon": "/ˌθɜːr.məʊ.daɪˈnæm.ɪks/",
-    "cn": "热力学"
-  },
-  {
-    "en": "entropy",
-    "phon": "/ˈen.trə.pi/",
-    "cn": "熵"
-  },
-  {
-    "en": "quantum",
-    "phon": "/ˈkwɒn.təm/",
-    "cn": "量子"
-  },
-  {
-    "en": "relativity",
-    "phon": "/ˌrel.əˈtɪv.ə.ti/",
-    "cn": "相对论"
-  },
-  {
-    "en": "photosynthesis",
-    "phon": "/ˌfəʊ.təʊˈsɪn.θə.sɪs/",
-    "cn": "光合作用"
-  },
-  {
-    "en": "respiration",
-    "phon": "/ˌres.pəˈreɪ.ʃən/",
-    "cn": "呼吸作用"
-  },
-  {
-    "en": "unclaimless",
-    "phon": "/unclaimless/",
-    "cn": "unclaimless"
-  },
-  {
-    "en": "DNA",
-    "phon": "/ˌdiː.en ˈeɪ/",
-    "cn": "脱氧核糖核酸"
-  },
-  {
-    "en": "gene",
-    "phon": "/dʒiːn/",
-    "cn": "基因"
-  },
-  {
-    "en": "chromosome",
-    "phon": "/ˈkrəʊ.mə.səʊm/",
-    "cn": "染色体"
-  },
-  {
-    "en": "mutation",
-    "phon": "/mjuːˈteɪ.ʃən/",
-    "cn": "突变"
+    "en": "epidemic",
+    "phon": "/ˌep.ɪˈdem.ɪk/",
+    "cn": "流行病"
   },
   {
     "en": "antibody",
@@ -215,14 +20,54 @@
     "cn": "抗体"
   },
   {
-    "en": "unclaimable",
-    "phon": "/unclaimable/",
-    "cn": "unclaimable"
+    "en": "photosynthesis",
+    "phon": "/ˌfəʊ.təʊˈsɪn.θə.sɪs/",
+    "cn": "光合作用"
   },
   {
-    "en": "antibiotic",
-    "phon": "/ˌæn.tɪ.baɪˈɒt.ɪk/",
-    "cn": "抗生素"
+    "en": "relativity",
+    "phon": "/ˌrel.əˈtɪv.ə.ti/",
+    "cn": "相对论"
+  },
+  {
+    "en": "compile",
+    "phon": "/kəmˈpaɪl/",
+    "cn": "编译"
+  },
+  {
+    "en": "friction",
+    "phon": "/ˈfrɪk.ʃən/",
+    "cn": "摩擦力"
+  },
+  {
+    "en": "nucleus",
+    "phon": "/ˈnjuː.kli.əs/",
+    "cn": "原子核"
+  },
+  {
+    "en": "genetics",
+    "phon": "/dʒəˈnet.ɪks/",
+    "cn": "遗传学"
+  },
+  {
+    "en": "chromosome",
+    "phon": "/ˈkrəʊ.mə.səʊm/",
+    "cn": "染色体"
+  },
+  {
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
+  },
+  {
+    "en": "ecology",
+    "phon": "/ɪˈkɒl.ə.dʒi/",
+    "cn": "生态学"
+  },
+  {
+    "en": "gene",
+    "phon": "/dʒiːn/",
+    "cn": "基因"
   },
   {
     "en": "pandemic",
@@ -230,9 +75,99 @@
     "cn": "大流行"
   },
   {
-    "en": "epidemic",
-    "phon": "/ˌep.ɪˈdem.ɪk/",
-    "cn": "流行病"
+    "en": "abstract",
+    "phon": "/ˈæb.strækt/",
+    "cn": "抽象的"
+  },
+  {
+    "en": "mutation",
+    "phon": "/mjuːˈteɪ.ʃən/",
+    "cn": "突变"
+  },
+  {
+    "en": "electromagnetic",
+    "phon": "/ɪˌlek.trəʊ.mæɡˈnet.ɪk/",
+    "cn": "电磁的"
+  },
+  {
+    "en": "ambiguous",
+    "phon": "/æmˈbɪɡ.ju.əs/",
+    "cn": "模糊的"
+  },
+  {
+    "en": "DNA",
+    "phon": "/ˌdiː.en ˈeɪ/",
+    "cn": "脱氧核糖核酸"
+  },
+  {
+    "en": "proton",
+    "phon": "/ˈprəʊ.tɒn/",
+    "cn": "质子"
+  },
+  {
+    "en": "concrete",
+    "phon": "/ˈkɒŋ.kriːt/",
+    "cn": "具体的"
+  },
+  {
+    "en": "entropy",
+    "phon": "/ˈen.trə.pi/",
+    "cn": "熵"
+  },
+  {
+    "en": "astronomy",
+    "phon": "/əˈstrɒn.ə.mi/",
+    "cn": "天文学"
+  },
+  {
+    "en": "conclude",
+    "phon": "/kənˈkluːd/",
+    "cn": "结论"
+  },
+  {
+    "en": "momentum",
+    "phon": "/məˈmen.təm/",
+    "cn": "动量"
+  },
+  {
+    "en": "electron",
+    "phon": "/ɪˈlek.trɒn/",
+    "cn": "电子"
+  },
+  {
+    "en": "magnetism",
+    "phon": "/ˈmæɡ.nə.tɪ.zəm/",
+    "cn": "磁性"
+  },
+  {
+    "en": "aesthetic",
+    "phon": "/iːsˈθet.ɪk/",
+    "cn": "美学的"
+  },
+  {
+    "en": "reaction",
+    "phon": "/riˈæk.ʃən/",
+    "cn": "反应"
+  },
+  {
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
+  },
+  {
+    "en": "antibiotic",
+    "phon": "/ˌæn.tɪ.baɪˈɒt.ɪk/",
+    "cn": "抗生素"
+  },
+  {
+    "en": "commemorate",
+    "phon": "/kəˈmem.ə.reɪt/",
+    "cn": "纪念"
+  },
+  {
+    "en": "acceleration",
+    "phon": "/əkˌsel.əˈreɪ.ʃən/",
+    "cn": "加速度"
   },
   {
     "en": "pathogen",
@@ -240,13 +175,78 @@
     "cn": "病原体"
   },
   {
-    "en": "unclaimible",
-    "phon": "/unclaimible/",
-    "cn": "unclaimible"
+    "en": "confirm",
+    "phon": "/kənˈfɜːrm/",
+    "cn": "确认"
   },
   {
-    "en": "unclaimal",
-    "phon": "/unclaimal/",
-    "cn": "unclaimal"
+    "en": "confess",
+    "phon": "/kənˈfes/",
+    "cn": "承认"
+  },
+  {
+    "en": "consensus",
+    "phon": "/kənˈsen.səs/",
+    "cn": "共识"
+  },
+  {
+    "en": "quantum",
+    "phon": "/ˈkwɒn.təm/",
+    "cn": "量子"
+  },
+  {
+    "en": "neutron",
+    "phon": "/ˈnjuː.trɒn/",
+    "cn": "中子"
+  },
+  {
+    "en": "thermodynamics",
+    "phon": "/ˌθɜːr.məʊ.daɪˈnæm.ɪks/",
+    "cn": "热力学"
+  },
+  {
+    "en": "respiration",
+    "phon": "/ˌres.pəˈreɪ.ʃən/",
+    "cn": "呼吸作用"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "wavelength",
+    "phon": "/ˈweɪv.leŋθ/",
+    "cn": "波长"
+  },
+  {
+    "en": "velocity",
+    "phon": "/vəˈlɒs.ə.ti/",
+    "cn": "速度"
+  },
+  {
+    "en": "geology",
+    "phon": "/dʒiˈɒl.ə.dʒi/",
+    "cn": "地质学"
+  },
+  {
+    "en": "polymer",
+    "phon": "/ˈpɒl.ɪ.mər/",
+    "cn": "聚合物"
+  },
+  {
+    "en": "acquire",
+    "phon": "/əˈkwaɪr/",
+    "cn": "获得"
+  },
+  {
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
+  },
+  {
+    "en": "evolution",
+    "phon": "/ˌiː.vəˈluː.ʃən/",
+    "cn": "进化"
   }
 ]

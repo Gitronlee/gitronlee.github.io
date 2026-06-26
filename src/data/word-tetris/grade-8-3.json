@@ -1,173 +1,13 @@
 [
   {
-    "en": "quantum mechanics",
-    "phon": "/ˈkwɒn.təm məˈkæn.ɪks/",
-    "cn": "量子力学"
+    "en": "metamaterial",
+    "phon": "/ˌmet.ə.məˈtɪər.i.əl/",
+    "cn": "超材料"
   },
   {
-    "en": "unclosance",
-    "phon": "/unclosance/",
-    "cn": "unclosance"
-  },
-  {
-    "en": "string theory",
-    "phon": "/strɪŋ ˈθɪər.i/",
-    "cn": "弦理论"
-  },
-  {
-    "en": "dark matter",
-    "phon": "/dɑːrk ˈmæt.ər/",
-    "cn": "暗物质"
-  },
-  {
-    "en": "dark energy",
-    "phon": "/dɑːrk ˈen.ə.dʒi/",
-    "cn": "暗能量"
-  },
-  {
-    "en": "black hole",
-    "phon": "/blæk həʊl/",
-    "cn": "黑洞"
-  },
-  {
-    "en": "neutron star",
-    "phon": "/ˈnjuː.trɒn stɑːr/",
-    "cn": "中子星"
-  },
-  {
-    "en": "supernova",
-    "phon": "/ˌsuː.pəˈnəʊ.və/",
-    "cn": "超新星"
-  },
-  {
-    "en": "galaxy",
-    "phon": "/ˈɡæl.ək.si/",
-    "cn": "星系"
-  },
-  {
-    "en": "nebula",
-    "phon": "/ˈneb.jʊ.lə/",
-    "cn": "星云"
-  },
-  {
-    "en": "cosmos",
-    "phon": "/ˈkɒz.mɒs/",
-    "cn": "宇宙"
-  },
-  {
-    "en": "multiverse",
-    "phon": "/ˈmʌl.tɪ.vɜːrs/",
-    "cn": "多重宇宙"
-  },
-  {
-    "en": "parallel universe",
-    "phon": "/ˈpær.ə.lel ˈjuː.nɪ.vɜːrs/",
-    "cn": "平行宇宙"
-  },
-  {
-    "en": "time dilation",
-    "phon": "/taɪm daɪˈleɪ.ʃən/",
-    "cn": "时间膨胀"
-  },
-  {
-    "en": "spacetime",
-    "phon": "/ˈspeɪs.taɪm/",
-    "cn": "时空"
-  },
-  {
-    "en": "gravitational wave",
-    "phon": "/ˌɡræv.ɪˈteɪ.ʃən.əl weɪv/",
-    "cn": "引力波"
-  },
-  {
-    "en": "higgs boson",
-    "phon": "/hɪɡz ˈbəʊ.zɒn/",
-    "cn": "希格斯玻色子"
-  },
-  {
-    "en": "particle",
-    "phon": "/ˈpɑːr.tɪ.kəl/",
-    "cn": "粒子"
-  },
-  {
-    "en": "antimatter",
-    "phon": "/ˈæn.tɪ.mæt.ər/",
-    "cn": "反物质"
-  },
-  {
-    "en": "photon",
-    "phon": "/ˈfəʊ.tɒn/",
-    "cn": "光子"
-  },
-  {
-    "en": "unclosous",
-    "phon": "/unclosous/",
-    "cn": "unclosous"
-  },
-  {
-    "en": "quark",
-    "phon": "/kwɑːrk/",
-    "cn": "夸克"
-  },
-  {
-    "en": "lepton",
-    "phon": "/ˈlep.tɒn/",
-    "cn": "轻子"
-  },
-  {
-    "en": "boson",
-    "phon": "/ˈbəʊ.zɒn/",
-    "cn": "玻色子"
-  },
-  {
-    "en": "fermion",
-    "phon": "/ˈfɜːr.mi.ɒn/",
-    "cn": "费米子"
-  },
-  {
-    "en": "superposition",
-    "phon": "/ˌsuː.pə.pəˈzɪʃ.ən/",
-    "cn": "叠加态"
-  },
-  {
-    "en": "entanglement",
-    "phon": "/ɪnˈtæŋ.ɡəl.mənt/",
-    "cn": "量子纠缠"
-  },
-  {
-    "en": "wave function",
-    "phon": "/weɪv ˈfʌŋk.ʃən/",
-    "cn": "波函数"
-  },
-  {
-    "en": "uncertainty principle",
-    "phon": "/ʌnˈsɜːr.tən.ti ˈprɪn.sə.pəl/",
-    "cn": "不确定性原理"
-  },
-  {
-    "en": "Schrödinger's cat",
-    "phon": "/ˈʃrɜː.dɪŋ.ərz kæt/",
-    "cn": "薛定谔的猫"
-  },
-  {
-    "en": "thought experiment",
-    "phon": "/θɔːt ɪkˈsper.ɪ.mənt/",
-    "cn": "思想实验"
-  },
-  {
-    "en": "nanotechnology",
-    "phon": "/ˌnæn.əʊ.tekˈnɒl.ə.dʒi/",
-    "cn": "纳米技术"
-  },
-  {
-    "en": "biotechnology",
-    "phon": "/ˌbaɪ.əʊ.tekˈnɒl.ə.dʒi/",
-    "cn": "生物技术"
-  },
-  {
-    "en": "genetic engineering",
-    "phon": "/dʒəˈnet.ɪk ˌen.dʒɪˈnɪər.ɪŋ/",
-    "cn": "基因工程"
+    "en": "conclude",
+    "phon": "/kənˈkluːd/",
+    "cn": "结论"
   },
   {
     "en": "CRISPR",
@@ -175,14 +15,29 @@
     "cn": "基因编辑技术"
   },
   {
-    "en": "stem cell",
-    "phon": "/stem sel/",
-    "cn": "干细胞"
+    "en": "supernova",
+    "phon": "/ˌsuː.pəˈnəʊ.və/",
+    "cn": "超新星"
   },
   {
-    "en": "cloning",
-    "phon": "/ˈkləʊ.nɪŋ/",
-    "cn": "克隆"
+    "en": "particle",
+    "phon": "/ˈpɑːr.tɪ.kəl/",
+    "cn": "粒子"
+  },
+  {
+    "en": "boson",
+    "phon": "/ˈbəʊ.zɒn/",
+    "cn": "玻色子"
+  },
+  {
+    "en": "higgs boson",
+    "phon": "/hɪɡz ˈbəʊ.zɒn/",
+    "cn": "希格斯玻色子"
+  },
+  {
+    "en": "biomimicry",
+    "phon": "/ˌbaɪ.əʊˈmɪm.ɪ.kri/",
+    "cn": "仿生学"
   },
   {
     "en": "artificial intelligence",
@@ -190,9 +45,44 @@
     "cn": "人工智能"
   },
   {
-    "en": "machine learning",
-    "phon": "/məˈʃiːn ˈlɜːr.nɪŋ/",
-    "cn": "机器学习"
+    "en": "dark energy",
+    "phon": "/dɑːrk ˈen.ə.dʒi/",
+    "cn": "暗能量"
+  },
+  {
+    "en": "lepton",
+    "phon": "/ˈlep.tɒn/",
+    "cn": "轻子"
+  },
+  {
+    "en": "spacetime",
+    "phon": "/ˈspeɪs.taɪm/",
+    "cn": "时空"
+  },
+  {
+    "en": "galaxy",
+    "phon": "/ˈɡæl.ək.si/",
+    "cn": "星系"
+  },
+  {
+    "en": "dark matter",
+    "phon": "/dɑːrk ˈmæt.ər/",
+    "cn": "暗物质"
+  },
+  {
+    "en": "thought experiment",
+    "phon": "/θɔːt ɪkˈsper.ɪ.mənt/",
+    "cn": "思想实验"
+  },
+  {
+    "en": "neutron star",
+    "phon": "/ˈnjuː.trɒn stɑːr/",
+    "cn": "中子星"
+  },
+  {
+    "en": "cryptocurrency",
+    "phon": "/ˈkrɪp.təʊˌkʌr.ən.si/",
+    "cn": "加密货币"
   },
   {
     "en": "deep learning",
@@ -205,24 +95,64 @@
     "cn": "神经网络"
   },
   {
-    "en": "unclosive",
-    "phon": "/unclosive/",
-    "cn": "unclosive"
+    "en": "parallel universe",
+    "phon": "/ˈpær.ə.lel ˈjuː.nɪ.vɜːrs/",
+    "cn": "平行宇宙"
   },
   {
-    "en": "blockchain",
-    "phon": "/ˈblɒk.tʃeɪn/",
-    "cn": "区块链"
+    "en": "biotechnology",
+    "phon": "/ˌbaɪ.əʊ.tekˈnɒl.ə.dʒi/",
+    "cn": "生物技术"
   },
   {
-    "en": "cryptocurrency",
-    "phon": "/ˈkrɪp.təʊˌkʌr.ən.si/",
-    "cn": "加密货币"
+    "en": "quantum mechanics",
+    "phon": "/ˈkwɒn.təm məˈkæn.ɪks/",
+    "cn": "量子力学"
   },
   {
-    "en": "quantum computing",
-    "phon": "/ˈkwɒn.təm kəmˈpjuː.tɪŋ/",
-    "cn": "量子计算"
+    "en": "machine learning",
+    "phon": "/məˈʃiːn ˈlɜːr.nɪŋ/",
+    "cn": "机器学习"
+  },
+  {
+    "en": "photon",
+    "phon": "/ˈfəʊ.tɒn/",
+    "cn": "光子"
+  },
+  {
+    "en": "gravitational wave",
+    "phon": "/ˌɡræv.ɪˈteɪ.ʃən.əl weɪv/",
+    "cn": "引力波"
+  },
+  {
+    "en": "fermion",
+    "phon": "/ˈfɜːr.mi.ɒn/",
+    "cn": "费米子"
+  },
+  {
+    "en": "black hole",
+    "phon": "/blæk həʊl/",
+    "cn": "黑洞"
+  },
+  {
+    "en": "quark",
+    "phon": "/kwɑːrk/",
+    "cn": "夸克"
+  },
+  {
+    "en": "nebula",
+    "phon": "/ˈneb.jʊ.lə/",
+    "cn": "星云"
+  },
+  {
+    "en": "entanglement",
+    "phon": "/ɪnˈtæŋ.ɡəl.mənt/",
+    "cn": "量子纠缠"
+  },
+  {
+    "en": "time dilation",
+    "phon": "/taɪm daɪˈleɪ.ʃən/",
+    "cn": "时间膨胀"
   },
   {
     "en": "fusion energy",
@@ -230,23 +160,93 @@
     "cn": "核聚变能"
   },
   {
-    "en": "superconductor",
-    "phon": "/ˌsuː.pə.kənˈdʌk.tər/",
-    "cn": "超导体"
+    "en": "genetic engineering",
+    "phon": "/dʒəˈnet.ɪk ˌen.dʒɪˈnɪər.ɪŋ/",
+    "cn": "基因工程"
   },
   {
-    "en": "metamaterial",
-    "phon": "/ˌmet.ə.məˈtɪər.i.əl/",
-    "cn": "超材料"
+    "en": "stem cell",
+    "phon": "/stem sel/",
+    "cn": "干细胞"
   },
   {
-    "en": "biomimicry",
-    "phon": "/ˌbaɪ.əʊˈmɪm.ɪ.kri/",
-    "cn": "仿生学"
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "nanotechnology",
+    "phon": "/ˌnæn.əʊ.tekˈnɒl.ə.dʒi/",
+    "cn": "纳米技术"
+  },
+  {
+    "en": "quantum computing",
+    "phon": "/ˈkwɒn.təm kəmˈpjuː.tɪŋ/",
+    "cn": "量子计算"
+  },
+  {
+    "en": "blockchain",
+    "phon": "/ˈblɒk.tʃeɪn/",
+    "cn": "区块链"
+  },
+  {
+    "en": "wave function",
+    "phon": "/weɪv ˈfʌŋk.ʃən/",
+    "cn": "波函数"
+  },
+  {
+    "en": "Schrödinger's cat",
+    "phon": "/ˈʃrɜː.dɪŋ.ərz kæt/",
+    "cn": "薛定谔的猫"
+  },
+  {
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
+  },
+  {
+    "en": "multiverse",
+    "phon": "/ˈmʌl.tɪ.vɜːrs/",
+    "cn": "多重宇宙"
+  },
+  {
+    "en": "superposition",
+    "phon": "/ˌsuː.pə.pəˈzɪʃ.ən/",
+    "cn": "叠加态"
   },
   {
     "en": "synthetic biology",
     "phon": "/sɪnˈθet.ɪk baɪˈɒl.ə.dʒi/",
     "cn": "合成生物学"
+  },
+  {
+    "en": "superconductor",
+    "phon": "/ˌsuː.pə.kənˈdʌk.tər/",
+    "cn": "超导体"
+  },
+  {
+    "en": "uncertainty principle",
+    "phon": "/ʌnˈsɜːr.tən.ti ˈprɪn.sə.pəl/",
+    "cn": "不确定性原理"
+  },
+  {
+    "en": "antimatter",
+    "phon": "/ˈæn.tɪ.mæt.ər/",
+    "cn": "反物质"
+  },
+  {
+    "en": "string theory",
+    "phon": "/strɪŋ ˈθɪər.i/",
+    "cn": "弦理论"
+  },
+  {
+    "en": "cosmos",
+    "phon": "/ˈkɒz.mɒs/",
+    "cn": "宇宙"
+  },
+  {
+    "en": "cloning",
+    "phon": "/ˈkləʊ.nɪŋ/",
+    "cn": "克隆"
   }
 ]

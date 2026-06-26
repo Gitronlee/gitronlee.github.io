@@ -1,68 +1,18 @@
 [
   {
-    "en": "consciousness",
-    "phon": "/ˈkɒn.ʃəs.nəs/",
-    "cn": "意识"
+    "en": "cognitive behavioral therapy",
+    "phon": "/ˈkɒɡ.nə.tɪk biˈheɪ.vjər.əl ˈθer.ə.pi/",
+    "cn": "认知行为疗法"
   },
   {
-    "en": "subconscious",
-    "phon": "/ˌsʌbˈkɒn.ʃəs/",
-    "cn": "潜意识"
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
   },
   {
-    "en": "unconscious",
-    "phon": "/ʌnˈkɒn.ʃəs/",
-    "cn": "无意识"
-  },
-  {
-    "en": "cognition",
-    "phon": "/kɒɡˈnɪʃ.ən/",
-    "cn": "认知"
-  },
-  {
-    "en": "perception",
-    "phon": "/pərˈsep.ʃən/",
-    "cn": "感知"
-  },
-  {
-    "en": "attention",
-    "phon": "/əˈten.ʃən/",
-    "cn": "注意力"
-  },
-  {
-    "en": "memory",
-    "phon": "/ˈmem.ər.i/",
-    "cn": "记忆"
-  },
-  {
-    "en": "learning",
-    "phon": "/ˈlɜːr.nɪŋ/",
-    "cn": "学习"
-  },
-  {
-    "en": "intelligence",
-    "phon": "/ɪnˈtel.ɪ.dʒəns/",
-    "cn": "智力"
-  },
-  {
-    "en": "unclosful",
-    "phon": "/unclosful/",
-    "cn": "unclosful"
-  },
-  {
-    "en": "emotion",
-    "phon": "/ɪˈməʊ.ʃən/",
-    "cn": "情绪"
-  },
-  {
-    "en": "unclosless",
-    "phon": "/unclosless/",
-    "cn": "unclosless"
-  },
-  {
-    "en": "personality",
-    "phon": "/ˌpɜː.səˈnæl.ə.ti/",
-    "cn": "人格"
+    "en": "anonymous",
+    "phon": "/əˈnɒn.ɪ.məs/",
+    "cn": "匿名的"
   },
   {
     "en": "behavior",
@@ -70,154 +20,9 @@
     "cn": "行为"
   },
   {
-    "en": "temperament",
-    "phon": "/ˈtem.prə.mənt/",
-    "cn": "气质"
-  },
-  {
-    "en": "unclosable",
-    "phon": "/unclosable/",
-    "cn": "unclosable"
-  },
-  {
-    "en": "attitude",
-    "phon": "/ˈæt.ɪ.tjuːd/",
-    "cn": "态度"
-  },
-  {
-    "en": "belief",
-    "phon": "/bɪˈliːf/",
-    "cn": "信念"
-  },
-  {
-    "en": "unclosible",
-    "phon": "/unclosible/",
-    "cn": "unclosible"
-  },
-  {
-    "en": "unclosal",
-    "phon": "/unclosal/",
-    "cn": "unclosal"
-  },
-  {
-    "en": "unclosial",
-    "phon": "/unclosial/",
-    "cn": "unclosial"
-  },
-  {
-    "en": "incentive",
-    "phon": "/ˈɪn.tər.ɪst/",
-    "cn": "激励"
-  },
-  {
-    "en": "reward",
-    "phon": "/rɪˈwɔːrd/",
-    "cn": "奖励"
-  },
-  {
-    "en": "punishment",
-    "phon": "/ˈpʌn.ɪʃ.mənt/",
-    "cn": "惩罚"
-  },
-  {
-    "en": "reinforcement",
-    "phon": "/ˌriː.ɪnˈfɔːrs.mənt/",
-    "cn": "强化"
-  },
-  {
-    "en": "conditioning",
-    "phon": "/kənˈdɪʃ.ən.ɪŋ/",
-    "cn": "条件反射"
-  },
-  {
-    "en": "unclosly",
-    "phon": "/unclosly/",
-    "cn": "unclosly"
-  },
-  {
-    "en": "uncloser",
-    "phon": "/uncloser/",
-    "cn": "uncloser"
-  },
-  {
-    "en": "compulsion",
-    "phon": "/kəmˈpʌl.ʃən/",
-    "cn": "强迫"
-  },
-  {
-    "en": "obsession",
-    "phon": "/əbˈseʃ.ən/",
-    "cn": "痴迷"
-  },
-  {
-    "en": "unclosor",
-    "phon": "/unclosor/",
-    "cn": "unclosor"
-  },
-  {
-    "en": "phobia",
-    "phon": "/ˈfəʊ.bi.ə/",
-    "cn": "恐惧症"
-  },
-  {
-    "en": "unclosist",
-    "phon": "/unclosist/",
-    "cn": "unclosist"
-  },
-  {
-    "en": "PTSD",
-    "phon": "/ˌpiː.tiː.es ˈdiː/",
-    "cn": "创伤后应激障碍"
-  },
-  {
-    "en": "dissociation",
-    "phon": "/dɪˌsəʊ.siˈeɪ.ʃən/",
-    "cn": "解离"
-  },
-  {
-    "en": "psychotherapy",
-    "phon": "/ˌsaɪ.kəʊˈθer.ə.pi/",
-    "cn": "心理治疗"
-  },
-  {
-    "en": "cognitive behavioral therapy",
-    "phon": "/ˈkɒɡ.nə.tɪk biˈheɪ.vjər.əl ˈθer.ə.pi/",
-    "cn": "认知行为疗法"
-  },
-  {
-    "en": "psychoanalysis",
-    "phon": "/ˌsaɪ.kəʊ.əˈnæl.ə.sɪs/",
-    "cn": "精神分析"
-  },
-  {
-    "en": "Jungian",
-    "phon": "/ˈjʊŋ.i.ən/",
-    "cn": "荣格的"
-  },
-  {
-    "en": "Freudian",
-    "phon": "/ˈfrɔɪ.di.ən/",
-    "cn": "弗洛伊德的"
-  },
-  {
-    "en": "archetype",
-    "phon": "/ˈɑːr.ki.taɪp/",
-    "cn": "原型"
-  },
-  {
-    "en": "complex",
-    "phon": "/ˈkɒm.pleks/",
-    "cn": "情结"
-  },
-  {
-    "en": "defense mechanism",
-    "phon": "/dɪˈfens ˈmek.ə.nɪ.zəm/",
-    "cn": "防御机制"
-  },
-  {
-    "en": "projection",
-    "phon": "/prəˈdʒek.ʃən/",
-    "cn": "投射"
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
   },
   {
     "en": "denial",
@@ -225,9 +30,34 @@
     "cn": "否认"
   },
   {
-    "en": "rationalization",
-    "phon": "/ˌræʃ.ən.əl.aɪˈzeɪ.ʃən/",
-    "cn": "合理化"
+    "en": "belief",
+    "phon": "/bɪˈliːf/",
+    "cn": "信念"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
+  },
+  {
+    "en": "punishment",
+    "phon": "/ˈpʌn.ɪʃ.mənt/",
+    "cn": "惩罚"
+  },
+  {
+    "en": "confront",
+    "phon": "/kənˈfrʌnt/",
+    "cn": "面对"
+  },
+  {
+    "en": "Freudian",
+    "phon": "/ˈfrɔɪ.di.ən/",
+    "cn": "弗洛伊德的"
   },
   {
     "en": "sublimation",
@@ -240,13 +70,183 @@
     "cn": "置换"
   },
   {
-    "en": "unclosism",
-    "phon": "/unclosism/",
-    "cn": "unclosism"
+    "en": "cognition",
+    "phon": "/kɒɡˈnɪʃ.ən/",
+    "cn": "认知"
+  },
+  {
+    "en": "conceive",
+    "phon": "/kənˈsiːv/",
+    "cn": "构想"
+  },
+  {
+    "en": "phobia",
+    "phon": "/ˈfəʊ.bi.ə/",
+    "cn": "恐惧症"
+  },
+  {
+    "en": "learning",
+    "phon": "/ˈlɜːr.nɪŋ/",
+    "cn": "学习"
+  },
+  {
+    "en": "aggregate",
+    "phon": "/ˈæɡ.rɪ.ɡət/",
+    "cn": "总计"
+  },
+  {
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
+  },
+  {
+    "en": "projection",
+    "phon": "/prəˈdʒek.ʃən/",
+    "cn": "投射"
+  },
+  {
+    "en": "memory",
+    "phon": "/ˈmem.ər.i/",
+    "cn": "记忆"
+  },
+  {
+    "en": "emotion",
+    "phon": "/ɪˈməʊ.ʃən/",
+    "cn": "情绪"
+  },
+  {
+    "en": "incentive",
+    "phon": "/ˈɪn.tər.ɪst/",
+    "cn": "激励"
+  },
+  {
+    "en": "PTSD",
+    "phon": "/ˌpiː.tiː.es ˈdiː/",
+    "cn": "创伤后应激障碍"
+  },
+  {
+    "en": "consciousness",
+    "phon": "/ˈkɒn.ʃəs.nəs/",
+    "cn": "意识"
+  },
+  {
+    "en": "attitude",
+    "phon": "/ˈæt.ɪ.tjuːd/",
+    "cn": "态度"
+  },
+  {
+    "en": "psychotherapy",
+    "phon": "/ˌsaɪ.kəʊˈθer.ə.pi/",
+    "cn": "心理治疗"
+  },
+  {
+    "en": "compensate",
+    "phon": "/ˈkɒm.pen.seɪt/",
+    "cn": "补偿"
+  },
+  {
+    "en": "conditioning",
+    "phon": "/kənˈdɪʃ.ən.ɪŋ/",
+    "cn": "条件反射"
+  },
+  {
+    "en": "reinforcement",
+    "phon": "/ˌriː.ɪnˈfɔːrs.mənt/",
+    "cn": "强化"
+  },
+  {
+    "en": "subconscious",
+    "phon": "/ˌsʌbˈkɒn.ʃəs/",
+    "cn": "潜意识"
+  },
+  {
+    "en": "archetype",
+    "phon": "/ˈɑːr.ki.taɪp/",
+    "cn": "原型"
+  },
+  {
+    "en": "rationalization",
+    "phon": "/ˌræʃ.ən.əl.aɪˈzeɪ.ʃən/",
+    "cn": "合理化"
+  },
+  {
+    "en": "unconscious",
+    "phon": "/ʌnˈkɒn.ʃəs/",
+    "cn": "无意识"
+  },
+  {
+    "en": "dissociation",
+    "phon": "/dɪˌsəʊ.siˈeɪ.ʃən/",
+    "cn": "解离"
+  },
+  {
+    "en": "compulsion",
+    "phon": "/kəmˈpʌl.ʃən/",
+    "cn": "强迫"
+  },
+  {
+    "en": "reward",
+    "phon": "/rɪˈwɔːrd/",
+    "cn": "奖励"
+  },
+  {
+    "en": "defense mechanism",
+    "phon": "/dɪˈfens ˈmek.ə.nɪ.zəm/",
+    "cn": "防御机制"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "attention",
+    "phon": "/əˈten.ʃən/",
+    "cn": "注意力"
+  },
+  {
+    "en": "temperament",
+    "phon": "/ˈtem.prə.mənt/",
+    "cn": "气质"
+  },
+  {
+    "en": "perception",
+    "phon": "/pərˈsep.ʃən/",
+    "cn": "感知"
+  },
+  {
+    "en": "intelligence",
+    "phon": "/ɪnˈtel.ɪ.dʒəns/",
+    "cn": "智力"
+  },
+  {
+    "en": "psychoanalysis",
+    "phon": "/ˌsaɪ.kəʊ.əˈnæl.ə.sɪs/",
+    "cn": "精神分析"
+  },
+  {
+    "en": "personality",
+    "phon": "/ˌpɜː.səˈnæl.ə.ti/",
+    "cn": "人格"
   },
   {
     "en": "catharsis",
     "phon": "/kəˈθɑːr.sɪs/",
     "cn": "宣泄"
+  },
+  {
+    "en": "complex",
+    "phon": "/ˈkɒm.pleks/",
+    "cn": "情结"
+  },
+  {
+    "en": "Jungian",
+    "phon": "/ˈjʊŋ.i.ən/",
+    "cn": "荣格的"
+  },
+  {
+    "en": "obsession",
+    "phon": "/əbˈseʃ.ən/",
+    "cn": "痴迷"
   }
 ]

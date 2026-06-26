@@ -1,178 +1,8 @@
 [
   {
-    "en": "money",
-    "phon": "/ˈmʌn.i/",
-    "cn": "钱"
-  },
-  {
-    "en": "currency",
-    "phon": "/ˈkʌr.ən.si/",
-    "cn": "货币"
-  },
-  {
-    "en": "cash",
-    "phon": "/kæʃ/",
-    "cn": "现金"
-  },
-  {
-    "en": "coin",
-    "phon": "/kɔɪn/",
-    "cn": "硬币"
-  },
-  {
-    "en": "note",
-    "phon": "/nəʊt/",
-    "cn": "纸币"
-  },
-  {
-    "en": "bill",
-    "phon": "/bɪl/",
-    "cn": "钞票"
-  },
-  {
-    "en": "change",
-    "phon": "/tʃeɪndʒ/",
-    "cn": "零钱"
-  },
-  {
-    "en": "price",
-    "phon": "/praɪs/",
-    "cn": "价格"
-  },
-  {
     "en": "cost",
     "phon": "/kɒst/",
     "cn": "成本"
-  },
-  {
-    "en": "value",
-    "phon": "/ˈvæl.juː/",
-    "cn": "价值"
-  },
-  {
-    "en": "worth",
-    "phon": "/wɜːrθ/",
-    "cn": "价值"
-  },
-  {
-    "en": "uncessless",
-    "phon": "/uncessless/",
-    "cn": "uncessless"
-  },
-  {
-    "en": "budget",
-    "phon": "/ˈbʌdʒ.ɪt/",
-    "cn": "预算"
-  },
-  {
-    "en": "salary",
-    "phon": "/ˈsæl.ər.i/",
-    "cn": "工资"
-  },
-  {
-    "en": "wage",
-    "phon": "/weɪdʒ/",
-    "cn": "薪水"
-  },
-  {
-    "en": "income",
-    "phon": "/ˈɪn.kʌm/",
-    "cn": "收入"
-  },
-  {
-    "en": "profit",
-    "phon": "/ˈprɒf.ɪt/",
-    "cn": "利润"
-  },
-  {
-    "en": "loss",
-    "phon": "/lɒs/",
-    "cn": "损失"
-  },
-  {
-    "en": "debt",
-    "phon": "/det/",
-    "cn": "债务"
-  },
-  {
-    "en": "loan",
-    "phon": "/ləʊn/",
-    "cn": "贷款"
-  },
-  {
-    "en": "mortgage",
-    "phon": "/ˈmɔːr.ɡɪdʒ/",
-    "cn": "抵押贷款"
-  },
-  {
-    "en": "uncessable",
-    "phon": "/uncessable/",
-    "cn": "uncessable"
-  },
-  {
-    "en": "investment",
-    "phon": "/ɪnˈvest.mənt/",
-    "cn": "投资"
-  },
-  {
-    "en": "stock",
-    "phon": "/stɒk/",
-    "cn": "股票"
-  },
-  {
-    "en": "bond",
-    "phon": "/bɒnd/",
-    "cn": "债券"
-  },
-  {
-    "en": "uncessible",
-    "phon": "/uncessible/",
-    "cn": "uncessible"
-  },
-  {
-    "en": "dividend",
-    "phon": "/ˈdɪv.ɪ.dend/",
-    "cn": "股息"
-  },
-  {
-    "en": "uncessal",
-    "phon": "/uncessal/",
-    "cn": "uncessal"
-  },
-  {
-    "en": "account",
-    "phon": "/əˈkaʊnt/",
-    "cn": "账户"
-  },
-  {
-    "en": "savings",
-    "phon": "/ˈseɪ.vɪŋz/",
-    "cn": "储蓄"
-  },
-  {
-    "en": "deposit",
-    "phon": "/dɪˈpɒz.ɪt/",
-    "cn": "存款"
-  },
-  {
-    "en": "withdrawal",
-    "phon": "/wɪðˈdrɔː.əl/",
-    "cn": "取款"
-  },
-  {
-    "en": "ATM",
-    "phon": "/ˌeɪ.tiː ˈem/",
-    "cn": "自动取款机"
-  },
-  {
-    "en": "credit card",
-    "phon": "/ˈkred.ɪt kɑːrd/",
-    "cn": "信用卡"
-  },
-  {
-    "en": "debit card",
-    "phon": "/ˈdeb.ɪt kɑːrd/",
-    "cn": "借记卡"
   },
   {
     "en": "transaction",
@@ -180,14 +10,34 @@
     "cn": "交易"
   },
   {
-    "en": "purchase",
-    "phon": "/ˈpɜːr.tʃəs/",
-    "cn": "购买"
+    "en": "dividend",
+    "phon": "/ˈdɪv.ɪ.dend/",
+    "cn": "股息"
   },
   {
-    "en": "sale",
-    "phon": "/seɪl/",
-    "cn": "促销"
+    "en": "coin",
+    "phon": "/kɔɪn/",
+    "cn": "硬币"
+  },
+  {
+    "en": "budget",
+    "phon": "/ˈbʌdʒ.ɪt/",
+    "cn": "预算"
+  },
+  {
+    "en": "change",
+    "phon": "/tʃeɪndʒ/",
+    "cn": "零钱"
+  },
+  {
+    "en": "income",
+    "phon": "/ˈɪn.kʌm/",
+    "cn": "收入"
+  },
+  {
+    "en": "value",
+    "phon": "/ˈvæl.juː/",
+    "cn": "价值"
   },
   {
     "en": "discount",
@@ -195,19 +45,44 @@
     "cn": "折扣"
   },
   {
-    "en": "receipt",
-    "phon": "/rɪˈsiːt/",
-    "cn": "收据"
+    "en": "note",
+    "phon": "/nəʊt/",
+    "cn": "纸币"
   },
   {
-    "en": "uncessial",
-    "phon": "/uncessial/",
-    "cn": "uncessial"
+    "en": "debt",
+    "phon": "/det/",
+    "cn": "债务"
   },
   {
-    "en": "inflation",
-    "phon": "/ɪnˈfleɪ.ʃən/",
-    "cn": "通货膨胀"
+    "en": "savings",
+    "phon": "/ˈseɪ.vɪŋz/",
+    "cn": "储蓄"
+  },
+  {
+    "en": "account",
+    "phon": "/əˈkaʊnt/",
+    "cn": "账户"
+  },
+  {
+    "en": "withdrawal",
+    "phon": "/wɪðˈdrɔː.əl/",
+    "cn": "取款"
+  },
+  {
+    "en": "bond",
+    "phon": "/bɒnd/",
+    "cn": "债券"
+  },
+  {
+    "en": "bill",
+    "phon": "/bɪl/",
+    "cn": "钞票"
+  },
+  {
+    "en": "currency",
+    "phon": "/ˈkʌr.ən.si/",
+    "cn": "货币"
   },
   {
     "en": "economy",
@@ -220,19 +95,124 @@
     "cn": "贸易"
   },
   {
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
+  },
+  {
+    "en": "loan",
+    "phon": "/ləʊn/",
+    "cn": "贷款"
+  },
+  {
+    "en": "cash",
+    "phon": "/kæʃ/",
+    "cn": "现金"
+  },
+  {
+    "en": "loss",
+    "phon": "/lɒs/",
+    "cn": "损失"
+  },
+  {
+    "en": "anonymous",
+    "phon": "/əˈnɒn.ɪ.məs/",
+    "cn": "匿名的"
+  },
+  {
+    "en": "wage",
+    "phon": "/weɪdʒ/",
+    "cn": "薪水"
+  },
+  {
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "接近"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "investment",
+    "phon": "/ɪnˈvest.mənt/",
+    "cn": "投资"
+  },
+  {
+    "en": "purchase",
+    "phon": "/ˈpɜːr.tʃəs/",
+    "cn": "购买"
+  },
+  {
+    "en": "ATM",
+    "phon": "/ˌeɪ.tiː ˈem/",
+    "cn": "自动取款机"
+  },
+  {
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
+  },
+  {
+    "en": "inflation",
+    "phon": "/ɪnˈfleɪ.ʃən/",
+    "cn": "通货膨胀"
+  },
+  {
+    "en": "sale",
+    "phon": "/seɪl/",
+    "cn": "促销"
+  },
+  {
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "money",
+    "phon": "/ˈmʌn.i/",
+    "cn": "钱"
+  },
+  {
+    "en": "debit card",
+    "phon": "/ˈdeb.ɪt kɑːrd/",
+    "cn": "借记卡"
+  },
+  {
+    "en": "credit card",
+    "phon": "/ˈkred.ɪt kɑːrd/",
+    "cn": "信用卡"
+  },
+  {
+    "en": "deposit",
+    "phon": "/dɪˈpɒz.ɪt/",
+    "cn": "存款"
+  },
+  {
+    "en": "price",
+    "phon": "/praɪs/",
+    "cn": "价格"
+  },
+  {
+    "en": "mortgage",
+    "phon": "/ˈmɔːr.ɡɪdʒ/",
+    "cn": "抵押贷款"
+  },
+  {
     "en": "export",
     "phon": "/ˈek.spɔːrt/",
     "cn": "出口"
   },
   {
-    "en": "uncessly",
-    "phon": "/uncessly/",
-    "cn": "uncessly"
+    "en": "allocate",
+    "phon": "/ˈæl.ə.keɪt/",
+    "cn": "分配"
   },
   {
-    "en": "entrepreneur",
-    "phon": "/ˌɒn.trə.prəˈnɜːr/",
-    "cn": "企业家"
+    "en": "assist",
+    "phon": "/əˈsɪst/",
+    "cn": "协助"
   },
   {
     "en": "business",
@@ -240,13 +220,33 @@
     "cn": "生意"
   },
   {
-    "en": "uncesser",
-    "phon": "/uncesser/",
-    "cn": "uncesser"
+    "en": "worth",
+    "phon": "/wɜːrθ/",
+    "cn": "价值"
   },
   {
-    "en": "uncessor",
-    "phon": "/uncessor/",
-    "cn": "uncessor"
+    "en": "receipt",
+    "phon": "/rɪˈsiːt/",
+    "cn": "收据"
+  },
+  {
+    "en": "salary",
+    "phon": "/ˈsæl.ər.i/",
+    "cn": "工资"
+  },
+  {
+    "en": "profit",
+    "phon": "/ˈprɒf.ɪt/",
+    "cn": "利润"
+  },
+  {
+    "en": "entrepreneur",
+    "phon": "/ˌɒn.trə.prəˈnɜːr/",
+    "cn": "企业家"
+  },
+  {
+    "en": "stock",
+    "phon": "/stɒk/",
+    "cn": "股票"
   }
 ]

@@ -1,88 +1,8 @@
 [
   {
-    "en": "unclineal",
-    "phon": "/unclineal/",
-    "cn": "unclineal"
-  },
-  {
-    "en": "unclineial",
-    "phon": "/unclineial/",
-    "cn": "unclineial"
-  },
-  {
-    "en": "unclinely",
-    "phon": "/unclinely/",
-    "cn": "unclinely"
-  },
-  {
-    "en": "unclineer",
-    "phon": "/unclineer/",
-    "cn": "unclineer"
-  },
-  {
-    "en": "fraternity",
-    "phon": "/frəˈtɜːr.nə.ti/",
-    "cn": "博爱"
-  },
-  {
-    "en": "solidarity",
-    "phon": "/ˌsɒl.ɪˈdær.ə.ti/",
-    "cn": "团结"
-  },
-  {
-    "en": "humanity",
-    "phon": "/hjuːˈmæn.ə.ti/",
-    "cn": "人性"
-  },
-  {
-    "en": "morality",
-    "phon": "/məˈræl.ə.ti/",
-    "cn": "道德"
-  },
-  {
-    "en": "ethics",
-    "phon": "/ˈeθ.ɪks/",
-    "cn": "伦理"
-  },
-  {
-    "en": "virtue",
-    "phon": "/ˈvɜːr.tʃuː/",
-    "cn": "美德"
-  },
-  {
-    "en": "vice",
-    "phon": "/vaɪs/",
-    "cn": "恶习"
-  },
-  {
-    "en": "conscience",
-    "phon": "/ˈkɒn.ʃəns/",
-    "cn": "良心"
-  },
-  {
-    "en": "integrity",
-    "phon": "/ɪnˈteɡ.rə.ti/",
-    "cn": "正直"
-  },
-  {
-    "en": "dignity",
-    "phon": "/ˈdɪɡ.nə.ti/",
-    "cn": "尊严"
-  },
-  {
-    "en": "compassion",
-    "phon": "/kəmˈpæʃ.ən/",
-    "cn": "同情"
-  },
-  {
-    "en": "unclineor",
-    "phon": "/unclineor/",
-    "cn": "unclineor"
-  },
-  {
-    "en": "altruism",
-    "phon": "/ˈæl.tru.ɪ.zəm/",
-    "cn": "利他主义"
+    "en": "abolish",
+    "phon": "/əˈbɒl.ɪʃ/",
+    "cn": "废除"
   },
   {
     "en": "egoism",
@@ -90,39 +10,19 @@
     "cn": "利己主义"
   },
   {
-    "en": "nihilism",
-    "phon": "/ˈnaɪ.ɪl.ɪ.zəm/",
-    "cn": "虚无主义"
+    "en": "compassion",
+    "phon": "/kəmˈpæʃ.ən/",
+    "cn": "同情"
   },
   {
-    "en": "existentialism",
-    "phon": "/ˌeɡ.zɪˈsten.ʃəl.ɪ.zəm/",
-    "cn": "存在主义"
+    "en": "solidarity",
+    "phon": "/ˌsɒl.ɪˈdær.ə.ti/",
+    "cn": "团结"
   },
   {
-    "en": "idealism",
-    "phon": "/aɪˈdɪə.lɪ.zəm/",
-    "cn": "理想主义"
-  },
-  {
-    "en": "realism",
-    "phon": "/ˈriː.əl.ɪ.zəm/",
-    "cn": "现实主义"
-  },
-  {
-    "en": "pragmatism",
-    "phon": "/ˈpræɡ.mə.tɪ.zəm/",
-    "cn": "实用主义"
-  },
-  {
-    "en": "skepticism",
-    "phon": "/ˈskep.tɪ.sɪ.zəm/",
-    "cn": "怀疑主义"
-  },
-  {
-    "en": "relativism",
-    "phon": "/ˈrel.ə.tɪ.vɪ.zəm/",
-    "cn": "相对主义"
+    "en": "pneumatology",
+    "phon": "/ˌnjuː.məˈtɒl.ə.dʒi/",
+    "cn": "圣灵论"
   },
   {
     "en": "absolutism",
@@ -135,104 +35,14 @@
     "cn": "辩证法"
   },
   {
-    "en": "unclineist",
-    "phon": "/unclineist/",
-    "cn": "unclineist"
+    "en": "comprehensive",
+    "phon": "/ˌkɒm.prɪˈhen.sɪv/",
+    "cn": "全面的"
   },
   {
-    "en": "metaphysics",
-    "phon": "/ˌmet.əˈfɪz.ɪks/",
-    "cn": "形而上学"
-  },
-  {
-    "en": "unclineism",
-    "phon": "/unclineism/",
-    "cn": "unclineism"
-  },
-  {
-    "en": "aesthetics",
-    "phon": "/iːsˈθet.ɪks/",
-    "cn": "美学"
-  },
-  {
-    "en": "teleology",
-    "phon": "/ˌtiː.liˈɒl.ə.dʒi/",
-    "cn": "目的论"
-  },
-  {
-    "en": "hermeneutics",
-    "phon": "/ˌhɜːr.məˈnjuː.tɪks/",
-    "cn": "诠释学"
-  },
-  {
-    "en": "phenomenology",
-    "phon": "/fɪˌnɒm.ɪˈnɒl.ə.dʒi/",
-    "cn": "现象学"
-  },
-  {
-    "en": "semiotics",
-    "phon": "/ˌsiː.miˈɒt.ɪks/",
-    "cn": "符号学"
-  },
-  {
-    "en": "unclineize",
-    "phon": "/unclineize/",
-    "cn": "unclineize"
-  },
-  {
-    "en": "unclineise",
-    "phon": "/unclineise/",
-    "cn": "unclineise"
-  },
-  {
-    "en": "unclineify",
-    "phon": "/unclineify/",
-    "cn": "unclineify"
-  },
-  {
-    "en": "eschatology",
-    "phon": "/ˌeskəˈtɒl.ə.dʒi/",
-    "cn": "末世论"
-  },
-  {
-    "en": "cosmology",
-    "phon": "/kɒzˈmɒl.ə.dʒi/",
-    "cn": "宇宙论"
-  },
-  {
-    "en": "theology",
-    "phon": "/θiˈɒl.ə.dʒi/",
-    "cn": "神学"
-  },
-  {
-    "en": "pneumatology",
-    "phon": "/ˌnjuː.məˈtɒl.ə.dʒi/",
-    "cn": "圣灵论"
-  },
-  {
-    "en": "soteriology",
-    "phon": "/səʊˌtɪər.iˈɒl.ə.dʒi/",
-    "cn": "救恩论"
-  },
-  {
-    "en": "ecclesiology",
-    "phon": "/ɪˌkliː.ziˈɒl.ə.dʒi/",
-    "cn": "教会学"
-  },
-  {
-    "en": "liturgics",
-    "phon": "/lɪˈtɜːr.dʒɪks/",
-    "cn": "礼仪学"
-  },
-  {
-    "en": "homiletics",
-    "phon": "/ˌhɒm.ɪˈlet.ɪks/",
-    "cn": "讲道学"
-  },
-  {
-    "en": "patristics",
-    "phon": "/pəˈtrɪs.tɪks/",
-    "cn": "教父学"
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
   },
   {
     "en": "canon law",
@@ -240,13 +50,203 @@
     "cn": "教会法规"
   },
   {
+    "en": "liturgics",
+    "phon": "/lɪˈtɜːr.dʒɪks/",
+    "cn": "礼仪学"
+  },
+  {
+    "en": "integrity",
+    "phon": "/ɪnˈteɡ.rə.ti/",
+    "cn": "正直"
+  },
+  {
+    "en": "humanity",
+    "phon": "/hjuːˈmæn.ə.ti/",
+    "cn": "人性"
+  },
+  {
+    "en": "dignity",
+    "phon": "/ˈdɪɡ.nə.ti/",
+    "cn": "尊严"
+  },
+  {
+    "en": "skepticism",
+    "phon": "/ˈskep.tɪ.sɪ.zəm/",
+    "cn": "怀疑主义"
+  },
+  {
+    "en": "realism",
+    "phon": "/ˈriː.əl.ɪ.zəm/",
+    "cn": "现实主义"
+  },
+  {
+    "en": "teleology",
+    "phon": "/ˌtiː.liˈɒl.ə.dʒi/",
+    "cn": "目的论"
+  },
+  {
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
+  },
+  {
+    "en": "articulate",
+    "phon": "/ɑːrˈtɪk.jə.leɪt/",
+    "cn": "清晰表达"
+  },
+  {
+    "en": "phenomenology",
+    "phon": "/fɪˌnɒm.ɪˈnɒl.ə.dʒi/",
+    "cn": "现象学"
+  },
+  {
+    "en": "aesthetics",
+    "phon": "/iːsˈθet.ɪks/",
+    "cn": "美学"
+  },
+  {
+    "en": "ethics",
+    "phon": "/ˈeθ.ɪks/",
+    "cn": "伦理"
+  },
+  {
+    "en": "fraternity",
+    "phon": "/frəˈtɜːr.nə.ti/",
+    "cn": "博爱"
+  },
+  {
+    "en": "pragmatism",
+    "phon": "/ˈpræɡ.mə.tɪ.zəm/",
+    "cn": "实用主义"
+  },
+  {
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "hermeneutics",
+    "phon": "/ˌhɜːr.məˈnjuː.tɪks/",
+    "cn": "诠释学"
+  },
+  {
+    "en": "soteriology",
+    "phon": "/səʊˌtɪər.iˈɒl.ə.dʒi/",
+    "cn": "救恩论"
+  },
+  {
+    "en": "nihilism",
+    "phon": "/ˈnaɪ.ɪl.ɪ.zəm/",
+    "cn": "虚无主义"
+  },
+  {
     "en": "systematic theology",
     "phon": "/ˌsɪs.təˈmæt.ɪk θiˈɒl.ə.dʒi/",
     "cn": "系统神学"
   },
   {
-    "en": "unclineate",
-    "phon": "/unclineate/",
-    "cn": "unclineate"
+    "en": "altruism",
+    "phon": "/ˈæl.tru.ɪ.zəm/",
+    "cn": "利他主义"
+  },
+  {
+    "en": "existentialism",
+    "phon": "/ˌeɡ.zɪˈsten.ʃəl.ɪ.zəm/",
+    "cn": "存在主义"
+  },
+  {
+    "en": "vice",
+    "phon": "/vaɪs/",
+    "cn": "恶习"
+  },
+  {
+    "en": "virtue",
+    "phon": "/ˈvɜːr.tʃuː/",
+    "cn": "美德"
+  },
+  {
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
+  },
+  {
+    "en": "ecclesiology",
+    "phon": "/ɪˌkliː.ziˈɒl.ə.dʒi/",
+    "cn": "教会学"
+  },
+  {
+    "en": "semiotics",
+    "phon": "/ˌsiː.miˈɒt.ɪks/",
+    "cn": "符号学"
+  },
+  {
+    "en": "patristics",
+    "phon": "/pəˈtrɪs.tɪks/",
+    "cn": "教父学"
+  },
+  {
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
+  },
+  {
+    "en": "confess",
+    "phon": "/kənˈfes/",
+    "cn": "承认"
+  },
+  {
+    "en": "eschatology",
+    "phon": "/ˌeskəˈtɒl.ə.dʒi/",
+    "cn": "末世论"
+  },
+  {
+    "en": "homiletics",
+    "phon": "/ˌhɒm.ɪˈlet.ɪks/",
+    "cn": "讲道学"
+  },
+  {
+    "en": "cosmology",
+    "phon": "/kɒzˈmɒl.ə.dʒi/",
+    "cn": "宇宙论"
+  },
+  {
+    "en": "relativism",
+    "phon": "/ˈrel.ə.tɪ.vɪ.zəm/",
+    "cn": "相对主义"
+  },
+  {
+    "en": "morality",
+    "phon": "/məˈræl.ə.ti/",
+    "cn": "道德"
+  },
+  {
+    "en": "confine",
+    "phon": "/kənˈfaɪn/",
+    "cn": "限制"
+  },
+  {
+    "en": "idealism",
+    "phon": "/aɪˈdɪə.lɪ.zəm/",
+    "cn": "理想主义"
+  },
+  {
+    "en": "metaphysics",
+    "phon": "/ˌmet.əˈfɪz.ɪks/",
+    "cn": "形而上学"
+  },
+  {
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
+  },
+  {
+    "en": "theology",
+    "phon": "/θiˈɒl.ə.dʒi/",
+    "cn": "神学"
   }
 ]

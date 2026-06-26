@@ -1,68 +1,8 @@
 [
   {
-    "en": "uncordent",
-    "phon": "/uncordent/",
-    "cn": "uncordent"
-  },
-  {
-    "en": "uncordant",
-    "phon": "/uncordant/",
-    "cn": "uncordant"
-  },
-  {
-    "en": "Industrial Revolution",
-    "phon": "/ɪnˈdʌs.tri.əl ˌrev.əˈluː.ʃən/",
-    "cn": "工业革命"
-  },
-  {
-    "en": "World War I",
-    "phon": "/wɜːrld wɔːr wʌn/",
-    "cn": "第一次世界大战"
-  },
-  {
-    "en": "World War II",
-    "phon": "/wɜːrld wɔːr tuː/",
-    "cn": "第二次世界大战"
-  },
-  {
-    "en": "Cold War",
-    "phon": "/kəʊld wɔːr/",
-    "cn": "冷战"
-  },
-  {
-    "en": "Civil Rights Movement",
-    "phon": "/ˈsɪv.əl raɪts ˈmuːv.mənt/",
-    "cn": "民权运动"
-  },
-  {
-    "en": "feminism",
-    "phon": "/ˈfem.ɪn.ɪ.zəm/",
-    "cn": "女权主义"
-  },
-  {
-    "en": "uncordary",
-    "phon": "/uncordary/",
-    "cn": "uncordary"
-  },
-  {
-    "en": "postmodernism",
-    "phon": "/ˌpəʊstˈmɒd.ən.ɪ.zəm/",
-    "cn": "后现代主义"
-  },
-  {
-    "en": "romanticism",
-    "phon": "/rəʊˈmæn.tɪ.sɪ.zəm/",
-    "cn": "浪漫主义"
-  },
-  {
-    "en": "uncordory",
-    "phon": "/uncordory/",
-    "cn": "uncordory"
-  },
-  {
-    "en": "impressionism",
-    "phon": "/ɪmˈpreʃ.ən.ɪ.zəm/",
-    "cn": "印象主义"
+    "en": "comprehensive",
+    "phon": "/ˌkɒm.prɪˈhen.sɪv/",
+    "cn": "全面的"
   },
   {
     "en": "cubism",
@@ -70,19 +10,9 @@
     "cn": "立体主义"
   },
   {
-    "en": "surrealism",
-    "phon": "/səˈriː.əl.ɪ.zəm/",
-    "cn": "超现实主义"
-  },
-  {
-    "en": "abstract expressionism",
-    "phon": "/ˈæb.strækt ɪkˈspreʃ.ən.ɪ.zəm/",
-    "cn": "抽象表现主义"
-  },
-  {
-    "en": "pop art",
-    "phon": "/pɒp ɑːrt/",
-    "cn": "波普艺术"
+    "en": "transcendentalism",
+    "phon": "/ˌtræn.senˈden.təl.ɪ.zəm/",
+    "cn": "超验主义"
   },
   {
     "en": "minimalism",
@@ -90,129 +20,9 @@
     "cn": "极简主义"
   },
   {
-    "en": "baroque",
-    "phon": "/bəˈrɒk/",
-    "cn": "巴洛克"
-  },
-  {
-    "en": "classical",
-    "phon": "/ˈklæs.ɪ.kəl/",
-    "cn": "古典的"
-  },
-  {
-    "en": "modernism",
-    "phon": "/ˈmɒd.ən.ɪ.zəm/",
-    "cn": "现代主义"
-  },
-  {
-    "en": "avant-garde",
-    "phon": "/ˌæv.ɑːŋ ˈɡɑːrd/",
-    "cn": "先锋派"
-  },
-  {
-    "en": "bohemian",
-    "phon": "/bəʊˈhiː.mi.ən/",
-    "cn": "波西米亚"
-  },
-  {
-    "en": "dadaism",
-    "phon": "/ˈdɑː.dɑː.ɪ.zəm/",
-    "cn": "达达主义"
-  },
-  {
-    "en": "futurism",
-    "phon": "/ˈfjuː.tʃər.ɪ.zəm/",
-    "cn": "未来主义"
-  },
-  {
-    "en": "constructivism",
-    "phon": "/kənˈstrʌk.tɪ.vɪ.zəm/",
-    "cn": "构成主义"
-  },
-  {
-    "en": "expressionism",
-    "phon": "/ɪkˈspreʃ.ən.ɪ.zəm/",
-    "cn": "表现主义"
-  },
-  {
-    "en": "uncorddom",
-    "phon": "/uncorddom/",
-    "cn": "uncorddom"
-  },
-  {
-    "en": "naturalism",
-    "phon": "/ˈnætʃ.rəl.ɪ.zəm/",
-    "cn": "自然主义"
-  },
-  {
-    "en": "transcendentalism",
-    "phon": "/ˌtræn.senˈden.təl.ɪ.zəm/",
-    "cn": "超验主义"
-  },
-  {
-    "en": "absurdism",
-    "phon": "/əbˈsɜːr.dɪ.zəm/",
-    "cn": "荒诞主义"
-  },
-  {
-    "en": "uncordship",
-    "phon": "/uncordship/",
-    "cn": "uncordship"
-  },
-  {
-    "en": "uncordward",
-    "phon": "/uncordward/",
-    "cn": "uncordward"
-  },
-  {
-    "en": "uncordwise",
-    "phon": "/uncordwise/",
-    "cn": "uncordwise"
-  },
-  {
-    "en": "uncordling",
-    "phon": "/uncordling/",
-    "cn": "uncordling"
-  },
-  {
-    "en": "feminist theory",
-    "phon": "/ˈfem.ɪn.ɪst ˈθɪər.i/",
-    "cn": "女性主义理论"
-  },
-  {
-    "en": "queer theory",
-    "phon": "/kwɪər ˈθɪər.i/",
-    "cn": "酷儿理论"
-  },
-  {
-    "en": "critical race theory",
-    "phon": "/ˈkrɪt.ɪ.kəl reɪs ˈθɪər.i/",
-    "cn": "批判种族理论"
-  },
-  {
-    "en": "postmodern literature",
-    "phon": "/ˌpəʊstˈmɒd.ən ˈlɪt.ər.ə.tʃər/",
-    "cn": "后现代文学"
-  },
-  {
-    "en": "magical realism",
-    "phon": "/ˈmædʒ.ɪ.kəl ˈriː.əl.ɪ.zəm/",
-    "cn": "魔幻现实主义"
-  },
-  {
-    "en": "stream of consciousness",
-    "phon": "/striːm əv ˈkɒn.ʃəs.nəs/",
-    "cn": "意识流"
-  },
-  {
-    "en": "bildungsroman",
-    "phon": "/bɪlˈdʊŋs.roʊ.mɑːn/",
-    "cn": "成长小说"
-  },
-  {
-    "en": "picaresque",
-    "phon": "/ˌpɪk.əˈresk/",
-    "cn": "流浪汉小说"
+    "en": "Cold War",
+    "phon": "/kəʊld wɔːr/",
+    "cn": "冷战"
   },
   {
     "en": "gothic",
@@ -220,24 +30,24 @@
     "cn": "哥特式"
   },
   {
-    "en": "noir",
-    "phon": "/nwɑːr/",
-    "cn": "黑色电影"
+    "en": "World War II",
+    "phon": "/wɜːrld wɔːr tuː/",
+    "cn": "第二次世界大战"
   },
   {
-    "en": "uncordlet",
-    "phon": "/uncordlet/",
-    "cn": "uncordlet"
+    "en": "bildungsroman",
+    "phon": "/bɪlˈdʊŋs.roʊ.mɑːn/",
+    "cn": "成长小说"
   },
   {
-    "en": "uncordette",
-    "phon": "/uncordette/",
-    "cn": "uncordette"
+    "en": "postmodern literature",
+    "phon": "/ˌpəʊstˈmɒd.ən ˈlɪt.ər.ə.tʃər/",
+    "cn": "后现代文学"
   },
   {
-    "en": "parody",
-    "phon": "/ˈpær.ə.di/",
-    "cn": "戏仿"
+    "en": "modernism",
+    "phon": "/ˈmɒd.ən.ɪ.zəm/",
+    "cn": "现代主义"
   },
   {
     "en": "pastiche",
@@ -245,8 +55,198 @@
     "cn": "仿作"
   },
   {
-    "en": "uncorption",
-    "phon": "/uncorption/",
-    "cn": "uncorption"
+    "en": "stream of consciousness",
+    "phon": "/striːm əv ˈkɒn.ʃəs.nəs/",
+    "cn": "意识流"
+  },
+  {
+    "en": "classical",
+    "phon": "/ˈklæs.ɪ.kəl/",
+    "cn": "古典的"
+  },
+  {
+    "en": "magical realism",
+    "phon": "/ˈmædʒ.ɪ.kəl ˈriː.əl.ɪ.zəm/",
+    "cn": "魔幻现实主义"
+  },
+  {
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
+  },
+  {
+    "en": "futurism",
+    "phon": "/ˈfjuː.tʃər.ɪ.zəm/",
+    "cn": "未来主义"
+  },
+  {
+    "en": "collaborate",
+    "phon": "/kəˈlæb.ə.reɪt/",
+    "cn": "合作"
+  },
+  {
+    "en": "abstraction",
+    "phon": "/æbˈstræk.ʃən/",
+    "cn": "抽象概念"
+  },
+  {
+    "en": "absurdism",
+    "phon": "/əbˈsɜːr.dɪ.zəm/",
+    "cn": "荒诞主义"
+  },
+  {
+    "en": "romanticism",
+    "phon": "/rəʊˈmæn.tɪ.sɪ.zəm/",
+    "cn": "浪漫主义"
+  },
+  {
+    "en": "World War I",
+    "phon": "/wɜːrld wɔːr wʌn/",
+    "cn": "第一次世界大战"
+  },
+  {
+    "en": "impressionism",
+    "phon": "/ɪmˈpreʃ.ən.ɪ.zəm/",
+    "cn": "印象主义"
+  },
+  {
+    "en": "compile",
+    "phon": "/kəmˈpaɪl/",
+    "cn": "编译"
+  },
+  {
+    "en": "constructivism",
+    "phon": "/kənˈstrʌk.tɪ.vɪ.zəm/",
+    "cn": "构成主义"
+  },
+  {
+    "en": "Civil Rights Movement",
+    "phon": "/ˈsɪv.əl raɪts ˈmuːv.mənt/",
+    "cn": "民权运动"
+  },
+  {
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
+  },
+  {
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
+  },
+  {
+    "en": "feminist theory",
+    "phon": "/ˈfem.ɪn.ɪst ˈθɪər.i/",
+    "cn": "女性主义理论"
+  },
+  {
+    "en": "picaresque",
+    "phon": "/ˌpɪk.əˈresk/",
+    "cn": "流浪汉小说"
+  },
+  {
+    "en": "dadaism",
+    "phon": "/ˈdɑː.dɑː.ɪ.zəm/",
+    "cn": "达达主义"
+  },
+  {
+    "en": "bohemian",
+    "phon": "/bəʊˈhiː.mi.ən/",
+    "cn": "波西米亚"
+  },
+  {
+    "en": "expressionism",
+    "phon": "/ɪkˈspreʃ.ən.ɪ.zəm/",
+    "cn": "表现主义"
+  },
+  {
+    "en": "critical race theory",
+    "phon": "/ˈkrɪt.ɪ.kəl reɪs ˈθɪər.i/",
+    "cn": "批判种族理论"
+  },
+  {
+    "en": "complement",
+    "phon": "/ˈkɒm.plɪ.ment/",
+    "cn": "补充"
+  },
+  {
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
+  },
+  {
+    "en": "surrealism",
+    "phon": "/səˈriː.əl.ɪ.zəm/",
+    "cn": "超现实主义"
+  },
+  {
+    "en": "avant-garde",
+    "phon": "/ˌæv.ɑːŋ ˈɡɑːrd/",
+    "cn": "先锋派"
+  },
+  {
+    "en": "Industrial Revolution",
+    "phon": "/ɪnˈdʌs.tri.əl ˌrev.əˈluː.ʃən/",
+    "cn": "工业革命"
+  },
+  {
+    "en": "queer theory",
+    "phon": "/kwɪər ˈθɪər.i/",
+    "cn": "酷儿理论"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "pop art",
+    "phon": "/pɒp ɑːrt/",
+    "cn": "波普艺术"
+  },
+  {
+    "en": "naturalism",
+    "phon": "/ˈnætʃ.rəl.ɪ.zəm/",
+    "cn": "自然主义"
+  },
+  {
+    "en": "parody",
+    "phon": "/ˈpær.ə.di/",
+    "cn": "戏仿"
+  },
+  {
+    "en": "feminism",
+    "phon": "/ˈfem.ɪn.ɪ.zəm/",
+    "cn": "女权主义"
+  },
+  {
+    "en": "baroque",
+    "phon": "/bəˈrɒk/",
+    "cn": "巴洛克"
+  },
+  {
+    "en": "postmodernism",
+    "phon": "/ˌpəʊstˈmɒd.ən.ɪ.zəm/",
+    "cn": "后现代主义"
+  },
+  {
+    "en": "abstract expressionism",
+    "phon": "/ˈæb.strækt ɪkˈspreʃ.ən.ɪ.zəm/",
+    "cn": "抽象表现主义"
+  },
+  {
+    "en": "noir",
+    "phon": "/nwɑːr/",
+    "cn": "黑色电影"
+  },
+  {
+    "en": "authorize",
+    "phon": "/ˈɔː.θər.aɪz/",
+    "cn": "授权"
   }
 ]

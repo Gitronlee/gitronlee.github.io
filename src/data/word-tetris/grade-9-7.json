@@ -1,173 +1,8 @@
 [
   {
-    "en": "juxtapose",
-    "phon": "/ˌdʒʌk.stəˈpəʊz/",
-    "cn": "并列"
-  },
-  {
-    "en": "exacerbate",
-    "phon": "/ɪɡˈzæs.ər.beɪt/",
-    "cn": "加剧"
-  },
-  {
-    "en": "ameliorate",
-    "phon": "/əˈmiː.li.ər.eɪt/",
-    "cn": "改善"
-  },
-  {
-    "en": "obfuscate",
-    "phon": "/ˈɒb.fʌs.keɪt/",
-    "cn": "混淆"
-  },
-  {
-    "en": "elucidate",
-    "phon": "/ɪˈluː.sɪ.deɪt/",
-    "cn": "阐明"
-  },
-  {
-    "en": "promulgate",
-    "phon": "/ˈprɒm.ʌl.ɡeɪt/",
-    "cn": "颁布"
-  },
-  {
-    "en": "uncorpsion",
-    "phon": "/uncorpsion/",
-    "cn": "uncorpsion"
-  },
-  {
-    "en": "disseminate",
-    "phon": "/dɪˈsem.ɪ.neɪt/",
-    "cn": "传播"
-  },
-  {
-    "en": "circumscribe",
-    "phon": "/ˈsɜːr.kəm.skrɑɪb/",
-    "cn": "限制"
-  },
-  {
-    "en": "circumvent",
-    "phon": "/ˌsɜː.kəmˈvent/",
-    "cn": "规避"
-  },
-  {
-    "en": "substantiate",
-    "phon": "/səbˈstæn.ʃi.eɪt/",
-    "cn": "证实"
-  },
-  {
-    "en": "corroborate",
-    "phon": "/kəˈrɒb.ər.eɪt/",
-    "cn": "证实"
-  },
-  {
-    "en": "invalidate",
-    "phon": "/ɪnˈvæl.ɪ.deɪt/",
-    "cn": "使无效"
-  },
-  {
-    "en": "contradict",
-    "phon": "/ˌkɒn.trəˈdɪkt/",
-    "cn": "反驳"
-  },
-  {
-    "en": "mitigate",
-    "phon": "/ˈmɪt.ɪ.ɡeɪt/",
-    "cn": "减轻"
-  },
-  {
-    "en": "alleviate",
-    "phon": "/əˈliː.vi.eɪt/",
-    "cn": "缓解"
-  },
-  {
-    "en": "uncorpment",
-    "phon": "/uncorpment/",
-    "cn": "uncorpment"
-  },
-  {
-    "en": "aggravate",
-    "phon": "/ˈæɡ.rə.veɪt/",
-    "cn": "加重"
-  },
-  {
-    "en": "precipitate",
-    "phon": "/prɪˈsɪp.ɪ.teɪt/",
-    "cn": "加速"
-  },
-  {
-    "en": "expedite",
-    "phon": "/ˈek.spɪ.daɪt/",
-    "cn": "加快"
-  },
-  {
-    "en": "hasten",
-    "phon": "/ˈheɪ.sən/",
-    "cn": "加速"
-  },
-  {
-    "en": "defer",
-    "phon": "/dɪˈfɜːr/",
-    "cn": "推迟"
-  },
-  {
-    "en": "postpone",
-    "phon": "/pəʊstˈpəʊn/",
-    "cn": "延期"
-  },
-  {
-    "en": "procrastinate",
-    "phon": "/prəˈkræs.tɪ.neɪt/",
-    "cn": "拖延"
-  },
-  {
-    "en": "prevaricate",
-    "phon": "/prɪˈvær.ɪ.keɪt/",
-    "cn": "支吾"
-  },
-  {
-    "en": "equivocate",
-    "phon": "/ɪˈkwɪv.ə.keɪt/",
-    "cn": "含糊其辞"
-  },
-  {
-    "en": "vacillate",
-    "phon": "/ˈvæs.ɪ.leɪt/",
-    "cn": "犹豫不决"
-  },
-  {
-    "en": "waver",
-    "phon": "/ˈweɪ.vər/",
-    "cn": "动摇"
-  },
-  {
-    "en": "fluctuate",
-    "phon": "/ˈflʌk.tʃu.eɪt/",
-    "cn": "波动"
-  },
-  {
-    "en": "oscillate",
-    "phon": "/ˈɒs.ɪ.leɪt/",
-    "cn": "振荡"
-  },
-  {
-    "en": "undulate",
-    "phon": "/ˈʌn.djʊ.leɪt/",
-    "cn": "起伏"
-  },
-  {
-    "en": "meander",
-    "phon": "/miˈæn.dər/",
-    "cn": "蜿蜒"
-  },
-  {
-    "en": "diverge",
-    "phon": "/daɪˈvɜːrdʒ/",
-    "cn": "分叉"
-  },
-  {
-    "en": "converge",
-    "phon": "/kənˈvɜːrdʒ/",
-    "cn": "汇聚"
+    "en": "assimilate",
+    "phon": "/əˈsɪm.ɪ.leɪt/",
+    "cn": "同化"
   },
   {
     "en": "coalesce",
@@ -175,24 +10,54 @@
     "cn": "合并"
   },
   {
-    "en": "amalgamate",
-    "phon": "/əˈmæl.ɡə.meɪt/",
-    "cn": "合并"
+    "en": "precipitate",
+    "phon": "/prɪˈsɪp.ɪ.teɪt/",
+    "cn": "加速"
   },
   {
-    "en": "integrate",
-    "phon": "/ˈɪn.tɪ.ɡreɪt/",
-    "cn": "整合"
+    "en": "surmise",
+    "phon": "/sərˈmaɪz/",
+    "cn": "推测"
   },
   {
-    "en": "assimilate",
-    "phon": "/əˈsɪm.ɪ.leɪt/",
-    "cn": "同化"
+    "en": "equivocate",
+    "phon": "/ɪˈkwɪv.ə.keɪt/",
+    "cn": "含糊其辞"
   },
   {
-    "en": "incorporate",
-    "phon": "/ɪnˈkɔːr.pər.eɪt/",
-    "cn": "合并"
+    "en": "aggravate",
+    "phon": "/ˈæɡ.rə.veɪt/",
+    "cn": "加重"
+  },
+  {
+    "en": "waver",
+    "phon": "/ˈweɪ.vər/",
+    "cn": "动摇"
+  },
+  {
+    "en": "hasten",
+    "phon": "/ˈheɪ.sən/",
+    "cn": "加速"
+  },
+  {
+    "en": "confront",
+    "phon": "/kənˈfrʌnt/",
+    "cn": "面对"
+  },
+  {
+    "en": "oscillate",
+    "phon": "/ˈɒs.ɪ.leɪt/",
+    "cn": "振荡"
+  },
+  {
+    "en": "procrastinate",
+    "phon": "/prəˈkræs.tɪ.neɪt/",
+    "cn": "拖延"
+  },
+  {
+    "en": "diverge",
+    "phon": "/daɪˈvɜːrdʒ/",
+    "cn": "分叉"
   },
   {
     "en": "synthesize",
@@ -205,14 +70,34 @@
     "cn": "推断"
   },
   {
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
+  },
+  {
+    "en": "speculate",
+    "phon": "/ˈspek.jʊ.leɪt/",
+    "cn": "推测"
+  },
+  {
+    "en": "elucidate",
+    "phon": "/ɪˈluː.sɪ.deɪt/",
+    "cn": "阐明"
+  },
+  {
+    "en": "invalidate",
+    "phon": "/ɪnˈvæl.ɪ.deɪt/",
+    "cn": "使无效"
+  },
+  {
+    "en": "promulgate",
+    "phon": "/ˈprɒm.ʌl.ɡeɪt/",
+    "cn": "颁布"
+  },
+  {
     "en": "interpolate",
     "phon": "/ɪnˈtɜːr.pəl.eɪt/",
     "cn": "插值"
-  },
-  {
-    "en": "uncorpness",
-    "phon": "/ʌnˈkɔːrp.nəs/",
-    "cn": "非实体性"
   },
   {
     "en": "postulate",
@@ -225,9 +110,89 @@
     "cn": "假设"
   },
   {
-    "en": "theorize",
-    "phon": "/ˈθɪər.aɪz/",
-    "cn": "理论化"
+    "en": "ameliorate",
+    "phon": "/əˈmiː.li.ər.eɪt/",
+    "cn": "改善"
+  },
+  {
+    "en": "converge",
+    "phon": "/kənˈvɜːrdʒ/",
+    "cn": "汇聚"
+  },
+  {
+    "en": "undulate",
+    "phon": "/ˈʌn.djʊ.leɪt/",
+    "cn": "起伏"
+  },
+  {
+    "en": "disseminate",
+    "phon": "/dɪˈsem.ɪ.neɪt/",
+    "cn": "传播"
+  },
+  {
+    "en": "vacillate",
+    "phon": "/ˈvæs.ɪ.leɪt/",
+    "cn": "犹豫不决"
+  },
+  {
+    "en": "mitigate",
+    "phon": "/ˈmɪt.ɪ.ɡeɪt/",
+    "cn": "减轻"
+  },
+  {
+    "en": "defer",
+    "phon": "/dɪˈfɜːr/",
+    "cn": "推迟"
+  },
+  {
+    "en": "contradict",
+    "phon": "/ˌkɒn.trəˈdɪkt/",
+    "cn": "反驳"
+  },
+  {
+    "en": "alleviate",
+    "phon": "/əˈliː.vi.eɪt/",
+    "cn": "缓解"
+  },
+  {
+    "en": "substantiate",
+    "phon": "/səbˈstæn.ʃi.eɪt/",
+    "cn": "证实"
+  },
+  {
+    "en": "integrate",
+    "phon": "/ˈɪn.tɪ.ɡreɪt/",
+    "cn": "整合"
+  },
+  {
+    "en": "incorporate",
+    "phon": "/ɪnˈkɔːr.pər.eɪt/",
+    "cn": "合并"
+  },
+  {
+    "en": "circumscribe",
+    "phon": "/ˈsɜːr.kəm.skrɑɪb/",
+    "cn": "限制"
+  },
+  {
+    "en": "expedite",
+    "phon": "/ˈek.spɪ.daɪt/",
+    "cn": "加快"
+  },
+  {
+    "en": "fluctuate",
+    "phon": "/ˈflʌk.tʃu.eɪt/",
+    "cn": "波动"
+  },
+  {
+    "en": "exacerbate",
+    "phon": "/ɪɡˈzæs.ər.beɪt/",
+    "cn": "加剧"
+  },
+  {
+    "en": "meander",
+    "phon": "/miˈæn.dər/",
+    "cn": "蜿蜒"
   },
   {
     "en": "conjecture",
@@ -235,18 +200,53 @@
     "cn": "推测"
   },
   {
-    "en": "speculate",
-    "phon": "/ˈspek.jʊ.leɪt/",
-    "cn": "推测"
+    "en": "obfuscate",
+    "phon": "/ˈɒb.fʌs.keɪt/",
+    "cn": "混淆"
   },
   {
-    "en": "surmise",
-    "phon": "/sərˈmaɪz/",
-    "cn": "推测"
+    "en": "uncorpness",
+    "phon": "/ʌnˈkɔːrp.nəs/",
+    "cn": "非实体性"
   },
   {
-    "en": "uncorpity",
-    "phon": "/uncorpity/",
-    "cn": "uncorpity"
+    "en": "theorize",
+    "phon": "/ˈθɪər.aɪz/",
+    "cn": "理论化"
+  },
+  {
+    "en": "prevaricate",
+    "phon": "/prɪˈvær.ɪ.keɪt/",
+    "cn": "支吾"
+  },
+  {
+    "en": "juxtapose",
+    "phon": "/ˌdʒʌk.stəˈpəʊz/",
+    "cn": "并列"
+  },
+  {
+    "en": "amalgamate",
+    "phon": "/əˈmæl.ɡə.meɪt/",
+    "cn": "合并"
+  },
+  {
+    "en": "postpone",
+    "phon": "/pəʊstˈpəʊn/",
+    "cn": "延期"
+  },
+  {
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
+  },
+  {
+    "en": "circumvent",
+    "phon": "/ˌsɜː.kəmˈvent/",
+    "cn": "规避"
+  },
+  {
+    "en": "corroborate",
+    "phon": "/kəˈrɒb.ər.eɪt/",
+    "cn": "证实"
   }
 ]

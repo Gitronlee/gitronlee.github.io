@@ -1,158 +1,18 @@
 [
   {
-    "en": "environment",
-    "phon": "/ɪnˈvaɪ.rən.mənt/",
-    "cn": "环境"
+    "en": "attempt",
+    "phon": "/əˈtempt/",
+    "cn": "尝试"
   },
   {
-    "en": "ecosystem",
-    "phon": "/ˈiː.kəʊ.sɪs.təm/",
-    "cn": "生态系统"
+    "en": "assign",
+    "phon": "/əˈsaɪn/",
+    "cn": "分配"
   },
   {
-    "en": "biodiversity",
-    "phon": "/ˌbaɪ.əʊ.daɪˈvɜːr.sə.ti/",
-    "cn": "生物多样性"
-  },
-  {
-    "en": "habitat",
-    "phon": "/ˈhæb.ɪ.tæt/",
-    "cn": "栖息地"
-  },
-  {
-    "en": "endangered",
-    "phon": "/ɪnˈdeɪn.dʒərd/",
-    "cn": "濒危的"
-  },
-  {
-    "en": "extinct",
-    "phon": "/ɪkˈstɪŋkt/",
-    "cn": "灭绝的"
-  },
-  {
-    "en": "species",
-    "phon": "/ˈspiː.ʃiːz/",
-    "cn": "物种"
-  },
-  {
-    "en": "extinction",
-    "phon": "/ɪkˈstɪŋk.ʃən/",
-    "cn": "灭绝"
-  },
-  {
-    "en": "unceedity",
-    "phon": "/unceedity/",
-    "cn": "unceedity"
-  },
-  {
-    "en": "deforestation",
-    "phon": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
-    "cn": "砍伐森林"
-  },
-  {
-    "en": "reforestation",
-    "phon": "/riːˌfɒr.ɪˈsteɪ.ʃən/",
-    "cn": "重新造林"
-  },
-  {
-    "en": "unceedence",
-    "phon": "/unceedence/",
-    "cn": "unceedence"
-  },
-  {
-    "en": "carbon",
-    "phon": "/ˈkɑːr.bən/",
-    "cn": "碳"
-  },
-  {
-    "en": "emission",
-    "phon": "/ɪˈmɪʃ.ən/",
-    "cn": "排放"
-  },
-  {
-    "en": "greenhouse",
-    "phon": "/ˈɡriːn.haʊs/",
-    "cn": "温室"
-  },
-  {
-    "en": "climate change",
-    "phon": "/ˈklaɪ.mət tʃeɪndʒ/",
-    "cn": "气候变化"
-  },
-  {
-    "en": "global warming",
-    "phon": "/ˈɡləʊ.bəl ˈwɔːr.mɪŋ/",
-    "cn": "全球变暖"
-  },
-  {
-    "en": "renewable",
-    "phon": "/rɪˈnjuː.ə.bəl/",
-    "cn": "可再生的"
-  },
-  {
-    "en": "solar",
-    "phon": "/ˈsəʊ.lər/",
-    "cn": "太阳能的"
-  },
-  {
-    "en": "wind energy",
-    "phon": "/wɪnd ˈen.ə.dʒi/",
-    "cn": "风能"
-  },
-  {
-    "en": "fossil",
-    "phon": "/ˈfɒs.əl/",
-    "cn": "化石"
-  },
-  {
-    "en": "fuel",
-    "phon": "/fjuːəl/",
-    "cn": "燃料"
-  },
-  {
-    "en": "oil spill",
-    "phon": "/ɔɪl spɪl/",
-    "cn": "石油泄漏"
-  },
-  {
-    "en": "unceedance",
-    "phon": "/unceedance/",
-    "cn": "unceedance"
-  },
-  {
-    "en": "unceedous",
-    "phon": "/unceedous/",
-    "cn": "unceedous"
-  },
-  {
-    "en": "compost",
-    "phon": "/ˈkɒm.pɒst/",
-    "cn": "堆肥"
-  },
-  {
-    "en": "landfill",
-    "phon": "/ˈlænd.fɪl/",
-    "cn": "垃圾填埋场"
-  },
-  {
-    "en": "plastic",
-    "phon": "/ˈplæs.tɪk/",
-    "cn": "塑料"
-  },
-  {
-    "en": "biodegradable",
-    "phon": "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl/",
-    "cn": "可生物降解的"
-  },
-  {
-    "en": "sustainable",
-    "phon": "/səˈsteɪ.nə.bəl/",
-    "cn": "可持续的"
-  },
-  {
-    "en": "unceedive",
-    "phon": "/unceedive/",
-    "cn": "unceedive"
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
   },
   {
     "en": "pesticide",
@@ -160,59 +20,9 @@
     "cn": "杀虫剂"
   },
   {
-    "en": "fertilizer",
-    "phon": "/ˈfɜːr.tɪ.laɪ.zər/",
-    "cn": "化肥"
-  },
-  {
-    "en": "irrigation",
-    "phon": "/ˌɪr.ɪˈɡeɪ.ʃən/",
-    "cn": "灌溉"
-  },
-  {
-    "en": "soil",
-    "phon": "/sɔɪl/",
-    "cn": "土壤"
-  },
-  {
-    "en": "erosion",
-    "phon": "/ɪˈrəʊ.ʒən/",
-    "cn": "侵蚀"
-  },
-  {
-    "en": "unceedful",
-    "phon": "/unceedful/",
-    "cn": "unceedful"
-  },
-  {
-    "en": "unceedless",
-    "phon": "/unceedless/",
-    "cn": "unceedless"
-  },
-  {
-    "en": "earthquake",
-    "phon": "/ˈɜːrθ.kweɪk/",
-    "cn": "地震"
-  },
-  {
-    "en": "volcano",
-    "phon": "/vɒlˈkeɪ.nəʊ/",
-    "cn": "火山"
-  },
-  {
-    "en": "tsunami",
-    "phon": "/tsuːˈnɑː.mi/",
-    "cn": "海啸"
-  },
-  {
-    "en": "hurricane",
-    "phon": "/ˈhʌr.ɪ.keɪn/",
-    "cn": "飓风"
-  },
-  {
-    "en": "tornado",
-    "phon": "/tɔːrˈneɪ.dəʊ/",
-    "cn": "龙卷风"
+    "en": "plastic",
+    "phon": "/ˈplæs.tɪk/",
+    "cn": "塑料"
   },
   {
     "en": "wildfire",
@@ -220,33 +30,223 @@
     "cn": "野火"
   },
   {
+    "en": "solar",
+    "phon": "/ˈsəʊ.lər/",
+    "cn": "太阳能的"
+  },
+  {
+    "en": "species",
+    "phon": "/ˈspiː.ʃiːz/",
+    "cn": "物种"
+  },
+  {
+    "en": "carbon",
+    "phon": "/ˈkɑːr.bən/",
+    "cn": "碳"
+  },
+  {
+    "en": "sustainable",
+    "phon": "/səˈsteɪ.nə.bəl/",
+    "cn": "可持续的"
+  },
+  {
     "en": "coral reef",
     "phon": "/ˈkɒr.əl riːf/",
     "cn": "珊瑚礁"
   },
   {
-    "en": "unceedable",
-    "phon": "/unceedable/",
-    "cn": "unceedable"
+    "en": "biodegradable",
+    "phon": "/ˌbaɪ.əʊ.dɪˈɡreɪ.də.bəl/",
+    "cn": "可生物降解的"
   },
   {
-    "en": "unceedible",
-    "phon": "/unceedible/",
-    "cn": "unceedible"
+    "en": "tornado",
+    "phon": "/tɔːrˈneɪ.dəʊ/",
+    "cn": "龙卷风"
   },
   {
-    "en": "unceedal",
-    "phon": "/unceedal/",
-    "cn": "unceedal"
+    "en": "greenhouse",
+    "phon": "/ˈɡriːn.haʊs/",
+    "cn": "温室"
   },
   {
-    "en": "unceedial",
-    "phon": "/unceedial/",
-    "cn": "unceedial"
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
   },
   {
-    "en": "unceedly",
-    "phon": "/unceedly/",
-    "cn": "unceedly"
+    "en": "environment",
+    "phon": "/ɪnˈvaɪ.rən.mənt/",
+    "cn": "环境"
+  },
+  {
+    "en": "soil",
+    "phon": "/sɔɪl/",
+    "cn": "土壤"
+  },
+  {
+    "en": "approximate",
+    "phon": "/əˈprɒk.sɪ.mət/",
+    "cn": "大约的"
+  },
+  {
+    "en": "endangered",
+    "phon": "/ɪnˈdeɪn.dʒərd/",
+    "cn": "濒危的"
+  },
+  {
+    "en": "irrigation",
+    "phon": "/ˌɪr.ɪˈɡeɪ.ʃən/",
+    "cn": "灌溉"
+  },
+  {
+    "en": "volcano",
+    "phon": "/vɒlˈkeɪ.nəʊ/",
+    "cn": "火山"
+  },
+  {
+    "en": "biodiversity",
+    "phon": "/ˌbaɪ.əʊ.daɪˈvɜːr.sə.ti/",
+    "cn": "生物多样性"
+  },
+  {
+    "en": "aesthetic",
+    "phon": "/iːsˈθet.ɪk/",
+    "cn": "美学的"
+  },
+  {
+    "en": "extinction",
+    "phon": "/ɪkˈstɪŋk.ʃən/",
+    "cn": "灭绝"
+  },
+  {
+    "en": "assist",
+    "phon": "/əˈsɪst/",
+    "cn": "协助"
+  },
+  {
+    "en": "fertilizer",
+    "phon": "/ˈfɜːr.tɪ.laɪ.zər/",
+    "cn": "化肥"
+  },
+  {
+    "en": "emission",
+    "phon": "/ɪˈmɪʃ.ən/",
+    "cn": "排放"
+  },
+  {
+    "en": "oil spill",
+    "phon": "/ɔɪl spɪl/",
+    "cn": "石油泄漏"
+  },
+  {
+    "en": "deforestation",
+    "phon": "/diːˌfɒr.ɪˈsteɪ.ʃən/",
+    "cn": "砍伐森林"
+  },
+  {
+    "en": "apparent",
+    "phon": "/əˈpær.ənt/",
+    "cn": "明显的"
+  },
+  {
+    "en": "habitat",
+    "phon": "/ˈhæb.ɪ.tæt/",
+    "cn": "栖息地"
+  },
+  {
+    "en": "fossil",
+    "phon": "/ˈfɒs.əl/",
+    "cn": "化石"
+  },
+  {
+    "en": "erosion",
+    "phon": "/ɪˈrəʊ.ʒən/",
+    "cn": "侵蚀"
+  },
+  {
+    "en": "renewable",
+    "phon": "/rɪˈnjuː.ə.bəl/",
+    "cn": "可再生的"
+  },
+  {
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
+  },
+  {
+    "en": "reforestation",
+    "phon": "/riːˌfɒr.ɪˈsteɪ.ʃən/",
+    "cn": "重新造林"
+  },
+  {
+    "en": "hurricane",
+    "phon": "/ˈhʌr.ɪ.keɪn/",
+    "cn": "飓风"
+  },
+  {
+    "en": "global warming",
+    "phon": "/ˈɡləʊ.bəl ˈwɔːr.mɪŋ/",
+    "cn": "全球变暖"
+  },
+  {
+    "en": "landfill",
+    "phon": "/ˈlænd.fɪl/",
+    "cn": "垃圾填埋场"
+  },
+  {
+    "en": "extinct",
+    "phon": "/ɪkˈstɪŋkt/",
+    "cn": "灭绝的"
+  },
+  {
+    "en": "earthquake",
+    "phon": "/ˈɜːrθ.kweɪk/",
+    "cn": "地震"
+  },
+  {
+    "en": "fuel",
+    "phon": "/fjuːəl/",
+    "cn": "燃料"
+  },
+  {
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
+  },
+  {
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "tsunami",
+    "phon": "/tsuːˈnɑː.mi/",
+    "cn": "海啸"
+  },
+  {
+    "en": "wind energy",
+    "phon": "/wɪnd ˈen.ə.dʒi/",
+    "cn": "风能"
+  },
+  {
+    "en": "climate change",
+    "phon": "/ˈklaɪ.mət tʃeɪndʒ/",
+    "cn": "气候变化"
+  },
+  {
+    "en": "ecosystem",
+    "phon": "/ˈiː.kəʊ.sɪs.təm/",
+    "cn": "生态系统"
+  },
+  {
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "接近"
+  },
+  {
+    "en": "compost",
+    "phon": "/ˈkɒm.pɒst/",
+    "cn": "堆肥"
   }
 ]

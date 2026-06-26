@@ -1,8 +1,33 @@
 [
   {
-    "en": "unclaimship",
-    "phon": "/unclaimship/",
-    "cn": "unclaimship"
+    "en": "irony",
+    "phon": "/ˈaɪ.rə.ni/",
+    "cn": "讽刺"
+  },
+  {
+    "en": "paradox",
+    "phon": "/ˈpær.ə.dɒks/",
+    "cn": "悖论"
+  },
+  {
+    "en": "biography",
+    "phon": "/baɪˈɒɡ.rə.fi/",
+    "cn": "传记"
+  },
+  {
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
+  },
+  {
+    "en": "anthology",
+    "phon": "/ænˈθɒl.ə.dʒi/",
+    "cn": "选集"
+  },
+  {
+    "en": "omniscient",
+    "phon": "/ɒmˈnɪʃ.ənt/",
+    "cn": "全知的"
   },
   {
     "en": "narrative",
@@ -10,29 +35,39 @@
     "cn": "叙事"
   },
   {
-    "en": "prose",
-    "phon": "/prəʊz/",
-    "cn": "散文"
+    "en": "unreliable narrator",
+    "phon": "/ˌʌn.rɪˈlaɪ.ə.bəl ˈnær.ə.tər/",
+    "cn": "不可靠叙述者"
   },
   {
-    "en": "unclaimward",
-    "phon": "/unclaimward/",
-    "cn": "unclaimward"
+    "en": "plot",
+    "phon": "/plɒt/",
+    "cn": "情节"
   },
   {
-    "en": "verse",
-    "phon": "/vɜːrs/",
-    "cn": "诗句"
+    "en": "narrator",
+    "phon": "/ˈnær.ə.tər/",
+    "cn": "叙述者"
   },
   {
-    "en": "rhyme",
-    "phon": "/raɪm/",
-    "cn": "押韵"
+    "en": "foreshadowing",
+    "phon": "/fɔːˈʃæd.əʊ.ɪŋ/",
+    "cn": "伏笔"
   },
   {
-    "en": "meter",
-    "phon": "/ˈmiː.tər/",
-    "cn": "格律"
+    "en": "metaphor",
+    "phon": "/ˈmet.ə.fər/",
+    "cn": "隐喻"
+  },
+  {
+    "en": "syntax",
+    "phon": "/ˈsɪn.tæks/",
+    "cn": "句法"
+  },
+  {
+    "en": "memoir",
+    "phon": "/ˈmem.wɑːr/",
+    "cn": "回忆录"
   },
   {
     "en": "stanza",
@@ -40,9 +75,134 @@
     "cn": "诗节"
   },
   {
-    "en": "metaphor",
-    "phon": "/ˈmet.ə.fər/",
-    "cn": "隐喻"
+    "en": "meter",
+    "phon": "/ˈmiː.tər/",
+    "cn": "格律"
+  },
+  {
+    "en": "rhetoric",
+    "phon": "/ˈret.ər.ɪk/",
+    "cn": "修辞"
+  },
+  {
+    "en": "resolution",
+    "phon": "/ˌrez.əˈluː.ʃən/",
+    "cn": "结局"
+  },
+  {
+    "en": "allegory",
+    "phon": "/ˈæl.ə.ɡər.i/",
+    "cn": "寓言"
+  },
+  {
+    "en": "anonymous",
+    "phon": "/əˈnɒn.ɪ.məs/",
+    "cn": "匿名的"
+  },
+  {
+    "en": "third person",
+    "phon": "/θɜːrd ˈpɜː.sən/",
+    "cn": "第三人称"
+  },
+  {
+    "en": "discourse",
+    "phon": "/ˈdɪs.kɔːrs/",
+    "cn": "话语"
+  },
+  {
+    "en": "canon",
+    "phon": "/ˈkæn.ən/",
+    "cn": "经典"
+  },
+  {
+    "en": "rhyme",
+    "phon": "/raɪm/",
+    "cn": "押韵"
+  },
+  {
+    "en": "flashback",
+    "phon": "/ˈflæʃ.bæk/",
+    "cn": "闪回"
+  },
+  {
+    "en": "foreshadow",
+    "phon": "/fɔːˈʃæd.əʊ/",
+    "cn": "预示"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "antagonist",
+    "phon": "/ænˈtæɡ.ən.ɪst/",
+    "cn": "反派"
+  },
+  {
+    "en": "diction",
+    "phon": "/ˈdɪk.ʃən/",
+    "cn": "措辞"
+  },
+  {
+    "en": "character",
+    "phon": "/ˈkær.ək.tər/",
+    "cn": "人物"
+  },
+  {
+    "en": "literary",
+    "phon": "/ˈlɪt.ər.ər.i/",
+    "cn": "文学的"
+  },
+  {
+    "en": "motif",
+    "phon": "/məʊˈtiːf/",
+    "cn": "母题"
+  },
+  {
+    "en": "critique",
+    "phon": "/krɪˈtiːk/",
+    "cn": "评论"
+  },
+  {
+    "en": "protagonist",
+    "phon": "/prəˈtæɡ.ən.ɪst/",
+    "cn": "主角"
+  },
+  {
+    "en": "climax",
+    "phon": "/ˈklaɪ.mæks/",
+    "cn": "高潮"
+  },
+  {
+    "en": "theme",
+    "phon": "/θiːm/",
+    "cn": "主题"
+  },
+  {
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
+  },
+  {
+    "en": "imagery",
+    "phon": "/ˈɪm.ɪ.dʒər.i/",
+    "cn": "意象"
+  },
+  {
+    "en": "autobiography",
+    "phon": "/ˌɔː.təʊ.baɪˈɒɡ.rə.fi/",
+    "cn": "自传"
+  },
+  {
+    "en": "setting",
+    "phon": "/ˈset.ɪŋ/",
+    "cn": "背景"
+  },
+  {
+    "en": "allusion",
+    "phon": "/əˈluː.ʒən/",
+    "cn": "典故"
   },
   {
     "en": "simile",
@@ -55,14 +215,14 @@
     "cn": "象征主义"
   },
   {
-    "en": "allegory",
-    "phon": "/ˈæl.ə.ɡər.i/",
-    "cn": "寓言"
+    "en": "assert",
+    "phon": "/əˈsɜːrt/",
+    "cn": "断言"
   },
   {
-    "en": "irony",
-    "phon": "/ˈaɪ.rə.ni/",
-    "cn": "讽刺"
+    "en": "prose",
+    "phon": "/prəʊz/",
+    "cn": "散文"
   },
   {
     "en": "satire",
@@ -70,169 +230,14 @@
     "cn": "讽刺文学"
   },
   {
-    "en": "paradox",
-    "phon": "/ˈpær.ə.dɒks/",
-    "cn": "悖论"
-  },
-  {
-    "en": "imagery",
-    "phon": "/ˈɪm.ɪ.dʒər.i/",
-    "cn": "意象"
-  },
-  {
-    "en": "theme",
-    "phon": "/θiːm/",
-    "cn": "主题"
-  },
-  {
-    "en": "motif",
-    "phon": "/məʊˈtiːf/",
-    "cn": "母题"
-  },
-  {
-    "en": "character",
-    "phon": "/ˈkær.ək.tər/",
-    "cn": "人物"
-  },
-  {
-    "en": "protagonist",
-    "phon": "/prəˈtæɡ.ən.ɪst/",
-    "cn": "主角"
-  },
-  {
-    "en": "antagonist",
-    "phon": "/ænˈtæɡ.ən.ɪst/",
-    "cn": "反派"
-  },
-  {
-    "en": "setting",
-    "phon": "/ˈset.ɪŋ/",
-    "cn": "背景"
-  },
-  {
-    "en": "plot",
-    "phon": "/plɒt/",
-    "cn": "情节"
-  },
-  {
-    "en": "unclaimwise",
-    "phon": "/unclaimwise/",
-    "cn": "unclaimwise"
-  },
-  {
-    "en": "climax",
-    "phon": "/ˈklaɪ.mæks/",
-    "cn": "高潮"
-  },
-  {
-    "en": "resolution",
-    "phon": "/ˌrez.əˈluː.ʃən/",
-    "cn": "结局"
-  },
-  {
-    "en": "foreshadowing",
-    "phon": "/fɔːˈʃæd.əʊ.ɪŋ/",
-    "cn": "伏笔"
-  },
-  {
-    "en": "flashback",
-    "phon": "/ˈflæʃ.bæk/",
-    "cn": "闪回"
-  },
-  {
-    "en": "point of view",
-    "phon": "/pɔɪnt əv vjuː/",
-    "cn": "视角"
-  },
-  {
     "en": "first person",
     "phon": "/fɜːrst ˈpɜː.sən/",
     "cn": "第一人称"
   },
   {
-    "en": "third person",
-    "phon": "/θɜːrd ˈpɜː.sən/",
-    "cn": "第三人称"
-  },
-  {
-    "en": "omniscient",
-    "phon": "/ɒmˈnɪʃ.ənt/",
-    "cn": "全知的"
-  },
-  {
-    "en": "unreliable narrator",
-    "phon": "/ˌʌn.rɪˈlaɪ.ə.bəl ˈnær.ə.tər/",
-    "cn": "不可靠叙述者"
-  },
-  {
-    "en": "allusion",
-    "phon": "/əˈluː.ʒən/",
-    "cn": "典故"
-  },
-  {
-    "en": "foreshadow",
-    "phon": "/fɔːˈʃæd.əʊ/",
-    "cn": "预示"
-  },
-  {
-    "en": "diction",
-    "phon": "/ˈdɪk.ʃən/",
-    "cn": "措辞"
-  },
-  {
-    "en": "syntax",
-    "phon": "/ˈsɪn.tæks/",
-    "cn": "句法"
-  },
-  {
-    "en": "rhetoric",
-    "phon": "/ˈret.ər.ɪk/",
-    "cn": "修辞"
-  },
-  {
-    "en": "discourse",
-    "phon": "/ˈdɪs.kɔːrs/",
-    "cn": "话语"
-  },
-  {
-    "en": "narrator",
-    "phon": "/ˈnær.ə.tər/",
-    "cn": "叙述者"
-  },
-  {
-    "en": "autobiography",
-    "phon": "/ˌɔː.təʊ.baɪˈɒɡ.rə.fi/",
-    "cn": "自传"
-  },
-  {
-    "en": "biography",
-    "phon": "/baɪˈɒɡ.rə.fi/",
-    "cn": "传记"
-  },
-  {
-    "en": "memoir",
-    "phon": "/ˈmem.wɑːr/",
-    "cn": "回忆录"
-  },
-  {
-    "en": "anthology",
-    "phon": "/ænˈθɒl.ə.dʒi/",
-    "cn": "选集"
-  },
-  {
-    "en": "canon",
-    "phon": "/ˈkæn.ən/",
-    "cn": "经典"
-  },
-  {
-    "en": "critique",
-    "phon": "/krɪˈtiːk/",
-    "cn": "评论"
-  },
-  {
-    "en": "literary",
-    "phon": "/ˈlɪt.ər.ər.i/",
-    "cn": "文学的"
+    "en": "verse",
+    "phon": "/vɜːrs/",
+    "cn": "诗句"
   },
   {
     "en": "poetic",
@@ -240,13 +245,8 @@
     "cn": "诗意的"
   },
   {
-    "en": "unclaimling",
-    "phon": "/unclaimling/",
-    "cn": "unclaimling"
-  },
-  {
-    "en": "unclaimlet",
-    "phon": "/unclaimlet/",
-    "cn": "unclaimlet"
+    "en": "point of view",
+    "phon": "/pɔɪnt əv vjuː/",
+    "cn": "视角"
   }
 ]

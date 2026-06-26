@@ -1,63 +1,23 @@
 [
   {
-    "en": "unclosary",
-    "phon": "/unclosary/",
-    "cn": "unclosary"
+    "en": "parliament",
+    "phon": "/ˈpɑːr.lə.mənt/",
+    "cn": "议会"
   },
   {
-    "en": "unclosory",
-    "phon": "/unclosory/",
-    "cn": "unclosory"
+    "en": "apparatus",
+    "phon": "/ˌæp.əˈreɪ.təs/",
+    "cn": "器械"
   },
   {
-    "en": "unclosdom",
-    "phon": "/unclosdom/",
-    "cn": "unclosdom"
+    "en": "adjacent",
+    "phon": "/əˈdʒeɪ.sənt/",
+    "cn": "邻近的"
   },
   {
-    "en": "unclosship",
-    "phon": "/unclosship/",
-    "cn": "unclosship"
-  },
-  {
-    "en": "unclosward",
-    "phon": "/unclosward/",
-    "cn": "unclosward"
-  },
-  {
-    "en": "autocracy",
-    "phon": "/ɔːˈtɒk.rə.si/",
-    "cn": "独裁"
-  },
-  {
-    "en": "dictatorship",
-    "phon": "/dɪkˈteɪ.tər.ʃɪp/",
-    "cn": "独裁政权"
-  },
-  {
-    "en": "oligarchy",
-    "phon": "/ˈɒl.ɪ.ɡɑːr.ki/",
-    "cn": "寡头政治"
-  },
-  {
-    "en": "theocracy",
-    "phon": "/θiˈɒk.rə.si/",
-    "cn": "神权政治"
-  },
-  {
-    "en": "uncloswise",
-    "phon": "/uncloswise/",
-    "cn": "uncloswise"
-  },
-  {
-    "en": "unclosling",
-    "phon": "/unclosling/",
-    "cn": "unclosling"
-  },
-  {
-    "en": "uncloslet",
-    "phon": "/uncloslet/",
-    "cn": "uncloslet"
+    "en": "circulate",
+    "phon": "/ˈsɜːr.kjə.leɪt/",
+    "cn": "循环"
   },
   {
     "en": "judiciary",
@@ -65,39 +25,69 @@
     "cn": "司法部门"
   },
   {
-    "en": "executive",
-    "phon": "/ɪɡˈzek.ju.tɪv/",
-    "cn": "行政部门"
+    "en": "EU",
+    "phon": "/ˌiː ˈjuː/",
+    "cn": "欧盟"
   },
   {
-    "en": "legislature",
-    "phon": "/ˈledʒ.ɪs.leɪ.tʃər/",
-    "cn": "立法机关"
+    "en": "national security",
+    "phon": "/ˈnæʃ.ən.əl sɪˈkjʊə.rə.ti/",
+    "cn": "国家安全"
   },
   {
-    "en": "parliament",
-    "phon": "/ˈpɑːr.lə.mənt/",
-    "cn": "议会"
+    "en": "concrete",
+    "phon": "/ˈkɒŋ.kriːt/",
+    "cn": "具体的"
   },
   {
-    "en": "congress",
-    "phon": "/ˈkɒŋ.ɡres/",
-    "cn": "国会"
+    "en": "analogy",
+    "phon": "/əˈnæl.ə.dʒi/",
+    "cn": "类比"
   },
   {
-    "en": "senate",
-    "phon": "/ˈsen.ɪt/",
-    "cn": "参议院"
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
   },
   {
-    "en": "house of representatives",
-    "phon": "/haʊs əv ˌrep.rɪˈzen.tə.tɪvz/",
-    "cn": "众议院"
+    "en": "conclude",
+    "phon": "/kənˈkluːd/",
+    "cn": "结论"
   },
   {
     "en": "cabinet",
     "phon": "/ˈkæb.ɪ.nət/",
     "cn": "内阁"
+  },
+  {
+    "en": "executive",
+    "phon": "/ɪɡˈzek.ju.tɪv/",
+    "cn": "行政部门"
+  },
+  {
+    "en": "oligarchy",
+    "phon": "/ˈɒl.ɪ.ɡɑːr.ki/",
+    "cn": "寡头政治"
+  },
+  {
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
+  },
+  {
+    "en": "ballot",
+    "phon": "/ˈbæl.ət/",
+    "cn": "选票"
+  },
+  {
+    "en": "collaborate",
+    "phon": "/kəˈlæb.ə.reɪt/",
+    "cn": "合作"
+  },
+  {
+    "en": "legislature",
+    "phon": "/ˈledʒ.ɪs.leɪ.tʃər/",
+    "cn": "立法机关"
   },
   {
     "en": "bureaucracy",
@@ -110,94 +100,29 @@
     "cn": "联邦制"
   },
   {
-    "en": "separation of powers",
-    "phon": "/ˌsep.əˈreɪ.ʃən əv ˈpaʊ.ərz/",
-    "cn": "权力分立"
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
   },
   {
-    "en": "checks and balances",
-    "phon": "/tʃeks ænd ˈbæl.əns.ɪz/",
-    "cn": "制衡"
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
   },
   {
-    "en": "civil liberties",
-    "phon": "/ˈsɪv.əl ˈlɪb.ər.tiz/",
-    "cn": "公民自由"
+    "en": "confront",
+    "phon": "/kənˈfrʌnt/",
+    "cn": "面对"
   },
   {
-    "en": "unclosette",
-    "phon": "/unclosette/",
-    "cn": "unclosette"
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
   },
   {
-    "en": "due process",
-    "phon": "/djuː ˈprɒs.es/",
-    "cn": "正当程序"
-  },
-  {
-    "en": "rule of law",
-    "phon": "/ruːl əv lɔː/",
-    "cn": "法治"
-  },
-  {
-    "en": "uncogntion",
-    "phon": "/uncogntion/",
-    "cn": "uncogntion"
-  },
-  {
-    "en": "uncognsion",
-    "phon": "/uncognsion/",
-    "cn": "uncognsion"
-  },
-  {
-    "en": "foreign policy",
-    "phon": "/ˈfɒr.ən ˈpɒl.ə.si/",
-    "cn": "外交政策"
-  },
-  {
-    "en": "national security",
-    "phon": "/ˈnæʃ.ən.əl sɪˈkjʊə.rə.ti/",
-    "cn": "国家安全"
-  },
-  {
-    "en": "uncognment",
-    "phon": "/uncognment/",
-    "cn": "uncognment"
-  },
-  {
-    "en": "espionage",
-    "phon": "/ˈes.pi.ə.nɑːʒ/",
-    "cn": "间谍活动"
-  },
-  {
-    "en": "uncognness",
-    "phon": "/uncognness/",
-    "cn": "uncognness"
-  },
-  {
-    "en": "lobbying",
-    "phon": "/ˈlɒb.i.ɪŋ/",
-    "cn": "游说"
-  },
-  {
-    "en": "campaign",
-    "phon": "/kæmˈpeɪn/",
-    "cn": "竞选"
-  },
-  {
-    "en": "uncognity",
-    "phon": "/uncognity/",
-    "cn": "uncognity"
-  },
-  {
-    "en": "ballot",
-    "phon": "/ˈbæl.ət/",
-    "cn": "选票"
-  },
-  {
-    "en": "referendum",
-    "phon": "/ˌref.əˈren.dəm/",
-    "cn": "公投"
+    "en": "authorize",
+    "phon": "/ˈɔː.θər.aɪz/",
+    "cn": "授权"
   },
   {
     "en": "impeachment",
@@ -205,9 +130,24 @@
     "cn": "弹劾"
   },
   {
-    "en": "sanction",
-    "phon": "/ˈsæŋk.ʃən/",
-    "cn": "制裁"
+    "en": "foreign policy",
+    "phon": "/ˈfɒr.ən ˈpɒl.ə.si/",
+    "cn": "外交政策"
+  },
+  {
+    "en": "espionage",
+    "phon": "/ˈes.pi.ə.nɑːʒ/",
+    "cn": "间谍活动"
+  },
+  {
+    "en": "theocracy",
+    "phon": "/θiˈɒk.rə.si/",
+    "cn": "神权政治"
+  },
+  {
+    "en": "abstraction",
+    "phon": "/æbˈstræk.ʃən/",
+    "cn": "抽象概念"
   },
   {
     "en": "embargo",
@@ -215,19 +155,34 @@
     "cn": "禁运"
   },
   {
-    "en": "uncognence",
-    "phon": "/uncognence/",
-    "cn": "uncognence"
+    "en": "commemorate",
+    "phon": "/kəˈmem.ə.reɪt/",
+    "cn": "纪念"
   },
   {
-    "en": "uncognance",
-    "phon": "/uncognance/",
-    "cn": "uncognance"
+    "en": "house of representatives",
+    "phon": "/haʊs əv ˌrep.rɪˈzen.tə.tɪvz/",
+    "cn": "众议院"
   },
   {
-    "en": "NATO",
-    "phon": "/ˈneɪ.təʊ/",
-    "cn": "北约"
+    "en": "checks and balances",
+    "phon": "/tʃeks ænd ˈbæl.əns.ɪz/",
+    "cn": "制衡"
+  },
+  {
+    "en": "separation of powers",
+    "phon": "/ˌsep.əˈreɪ.ʃən əv ˈpaʊ.ərz/",
+    "cn": "权力分立"
+  },
+  {
+    "en": "campaign",
+    "phon": "/kæmˈpeɪn/",
+    "cn": "竞选"
+  },
+  {
+    "en": "civil liberties",
+    "phon": "/ˈsɪv.əl ˈlɪb.ər.tiz/",
+    "cn": "公民自由"
   },
   {
     "en": "UN",
@@ -235,18 +190,63 @@
     "cn": "联合国"
   },
   {
-    "en": "EU",
-    "phon": "/ˌiː ˈjuː/",
-    "cn": "欧盟"
-  },
-  {
-    "en": "uncognous",
-    "phon": "/uncognous/",
-    "cn": "uncognous"
+    "en": "NATO",
+    "phon": "/ˈneɪ.təʊ/",
+    "cn": "北约"
   },
   {
     "en": "IMF",
     "phon": "/ˌaɪ.em ˈef/",
     "cn": "国际货币基金组织"
+  },
+  {
+    "en": "referendum",
+    "phon": "/ˌref.əˈren.dəm/",
+    "cn": "公投"
+  },
+  {
+    "en": "lobbying",
+    "phon": "/ˈlɒb.i.ɪŋ/",
+    "cn": "游说"
+  },
+  {
+    "en": "due process",
+    "phon": "/djuː ˈprɒs.es/",
+    "cn": "正当程序"
+  },
+  {
+    "en": "sanction",
+    "phon": "/ˈsæŋk.ʃən/",
+    "cn": "制裁"
+  },
+  {
+    "en": "rule of law",
+    "phon": "/ruːl əv lɔː/",
+    "cn": "法治"
+  },
+  {
+    "en": "autocracy",
+    "phon": "/ɔːˈtɒk.rə.si/",
+    "cn": "独裁"
+  },
+  {
+    "en": "senate",
+    "phon": "/ˈsen.ɪt/",
+    "cn": "参议院"
+  },
+  {
+    "en": "congress",
+    "phon": "/ˈkɒŋ.ɡres/",
+    "cn": "国会"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "dictatorship",
+    "phon": "/dɪkˈteɪ.tər.ʃɪp/",
+    "cn": "独裁政权"
   }
 ]

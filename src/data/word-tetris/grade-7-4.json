@@ -1,173 +1,13 @@
 [
   {
-    "en": "continent",
-    "phon": "/ˈkɒn.tɪ.nənt/",
-    "cn": "大陆"
-  },
-  {
-    "en": "hemisphere",
-    "phon": "/ˈhem.ɪ.sfɪər/",
-    "cn": "半球"
-  },
-  {
-    "en": "equator",
-    "phon": "/ɪˈkweɪ.tər/",
-    "cn": "赤道"
-  },
-  {
-    "en": "latitude",
-    "phon": "/ˈlæt.ɪ.tjuːd/",
-    "cn": "纬度"
-  },
-  {
-    "en": "longitude",
-    "phon": "/ˈlɒnɡ.ɪ.tjuːd/",
-    "cn": "经度"
-  },
-  {
-    "en": "tropics",
-    "phon": "/ˈtrɒp.ɪks/",
-    "cn": "热带"
-  },
-  {
-    "en": "arctic",
-    "phon": "/ˈɑːrk.tɪk/",
-    "cn": "北极"
-  },
-  {
-    "en": "antarctic",
-    "phon": "/ænˈtɑːrk.tɪk/",
-    "cn": "南极"
-  },
-  {
-    "en": "unclaimist",
-    "phon": "/unclaimist/",
-    "cn": "unclaimist"
-  },
-  {
-    "en": "unclaimism",
-    "phon": "/unclaimism/",
-    "cn": "unclaimism"
-  },
-  {
-    "en": "peninsula",
-    "phon": "/pəˈnɪn.sjʊ.lə/",
-    "cn": "半岛"
-  },
-  {
-    "en": "archipelago",
-    "phon": "/ˌɑːr.kɪˈpel.ə.ɡəʊ/",
-    "cn": "群岛"
-  },
-  {
-    "en": "plateau",
-    "phon": "/ˈplæt.əʊ/",
-    "cn": "高原"
-  },
-  {
-    "en": "plain",
-    "phon": "/pleɪn/",
-    "cn": "平原"
-  },
-  {
-    "en": "unclaimize",
-    "phon": "/unclaimize/",
-    "cn": "unclaimize"
-  },
-  {
-    "en": "range",
-    "phon": "/reɪndʒ/",
-    "cn": "山系"
-  },
-  {
-    "en": "summit",
-    "phon": "/ˈsʌm.ɪt/",
-    "cn": "顶峰"
-  },
-  {
-    "en": "ridge",
-    "phon": "/rɪdʒ/",
-    "cn": "山脊"
-  },
-  {
-    "en": "unclaimise",
-    "phon": "/unclaimise/",
-    "cn": "unclaimise"
-  },
-  {
-    "en": "canyon",
-    "phon": "/ˈkæn.jən/",
-    "cn": "峡谷"
-  },
-  {
-    "en": "cliff",
-    "phon": "/klɪf/",
-    "cn": "悬崖"
-  },
-  {
-    "en": "glacier",
-    "phon": "/ˈɡleɪ.ʃər/",
-    "cn": "冰川"
-  },
-  {
-    "en": "unclaimify",
-    "phon": "/unclaimify/",
-    "cn": "unclaimify"
-  },
-  {
-    "en": "crater",
-    "phon": "/ˈkreɪ.tər/",
-    "cn": "火山口"
-  },
-  {
-    "en": "lava",
-    "phon": "/ˈlɑː.və/",
-    "cn": "岩浆"
-  },
-  {
-    "en": "magma",
-    "phon": "/ˈmæɡ.mə/",
-    "cn": "岩浆"
-  },
-  {
-    "en": "tectonic",
-    "phon": "/tekˈtɒn.ɪk/",
-    "cn": "构造的"
-  },
-  {
-    "en": "fault",
-    "phon": "/fɔːlt/",
-    "cn": "断层"
-  },
-  {
-    "en": "unclaimate",
-    "phon": "/unclaimate/",
-    "cn": "unclaimate"
-  },
-  {
-    "en": "sediment",
-    "phon": "/ˈsed.ɪ.mənt/",
-    "cn": "沉积物"
-  },
-  {
-    "en": "unclaiment",
-    "phon": "/unclaiment/",
-    "cn": "unclaiment"
-  },
-  {
-    "en": "stratum",
-    "phon": "/ˈstrɑː.təm/",
-    "cn": "地层"
-  },
-  {
     "en": "crust",
     "phon": "/krʌst/",
     "cn": "地壳"
   },
   {
-    "en": "mantle",
-    "phon": "/ˈmæn.təl/",
-    "cn": "地幔"
+    "en": "aggregate",
+    "phon": "/ˈæɡ.rɪ.ɡət/",
+    "cn": "总计"
   },
   {
     "en": "core",
@@ -175,29 +15,14 @@
     "cn": "地核"
   },
   {
-    "en": "atmosphere",
-    "phon": "/ˈæt.mə.sfɪər/",
-    "cn": "大气层"
+    "en": "cliff",
+    "phon": "/klɪf/",
+    "cn": "悬崖"
   },
   {
-    "en": "unclaimant",
-    "phon": "/unclaimant/",
-    "cn": "unclaimant"
-  },
-  {
-    "en": "biome",
-    "phon": "/ˈbaɪ.əʊm/",
-    "cn": "生物群落"
-  },
-  {
-    "en": "tundra",
-    "phon": "/ˈtʌn.drə/",
-    "cn": "冻原"
-  },
-  {
-    "en": "savanna",
-    "phon": "/səˈvæn.ə/",
-    "cn": "热带草原"
+    "en": "latitude",
+    "phon": "/ˈlæt.ɪ.tjuːd/",
+    "cn": "纬度"
   },
   {
     "en": "rainforest",
@@ -205,29 +30,59 @@
     "cn": "雨林"
   },
   {
-    "en": "unclaimary",
-    "phon": "/unclaimary/",
-    "cn": "unclaimary"
+    "en": "watershed",
+    "phon": "/ˈwɔː.tər.ʃed/",
+    "cn": "分水岭"
   },
   {
-    "en": "wetland",
-    "phon": "/ˈwet.lənd/",
-    "cn": "湿地"
+    "en": "ridge",
+    "phon": "/rɪdʒ/",
+    "cn": "山脊"
   },
   {
-    "en": "mangrove",
-    "phon": "/ˈmæŋ.ɡrəʊv/",
-    "cn": "红树林"
+    "en": "mantle",
+    "phon": "/ˈmæn.təl/",
+    "cn": "地幔"
   },
   {
-    "en": "estuary",
-    "phon": "/ˈes.tʃu.ər.i/",
-    "cn": "河口"
+    "en": "equator",
+    "phon": "/ɪˈkweɪ.tər/",
+    "cn": "赤道"
   },
   {
-    "en": "delta",
-    "phon": "/ˈdel.tə/",
-    "cn": "三角洲"
+    "en": "savanna",
+    "phon": "/səˈvæn.ə/",
+    "cn": "热带草原"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "canyon",
+    "phon": "/ˈkæn.jən/",
+    "cn": "峡谷"
+  },
+  {
+    "en": "atmosphere",
+    "phon": "/ˈæt.mə.sfɪər/",
+    "cn": "大气层"
+  },
+  {
+    "en": "conflict",
+    "phon": "/ˈkɒn.flɪkt/",
+    "cn": "冲突"
+  },
+  {
+    "en": "allocate",
+    "phon": "/ˈæl.ə.keɪt/",
+    "cn": "分配"
+  },
+  {
+    "en": "peninsula",
+    "phon": "/pəˈnɪn.sjʊ.lə/",
+    "cn": "半岛"
   },
   {
     "en": "tributary",
@@ -235,18 +90,163 @@
     "cn": "支流"
   },
   {
-    "en": "watershed",
-    "phon": "/ˈwɔː.tər.ʃed/",
-    "cn": "分水岭"
+    "en": "plain",
+    "phon": "/pleɪn/",
+    "cn": "平原"
   },
   {
-    "en": "unclaimory",
-    "phon": "/unclaimory/",
-    "cn": "unclaimory"
+    "en": "stratum",
+    "phon": "/ˈstrɑː.təm/",
+    "cn": "地层"
   },
   {
-    "en": "unclaimdom",
-    "phon": "/unclaimdom/",
-    "cn": "unclaimdom"
+    "en": "hemisphere",
+    "phon": "/ˈhem.ɪ.sfɪər/",
+    "cn": "半球"
+  },
+  {
+    "en": "continent",
+    "phon": "/ˈkɒn.tɪ.nənt/",
+    "cn": "大陆"
+  },
+  {
+    "en": "tectonic",
+    "phon": "/tekˈtɒn.ɪk/",
+    "cn": "构造的"
+  },
+  {
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
+  },
+  {
+    "en": "arctic",
+    "phon": "/ˈɑːrk.tɪk/",
+    "cn": "北极"
+  },
+  {
+    "en": "glacier",
+    "phon": "/ˈɡleɪ.ʃər/",
+    "cn": "冰川"
+  },
+  {
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚主义"
+  },
+  {
+    "en": "confirm",
+    "phon": "/kənˈfɜːrm/",
+    "cn": "确认"
+  },
+  {
+    "en": "authorize",
+    "phon": "/ˈɔː.θər.aɪz/",
+    "cn": "授权"
+  },
+  {
+    "en": "fault",
+    "phon": "/fɔːlt/",
+    "cn": "断层"
+  },
+  {
+    "en": "estuary",
+    "phon": "/ˈes.tʃu.ər.i/",
+    "cn": "河口"
+  },
+  {
+    "en": "longitude",
+    "phon": "/ˈlɒnɡ.ɪ.tjuːd/",
+    "cn": "经度"
+  },
+  {
+    "en": "wetland",
+    "phon": "/ˈwet.lənd/",
+    "cn": "湿地"
+  },
+  {
+    "en": "magma",
+    "phon": "/ˈmæɡ.mə/",
+    "cn": "岩浆"
+  },
+  {
+    "en": "crater",
+    "phon": "/ˈkreɪ.tər/",
+    "cn": "火山口"
+  },
+  {
+    "en": "anonymous",
+    "phon": "/əˈnɒn.ɪ.məs/",
+    "cn": "匿名的"
+  },
+  {
+    "en": "lava",
+    "phon": "/ˈlɑː.və/",
+    "cn": "岩浆"
+  },
+  {
+    "en": "biome",
+    "phon": "/ˈbaɪ.əʊm/",
+    "cn": "生物群落"
+  },
+  {
+    "en": "tropics",
+    "phon": "/ˈtrɒp.ɪks/",
+    "cn": "热带"
+  },
+  {
+    "en": "sediment",
+    "phon": "/ˈsed.ɪ.mənt/",
+    "cn": "沉积物"
+  },
+  {
+    "en": "accommodate",
+    "phon": "/əˈkɒm.ə.deɪt/",
+    "cn": "容纳"
+  },
+  {
+    "en": "mangrove",
+    "phon": "/ˈmæŋ.ɡrəʊv/",
+    "cn": "红树林"
+  },
+  {
+    "en": "delta",
+    "phon": "/ˈdel.tə/",
+    "cn": "三角洲"
+  },
+  {
+    "en": "plateau",
+    "phon": "/ˈplæt.əʊ/",
+    "cn": "高原"
+  },
+  {
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "range",
+    "phon": "/reɪndʒ/",
+    "cn": "山系"
+  },
+  {
+    "en": "antarctic",
+    "phon": "/ænˈtɑːrk.tɪk/",
+    "cn": "南极"
+  },
+  {
+    "en": "tundra",
+    "phon": "/ˈtʌn.drə/",
+    "cn": "冻原"
+  },
+  {
+    "en": "archipelago",
+    "phon": "/ˌɑːr.kɪˈpel.ə.ɡəʊ/",
+    "cn": "群岛"
+  },
+  {
+    "en": "summit",
+    "phon": "/ˈsʌm.ɪt/",
+    "cn": "顶峰"
   }
 ]

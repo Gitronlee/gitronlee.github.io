@@ -1,188 +1,8 @@
 [
   {
-    "en": "uncordity",
-    "phon": "/uncordity/",
-    "cn": "uncordity"
-  },
-  {
-    "en": "uncordence",
-    "phon": "/uncordence/",
-    "cn": "uncordence"
-  },
-  {
-    "en": "mitosis",
-    "phon": "/maɪˈtəʊ.sɪs/",
-    "cn": "有丝分裂"
-  },
-  {
-    "en": "meiosis",
-    "phon": "/maɪˈəʊ.sɪs/",
-    "cn": "减数分裂"
-  },
-  {
-    "en": "osmosis",
-    "phon": "/ɒzˈməʊ.sɪs/",
-    "cn": "渗透"
-  },
-  {
-    "en": "diffusion",
-    "phon": "/dɪˈfjuː.ʒən/",
-    "cn": "扩散"
-  },
-  {
-    "en": "uncordance",
-    "phon": "/uncordance/",
-    "cn": "uncordance"
-  },
-  {
-    "en": "enthalpy",
-    "phon": "/ˈen.θəl.pi/",
-    "cn": "焓"
-  },
-  {
-    "en": "catalysis",
-    "phon": "/kəˈtæl.ə.sɪs/",
-    "cn": "催化"
-  },
-  {
-    "en": "stoichiometry",
-    "phon": "/ˌstɔɪ.kiˈɒm.ə.tri/",
-    "cn": "化学计量学"
-  },
-  {
-    "en": "isomerism",
-    "phon": "/aɪˈsɒm.ər.ɪ.zəm/",
-    "cn": "异构"
-  },
-  {
-    "en": "electrolysis",
-    "phon": "/ɪˌlek.trəˈlɪs.əs/",
-    "cn": "电解"
-  },
-  {
-    "en": "chromatography",
-    "phon": "/ˌkrəʊ.məˈtɒɡ.rə.fi/",
-    "cn": "色谱法"
-  },
-  {
-    "en": "spectroscopy",
-    "phon": "/spekˈtrɒs.kə.pi/",
-    "cn": "光谱学"
-  },
-  {
-    "en": "uncordous",
-    "phon": "/uncordous/",
-    "cn": "uncordous"
-  },
-  {
-    "en": "electrostatics",
-    "phon": "/ɪˌlek.trəʊˈstæt.ɪks/",
-    "cn": "静电学"
-  },
-  {
-    "en": "electrodynamics",
-    "phon": "/ɪˌlek.trəʊ.daɪˈnæm.ɪks/",
-    "cn": "电动力学"
-  },
-  {
-    "en": "kinematics",
-    "phon": "/ˌkɪn.əˈmæt.ɪks/",
-    "cn": "运动学"
-  },
-  {
-    "en": "hydrodynamics",
-    "phon": "/ˌhaɪ.drəʊ.daɪˈnæm.ɪks/",
-    "cn": "流体动力学"
-  },
-  {
-    "en": "aerodynamics",
-    "phon": "/ˌeə.rəʊ.daɪˈnæm.ɪks/",
-    "cn": "空气动力学"
-  },
-  {
-    "en": "seismology",
-    "phon": "/saɪzˈmɒl.ə.dʒi/",
-    "cn": "地震学"
-  },
-  {
-    "en": "paleontology",
-    "phon": "/ˌpeɪ.li.ɒnˈtɒl.ə.dʒi/",
-    "cn": "古生物学"
-  },
-  {
-    "en": "ethology",
-    "phon": "/iːˈθɒl.ə.dʒi/",
-    "cn": "动物行为学"
-  },
-  {
-    "en": "taxonomy",
-    "phon": "/tækˈsɒn.ə.mi/",
-    "cn": "分类学"
-  },
-  {
-    "en": "phylogeny",
-    "phon": "/faɪˈlɒdʒ.ən.i/",
-    "cn": "系统发育"
-  },
-  {
-    "en": "epigenetics",
-    "phon": "/ˌep.ɪ.dʒəˈnet.ɪks/",
-    "cn": "表观遗传学"
-  },
-  {
-    "en": "proteomics",
-    "phon": "/ˌprəʊ.tiˈəʊ.mɪks/",
-    "cn": "蛋白质组学"
-  },
-  {
-    "en": "metabolomics",
-    "phon": "/məˌtæb.əˈləʊ.mɪks/",
-    "cn": "代谢组学"
-  },
-  {
-    "en": "bioinformatics",
-    "phon": "/ˌbaɪ.əʊ.ɪn.fəˈmæt.ɪks/",
-    "cn": "生物信息学"
-  },
-  {
-    "en": "nanoscience",
-    "phon": "/ˌnæn.əʊˈsaɪ.əns/",
-    "cn": "纳米科学"
-  },
-  {
-    "en": "superconductivity",
-    "phon": "/ˌsuː.pə.kɒn.dʌkˈtɪv.ə.ti/",
-    "cn": "超导性"
-  },
-  {
-    "en": "photovoltaics",
-    "phon": "/ˌfəʊ.təʊ.vɒlˈteɪ.ɪks/",
-    "cn": "光伏技术"
-  },
-  {
     "en": "thermonuclear",
     "phon": "/ˌθɜːr.məʊˈnjuː.kli.ər/",
     "cn": "热核的"
-  },
-  {
-    "en": "cryogenics",
-    "phon": "/ˌkraɪ.əˈdʒen.ɪks/",
-    "cn": "低温学"
-  },
-  {
-    "en": "plasma physics",
-    "phon": "/ˈplæz.mə ˈfɪz.ɪks/",
-    "cn": "等离子体物理"
-  },
-  {
-    "en": "magnetohydrodynamics",
-    "phon": "/mæɡˌniː.təʊˌhaɪ.drəʊ.daɪˈnæm.ɪks/",
-    "cn": "磁流体动力学"
-  },
-  {
-    "en": "semiconductor",
-    "phon": "/ˌsem.i.kənˈdʌk.tər/",
-    "cn": "半导体"
   },
   {
     "en": "optoelectronics",
@@ -190,34 +10,29 @@
     "cn": "光电子学"
   },
   {
-    "en": "photonics",
-    "phon": "/fəʊˈtɒn.ɪks/",
-    "cn": "光子学"
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
   },
   {
-    "en": "biophysics",
-    "phon": "/ˌbaɪ.əʊˈfɪz.ɪks/",
-    "cn": "生物物理学"
+    "en": "aerodynamics",
+    "phon": "/ˌeə.rəʊ.daɪˈnæm.ɪks/",
+    "cn": "空气动力学"
   },
   {
-    "en": "astrobiology",
-    "phon": "/ˌæs.trəʊ.baɪˈɒl.ə.dʒi/",
-    "cn": "天体生物学"
+    "en": "mitosis",
+    "phon": "/maɪˈtəʊ.sɪs/",
+    "cn": "有丝分裂"
   },
   {
-    "en": "uncordive",
-    "phon": "/uncordive/",
-    "cn": "uncordive"
+    "en": "magnetohydrodynamics",
+    "phon": "/mæɡˌniː.təʊˌhaɪ.drəʊ.daɪˈnæm.ɪks/",
+    "cn": "磁流体动力学"
   },
   {
-    "en": "astrophysics",
-    "phon": "/ˌæs.trəʊˈfɪz.ɪks/",
-    "cn": "天体物理学"
-  },
-  {
-    "en": "quantum field theory",
-    "phon": "/ˈkwɒn.təm fiːld ˈθɪər.i/",
-    "cn": "量子场论"
+    "en": "superconductivity",
+    "phon": "/ˌsuː.pə.kɒn.dʌkˈtɪv.ə.ti/",
+    "cn": "超导性"
   },
   {
     "en": "standard model",
@@ -225,14 +40,39 @@
     "cn": "标准模型"
   },
   {
-    "en": "grand unified theory",
-    "phon": "/ɡrænd juːˈnaɪ.faɪd ˈθɪər.i/",
-    "cn": "大统一理论"
+    "en": "semiconductor",
+    "phon": "/ˌsem.i.kənˈdʌk.tər/",
+    "cn": "半导体"
   },
   {
-    "en": "theory of everything",
-    "phon": "/ˈθɪər.i əv ˈev.ri.θɪŋ/",
-    "cn": "万有理论"
+    "en": "electrodynamics",
+    "phon": "/ɪˌlek.trəʊ.daɪˈnæm.ɪks/",
+    "cn": "电动力学"
+  },
+  {
+    "en": "hydrodynamics",
+    "phon": "/ˌhaɪ.drəʊ.daɪˈnæm.ɪks/",
+    "cn": "流体动力学"
+  },
+  {
+    "en": "proteomics",
+    "phon": "/ˌprəʊ.tiˈəʊ.mɪks/",
+    "cn": "蛋白质组学"
+  },
+  {
+    "en": "taxonomy",
+    "phon": "/tækˈsɒn.ə.mi/",
+    "cn": "分类学"
+  },
+  {
+    "en": "seismology",
+    "phon": "/saɪzˈmɒl.ə.dʒi/",
+    "cn": "地震学"
+  },
+  {
+    "en": "electrolysis",
+    "phon": "/ɪˌlek.trəˈlɪs.əs/",
+    "cn": "电解"
   },
   {
     "en": "multiverse theory",
@@ -240,13 +80,173 @@
     "cn": "多重宇宙理论"
   },
   {
-    "en": "uncordful",
-    "phon": "/uncordful/",
-    "cn": "uncordful"
+    "en": "grand unified theory",
+    "phon": "/ɡrænd juːˈnaɪ.faɪd ˈθɪər.i/",
+    "cn": "大统一理论"
+  },
+  {
+    "en": "enthalpy",
+    "phon": "/ˈen.θəl.pi/",
+    "cn": "焓"
+  },
+  {
+    "en": "bioinformatics",
+    "phon": "/ˌbaɪ.əʊ.ɪn.fəˈmæt.ɪks/",
+    "cn": "生物信息学"
+  },
+  {
+    "en": "spectroscopy",
+    "phon": "/spekˈtrɒs.kə.pi/",
+    "cn": "光谱学"
+  },
+  {
+    "en": "epigenetics",
+    "phon": "/ˌep.ɪ.dʒəˈnet.ɪks/",
+    "cn": "表观遗传学"
+  },
+  {
+    "en": "nanoscience",
+    "phon": "/ˌnæn.əʊˈsaɪ.əns/",
+    "cn": "纳米科学"
+  },
+  {
+    "en": "stoichiometry",
+    "phon": "/ˌstɔɪ.kiˈɒm.ə.tri/",
+    "cn": "化学计量学"
+  },
+  {
+    "en": "metabolomics",
+    "phon": "/məˌtæb.əˈləʊ.mɪks/",
+    "cn": "代谢组学"
+  },
+  {
+    "en": "cryogenics",
+    "phon": "/ˌkraɪ.əˈdʒen.ɪks/",
+    "cn": "低温学"
+  },
+  {
+    "en": "quantum field theory",
+    "phon": "/ˈkwɒn.təm fiːld ˈθɪər.i/",
+    "cn": "量子场论"
+  },
+  {
+    "en": "ethology",
+    "phon": "/iːˈθɒl.ə.dʒi/",
+    "cn": "动物行为学"
+  },
+  {
+    "en": "electrostatics",
+    "phon": "/ɪˌlek.trəʊˈstæt.ɪks/",
+    "cn": "静电学"
+  },
+  {
+    "en": "kinematics",
+    "phon": "/ˌkɪn.əˈmæt.ɪks/",
+    "cn": "运动学"
+  },
+  {
+    "en": "aesthetic",
+    "phon": "/iːsˈθet.ɪk/",
+    "cn": "美学的"
+  },
+  {
+    "en": "astrophysics",
+    "phon": "/ˌæs.trəʊˈfɪz.ɪks/",
+    "cn": "天体物理学"
+  },
+  {
+    "en": "concentrate",
+    "phon": "/ˈkɒn.sən.treɪt/",
+    "cn": "集中"
+  },
+  {
+    "en": "amend",
+    "phon": "/əˈmend/",
+    "cn": "修正"
+  },
+  {
+    "en": "plasma physics",
+    "phon": "/ˈplæz.mə ˈfɪz.ɪks/",
+    "cn": "等离子体物理"
+  },
+  {
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
+  },
+  {
+    "en": "photovoltaics",
+    "phon": "/ˌfəʊ.təʊ.vɒlˈteɪ.ɪks/",
+    "cn": "光伏技术"
+  },
+  {
+    "en": "chromatography",
+    "phon": "/ˌkrəʊ.məˈtɒɡ.rə.fi/",
+    "cn": "色谱法"
   },
   {
     "en": "loop quantum gravity",
     "phon": "/luːp ˈkwɒn.təm ˈɡræv.ə.ti/",
     "cn": "圈量子引力"
+  },
+  {
+    "en": "paleontology",
+    "phon": "/ˌpeɪ.li.ɒnˈtɒl.ə.dʒi/",
+    "cn": "古生物学"
+  },
+  {
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "phylogeny",
+    "phon": "/faɪˈlɒdʒ.ən.i/",
+    "cn": "系统发育"
+  },
+  {
+    "en": "isomerism",
+    "phon": "/aɪˈsɒm.ər.ɪ.zəm/",
+    "cn": "异构"
+  },
+  {
+    "en": "astrobiology",
+    "phon": "/ˌæs.trəʊ.baɪˈɒl.ə.dʒi/",
+    "cn": "天体生物学"
+  },
+  {
+    "en": "diffusion",
+    "phon": "/dɪˈfjuː.ʒən/",
+    "cn": "扩散"
+  },
+  {
+    "en": "photonics",
+    "phon": "/fəʊˈtɒn.ɪks/",
+    "cn": "光子学"
+  },
+  {
+    "en": "theory of everything",
+    "phon": "/ˈθɪər.i əv ˈev.ri.θɪŋ/",
+    "cn": "万有理论"
+  },
+  {
+    "en": "catalysis",
+    "phon": "/kəˈtæl.ə.sɪs/",
+    "cn": "催化"
+  },
+  {
+    "en": "biophysics",
+    "phon": "/ˌbaɪ.əʊˈfɪz.ɪks/",
+    "cn": "生物物理学"
+  },
+  {
+    "en": "osmosis",
+    "phon": "/ɒzˈməʊ.sɪs/",
+    "cn": "渗透"
+  },
+  {
+    "en": "meiosis",
+    "phon": "/maɪˈəʊ.sɪs/",
+    "cn": "减数分裂"
   }
 ]

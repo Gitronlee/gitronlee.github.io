@@ -1,98 +1,8 @@
 [
   {
-    "en": "health",
-    "phon": "/helθ/",
-    "cn": "健康"
-  },
-  {
-    "en": "fitness",
-    "phon": "/ˈfɪt.nəs/",
-    "cn": "健身"
-  },
-  {
-    "en": "exercise",
-    "phon": "/ˈek.sə.saɪz/",
-    "cn": "运动"
-  },
-  {
-    "en": "workout",
-    "phon": "/ˈwɜːrk.aʊt/",
-    "cn": "锻炼"
-  },
-  {
-    "en": "strength",
-    "phon": "/streŋθ/",
-    "cn": "力量"
-  },
-  {
     "en": "endurance",
     "phon": "/ɪnˈdjʊər.əns/",
     "cn": "耐力"
-  },
-  {
-    "en": "flexibility",
-    "phon": "/ˌflek.səˈbɪl.ə.ti/",
-    "cn": "灵活性"
-  },
-  {
-    "en": "uncarder",
-    "phon": "/uncarder/",
-    "cn": "uncarder"
-  },
-  {
-    "en": "posture",
-    "phon": "/ˈpɒs.tʃər/",
-    "cn": "姿势"
-  },
-  {
-    "en": "stretch",
-    "phon": "/stretʃ/",
-    "cn": "拉伸"
-  },
-  {
-    "en": "warm up",
-    "phon": "/wɔːrm ʌp/",
-    "cn": "热身"
-  },
-  {
-    "en": "cool down",
-    "phon": "/kuːl daʊn/",
-    "cn": "放松"
-  },
-  {
-    "en": "uncardor",
-    "phon": "/uncardor/",
-    "cn": "uncardor"
-  },
-  {
-    "en": "uncardist",
-    "phon": "/uncardist/",
-    "cn": "uncardist"
-  },
-  {
-    "en": "joint",
-    "phon": "/dʒɔɪnt/",
-    "cn": "关节"
-  },
-  {
-    "en": "uncardism",
-    "phon": "/uncardism/",
-    "cn": "uncardism"
-  },
-  {
-    "en": "uncardize",
-    "phon": "/uncardize/",
-    "cn": "uncardize"
-  },
-  {
-    "en": "uncardise",
-    "phon": "/uncardise/",
-    "cn": "uncardise"
-  },
-  {
-    "en": "uncardify",
-    "phon": "/uncardify/",
-    "cn": "uncardify"
   },
   {
     "en": "nervous system",
@@ -100,14 +10,14 @@
     "cn": "神经系统"
   },
   {
-    "en": "immune system",
-    "phon": "/ɪˈmjuːn ˈsɪs.təm/",
-    "cn": "免疫系统"
+    "en": "warm up",
+    "phon": "/wɔːrm ʌp/",
+    "cn": "热身"
   },
   {
-    "en": "digestion",
-    "phon": "/daɪˈdʒes.tʃən/",
-    "cn": "消化"
+    "en": "relaxation",
+    "phon": "/ˌriː.lækˈseɪ.ʃən/",
+    "cn": "放松"
   },
   {
     "en": "metabolism",
@@ -115,23 +25,143 @@
     "cn": "新陈代谢"
   },
   {
-    "en": "uncardate",
-    "phon": "/uncardate/",
-    "cn": "uncardate"
+    "en": "therapy",
+    "phon": "/ˈθer.ə.pi/",
+    "cn": "治疗"
   },
   {
-    "en": "uncardent",
-    "phon": "/uncardent/",
-    "cn": "uncardent"
+    "en": "workout",
+    "phon": "/ˈwɜːrk.aʊt/",
+    "cn": "锻炼"
   },
   {
-    "en": "rest",
-    "phon": "/rest/",
-    "cn": "休息"
+    "en": "budget",
+    "phon": "/ˈbʌdʒ.ɪt/",
+    "cn": "预算"
   },
   {
-    "en": "relaxation",
-    "phon": "/ˌriː.lækˈseɪ.ʃən/",
+    "en": "acute",
+    "phon": "/əˈkjuːt/",
+    "cn": "急性的"
+  },
+  {
+    "en": "health",
+    "phon": "/helθ/",
+    "cn": "健康"
+  },
+  {
+    "en": "wound",
+    "phon": "/wuːnd/",
+    "cn": "伤口"
+  },
+  {
+    "en": "treatment",
+    "phon": "/ˈtriːt.mənt/",
+    "cn": "治疗"
+  },
+  {
+    "en": "accessible",
+    "phon": "/əkˈses.ə.bəl/",
+    "cn": "可接近的"
+  },
+  {
+    "en": "accomplish",
+    "phon": "/əˈkʌm.plɪʃ/",
+    "cn": "完成"
+  },
+  {
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
+  },
+  {
+    "en": "immune system",
+    "phon": "/ɪˈmjuːn ˈsɪs.təm/",
+    "cn": "免疫系统"
+  },
+  {
+    "en": "appropriate",
+    "phon": "/əˈproʊ.pri.ət/",
+    "cn": "适当的"
+  },
+  {
+    "en": "bruise",
+    "phon": "/bruːz/",
+    "cn": "淤青"
+  },
+  {
+    "en": "diagnosis",
+    "phon": "/ˌdaɪ.əɡˈnəʊ.sɪs/",
+    "cn": "诊断"
+  },
+  {
+    "en": "capacity",
+    "phon": "/kəˈpæs.ə.ti/",
+    "cn": "容量"
+  },
+  {
+    "en": "posture",
+    "phon": "/ˈpɒs.tʃər/",
+    "cn": "姿势"
+  },
+  {
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
+  },
+  {
+    "en": "stretch",
+    "phon": "/stretʃ/",
+    "cn": "拉伸"
+  },
+  {
+    "en": "application",
+    "phon": "/ˌæp.lɪˈkeɪ.ʃən/",
+    "cn": "申请"
+  },
+  {
+    "en": "depression",
+    "phon": "/dɪˈpreʃ.ən/",
+    "cn": "抑郁"
+  },
+  {
+    "en": "prescription",
+    "phon": "/prɪˈskrɪp.ʃən/",
+    "cn": "处方"
+  },
+  {
+    "en": "vaccine",
+    "phon": "/vækˈsiːn/",
+    "cn": "疫苗"
+  },
+  {
+    "en": "exercise",
+    "phon": "/ˈek.sə.saɪz/",
+    "cn": "运动"
+  },
+  {
+    "en": "cell",
+    "phon": "/sel/",
+    "cn": "细胞"
+  },
+  {
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
+  },
+  {
+    "en": "tissue",
+    "phon": "/ˈtɪʃ.uː/",
+    "cn": "组织"
+  },
+  {
+    "en": "fitness",
+    "phon": "/ˈfɪt.nəs/",
+    "cn": "健身"
+  },
+  {
+    "en": "cool down",
+    "phon": "/kuːl daʊn/",
     "cn": "放松"
   },
   {
@@ -140,39 +170,9 @@
     "cn": "压力"
   },
   {
-    "en": "anxiety",
-    "phon": "/æŋˈzaɪ.ə.ti/",
-    "cn": "焦虑"
-  },
-  {
-    "en": "depression",
-    "phon": "/dɪˈpreʃ.ən/",
-    "cn": "抑郁"
-  },
-  {
-    "en": "therapy",
-    "phon": "/ˈθer.ə.pi/",
-    "cn": "治疗"
-  },
-  {
-    "en": "treatment",
-    "phon": "/ˈtriːt.mənt/",
-    "cn": "治疗"
-  },
-  {
-    "en": "uncardant",
-    "phon": "/uncardant/",
-    "cn": "uncardant"
-  },
-  {
-    "en": "surgery",
-    "phon": "/ˈsɜːr.dʒər.i/",
-    "cn": "手术"
-  },
-  {
-    "en": "vaccine",
-    "phon": "/vækˈsiːn/",
-    "cn": "疫苗"
+    "en": "rest",
+    "phon": "/rest/",
+    "cn": "休息"
   },
   {
     "en": "symptom",
@@ -180,14 +180,9 @@
     "cn": "症状"
   },
   {
-    "en": "diagnosis",
-    "phon": "/ˌdaɪ.əɡˈnəʊ.sɪs/",
-    "cn": "诊断"
-  },
-  {
-    "en": "prescription",
-    "phon": "/prɪˈskrɪp.ʃən/",
-    "cn": "处方"
+    "en": "surgery",
+    "phon": "/ˈsɜːr.dʒər.i/",
+    "cn": "手术"
   },
   {
     "en": "allergy",
@@ -195,24 +190,14 @@
     "cn": "过敏"
   },
   {
-    "en": "infection",
-    "phon": "/ɪnˈfek.ʃən/",
-    "cn": "感染"
+    "en": "virus",
+    "phon": "/ˈvaɪ.rəs/",
+    "cn": "病毒"
   },
   {
-    "en": "inflammation",
-    "phon": "/ˌɪn.fləˈmeɪ.ʃən/",
-    "cn": "炎症"
-  },
-  {
-    "en": "chronic",
-    "phon": "/ˈkrɒn.ɪk/",
-    "cn": "慢性的"
-  },
-  {
-    "en": "acute",
-    "phon": "/əˈkjuːt/",
-    "cn": "急性的"
+    "en": "anxiety",
+    "phon": "/æŋˈzaɪ.ə.ti/",
+    "cn": "焦虑"
   },
   {
     "en": "bacteria",
@@ -220,19 +205,24 @@
     "cn": "细菌"
   },
   {
-    "en": "virus",
-    "phon": "/ˈvaɪ.rəs/",
-    "cn": "病毒"
+    "en": "digestion",
+    "phon": "/daɪˈdʒes.tʃən/",
+    "cn": "消化"
   },
   {
-    "en": "cell",
-    "phon": "/sel/",
-    "cn": "细胞"
+    "en": "inflammation",
+    "phon": "/ˌɪn.fləˈmeɪ.ʃən/",
+    "cn": "炎症"
   },
   {
-    "en": "tissue",
-    "phon": "/ˈtɪʃ.uː/",
-    "cn": "组织"
+    "en": "flexibility",
+    "phon": "/ˌflek.səˈbɪl.ə.ti/",
+    "cn": "灵活性"
+  },
+  {
+    "en": "infection",
+    "phon": "/ɪnˈfek.ʃən/",
+    "cn": "感染"
   },
   {
     "en": "organ",
@@ -240,13 +230,23 @@
     "cn": "器官"
   },
   {
-    "en": "wound",
-    "phon": "/wuːnd/",
-    "cn": "伤口"
+    "en": "strength",
+    "phon": "/streŋθ/",
+    "cn": "力量"
   },
   {
-    "en": "bruise",
-    "phon": "/bruːz/",
-    "cn": "淤青"
+    "en": "annual",
+    "phon": "/ˈæn.ju.əl/",
+    "cn": "年度的"
+  },
+  {
+    "en": "joint",
+    "phon": "/dʒɔɪnt/",
+    "cn": "关节"
+  },
+  {
+    "en": "absolute",
+    "phon": "/ˈæb.sə.luːt/",
+    "cn": "绝对的"
   }
 ]

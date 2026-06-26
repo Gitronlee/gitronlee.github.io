@@ -1,133 +1,8 @@
 [
   {
-    "en": "melancholy",
-    "phon": "/ˈmel.ən.kɒl.i/",
-    "cn": "忧郁"
-  },
-  {
-    "en": "nostalgia",
-    "phon": "/nɒˈstæl.dʒə/",
-    "cn": "怀旧"
-  },
-  {
-    "en": "wistful",
-    "phon": "/ˈwɪst.fəl/",
-    "cn": "惆怅的"
-  },
-  {
-    "en": "bittersweet",
-    "phon": "/ˌbɪt.ərˈswiːt/",
-    "cn": "苦乐参半的"
-  },
-  {
-    "en": "ambivalent",
-    "phon": "/æmˈbɪv.əl.ənt/",
-    "cn": "矛盾的"
-  },
-  {
-    "en": "apathetic",
-    "phon": "/ˌæp.əˈθet.ɪk/",
-    "cn": "冷漠的"
-  },
-  {
-    "en": "lethargic",
-    "phon": "/ləˈθɑːr.dʒɪk/",
-    "cn": "昏昏欲睡的"
-  },
-  {
-    "en": "languid",
-    "phon": "/ˈlæŋ.ɡwɪd/",
-    "cn": "慵懒的"
-  },
-  {
-    "en": "despondent",
-    "phon": "/dɪˈspɒn.dənt/",
-    "cn": "沮丧的"
-  },
-  {
-    "en": "desolate",
-    "phon": "/ˈdes.əl.ət/",
-    "cn": "荒凉的"
-  },
-  {
-    "en": "forlorn",
-    "phon": "/fərˈlɔːrn/",
-    "cn": "孤独的"
-  },
-  {
-    "en": "bereft",
-    "phon": "/bɪˈreft/",
-    "cn": "失去的"
-  },
-  {
-    "en": "anguish",
-    "phon": "/ˈæŋ.ɡwɪʃ/",
-    "cn": "痛苦"
-  },
-  {
-    "en": "torment",
-    "phon": "/ˈtɔːr.mənt/",
-    "cn": "折磨"
-  },
-  {
-    "en": "agony",
-    "phon": "/ˈæɡ.ən.i/",
-    "cn": "极度痛苦"
-  },
-  {
-    "en": "ecstasy",
-    "phon": "/ˈek.stə.si/",
-    "cn": "狂喜"
-  },
-  {
-    "en": "euphoria",
-    "phon": "/juːˈfɔːr.i.ə/",
-    "cn": "欣快感"
-  },
-  {
-    "en": "elation",
-    "phon": "/ɪˈleɪ.ʃən/",
-    "cn": "兴高采烈"
-  },
-  {
-    "en": "jubilation",
-    "phon": "/ˌdʒuː.bɪˈleɪ.ʃən/",
-    "cn": "欢欣鼓舞"
-  },
-  {
-    "en": "exhilaration",
-    "phon": "/ɪɡˌzɪl.əˈreɪ.ʃən/",
-    "cn": "兴奋"
-  },
-  {
-    "en": "rapture",
-    "phon": "/ˈræp.tʃər/",
-    "cn": "狂喜"
-  },
-  {
-    "en": "bliss",
-    "phon": "/blɪs/",
-    "cn": "极乐"
-  },
-  {
-    "en": "serenity",
-    "phon": "/səˈren.ə.ti/",
-    "cn": "宁静"
-  },
-  {
-    "en": "tranquility",
-    "phon": "/træŋˈkwɪl.ə.ti/",
-    "cn": "平静"
-  },
-  {
-    "en": "composure",
-    "phon": "/kəmˈpəʊ.ʒər/",
-    "cn": "镇定"
-  },
-  {
-    "en": "equanimity",
-    "phon": "/ˌek.wəˈnɪm.ə.ti/",
-    "cn": "平静"
+    "en": "brooding",
+    "phon": "/ˈbruː.dɪŋ/",
+    "cn": "忧思的"
   },
   {
     "en": "stoic",
@@ -135,14 +10,9 @@
     "cn": "坚忍的"
   },
   {
-    "en": "phlegmatic",
-    "phon": "/fleɡˈmæt.ɪk/",
-    "cn": "冷静的"
-  },
-  {
-    "en": "sanguine",
-    "phon": "/ˈsæŋ.ɡwɪn/",
-    "cn": "乐观的"
+    "en": "pensive",
+    "phon": "/ˈpen.sɪv/",
+    "cn": "沉思的"
   },
   {
     "en": "choleric",
@@ -150,79 +20,9 @@
     "cn": "易怒的"
   },
   {
-    "en": "melancholic",
-    "phon": "/ˌmel.ənˈkɒl.ɪk/",
-    "cn": "忧郁的"
-  },
-  {
-    "en": "uncordify",
-    "phon": "/uncordify/",
-    "cn": "uncordify"
-  },
-  {
-    "en": "pensive",
-    "phon": "/ˈpen.sɪv/",
-    "cn": "沉思的"
-  },
-  {
     "en": "contemplative",
     "phon": "/kənˈtem.plə.tɪv/",
     "cn": "沉思的"
-  },
-  {
-    "en": "meditative",
-    "phon": "/ˈmed.ɪ.tə.tɪv/",
-    "cn": "冥想的"
-  },
-  {
-    "en": "introspective",
-    "phon": "/ˌɪn.trəˈspek.tɪv/",
-    "cn": "内省的"
-  },
-  {
-    "en": "reflective",
-    "phon": "/rɪˈflek.tɪv/",
-    "cn": "深思的"
-  },
-  {
-    "en": "brooding",
-    "phon": "/ˈbruː.dɪŋ/",
-    "cn": "忧思的"
-  },
-  {
-    "en": "rumination",
-    "phon": "/ˌruː.mɪˈneɪ.ʃən/",
-    "cn": "反刍"
-  },
-  {
-    "en": "cathartic",
-    "phon": "/kəˈθɑːr.tɪk/",
-    "cn": "宣泄的"
-  },
-  {
-    "en": "purifying",
-    "phon": "/ˈpjʊər.ɪ.faɪ.ɪŋ/",
-    "cn": "净化的"
-  },
-  {
-    "en": "cleansing",
-    "phon": "/ˈklen.zɪŋ/",
-    "cn": "清洁的"
-  },
-  {
-    "en": "restorative",
-    "phon": "/rɪˈstɔːr.ə.tɪv/",
-    "cn": "恢复的"
-  },
-  {
-    "en": "rejuvenating",
-    "phon": "/rɪˈdʒuː.vən.eɪ.tɪŋ/",
-    "cn": "回春的"
-  },
-  {
-    "en": "invigorating",
-    "phon": "/ɪnˈvɪɡ.ər.eɪ.tɪŋ/",
-    "cn": "令人振奋的"
   },
   {
     "en": "exhilarating",
@@ -230,14 +30,114 @@
     "cn": "令人兴奋的"
   },
   {
+    "en": "languid",
+    "phon": "/ˈlæŋ.ɡwɪd/",
+    "cn": "慵懒的"
+  },
+  {
+    "en": "wistful",
+    "phon": "/ˈwɪst.fəl/",
+    "cn": "惆怅的"
+  },
+  {
+    "en": "purifying",
+    "phon": "/ˈpjʊər.ɪ.faɪ.ɪŋ/",
+    "cn": "净化的"
+  },
+  {
+    "en": "sanguine",
+    "phon": "/ˈsæŋ.ɡwɪn/",
+    "cn": "乐观的"
+  },
+  {
+    "en": "forlorn",
+    "phon": "/fərˈlɔːrn/",
+    "cn": "孤独的"
+  },
+  {
+    "en": "serenity",
+    "phon": "/səˈren.ə.ti/",
+    "cn": "宁静"
+  },
+  {
+    "en": "meditative",
+    "phon": "/ˈmed.ɪ.tə.tɪv/",
+    "cn": "冥想的"
+  },
+  {
+    "en": "ambivalent",
+    "phon": "/æmˈbɪv.əl.ənt/",
+    "cn": "矛盾的"
+  },
+  {
+    "en": "invigorating",
+    "phon": "/ɪnˈvɪɡ.ər.eɪ.tɪŋ/",
+    "cn": "令人振奋的"
+  },
+  {
+    "en": "bereft",
+    "phon": "/bɪˈreft/",
+    "cn": "失去的"
+  },
+  {
+    "en": "introspective",
+    "phon": "/ˌɪn.trəˈspek.tɪv/",
+    "cn": "内省的"
+  },
+  {
+    "en": "ecstasy",
+    "phon": "/ˈek.stə.si/",
+    "cn": "狂喜"
+  },
+  {
+    "en": "apathetic",
+    "phon": "/ˌæp.əˈθet.ɪk/",
+    "cn": "冷漠的"
+  },
+  {
     "en": "thrilling",
     "phon": "/ˈθrɪl.ɪŋ/",
     "cn": "刺激的"
   },
   {
-    "en": "electrifying",
-    "phon": "/ɪˈlek.trɪ.faɪ.ɪŋ/",
-    "cn": "令人激动的"
+    "en": "composure",
+    "phon": "/kəmˈpəʊ.ʒər/",
+    "cn": "镇定"
+  },
+  {
+    "en": "rumination",
+    "phon": "/ˌruː.mɪˈneɪ.ʃən/",
+    "cn": "反刍"
+  },
+  {
+    "en": "reflective",
+    "phon": "/rɪˈflek.tɪv/",
+    "cn": "深思的"
+  },
+  {
+    "en": "cathartic",
+    "phon": "/kəˈθɑːr.tɪk/",
+    "cn": "宣泄的"
+  },
+  {
+    "en": "melancholic",
+    "phon": "/ˌmel.ənˈkɒl.ɪk/",
+    "cn": "忧郁的"
+  },
+  {
+    "en": "equanimity",
+    "phon": "/ˌek.wəˈnɪm.ə.ti/",
+    "cn": "平静"
+  },
+  {
+    "en": "euphoria",
+    "phon": "/juːˈfɔːr.i.ə/",
+    "cn": "欣快感"
+  },
+  {
+    "en": "bittersweet",
+    "phon": "/ˌbɪt.ərˈswiːt/",
+    "cn": "苦乐参半的"
   },
   {
     "en": "breathtaking",
@@ -245,8 +145,108 @@
     "cn": "令人惊叹的"
   },
   {
-    "en": "uncordate",
-    "phon": "/uncordate/",
-    "cn": "uncordate"
+    "en": "bliss",
+    "phon": "/blɪs/",
+    "cn": "极乐"
+  },
+  {
+    "en": "lethargic",
+    "phon": "/ləˈθɑːr.dʒɪk/",
+    "cn": "昏昏欲睡的"
+  },
+  {
+    "en": "nostalgia",
+    "phon": "/nɒˈstæl.dʒə/",
+    "cn": "怀旧"
+  },
+  {
+    "en": "elation",
+    "phon": "/ɪˈleɪ.ʃən/",
+    "cn": "兴高采烈"
+  },
+  {
+    "en": "rapture",
+    "phon": "/ˈræp.tʃər/",
+    "cn": "狂喜"
+  },
+  {
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "desolate",
+    "phon": "/ˈdes.əl.ət/",
+    "cn": "荒凉的"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "exhilaration",
+    "phon": "/ɪɡˌzɪl.əˈreɪ.ʃən/",
+    "cn": "兴奋"
+  },
+  {
+    "en": "electrifying",
+    "phon": "/ɪˈlek.trɪ.faɪ.ɪŋ/",
+    "cn": "令人激动的"
+  },
+  {
+    "en": "torment",
+    "phon": "/ˈtɔːr.mənt/",
+    "cn": "折磨"
+  },
+  {
+    "en": "cleansing",
+    "phon": "/ˈklen.zɪŋ/",
+    "cn": "清洁的"
+  },
+  {
+    "en": "agony",
+    "phon": "/ˈæɡ.ən.i/",
+    "cn": "极度痛苦"
+  },
+  {
+    "en": "rejuvenating",
+    "phon": "/rɪˈdʒuː.vən.eɪ.tɪŋ/",
+    "cn": "回春的"
+  },
+  {
+    "en": "restorative",
+    "phon": "/rɪˈstɔːr.ə.tɪv/",
+    "cn": "恢复的"
+  },
+  {
+    "en": "phlegmatic",
+    "phon": "/fleɡˈmæt.ɪk/",
+    "cn": "冷静的"
+  },
+  {
+    "en": "despondent",
+    "phon": "/dɪˈspɒn.dənt/",
+    "cn": "沮丧的"
+  },
+  {
+    "en": "melancholy",
+    "phon": "/ˈmel.ən.kɒl.i/",
+    "cn": "忧郁"
+  },
+  {
+    "en": "anguish",
+    "phon": "/ˈæŋ.ɡwɪʃ/",
+    "cn": "痛苦"
+  },
+  {
+    "en": "tranquility",
+    "phon": "/træŋˈkwɪl.ə.ti/",
+    "cn": "平静"
+  },
+  {
+    "en": "jubilation",
+    "phon": "/ˌdʒuː.bɪˈleɪ.ʃən/",
+    "cn": "欢欣鼓舞"
   }
 ]

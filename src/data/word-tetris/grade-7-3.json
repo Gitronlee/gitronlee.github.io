@@ -1,228 +1,8 @@
 [
   {
-    "en": "civilization",
-    "phon": "/ˌsɪv.əl.aɪˈzeɪ.ʃən/",
-    "cn": "文明"
-  },
-  {
-    "en": "unclaimial",
-    "phon": "/unclaimial/",
-    "cn": "unclaimial"
-  },
-  {
-    "en": "medieval",
-    "phon": "/ˌmed.iˈiː.vəl/",
-    "cn": "中世纪的"
-  },
-  {
-    "en": "Renaissance",
-    "phon": "/ˌren.əˈsɑːns/",
-    "cn": "文艺复兴"
-  },
-  {
-    "en": "revolution",
-    "phon": "/ˌrev.əˈluː.ʃən/",
-    "cn": "革命"
-  },
-  {
     "en": "empire",
     "phon": "/ˈem.paɪ.ər/",
     "cn": "帝国"
-  },
-  {
-    "en": "dynasty",
-    "phon": "/ˈdaɪ.nə.sti/",
-    "cn": "朝代"
-  },
-  {
-    "en": "monarchy",
-    "phon": "/ˈmɒn.ə.ki/",
-    "cn": "君主制"
-  },
-  {
-    "en": "unclaimly",
-    "phon": "/unclaimly/",
-    "cn": "unclaimly"
-  },
-  {
-    "en": "republic",
-    "phon": "/rɪˈpʌb.lɪk/",
-    "cn": "共和国"
-  },
-  {
-    "en": "colonialism",
-    "phon": "/kəˈləʊ.ni.əl.ɪ.zəm/",
-    "cn": "殖民主义"
-  },
-  {
-    "en": "imperialism",
-    "phon": "/ɪmˈpɪər.i.əl.ɪ.zəm/",
-    "cn": "帝国主义"
-  },
-  {
-    "en": "feudalism",
-    "phon": "/ˈfjuː.dəl.ɪ.zəm/",
-    "cn": "封建主义"
-  },
-  {
-    "en": "capitalism",
-    "phon": "/ˈkæp.ɪ.təl.ɪ.zəm/",
-    "cn": "资本主义"
-  },
-  {
-    "en": "socialism",
-    "phon": "/ˈsəʊ.ʃəl.ɪ.zəm/",
-    "cn": "社会主义"
-  },
-  {
-    "en": "communism",
-    "phon": "/ˈkɒm.ju.nɪ.zəm/",
-    "cn": "共产主义"
-  },
-  {
-    "en": "constitution",
-    "phon": "/ˌkɒn.stɪˈtjuː.ʃən/",
-    "cn": "宪法"
-  },
-  {
-    "en": "amendment",
-    "phon": "/əˈmend.mənt/",
-    "cn": "修正案"
-  },
-  {
-    "en": "legislation",
-    "phon": "/ˌledʒ.ɪsˈleɪ.ʃən/",
-    "cn": "立法"
-  },
-  {
-    "en": "jurisdiction",
-    "phon": "/ˌdʒʊər.ɪsˈdɪk.ʃən/",
-    "cn": "管辖权"
-  },
-  {
-    "en": "sovereignty",
-    "phon": "/ˈsɒv.rɪn.ti/",
-    "cn": "主权"
-  },
-  {
-    "en": "territory",
-    "phon": "/ˈter.ə.tər.i/",
-    "cn": "领土"
-  },
-  {
-    "en": "diplomacy",
-    "phon": "/dɪˈpləʊ.mə.si/",
-    "cn": "外交"
-  },
-  {
-    "en": "treaty",
-    "phon": "/ˈtriː.ti/",
-    "cn": "条约"
-  },
-  {
-    "en": "alliance",
-    "phon": "/əˈlaɪ.əns/",
-    "cn": "联盟"
-  },
-  {
-    "en": "unclaimer",
-    "phon": "/unclaimer/",
-    "cn": "unclaimer"
-  },
-  {
-    "en": "warfare",
-    "phon": "/ˈwɔːr.feər/",
-    "cn": "战争"
-  },
-  {
-    "en": "battle",
-    "phon": "/ˈbæt.əl/",
-    "cn": "战役"
-  },
-  {
-    "en": "siege",
-    "phon": "/siːdʒ/",
-    "cn": "围攻"
-  },
-  {
-    "en": "unclaimor",
-    "phon": "/unclaimor/",
-    "cn": "unclaimor"
-  },
-  {
-    "en": "conquest",
-    "phon": "/ˈkɒŋ.kwest/",
-    "cn": "征服"
-  },
-  {
-    "en": "invasion",
-    "phon": "/ɪnˈveɪ.ʒən/",
-    "cn": "入侵"
-  },
-  {
-    "en": "occupation",
-    "phon": "/ˌɒk.juˈpeɪ.ʃən/",
-    "cn": "占领"
-  },
-  {
-    "en": "liberation",
-    "phon": "/ˌlɪb.əˈreɪ.ʃən/",
-    "cn": "解放"
-  },
-  {
-    "en": "independence",
-    "phon": "/ˌɪn.dɪˈpen.dəns/",
-    "cn": "独立"
-  },
-  {
-    "en": "unification",
-    "phon": "/ˌjuː.nɪ.fɪˈkeɪ.ʃən/",
-    "cn": "统一"
-  },
-  {
-    "en": "restoration",
-    "phon": "/ˌres.təˈreɪ.ʃən/",
-    "cn": "复兴"
-  },
-  {
-    "en": "reformation",
-    "phon": "/ˌref.ərˈmeɪ.ʃən/",
-    "cn": "改革"
-  },
-  {
-    "en": "enlightenment",
-    "phon": "/ɪnˈlaɪ.tən.mənt/",
-    "cn": "启蒙"
-  },
-  {
-    "en": "industrialization",
-    "phon": "/ɪnˌdʌs.tri.əl.aɪˈzeɪ.ʃən/",
-    "cn": "工业化"
-  },
-  {
-    "en": "modernization",
-    "phon": "/ˌmɒd.ən.aɪˈzeɪ.ʃən/",
-    "cn": "现代化"
-  },
-  {
-    "en": "globalization",
-    "phon": "/ˌɡləʊ.bəl.aɪˈzeɪ.ʃən/",
-    "cn": "全球化"
-  },
-  {
-    "en": "archaeology",
-    "phon": "/ˌɑːr.kiˈɒl.ə.dʒi/",
-    "cn": "考古学"
-  },
-  {
-    "en": "artifact",
-    "phon": "/ˈɑːr.tɪ.fækt/",
-    "cn": "文物"
-  },
-  {
-    "en": "monument",
-    "phon": "/ˈmɒn.ju.mənt/",
-    "cn": "纪念碑"
   },
   {
     "en": "ruins",
@@ -230,14 +10,29 @@
     "cn": "废墟"
   },
   {
-    "en": "excavation",
-    "phon": "/ˌek.skəˈveɪ.ʃən/",
-    "cn": "挖掘"
+    "en": "industrialization",
+    "phon": "/ɪnˌdʌs.tri.əl.aɪˈzeɪ.ʃən/",
+    "cn": "工业化"
   },
   {
-    "en": "chronology",
-    "phon": "/krəˈnɒl.ə.dʒi/",
-    "cn": "年代学"
+    "en": "feudalism",
+    "phon": "/ˈfjuː.dəl.ɪ.zəm/",
+    "cn": "封建主义"
+  },
+  {
+    "en": "jurisdiction",
+    "phon": "/ˌdʒʊər.ɪsˈdɪk.ʃən/",
+    "cn": "管辖权"
+  },
+  {
+    "en": "artifact",
+    "phon": "/ˈɑːr.tɪ.fækt/",
+    "cn": "文物"
+  },
+  {
+    "en": "communism",
+    "phon": "/ˈkɒm.ju.nɪ.zəm/",
+    "cn": "共产主义"
   },
   {
     "en": "era",
@@ -245,8 +40,213 @@
     "cn": "时代"
   },
   {
+    "en": "apparatus",
+    "phon": "/ˌæp.əˈreɪ.təs/",
+    "cn": "器械"
+  },
+  {
+    "en": "monument",
+    "phon": "/ˈmɒn.ju.mənt/",
+    "cn": "纪念碑"
+  },
+  {
+    "en": "reformation",
+    "phon": "/ˌref.ərˈmeɪ.ʃən/",
+    "cn": "改革"
+  },
+  {
+    "en": "civilization",
+    "phon": "/ˌsɪv.əl.aɪˈzeɪ.ʃən/",
+    "cn": "文明"
+  },
+  {
+    "en": "occupation",
+    "phon": "/ˌɒk.juˈpeɪ.ʃən/",
+    "cn": "占领"
+  },
+  {
+    "en": "dynasty",
+    "phon": "/ˈdaɪ.nə.sti/",
+    "cn": "朝代"
+  },
+  {
+    "en": "chronology",
+    "phon": "/krəˈnɒl.ə.dʒi/",
+    "cn": "年代学"
+  },
+  {
+    "en": "republic",
+    "phon": "/rɪˈpʌb.lɪk/",
+    "cn": "共和国"
+  },
+  {
+    "en": "imperialism",
+    "phon": "/ɪmˈpɪər.i.əl.ɪ.zəm/",
+    "cn": "帝国主义"
+  },
+  {
+    "en": "Renaissance",
+    "phon": "/ˌren.əˈsɑːns/",
+    "cn": "文艺复兴"
+  },
+  {
+    "en": "unification",
+    "phon": "/ˌjuː.nɪ.fɪˈkeɪ.ʃən/",
+    "cn": "统一"
+  },
+  {
+    "en": "independence",
+    "phon": "/ˌɪn.dɪˈpen.dəns/",
+    "cn": "独立"
+  },
+  {
+    "en": "globalization",
+    "phon": "/ˌɡləʊ.bəl.aɪˈzeɪ.ʃən/",
+    "cn": "全球化"
+  },
+  {
+    "en": "capitalism",
+    "phon": "/ˈkæp.ɪ.təl.ɪ.zəm/",
+    "cn": "资本主义"
+  },
+  {
+    "en": "diplomacy",
+    "phon": "/dɪˈpləʊ.mə.si/",
+    "cn": "外交"
+  },
+  {
+    "en": "medieval",
+    "phon": "/ˌmed.iˈiː.vəl/",
+    "cn": "中世纪的"
+  },
+  {
+    "en": "revolution",
+    "phon": "/ˌrev.əˈluː.ʃən/",
+    "cn": "革命"
+  },
+  {
+    "en": "liberation",
+    "phon": "/ˌlɪb.əˈreɪ.ʃən/",
+    "cn": "解放"
+  },
+  {
+    "en": "amendment",
+    "phon": "/əˈmend.mənt/",
+    "cn": "修正案"
+  },
+  {
+    "en": "warfare",
+    "phon": "/ˈwɔːr.feər/",
+    "cn": "战争"
+  },
+  {
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚主义"
+  },
+  {
+    "en": "archaeology",
+    "phon": "/ˌɑːr.kiˈɒl.ə.dʒi/",
+    "cn": "考古学"
+  },
+  {
+    "en": "legislation",
+    "phon": "/ˌledʒ.ɪsˈleɪ.ʃən/",
+    "cn": "立法"
+  },
+  {
+    "en": "battle",
+    "phon": "/ˈbæt.əl/",
+    "cn": "战役"
+  },
+  {
+    "en": "commemorate",
+    "phon": "/kəˈmem.ə.reɪt/",
+    "cn": "纪念"
+  },
+  {
+    "en": "invasion",
+    "phon": "/ɪnˈveɪ.ʒən/",
+    "cn": "入侵"
+  },
+  {
+    "en": "siege",
+    "phon": "/siːdʒ/",
+    "cn": "围攻"
+  },
+  {
+    "en": "alliance",
+    "phon": "/əˈlaɪ.əns/",
+    "cn": "联盟"
+  },
+  {
+    "en": "enlightenment",
+    "phon": "/ɪnˈlaɪ.tən.mənt/",
+    "cn": "启蒙"
+  },
+  {
+    "en": "conquest",
+    "phon": "/ˈkɒŋ.kwest/",
+    "cn": "征服"
+  },
+  {
+    "en": "constitution",
+    "phon": "/ˌkɒn.stɪˈtjuː.ʃən/",
+    "cn": "宪法"
+  },
+  {
+    "en": "socialism",
+    "phon": "/ˈsəʊ.ʃəl.ɪ.zəm/",
+    "cn": "社会主义"
+  },
+  {
+    "en": "territory",
+    "phon": "/ˈter.ə.tər.i/",
+    "cn": "领土"
+  },
+  {
+    "en": "monarchy",
+    "phon": "/ˈmɒn.ə.ki/",
+    "cn": "君主制"
+  },
+  {
+    "en": "restoration",
+    "phon": "/ˌres.təˈreɪ.ʃən/",
+    "cn": "复兴"
+  },
+  {
     "en": "epoch",
     "phon": "/ˈiː.pɒk/",
     "cn": "纪元"
+  },
+  {
+    "en": "conceive",
+    "phon": "/kənˈsiːv/",
+    "cn": "构想"
+  },
+  {
+    "en": "modernization",
+    "phon": "/ˌmɒd.ən.aɪˈzeɪ.ʃən/",
+    "cn": "现代化"
+  },
+  {
+    "en": "colonialism",
+    "phon": "/kəˈləʊ.ni.əl.ɪ.zəm/",
+    "cn": "殖民主义"
+  },
+  {
+    "en": "treaty",
+    "phon": "/ˈtriː.ti/",
+    "cn": "条约"
+  },
+  {
+    "en": "excavation",
+    "phon": "/ˌek.skəˈveɪ.ʃən/",
+    "cn": "挖掘"
+  },
+  {
+    "en": "sovereignty",
+    "phon": "/ˈsɒv.rɪn.ti/",
+    "cn": "主权"
   }
 ]

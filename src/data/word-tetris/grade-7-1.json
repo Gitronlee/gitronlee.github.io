@@ -1,13 +1,13 @@
 [
   {
-    "en": "analysis",
-    "phon": "/əˈnæl.ə.sɪs/",
-    "cn": "分析"
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
   },
   {
-    "en": "synthesis",
-    "phon": "/ˈsɪn.θə.sɪs/",
-    "cn": "综合"
+    "en": "philosophy",
+    "phon": "/fɪˈlɒs.ə.fi/",
+    "cn": "哲学"
   },
   {
     "en": "evaluation",
@@ -15,159 +15,9 @@
     "cn": "评估"
   },
   {
-    "en": "interpretation",
-    "phon": "/ɪnˌtɜːr.prɪˈteɪ.ʃən/",
-    "cn": "解释"
-  },
-  {
-    "en": "uncessory",
-    "phon": "/uncessory/",
-    "cn": "uncessory"
-  },
-  {
-    "en": "evidence",
-    "phon": "/ˈev.ɪ.dəns/",
-    "cn": "证据"
-  },
-  {
-    "en": "uncessdom",
-    "phon": "/uncessdom/",
-    "cn": "uncessdom"
-  },
-  {
-    "en": "variable",
-    "phon": "/ˈveər.i.ə.bəl/",
-    "cn": "变量"
-  },
-  {
-    "en": "constant",
-    "phon": "/ˈkɒn.stənt/",
-    "cn": "常量"
-  },
-  {
     "en": "correlation",
     "phon": "/ˌkɒr.əˈleɪ.ʃən/",
     "cn": "相关性"
-  },
-  {
-    "en": "causation",
-    "phon": "/kɔːˈzeɪ.ʃən/",
-    "cn": "因果关系"
-  },
-  {
-    "en": "validity",
-    "phon": "/vəˈlɪd.ə.ti/",
-    "cn": "有效性"
-  },
-  {
-    "en": "reliability",
-    "phon": "/rɪˌlaɪ.əˈbɪl.ə.ti/",
-    "cn": "可靠性"
-  },
-  {
-    "en": "objectivity",
-    "phon": "/ˌɒb.dʒekˈtɪv.ə.ti/",
-    "cn": "客观性"
-  },
-  {
-    "en": "subjectivity",
-    "phon": "/ˌsʌb.dʒekˈtɪv.ə.ti/",
-    "cn": "主观性"
-  },
-  {
-    "en": "bias",
-    "phon": "/ˈbaɪ.əs/",
-    "cn": "偏见"
-  },
-  {
-    "en": "perspective",
-    "phon": "/pərˈspek.tɪv/",
-    "cn": "观点"
-  },
-  {
-    "en": "viewpoint",
-    "phon": "/ˈvjuː.pɔɪnt/",
-    "cn": "立场"
-  },
-  {
-    "en": "concept",
-    "phon": "/ˈkɒn.sept/",
-    "cn": "概念"
-  },
-  {
-    "en": "principle",
-    "phon": "/ˈprɪn.sə.pəl/",
-    "cn": "原则"
-  },
-  {
-    "en": "uncessship",
-    "phon": "/uncessship/",
-    "cn": "uncessship"
-  },
-  {
-    "en": "framework",
-    "phon": "/ˈfreɪm.wɜːrk/",
-    "cn": "框架"
-  },
-  {
-    "en": "methodology",
-    "phon": "/ˌmeθ.əˈdɒl.ə.dʒi/",
-    "cn": "方法论"
-  },
-  {
-    "en": "paradigm",
-    "phon": "/ˈpær.ə.daɪm/",
-    "cn": "范式"
-  },
-  {
-    "en": "uncessward",
-    "phon": "/uncessward/",
-    "cn": "uncessward"
-  },
-  {
-    "en": "curriculum",
-    "phon": "/kəˈrɪk.ju.ləm/",
-    "cn": "课程"
-  },
-  {
-    "en": "pedagogy",
-    "phon": "/ˈped.ə.ɡɒdʒ.i/",
-    "cn": "教育学"
-  },
-  {
-    "en": "cognitive",
-    "phon": "/ˈkɒɡ.nə.tɪv/",
-    "cn": "认知的"
-  },
-  {
-    "en": "metacognition",
-    "phon": "/ˌmet.ə.kɒɡˈnɪʃ.ən/",
-    "cn": "元认知"
-  },
-  {
-    "en": "literacy",
-    "phon": "/ˈlɪt.ər.ə.si/",
-    "cn": "读写能力"
-  },
-  {
-    "en": "numeracy",
-    "phon": "/ˈnjuː.mər.ə.si/",
-    "cn": "数学能力"
-  },
-  {
-    "en": "critical thinking",
-    "phon": "/ˈkrɪt.ɪ.kəl ˈθɪŋ.kɪŋ/",
-    "cn": "批判性思维"
-  },
-  {
-    "en": "problem solving",
-    "phon": "/ˈprɒb.ləm ˈsɒlv.ɪŋ/",
-    "cn": "解决问题"
-  },
-  {
-    "en": "research",
-    "phon": "/rɪˈsɜːrtʃ/",
-    "cn": "研究"
   },
   {
     "en": "method",
@@ -175,14 +25,124 @@
     "cn": "方法"
   },
   {
+    "en": "critical thinking",
+    "phon": "/ˈkrɪt.ɪ.kəl ˈθɪŋ.kɪŋ/",
+    "cn": "批判性思维"
+  },
+  {
+    "en": "principle",
+    "phon": "/ˈprɪn.sə.pəl/",
+    "cn": "原则"
+  },
+  {
     "en": "procedure",
     "phon": "/prəˈsiː.dʒər/",
     "cn": "程序"
   },
   {
-    "en": "technique",
-    "phon": "/tekˈniːk/",
-    "cn": "技术"
+    "en": "cognitive",
+    "phon": "/ˈkɒɡ.nə.tɪv/",
+    "cn": "认知的"
+  },
+  {
+    "en": "adolescent",
+    "phon": "/ˌæd.əˈles.ənt/",
+    "cn": "青少年"
+  },
+  {
+    "en": "viewpoint",
+    "phon": "/ˈvjuː.pɔɪnt/",
+    "cn": "立场"
+  },
+  {
+    "en": "framework",
+    "phon": "/ˈfreɪm.wɜːrk/",
+    "cn": "框架"
+  },
+  {
+    "en": "attribute",
+    "phon": "/əˈtrɪb.juːt/",
+    "cn": "属性"
+  },
+  {
+    "en": "literacy",
+    "phon": "/ˈlɪt.ər.ə.si/",
+    "cn": "读写能力"
+  },
+  {
+    "en": "complement",
+    "phon": "/ˈkɒm.plɪ.ment/",
+    "cn": "补充"
+  },
+  {
+    "en": "commemorate",
+    "phon": "/kəˈmem.ə.reɪt/",
+    "cn": "纪念"
+  },
+  {
+    "en": "constant",
+    "phon": "/ˈkɒn.stənt/",
+    "cn": "常量"
+  },
+  {
+    "en": "concept",
+    "phon": "/ˈkɒn.sept/",
+    "cn": "概念"
+  },
+  {
+    "en": "validity",
+    "phon": "/vəˈlɪd.ə.ti/",
+    "cn": "有效性"
+  },
+  {
+    "en": "curriculum",
+    "phon": "/kəˈrɪk.ju.ləm/",
+    "cn": "课程"
+  },
+  {
+    "en": "problem solving",
+    "phon": "/ˈprɒb.ləm ˈsɒlv.ɪŋ/",
+    "cn": "解决问题"
+  },
+  {
+    "en": "epistemology",
+    "phon": "/ɪˌpɪs.təˈmɒl.ə.dʒi/",
+    "cn": "认识论"
+  },
+  {
+    "en": "induction",
+    "phon": "/ɪnˈdʌk.ʃən/",
+    "cn": "归纳"
+  },
+  {
+    "en": "perspective",
+    "phon": "/pərˈspek.tɪv/",
+    "cn": "观点"
+  },
+  {
+    "en": "metacognition",
+    "phon": "/ˌmet.ə.kɒɡˈnɪʃ.ən/",
+    "cn": "元认知"
+  },
+  {
+    "en": "numeracy",
+    "phon": "/ˈnjuː.mər.ə.si/",
+    "cn": "数学能力"
+  },
+  {
+    "en": "paradigm",
+    "phon": "/ˈpær.ə.daɪm/",
+    "cn": "范式"
+  },
+  {
+    "en": "interpretation",
+    "phon": "/ɪnˌtɜːr.prɪˈteɪ.ʃən/",
+    "cn": "解释"
+  },
+  {
+    "en": "synthesis",
+    "phon": "/ˈsɪn.θə.sɪs/",
+    "cn": "综合"
   },
   {
     "en": "strategy",
@@ -195,29 +155,39 @@
     "cn": "方法"
   },
   {
-    "en": "uncesswise",
-    "phon": "/uncesswise/",
-    "cn": "uncesswise"
+    "en": "causation",
+    "phon": "/kɔːˈzeɪ.ʃən/",
+    "cn": "因果关系"
   },
   {
-    "en": "uncessling",
-    "phon": "/uncessling/",
-    "cn": "uncessling"
+    "en": "subjectivity",
+    "phon": "/ˌsʌb.dʒekˈtɪv.ə.ti/",
+    "cn": "主观性"
   },
   {
-    "en": "inference",
-    "phon": "/ˈɪn.fər.əns/",
-    "cn": "推断"
+    "en": "variable",
+    "phon": "/ˈveər.i.ə.bəl/",
+    "cn": "变量"
   },
   {
-    "en": "deduction",
-    "phon": "/dɪˈdʌk.ʃən/",
-    "cn": "演绎"
+    "en": "technique",
+    "phon": "/tekˈniːk/",
+    "cn": "技术"
   },
   {
-    "en": "induction",
-    "phon": "/ɪnˈdʌk.ʃən/",
-    "cn": "归纳"
+    "en": "analysis",
+    "phon": "/əˈnæl.ə.sɪs/",
+    "cn": "分析"
+  },
+  {
+    "en": "evidence",
+    "phon": "/ˈev.ɪ.dəns/",
+    "cn": "证据"
+  },
+  {
+    "en": "research",
+    "phon": "/rɪˈsɜːrtʃ/",
+    "cn": "研究"
   },
   {
     "en": "logic",
@@ -225,28 +195,58 @@
     "cn": "逻辑"
   },
   {
-    "en": "reasoning",
-    "phon": "/ˈriː.zən.ɪŋ/",
-    "cn": "推理"
-  },
-  {
-    "en": "philosophy",
-    "phon": "/fɪˈlɒs.ə.fi/",
-    "cn": "哲学"
-  },
-  {
-    "en": "epistemology",
-    "phon": "/ɪˌpɪs.təˈmɒl.ə.dʒi/",
-    "cn": "认识论"
-  },
-  {
     "en": "ontology",
     "phon": "/ɒnˈtɒl.ə.dʒi/",
     "cn": "本体论"
   },
   {
-    "en": "uncesslet",
-    "phon": "/uncesslet/",
-    "cn": "uncesslet"
+    "en": "acquire",
+    "phon": "/əˈkwaɪr/",
+    "cn": "获得"
+  },
+  {
+    "en": "methodology",
+    "phon": "/ˌmeθ.əˈdɒl.ə.dʒi/",
+    "cn": "方法论"
+  },
+  {
+    "en": "bias",
+    "phon": "/ˈbaɪ.əs/",
+    "cn": "偏见"
+  },
+  {
+    "en": "objectivity",
+    "phon": "/ˌɒb.dʒekˈtɪv.ə.ti/",
+    "cn": "客观性"
+  },
+  {
+    "en": "deduction",
+    "phon": "/dɪˈdʌk.ʃən/",
+    "cn": "演绎"
+  },
+  {
+    "en": "reasoning",
+    "phon": "/ˈriː.zən.ɪŋ/",
+    "cn": "推理"
+  },
+  {
+    "en": "confront",
+    "phon": "/kənˈfrʌnt/",
+    "cn": "面对"
+  },
+  {
+    "en": "inference",
+    "phon": "/ˈɪn.fər.əns/",
+    "cn": "推断"
+  },
+  {
+    "en": "pedagogy",
+    "phon": "/ˈped.ə.ɡɒdʒ.i/",
+    "cn": "教育学"
+  },
+  {
+    "en": "reliability",
+    "phon": "/rɪˌlaɪ.əˈbɪl.ə.ti/",
+    "cn": "可靠性"
   }
 ]

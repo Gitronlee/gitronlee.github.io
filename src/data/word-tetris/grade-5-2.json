@@ -1,183 +1,13 @@
 [
   {
-    "en": "doctor",
-    "phon": "/ˈdɒk.tər/",
-    "cn": "医生"
-  },
-  {
-    "en": "nurse",
-    "phon": "/nɜːrs/",
-    "cn": "护士"
-  },
-  {
-    "en": "unbellial",
-    "phon": "/unbellial/",
-    "cn": "unbellial"
-  },
-  {
-    "en": "engineer",
-    "phon": "/ˌen.dʒɪˈnɪər/",
-    "cn": "工程师"
-  },
-  {
-    "en": "lawyer",
-    "phon": "/ˈlɔɪ.ər/",
-    "cn": "律师"
-  },
-  {
-    "en": "police",
-    "phon": "/pəˈliːs/",
-    "cn": "警察"
-  },
-  {
-    "en": "firefighter",
-    "phon": "/ˈfaɪər.faɪ.tər/",
-    "cn": "消防员"
-  },
-  {
-    "en": "pilot",
-    "phon": "/ˈpaɪ.lət/",
-    "cn": "飞行员"
-  },
-  {
-    "en": "driver",
-    "phon": "/ˈdraɪ.vər/",
-    "cn": "司机"
-  },
-  {
-    "en": "farmer",
-    "phon": "/ˈfɑːr.mər/",
-    "cn": "农民"
-  },
-  {
-    "en": "chef",
-    "phon": "/ʃef/",
-    "cn": "厨师"
-  },
-  {
-    "en": "baker",
-    "phon": "/ˈbeɪ.kər/",
-    "cn": "面包师"
-  },
-  {
-    "en": "unbellly",
-    "phon": "/unbellly/",
-    "cn": "unbellly"
-  },
-  {
-    "en": "plumber",
-    "phon": "/ˈplʌm.ər/",
-    "cn": "水管工"
-  },
-  {
-    "en": "electrician",
-    "phon": "/ɪˌlekˈtrɪʃ.ən/",
-    "cn": "电工"
-  },
-  {
-    "en": "carpenter",
-    "phon": "/ˈkɑːr.pən.tər/",
-    "cn": "木匠"
-  },
-  {
-    "en": "painter",
-    "phon": "/ˈpeɪn.tər/",
-    "cn": "画家"
-  },
-  {
-    "en": "artist",
-    "phon": "/ˈɑːr.tɪst/",
-    "cn": "艺术家"
-  },
-  {
-    "en": "musician",
-    "phon": "/mjuˈzɪʃ.ən/",
-    "cn": "音乐家"
-  },
-  {
-    "en": "singer",
-    "phon": "/ˈsɪŋ.ər/",
-    "cn": "歌手"
-  },
-  {
-    "en": "actor",
-    "phon": "/ˈæk.tər/",
-    "cn": "演员"
-  },
-  {
-    "en": "actress",
-    "phon": "/ˈæk.trəs/",
-    "cn": "女演员"
-  },
-  {
-    "en": "director",
-    "phon": "/dəˈrek.tər/",
-    "cn": "导演"
-  },
-  {
     "en": "writer",
     "phon": "/ˈraɪ.tər/",
     "cn": "作家"
   },
   {
-    "en": "journalist",
-    "phon": "/ˈdʒɜːr.nəl.ɪst/",
-    "cn": "记者"
-  },
-  {
-    "en": "photographer",
-    "phon": "/fəˈtɒɡ.rə.fər/",
-    "cn": "摄影师"
-  },
-  {
-    "en": "scientist",
-    "phon": "/ˈsaɪ.ən.tɪst/",
-    "cn": "科学家"
-  },
-  {
-    "en": "inventor",
-    "phon": "/ɪnˈven.tər/",
-    "cn": "发明家"
-  },
-  {
-    "en": "researcher",
-    "phon": "/rɪˈsɜːr.tʃər/",
-    "cn": "研究员"
-  },
-  {
-    "en": "unbeller",
-    "phon": "/unbeller/",
-    "cn": "unbeller"
-  },
-  {
-    "en": "dentist",
-    "phon": "/ˈden.tɪst/",
-    "cn": "牙医"
-  },
-  {
-    "en": "vet",
-    "phon": "/vet/",
-    "cn": "兽医"
-  },
-  {
-    "en": "pharmacist",
-    "phon": "/ˈfɑːr.mə.sɪst/",
-    "cn": "药剂师"
-  },
-  {
-    "en": "accountant",
-    "phon": "/əˈkaʊn.tənt/",
-    "cn": "会计"
-  },
-  {
-    "en": "banker",
-    "phon": "/ˈbæŋ.kər/",
-    "cn": "银行家"
-  },
-  {
-    "en": "businessman",
-    "phon": "/ˈbɪz.nɪs.mæn/",
-    "cn": "商人"
+    "en": "receptionist",
+    "phon": "/rɪˈsep.ʃən.ɪst/",
+    "cn": "前台"
   },
   {
     "en": "manager",
@@ -190,14 +20,19 @@
     "cn": "秘书"
   },
   {
-    "en": "receptionist",
-    "phon": "/rɪˈsep.ʃən.ɪst/",
-    "cn": "前台"
+    "en": "programmer",
+    "phon": "/ˈprəʊ.ɡræm.ər/",
+    "cn": "程序员"
   },
   {
-    "en": "mechanic",
-    "phon": "/məˈkæn.ɪk/",
-    "cn": "机械师"
+    "en": "photographer",
+    "phon": "/fəˈtɒɡ.rə.fər/",
+    "cn": "摄影师"
+  },
+  {
+    "en": "businessman",
+    "phon": "/ˈbɪz.nɪs.mæn/",
+    "cn": "商人"
   },
   {
     "en": "technician",
@@ -205,29 +40,19 @@
     "cn": "技术员"
   },
   {
-    "en": "architect",
-    "phon": "/ˈɑːr.kɪ.tekt/",
-    "cn": "建筑师"
+    "en": "official",
+    "phon": "/əˈfɪʃ.əl/",
+    "cn": "官员"
   },
   {
-    "en": "designer",
-    "phon": "/dɪˈzaɪ.nər/",
-    "cn": "设计师"
+    "en": "artist",
+    "phon": "/ˈɑːr.tɪst/",
+    "cn": "艺术家"
   },
   {
-    "en": "programmer",
-    "phon": "/ˈprəʊ.ɡræm.ər/",
-    "cn": "程序员"
-  },
-  {
-    "en": "analyst",
-    "phon": "/ˈæn.əl.ɪst/",
-    "cn": "分析师"
-  },
-  {
-    "en": "consultant",
-    "phon": "/kənˈsʌl.tənt/",
-    "cn": "顾问"
+    "en": "accountant",
+    "phon": "/əˈkaʊn.tənt/",
+    "cn": "会计"
   },
   {
     "en": "assistant",
@@ -235,9 +60,84 @@
     "cn": "助手"
   },
   {
+    "en": "vet",
+    "phon": "/vet/",
+    "cn": "兽医"
+  },
+  {
+    "en": "plumber",
+    "phon": "/ˈplʌm.ər/",
+    "cn": "水管工"
+  },
+  {
+    "en": "engineer",
+    "phon": "/ˌen.dʒɪˈnɪər/",
+    "cn": "工程师"
+  },
+  {
+    "en": "assign",
+    "phon": "/əˈsaɪn/",
+    "cn": "分配"
+  },
+  {
+    "en": "painter",
+    "phon": "/ˈpeɪn.tər/",
+    "cn": "画家"
+  },
+  {
+    "en": "farmer",
+    "phon": "/ˈfɑːr.mər/",
+    "cn": "农民"
+  },
+  {
+    "en": "actress",
+    "phon": "/ˈæk.trəs/",
+    "cn": "女演员"
+  },
+  {
+    "en": "actor",
+    "phon": "/ˈæk.tər/",
+    "cn": "演员"
+  },
+  {
     "en": "president",
     "phon": "/ˈprez.ɪ.dənt/",
     "cn": "总统"
+  },
+  {
+    "en": "banker",
+    "phon": "/ˈbæŋ.kər/",
+    "cn": "银行家"
+  },
+  {
+    "en": "nurse",
+    "phon": "/nɜːrs/",
+    "cn": "护士"
+  },
+  {
+    "en": "architect",
+    "phon": "/ˈɑːr.kɪ.tekt/",
+    "cn": "建筑师"
+  },
+  {
+    "en": "pilot",
+    "phon": "/ˈpaɪ.lət/",
+    "cn": "飞行员"
+  },
+  {
+    "en": "musician",
+    "phon": "/mjuˈzɪʃ.ən/",
+    "cn": "音乐家"
+  },
+  {
+    "en": "dentist",
+    "phon": "/ˈden.tɪst/",
+    "cn": "牙医"
+  },
+  {
+    "en": "consultant",
+    "phon": "/kənˈsʌl.tənt/",
+    "cn": "顾问"
   },
   {
     "en": "minister",
@@ -245,8 +145,108 @@
     "cn": "部长"
   },
   {
-    "en": "official",
-    "phon": "/əˈfɪʃ.əl/",
-    "cn": "官员"
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
+  },
+  {
+    "en": "capacity",
+    "phon": "/kəˈpæs.ə.ti/",
+    "cn": "容量"
+  },
+  {
+    "en": "director",
+    "phon": "/dəˈrek.tər/",
+    "cn": "导演"
+  },
+  {
+    "en": "police",
+    "phon": "/pəˈliːs/",
+    "cn": "警察"
+  },
+  {
+    "en": "lawyer",
+    "phon": "/ˈlɔɪ.ər/",
+    "cn": "律师"
+  },
+  {
+    "en": "baker",
+    "phon": "/ˈbeɪ.kər/",
+    "cn": "面包师"
+  },
+  {
+    "en": "inventor",
+    "phon": "/ɪnˈven.tər/",
+    "cn": "发明家"
+  },
+  {
+    "en": "driver",
+    "phon": "/ˈdraɪ.vər/",
+    "cn": "司机"
+  },
+  {
+    "en": "researcher",
+    "phon": "/rɪˈsɜːr.tʃər/",
+    "cn": "研究员"
+  },
+  {
+    "en": "journalist",
+    "phon": "/ˈdʒɜːr.nəl.ɪst/",
+    "cn": "记者"
+  },
+  {
+    "en": "mechanic",
+    "phon": "/məˈkæn.ɪk/",
+    "cn": "机械师"
+  },
+  {
+    "en": "singer",
+    "phon": "/ˈsɪŋ.ər/",
+    "cn": "歌手"
+  },
+  {
+    "en": "firefighter",
+    "phon": "/ˈfaɪər.faɪ.tər/",
+    "cn": "消防员"
+  },
+  {
+    "en": "doctor",
+    "phon": "/ˈdɒk.tər/",
+    "cn": "医生"
+  },
+  {
+    "en": "analyst",
+    "phon": "/ˈæn.əl.ɪst/",
+    "cn": "分析师"
+  },
+  {
+    "en": "electrician",
+    "phon": "/ɪˌlekˈtrɪʃ.ən/",
+    "cn": "电工"
+  },
+  {
+    "en": "chef",
+    "phon": "/ʃef/",
+    "cn": "厨师"
+  },
+  {
+    "en": "carpenter",
+    "phon": "/ˈkɑːr.pən.tər/",
+    "cn": "木匠"
+  },
+  {
+    "en": "scientist",
+    "phon": "/ˈsaɪ.ən.tɪst/",
+    "cn": "科学家"
+  },
+  {
+    "en": "pharmacist",
+    "phon": "/ˈfɑːr.mə.sɪst/",
+    "cn": "药剂师"
+  },
+  {
+    "en": "designer",
+    "phon": "/dɪˈzaɪ.nər/",
+    "cn": "设计师"
   }
 ]

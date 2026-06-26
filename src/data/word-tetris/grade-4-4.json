@@ -1,33 +1,28 @@
 [
   {
-    "en": "hobby",
-    "phon": "/ˈhɒb.i/",
-    "cn": "爱好"
+    "en": "meditation",
+    "phon": "/ˌmed.ɪˈteɪ.ʃən/",
+    "cn": "冥想"
   },
   {
-    "en": "unactive",
-    "phon": "/unactive/",
-    "cn": "unactive"
+    "en": "available",
+    "phon": "/əˈveɪ.lə.bəl/",
+    "cn": "可用的"
   },
   {
-    "en": "football",
-    "phon": "/ˈfʊt.bɔːl/",
-    "cn": "足球"
+    "en": "gardening",
+    "phon": "/ˈɡɑːr.dən.ɪŋ/",
+    "cn": "园艺"
   },
   {
-    "en": "basketball",
-    "phon": "/ˈbɑː.skɪt.bɔːl/",
-    "cn": "篮球"
+    "en": "drawing",
+    "phon": "/ˈdrɔː.ɪŋ/",
+    "cn": "画画"
   },
   {
-    "en": "volleyball",
-    "phon": "/ˈvɒl.i.bɔːl/",
-    "cn": "排球"
-  },
-  {
-    "en": "baseball",
-    "phon": "/ˈbeɪs.bɔːl/",
-    "cn": "棒球"
+    "en": "karate",
+    "phon": "/kəˈrɑː.ti/",
+    "cn": "空手道"
   },
   {
     "en": "tennis",
@@ -35,49 +30,9 @@
     "cn": "网球"
   },
   {
-    "en": "badminton",
-    "phon": "/ˈbæd.mɪn.tən/",
-    "cn": "羽毛球"
-  },
-  {
-    "en": "swimming",
-    "phon": "/ˈswɪm.ɪŋ/",
-    "cn": "游泳"
-  },
-  {
-    "en": "running",
-    "phon": "/ˈrʌn.ɪŋ/",
-    "cn": "跑步"
-  },
-  {
-    "en": "jumping",
-    "phon": "/ˈdʒʌmp.ɪŋ/",
-    "cn": "跳"
-  },
-  {
-    "en": "skating",
-    "phon": "/ˈskeɪ.tɪŋ/",
-    "cn": "滑冰"
-  },
-  {
-    "en": "skiing",
-    "phon": "/ˈskiː.ɪŋ/",
-    "cn": "滑雪"
-  },
-  {
-    "en": "cycling",
-    "phon": "/ˈsaɪ.klɪŋ/",
-    "cn": "骑自行车"
-  },
-  {
-    "en": "hiking",
-    "phon": "/ˈhaɪ.kɪŋ/",
-    "cn": "远足"
-  },
-  {
-    "en": "camping",
-    "phon": "/ˈkæmp.ɪŋ/",
-    "cn": "露营"
+    "en": "ice hockey",
+    "phon": "/aɪs ˈhɒk.i/",
+    "cn": "冰球"
   },
   {
     "en": "fishing",
@@ -85,9 +40,89 @@
     "cn": "钓鱼"
   },
   {
+    "en": "video games",
+    "phon": "/ˈvɪd.i.əʊ ɡeɪmz/",
+    "cn": "电子游戏"
+  },
+  {
+    "en": "swimming",
+    "phon": "/ˈswɪm.ɪŋ/",
+    "cn": "游泳"
+  },
+  {
+    "en": "cricket",
+    "phon": "/ˈkrɪk.ɪt/",
+    "cn": "板球"
+  },
+  {
+    "en": "kung fu",
+    "phon": "/kʌŋ fuː/",
+    "cn": "功夫"
+  },
+  {
+    "en": "bowling",
+    "phon": "/ˈbəʊ.lɪŋ/",
+    "cn": "保龄球"
+  },
+  {
+    "en": "cycling",
+    "phon": "/ˈsaɪ.klɪŋ/",
+    "cn": "骑自行车"
+  },
+  {
+    "en": "board games",
+    "phon": "/bɔːrd ɡeɪmz/",
+    "cn": "棋盘游戏"
+  },
+  {
+    "en": "skating",
+    "phon": "/ˈskeɪ.tɪŋ/",
+    "cn": "滑冰"
+  },
+  {
     "en": "hunting",
     "phon": "/ˈhʌn.tɪŋ/",
     "cn": "打猎"
+  },
+  {
+    "en": "camping",
+    "phon": "/ˈkæmp.ɪŋ/",
+    "cn": "露营"
+  },
+  {
+    "en": "football",
+    "phon": "/ˈfʊt.bɔːl/",
+    "cn": "足球"
+  },
+  {
+    "en": "hiking",
+    "phon": "/ˈhaɪ.kɪŋ/",
+    "cn": "远足"
+  },
+  {
+    "en": "writing",
+    "phon": "/ˈraɪ.tɪŋ/",
+    "cn": "写作"
+  },
+  {
+    "en": "rugby",
+    "phon": "/ˈrʌɡ.bi/",
+    "cn": "橄榄球"
+  },
+  {
+    "en": "yoga",
+    "phon": "/ˈjəʊ.ɡə/",
+    "cn": "瑜伽"
+  },
+  {
+    "en": "singing",
+    "phon": "/ˈsɪŋ.ɪŋ/",
+    "cn": "唱歌"
+  },
+  {
+    "en": "sewing",
+    "phon": "/ˈsəʊ.ɪŋ/",
+    "cn": "缝纫"
   },
   {
     "en": "riding",
@@ -95,14 +130,104 @@
     "cn": "骑马"
   },
   {
+    "en": "golf",
+    "phon": "/ɡɒlf/",
+    "cn": "高尔夫"
+  },
+  {
+    "en": "cooking",
+    "phon": "/ˈkʊk.ɪŋ/",
+    "cn": "烹饪"
+  },
+  {
+    "en": "chess",
+    "phon": "/tʃes/",
+    "cn": "国际象棋"
+  },
+  {
+    "en": "baking",
+    "phon": "/ˈbeɪ.kɪŋ/",
+    "cn": "烘焙"
+  },
+  {
+    "en": "knitting",
+    "phon": "/ˈnɪt.ɪŋ/",
+    "cn": "编织"
+  },
+  {
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "接近"
+  },
+  {
+    "en": "table tennis",
+    "phon": "/ˈteɪ.bəl ˈten.ɪs/",
+    "cn": "乒乓球"
+  },
+  {
+    "en": "baseball",
+    "phon": "/ˈbeɪs.bɔːl/",
+    "cn": "棒球"
+  },
+  {
+    "en": "jumping",
+    "phon": "/ˈdʒʌmp.ɪŋ/",
+    "cn": "跳"
+  },
+  {
+    "en": "basketball",
+    "phon": "/ˈbɑː.skɪt.bɔːl/",
+    "cn": "篮球"
+  },
+  {
+    "en": "photography",
+    "phon": "/fəˈtɒɡ.rə.fi/",
+    "cn": "摄影"
+  },
+  {
+    "en": "reading",
+    "phon": "/ˈriː.dɪŋ/",
+    "cn": "阅读"
+  },
+  {
+    "en": "skiing",
+    "phon": "/ˈskiː.ɪŋ/",
+    "cn": "滑雪"
+  },
+  {
+    "en": "absent",
+    "phon": "/ˈæb.sənt/",
+    "cn": "缺席"
+  },
+  {
+    "en": "collecting",
+    "phon": "/kəˈlek.tɪŋ/",
+    "cn": "收集"
+  },
+  {
+    "en": "badminton",
+    "phon": "/ˈbæd.mɪn.tən/",
+    "cn": "羽毛球"
+  },
+  {
+    "en": "puzzles",
+    "phon": "/ˈpʌz.əlz/",
+    "cn": "拼图"
+  },
+  {
+    "en": "hobby",
+    "phon": "/ˈhɒb.i/",
+    "cn": "爱好"
+  },
+  {
     "en": "dancing",
     "phon": "/ˈdɑːn.sɪŋ/",
     "cn": "跳舞"
   },
   {
-    "en": "singing",
-    "phon": "/ˈsɪŋ.ɪŋ/",
-    "cn": "唱歌"
+    "en": "running",
+    "phon": "/ˈrʌn.ɪŋ/",
+    "cn": "跑步"
   },
   {
     "en": "acting",
@@ -115,138 +240,13 @@
     "cn": "绘画"
   },
   {
-    "en": "drawing",
-    "phon": "/ˈdrɔː.ɪŋ/",
-    "cn": "画画"
-  },
-  {
-    "en": "photography",
-    "phon": "/fəˈtɒɡ.rə.fi/",
-    "cn": "摄影"
-  },
-  {
-    "en": "cooking",
-    "phon": "/ˈkʊk.ɪŋ/",
-    "cn": "烹饪"
-  },
-  {
-    "en": "baking",
-    "phon": "/ˈbeɪ.kɪŋ/",
-    "cn": "烘焙"
-  },
-  {
-    "en": "gardening",
-    "phon": "/ˈɡɑːr.dən.ɪŋ/",
-    "cn": "园艺"
-  },
-  {
-    "en": "knitting",
-    "phon": "/ˈnɪt.ɪŋ/",
-    "cn": "编织"
-  },
-  {
-    "en": "sewing",
-    "phon": "/ˈsəʊ.ɪŋ/",
-    "cn": "缝纫"
-  },
-  {
-    "en": "collecting",
-    "phon": "/kəˈlek.tɪŋ/",
-    "cn": "收集"
-  },
-  {
-    "en": "reading",
-    "phon": "/ˈriː.dɪŋ/",
-    "cn": "阅读"
-  },
-  {
-    "en": "writing",
-    "phon": "/ˈraɪ.tɪŋ/",
-    "cn": "写作"
-  },
-  {
-    "en": "puzzles",
-    "phon": "/ˈpʌz.əlz/",
-    "cn": "拼图"
-  },
-  {
-    "en": "chess",
-    "phon": "/tʃes/",
-    "cn": "国际象棋"
+    "en": "volleyball",
+    "phon": "/ˈvɒl.i.bɔːl/",
+    "cn": "排球"
   },
   {
     "en": "cards",
     "phon": "/kɑːrdz/",
     "cn": "扑克牌"
-  },
-  {
-    "en": "video games",
-    "phon": "/ˈvɪd.i.əʊ ɡeɪmz/",
-    "cn": "电子游戏"
-  },
-  {
-    "en": "board games",
-    "phon": "/bɔːrd ɡeɪmz/",
-    "cn": "棋盘游戏"
-  },
-  {
-    "en": "bowling",
-    "phon": "/ˈbəʊ.lɪŋ/",
-    "cn": "保龄球"
-  },
-  {
-    "en": "golf",
-    "phon": "/ɡɒlf/",
-    "cn": "高尔夫"
-  },
-  {
-    "en": "rugby",
-    "phon": "/ˈrʌɡ.bi/",
-    "cn": "橄榄球"
-  },
-  {
-    "en": "cricket",
-    "phon": "/ˈkrɪk.ɪt/",
-    "cn": "板球"
-  },
-  {
-    "en": "ice hockey",
-    "phon": "/aɪs ˈhɒk.i/",
-    "cn": "冰球"
-  },
-  {
-    "en": "table tennis",
-    "phon": "/ˈteɪ.bəl ˈten.ɪs/",
-    "cn": "乒乓球"
-  },
-  {
-    "en": "karate",
-    "phon": "/kəˈrɑː.ti/",
-    "cn": "空手道"
-  },
-  {
-    "en": "kung fu",
-    "phon": "/kʌŋ fuː/",
-    "cn": "功夫"
-  },
-  {
-    "en": "yoga",
-    "phon": "/ˈjəʊ.ɡə/",
-    "cn": "瑜伽"
-  },
-  {
-    "en": "meditation",
-    "phon": "/ˌmed.ɪˈteɪ.ʃən/",
-    "cn": "冥想"
-  },
-  {
-    "en": "unactful",
-    "phon": "/unactful/",
-    "cn": "unactful"
-  },
-  {
-    "en": "unactless",
-    "phon": "/unactless/",
-    "cn": "unactless"
   }
 ]

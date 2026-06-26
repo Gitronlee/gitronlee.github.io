@@ -1,93 +1,8 @@
 [
   {
-    "en": "ubiquitous",
-    "phon": "/juːˈbɪk.wɪ.təs/",
-    "cn": "无处不在的"
-  },
-  {
-    "en": "uncordtion",
-    "phon": "/uncordtion/",
-    "cn": "uncordtion"
-  },
-  {
-    "en": "ambiguity",
-    "phon": "/ˌæm.bɪˈɡjuː.ə.ti/",
-    "cn": "模糊性"
-  },
-  {
-    "en": "juxtaposition",
-    "phon": "/ˌdʒʌk.stə.pəˈzɪʃ.ən/",
-    "cn": "并列"
-  },
-  {
-    "en": "nuance",
-    "phon": "/ˈnjuː.ɑːns/",
-    "cn": "细微差别"
-  },
-  {
-    "en": "ephemeral",
-    "phon": "/ɪˈfem.ər.əl/",
-    "cn": "短暂的"
-  },
-  {
-    "en": "perpetual",
-    "phon": "/pərˈpetʃ.u.əl/",
-    "cn": "永久的"
-  },
-  {
-    "en": "innate",
-    "phon": "/ɪˈneɪt/",
-    "cn": "天生的"
-  },
-  {
-    "en": "acquiesce",
-    "phon": "/ˌæk.wiˈes/",
-    "cn": "默许"
-  },
-  {
-    "en": "rescind",
-    "phon": "/rɪˈsɪnd/",
-    "cn": "撤销"
-  },
-  {
-    "en": "proclivity",
-    "phon": "/prəˈklɪv.ə.ti/",
-    "cn": "倾向"
-  },
-  {
-    "en": "duplicity",
-    "phon": "/djuːˈplɪs.ə.ti/",
-    "cn": "口是心非"
-  },
-  {
-    "en": "magnanimous",
-    "phon": "/mæɡˈnæn.ɪ.məs/",
-    "cn": "宽宏大量的"
-  },
-  {
-    "en": "gregarious",
-    "phon": "/ɡrɪˈɡeər.i.əs/",
-    "cn": "爱社交的"
-  },
-  {
-    "en": "idiosyncratic",
-    "phon": "/ˌɪd.i.əʊ.sɪŋˈkræt.ɪk/",
-    "cn": "独特的"
-  },
-  {
-    "en": "perfunctory",
-    "phon": "/pərˈfʌŋk.tər.i/",
-    "cn": "敷衍的"
-  },
-  {
     "en": "capricious",
     "phon": "/kəˈprɪʃ.əs/",
     "cn": "反复无常的"
-  },
-  {
-    "en": "recalcitrant",
-    "phon": "/rɪˈkæl.sɪ.trənt/",
-    "cn": "顽抗的"
   },
   {
     "en": "obsequious",
@@ -95,99 +10,14 @@
     "cn": "谄媚的"
   },
   {
-    "en": "sycophant",
-    "phon": "/ˈsɪk.ə.fænt/",
-    "cn": "马屁精"
-  },
-  {
-    "en": "quixotic",
-    "phon": "/kwɪkˈsɒt.ɪk/",
-    "cn": "不切实际的"
-  },
-  {
-    "en": "pernicious",
-    "phon": "/pərˈnɪʃ.əs/",
-    "cn": "有害的"
-  },
-  {
-    "en": "insidious",
-    "phon": "/ɪnˈsɪd.i.əs/",
-    "cn": "阴险的"
-  },
-  {
-    "en": "surreptitious",
-    "phon": "/ˌsʌr.əpˈtɪʃ.əs/",
-    "cn": "偷偷的"
-  },
-  {
-    "en": "clandestine",
-    "phon": "/klænˈdes.tɪn/",
-    "cn": "秘密的"
-  },
-  {
-    "en": "auspicious",
-    "phon": "/ɔːˈspɪʃ.əs/",
-    "cn": "吉利的"
-  },
-  {
-    "en": "inauspicious",
-    "phon": "/ˌɪn.ɔːˈspɪʃ.əs/",
-    "cn": "不吉利的"
-  },
-  {
-    "en": "propitious",
-    "phon": "/prəˈpɪʃ.əs/",
-    "cn": "有利的"
-  },
-  {
-    "en": "fortuitous",
-    "phon": "/fɔːrˈtjuː.ɪ.təs/",
-    "cn": "偶然的"
-  },
-  {
-    "en": "serendipity",
-    "phon": "/ˌser.ənˈdɪp.ə.ti/",
-    "cn": "意外发现"
-  },
-  {
-    "en": "conundrum",
-    "phon": "/kəˈnʌn.drəm/",
-    "cn": "难题"
-  },
-  {
-    "en": "enigma",
-    "phon": "/ɪˈnɪɡ.mə/",
-    "cn": "谜"
-  },
-  {
-    "en": "uncordsion",
-    "phon": "/uncordsion/",
-    "cn": "uncordsion"
-  },
-  {
     "en": "oxymoron",
     "phon": "/ˌɒk.sɪˈmɔː.rɒn/",
     "cn": "矛盾修辞"
   },
   {
-    "en": "tangent",
-    "phon": "/ˈtæn.dʒənt/",
-    "cn": "切线"
-  },
-  {
-    "en": "esoteric",
-    "phon": "/ˌes.əˈter.ɪk/",
-    "cn": "深奥的"
-  },
-  {
-    "en": "arcane",
-    "phon": "/ɑːrˈkeɪn/",
-    "cn": "神秘的"
-  },
-  {
-    "en": "abstruse",
-    "phon": "/əbˈstruːs/",
-    "cn": "深奥难懂的"
+    "en": "perpetual",
+    "phon": "/pərˈpetʃ.u.əl/",
+    "cn": "永久的"
   },
   {
     "en": "recondite",
@@ -195,34 +25,69 @@
     "cn": "深奥的"
   },
   {
-    "en": "profound",
-    "phon": "/prəˈfaʊnd/",
-    "cn": "深刻的"
+    "en": "compensate",
+    "phon": "/ˈkɒm.pen.seɪt/",
+    "cn": "补偿"
   },
   {
-    "en": "exoteric",
-    "phon": "/ˌek.səʊˈter.ɪk/",
-    "cn": "通俗的"
+    "en": "magnanimous",
+    "phon": "/mæɡˈnæn.ɪ.məs/",
+    "cn": "宽宏大量的"
   },
   {
-    "en": "superfluous",
-    "phon": "/suːˈpɜːr.flu.əs/",
-    "cn": "多余的"
+    "en": "acquiesce",
+    "phon": "/ˌæk.wiˈes/",
+    "cn": "默许"
   },
   {
-    "en": "extraneous",
-    "phon": "/ɪkˈstreɪ.ni.əs/",
-    "cn": "无关的"
+    "en": "surreptitious",
+    "phon": "/ˌsʌr.əpˈtɪʃ.əs/",
+    "cn": "偷偷的"
   },
   {
-    "en": "incidental",
-    "phon": "/ˌɪn.sɪˈden.təl/",
-    "cn": "附带的"
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
   },
   {
-    "en": "tangential",
-    "phon": "/tænˈdʒen.ʃəl/",
-    "cn": "离题的"
+    "en": "gregarious",
+    "phon": "/ɡrɪˈɡeər.i.əs/",
+    "cn": "爱社交的"
+  },
+  {
+    "en": "juxtaposition",
+    "phon": "/ˌdʒʌk.stə.pəˈzɪʃ.ən/",
+    "cn": "并列"
+  },
+  {
+    "en": "pernicious",
+    "phon": "/pərˈnɪʃ.əs/",
+    "cn": "有害的"
+  },
+  {
+    "en": "nuance",
+    "phon": "/ˈnjuː.ɑːns/",
+    "cn": "细微差别"
+  },
+  {
+    "en": "duplicity",
+    "phon": "/djuːˈplɪs.ə.ti/",
+    "cn": "口是心非"
+  },
+  {
+    "en": "aggressive",
+    "phon": "/əˈɡres.ɪv/",
+    "cn": "好斗的"
+  },
+  {
+    "en": "insidious",
+    "phon": "/ɪnˈsɪd.i.əs/",
+    "cn": "阴险的"
+  },
+  {
+    "en": "tangent",
+    "phon": "/ˈtæn.dʒənt/",
+    "cn": "切线"
   },
   {
     "en": "peripheral",
@@ -230,14 +95,44 @@
     "cn": "外围的"
   },
   {
-    "en": "marginal",
-    "phon": "/ˈmɑːr.dʒɪ.nəl/",
-    "cn": "边缘的"
+    "en": "auspicious",
+    "phon": "/ɔːˈspɪʃ.əs/",
+    "cn": "吉利的"
   },
   {
-    "en": "negligible",
-    "phon": "/ˈneɡ.lɪ.dʒə.bəl/",
-    "cn": "可忽略的"
+    "en": "idiosyncratic",
+    "phon": "/ˌɪd.i.əʊ.sɪŋˈkræt.ɪk/",
+    "cn": "独特的"
+  },
+  {
+    "en": "conundrum",
+    "phon": "/kəˈnʌn.drəm/",
+    "cn": "难题"
+  },
+  {
+    "en": "arcane",
+    "phon": "/ɑːrˈkeɪn/",
+    "cn": "神秘的"
+  },
+  {
+    "en": "recalcitrant",
+    "phon": "/rɪˈkæl.sɪ.trənt/",
+    "cn": "顽抗的"
+  },
+  {
+    "en": "exoteric",
+    "phon": "/ˌek.səʊˈter.ɪk/",
+    "cn": "通俗的"
+  },
+  {
+    "en": "clandestine",
+    "phon": "/klænˈdes.tɪn/",
+    "cn": "秘密的"
+  },
+  {
+    "en": "innate",
+    "phon": "/ɪˈneɪt/",
+    "cn": "天生的"
   },
   {
     "en": "trivial",
@@ -245,8 +140,113 @@
     "cn": "琐碎的"
   },
   {
-    "en": "uncordment",
-    "phon": "/uncordment/",
-    "cn": "uncordment"
+    "en": "tangential",
+    "phon": "/tænˈdʒen.ʃəl/",
+    "cn": "离题的"
+  },
+  {
+    "en": "serendipity",
+    "phon": "/ˌser.ənˈdɪp.ə.ti/",
+    "cn": "意外发现"
+  },
+  {
+    "en": "abstruse",
+    "phon": "/əbˈstruːs/",
+    "cn": "深奥难懂的"
+  },
+  {
+    "en": "ephemeral",
+    "phon": "/ɪˈfem.ər.əl/",
+    "cn": "短暂的"
+  },
+  {
+    "en": "quixotic",
+    "phon": "/kwɪkˈsɒt.ɪk/",
+    "cn": "不切实际的"
+  },
+  {
+    "en": "inauspicious",
+    "phon": "/ˌɪn.ɔːˈspɪʃ.əs/",
+    "cn": "不吉利的"
+  },
+  {
+    "en": "rescind",
+    "phon": "/rɪˈsɪnd/",
+    "cn": "撤销"
+  },
+  {
+    "en": "esoteric",
+    "phon": "/ˌes.əˈter.ɪk/",
+    "cn": "深奥的"
+  },
+  {
+    "en": "negligible",
+    "phon": "/ˈneɡ.lɪ.dʒə.bəl/",
+    "cn": "可忽略的"
+  },
+  {
+    "en": "marginal",
+    "phon": "/ˈmɑːr.dʒɪ.nəl/",
+    "cn": "边缘的"
+  },
+  {
+    "en": "incidental",
+    "phon": "/ˌɪn.sɪˈden.təl/",
+    "cn": "附带的"
+  },
+  {
+    "en": "superfluous",
+    "phon": "/suːˈpɜːr.flu.əs/",
+    "cn": "多余的"
+  },
+  {
+    "en": "profound",
+    "phon": "/prəˈfaʊnd/",
+    "cn": "深刻的"
+  },
+  {
+    "en": "proclivity",
+    "phon": "/prəˈklɪv.ə.ti/",
+    "cn": "倾向"
+  },
+  {
+    "en": "sycophant",
+    "phon": "/ˈsɪk.ə.fænt/",
+    "cn": "马屁精"
+  },
+  {
+    "en": "ubiquitous",
+    "phon": "/juːˈbɪk.wɪ.təs/",
+    "cn": "无处不在的"
+  },
+  {
+    "en": "extraneous",
+    "phon": "/ɪkˈstreɪ.ni.əs/",
+    "cn": "无关的"
+  },
+  {
+    "en": "propitious",
+    "phon": "/prəˈpɪʃ.əs/",
+    "cn": "有利的"
+  },
+  {
+    "en": "ambiguity",
+    "phon": "/ˌæm.bɪˈɡjuː.ə.ti/",
+    "cn": "模糊性"
+  },
+  {
+    "en": "enigma",
+    "phon": "/ɪˈnɪɡ.mə/",
+    "cn": "谜"
+  },
+  {
+    "en": "fortuitous",
+    "phon": "/fɔːrˈtjuː.ɪ.təs/",
+    "cn": "偶然的"
+  },
+  {
+    "en": "perfunctory",
+    "phon": "/pərˈfʌŋk.tər.i/",
+    "cn": "敷衍的"
   }
 ]

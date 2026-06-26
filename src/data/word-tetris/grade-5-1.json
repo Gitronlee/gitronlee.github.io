@@ -1,113 +1,18 @@
 [
   {
-    "en": "unartary",
-    "phon": "/unartary/",
-    "cn": "unartary"
+    "en": "accurate",
+    "phon": "/ˈæk.jə.rət/",
+    "cn": "准确的"
   },
   {
-    "en": "unartory",
-    "phon": "/unartory/",
-    "cn": "unartory"
+    "en": "beneficial",
+    "phon": "/ˌben.ɪˈfɪʃ.əl/",
+    "cn": "有益的"
   },
   {
-    "en": "unartdom",
-    "phon": "/unartdom/",
-    "cn": "unartdom"
-  },
-  {
-    "en": "physics",
-    "phon": "/ˈfɪz.ɪks/",
-    "cn": "物理"
-  },
-  {
-    "en": "chemistry",
-    "phon": "/ˈkem.ɪ.stri/",
-    "cn": "化学"
-  },
-  {
-    "en": "biology",
-    "phon": "/baɪˈɒl.ə.dʒi/",
-    "cn": "生物"
-  },
-  {
-    "en": "unartship",
-    "phon": "/unartship/",
-    "cn": "unartship"
-  },
-  {
-    "en": "unartward",
-    "phon": "/unartward/",
-    "cn": "unartward"
-  },
-  {
-    "en": "politics",
-    "phon": "/ˈpɒl.ə.tɪks/",
-    "cn": "政治"
-  },
-  {
-    "en": "unartwise",
-    "phon": "/unartwise/",
-    "cn": "unartwise"
-  },
-  {
-    "en": "unartling",
-    "phon": "/unartling/",
-    "cn": "unartling"
-  },
-  {
-    "en": "unartlet",
-    "phon": "/unartlet/",
-    "cn": "unartlet"
-  },
-  {
-    "en": "unartette",
-    "phon": "/unartette/",
-    "cn": "unartette"
-  },
-  {
-    "en": "unbelltion",
-    "phon": "/unbelltion/",
-    "cn": "unbelltion"
-  },
-  {
-    "en": "unbellsion",
-    "phon": "/unbellsion/",
-    "cn": "unbellsion"
-  },
-  {
-    "en": "course",
-    "phon": "/kɔːrs/",
-    "cn": "课程"
-  },
-  {
-    "en": "semester",
-    "phon": "/sɪˈmes.tər/",
-    "cn": "学期"
-  },
-  {
-    "en": "term",
-    "phon": "/tɜːrm/",
-    "cn": "学期"
-  },
-  {
-    "en": "textbook",
-    "phon": "/ˈtekst.bʊk/",
-    "cn": "教科书"
-  },
-  {
-    "en": "dictionary",
-    "phon": "/ˈdɪk.ʃən.ər.i/",
-    "cn": "字典"
-  },
-  {
-    "en": "encyclopedia",
-    "phon": "/ɪnˌsaɪ.kləˈpiː.di.ə/",
-    "cn": "百科全书"
-  },
-  {
-    "en": "unbellment",
-    "phon": "/unbellment/",
-    "cn": "unbellment"
+    "en": "accomplish",
+    "phon": "/əˈkʌm.plɪʃ/",
+    "cn": "完成"
   },
   {
     "en": "laboratory",
@@ -115,79 +20,14 @@
     "cn": "实验室"
   },
   {
-    "en": "experiment",
-    "phon": "/ɪkˈsper.ɪ.mənt/",
-    "cn": "实验"
+    "en": "semester",
+    "phon": "/sɪˈmes.tər/",
+    "cn": "学期"
   },
   {
-    "en": "project",
-    "phon": "/ˈprɒdʒ.ekt/",
-    "cn": "项目"
-  },
-  {
-    "en": "unbellness",
-    "phon": "/unbellness/",
-    "cn": "unbellness"
-  },
-  {
-    "en": "assignment",
-    "phon": "/əˈsaɪn.mənt/",
-    "cn": "作业"
-  },
-  {
-    "en": "essay",
-    "phon": "/ˈes.eɪ/",
-    "cn": "论文"
-  },
-  {
-    "en": "report",
-    "phon": "/rɪˈpɔːrt/",
-    "cn": "报告"
-  },
-  {
-    "en": "presentation",
-    "phon": "/ˌprez.ənˈteɪ.ʃən/",
-    "cn": "演讲"
-  },
-  {
-    "en": "discussion",
-    "phon": "/dɪˈskʌʃ.ən/",
-    "cn": "讨论"
-  },
-  {
-    "en": "unbellity",
-    "phon": "/unbellity/",
-    "cn": "unbellity"
-  },
-  {
-    "en": "seminar",
-    "phon": "/ˈsem.ɪ.nɑːr/",
-    "cn": "研讨会"
-  },
-  {
-    "en": "unbellence",
-    "phon": "/unbellence/",
-    "cn": "unbellence"
-  },
-  {
-    "en": "unbellance",
-    "phon": "/unbellance/",
-    "cn": "unbellance"
-  },
-  {
-    "en": "quiz",
-    "phon": "/kwɪz/",
-    "cn": "小测验"
-  },
-  {
-    "en": "unbellous",
-    "phon": "/unbellous/",
-    "cn": "unbellous"
-  },
-  {
-    "en": "unbellive",
-    "phon": "/unbellive/",
-    "cn": "unbellive"
+    "en": "anticipate",
+    "phon": "/ænˈtɪs.ɪ.peɪt/",
+    "cn": "预期"
   },
   {
     "en": "pass",
@@ -195,29 +35,9 @@
     "cn": "通过"
   },
   {
-    "en": "fail",
-    "phon": "/feɪl/",
-    "cn": "不及格"
-  },
-  {
-    "en": "unbellful",
-    "phon": "/unbellful/",
-    "cn": "unbellful"
-  },
-  {
-    "en": "unbellless",
-    "phon": "/unbellless/",
-    "cn": "unbellless"
-  },
-  {
-    "en": "unbellable",
-    "phon": "/unbellable/",
-    "cn": "unbellable"
-  },
-  {
-    "en": "unbellible",
-    "phon": "/unbellible/",
-    "cn": "unbellible"
+    "en": "course",
+    "phon": "/kɔːrs/",
+    "cn": "课程"
   },
   {
     "en": "education",
@@ -225,14 +45,79 @@
     "cn": "教育"
   },
   {
-    "en": "graduate",
-    "phon": "/ˈɡrædʒ.u.eɪt/",
-    "cn": "毕业"
+    "en": "physics",
+    "phon": "/ˈfɪz.ɪks/",
+    "cn": "物理"
   },
   {
-    "en": "diploma",
-    "phon": "/dɪˈpləʊ.mə/",
-    "cn": "文凭"
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "accessible",
+    "phon": "/əkˈses.ə.bəl/",
+    "cn": "可接近的"
+  },
+  {
+    "en": "artificial",
+    "phon": "/ˌɑːr.tɪˈfɪʃ.əl/",
+    "cn": "人工的"
+  },
+  {
+    "en": "assess",
+    "phon": "/əˈses/",
+    "cn": "评估"
+  },
+  {
+    "en": "dictionary",
+    "phon": "/ˈdɪk.ʃən.ər.i/",
+    "cn": "字典"
+  },
+  {
+    "en": "quiz",
+    "phon": "/kwɪz/",
+    "cn": "小测验"
+  },
+  {
+    "en": "fail",
+    "phon": "/feɪl/",
+    "cn": "不及格"
+  },
+  {
+    "en": "assume",
+    "phon": "/əˈsuːm/",
+    "cn": "假设"
+  },
+  {
+    "en": "capable",
+    "phon": "/ˈkeɪ.pə.bəl/",
+    "cn": "有能力的"
+  },
+  {
+    "en": "textbook",
+    "phon": "/ˈtekst.bʊk/",
+    "cn": "教科书"
+  },
+  {
+    "en": "academic",
+    "phon": "/ˌæk.əˈdem.ɪk/",
+    "cn": "学术的"
+  },
+  {
+    "en": "professor",
+    "phon": "/prəˈfes.ər/",
+    "cn": "教授"
+  },
+  {
+    "en": "annual",
+    "phon": "/ˈæn.ju.əl/",
+    "cn": "年度的"
+  },
+  {
+    "en": "application",
+    "phon": "/ˌæp.lɪˈkeɪ.ʃən/",
+    "cn": "申请"
   },
   {
     "en": "scholarship",
@@ -240,13 +125,128 @@
     "cn": "奖学金"
   },
   {
-    "en": "unbellal",
-    "phon": "/unbellal/",
-    "cn": "unbellal"
+    "en": "experiment",
+    "phon": "/ɪkˈsper.ɪ.mənt/",
+    "cn": "实验"
   },
   {
-    "en": "professor",
-    "phon": "/prəˈfes.ər/",
-    "cn": "教授"
+    "en": "seminar",
+    "phon": "/ˈsem.ɪ.nɑːr/",
+    "cn": "研讨会"
+  },
+  {
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
+  },
+  {
+    "en": "graduate",
+    "phon": "/ˈɡrædʒ.u.eɪt/",
+    "cn": "毕业"
+  },
+  {
+    "en": "essay",
+    "phon": "/ˈes.eɪ/",
+    "cn": "论文"
+  },
+  {
+    "en": "discussion",
+    "phon": "/dɪˈskʌʃ.ən/",
+    "cn": "讨论"
+  },
+  {
+    "en": "analysis",
+    "phon": "/əˈnæl.ə.sɪs/",
+    "cn": "分析"
+  },
+  {
+    "en": "encyclopedia",
+    "phon": "/ɪnˌsaɪ.kləˈpiː.di.ə/",
+    "cn": "百科全书"
+  },
+  {
+    "en": "assignment",
+    "phon": "/əˈsaɪn.mənt/",
+    "cn": "作业"
+  },
+  {
+    "en": "authority",
+    "phon": "/əˈθɔːr.ə.ti/",
+    "cn": "权威"
+  },
+  {
+    "en": "politics",
+    "phon": "/ˈpɒl.ə.tɪks/",
+    "cn": "政治"
+  },
+  {
+    "en": "term",
+    "phon": "/tɜːrm/",
+    "cn": "学期"
+  },
+  {
+    "en": "project",
+    "phon": "/ˈprɒdʒ.ekt/",
+    "cn": "项目"
+  },
+  {
+    "en": "acquire",
+    "phon": "/əˈkwaɪr/",
+    "cn": "获得"
+  },
+  {
+    "en": "accumulate",
+    "phon": "/əˈkjuː.mjə.leɪt/",
+    "cn": "积累"
+  },
+  {
+    "en": "biology",
+    "phon": "/baɪˈɒl.ə.dʒi/",
+    "cn": "生物"
+  },
+  {
+    "en": "budget",
+    "phon": "/ˈbʌdʒ.ɪt/",
+    "cn": "预算"
+  },
+  {
+    "en": "adjust",
+    "phon": "/əˈdʒʌst/",
+    "cn": "调整"
+  },
+  {
+    "en": "chemistry",
+    "phon": "/ˈkem.ɪ.stri/",
+    "cn": "化学"
+  },
+  {
+    "en": "alternative",
+    "phon": "/ɔːlˈtɜːr.nə.tɪv/",
+    "cn": "替代的"
+  },
+  {
+    "en": "apparent",
+    "phon": "/əˈpær.ənt/",
+    "cn": "明显的"
+  },
+  {
+    "en": "approve",
+    "phon": "/əˈpruːv/",
+    "cn": "批准"
+  },
+  {
+    "en": "presentation",
+    "phon": "/ˌprez.ənˈteɪ.ʃən/",
+    "cn": "演讲"
+  },
+  {
+    "en": "diploma",
+    "phon": "/dɪˈpləʊ.mə/",
+    "cn": "文凭"
+  },
+  {
+    "en": "report",
+    "phon": "/rɪˈpɔːrt/",
+    "cn": "报告"
   }
 ]

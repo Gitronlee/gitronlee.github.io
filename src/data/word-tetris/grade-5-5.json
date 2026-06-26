@@ -1,118 +1,18 @@
 [
   {
-    "en": "uncardment",
-    "phon": "/uncardment/",
-    "cn": "uncardment"
+    "en": "exhibition",
+    "phon": "/ˌek.sɪˈbɪʃ.ən/",
+    "cn": "展览"
   },
   {
-    "en": "uncardness",
-    "phon": "/uncardness/",
-    "cn": "uncardness"
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "方法"
   },
   {
-    "en": "sculpture",
-    "phon": "/ˈskʌlp.tʃər/",
-    "cn": "雕塑"
-  },
-  {
-    "en": "uncardity",
-    "phon": "/uncardity/",
-    "cn": "uncardity"
-  },
-  {
-    "en": "calligraphy",
-    "phon": "/kəˈlɪɡ.rə.fi/",
-    "cn": "书法"
-  },
-  {
-    "en": "poetry",
-    "phon": "/ˈpəʊ.ɪ.tri/",
-    "cn": "诗歌"
-  },
-  {
-    "en": "fiction",
-    "phon": "/ˈfɪk.ʃən/",
-    "cn": "小说"
-  },
-  {
-    "en": "novel",
-    "phon": "/ˈnɒv.əl/",
-    "cn": "长篇小说"
-  },
-  {
-    "en": "short story",
-    "phon": "/ʃɔːrt ˈstɔːr.i/",
-    "cn": "短篇故事"
-  },
-  {
-    "en": "uncardence",
-    "phon": "/uncardence/",
-    "cn": "uncardence"
-  },
-  {
-    "en": "drama",
-    "phon": "/ˈdrɑː.mə/",
-    "cn": "戏剧"
-  },
-  {
-    "en": "comedy",
-    "phon": "/ˈkɒm.ə.di/",
-    "cn": "喜剧"
-  },
-  {
-    "en": "tragedy",
-    "phon": "/ˈtrædʒ.ə.di/",
-    "cn": "悲剧"
-  },
-  {
-    "en": "musical",
-    "phon": "/ˈmjuː.zɪ.kəl/",
-    "cn": "音乐剧"
-  },
-  {
-    "en": "opera",
-    "phon": "/ˈɒp.ər.ə/",
-    "cn": "歌剧"
-  },
-  {
-    "en": "ballet",
-    "phon": "/ˈbæl.eɪ/",
-    "cn": "芭蕾"
-  },
-  {
-    "en": "concert",
-    "phon": "/ˈkɒn.sərt/",
-    "cn": "音乐会"
-  },
-  {
-    "en": "festival",
-    "phon": "/ˈfes.tɪ.vəl/",
-    "cn": "节日"
-  },
-  {
-    "en": "uncardance",
-    "phon": "/uncardance/",
-    "cn": "uncardance"
-  },
-  {
-    "en": "film",
-    "phon": "/fɪlm/",
-    "cn": "电影"
-  },
-  {
-    "en": "documentary",
-    "phon": "/ˌdɒk.juˈmen.tər.i/",
-    "cn": "纪录片"
-  },
-  {
-    "en": "animation",
-    "phon": "/ˌæn.ɪˈmeɪ.ʃən/",
-    "cn": "动画"
-  },
-  {
-    "en": "cartoon",
-    "phon": "/kɑːrˈtuːn/",
-    "cn": "卡通"
+    "en": "stage",
+    "phon": "/steɪdʒ/",
+    "cn": "舞台"
   },
   {
     "en": "series",
@@ -120,14 +20,139 @@
     "cn": "系列"
   },
   {
-    "en": "episode",
-    "phon": "/ˈep.ɪ.səʊd/",
-    "cn": "集"
+    "en": "announce",
+    "phon": "/əˈnaʊns/",
+    "cn": "宣布"
   },
   {
-    "en": "channel",
-    "phon": "/ˈtʃæn.əl/",
-    "cn": "频道"
+    "en": "accurate",
+    "phon": "/ˈæk.jə.rət/",
+    "cn": "准确的"
+  },
+  {
+    "en": "novel",
+    "phon": "/ˈnɒv.əl/",
+    "cn": "长篇小说"
+  },
+  {
+    "en": "challenge",
+    "phon": "/ˈtʃæl.ɪndʒ/",
+    "cn": "挑战"
+  },
+  {
+    "en": "costume",
+    "phon": "/ˈkɒs.tjuːm/",
+    "cn": "服装"
+  },
+  {
+    "en": "short story",
+    "phon": "/ʃɔːrt ˈstɔːr.i/",
+    "cn": "短篇故事"
+  },
+  {
+    "en": "melody",
+    "phon": "/ˈmel.ə.di/",
+    "cn": "旋律"
+  },
+  {
+    "en": "fiction",
+    "phon": "/ˈfɪk.ʃən/",
+    "cn": "小说"
+  },
+  {
+    "en": "attach",
+    "phon": "/əˈtætʃ/",
+    "cn": "附上"
+  },
+  {
+    "en": "film",
+    "phon": "/fɪlm/",
+    "cn": "电影"
+  },
+  {
+    "en": "cartoon",
+    "phon": "/kɑːrˈtuːn/",
+    "cn": "卡通"
+  },
+  {
+    "en": "rhythm",
+    "phon": "/ˈrɪð.əm/",
+    "cn": "节奏"
+  },
+  {
+    "en": "documentary",
+    "phon": "/ˌdɒk.juˈmen.tər.i/",
+    "cn": "纪录片"
+  },
+  {
+    "en": "genre",
+    "phon": "/ˈʒɒn.rə/",
+    "cn": "流派"
+  },
+  {
+    "en": "capacity",
+    "phon": "/kəˈpæs.ə.ti/",
+    "cn": "容量"
+  },
+  {
+    "en": "comedy",
+    "phon": "/ˈkɒm.ə.di/",
+    "cn": "喜剧"
+  },
+  {
+    "en": "gallery",
+    "phon": "/ˈɡæl.ər.i/",
+    "cn": "画廊"
+  },
+  {
+    "en": "tragedy",
+    "phon": "/ˈtrædʒ.ə.di/",
+    "cn": "悲剧"
+  },
+  {
+    "en": "encore",
+    "phon": "/ˈɒŋ.kɔːr/",
+    "cn": "返场"
+  },
+  {
+    "en": "sculpture",
+    "phon": "/ˈskʌlp.tʃər/",
+    "cn": "雕塑"
+  },
+  {
+    "en": "performance",
+    "phon": "/pərˈfɔːr.məns/",
+    "cn": "演出"
+  },
+  {
+    "en": "calligraphy",
+    "phon": "/kəˈlɪɡ.rə.fi/",
+    "cn": "书法"
+  },
+  {
+    "en": "animation",
+    "phon": "/ˌæn.ɪˈmeɪ.ʃən/",
+    "cn": "动画"
+  },
+  {
+    "en": "ballet",
+    "phon": "/ˈbæl.eɪ/",
+    "cn": "芭蕾"
+  },
+  {
+    "en": "annual",
+    "phon": "/ˈæn.ju.əl/",
+    "cn": "年度的"
+  },
+  {
+    "en": "applause",
+    "phon": "/əˈplɔːz/",
+    "cn": "掌声"
+  },
+  {
+    "en": "concert",
+    "phon": "/ˈkɒn.sərt/",
+    "cn": "音乐会"
   },
   {
     "en": "broadcast",
@@ -135,19 +160,29 @@
     "cn": "广播"
   },
   {
-    "en": "uncardous",
-    "phon": "/uncardous/",
-    "cn": "uncardous"
+    "en": "acquire",
+    "phon": "/əˈkwaɪr/",
+    "cn": "获得"
   },
   {
-    "en": "uncardive",
-    "phon": "/uncardive/",
-    "cn": "uncardive"
+    "en": "capable",
+    "phon": "/ˈkeɪ.pə.bəl/",
+    "cn": "有能力的"
   },
   {
-    "en": "newspaper",
-    "phon": "/ˈnjuːz.peɪ.pər/",
-    "cn": "报纸"
+    "en": "arrange",
+    "phon": "/əˈreɪndʒ/",
+    "cn": "安排"
+  },
+  {
+    "en": "available",
+    "phon": "/əˈveɪ.lə.bəl/",
+    "cn": "可用的"
+  },
+  {
+    "en": "harmony",
+    "phon": "/ˈhɑːr.mə.ni/",
+    "cn": "和声"
   },
   {
     "en": "magazine",
@@ -160,39 +195,34 @@
     "cn": "期刊"
   },
   {
-    "en": "uncardful",
-    "phon": "/uncardful/",
-    "cn": "uncardful"
+    "en": "channel",
+    "phon": "/ˈtʃæn.əl/",
+    "cn": "频道"
   },
   {
-    "en": "gallery",
-    "phon": "/ˈɡæl.ər.i/",
-    "cn": "画廊"
+    "en": "drama",
+    "phon": "/ˈdrɑː.mə/",
+    "cn": "戏剧"
   },
   {
-    "en": "exhibition",
-    "phon": "/ˌek.sɪˈbɪʃ.ən/",
-    "cn": "展览"
+    "en": "opera",
+    "phon": "/ˈɒp.ər.ə/",
+    "cn": "歌剧"
   },
   {
-    "en": "performance",
-    "phon": "/pərˈfɔːr.məns/",
-    "cn": "演出"
+    "en": "festival",
+    "phon": "/ˈfes.tɪ.vəl/",
+    "cn": "节日"
   },
   {
-    "en": "uncardless",
-    "phon": "/uncardless/",
-    "cn": "uncardless"
+    "en": "musical",
+    "phon": "/ˈmjuː.zɪ.kəl/",
+    "cn": "音乐剧"
   },
   {
-    "en": "stage",
-    "phon": "/steɪdʒ/",
-    "cn": "舞台"
-  },
-  {
-    "en": "uncardable",
-    "phon": "/uncardable/",
-    "cn": "uncardable"
+    "en": "arise",
+    "phon": "/əˈraɪz/",
+    "cn": "出现"
   },
   {
     "en": "prop",
@@ -200,53 +230,23 @@
     "cn": "道具"
   },
   {
-    "en": "costume",
-    "phon": "/ˈkɒs.tjuːm/",
-    "cn": "服装"
-  },
-  {
-    "en": "applause",
-    "phon": "/əˈplɔːz/",
-    "cn": "掌声"
-  },
-  {
-    "en": "encore",
-    "phon": "/ˈɒŋ.kɔːr/",
-    "cn": "返场"
-  },
-  {
     "en": "masterpiece",
     "phon": "/ˈmɑːs.tər.piːs/",
     "cn": "杰作"
   },
   {
-    "en": "uncardible",
-    "phon": "/uncardible/",
-    "cn": "uncardible"
+    "en": "episode",
+    "phon": "/ˈep.ɪ.səʊd/",
+    "cn": "集"
   },
   {
-    "en": "genre",
-    "phon": "/ˈʒɒn.rə/",
-    "cn": "流派"
+    "en": "poetry",
+    "phon": "/ˈpəʊ.ɪ.tri/",
+    "cn": "诗歌"
   },
   {
-    "en": "rhythm",
-    "phon": "/ˈrɪð.əm/",
-    "cn": "节奏"
-  },
-  {
-    "en": "melody",
-    "phon": "/ˈmel.ə.di/",
-    "cn": "旋律"
-  },
-  {
-    "en": "harmony",
-    "phon": "/ˈhɑːr.mə.ni/",
-    "cn": "和声"
-  },
-  {
-    "en": "uncardal",
-    "phon": "/uncardal/",
-    "cn": "uncardal"
+    "en": "newspaper",
+    "phon": "/ˈnjuːz.peɪ.pər/",
+    "cn": "报纸"
   }
 ]

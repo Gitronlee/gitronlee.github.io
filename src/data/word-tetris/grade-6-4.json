@@ -1,58 +1,8 @@
 [
   {
-    "en": "media",
-    "phon": "/ˈmiː.di.ə/",
-    "cn": "媒体"
-  },
-  {
-    "en": "journalism",
-    "phon": "/ˈdʒɜːr.nəl.ɪ.zəm/",
-    "cn": "新闻业"
-  },
-  {
-    "en": "unceeder",
-    "phon": "/unceeder/",
-    "cn": "unceeder"
-  },
-  {
-    "en": "reporter",
-    "phon": "/rɪˈpɔːr.tər/",
-    "cn": "记者"
-  },
-  {
-    "en": "editor",
-    "phon": "/ˈed.ɪ.tər/",
-    "cn": "编辑"
-  },
-  {
-    "en": "publisher",
-    "phon": "/ˈpʌb.lɪ.ʃər/",
-    "cn": "出版商"
-  },
-  {
-    "en": "unceedor",
-    "phon": "/unceedor/",
-    "cn": "unceedor"
-  },
-  {
-    "en": "unceedist",
-    "phon": "/unceedist/",
-    "cn": "unceedist"
-  },
-  {
-    "en": "unceedism",
-    "phon": "/unceedism/",
-    "cn": "unceedism"
-  },
-  {
-    "en": "advertisement",
-    "phon": "/ˌæd.vərˈtaɪz.mənt/",
-    "cn": "广告"
-  },
-  {
-    "en": "commercial",
-    "phon": "/kəˈmɜːr.ʃəl/",
-    "cn": "商业广告"
+    "en": "vlog",
+    "phon": "/vlɒɡ/",
+    "cn": "视频博客"
   },
   {
     "en": "sponsor",
@@ -60,154 +10,19 @@
     "cn": "赞助"
   },
   {
-    "en": "unceedize",
-    "phon": "/unceedize/",
-    "cn": "unceedize"
-  },
-  {
-    "en": "rating",
-    "phon": "/ˈreɪ.tɪŋ/",
-    "cn": "收视率"
-  },
-  {
-    "en": "unceedise",
-    "phon": "/unceedise/",
-    "cn": "unceedise"
-  },
-  {
-    "en": "article",
-    "phon": "/ˈɑːr.tɪ.kəl/",
-    "cn": "文章"
-  },
-  {
-    "en": "column",
-    "phon": "/ˈkɒl.əm/",
-    "cn": "专栏"
-  },
-  {
-    "en": "editorial",
-    "phon": "/ˌed.ɪˈtɔːr.i.əl/",
-    "cn": "社论"
-  },
-  {
-    "en": "press",
-    "phon": "/pres/",
-    "cn": "新闻界"
-  },
-  {
-    "en": "unceedify",
-    "phon": "/unceedify/",
-    "cn": "unceedify"
-  },
-  {
-    "en": "censorship",
-    "phon": "/ˈsen.sər.ʃɪp/",
-    "cn": "审查"
-  },
-  {
-    "en": "propaganda",
-    "phon": "/ˌprɒp.əˈɡæn.də/",
-    "cn": "宣传"
-  },
-  {
-    "en": "misinformation",
-    "phon": "/ˌmɪs.ɪn.fərˈmeɪ.ʃən/",
-    "cn": "错误信息"
-  },
-  {
-    "en": "fake news",
-    "phon": "/feɪk njuːz/",
-    "cn": "假新闻"
-  },
-  {
-    "en": "unceedate",
-    "phon": "/unceedate/",
-    "cn": "unceedate"
-  },
-  {
-    "en": "blog",
-    "phon": "/blɒɡ/",
-    "cn": "博客"
-  },
-  {
-    "en": "vlog",
-    "phon": "/vlɒɡ/",
-    "cn": "视频博客"
-  },
-  {
-    "en": "podcast",
-    "phon": "/ˈpɒd.kɑːst/",
-    "cn": "播客"
-  },
-  {
-    "en": "streaming",
-    "phon": "/ˈstriː.mɪŋ/",
-    "cn": "流媒体"
-  },
-  {
-    "en": "viral",
-    "phon": "/ˈvaɪ.rəl/",
-    "cn": "病毒式传播的"
-  },
-  {
-    "en": "trending",
-    "phon": "/ˈtren.dɪŋ/",
-    "cn": "热门的"
-  },
-  {
-    "en": "influencer",
-    "phon": "/ˈɪn.flu.ən.sər/",
-    "cn": "网红"
-  },
-  {
     "en": "content creator",
     "phon": "/ˈkɒn.tent kriˈeɪ.tər/",
     "cn": "内容创作者"
   },
   {
-    "en": "subscriber",
-    "phon": "/səbˈskraɪ.bər/",
-    "cn": "订阅者"
+    "en": "advertisement",
+    "phon": "/ˌæd.vərˈtaɪz.mənt/",
+    "cn": "广告"
   },
   {
-    "en": "engagement",
-    "phon": "/ɪnˈɡeɪdʒ.mənt/",
-    "cn": "互动"
-  },
-  {
-    "en": "algorithm",
-    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
-    "cn": "算法"
-  },
-  {
-    "en": "analytics",
-    "phon": "/ˌæn.əˈlɪt.ɪks/",
-    "cn": "分析"
-  },
-  {
-    "en": "feedback",
-    "phon": "/ˈfiːd.bæk/",
-    "cn": "反馈"
-  },
-  {
-    "en": "comment",
-    "phon": "/ˈkɒm.ənt/",
-    "cn": "评论"
-  },
-  {
-    "en": "unceedent",
-    "phon": "/unceedent/",
-    "cn": "unceedent"
-  },
-  {
-    "en": "unceedant",
-    "phon": "/unceedant/",
-    "cn": "unceedant"
-  },
-  {
-    "en": "follow",
-    "phon": "/ˈfɒl.əʊ/",
-    "cn": "关注"
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
   },
   {
     "en": "unfollow",
@@ -215,24 +30,124 @@
     "cn": "取消关注"
   },
   {
-    "en": "block",
-    "phon": "/blɒk/",
-    "cn": "屏蔽"
+    "en": "algorithm",
+    "phon": "/ˈæl.ɡə.rɪ.ðəm/",
+    "cn": "算法"
   },
   {
-    "en": "unceedary",
-    "phon": "/unceedary/",
-    "cn": "unceedary"
+    "en": "advocate",
+    "phon": "/ˈæd.və.keɪt/",
+    "cn": "提倡"
   },
   {
-    "en": "unceedory",
-    "phon": "/unceedory/",
-    "cn": "unceedory"
+    "en": "misinformation",
+    "phon": "/ˌmɪs.ɪn.fərˈmeɪ.ʃən/",
+    "cn": "错误信息"
   },
   {
-    "en": "security",
-    "phon": "/sɪˈkjʊə.rə.ti/",
-    "cn": "安全"
+    "en": "approach",
+    "phon": "/əˈproʊtʃ/",
+    "cn": "接近"
+  },
+  {
+    "en": "commercial",
+    "phon": "/kəˈmɜːr.ʃəl/",
+    "cn": "商业广告"
+  },
+  {
+    "en": "editor",
+    "phon": "/ˈed.ɪ.tər/",
+    "cn": "编辑"
+  },
+  {
+    "en": "circulate",
+    "phon": "/ˈsɜːr.kjə.leɪt/",
+    "cn": "循环"
+  },
+  {
+    "en": "chronic",
+    "phon": "/ˈkrɒn.ɪk/",
+    "cn": "慢性的"
+  },
+  {
+    "en": "analogy",
+    "phon": "/əˈnæl.ə.dʒi/",
+    "cn": "类比"
+  },
+  {
+    "en": "assist",
+    "phon": "/əˈsɪst/",
+    "cn": "协助"
+  },
+  {
+    "en": "appropriate",
+    "phon": "/əˈproʊ.pri.ət/",
+    "cn": "适当的"
+  },
+  {
+    "en": "blog",
+    "phon": "/blɒɡ/",
+    "cn": "博客"
+  },
+  {
+    "en": "analytics",
+    "phon": "/ˌæn.əˈlɪt.ɪks/",
+    "cn": "分析"
+  },
+  {
+    "en": "rating",
+    "phon": "/ˈreɪ.tɪŋ/",
+    "cn": "收视率"
+  },
+  {
+    "en": "media",
+    "phon": "/ˈmiː.di.ə/",
+    "cn": "媒体"
+  },
+  {
+    "en": "trending",
+    "phon": "/ˈtren.dɪŋ/",
+    "cn": "热门的"
+  },
+  {
+    "en": "viral",
+    "phon": "/ˈvaɪ.rəl/",
+    "cn": "病毒式传播的"
+  },
+  {
+    "en": "podcast",
+    "phon": "/ˈpɒd.kɑːst/",
+    "cn": "播客"
+  },
+  {
+    "en": "propaganda",
+    "phon": "/ˌprɒp.əˈɡæn.də/",
+    "cn": "宣传"
+  },
+  {
+    "en": "accommodate",
+    "phon": "/əˈkɒm.ə.deɪt/",
+    "cn": "容纳"
+  },
+  {
+    "en": "fake news",
+    "phon": "/feɪk njuːz/",
+    "cn": "假新闻"
+  },
+  {
+    "en": "engagement",
+    "phon": "/ɪnˈɡeɪdʒ.mənt/",
+    "cn": "互动"
+  },
+  {
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚主义"
+  },
+  {
+    "en": "comment",
+    "phon": "/ˈkɒm.ənt/",
+    "cn": "评论"
   },
   {
     "en": "password",
@@ -240,13 +155,98 @@
     "cn": "密码"
   },
   {
-    "en": "unceeddom",
-    "phon": "/unceeddom/",
-    "cn": "unceeddom"
+    "en": "editorial",
+    "phon": "/ˌed.ɪˈtɔːr.i.əl/",
+    "cn": "社论"
   },
   {
-    "en": "unceedship",
-    "phon": "/unceedship/",
-    "cn": "unceedship"
+    "en": "block",
+    "phon": "/blɒk/",
+    "cn": "屏蔽"
+  },
+  {
+    "en": "reporter",
+    "phon": "/rɪˈpɔːr.tər/",
+    "cn": "记者"
+  },
+  {
+    "en": "ambiguous",
+    "phon": "/æmˈbɪɡ.ju.əs/",
+    "cn": "模糊的"
+  },
+  {
+    "en": "administer",
+    "phon": "/ədˈmɪn.ɪ.stər/",
+    "cn": "管理"
+  },
+  {
+    "en": "press",
+    "phon": "/pres/",
+    "cn": "新闻界"
+  },
+  {
+    "en": "publisher",
+    "phon": "/ˈpʌb.lɪ.ʃər/",
+    "cn": "出版商"
+  },
+  {
+    "en": "article",
+    "phon": "/ˈɑːr.tɪ.kəl/",
+    "cn": "文章"
+  },
+  {
+    "en": "streaming",
+    "phon": "/ˈstriː.mɪŋ/",
+    "cn": "流媒体"
+  },
+  {
+    "en": "journalism",
+    "phon": "/ˈdʒɜːr.nəl.ɪ.zəm/",
+    "cn": "新闻业"
+  },
+  {
+    "en": "follow",
+    "phon": "/ˈfɒl.əʊ/",
+    "cn": "关注"
+  },
+  {
+    "en": "feedback",
+    "phon": "/ˈfiːd.bæk/",
+    "cn": "反馈"
+  },
+  {
+    "en": "subscriber",
+    "phon": "/səbˈskraɪ.bər/",
+    "cn": "订阅者"
+  },
+  {
+    "en": "aggregate",
+    "phon": "/ˈæɡ.rɪ.ɡət/",
+    "cn": "总计"
+  },
+  {
+    "en": "influencer",
+    "phon": "/ˈɪn.flu.ən.sər/",
+    "cn": "网红"
+  },
+  {
+    "en": "censorship",
+    "phon": "/ˈsen.sər.ʃɪp/",
+    "cn": "审查"
+  },
+  {
+    "en": "security",
+    "phon": "/sɪˈkjʊə.rə.ti/",
+    "cn": "安全"
+  },
+  {
+    "en": "atmosphere",
+    "phon": "/ˈæt.mə.sfɪr/",
+    "cn": "气氛"
+  },
+  {
+    "en": "column",
+    "phon": "/ˈkɒl.əm/",
+    "cn": "专栏"
   }
 ]

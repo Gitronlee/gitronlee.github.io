@@ -1,238 +1,8 @@
 [
   {
-    "en": "culture",
-    "phon": "/ˈkʌl.tʃər/",
-    "cn": "文化"
-  },
-  {
-    "en": "tradition",
-    "phon": "/trəˈdɪʃ.ən/",
-    "cn": "传统"
-  },
-  {
-    "en": "uncardwise",
-    "phon": "/uncardwise/",
-    "cn": "uncardwise"
-  },
-  {
-    "en": "celebration",
-    "phon": "/ˌsel.ɪˈbreɪ.ʃən/",
-    "cn": "庆祝"
-  },
-  {
-    "en": "ceremony",
-    "phon": "/ˈser.ə.mə.ni/",
-    "cn": "仪式"
-  },
-  {
-    "en": "uncardling",
-    "phon": "/uncardling/",
-    "cn": "uncardling"
-  },
-  {
-    "en": "uncardlet",
-    "phon": "/uncardlet/",
-    "cn": "uncardlet"
-  },
-  {
-    "en": "uncardette",
-    "phon": "/uncardette/",
-    "cn": "uncardette"
-  },
-  {
-    "en": "ritual",
-    "phon": "/ˈrɪtʃ.u.əl/",
-    "cn": "仪式"
-  },
-  {
-    "en": "heritage",
-    "phon": "/ˈher.ɪ.tɪdʒ/",
-    "cn": "遗产"
-  },
-  {
-    "en": "ancestor",
-    "phon": "/ˈæn.ses.tər/",
-    "cn": "祖先"
-  },
-  {
-    "en": "generation",
-    "phon": "/ˌdʒen.əˈreɪ.ʃən/",
-    "cn": "一代人"
-  },
-  {
-    "en": "ethnic",
-    "phon": "/ˈeθ.nɪk/",
-    "cn": "民族的"
-  },
-  {
-    "en": "nationality",
-    "phon": "/ˌnæʃ.əˈnæl.ə.ti/",
-    "cn": "国籍"
-  },
-  {
-    "en": "language",
-    "phon": "/ˈlæŋ.ɡwɪdʒ/",
-    "cn": "语言"
-  },
-  {
-    "en": "dialect",
-    "phon": "/ˈdaɪ.ə.lekt/",
-    "cn": "方言"
-  },
-  {
-    "en": "accent",
-    "phon": "/ˈæk.sent/",
-    "cn": "口音"
-  },
-  {
-    "en": "immigrant",
-    "phon": "/ˈɪm.ɪ.ɡrənt/",
-    "cn": "移民"
-  },
-  {
-    "en": "emigrant",
-    "phon": "/ˈem.ɪ.ɡrənt/",
-    "cn": "移居国外者"
-  },
-  {
-    "en": "refugee",
-    "phon": "/ˌref.juˈdʒiː/",
-    "cn": "难民"
-  },
-  {
-    "en": "unceedtion",
-    "phon": "/unceedtion/",
-    "cn": "unceedtion"
-  },
-  {
-    "en": "government",
-    "phon": "/ˈɡʌv.ən.mənt/",
-    "cn": "政府"
-  },
-  {
-    "en": "democracy",
-    "phon": "/dɪˈmɒk.rə.si/",
-    "cn": "民主"
-  },
-  {
-    "en": "election",
-    "phon": "/ɪˈlek.ʃən/",
-    "cn": "选举"
-  },
-  {
-    "en": "vote",
-    "phon": "/vəʊt/",
-    "cn": "投票"
-  },
-  {
-    "en": "unceedsion",
-    "phon": "/unceedsion/",
-    "cn": "unceedsion"
-  },
-  {
-    "en": "mayor",
-    "phon": "/meər/",
-    "cn": "市长"
-  },
-  {
-    "en": "law",
-    "phon": "/lɔː/",
-    "cn": "法律"
-  },
-  {
-    "en": "policy",
-    "phon": "/ˈpɒl.ə.si/",
-    "cn": "政策"
-  },
-  {
-    "en": "tax",
-    "phon": "/tæks/",
-    "cn": "税"
-  },
-  {
-    "en": "charity",
-    "phon": "/ˈtʃær.ə.ti/",
-    "cn": "慈善"
-  },
-  {
-    "en": "volunteer",
-    "phon": "/ˌvɒl.ənˈtɪər/",
-    "cn": "志愿者"
-  },
-  {
-    "en": "donation",
-    "phon": "/dəʊˈneɪ.ʃən/",
-    "cn": "捐赠"
-  },
-  {
-    "en": "nonprofit",
-    "phon": "/ˌnɒnˈprɒf.ɪt/",
-    "cn": "非营利"
-  },
-  {
-    "en": "public service",
-    "phon": "/ˈpʌb.lɪk ˈsɜːr.vɪs/",
-    "cn": "公共服务"
-  },
-  {
     "en": "infrastructure",
     "phon": "/ˈɪn.frə.strʌk.tʃər/",
     "cn": "基础设施"
-  },
-  {
-    "en": "transportation",
-    "phon": "/ˌtræns.pərˈteɪ.ʃən/",
-    "cn": "交通"
-  },
-  {
-    "en": "waste",
-    "phon": "/weɪst/",
-    "cn": "废物"
-  },
-  {
-    "en": "recycling",
-    "phon": "/riːˈsaɪ.klɪŋ/",
-    "cn": "回收"
-  },
-  {
-    "en": "pollution",
-    "phon": "/pəˈluː.ʃən/",
-    "cn": "污染"
-  },
-  {
-    "en": "conservation",
-    "phon": "/ˌkɒn.sərˈveɪ.ʃən/",
-    "cn": "保护"
-  },
-  {
-    "en": "sustainability",
-    "phon": "/səˌsteɪ.nəˈbɪl.ə.ti/",
-    "cn": "可持续性"
-  },
-  {
-    "en": "urban",
-    "phon": "/ˈɜːr.bən/",
-    "cn": "城市的"
-  },
-  {
-    "en": "rural",
-    "phon": "/ˈrʊə.rəl/",
-    "cn": "农村的"
-  },
-  {
-    "en": "suburb",
-    "phon": "/ˈsʌb.ɜːrb/",
-    "cn": "郊区"
-  },
-  {
-    "en": "neighborhood",
-    "phon": "/ˈneɪ.bər.hʊd/",
-    "cn": "街区"
-  },
-  {
-    "en": "civic",
-    "phon": "/ˈsɪv.ɪk/",
-    "cn": "公民的"
   },
   {
     "en": "community service",
@@ -240,13 +10,243 @@
     "cn": "社区服务"
   },
   {
-    "en": "unceedment",
-    "phon": "/unceedment/",
-    "cn": "unceedment"
+    "en": "transportation",
+    "phon": "/ˌtræns.pərˈteɪ.ʃən/",
+    "cn": "交通"
   },
   {
-    "en": "unceedness",
-    "phon": "/unceedness/",
-    "cn": "unceedness"
+    "en": "nonprofit",
+    "phon": "/ˌnɒnˈprɒf.ɪt/",
+    "cn": "非营利"
+  },
+  {
+    "en": "culture",
+    "phon": "/ˈkʌl.tʃər/",
+    "cn": "文化"
+  },
+  {
+    "en": "neighborhood",
+    "phon": "/ˈneɪ.bər.hʊd/",
+    "cn": "街区"
+  },
+  {
+    "en": "available",
+    "phon": "/əˈveɪ.lə.bəl/",
+    "cn": "可用的"
+  },
+  {
+    "en": "celebration",
+    "phon": "/ˌsel.ɪˈbreɪ.ʃən/",
+    "cn": "庆祝"
+  },
+  {
+    "en": "attach",
+    "phon": "/əˈtætʃ/",
+    "cn": "附上"
+  },
+  {
+    "en": "heritage",
+    "phon": "/ˈher.ɪ.tɪdʒ/",
+    "cn": "遗产"
+  },
+  {
+    "en": "accent",
+    "phon": "/ˈæk.sent/",
+    "cn": "口音"
+  },
+  {
+    "en": "ancestor",
+    "phon": "/ˈæn.ses.tər/",
+    "cn": "祖先"
+  },
+  {
+    "en": "rural",
+    "phon": "/ˈrʊə.rəl/",
+    "cn": "农村的"
+  },
+  {
+    "en": "bureaucracy",
+    "phon": "/bjʊˈrɒk.rə.si/",
+    "cn": "官僚主义"
+  },
+  {
+    "en": "civic",
+    "phon": "/ˈsɪv.ɪk/",
+    "cn": "公民的"
+  },
+  {
+    "en": "ritual",
+    "phon": "/ˈrɪtʃ.u.əl/",
+    "cn": "仪式"
+  },
+  {
+    "en": "donation",
+    "phon": "/dəʊˈneɪ.ʃən/",
+    "cn": "捐赠"
+  },
+  {
+    "en": "ambiguous",
+    "phon": "/æmˈbɪɡ.ju.əs/",
+    "cn": "模糊的"
+  },
+  {
+    "en": "acknowledge",
+    "phon": "/əkˈnɒl.ɪdʒ/",
+    "cn": "承认"
+  },
+  {
+    "en": "waste",
+    "phon": "/weɪst/",
+    "cn": "废物"
+  },
+  {
+    "en": "ceremony",
+    "phon": "/ˈser.ə.mə.ni/",
+    "cn": "仪式"
+  },
+  {
+    "en": "suburb",
+    "phon": "/ˈsʌb.ɜːrb/",
+    "cn": "郊区"
+  },
+  {
+    "en": "conservation",
+    "phon": "/ˌkɒn.sərˈveɪ.ʃən/",
+    "cn": "保护"
+  },
+  {
+    "en": "public service",
+    "phon": "/ˈpʌb.lɪk ˈsɜːr.vɪs/",
+    "cn": "公共服务"
+  },
+  {
+    "en": "democracy",
+    "phon": "/dɪˈmɒk.rə.si/",
+    "cn": "民主"
+  },
+  {
+    "en": "dialect",
+    "phon": "/ˈdaɪ.ə.lekt/",
+    "cn": "方言"
+  },
+  {
+    "en": "nationality",
+    "phon": "/ˌnæʃ.əˈnæl.ə.ti/",
+    "cn": "国籍"
+  },
+  {
+    "en": "tradition",
+    "phon": "/trəˈdɪʃ.ən/",
+    "cn": "传统"
+  },
+  {
+    "en": "sustainability",
+    "phon": "/səˌsteɪ.nəˈbɪl.ə.ti/",
+    "cn": "可持续性"
+  },
+  {
+    "en": "tax",
+    "phon": "/tæks/",
+    "cn": "税"
+  },
+  {
+    "en": "adjacent",
+    "phon": "/əˈdʒeɪ.sənt/",
+    "cn": "邻近的"
+  },
+  {
+    "en": "refugee",
+    "phon": "/ˌref.juˈdʒiː/",
+    "cn": "难民"
+  },
+  {
+    "en": "mayor",
+    "phon": "/meər/",
+    "cn": "市长"
+  },
+  {
+    "en": "emigrant",
+    "phon": "/ˈem.ɪ.ɡrənt/",
+    "cn": "移居国外者"
+  },
+  {
+    "en": "policy",
+    "phon": "/ˈpɒl.ə.si/",
+    "cn": "政策"
+  },
+  {
+    "en": "pollution",
+    "phon": "/pəˈluː.ʃən/",
+    "cn": "污染"
+  },
+  {
+    "en": "generation",
+    "phon": "/ˌdʒen.əˈreɪ.ʃən/",
+    "cn": "一代人"
+  },
+  {
+    "en": "vote",
+    "phon": "/vəʊt/",
+    "cn": "投票"
+  },
+  {
+    "en": "government",
+    "phon": "/ˈɡʌv.ən.mənt/",
+    "cn": "政府"
+  },
+  {
+    "en": "language",
+    "phon": "/ˈlæŋ.ɡwɪdʒ/",
+    "cn": "语言"
+  },
+  {
+    "en": "recycling",
+    "phon": "/riːˈsaɪ.klɪŋ/",
+    "cn": "回收"
+  },
+  {
+    "en": "charity",
+    "phon": "/ˈtʃær.ə.ti/",
+    "cn": "慈善"
+  },
+  {
+    "en": "urban",
+    "phon": "/ˈɜːr.bən/",
+    "cn": "城市的"
+  },
+  {
+    "en": "law",
+    "phon": "/lɔː/",
+    "cn": "法律"
+  },
+  {
+    "en": "election",
+    "phon": "/ɪˈlek.ʃən/",
+    "cn": "选举"
+  },
+  {
+    "en": "volunteer",
+    "phon": "/ˌvɒl.ənˈtɪər/",
+    "cn": "志愿者"
+  },
+  {
+    "en": "ethnic",
+    "phon": "/ˈeθ.nɪk/",
+    "cn": "民族的"
+  },
+  {
+    "en": "immigrant",
+    "phon": "/ˈɪm.ɪ.ɡrənt/",
+    "cn": "移民"
+  },
+  {
+    "en": "assign",
+    "phon": "/əˈsaɪn/",
+    "cn": "分配"
+  },
+  {
+    "en": "coincide",
+    "phon": "/ˌkoʊ.ɪnˈsaɪd/",
+    "cn": "巧合"
   }
 ]

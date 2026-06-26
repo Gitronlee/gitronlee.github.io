@@ -1,13 +1,8 @@
 [
   {
-    "en": "city",
-    "phon": "/ˈsɪt.i/",
-    "cn": "城市"
-  },
-  {
-    "en": "town",
-    "phon": "/taʊn/",
-    "cn": "镇"
+    "en": "park",
+    "phon": "/pɑːrk/",
+    "cn": "公园"
   },
   {
     "en": "village",
@@ -15,49 +10,9 @@
     "cn": "村庄"
   },
   {
-    "en": "country",
-    "phon": "/ˈkʌn.tri/",
-    "cn": "国家"
-  },
-  {
-    "en": "street",
-    "phon": "/striːt/",
-    "cn": "街道"
-  },
-  {
-    "en": "road",
-    "phon": "/rəʊd/",
-    "cn": "路"
-  },
-  {
     "en": "bridge",
     "phon": "/brɪdʒ/",
     "cn": "桥"
-  },
-  {
-    "en": "park",
-    "phon": "/pɑːrk/",
-    "cn": "公园"
-  },
-  {
-    "en": "unactity",
-    "phon": "/unactity/",
-    "cn": "unactity"
-  },
-  {
-    "en": "zoo",
-    "phon": "/zuː/",
-    "cn": "动物园"
-  },
-  {
-    "en": "museum",
-    "phon": "/mjuˈziː.əm/",
-    "cn": "博物馆"
-  },
-  {
-    "en": "library",
-    "phon": "/ˈlaɪ.brər.i/",
-    "cn": "图书馆"
   },
   {
     "en": "hospital",
@@ -65,34 +20,9 @@
     "cn": "医院"
   },
   {
-    "en": "clinic",
-    "phon": "/ˈklɪn.ɪk/",
-    "cn": "诊所"
-  },
-  {
-    "en": "pharmacy",
-    "phon": "/ˈfɑːr.mə.si/",
-    "cn": "药店"
-  },
-  {
-    "en": "supermarket",
-    "phon": "/ˈsuː.pə.mɑːr.kɪt/",
-    "cn": "超市"
-  },
-  {
-    "en": "shop",
-    "phon": "/ʃɒp/",
-    "cn": "商店"
-  },
-  {
-    "en": "store",
-    "phon": "/stɔːr/",
-    "cn": "店铺"
-  },
-  {
-    "en": "bakery",
-    "phon": "/ˈbeɪ.kər.i/",
-    "cn": "面包店"
+    "en": "harbor",
+    "phon": "/ˈhɑːr.bər/",
+    "cn": "港口"
   },
   {
     "en": "butcher",
@@ -100,124 +30,9 @@
     "cn": "肉店"
   },
   {
-    "en": "market",
-    "phon": "/ˈmɑːr.kɪt/",
-    "cn": "市场"
-  },
-  {
-    "en": "bank",
-    "phon": "/bæŋk/",
-    "cn": "银行"
-  },
-  {
-    "en": "post office",
-    "phon": "/pəʊst ˈɒf.ɪs/",
-    "cn": "邮局"
-  },
-  {
-    "en": "police station",
-    "phon": "/pəˈliːs ˈsteɪ.ʃən/",
-    "cn": "警察局"
-  },
-  {
-    "en": "fire station",
-    "phon": "/ˈfaɪ.ər ˈsteɪ.ʃən/",
-    "cn": "消防站"
-  },
-  {
-    "en": "restaurant",
-    "phon": "/ˈres.tər.ɒnt/",
-    "cn": "餐厅"
-  },
-  {
-    "en": "café",
-    "phon": "/ˈkæf.eɪ/",
-    "cn": "咖啡馆"
-  },
-  {
-    "en": "hotel",
-    "phon": "/həʊˈtel/",
-    "cn": "酒店"
-  },
-  {
-    "en": "cinema",
-    "phon": "/ˈsɪn.ə.mə/",
-    "cn": "电影院"
-  },
-  {
-    "en": "theater",
-    "phon": "/ˈθɪə.tər/",
-    "cn": "剧院"
-  },
-  {
-    "en": "stadium",
-    "phon": "/ˈsteɪ.di.əm/",
-    "cn": "体育场"
-  },
-  {
-    "en": "gym",
-    "phon": "/dʒɪm/",
-    "cn": "健身房"
-  },
-  {
-    "en": "pool",
-    "phon": "/puːl/",
-    "cn": "游泳池"
-  },
-  {
-    "en": "playground",
-    "phon": "/ˈpleɪ.ɡraʊnd/",
-    "cn": "操场"
-  },
-  {
-    "en": "church",
-    "phon": "/tʃɜːrtʃ/",
-    "cn": "教堂"
-  },
-  {
     "en": "temple",
     "phon": "/ˈtem.pəl/",
     "cn": "寺庙"
-  },
-  {
-    "en": "factory",
-    "phon": "/ˈfæk.tər.i/",
-    "cn": "工厂"
-  },
-  {
-    "en": "office",
-    "phon": "/ˈɒf.ɪs/",
-    "cn": "办公室"
-  },
-  {
-    "en": "airport",
-    "phon": "/ˈeər.pɔːrt/",
-    "cn": "机场"
-  },
-  {
-    "en": "station",
-    "phon": "/ˈsteɪ.ʃən/",
-    "cn": "车站"
-  },
-  {
-    "en": "harbor",
-    "phon": "/ˈhɑːr.bər/",
-    "cn": "港口"
-  },
-  {
-    "en": "unactence",
-    "phon": "/unactence/",
-    "cn": "unactence"
-  },
-  {
-    "en": "fountain",
-    "phon": "/ˈfaʊn.tɪn/",
-    "cn": "喷泉"
-  },
-  {
-    "en": "castle",
-    "phon": "/ˈkɑː.səl/",
-    "cn": "城堡"
   },
   {
     "en": "palace",
@@ -225,9 +40,149 @@
     "cn": "宫殿"
   },
   {
+    "en": "breath",
+    "phon": "/breθ/",
+    "cn": "呼吸"
+  },
+  {
+    "en": "castle",
+    "phon": "/ˈkɑː.səl/",
+    "cn": "城堡"
+  },
+  {
+    "en": "theater",
+    "phon": "/ˈθɪə.tər/",
+    "cn": "剧院"
+  },
+  {
+    "en": "post office",
+    "phon": "/pəʊst ˈɒf.ɪs/",
+    "cn": "邮局"
+  },
+  {
+    "en": "market",
+    "phon": "/ˈmɑːr.kɪt/",
+    "cn": "市场"
+  },
+  {
+    "en": "café",
+    "phon": "/ˈkæf.eɪ/",
+    "cn": "咖啡馆"
+  },
+  {
+    "en": "museum",
+    "phon": "/mjuˈziː.əm/",
+    "cn": "博物馆"
+  },
+  {
+    "en": "clinic",
+    "phon": "/ˈklɪn.ɪk/",
+    "cn": "诊所"
+  },
+  {
+    "en": "zoo",
+    "phon": "/zuː/",
+    "cn": "动物园"
+  },
+  {
+    "en": "station",
+    "phon": "/ˈsteɪ.ʃən/",
+    "cn": "车站"
+  },
+  {
+    "en": "road",
+    "phon": "/rəʊd/",
+    "cn": "路"
+  },
+  {
+    "en": "office",
+    "phon": "/ˈɒf.ɪs/",
+    "cn": "办公室"
+  },
+  {
     "en": "tower",
     "phon": "/ˈtaʊ.ər/",
     "cn": "塔"
+  },
+  {
+    "en": "pharmacy",
+    "phon": "/ˈfɑːr.mə.si/",
+    "cn": "药店"
+  },
+  {
+    "en": "pool",
+    "phon": "/puːl/",
+    "cn": "游泳池"
+  },
+  {
+    "en": "shop",
+    "phon": "/ʃɒp/",
+    "cn": "商店"
+  },
+  {
+    "en": "bakery",
+    "phon": "/ˈbeɪ.kər.i/",
+    "cn": "面包店"
+  },
+  {
+    "en": "police station",
+    "phon": "/pəˈliːs ˈsteɪ.ʃən/",
+    "cn": "警察局"
+  },
+  {
+    "en": "gym",
+    "phon": "/dʒɪm/",
+    "cn": "健身房"
+  },
+  {
+    "en": "bank",
+    "phon": "/bæŋk/",
+    "cn": "银行"
+  },
+  {
+    "en": "anxious",
+    "phon": "/ˈæŋk.ʃəs/",
+    "cn": "焦虑的"
+  },
+  {
+    "en": "airport",
+    "phon": "/ˈeər.pɔːrt/",
+    "cn": "机场"
+  },
+  {
+    "en": "fire station",
+    "phon": "/ˈfaɪ.ər ˈsteɪ.ʃən/",
+    "cn": "消防站"
+  },
+  {
+    "en": "country",
+    "phon": "/ˈkʌn.tri/",
+    "cn": "国家"
+  },
+  {
+    "en": "playground",
+    "phon": "/ˈpleɪ.ɡraʊnd/",
+    "cn": "操场"
+  },
+  {
+    "en": "street",
+    "phon": "/striːt/",
+    "cn": "街道"
+  },
+  {
+    "en": "restaurant",
+    "phon": "/ˈres.tər.ɒnt/",
+    "cn": "餐厅"
+  },
+  {
+    "en": "fountain",
+    "phon": "/ˈfaʊn.tɪn/",
+    "cn": "喷泉"
+  },
+  {
+    "en": "cinema",
+    "phon": "/ˈsɪn.ə.mə/",
+    "cn": "电影院"
   },
   {
     "en": "cottage",
@@ -235,18 +190,63 @@
     "cn": "小屋"
   },
   {
+    "en": "stadium",
+    "phon": "/ˈsteɪ.di.əm/",
+    "cn": "体育场"
+  },
+  {
+    "en": "supermarket",
+    "phon": "/ˈsuː.pə.mɑːr.kɪt/",
+    "cn": "超市"
+  },
+  {
+    "en": "church",
+    "phon": "/tʃɜːrtʃ/",
+    "cn": "教堂"
+  },
+  {
+    "en": "town",
+    "phon": "/taʊn/",
+    "cn": "镇"
+  },
+  {
+    "en": "hotel",
+    "phon": "/həʊˈtel/",
+    "cn": "酒店"
+  },
+  {
+    "en": "store",
+    "phon": "/stɔːr/",
+    "cn": "店铺"
+  },
+  {
+    "en": "factory",
+    "phon": "/ˈfæk.tər.i/",
+    "cn": "工厂"
+  },
+  {
     "en": "barn",
     "phon": "/bɑːrn/",
     "cn": "谷仓"
   },
   {
-    "en": "unactance",
-    "phon": "/unactance/",
-    "cn": "unactance"
+    "en": "library",
+    "phon": "/ˈlaɪ.brər.i/",
+    "cn": "图书馆"
   },
   {
-    "en": "unactous",
-    "phon": "/unactous/",
-    "cn": "unactous"
+    "en": "city",
+    "phon": "/ˈsɪt.i/",
+    "cn": "城市"
+  },
+  {
+    "en": "applause",
+    "phon": "/əˈplɔːz/",
+    "cn": "鼓掌"
+  },
+  {
+    "en": "admire",
+    "phon": "/ədˈmaɪr/",
+    "cn": "钦佩"
   }
 ]

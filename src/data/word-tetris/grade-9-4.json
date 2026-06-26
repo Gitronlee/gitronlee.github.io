@@ -1,68 +1,8 @@
 [
   {
-    "en": "resume",
-    "phon": "/ˈrez.ʊ.meɪ/",
-    "cn": "简历"
-  },
-  {
-    "en": "curriculum vitae",
-    "phon": "/kəˈrɪk.ju.ləm ˈviː.taɪ/",
-    "cn": "履历"
-  },
-  {
-    "en": "uncordless",
-    "phon": "/uncordless/",
-    "cn": "uncordless"
-  },
-  {
-    "en": "uncordable",
-    "phon": "/uncordable/",
-    "cn": "uncordable"
-  },
-  {
     "en": "networking",
     "phon": "/ˈnet.wɜːr.kɪŋ/",
     "cn": "人脉"
-  },
-  {
-    "en": "mentor",
-    "phon": "/ˈmen.tər/",
-    "cn": "导师"
-  },
-  {
-    "en": "mentee",
-    "phon": "/ˈmen.tiː/",
-    "cn": "学员"
-  },
-  {
-    "en": "internship",
-    "phon": "/ˈɪn.tɜːn.ʃɪp/",
-    "cn": "实习"
-  },
-  {
-    "en": "apprenticeship",
-    "phon": "/əˈpren.tɪs.ʃɪp/",
-    "cn": "学徒期"
-  },
-  {
-    "en": "promotion",
-    "phon": "/prəˈməʊ.ʃən/",
-    "cn": "晋升"
-  },
-  {
-    "en": "demotion",
-    "phon": "/dɪˈməʊ.ʃən/",
-    "cn": "降职"
-  },
-  {
-    "en": "severance",
-    "phon": "/ˈsev.ər.əns/",
-    "cn": "遣散费"
-  },
-  {
-    "en": "compensation",
-    "phon": "/ˌkɒm.penˈseɪ.ʃən/",
-    "cn": "薪酬"
   },
   {
     "en": "benefits",
@@ -70,134 +10,9 @@
     "cn": "福利"
   },
   {
-    "en": "pension",
-    "phon": "/ˈpen.ʃən/",
-    "cn": "养老金"
-  },
-  {
-    "en": "401k",
-    "phon": "/ˌfɔːr.oʊ ˈwʌn keɪ/",
-    "cn": "退休账户"
-  },
-  {
-    "en": "uncordible",
-    "phon": "/uncordible/",
-    "cn": "uncordible"
-  },
-  {
-    "en": "stock option",
-    "phon": "/stɒk ˈɒp.ʃən/",
-    "cn": "股票期权"
-  },
-  {
-    "en": "venture",
-    "phon": "/ˈven.tʃər/",
-    "cn": "风险投资"
-  },
-  {
-    "en": "uncordal",
-    "phon": "/uncordal/",
-    "cn": "uncordal"
-  },
-  {
-    "en": "freelance",
-    "phon": "/ˈfriː.lɑːns/",
-    "cn": "自由职业"
-  },
-  {
-    "en": "uncordial",
-    "phon": "/uncordial/",
-    "cn": "uncordial"
-  },
-  {
-    "en": "contractor",
-    "phon": "/ˈkɒn.træk.tər/",
-    "cn": "承包商"
-  },
-  {
-    "en": "uncordly",
-    "phon": "/uncordly/",
-    "cn": "uncordly"
-  },
-  {
-    "en": "CEO",
-    "phon": "/ˌsiː.iː ˈəʊ/",
-    "cn": "首席执行官"
-  },
-  {
-    "en": "CFO",
-    "phon": "/ˌsiː ef ˈəʊ/",
-    "cn": "首席财务官"
-  },
-  {
-    "en": "CTO",
-    "phon": "/ˌsiː tiː ˈəʊ/",
-    "cn": "首席技术官"
-  },
-  {
-    "en": "COO",
-    "phon": "/ˌsiː oʊ ˈəʊ/",
-    "cn": "首席运营官"
-  },
-  {
-    "en": "board of directors",
-    "phon": "/bɔːrd əv daɪˈrek.tərz/",
-    "cn": "董事会"
-  },
-  {
-    "en": "shareholder",
-    "phon": "/ˈʃeər.həʊl.dər/",
-    "cn": "股东"
-  },
-  {
-    "en": "stakeholder",
-    "phon": "/ˈsteɪk.həʊl.dər/",
-    "cn": "利益相关者"
-  },
-  {
-    "en": "uncorder",
-    "phon": "/uncorder/",
-    "cn": "uncorder"
-  },
-  {
-    "en": "uncordor",
-    "phon": "/uncordor/",
-    "cn": "uncordor"
-  },
-  {
-    "en": "quality assurance",
-    "phon": "/ˈkwɒl.ə.ti əˈʃʊər.əns/",
-    "cn": "质量保证"
-  },
-  {
-    "en": "research and development",
-    "phon": "/rɪˈsɜːrtʃ ænd dɪˈvel.əp.mənt/",
-    "cn": "研发"
-  },
-  {
-    "en": "intellectual property",
-    "phon": "/ˌɪn.təˈlek.tʃu.əl ˈprɒp.ər.ti/",
-    "cn": "知识产权"
-  },
-  {
-    "en": "patent",
-    "phon": "/ˈpæt.ənt/",
-    "cn": "专利"
-  },
-  {
-    "en": "trademark",
-    "phon": "/ˈtreɪd.mɑːrk/",
-    "cn": "商标"
-  },
-  {
-    "en": "copyright",
-    "phon": "/ˈkɒp.i.raɪt/",
-    "cn": "版权"
-  },
-  {
-    "en": "royalty",
-    "phon": "/ˈrɔɪ.əl.ti/",
-    "cn": "版税"
+    "en": "internship",
+    "phon": "/ˈɪn.tɜːn.ʃɪp/",
+    "cn": "实习"
   },
   {
     "en": "licensing",
@@ -205,24 +20,99 @@
     "cn": "许可"
   },
   {
+    "en": "severance",
+    "phon": "/ˈsev.ər.əns/",
+    "cn": "遣散费"
+  },
+  {
+    "en": "authorize",
+    "phon": "/ˈɔː.θər.aɪz/",
+    "cn": "授权"
+  },
+  {
     "en": "franchise",
     "phon": "/ˈfræn.tʃaɪz/",
     "cn": "特许经营"
   },
   {
-    "en": "uncordist",
-    "phon": "/uncordist/",
-    "cn": "uncordist"
+    "en": "research and development",
+    "phon": "/rɪˈsɜːrtʃ ænd dɪˈvel.əp.mənt/",
+    "cn": "研发"
   },
   {
-    "en": "uncordism",
-    "phon": "/uncordism/",
-    "cn": "uncordism"
+    "en": "CTO",
+    "phon": "/ˌsiː tiː ˈəʊ/",
+    "cn": "首席技术官"
   },
   {
-    "en": "divestiture",
-    "phon": "/daɪˈves.tɪ.tʃər/",
-    "cn": "剥离"
+    "en": "shareholder",
+    "phon": "/ˈʃeər.həʊl.dər/",
+    "cn": "股东"
+  },
+  {
+    "en": "mentee",
+    "phon": "/ˈmen.tiː/",
+    "cn": "学员"
+  },
+  {
+    "en": "CEO",
+    "phon": "/ˌsiː.iː ˈəʊ/",
+    "cn": "首席执行官"
+  },
+  {
+    "en": "conscience",
+    "phon": "/ˈkɒn.ʃəns/",
+    "cn": "良心"
+  },
+  {
+    "en": "promotion",
+    "phon": "/prəˈməʊ.ʃən/",
+    "cn": "晋升"
+  },
+  {
+    "en": "board of directors",
+    "phon": "/bɔːrd əv daɪˈrek.tərz/",
+    "cn": "董事会"
+  },
+  {
+    "en": "curriculum vitae",
+    "phon": "/kəˈrɪk.ju.ləm ˈviː.taɪ/",
+    "cn": "履历"
+  },
+  {
+    "en": "comprehensive",
+    "phon": "/ˌkɒm.prɪˈhen.sɪv/",
+    "cn": "全面的"
+  },
+  {
+    "en": "conflict",
+    "phon": "/ˈkɒn.flɪkt/",
+    "cn": "冲突"
+  },
+  {
+    "en": "CFO",
+    "phon": "/ˌsiː ef ˈəʊ/",
+    "cn": "首席财务官"
+  },
+  {
+    "en": "allocate",
+    "phon": "/ˈæl.ə.keɪt/",
+    "cn": "分配"
+  },
+  {
+    "en": "compensate",
+    "phon": "/ˈkɒm.pen.seɪt/",
+    "cn": "补偿"
+  },
+  {
+    "en": "mentor",
+    "phon": "/ˈmen.tər/",
+    "cn": "导师"
+  },
+  {
+    "en": "compensation",
+    "phon": "/ˌkɒm.penˈseɪ.ʃən/",
+    "cn": "薪酬"
   },
   {
     "en": "bankruptcy",
@@ -230,14 +120,34 @@
     "cn": "破产"
   },
   {
+    "en": "stakeholder",
+    "phon": "/ˈsteɪk.həʊl.dər/",
+    "cn": "利益相关者"
+  },
+  {
     "en": "restructuring",
     "phon": "/riːˈstrʌk.tʃər.ɪŋ/",
     "cn": "重组"
   },
   {
-    "en": "uncordize",
-    "phon": "/uncordize/",
-    "cn": "uncordize"
+    "en": "intellectual property",
+    "phon": "/ˌɪn.təˈlek.tʃu.əl ˈprɒp.ər.ti/",
+    "cn": "知识产权"
+  },
+  {
+    "en": "freelance",
+    "phon": "/ˈfriː.lɑːns/",
+    "cn": "自由职业"
+  },
+  {
+    "en": "401k",
+    "phon": "/ˌfɔːr.oʊ ˈwʌn keɪ/",
+    "cn": "退休账户"
+  },
+  {
+    "en": "quality assurance",
+    "phon": "/ˈkwɒl.ə.ti əˈʃʊər.əns/",
+    "cn": "质量保证"
   },
   {
     "en": "downsizing",
@@ -245,8 +155,98 @@
     "cn": "裁员"
   },
   {
-    "en": "uncordise",
-    "phon": "/uncordise/",
-    "cn": "uncordise"
+    "en": "venture",
+    "phon": "/ˈven.tʃər/",
+    "cn": "风险投资"
+  },
+  {
+    "en": "confess",
+    "phon": "/kənˈfes/",
+    "cn": "承认"
+  },
+  {
+    "en": "stock option",
+    "phon": "/stɒk ˈɒp.ʃən/",
+    "cn": "股票期权"
+  },
+  {
+    "en": "contractor",
+    "phon": "/ˈkɒn.træk.tər/",
+    "cn": "承包商"
+  },
+  {
+    "en": "divestiture",
+    "phon": "/daɪˈves.tɪ.tʃər/",
+    "cn": "剥离"
+  },
+  {
+    "en": "confirm",
+    "phon": "/kənˈfɜːrm/",
+    "cn": "确认"
+  },
+  {
+    "en": "trademark",
+    "phon": "/ˈtreɪd.mɑːrk/",
+    "cn": "商标"
+  },
+  {
+    "en": "condemn",
+    "phon": "/kənˈdem/",
+    "cn": "谴责"
+  },
+  {
+    "en": "copyright",
+    "phon": "/ˈkɒp.i.raɪt/",
+    "cn": "版权"
+  },
+  {
+    "en": "compromise",
+    "phon": "/ˈkɒm.prə.maɪz/",
+    "cn": "妥协"
+  },
+  {
+    "en": "resume",
+    "phon": "/ˈrez.ʊ.meɪ/",
+    "cn": "简历"
+  },
+  {
+    "en": "pension",
+    "phon": "/ˈpen.ʃən/",
+    "cn": "养老金"
+  },
+  {
+    "en": "adequate",
+    "phon": "/ˈæd.ɪ.kwət/",
+    "cn": "足够的"
+  },
+  {
+    "en": "royalty",
+    "phon": "/ˈrɔɪ.əl.ti/",
+    "cn": "版税"
+  },
+  {
+    "en": "demotion",
+    "phon": "/dɪˈməʊ.ʃən/",
+    "cn": "降职"
+  },
+  {
+    "en": "COO",
+    "phon": "/ˌsiː oʊ ˈəʊ/",
+    "cn": "首席运营官"
+  },
+  {
+    "en": "patent",
+    "phon": "/ˈpæt.ənt/",
+    "cn": "专利"
+  },
+  {
+    "en": "apprenticeship",
+    "phon": "/əˈpren.tɪs.ʃɪp/",
+    "cn": "学徒期"
+  },
+  {
+    "en": "circulate",
+    "phon": "/ˈsɜːr.kjə.leɪt/",
+    "cn": "循环"
   }
 ]
