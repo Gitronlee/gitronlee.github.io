@@ -24,6 +24,7 @@ const toolMap: Record<string, any> = {
   'salary': (await import('../../components/tools/SalaryCalculator.astro')).default,
   'image-slicer': (await import('../../components/tools/ImageSlicer.astro')).default,
   'life-timer': (await import('../../components/tools/LifeTimer.astro')).default,
+  'provident-fund': (await import('../../components/tools/ProvidentFundCalculator.astro')).default,
 };
 
 const { slug } = Astro.params;

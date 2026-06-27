@@ -1,0 +1,979 @@
+<div class="pfc-root" id="pfcRoot">
+  <!-- Global Parameters (Collapsible) -->
+  <div class="pfc-global-section" id="globalSection">
+    <button class="pfc-global-toggle" id="globalToggle">
+      <span>⚙ 全局参数设置</span>
+      <span class="toggle-arrow" id="toggleArrow">▼</span>
+    </button>
+    <div class="pfc-global-params" id="globalParams">
+      <div class="pfc-global-grid">
+        <div class="pfc-input-group">
+          <label>城市下限（元）</label>
+          <input type="number" id="globalMin" value="0" min="0" step="100" />
+        </div>
+        <div class="pfc-input-group">
+          <label>城市上限（元）</label>
+          <input type="number" id="globalMax" value="30000" min="0" step="100" />
+        </div>
+        <div class="pfc-input-group">
+          <label>默认单位比例（%）</label>
+          <input type="number" id="globalCompanyRate" value="5" min="1" max="12" step="1" />
+        </div>
+        <div class="pfc-input-group">
+          <label>默认个人比例（%）</label>
+          <input type="number" id="globalPersonalRate" value="5" min="1" max="12" step="1" />
+        </div>
+      </div>
+      <div class="pfc-global-actions">
+        <button class="pfc-btn pfc-btn-reset" id="resetAllBtn">🗑 清空所有数据</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Data Table -->
+  <div class="pfc-table-wrap">
+    <table class="pfc-table" id="dataTable">
+      <thead>
+        <tr>
+          <th class="pfc-col-seq">序号</th>
+          <th class="pfc-col-month">月份</th>
+          <th class="pfc-col-actual">实际申报基数<br/><span class="th-unit">(元)</span></th>
+          <th class="pfc-col-legal">
+            法定应缴基数<br/><span class="th-unit">(元)</span>
+            <span class="th-hint" id="smartFillHint" title="建议填写上年度1-12月税前总收入 ÷ 12">⚡</span>
+          </th>
+          <th class="pfc-col-company">单位比例<br/><span class="th-unit">(%)</span></th>
+          <th class="pfc-col-personal">个人比例<br/><span class="th-unit">(%)</span></th>
+          <th class="pfc-col-diff">本行差额<br/><span class="th-unit">(元)</span></th>
+          <th class="pfc-col-action">操作</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody">
+        <!-- Rows rendered by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Add Row Button -->
+  <button class="pfc-add-btn" id="addRowBtn">＋ 追加一行</button>
+
+  <!-- Recalc All Button -->
+  <div class="pfc-recalc-wrap">
+    <button class="pfc-btn pfc-btn-recalc" id="recalcAllBtn">🔄 重算所有行</button>
+  </div>
+
+  <!-- Summary -->
+  <div class="pfc-summary" id="summarySection">
+    <div class="pfc-summary-grid">
+      <div class="pfc-summary-item">
+        <span class="pfc-summary-label">补缴总月数</span>
+        <span class="pfc-summary-value" id="totalMonths">0</span>
+      </div>
+      <div class="pfc-summary-item">
+        <span class="pfc-summary-label">单位应补总额</span>
+        <span class="pfc-summary-value" id="totalCompanyDiff">0.00</span>
+      </div>
+      <div class="pfc-summary-item">
+        <span class="pfc-summary-label">个人应补总额</span>
+        <span class="pfc-summary-value" id="totalPersonalDiff">0.00</span>
+      </div>
+      <div class="pfc-summary-item pfc-summary-total">
+        <span class="pfc-summary-label">合计补缴总额</span>
+        <span class="pfc-summary-value pfc-total-highlight" id="grandTotal">0.00</span>
+      </div>
+    </div>
+    <button class="pfc-btn pfc-btn-copy" id="copySummaryBtn">📋 一键复制结果摘要</button>
+  </div>
+
+  <!-- Smart Fill Tooltip -->
+  <div class="pfc-tooltip" id="smartFillTooltip" style="display:none">
+    <div class="pfc-tooltip-content">
+      <strong>💡 智能填写提示</strong>
+      <p>建议填写<strong>上年度1-12月税前总收入 ÷ 12</strong></p>
+      <p class="pfc-tooltip-example">例：上年度总收入 180,000 元 → 法定基数 = 15,000 元</p>
+      <button class="pfc-tooltip-close" id="tooltipClose">知道了</button>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="pfc-toast" id="toast" style="display:none"></div>
+</div>
+
+<script>
+(function() {
+  'use strict';
+
+  // ---- Constants ----
+  const STORAGE_KEY = 'provident_fund_data';
+
+  // ---- State ----
+  interface RowData {
+    id: string;
+    month: string;
+    actualBase: string;
+    legalBase: string;
+    companyRate: string;
+    personalRate: string;
+  }
+
+  let rows: RowData[] = [];
+  let seqCounter = 0;
+
+  // ---- DOM refs ----
+  const globalToggle = document.getElementById('globalToggle')!;
+  const globalParams = document.getElementById('globalParams')!;
+  const toggleArrow = document.getElementById('toggleArrow')!;
+  const globalMin = document.getElementById('globalMin') as HTMLInputElement;
+  const globalMax = document.getElementById('globalMax') as HTMLInputElement;
+  const globalCompanyRate = document.getElementById('globalCompanyRate') as HTMLInputElement;
+  const globalPersonalRate = document.getElementById('globalPersonalRate') as HTMLInputElement;
+  const tableBody = document.getElementById('tableBody')!;
+  const addRowBtn = document.getElementById('addRowBtn')!;
+  const recalcAllBtn = document.getElementById('recalcAllBtn')!;
+  const resetAllBtn = document.getElementById('resetAllBtn')!;
+  const copySummaryBtn = document.getElementById('copySummaryBtn')!;
+  const smartFillHint = document.getElementById('smartFillHint')!;
+  const smartFillTooltip = document.getElementById('smartFillTooltip')!;
+  const tooltipClose = document.getElementById('tooltipClose')!;
+  const toast = document.getElementById('toast')!;
+  const totalMonthsEl = document.getElementById('totalMonths')!;
+  const totalCompanyDiffEl = document.getElementById('totalCompanyDiff')!;
+  const totalPersonalDiffEl = document.getElementById('totalPersonalDiff')!;
+  const grandTotalEl = document.getElementById('grandTotal')!;
+
+  // ---- Utility ----
+  function round2(n: number): string {
+    return (Math.round(n * 100) / 100).toFixed(2);
+  }
+
+  function clamp(val: number, min: number, max: number): number {
+    return Math.min(Math.max(val, min), max);
+  }
+
+  function getCurrentMonth(): string {
+    const d = new Date();
+    const y = d.getFullYear();
+    const m = String(d.getMonth() + 1).padStart(2, '0');
+    return `${y}-${m}`;
+  }
+
+  function addOneMonth(monthStr: string): string {
+    const [y, m] = monthStr.split('-').map(Number);
+    const d = new Date(y, m - 1 + 1, 1);
+    const ny = d.getFullYear();
+    const nm = String(d.getMonth() + 1).padStart(2, '0');
+    return `${ny}-${nm}`;
+  }
+
+  function showToast(msg: string, duration = 2000) {
+    toast.textContent = msg;
+    toast.style.display = 'block';
+    setTimeout(() => { toast.style.display = 'none'; }, duration);
+  }
+
+  // ---- Calculation ----
+  function calcRowDiff(row: RowData): { companyDiff: number; personalDiff: number; total: number } | null {
+    const actual = parseFloat(row.actualBase);
+    const legal = parseFloat(row.legalBase);
+    const compRate = parseFloat(row.companyRate);
+    const persRate = parseFloat(row.personalRate);
+
+    if (isNaN(actual) || isNaN(legal) || isNaN(compRate) || isNaN(persRate)) {
+      return null;
+    }
+
+    const min = parseFloat(globalMin.value) || 0;
+    const max = parseFloat(globalMax.value) || 30000;
+
+    // Apply clamp (MEDIAN = clamp to [min, max])
+    const clampedLegal = clamp(legal, min, max);
+    const clampedActual = clamp(actual, min, max);
+
+    const shouldCompany = clampedLegal * (compRate / 100);
+    const actualCompany = clampedActual * (compRate / 100);
+    const shouldPersonal = clampedLegal * (persRate / 100);
+    const actualPersonal = clampedActual * (persRate / 100);
+
+    const companyDiff = Math.round((shouldCompany - actualCompany) * 100) / 100;
+    const personalDiff = Math.round((shouldPersonal - actualPersonal) * 100) / 100;
+
+    return {
+      companyDiff,
+      personalDiff,
+      total: Math.round((companyDiff + personalDiff) * 100) / 100,
+    };
+  }
+
+  // ---- Render ----
+  function renderTable() {
+    tableBody.innerHTML = '';
+    rows.forEach((row, idx) => {
+      const diff = calcRowDiff(row);
+      const diffDisplay = diff ? round2(diff.total) : '——';
+      const diffClass = diff && diff.total > 0 ? 'pfc-diff-positive' : (diff && diff.total < 0 ? 'pfc-diff-negative' : '');
+
+      const tr = document.createElement('tr');
+      tr.dataset.id = row.id;
+      tr.innerHTML = `
+        <td class="pfc-cell-seq">${idx + 1}</td>
+        <td><input type="month" class="pfc-input pfc-input-month" value="${row.month}" data-field="month" /></td>
+        <td><input type="number" class="pfc-input" value="${row.actualBase}" placeholder="0" data-field="actualBase" min="0" step="100" /></td>
+        <td>
+          <div class="pfc-legal-cell">
+            <input type="number" class="pfc-input" value="${row.legalBase}" placeholder="0" data-field="legalBase" min="0" step="100" />
+          </div>
+        </td>
+        <td><input type="number" class="pfc-input pfc-input-rate" value="${row.companyRate}" data-field="companyRate" min="1" max="12" step="1" /></td>
+        <td><input type="number" class="pfc-input pfc-input-rate" value="${row.personalRate}" data-field="personalRate" min="1" max="12" step="1" /></td>
+        <td class="pfc-cell-diff ${diffClass}">${diffDisplay}</td>
+        <td><button class="pfc-btn-delete" title="删除此行">✕</button></td>
+      `;
+      tableBody.appendChild(tr);
+    });
+
+    updateSummary();
+  }
+
+  function updateSummary() {
+    let totalCompany = 0;
+    let totalPersonal = 0;
+    let validMonths = 0;
+
+    rows.forEach(row => {
+      const diff = calcRowDiff(row);
+      if (diff) {
+        totalCompany += diff.companyDiff;
+        totalPersonal += diff.personalDiff;
+        validMonths++;
+      }
+    });
+
+    totalCompany = Math.round(totalCompany * 100) / 100;
+    totalPersonal = Math.round(totalPersonal * 100) / 100;
+    const grand = Math.round((totalCompany + totalPersonal) * 100) / 100;
+
+    totalMonthsEl.textContent = String(validMonths);
+    totalCompanyDiffEl.textContent = round2(totalCompany);
+    totalPersonalDiffEl.textContent = round2(totalPersonal);
+    grandTotalEl.textContent = round2(grand);
+  }
+
+  // ---- Persistence ----
+  function saveData() {
+    const data = {
+      globalMin: globalMin.value,
+      globalMax: globalMax.value,
+      globalCompanyRate: globalCompanyRate.value,
+      globalPersonalRate: globalPersonalRate.value,
+      rows,
+    };
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    } catch (e) {
+      // ignore
+    }
+  }
+
+  function loadData() {
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (!raw) return false;
+      const data = JSON.parse(raw);
+      if (data.globalMin !== undefined) globalMin.value = data.globalMin;
+      if (data.globalMax !== undefined) globalMax.value = data.globalMax;
+      if (data.globalCompanyRate !== undefined) globalCompanyRate.value = data.globalCompanyRate;
+      if (data.globalPersonalRate !== undefined) globalPersonalRate.value = data.globalPersonalRate;
+      if (Array.isArray(data.rows)) {
+        rows = data.rows;
+        return true;
+      }
+    } catch (e) {
+      // ignore
+    }
+    return false;
+  }
+
+  // ---- Row Operations ----
+  function createRow(prevRow?: RowData): RowData {
+    const newMonth = prevRow ? addOneMonth(prevRow.month) : getCurrentMonth();
+    return {
+      id: 'row_' + Date.now() + '_' + (seqCounter++),
+      month: newMonth,
+      actualBase: '',
+      legalBase: prevRow ? prevRow.legalBase : '',
+      companyRate: prevRow ? prevRow.companyRate : (globalCompanyRate.value || '5'),
+      personalRate: prevRow ? prevRow.personalRate : (globalPersonalRate.value || '5'),
+    };
+  }
+
+  function addRow() {
+    const lastRow = rows.length > 0 ? rows[rows.length - 1] : undefined;
+    const newRow = createRow(lastRow);
+    rows.push(newRow);
+    renderTable();
+    saveData();
+    // Scroll to the new row
+    const lastTr = tableBody.lastElementChild;
+    if (lastTr) lastTr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  function deleteRow(id: string) {
+    rows = rows.filter(r => r.id !== id);
+    renderTable();
+    saveData();
+  }
+
+  // ---- Global Toggle ----
+  let globalOpen = true;
+  globalToggle.addEventListener('click', () => {
+    globalOpen = !globalOpen;
+    globalParams.style.display = globalOpen ? 'block' : 'none';
+    toggleArrow.textContent = globalOpen ? '▼' : '▶';
+  });
+
+  // ---- Event Delegation on Table ----
+  tableBody.addEventListener('input', (e) => {
+    const target = e.target as HTMLInputElement;
+    if (!target.matches('.pfc-input')) return;
+    const tr = target.closest('tr');
+    if (!tr) return;
+    const id = (tr as HTMLElement).dataset.id;
+    const field = target.dataset.field;
+    if (!id || !field) return;
+
+    const row = rows.find(r => r.id === id);
+    if (row) {
+      (row as any)[field] = target.value;
+      saveData();
+      // Live update diff display for this row
+      const diff = calcRowDiff(row);
+      const diffCell = tr.querySelector('.pfc-cell-diff');
+      if (diffCell) {
+        diffCell.textContent = diff ? round2(diff.total) : '——';
+        diffCell.className = 'pfc-cell-diff' + (diff && diff.total > 0 ? ' pfc-diff-positive' : (diff && diff.total < 0 ? ' pfc-diff-negative' : ''));
+      }
+      updateSummary();
+    }
+  });
+
+  tableBody.addEventListener('click', (e) => {
+    const target = e.target as HTMLElement;
+    if (target.classList.contains('pfc-btn-delete')) {
+      const tr = target.closest('tr');
+      if (tr) {
+        const id = (tr as HTMLElement).dataset.id;
+        if (id) deleteRow(id);
+      }
+    }
+  });
+
+  // ---- Add Row ----
+  addRowBtn.addEventListener('click', addRow);
+
+  // ---- Recalc All ----
+  recalcAllBtn.addEventListener('click', () => {
+    renderTable();
+    saveData();
+    showToast('已重算所有行');
+  });
+
+  // ---- Global Params Change (no auto-recalc) ----
+  [globalMin, globalMax, globalCompanyRate, globalPersonalRate].forEach(el => {
+    el.addEventListener('change', saveData);
+  });
+
+  // ---- Reset All ----
+  resetAllBtn.addEventListener('click', () => {
+    if (confirm('确定要清空所有数据吗？此操作不可撤销。')) {
+      rows = [];
+      globalMin.value = '0';
+      globalMax.value = '30000';
+      globalCompanyRate.value = '5';
+      globalPersonalRate.value = '5';
+      renderTable();
+      saveData();
+      showToast('已清空所有数据');
+    }
+  });
+
+  // ---- Smart Fill Hint ----
+  smartFillHint.addEventListener('click', (e) => {
+    e.stopPropagation();
+    smartFillTooltip.style.display = smartFillTooltip.style.display === 'none' ? 'block' : 'none';
+  });
+  tooltipClose.addEventListener('click', () => {
+    smartFillTooltip.style.display = 'none';
+  });
+  document.addEventListener('click', (e) => {
+    if (!smartFillTooltip.contains(e.target as Node) && e.target !== smartFillHint) {
+      smartFillTooltip.style.display = 'none';
+    }
+  });
+
+  // ---- Copy Summary ----
+  copySummaryBtn.addEventListener('click', () => {
+    const min = parseFloat(globalMin.value) || 0;
+    const max = parseFloat(globalMax.value) || 30000;
+    const lines: string[] = [];
+    lines.push('公积金差额补缴计算结果摘要');
+    lines.push('================================');
+    lines.push(`城市下限: ${min.toLocaleString()} 元 | 城市上限: ${max.toLocaleString()} 元`);
+    lines.push('');
+
+    let totalCompany = 0;
+    let totalPersonal = 0;
+    let validMonths = 0;
+
+    rows.forEach((row, idx) => {
+      const diff = calcRowDiff(row);
+      if (diff) {
+        totalCompany += diff.companyDiff;
+        totalPersonal += diff.personalDiff;
+        validMonths++;
+        lines.push(`${row.month} | 实际基数: ${row.actualBase || '0'} | 法定基数: ${row.legalBase || '0'} | 单位${row.companyRate}%+个人${row.personalRate}% | 差额: ${round2(diff.total)} 元`);
+      }
+    });
+
+    totalCompany = Math.round(totalCompany * 100) / 100;
+    totalPersonal = Math.round(totalPersonal * 100) / 100;
+    const grand = Math.round((totalCompany + totalPersonal) * 100) / 100;
+
+    lines.push('');
+    lines.push('================================');
+    lines.push(`补缴总月数: ${validMonths}`);
+    lines.push(`单位应补总额: ${round2(totalCompany)} 元`);
+    lines.push(`个人应补总额: ${round2(totalPersonal)} 元`);
+    lines.push(`合计补缴总额: ${round2(grand)} 元`);
+
+    navigator.clipboard.writeText(lines.join('\n')).then(() => {
+      showToast('✅ 已复制到剪贴板');
+    }).catch(() => {
+      showToast('❌ 复制失败，请手动复制');
+    });
+  });
+
+  // ---- Init ----
+  const loaded = loadData();
+  if (!loaded) {
+    // Start with one default row
+    rows.push(createRow());
+  }
+  renderTable();
+})();
+</script>
+
+<style>
+  .pfc-root {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    position: relative;
+  }
+
+  /* ---- Global Section ---- */
+  .pfc-global-section {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .pfc-global-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-tertiary);
+    border: none;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .pfc-global-toggle:hover {
+    background: var(--border-color);
+  }
+
+  .toggle-arrow {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    transition: transform 0.2s ease;
+  }
+
+  .pfc-global-params {
+    padding: 1.25rem;
+  }
+
+  .pfc-global-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .pfc-input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .pfc-input-group label {
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+  }
+
+  .pfc-input-group input {
+    height: 36px;
+    padding: 0 0.75rem;
+    border: 1px solid #d1d9e6;
+    border-radius: 6px;
+    font-size: 0.9375rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    transition: var(--transition);
+  }
+
+  .pfc-input-group input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  }
+
+  .pfc-global-actions {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /* ---- Buttons ---- */
+  .pfc-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+  }
+
+  .pfc-btn:hover {
+    background: var(--border-color);
+  }
+
+  .pfc-btn-reset {
+    color: #e74c3c;
+    border-color: #e74c3c;
+  }
+
+  .pfc-btn-reset:hover {
+    background: rgba(231, 76, 60, 0.1);
+  }
+
+  .pfc-btn-recalc {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+  }
+
+  .pfc-btn-recalc:hover {
+    background: #2980b9;
+  }
+
+  .pfc-btn-copy {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+    font-weight: 600;
+  }
+
+  .pfc-btn-copy:hover {
+    background: #2980b9;
+  }
+
+  /* ---- Table ---- */
+  .pfc-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+  }
+
+  .pfc-table {
+    width: 100%;
+    min-width: 780px;
+    border-collapse: collapse;
+    font-size: 0.875rem;
+  }
+
+  .pfc-table thead {
+    background: #2c3e50;
+    color: #fff;
+  }
+
+  .pfc-table th {
+    padding: 0.75rem 0.625rem;
+    font-weight: 600;
+    font-size: 0.8125rem;
+    text-align: center;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .pfc-table th .th-unit {
+    font-weight: 400;
+    font-size: 0.75rem;
+    opacity: 0.8;
+  }
+
+  .pfc-table th .th-hint {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #f39c12;
+    color: #fff;
+    font-size: 0.7rem;
+    cursor: pointer;
+    margin-left: 0.25rem;
+    vertical-align: middle;
+    line-height: 1;
+    transition: var(--transition);
+  }
+
+  .pfc-table th .th-hint:hover {
+    transform: scale(1.15);
+    background: #e67e22;
+  }
+
+  .pfc-table tbody tr {
+    border-bottom: 1px solid var(--border-color);
+    transition: var(--transition);
+  }
+
+  .pfc-table tbody tr:hover {
+    background: rgba(52, 152, 219, 0.04);
+  }
+
+  .pfc-table tbody tr:last-child {
+    border-bottom: none;
+  }
+
+  .pfc-table td {
+    padding: 0.5rem 0.375rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  /* ---- Cell Widths ---- */
+  .pfc-col-seq { width: 48px; }
+  .pfc-col-month { width: 130px; }
+  .pfc-col-actual { width: 130px; }
+  .pfc-col-legal { width: 130px; }
+  .pfc-col-company { width: 80px; }
+  .pfc-col-personal { width: 80px; }
+  .pfc-col-diff { width: 100px; }
+  .pfc-col-action { width: 56px; }
+
+  /* ---- Table Inputs ---- */
+  .pfc-input {
+    width: 100%;
+    height: 36px;
+    padding: 0 0.5rem;
+    border: 1px solid #d1d9e6;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    text-align: center;
+    transition: var(--transition);
+  }
+
+  .pfc-input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
+  }
+
+  .pfc-input-rate {
+    width: 70px;
+  }
+
+  .pfc-input-month {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .pfc-legal-cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  /* ---- Cell Styles ---- */
+  .pfc-cell-seq {
+    font-weight: 600;
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+  }
+
+  .pfc-cell-diff {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  .pfc-diff-positive {
+    color: #e74c3c;
+  }
+
+  .pfc-diff-negative {
+    color: #27ae60;
+  }
+
+  .pfc-btn-delete {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #e74c3c;
+    border-radius: 6px;
+    background: transparent;
+    color: #e74c3c;
+    cursor: pointer;
+    font-size: 0.875rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+  }
+
+  .pfc-btn-delete:hover {
+    background: #e74c3c;
+    color: #fff;
+  }
+
+  /* ---- Add Button ---- */
+  .pfc-add-btn {
+    width: 100%;
+    padding: 0.875rem;
+    border: 2px dashed #d1d9e6;
+    border-radius: var(--radius);
+    background: transparent;
+    color: #3498db;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .pfc-add-btn:hover {
+    border-color: #3498db;
+    background: rgba(52, 152, 219, 0.05);
+  }
+
+  .pfc-recalc-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* ---- Summary ---- */
+  .pfc-summary {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.25rem;
+  }
+
+  .pfc-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pfc-summary-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    background: var(--bg-tertiary);
+    border-radius: 6px;
+  }
+
+  .pfc-summary-label {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+  }
+
+  .pfc-summary-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+
+  .pfc-summary-total {
+    background: #e74c3c;
+  }
+
+  .pfc-summary-total .pfc-summary-label {
+    color: rgba(255,255,255,0.85);
+  }
+
+  .pfc-total-highlight {
+    color: #fff !important;
+    font-size: 1.5rem !important;
+  }
+
+  .pfc-summary .pfc-btn-copy {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem;
+  }
+
+  /* ---- Tooltip ---- */
+  .pfc-tooltip {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pfc-tooltip-content {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  }
+
+  .pfc-tooltip-content strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+  }
+
+  .pfc-tooltip-content p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+  }
+
+  .pfc-tooltip-example {
+    background: var(--bg-tertiary);
+    padding: 0.625rem 0.75rem;
+    border-radius: 6px;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.8125rem !important;
+    color: var(--text-muted) !important;
+  }
+
+  .pfc-tooltip-close {
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.625rem;
+    background: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-family: inherit;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+
+  .pfc-tooltip-close:hover {
+    background: #2980b9;
+  }
+
+  /* ---- Toast ---- */
+  .pfc-toast {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2c3e50;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    z-index: 2000;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    animation: pfcToastIn 0.25s ease;
+  }
+
+  @keyframes pfcToastIn {
+    from { opacity: 0; transform: translateX(-50%) translateY(12px); }
+    to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* ---- Responsive ---- */
+  @media (max-width: 768px) {
+    .pfc-global-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pfc-summary-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pfc-table {
+      min-width: 700px;
+    }
+
+    .pfc-col-seq,
+    .pfc-col-action {
+      display: none;
+    }
+
+    .pfc-table td:nth-child(1),
+    .pfc-table th:nth-child(1),
+    .pfc-table td:nth-child(8),
+    .pfc-table th:nth-child(8) {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .pfc-global-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pfc-summary-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pfc-summary-value {
+      font-size: 1rem;
+    }
+
+    .pfc-total-highlight {
+      font-size: 1.25rem !important;
+    }
+  }
+</style>
