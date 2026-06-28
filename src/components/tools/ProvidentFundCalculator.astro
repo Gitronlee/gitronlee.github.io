@@ -233,6 +233,14 @@
       const data = JSON.parse(raw);
       if (Array.isArray(data.rows)) {
         rows = data.rows;
+        // Migrate old schema: companyRate/personalRate → rate
+        rows.forEach(r => {
+          if ((r as any).rate === undefined) {
+            (r as any).rate = (r as any).companyRate || '5';
+          }
+          delete (r as any).companyRate;
+          delete (r as any).personalRate;
+        });
         return true;
       }
     } catch (e) {
@@ -309,6 +317,20 @@
 
   // ---- Recalc All ----
   recalcAllBtn.addEventListener('click', () => {
+    // Force-sync all input values from DOM → rows[] before recalc
+    const allRows = tableBody.querySelectorAll('tr');
+    allRows.forEach(tr => {
+      const id = (tr as HTMLElement).dataset.id;
+      if (!id) return;
+      const row = rows.find(r => r.id === id);
+      if (!row) return;
+      const inputs = tr.querySelectorAll('.pfc-input');
+      inputs.forEach(inp => {
+        const input = inp as HTMLInputElement;
+        const field = input.dataset.field;
+        if (field) (row as any)[field] = input.value;
+      });
+    });
     renderTable();
     saveData();
     showToast('已重算所有行');
