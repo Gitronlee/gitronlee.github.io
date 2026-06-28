@@ -11,8 +11,7 @@
             法定应缴基数<br/><span class="th-unit">(元)</span>
             <span class="th-hint" id="smartFillHint" title="建议填写上年度1-12月税前总收入 ÷ 12">⚡</span>
           </th>
-          <th class="pfc-col-company">单位比例<br/><span class="th-unit">(%)</span></th>
-          <th class="pfc-col-personal">个人比例<br/><span class="th-unit">(%)</span></th>
+          <th class="pfc-col-rate">比例<br/><span class="th-unit">(%)</span></th>
           <th class="pfc-col-diff">本行差额<br/><span class="th-unit">(元)</span></th>
           <th class="pfc-col-action">操作</th>
         </tr>
@@ -84,8 +83,7 @@
     month: string;
     actualBase: string;
     legalBase: string;
-    companyRate: string;
-    personalRate: string;
+    rate: string;
   }
 
   let rows: RowData[] = [];
@@ -140,10 +138,9 @@
   function calcRowDiff(row: RowData): { companyDiff: number; personalDiff: number; total: number } | null {
     const actual = parseFloat(row.actualBase);
     const legal = parseFloat(row.legalBase);
-    const compRate = parseFloat(row.companyRate);
-    const persRate = parseFloat(row.personalRate);
+    const rate = parseFloat(row.rate);
 
-    if (isNaN(actual) || isNaN(legal) || isNaN(compRate) || isNaN(persRate)) {
+    if (isNaN(actual) || isNaN(legal) || isNaN(rate)) {
       return null;
     }
 
@@ -151,10 +148,10 @@
     const clampedLegal = clamp(legal, CITY_MIN, CITY_MAX);
     const clampedActual = clamp(actual, CITY_MIN, CITY_MAX);
 
-    const shouldCompany = clampedLegal * (compRate / 100);
-    const actualCompany = clampedActual * (compRate / 100);
-    const shouldPersonal = clampedLegal * (persRate / 100);
-    const actualPersonal = clampedActual * (persRate / 100);
+    const shouldCompany = clampedLegal * (rate / 100);
+    const actualCompany = clampedActual * (rate / 100);
+    const shouldPersonal = clampedLegal * (rate / 100);
+    const actualPersonal = clampedActual * (rate / 100);
 
     const companyDiff = Math.round((shouldCompany - actualCompany) * 100) / 100;
     const personalDiff = Math.round((shouldPersonal - actualPersonal) * 100) / 100;
@@ -185,8 +182,7 @@
             <input type="number" class="pfc-input" value="${row.legalBase}" placeholder="0" data-field="legalBase" min="0" step="100" />
           </div>
         </td>
-        <td><input type="number" class="pfc-input pfc-input-rate" value="${row.companyRate}" data-field="companyRate" min="1" max="12" step="1" /></td>
-        <td><input type="number" class="pfc-input pfc-input-rate" value="${row.personalRate}" data-field="personalRate" min="1" max="12" step="1" /></td>
+        <td><input type="number" class="pfc-input pfc-input-rate" value="${row.rate}" data-field="rate" min="1" max="12" step="1" /></td>
         <td class="pfc-cell-diff ${diffClass}">${diffDisplay}</td>
         <td><button class="pfc-btn-delete" title="删除此行">✕</button></td>
       `;
@@ -253,8 +249,7 @@
       month: newMonth,
       actualBase: prevRow ? prevRow.actualBase : '',
       legalBase: prevRow ? prevRow.legalBase : '',
-      companyRate: prevRow ? prevRow.companyRate : '5',
-      personalRate: prevRow ? prevRow.personalRate : '5',
+      rate: prevRow ? prevRow.rate : '5',
     };
   }
 
@@ -361,7 +356,7 @@
         totalCompany += diff.companyDiff;
         totalPersonal += diff.personalDiff;
         validMonths++;
-        lines.push(`${row.month} | 实际基数: ${row.actualBase || '0'} | 法定基数: ${row.legalBase || '0'} | 单位${row.companyRate}%+个人${row.personalRate}% | 差额: ${round2(diff.total)} 元`);
+        lines.push(`${row.month} | 实际基数: ${row.actualBase || '0'} | 法定基数: ${row.legalBase || '0'} | 比例${row.rate}% | 差额: ${round2(diff.total)} 元`);
       }
     });
 
@@ -460,7 +455,7 @@
 
   .pfc-table {
     width: 100%;
-    min-width: 780px;
+    min-width: 680px;
     border-collapse: collapse;
     font-size: 0.875rem;
   }
@@ -531,8 +526,7 @@
   .pfc-col-month { width: 130px; }
   .pfc-col-actual { width: 130px; }
   .pfc-col-legal { width: 130px; }
-  .pfc-col-company { width: 80px; }
-  .pfc-col-personal { width: 80px; }
+  .pfc-col-rate { width: 80px; }
   .pfc-col-diff { width: 100px; }
   .pfc-col-action { width: 56px; }
 
@@ -791,13 +785,13 @@
     }
 
     .pfc-table {
-      min-width: 700px;
+      min-width: 600px;
     }
 
     .pfc-table td:nth-child(1),
     .pfc-table th:nth-child(1),
-    .pfc-table td:nth-child(8),
-    .pfc-table th:nth-child(8) {
+    .pfc-table td:nth-child(7),
+    .pfc-table th:nth-child(7) {
       display: none;
     }
   }
