@@ -54,6 +54,17 @@
     <button class="pfc-btn pfc-btn-copy" id="copySummaryBtn">📋 一键复制结果摘要</button>
   </div>
 
+  <!-- Calculation Details -->
+  <div class="pfc-details-section">
+    <button class="pfc-details-toggle" id="detailsToggle">
+      <span>📊 计算过程详情</span>
+      <span class="toggle-arrow" id="detailsArrow">▶</span>
+    </button>
+    <div class="pfc-details-content" id="detailsContent" style="display:none">
+      <div id="detailsBody"></div>
+    </div>
+  </div>
+
   <!-- Smart Fill Tooltip -->
   <div class="pfc-tooltip" id="smartFillTooltip" style="display:none">
     <div class="pfc-tooltip-content">
@@ -103,6 +114,10 @@
   const totalCompanyDiffEl = document.getElementById('totalCompanyDiff')!;
   const totalPersonalDiffEl = document.getElementById('totalPersonalDiff')!;
   const grandTotalEl = document.getElementById('grandTotal')!;
+  const detailsToggle = document.getElementById('detailsToggle')!;
+  const detailsArrow = document.getElementById('detailsArrow')!;
+  const detailsContent = document.getElementById('detailsContent')!;
+  const detailsBody = document.getElementById('detailsBody')!;
 
   // ---- Utility ----
   function round2(n: number): string {
@@ -135,7 +150,13 @@
   }
 
   // ---- Calculation ----
-  function calcRowDiff(row: RowData): { companyDiff: number; personalDiff: number; total: number } | null {
+  function calcRowDetails(row: RowData): {
+    actual: number; legal: number; rate: number;
+    clampedLegal: number; clampedActual: number;
+    shouldCompany: number; actualCompany: number;
+    shouldPersonal: number; actualPersonal: number;
+    companyDiff: number; personalDiff: number; total: number;
+  } | null {
     const actual = parseFloat(row.actualBase);
     const legal = parseFloat(row.legalBase);
     const rate = parseFloat(row.rate);
@@ -144,23 +165,30 @@
       return null;
     }
 
-    // Apply clamp (MEDIAN = clamp to [min, max])
     const clampedLegal = clamp(legal, CITY_MIN, CITY_MAX);
     const clampedActual = clamp(actual, CITY_MIN, CITY_MAX);
 
-    const shouldCompany = clampedLegal * (rate / 100);
-    const actualCompany = clampedActual * (rate / 100);
-    const shouldPersonal = clampedLegal * (rate / 100);
-    const actualPersonal = clampedActual * (rate / 100);
+    const shouldCompany = Math.round(clampedLegal * (rate / 100) * 100) / 100;
+    const actualCompany = Math.round(clampedActual * (rate / 100) * 100) / 100;
+    const shouldPersonal = Math.round(clampedLegal * (rate / 100) * 100) / 100;
+    const actualPersonal = Math.round(clampedActual * (rate / 100) * 100) / 100;
 
     const companyDiff = Math.round((shouldCompany - actualCompany) * 100) / 100;
     const personalDiff = Math.round((shouldPersonal - actualPersonal) * 100) / 100;
 
     return {
-      companyDiff,
-      personalDiff,
+      actual, legal, rate,
+      clampedLegal, clampedActual,
+      shouldCompany, actualCompany, shouldPersonal, actualPersonal,
+      companyDiff, personalDiff,
       total: Math.round((companyDiff + personalDiff) * 100) / 100,
     };
+  }
+
+  function calcRowDiff(row: RowData): { companyDiff: number; personalDiff: number; total: number } | null {
+    const d = calcRowDetails(row);
+    if (!d) return null;
+    return { companyDiff: d.companyDiff, personalDiff: d.personalDiff, total: d.total };
   }
 
   // ---- Render ----
@@ -214,6 +242,69 @@
     totalCompanyDiffEl.textContent = round2(totalCompany);
     totalPersonalDiffEl.textContent = round2(totalPersonal);
     grandTotalEl.textContent = round2(grand);
+
+    renderDetails();
+  }
+
+  // ---- Details Rendering ----
+  function renderDetails() {
+    if (detailsContent.style.display === 'none') return;
+    let html = '';
+    rows.forEach((row, idx) => {
+      const d = calcRowDetails(row);
+      const header = `${row.month}  #${idx + 1}`;
+      if (!d) {
+        html += `<div class="pfc-detail-row"><div class="pfc-detail-header">${header}</div><div class="pfc-detail-incomplete">数据不完整，请填写基数与比例</div></div>`;
+        return;
+      }
+      html += `
+        <div class="pfc-detail-row">
+          <div class="pfc-detail-header">${header}</div>
+          <div class="pfc-detail-grid">
+            <div class="pfc-detail-label">法定应缴基数</div>
+            <div class="pfc-detail-val">${d.legal.toLocaleString()}</div>
+            <div class="pfc-detail-arrow">→</div>
+            <div class="pfc-detail-val pfc-detail-emph">MEDIAN(${d.legal}, ${CITY_MIN}, ${CITY_MAX}) = ${d.clampedLegal.toLocaleString()}</div>
+
+            <div class="pfc-detail-label">实际申报基数</div>
+            <div class="pfc-detail-val">${d.actual.toLocaleString()}</div>
+            <div class="pfc-detail-arrow">→</div>
+            <div class="pfc-detail-val pfc-detail-emph">MEDIAN(${d.actual}, ${CITY_MIN}, ${CITY_MAX}) = ${d.clampedActual.toLocaleString()}</div>
+          </div>
+          <div class="pfc-detail-divider"></div>
+          <div class="pfc-detail-subgrid">
+            <div class="pfc-detail-subitem">
+              <span class="pfc-detail-sub-label">应缴单位部分</span>
+              <span class="pfc-detail-sub-val">${d.clampedLegal.toLocaleString()} × ${d.rate}% = ${round2(d.shouldCompany)}</span>
+            </div>
+            <div class="pfc-detail-subitem">
+              <span class="pfc-detail-sub-label">实缴单位部分</span>
+              <span class="pfc-detail-sub-val">${d.clampedActual.toLocaleString()} × ${d.rate}% = ${round2(d.actualCompany)}</span>
+            </div>
+            <div class="pfc-detail-subitem pfc-detail-diff">
+              <span class="pfc-detail-sub-label">单位差额</span>
+              <span class="pfc-detail-sub-val">${round2(d.shouldCompany)} − ${round2(d.actualCompany)} = ${round2(d.companyDiff)}</span>
+            </div>
+            <div class="pfc-detail-subitem">
+              <span class="pfc-detail-sub-label">应缴个人部分</span>
+              <span class="pfc-detail-sub-val">${d.clampedLegal.toLocaleString()} × ${d.rate}% = ${round2(d.shouldPersonal)}</span>
+            </div>
+            <div class="pfc-detail-subitem">
+              <span class="pfc-detail-sub-label">实缴个人部分</span>
+              <span class="pfc-detail-sub-val">${d.clampedActual.toLocaleString()} × ${d.rate}% = ${round2(d.actualPersonal)}</span>
+            </div>
+            <div class="pfc-detail-subitem pfc-detail-diff">
+              <span class="pfc-detail-sub-label">个人差额</span>
+              <span class="pfc-detail-sub-val">${round2(d.shouldPersonal)} − ${round2(d.actualPersonal)} = ${round2(d.personalDiff)}</span>
+            </div>
+          </div>
+          <div class="pfc-detail-total">
+            单月总差额：<strong>${round2(d.shouldCompany)} − ${round2(d.actualCompany)} + ${round2(d.shouldPersonal)} − ${round2(d.actualPersonal)} = ${round2(d.total)}</strong>
+          </div>
+        </div>
+      `;
+    });
+    detailsBody.innerHTML = html;
   }
 
   // ---- Persistence ----
@@ -358,6 +449,15 @@
     if (!smartFillTooltip.contains(e.target as Node) && e.target !== smartFillHint) {
       smartFillTooltip.style.display = 'none';
     }
+  });
+
+  // ---- Details Toggle ----
+  let detailsOpen = false;
+  detailsToggle.addEventListener('click', () => {
+    detailsOpen = !detailsOpen;
+    detailsContent.style.display = detailsOpen ? 'block' : 'none';
+    detailsArrow.textContent = detailsOpen ? '▼' : '▶';
+    if (detailsOpen) renderDetails();
   });
 
   // ---- Copy Summary ----
@@ -798,6 +898,149 @@
   @keyframes pfcToastIn {
     from { opacity: 0; transform: translateX(-50%) translateY(12px); }
     to { opacity: 1; transform: translateX(-50%) translateY(0); }
+  }
+
+  /* ---- Calculation Details ---- */
+  .pfc-details-section {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+  }
+
+  .pfc-details-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.875rem 1.25rem;
+    background: var(--bg-tertiary);
+    border: none;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-family: inherit;
+    transition: var(--transition);
+  }
+
+  .pfc-details-toggle:hover {
+    background: var(--border-color);
+  }
+
+  .pfc-details-toggle .toggle-arrow {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .pfc-details-content {
+    padding: 1rem;
+  }
+
+  .pfc-detail-row {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .pfc-detail-row:last-child {
+    margin-bottom: 0;
+  }
+
+  .pfc-detail-header {
+    font-weight: 600;
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  .pfc-detail-incomplete {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-style: italic;
+  }
+
+  .pfc-detail-grid {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr;
+    gap: 0.375rem 0.75rem;
+    align-items: center;
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .pfc-detail-label {
+    color: var(--text-secondary);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .pfc-detail-val {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary);
+    text-align: right;
+  }
+
+  .pfc-detail-arrow {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .pfc-detail-emph {
+    color: #3498db;
+    font-weight: 500;
+  }
+
+  .pfc-detail-divider {
+    height: 1px;
+    background: var(--border-color);
+    margin-bottom: 0.75rem;
+  }
+
+  .pfc-detail-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  .pfc-detail-subitem {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125rem;
+  }
+
+  .pfc-detail-sub-label {
+    color: var(--text-muted);
+    font-size: 0.75rem;
+  }
+
+  .pfc-detail-sub-val {
+    font-family: 'JetBrains Mono', monospace;
+    color: var(--text-primary);
+  }
+
+  .pfc-detail-diff .pfc-detail-sub-val {
+    font-weight: 600;
+  }
+
+  .pfc-detail-total {
+    margin-top: 0.75rem;
+    padding-top: 0.625rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    text-align: center;
+  }
+
+  .pfc-detail-total strong {
+    color: #e74c3c;
+    font-size: 1rem;
   }
 
   /* ---- Responsive ---- */
