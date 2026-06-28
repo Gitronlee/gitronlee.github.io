@@ -1,35 +1,4 @@
 <div class="pfc-root" id="pfcRoot">
-  <!-- Global Parameters (Collapsible) -->
-  <div class="pfc-global-section" id="globalSection">
-    <button class="pfc-global-toggle" id="globalToggle">
-      <span>⚙ 全局参数设置</span>
-      <span class="toggle-arrow" id="toggleArrow">▼</span>
-    </button>
-    <div class="pfc-global-params" id="globalParams">
-      <div class="pfc-global-grid">
-        <div class="pfc-input-group">
-          <label>城市下限（元）</label>
-          <input type="number" id="globalMin" value="0" min="0" step="100" />
-        </div>
-        <div class="pfc-input-group">
-          <label>城市上限（元）</label>
-          <input type="number" id="globalMax" value="30000" min="0" step="100" />
-        </div>
-        <div class="pfc-input-group">
-          <label>默认单位比例（%）</label>
-          <input type="number" id="globalCompanyRate" value="5" min="1" max="12" step="1" />
-        </div>
-        <div class="pfc-input-group">
-          <label>默认个人比例（%）</label>
-          <input type="number" id="globalPersonalRate" value="5" min="1" max="12" step="1" />
-        </div>
-      </div>
-      <div class="pfc-global-actions">
-        <button class="pfc-btn pfc-btn-reset" id="resetAllBtn">🗑 清空所有数据</button>
-      </div>
-    </div>
-  </div>
-
   <!-- Data Table -->
   <div class="pfc-table-wrap">
     <table class="pfc-table" id="dataTable">
@@ -57,9 +26,10 @@
   <!-- Add Row Button -->
   <button class="pfc-add-btn" id="addRowBtn">＋ 追加一行</button>
 
-  <!-- Recalc All Button -->
-  <div class="pfc-recalc-wrap">
+  <!-- Action Buttons -->
+  <div class="pfc-actions-row">
     <button class="pfc-btn pfc-btn-recalc" id="recalcAllBtn">🔄 重算所有行</button>
+    <button class="pfc-btn pfc-btn-reset" id="resetAllBtn">🗑 清空所有数据</button>
   </div>
 
   <!-- Summary -->
@@ -105,6 +75,8 @@
 
   // ---- Constants ----
   const STORAGE_KEY = 'provident_fund_data';
+  const CITY_MIN = 0;
+  const CITY_MAX = 30000;
 
   // ---- State ----
   interface RowData {
@@ -120,13 +92,6 @@
   let seqCounter = 0;
 
   // ---- DOM refs ----
-  const globalToggle = document.getElementById('globalToggle')!;
-  const globalParams = document.getElementById('globalParams')!;
-  const toggleArrow = document.getElementById('toggleArrow')!;
-  const globalMin = document.getElementById('globalMin') as HTMLInputElement;
-  const globalMax = document.getElementById('globalMax') as HTMLInputElement;
-  const globalCompanyRate = document.getElementById('globalCompanyRate') as HTMLInputElement;
-  const globalPersonalRate = document.getElementById('globalPersonalRate') as HTMLInputElement;
   const tableBody = document.getElementById('tableBody')!;
   const addRowBtn = document.getElementById('addRowBtn')!;
   const recalcAllBtn = document.getElementById('recalcAllBtn')!;
@@ -182,12 +147,9 @@
       return null;
     }
 
-    const min = parseFloat(globalMin.value) || 0;
-    const max = parseFloat(globalMax.value) || 30000;
-
     // Apply clamp (MEDIAN = clamp to [min, max])
-    const clampedLegal = clamp(legal, min, max);
-    const clampedActual = clamp(actual, min, max);
+    const clampedLegal = clamp(legal, CITY_MIN, CITY_MAX);
+    const clampedActual = clamp(actual, CITY_MIN, CITY_MAX);
 
     const shouldCompany = clampedLegal * (compRate / 100);
     const actualCompany = clampedActual * (compRate / 100);
@@ -260,13 +222,7 @@
 
   // ---- Persistence ----
   function saveData() {
-    const data = {
-      globalMin: globalMin.value,
-      globalMax: globalMax.value,
-      globalCompanyRate: globalCompanyRate.value,
-      globalPersonalRate: globalPersonalRate.value,
-      rows,
-    };
+    const data = { rows };
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
     } catch (e) {
@@ -279,10 +235,6 @@
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return false;
       const data = JSON.parse(raw);
-      if (data.globalMin !== undefined) globalMin.value = data.globalMin;
-      if (data.globalMax !== undefined) globalMax.value = data.globalMax;
-      if (data.globalCompanyRate !== undefined) globalCompanyRate.value = data.globalCompanyRate;
-      if (data.globalPersonalRate !== undefined) globalPersonalRate.value = data.globalPersonalRate;
       if (Array.isArray(data.rows)) {
         rows = data.rows;
         return true;
@@ -301,8 +253,8 @@
       month: newMonth,
       actualBase: '',
       legalBase: prevRow ? prevRow.legalBase : '',
-      companyRate: prevRow ? prevRow.companyRate : (globalCompanyRate.value || '5'),
-      personalRate: prevRow ? prevRow.personalRate : (globalPersonalRate.value || '5'),
+      companyRate: prevRow ? prevRow.companyRate : '5',
+      personalRate: prevRow ? prevRow.personalRate : '5',
     };
   }
 
@@ -312,7 +264,6 @@
     rows.push(newRow);
     renderTable();
     saveData();
-    // Scroll to the new row
     const lastTr = tableBody.lastElementChild;
     if (lastTr) lastTr.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
@@ -322,14 +273,6 @@
     renderTable();
     saveData();
   }
-
-  // ---- Global Toggle ----
-  let globalOpen = true;
-  globalToggle.addEventListener('click', () => {
-    globalOpen = !globalOpen;
-    globalParams.style.display = globalOpen ? 'block' : 'none';
-    toggleArrow.textContent = globalOpen ? '▼' : '▶';
-  });
 
   // ---- Event Delegation on Table ----
   tableBody.addEventListener('input', (e) => {
@@ -345,7 +288,6 @@
     if (row) {
       (row as any)[field] = target.value;
       saveData();
-      // Live update diff display for this row
       const diff = calcRowDiff(row);
       const diffCell = tr.querySelector('.pfc-cell-diff');
       if (diffCell) {
@@ -377,19 +319,10 @@
     showToast('已重算所有行');
   });
 
-  // ---- Global Params Change (no auto-recalc) ----
-  [globalMin, globalMax, globalCompanyRate, globalPersonalRate].forEach(el => {
-    el.addEventListener('change', saveData);
-  });
-
   // ---- Reset All ----
   resetAllBtn.addEventListener('click', () => {
     if (confirm('确定要清空所有数据吗？此操作不可撤销。')) {
       rows = [];
-      globalMin.value = '0';
-      globalMax.value = '30000';
-      globalCompanyRate.value = '5';
-      globalPersonalRate.value = '5';
       renderTable();
       saveData();
       showToast('已清空所有数据');
@@ -412,12 +345,10 @@
 
   // ---- Copy Summary ----
   copySummaryBtn.addEventListener('click', () => {
-    const min = parseFloat(globalMin.value) || 0;
-    const max = parseFloat(globalMax.value) || 30000;
     const lines: string[] = [];
     lines.push('公积金差额补缴计算结果摘要');
     lines.push('================================');
-    lines.push(`城市下限: ${min.toLocaleString()} 元 | 城市上限: ${max.toLocaleString()} 元`);
+    lines.push(`城市下限: ${CITY_MIN.toLocaleString()} 元 | 城市上限: ${CITY_MAX.toLocaleString()} 元`);
     lines.push('');
 
     let totalCompany = 0;
@@ -455,7 +386,6 @@
   // ---- Init ----
   const loaded = loadData();
   if (!loaded) {
-    // Start with one default row
     rows.push(createRow());
   }
   renderTable();
@@ -468,86 +398,6 @@
     flex-direction: column;
     gap: 1.25rem;
     position: relative;
-  }
-
-  /* ---- Global Section ---- */
-  .pfc-global-section {
-    background: var(--bg-secondary);
-    border: 1px solid var(--border-color);
-    border-radius: var(--radius);
-    overflow: hidden;
-  }
-
-  .pfc-global-toggle {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.875rem 1.25rem;
-    background: var(--bg-tertiary);
-    border: none;
-    cursor: pointer;
-    font-size: 0.9375rem;
-    font-weight: 600;
-    color: var(--text-primary);
-    font-family: inherit;
-    transition: var(--transition);
-  }
-
-  .pfc-global-toggle:hover {
-    background: var(--border-color);
-  }
-
-  .toggle-arrow {
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    transition: transform 0.2s ease;
-  }
-
-  .pfc-global-params {
-    padding: 1.25rem;
-  }
-
-  .pfc-global-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 1rem;
-  }
-
-  .pfc-input-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.375rem;
-  }
-
-  .pfc-input-group label {
-    font-size: 0.8125rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-  }
-
-  .pfc-input-group input {
-    height: 36px;
-    padding: 0 0.75rem;
-    border: 1px solid #d1d9e6;
-    border-radius: 6px;
-    font-size: 0.9375rem;
-    font-family: 'JetBrains Mono', monospace;
-    background: var(--bg-primary);
-    color: var(--text-primary);
-    transition: var(--transition);
-  }
-
-  .pfc-input-group input:focus {
-    border-color: #3498db;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.15);
-  }
-
-  .pfc-global-actions {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: flex-end;
   }
 
   /* ---- Buttons ---- */
@@ -783,9 +633,11 @@
     background: rgba(52, 152, 219, 0.05);
   }
 
-  .pfc-recalc-wrap {
+  /* ---- Actions Row ---- */
+  .pfc-actions-row {
     display: flex;
     justify-content: center;
+    gap: 1rem;
   }
 
   /* ---- Summary ---- */
@@ -934,21 +786,12 @@
 
   /* ---- Responsive ---- */
   @media (max-width: 768px) {
-    .pfc-global-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
     .pfc-summary-grid {
       grid-template-columns: repeat(2, 1fr);
     }
 
     .pfc-table {
       min-width: 700px;
-    }
-
-    .pfc-col-seq,
-    .pfc-col-action {
-      display: none;
     }
 
     .pfc-table td:nth-child(1),
@@ -960,10 +803,6 @@
   }
 
   @media (max-width: 480px) {
-    .pfc-global-grid {
-      grid-template-columns: 1fr;
-    }
-
     .pfc-summary-grid {
       grid-template-columns: 1fr;
     }
