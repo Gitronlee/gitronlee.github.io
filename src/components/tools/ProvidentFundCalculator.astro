@@ -251,7 +251,7 @@
     return {
       id: 'row_' + Date.now() + '_' + (seqCounter++),
       month: newMonth,
-      actualBase: '',
+      actualBase: prevRow ? prevRow.actualBase : '',
       legalBase: prevRow ? prevRow.legalBase : '',
       companyRate: prevRow ? prevRow.companyRate : '5',
       personalRate: prevRow ? prevRow.personalRate : '5',
